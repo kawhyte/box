@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Quicksand";
+    color: #333;
+  }
+
 body { 
     font-size: 1em;
     background-color: #15191D; 
@@ -14,7 +24,7 @@ body {
 }
 
 
-a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, ul, var, video {
+a,  abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, ul, var, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,6 +34,10 @@ a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body,
     font-size: 100%;
     font-family: inherit;
     vertical-align: baseline;
+    
+    
+}
+p{
     
 }
 
@@ -58,3 +72,29 @@ a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body,
     /* box-shadow: 1px 2px 3px rgba(247, 0, 0, 0.5); */
     /* box-shadow: 50px 100px 100px 50px #2c3440 inset, -75px -65px 70px 10px #2c3440 inset;  */
 }
+
+
+.hero{
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P';
+    text-shadow: 
+    0 1px 0 #fb4236,
+    0 2px 0 #fb4236,
+    0 3px 0 #fb4236,
+    0 4px 0 #ff6b01,
+    0 5px 0 #ff6b01,
+    0 6px 0 #ff6b01,
+    0 7px 0 #fdc741,
+    0 8px 0 #fdc741,
+    0 9px 0 #fdc741,
+    0 10px 0 #25ce7B,
+    0 11px 0 #25ce7B,
+    0 12px 0 #25ce7B,
+    0 13px 0 #01b3e3,
+    0 14px 0 #01b3e3,
+    0 15px 0 #01b3e3,
+    0 16px 0 #da38b5,
+    0 17px 0 #da38b5,
+    0 18px 0 #020202;
+  }
