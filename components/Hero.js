@@ -5,21 +5,19 @@ export default function Landing() {
 		<>
 			<main>
 				<div
-					className='relative pt-16 pb-32 flex content-center items-center justify-center'
+					className='relative pt-16 pb-6 flex  content-end items-end justify-center  '
 					style={{
 						minHeight: "60vh",
 					}}>
 					<div
-						className='absolute top-0 w-full h-full bg-center bg-cover'
+						className='absolute top-0 w-full h-full bg-center bg-cover container  bg-no-repeat bg-fade'
 						style={{
 							backgroundImage:
-								"url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
+								"url('https://res.cloudinary.com/babyhulk/image/upload/v1613672195/GameBox/pexels-stas-knop-1462725.jpg')",
 						}}>
-						<span
-							id='blackOverlay'
-							className='w-full h-full absolute opacity-75 bg-black'></span>
+						<span id='blackOverlay'className='w-full h-full absolute opacity-75 bg-blac bg-fade2 '></span>  
 					</div>
-					<div className='container relative mx-auto'>
+					<div className='container relative mx-auto '>
 						<div className='items-center flex flex-wrap'>
 							<div className='w-full lg:w-6/12 px-4 ml-auto mr-auto text-center'>
 								<div className='pr-12'>
