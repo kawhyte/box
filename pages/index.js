@@ -2,7 +2,7 @@ import Head from "next/head";
 import Hero from "../components/Hero";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import Trending from "../components/Trending";
+import Card from "../components/Card";
 
 export const getStaticProps = async () => {
 	// const response = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -28,7 +28,7 @@ const Home = ({ games }) => {
 
 			<Hero />
 
-			<Trending games={games.slice(0, 6)} />
+			<Card games={games.slice(0, 6)} headerText={"Top 50 best video games, according to players:"} />
 		</>
 	);
 };

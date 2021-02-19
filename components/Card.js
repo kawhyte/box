@@ -4,12 +4,12 @@ import Link from "next/link";
 
 
 
-const Trending = ({games}) =>{
+const Trending = ({games, headerText}) =>{
 
   
     return (
-        <main class='grid  min-h-screen mt-12  p-5 container mx-auto pb-6  flex  content-start items-center justify-center'>
-        <h1 className="pb-8 text-lg"> Trending Games</h1>
+        <main class='grid  min-h-screen mt-12  p-5 container mx-auto pb-6    content-start items-center justify-center'>
+        <h1 className="pb-8 md:text-xl text-gray-400"> {headerText}</h1>
                   <div>
                       <section class='grid grid-cols-1 sm:grid-cols-4 gap-4'>
                           {games.map((game) => (
