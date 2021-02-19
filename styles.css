@@ -39,6 +39,9 @@ a,  abbr, acronym, address, applet, article, aside, audio, big, blockquote, body
 .headings{
       font-family: "Titillium Web";
 }
+.smallText{
+      font-family: "Quicksand";
+}
 
 .bg-fade {
    

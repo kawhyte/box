@@ -14,12 +14,12 @@ console.log("GAMES...",games)
                       <section class='grid grid-cols-1 sm:grid-cols-4 gap-4'>
                           {games.map((game) => (
                               <Link href={`/zelda/${game.id}`} key={game.id}>
-                                  <div class='bg-gray-900 shadow-lg rounded p-3 max-w-xs'>
+                                  <div class='bg-gray-800 shadow-lg rounded p-3 max-w-xs'>
                                       <div class='group relative'>
                                           <img
-                                              class='w-full md:w-72 block rounded'
+                                              class='w-full  md:w-72 block rounded'
                                               src={game.background_image}
-                                              alt=''
+                                              alt={game.name}
                                           />
                                           <div class='absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly'>
                                               <button class='hover:scale-110 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>

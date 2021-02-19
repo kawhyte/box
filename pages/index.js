@@ -21,7 +21,7 @@ const Home = ({ games }) => {
 	return (
 		<>
 			<Head>
-				<title>Create Next App</title>
+				<title>GameBox | Home</title>
 				<link rel='icon' href='/favicon.ico' />
         
 			</Head>
