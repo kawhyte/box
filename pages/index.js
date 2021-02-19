@@ -28,7 +28,7 @@ const Home = ({ games }) => {
 
 			<Hero />
 
-			<Card games={games.slice(0, 6)} headerText={"Top 50 best video games, according to players:"} />
+			<Card games={games.slice(0, 50)} headerText={"Top 50 best video games, according to players:"} />
 		</>
 	);
 };

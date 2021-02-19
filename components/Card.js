@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Trending = ({games, headerText}) =>{
 
-  
+console.log("GAMES...",games)  
     return (
         <main class='grid  min-h-screen mt-12  p-5 container mx-auto pb-6    content-start items-center justify-center'>
         <h1 className="pb-8 md:text-xl text-gray-400"> {headerText}</h1>
@@ -18,7 +18,7 @@ const Trending = ({games, headerText}) =>{
                                       <div class='group relative'>
                                           <img
                                               class='w-full md:w-72 block rounded'
-                                              src={game.img}
+                                              src={game.background_image}
                                               alt=''
                                           />
                                           <div class='absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly'>
@@ -60,8 +60,8 @@ const Trending = ({games, headerText}) =>{
                                           </div>
                                       </div>
                                       <div class='px-2 py-2 '>
-                                          <h3 class='text-white text-lg'>{game.title}</h3>
-                                          <p class='text-gray-400'>{game.genre}</p>
+                                          <h3 class='text-white text-lg'>{game.name}</h3>
+                                          <p class='text-gray-400'>{game.genres[0].name}</p>
                                       </div>
                                   </div>
                               </Link>
