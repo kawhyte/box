@@ -10,7 +10,7 @@ export default function Landing() {
 						minHeight: "60vh",
 					}}>
 					<div
-						className='absolute top-0 w-full h-full bg-center bg-cover container  bg-no-repeat bg-fade'
+						className='absolute top-0 w-full h-full bg-center bg-cover   bg-no-repeat bg-fade'
 						style={{
 							backgroundImage:
 								"url('https://res.cloudinary.com/babyhulk/image/upload/v1613672195/GameBox/pexels-stas-knop-1462725.jpg')",
@@ -23,9 +23,9 @@ export default function Landing() {
 						<div className='items-center flex flex-wrap'>
 							<div className='w-full lg:w-8/12 px-4 ml-auto mr-auto text-center'>
 								<div className='pr-12'>
-									<section className='headings text-2xl mb-1  leading-10 font-extrabold text-gray-900 md:sm:text-3xl sm:text-3xl sm:leading-none md:text-4xl'>
+									<section className='headings text-2xl mb-1  leading-10 font-extrabold text-gray-900 md:sm:text-3xl sm:text-4xl sm:leading-none md:text-5xl'>
 										<p className='text-white p-1'>
-											Track Video Games you’ve played.
+											Track video games you’ve played.
 										</p>
 										<p className='text-white p-1'>Save those you want to play.</p>
 										<p className='text-white p-1'>Tell your friends what’s good.</p>
