@@ -57,10 +57,10 @@ const Navbar = () => {
 							/>
 						</div>
 						<div class='hidden sm:block sm:ml-6 '>
-							<div class='flex space-x-4 uppercase tracking-widest headings smallText'>
+							<div class='flex space-x-4 uppercase tracking-widest'>
 								<a
 									href='#'
-									class='bg-gray-800 text-white px-3 py-2 rounded-md text-sm font-medium'>
+									class='bg-gray-800 text-white px-3 py-2  text-sm '>
 									Best Video Game Lists
 								</a>
 								<a

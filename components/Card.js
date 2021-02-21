@@ -9,6 +9,8 @@ const Trending = ({games, headerText}) =>{
 console.log("GAMES...",games)  
     return (
         <main class='grid  min-h-screen mt-12  p-5 container mx-auto pb-6    content-start items-center justify-center'>
+       
+    //    {/*<Link href={`/games/${games.id}`} key={games.id}>*/ }
         <h1 className="pb-8 md:text-xl text-gray-400"> {headerText}</h1>
                   <div>
                       <section class='grid grid-cols-1 sm:grid-cols-4 gap-4'>
@@ -68,6 +70,7 @@ console.log("GAMES...",games)
                           ))}
                       </section>
                   </div>
+                 {/* </Link>*/}
               </main>
     )
 }

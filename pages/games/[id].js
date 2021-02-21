@@ -1,0 +1,68 @@
+export const getStaticPaths = async () => {
+	const response = await fetch(
+		"http://localhost:8001/games",
+
+		{
+			method: "GET",
+			headers: {
+				// update with your user-agent
+				"User-Agent":
+					"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+				Accept: "application/json; charset=UTF-8",
+			},
+		}
+	);
+	const data = await response.json();
+
+	const paths = data.data.map((zelda) => {
+		return {
+			params: { id: zelda.id.toString() },
+		};
+	});
+
+	return {
+		paths: paths,
+		fallback: false,
+	};
+};
+
+export const getStaticProps = async (context) => {
+	const id = context.params.id;
+
+	const response = await fetch(
+		"http://localhost:8001/games/" + id,
+
+		{
+			method: "GET",
+			headers: {
+				// update with your user-agent
+				"User-Agent":
+					"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+				Accept: "application/json; charset=UTF-8",
+			},
+		}
+	);
+	const data = await response.json();
+
+	return {
+		props: { zelda: data },
+	};
+};
+
+const Details = ({ zelda }) => {
+	return (
+		<div>
+			<h1>{zelda.data.name}</h1>
+			<h3>Description</h3>
+			<p>{zelda.data.description}</p>
+			<p>
+				<span>Developer: </span> {zelda.data.developer}
+			</p>
+			<p>
+				<span>Release date: </span> {zelda.data.released_date}
+			</p>
+			<p></p>
+		</div>
+	);
+};
+export default Details;
