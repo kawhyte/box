@@ -60,17 +60,17 @@ const Navbar = () => {
 							<div class='flex space-x-4 uppercase tracking-widest'>
 								<a
 									href='#'
-									class='bg-gray-800 text-white px-3 py-2  text-sm '>
+									class='bg-gray-800 text-white px-3 py-2  text-xs'>
 									Best Video Game Lists
 								</a>
 								<a
 									href='#'
-									class='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
+									class='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium'>
 									Video Game Roulette
 								</a>
 								<a
 									href='#'
-									class='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'>
+									class='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium'>
 									WatchList
 								</a>
 							</div>

@@ -23,16 +23,16 @@ export default function Landing() {
 						<div className='items-center flex flex-wrap'>
 							<div className='w-full lg:w-8/12 px-4 ml-auto mr-auto text-center'>
 								<div className='pr-12'>
-									<section className='headings text-2xl mb-1  leading-10 font-extrabold text-gray-900 md:sm:text-3xl sm:text-4xl sm:leading-none md:text-5xl'>
-										<h1 className='text-white tracking-wide  headings text-4xl font-extrabold p-1'>
-											Video Game Search
-										</h1>
-										<p className='text-white text-base p-1'>Track video games you’ve played. Save those you want to play. Tell your friends what’s good.</p>
+								<h1 className='hero text-white tracking-wide text-3xl font-extrabold sm:p-8 sm:text-2xl md:3xl lg:6xl'>
+									Best Video Games
+								</h1>
+									<section className='mb-1 mt-6 leading-10 font-extrabold text-gray-900 md:sm:text-3xl sm:text-4xl sm:leading-none md:text-5xl'>
+										<p className='text-white text-xs p-1'>Track video games you’ve played. Save those you want to play. Tell your friends what’s good.</p>
 										<br className='' />
 									</section>
-                                    <button class="uppercase tracking-widest px-8 py-3 rounded bg-indigo-600 text-white max-w-max shadow-sm hover:shadow-lg">See the best games of 2020</button>
                                     
-
+									
+                                    <button class="uppercase text-xs tracking-wide px-8 py-3 rounded bg-indigo-600 text-white max-w-max shadow-sm hover:shadow-lg">best games of 2020</button>
 								</div>
 							</div>
 						</div>

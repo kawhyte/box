@@ -10,10 +10,10 @@ console.log("GAMES...",games)
     return (
         <main class='grid  min-h-screen mt-12  p-5 container mx-auto pb-6    content-start items-center justify-center'>
        
-    //    {/*<Link href={`/games/${games.id}`} key={games.id}>*/ }
-        <h1 className="pb-8 md:text-xl text-gray-400"> {headerText}</h1>
+       {/*<Link href={`/games/${games.id}`} key={games.id}>*/ }
+        <h1 className="pb-8 text-xs md:text-xl text-gray-400"> {headerText}</h1>
                   <div>
-                      <section class='grid grid-cols-1 sm:grid-cols-4 gap-4'>
+                      <section class='grid grid-cols-2 sm:grid-cols-4 gap-4'>
                           {games.map((game) => (
                               <Link href={`/zelda/${game.id}`} key={game.id}>
                                   <div class='bg-gray-800 shadow-lg rounded p-3 max-w-xs'>
@@ -62,8 +62,8 @@ console.log("GAMES...",games)
                                           </div>
                                       </div>
                                       <div class='px-2 py-2 '>
-                                          <h3 class='text-white text-lg'>{game.name}</h3>
-                                          <p class='text-gray-400'>{game.genres[0].name}</p>
+                                          <h3 class='text-white text-xs my-2'>{game.name}</h3>
+                                          <p class='text-gray-400 text-xs'>{game.genres[0].name}</p>
                                       </div>
                                   </div>
                               </Link>
