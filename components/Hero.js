@@ -24,11 +24,10 @@ export default function Landing() {
 							<div className='w-full lg:w-8/12 px-4 ml-auto mr-auto text-center'>
 								<div className='pr-12'>
 									<section className='headings text-2xl mb-1  leading-10 font-extrabold text-gray-900 md:sm:text-3xl sm:text-4xl sm:leading-none md:text-5xl'>
-										<p className='text-white p-1'>
-											Track video games you’ve played.
-										</p>
-										<p className='text-white p-1'>Save those you want to play.</p>
-										<p className='text-white p-1'>Tell your friends what’s good.</p>
+										<h1 className='text-white tracking-wide  headings text-4xl font-extrabold p-1'>
+											Video Game Search
+										</h1>
+										<p className='text-white text-base p-1'>Track video games you’ve played. Save those you want to play. Tell your friends what’s good.</p>
 										<br className='' />
 									</section>
                                     <button class="uppercase tracking-widest px-8 py-3 rounded bg-indigo-600 text-white max-w-max shadow-sm hover:shadow-lg">See the best games of 2020</button>
