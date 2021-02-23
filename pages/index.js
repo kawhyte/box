@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Hero from "../components/Hero";
+import Hero from "../components/Hero2";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Card from "../components/Card";
