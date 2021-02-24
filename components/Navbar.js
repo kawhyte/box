@@ -58,20 +58,16 @@ const Navbar = () => {
 						</div>
 						<div class='hidden sm:block sm:ml-6 '>
 							<div class='flex space-x-4 uppercase tracking-widest'>
-								<a
-									href='#'
-									class='bg-gray-800 text-white px-3 py-2  text-xs'>
-									Best Games
+								<h2 class='text-white px-3 py-2  text-xs'>Best Video Games of:</h2>
+
+								<a href='#' class='bg-gray-800 text-white px-3 py-2  text-xs'>
+									2020
 								</a>
-								<a
-									href='#'
-									class='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium'>
-									Video Game Roulette
+								<a href='#' class='bg-gray-800 text-white px-3 py-2  text-xs'>
+									2019
 								</a>
-								<a
-									href='#'
-									class='text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-xs font-medium'>
-									WatchList
+								<a href='#' class='bg-gray-800 text-white px-3 py-2  text-xs'>
+									2018
 								</a>
 							</div>
 						</div>
@@ -84,7 +80,7 @@ const Navbar = () => {
 									id='user-menu'
 									aria-haspopup='true'>
 									<span class='sr-only'>Open user menu</span>
-									
+
 									<img
 										class='h-8 w-8 rounded-full'
 										src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
