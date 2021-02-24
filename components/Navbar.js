@@ -61,7 +61,7 @@ const Navbar = () => {
 								<a
 									href='#'
 									class='bg-gray-800 text-white px-3 py-2  text-xs'>
-									Best Video Game Lists
+									Best Games
 								</a>
 								<a
 									href='#'

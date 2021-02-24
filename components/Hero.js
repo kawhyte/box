@@ -13,7 +13,7 @@ export default function Landing() {
 						className='absolute top-0 w-full h-full bg-center bg-cover   bg-no-repeat bg-fade'
 						style={{
 							backgroundImage:
-								"url('https://res.cloudinary.com/babyhulk/image/upload/v1613672195/GameBox/pexels-stas-knop-1462725.jpg')",
+								"url('htps://res.cloudinary.com/babyhulk/image/upload/v1613672195/GameBox/pexels-stas-knop-1462725.jpg')",
 						}}>
 						<span
 							id='blackOverlay'
@@ -23,11 +23,11 @@ export default function Landing() {
 						<div className='items-center flex flex-wrap'>
 							<div className='w-full lg:w-8/12 px-4 ml-auto mr-auto text-center'>
 								<div className='pr-12'>
-								<h1 className='hero text-white tracking-wide text-3xl font-extrabold sm:p-8 sm:text-2xl md:3xl lg:6xl'>
+								<h1 className='hero text-white tracking-wide text-3xl sm:text-5xl font-extrabold sm:p-8 sm:text-2xl md:3xl lg:6xl'>
 									Best Video Games
 								</h1>
 									<section className='mb-1 mt-6 leading-10 font-extrabold text-gray-900 md:sm:text-3xl sm:text-4xl sm:leading-none md:text-5xl'>
-										<p className='text-white text-xs p-1'>Track video games you’ve played. Save those you want to play. Tell your friends what’s good.</p>
+										<p className='text-white text-base sm:text-lg p-1'>Track video games you’ve played. Save those you want to play. Tell your friends what’s good.</p>
 										<br className='' />
 									</section>
                                     
