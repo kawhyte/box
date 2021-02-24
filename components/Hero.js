@@ -23,7 +23,7 @@ export default function Landing() {
 						<div className='items-center flex flex-wrap'>
 							<div className='w-full lg:w-8/12 px-4 ml-auto mr-auto text-center'>
 								<div className='pr-12'>
-								<h1 className='hero text-white text-4xl sm:text-5xl font-extrabold sm:p-8'>
+								<h1 className='headings text-white text-4xl sm:text-5xl font-extrabold sm:p-8'>
 								Video Game Concierge
 								</h1>
 									<section className='mb-1 mt-6 leading-10 font-extrabold text-gray-900 md:sm:text-3xl sm:text-4xl sm:leading-none md:text-5xl'>
