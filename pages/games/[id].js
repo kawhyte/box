@@ -14,15 +14,13 @@ export const getStaticPaths = async () => {
 	);
 	const data = await response.json();
 
-	
-	
 	const paths = data.map((game) => {
 		return {
 			params: { id: game.id.toString() },
 		};
 	});
 
-	console.log("PATHSSS___", paths)
+	// console.log("PATHSSS___", paths)
 
 	return {
 		paths: paths,
@@ -33,8 +31,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
 	const id = context.params.id;
 
-	console.log("New ID___", id)
-
+	// console.log("New ID___", id)
 
 	const response = await fetch(
 		"http://localhost:8001/games/" + id,
@@ -50,7 +47,7 @@ export const getStaticProps = async (context) => {
 		}
 	);
 	const data = await response.json();
-	
+
 	//console.log("New ZELDA-before___", data)
 
 	return {
@@ -58,15 +55,13 @@ export const getStaticProps = async (context) => {
 	};
 };
 
-const Details = ({zelda}) => {
-	
+const Details = ({ zelda }) => {
 	return (
 		<div>
-			<h1 className="text-red-500">{zelda.name}</h1>
-			<h3 className="text-blue-500">{zelda.description}</h3>
-			
+			<h1 className='text-red-500'>{zelda.name}</h1>
+			<h3 className='text-blue-500'>{zelda.description_raw}</h3>
 			<p>
-				<span>Developer: {}</span> 
+				<span>Developer: {}</span>
 			</p>
 			<p>
 				<span>Release date: </span>

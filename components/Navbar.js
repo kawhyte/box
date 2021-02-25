@@ -44,7 +44,8 @@ const Navbar = () => {
 						</button>
 					</div>
 					<div class='flex-1 flex items-center justify-center sm:items-stretch sm:justify-start'>
-						<div class='flex-shrink-0 flex items-center'>
+					<Link href="\">	
+					<div class='flex-shrink-0 flex items-center'>
 							<img
 								class='block lg:hidden h-8 w-auto'
 								src='https://res.cloudinary.com/babyhulk/image/upload/v1613758689/GameBox/gamebox-mark-indigo-500-01.svg'
@@ -56,6 +57,7 @@ const Navbar = () => {
 								alt='Workflow'
 							/>
 						</div>
+						</Link>
 						<div class='hidden sm:block sm:ml-6 '>
 							<div class='flex space-x-4 uppercase tracking-widest'>
 								<h2 class='text-white px-3 py-2  text-xs'>Best Video Games of:</h2>
