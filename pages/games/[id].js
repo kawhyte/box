@@ -14,11 +14,15 @@ export const getStaticPaths = async () => {
 	);
 	const data = await response.json();
 
-	const paths = data.data.map((zelda) => {
+	
+	
+	const paths = data.map((game) => {
 		return {
-			params: { id: zelda.id.toString() },
+			params: { id: game.id.toString() },
 		};
 	});
+
+	console.log("PATHSSS___", paths)
 
 	return {
 		paths: paths,
@@ -28,6 +32,9 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
 	const id = context.params.id;
+
+	console.log("New ID___", id)
+
 
 	const response = await fetch(
 		"http://localhost:8001/games/" + id,
@@ -43,23 +50,26 @@ export const getStaticProps = async (context) => {
 		}
 	);
 	const data = await response.json();
+	
+	//console.log("New ZELDA-before___", data)
 
 	return {
 		props: { zelda: data },
 	};
 };
 
-const Details = ({ zelda }) => {
+const Details = ({zelda}) => {
+	
 	return (
 		<div>
-			<h1>{zelda.data.name}</h1>
-			<h3>Description</h3>
-			<p>{zelda.data.description}</p>
+			<h1 className="text-red-500">{zelda.name}</h1>
+			<h3 className="text-blue-500">{zelda.description}</h3>
+			
 			<p>
-				<span>Developer: </span> {zelda.data.developer}
+				<span>Developer: {}</span> 
 			</p>
 			<p>
-				<span>Release date: </span> {zelda.data.released_date}
+				<span>Release date: </span>
 			</p>
 			<p></p>
 		</div>

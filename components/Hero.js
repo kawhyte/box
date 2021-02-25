@@ -13,7 +13,7 @@ export default function Landing() {
 						className='absolute top-0 w-full h-full bg-center bg-cover   bg-no-repeat bg-fade'
 						style={{
 							backgroundImage:
-								"url('htps://res.cloudinary.com/babyhulk/image/upload/v1613672195/GameBox/pexels-stas-knop-1462725.jpg')",
+								"url('https://res.cloudinary.com/babyhulk/image/upload/v1614212348/GameBox/wall8bit.jpg')",
 						}}>
 						<span
 							id='blackOverlay'
@@ -26,14 +26,14 @@ export default function Landing() {
 								<h1 className='headings text-white text-4xl sm:text-5xl font-extrabold sm:p-8'>
 								Video Game Concierge
 								</h1>
-									<section className='mb-1 mt-6 leading-10 font-extrabold text-gray-900 md:sm:text-3xl sm:text-4xl sm:leading-none md:text-5xl'>
+									<section className='mb-1  mt-6 leading-10 font-extrabold text-gray-900 md:sm:text-3xl sm:text-4xl sm:leading-none md:text-5xl'>
 										<p className='text-white text-base  sm:text-lg p-1'>Find the best video games for each year. Save those you want to play. Tell your friends what’s good.</p>
 										<br className='' />
 									</section>
                                     
 									<section> 
-									<h2 className="mb-2 text-gray-400" >Video Game Roulette</h2>
-                                    <button class="uppercase mx-1 text-xs tracking-wide px-8 py-3 rounded bg-indigo-600 text-white max-w-max shadow-sm hover:shadow-lg">I'm Feeling Lucky</button>
+									
+                                    <button class="uppercase headings animate-pulse mx-1 text-xs tracking-wide px-8 py-3 rounded bg-indigo-600 text-white max-w-max shadow-sm hover:shadow-lg">Start</button>
 									</section>
 								</div>
 							</div>

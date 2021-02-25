@@ -10,7 +10,7 @@ export const getStaticProps = async () => {
 	// const response = await fetch("http://zelda-api.apius.cc/api/games?limit=2");
 
 	const data = await response.json();
-	console.log("response ", data);
+	
 	return {
 		props: { games: data },
 	};
