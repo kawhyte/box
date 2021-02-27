@@ -51,17 +51,17 @@ export const getStaticProps = async (context) => {
 	//console.log("New ZELDA-before___", data)
 
 	return {
-		props: { zelda: data },
+		props: { data: data },
 	};
 };
 
-const Details = ({ zelda }) => {
+const Details = ({ data }) => {
 	return (
 		<div>
-			<h1 className='text-red-500'>{zelda.name}</h1>
-			<h3 className='text-blue-500'>{zelda.description_raw}</h3>
+			<h1 className='text-red-500'>{data.name}</h1>
+			<h3 className='text-blue-500'>{data.description_raw}</h3>
 			<p>
-				<span>Developer: {}</span>
+				<span>Developer: </span>
 			</p>
 			<p>
 				<span>Release date: </span>
