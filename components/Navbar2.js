@@ -21,8 +21,29 @@ export default function Navbar(props) {
               }
               href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
             >
-              Tailwind Starter Kit
+            
+
+              <img
+              class='lg:block h-8 w-auto'
+              src='https://res.cloudinary.com/babyhulk/image/upload/v1613758687/GameBox/gamebox-logo-indigo-500-mark-white-text-01.svg'
+              alt='Workflow'
+            />
+
             </a>
+
+            <div class='flex-shrink-0 flex items-start'>
+            <img
+              class='block lg:hidden h-8 w-auto'
+              src='https://res.cloudinary.com/babyhulk/image/upload/v1613758689/GameBox/gamebox-mark-indigo-500-01.svg'
+              alt='Workflow'
+            />
+      
+          </div>
+
+
+
+
+
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
