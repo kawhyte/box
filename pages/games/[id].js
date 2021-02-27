@@ -78,40 +78,23 @@ const Details = ({ data }) => {
 							id='blackOverlay'
 							className='w-full h-full absolute opacity-75 bg-black'></span>
 					</div>
-					<div className='container relative mx-auto'>
-						<div className='items-center flex flex-wrap'>
-							<div className='w-full lg:w-6/12 px-4 ml-auto mr-auto text-center'>
-								<div className='pr-12'>
-									<h1 className='text-white font-semibold text-5xl'>
-										{data.name}
-									</h1>
-									<p className='mt-4 text-lg text-gray-300'>
-										{data.description_raw}
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+				
 					<div
 						className='top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden'
 						style={{ height: "70px", transform: "translateZ(0)" }}></div>
 				</div>
 
-				<section className='pb-20 bg-gray-300 -mt-24'>
+				<section className='pb-20 bg-gray-300 -mt-24 '>
 					<div className='container mx-auto px-4'>
 						<div class='py-6'>
 							<div class=' relative flex max-w-md bg-white shadow-lg rounded-lg overflow-hidden'>
-								<div
-									class='w-1/3 bg-cover'
-									style={{
-										backgroundImage:
-											"url('https://images.unsplash.com/photo-1494726161322-5360d4d0eeae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80')",
-									}}></div>
+							<img class='w-3/6 bg-cover' src={data.background_image_additional}></img>
+							
 								<div class='w-2/3 p-4'>
-									<span class='text-gray-900 font-bold text-2xl'>{data.name}</span> <span> 2020</span>
+									<p class='text-gray-900 font-bold text-2xl'>{data.name}</p> 
+									 <p class='mt-2 text-gray-600 text-sm'>Released on {data.released}</p>
 									<p class='mt-2 text-gray-600 text-sm'>
-										Lorem ipsum dolor sit amet consectetur adipisicing elit In
-										odit exercitationem fuga id nam quia
+									Developed by<a className="text-blue-400" href={data.website}> {data.developers[0].name}</a>
 									</p>
 									<div class='flex item-center mt-2'>
 										<svg
@@ -141,34 +124,26 @@ const Details = ({ data }) => {
 										</svg>
 									</div>
 									<div class='flex item-center justify-between mt-3'>
-										<h1 class='text-gray-700 font-bold text-xl'>$220</h1>
+									
+									
 										<button class='px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded'>
-											Add to Card
+										<i class="fas fa-play text-white"></i>	video
 										</button>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div className='flex flex-wrap items-center mt-32'>
-							<div className='w-full md:w-5/12 px-4 mr-auto ml-auto'>
-								<div className='text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100'>
-									<i className='fas fa-user-friends text-xl'></i>
-								</div>
+						<div className='flex flex-wrap   items-center mt-10'>
+							<div className='w-full md:w-6/12 px-4 mr-auto ml-auto mb-12 md:mb-0'>
+							
 								<h3 className='text-3xl mb-2 font-semibold leading-normal'>
-									Working with us is a pleasure
+									Description
 								</h3>
 								<p className='text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700'>
-									Don't let your uses guess by attaching tooltips and popoves to
-									any element. Just make sure you enable them first via
-									JavaScript.
+									{data.description_raw}
 								</p>
-								<p className='text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700'>
-									The kit comes with three pre-built pages to help you get
-									started faster. You can change the text and images and you're
-									good to go. Just make sure you enable them first via
-									JavaScript.
-								</p>
+
 								<a
 									href='https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation'
 									className='font-bold text-gray-800 mt-8'>
@@ -198,7 +173,7 @@ const Details = ({ data }) => {
 												className='text-pink-600 fill-current'></polygon>
 										</svg>
 										<h4 className='text-xl font-bold text-white'>
-											Top Notch Services
+											{data.name} video clip 
 										</h4>
 										<p className='text-md font-light mt-2 text-white'>
 											The Arctic Ocean freezes every winter and much of the
@@ -213,22 +188,7 @@ const Details = ({ data }) => {
 				</section>
 
 				<section className='relative py-20'>
-					<div
-						className='bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20'
-						style={{ height: "80px", transform: "translateZ(0)" }}>
-						<svg
-							className='absolute bottom-0 overflow-hidden'
-							xmlns='http://www.w3.org/2000/svg'
-							preserveAspectRatio='none'
-							version='1.1'
-							viewBox='0 0 2560 100'
-							x='0'
-							y='0'>
-							<polygon
-								className='text-white fill-current'
-								points='2560 0 2560 100 0 100'></polygon>
-						</svg>
-					</div>
+			
 
 					<div className='container mx-auto px-4'>
 						<div className='items-center flex flex-wrap'>
