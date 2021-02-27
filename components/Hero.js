@@ -3,7 +3,7 @@ import React from "react";
 export default function Landing() {
 	return (
 		<>
-			<main>
+			<main className="lg:container lg:mx-auto  ">
 				<div
 					className='relative pt-16 pb-6 flex  content-end items-end justify-center  '
 					style={{

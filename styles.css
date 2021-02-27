@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
 * {
     margin: 0;
     /* font-family: "Titillium Web"; */

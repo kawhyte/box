@@ -83,7 +83,7 @@ export default function Navbar(props) {
                       " far fa-file-alt text-lg leading-lg mr-2"
                     }
                   />{" "}
-                  Docs
+                  About
                 </a>
               </li>
             </ul>
@@ -109,6 +109,8 @@ export default function Navbar(props) {
                   <span className="lg:hidden inline-block ml-2">Share</span>
                 </a>
               </li>
+
+
 
               <li className="flex items-center">
                 <a
