@@ -19,12 +19,12 @@ export default function Navbar(props) {
                 (props.transparent ? "text-white" : "text-gray-800") +
                 " text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
               }
-              href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+              href=""
             >
             
 
               <img
-              class='lg:block h-8 w-auto'
+              class='hidden lg:block h-8 w-auto'
               src='https://res.cloudinary.com/babyhulk/image/upload/v1613758687/GameBox/gamebox-logo-indigo-500-mark-white-text-01.svg'
               alt='Workflow'
             />
@@ -33,7 +33,7 @@ export default function Navbar(props) {
 
             <div class='flex-shrink-0 flex items-start'>
             <img
-              class='block lg:hidden h-8 w-auto'
+              class='hidden  lg:hidden h-8 w-auto'
               src='https://res.cloudinary.com/babyhulk/image/upload/v1613758689/GameBox/gamebox-mark-indigo-500-01.svg'
               alt='Workflow'
             />
