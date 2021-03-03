@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link"
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -13,23 +14,21 @@ export default function Navbar(props) {
         }
       >
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className={
-                (props.transparent ? "text-white" : "text-gray-800") +
-                " text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
-              }
-              href=""
-            >
+          
+        
+        
+        <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <Link href="/" className={(props.transparent ? "text-textwhite" : "text-gray-800") + " text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"}>
+            <a>
             
 
               <img
-              class='hidden lg:block h-8 w-auto'
+              class=' lg:block h-8 w-auto'
               src='https://res.cloudinary.com/babyhulk/image/upload/v1613758687/GameBox/gamebox-logo-indigo-500-mark-white-text-01.svg'
               alt='Workflow'
             />
-
             </a>
+            </Link>
 
             <div class='flex-shrink-0 flex items-start'>
             <img
@@ -51,7 +50,7 @@ export default function Navbar(props) {
             >
               <i
                 className={
-                  (props.transparent ? "text-white" : "text-gray-800") +
+                  (props.transparent ? "text-textwhite" : "text-gray-800") +
                   " fas fa-bars"
                 }
               ></i>
@@ -69,7 +68,7 @@ export default function Navbar(props) {
                 <a
                   className={
                     (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      ? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
@@ -92,7 +91,7 @@ export default function Navbar(props) {
                 <a
                   className={
                     (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      ? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
@@ -116,7 +115,7 @@ export default function Navbar(props) {
                 <a
                   className={
                     (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      ? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
@@ -138,7 +137,7 @@ export default function Navbar(props) {
                 <a
                   className={
                     (props.transparent
-                      ? "lg:text-white lg:hover:text-gray-300 text-gray-800"
+                      ? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800"
                       : "text-gray-800 hover:text-gray-600") +
                     " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   }
@@ -161,7 +160,7 @@ export default function Navbar(props) {
                   className={
                     (props.transparent
                       ? "bg-white text-gray-800 active:bg-gray-100"
-                      : "bg-pink-500 text-white active:bg-pink-600") +
+                      : "bg-pink-500 text-textwhite active:bg-pink-600") +
                     " text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
                   }
                   type="button"

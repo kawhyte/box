@@ -10,14 +10,14 @@
     /* font-family: 'Press Start 2P', cursive; */
     /* font-family: 'DotGothic16', sans-serif; */
 
-    color: #333;
+    
   }
 
 body { 
     font-size: 1em;
     background-color: #15191D; 
    
-   color:#9ab;
+   /* color:#9ab; */
    background-position: 0 0;
    height:100%;
    line-height: 1;
@@ -60,12 +60,7 @@ body {
     
 }
 
-.bg-fade2{
 
-    /* box-shadow: inset  100px 120px  100px 150px #000; */
-    /* box-shadow: 1px 2px 3px rgba(247, 0, 0, 0.5); */
-    /* box-shadow: 50px 100px 100px 50px #2c3440 inset, -75px -65px 70px 10px #2c3440 inset;  */
-}
 .heroImage{
  height:500px
 
