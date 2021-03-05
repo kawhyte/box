@@ -6,7 +6,7 @@ function Footer() {
       
 <>
 
-        <section className='pb-2 relative block bg-gray-900'>
+        <section className='pb-2 relative block bg-gray-900 mt-12'>
         <div
           className='bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20'
           style={{ height: "80px", transform: "translateZ(0)" }}>
@@ -68,16 +68,17 @@ function Footer() {
 
                 
               </div>
-              <h5 className='text-xl mt-5 font-semibold text-white'>
-              Powered by{' '}
+              <h5 className='text-lg mt-5 font-semibold text-white'>
+              Powered by
               </h5>
               <a
               href="https://rawg.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              
-              <img src="/rawg.png" alt="Rawg Logo" className=" h-20 inline-flex items-center justify-center"/>
+            <p className='mt-2 mb-4 text-blue-500'>
+            RAWG.io
+          </p>
             </a>
             </div>
           </div>

@@ -30,7 +30,7 @@ export default function Landing() {
 									 	/>
 					</section>*/}
 									<h1 className='headings text-textwhite text-4xl sm:text-5xl font-extrabold sm:p-8'>
-										Video Game Finder & Concierge
+										Video Game Concierge
 									</h1>
 									<section className='mb-1  mt-6 leading-10 font-extrabold text-gray-900 md:sm:text-3xl sm:text-4xl sm:leading-none md:text-5xl'>
 										<p className=' text-textwhite text-base  sm:text-lg p-1'>

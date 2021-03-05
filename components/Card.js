@@ -2,8 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const Trending = ({ games, headerText }) => {
-
-	// console.log("GAMES ", games)
+//  console.log("GAMES insode ", games)
 	return (
 		<main class='grid  min-h-screen mt-12  p-5 container mx-auto pb-6    content-start items-center justify-center'>
 			{/*<Link href={`/games/${games.id}`} key={games.id}>*/}
@@ -11,12 +10,17 @@ const Trending = ({ games, headerText }) => {
 			<div>
 				<section class='grid grid-cols-2 sm:grid-cols-4 gap-4'>
 					{games.map((game) => (
+						
 						<Link href={`/games/${game.id}`} key={game.id}>
-							<div class='bg-gray-800 shadow-lg rounded p-3 max-w-xs '>
+						<div class='bg-gray-800 shadow-lg rounded p-3 max-w-xs '>
+					
 								<div class='group relative'>
 									<img
 										class='w-full  md:w-72 block rounded'
-										src={game.background_image}
+										src={
+											game.cover &&
+											game.cover.url.replace("t_thumb", "t_cover_big")
+										}
 										alt={game.name}
 									/>
 									<div class='absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly'>
