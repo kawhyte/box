@@ -46,7 +46,7 @@ export const getStaticPaths = async () => {
 			Authorization: process.env.Authorization,
 		},
 		data:
-			`fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos,websites;limit 1; where rating >= 80 & release_dates.date > 1609801680 & id = ${id}; sort rating desc;`,
+			`fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms.*,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;limit 1; where rating >= 80 & release_dates.date > 1609801680 & id = ${id}; sort rating desc;`,
 	})
 		.then((response) => {
 			return response.data;
@@ -63,7 +63,7 @@ export const getStaticPaths = async () => {
 const Details = ({data}) => {
 
 	console.log("New Test______",data)
-	console.log("New Genre",data[0].genres[0].name)
+	console.log("New URLLL",data[0].url)
 
 
 
@@ -72,13 +72,8 @@ const Details = ({data}) => {
 		let must_play = "hidden";
 		let outstanding = "hidden";
 		let try_it = "hidden";
-	// 	console.log("Where is my data ", data);
-
-	// 	// console.log(`Game Name: ${name} , Game ID: ${id} `)
 
 	 	let ratings = (data[0].rating).toFixed(0);
-
-	// 	// console.log(ratings);
 
 		if (ratings < 80 && ratings >= 60) {
 			color = "bg-yellow-500";
@@ -147,11 +142,8 @@ const Details = ({data}) => {
                                         <p class='text-textwhite font-bold text-2xl'>{data[0].name}</p>
                                         <p class='mt-2  text-sm'>Released on {data[0].first_release_date}</p>
                                         <p class='mt-2  text-sm'>
-                                            Genre
-                                             <a className='text-blue-400' href={data[0].genres[0].name}>
-                                                {" "}
-                                                {data[0].genres[0].name}
-                                            </a>
+                                            Genre: {data[0].genres[0].name}
+                                            
                                         </p>
 
 
@@ -159,7 +151,7 @@ const Details = ({data}) => {
 									<div  class="mt-6 flex flex-col justify-center px-4 py-2 bg-white border border-gray-300 rounded">
 										<div>
 									
-											<p class="text-3xl font-semibold text-center text-green-500 mt-2 " >{data[0].rating.toFixed(0) === "0" ? "NR" : data[0].rating.toFixed(0)}%</p>
+											<p class={"text-3xl rounded font-semibold text-center bg-green-500 text-textwhite mt-2 " + color }>{data[0].rating.toFixed(0) === "0" ? "NR" : data[0].rating.toFixed(0)}%</p>
 											
 											
 
@@ -181,7 +173,7 @@ const Details = ({data}) => {
                                                                 <path d='M12 12c-3.314 0-6 2.687-6 6s2.686 6 6 6 6-2.687 6-6-2.686-6-6-6zm0 11c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5zm0-9c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm1.39 5.939l-1.39-.743-1.39.744.276-1.552-1.136-1.094 1.562-.215.688-1.419.688 1.419 1.562.215-1.137 1.093.277 1.552zm-9.732-17.925l-.658.986 5.234 7.946c.355-.19.731-.345 1.116-.48l-5.692-8.452zm11.537.986l3.051-3h-12.539l3.293 3h6.195zm4.699-1.661l-.667-1-6.605 9.692c.437.034.859.112 1.274.213l5.998-8.905zm-15.787.001l5.996 8.903c.397-.097.802-.173 1.219-.208l-6.571-9.66-.644.965zm10.541 9.127c.369.13.73.277 1.073.458l5.279-7.925-.657-.986-5.695 8.453z' />
                                                             </svg>
                                                             <p className='px-2 text-xs mt-2 text-gray-100  '>
-                                                                Play
+															Superb
                                                             </p>
                                                         </span>
                                                         <span
@@ -291,16 +283,14 @@ const Details = ({data}) => {
                                         <div className='relative mt-8 flex flex-col min-w-0 break-words bg-white w-full mb-4  '>
                                             <div className='w-full align-middle rounded-t-lg'>
                                                 <h4 className='text-xl text-textwhite font-bold relative py-4  '>
-                                                    {data.name} Video Clip
+                                                    {data[0].name} Trailer
                                                 </h4>
                                                 <ReactPlayer
                                                     url={
-                                                        data.clip && data.clip.clips[320]
-                                                            ? data.clip.clips[320]
-                                                            : ""
+                                                        `https://www.youtube.com/watch?v=${data[0].videos[0].video_id}`
                                                     }
-                                                    width='100%'
-                                                    height='100%'
+                                                    width='640px'
+                                                    height='360px'
                                                     controls
                                                     volume={0}
                                                     muted
@@ -313,14 +303,38 @@ const Details = ({data}) => {
                                     <div className='md:pr-12 '>
                                         <section className='pt-3 lg:my-8  '>
                                             <h3 className='text-xl font-semibold'>Genre</h3>
-                                            <ul className='flex flex-wrap items-center mt-1 mb-2'>
-                                                add genre loop logic
+                                            <ul className='flex flex-wrap items-center mt-1 mb-2'> 
+											{data[0].genres.map((genre, i) => {
+												return (
+													<li key={i}>
+														{" "}
+														<span
+															target='_blank'
+															rel='noopener noreferrer'
+															className='text-xs font-semibold inline-block py-1 px-2  rounded text-white  bg-gray-700 uppercase last: m-1 mr-1'>
+															{" "}
+															{genre.name}
+														</span>{" "}
+													</li>
+												);
+											})}
+
                                             </ul>
                                         </section>
                                         <section className=' '>
                                             <h3 className='text-xl font-semibold my-2'>Platform</h3>
                                             <ul className='flex flex-wrap items-center mt-1 mb-2'>
-                                                Add platform loop logic
+												{data[0].platforms.map((platform, i) => {
+                                                    return (
+                                                        <span
+                                                            key={i}
+                                                            target='_blank'
+                                                            rel='noopener noreferrer'
+                                                            className='text-xs font-semibold inline-block py-1 px-2  rounded  bg-blue-100 uppercase last: m-1  mr-1'>
+                                                            {platform.name}
+                                                        </span>
+                                                    );
+                                                })}
                                             </ul>
                                         </section>
 
@@ -342,12 +356,10 @@ const Details = ({data}) => {
 					<section className='pt-20 pb-48'>
 					<div className='container mx-auto px-4'>
 						<div className='flex flex-wrap justify-center text-center mb-24'>
-							<div className='w-full lg:w-6/12 px-4'>
-								<h2 className='text-4xl font-semibold'>Game Developers</h2>
+							<div className='w-full lg:w-11/12 px-4'>
+								<h2 className='text-xl font-semibold'>STORYLINE</h2>
 								<p className='text-lg leading-relaxed m-4 text-gray-600'>
-									According to the National Oceanic and Atmospheric
-									Administration, Ted, Scambos, NSIDClead scentist, puts the
-									potentially record maximum.
+								{data[0].storyline}
 								</p>
 							</div>
 						</div>
