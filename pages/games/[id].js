@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
-const axios = require("axios");
+import axios from 'axios';
+import toDate from 'date-fns/toDate'
 
 export const getStaticPaths = async () => {
 	const games = await axios({
@@ -59,14 +60,14 @@ export const getStaticProps = async (context) => {
 };
 
 const Details = ({ data }) => {
-	console.log("New Test______", data);
-	console.log("New URLLL", data[0].url);
+
 	let factor = 3.5;
 	let color = "";
 	let skip = "hidden";
 	let must_play = "hidden";
 	let outstanding = "hidden";
 	let try_it = "hidden";
+	let convertedDate = toDate(data[0].first_release_date)
 
 	let ratings = data[0].rating.toFixed(0);
 
@@ -139,9 +140,9 @@ const Details = ({ data }) => {
 									<p class='text-textwhite text-center md:text-left font-bold text-2xl'>
 										{data[0].name}
 									</p>
-									<p class='mt-2  text-base text-center md:text-left md:text-base'>
-										Released on {data[0].first_release_date}
-									</p>
+									<time class='mt-2  text-base text-center md:text-left md:text-base'>
+										Released on {(data[0].first_release_date)}
+									</time>
 									<p class='mt-2  text-base text-center md:text-left md:text-base'>
 										Genre: {data[0].genres[0].name}
 									</p>

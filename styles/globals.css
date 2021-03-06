@@ -125,17 +125,3 @@ body {
   .logo {
     height: 4.5em;
   }
-
-
-  .player-wrapper {
-    width: auto; 
-    height: auto; 
-  }
-  .react-player {
-    padding-top: 56.25%; 
-    position: relative; 
-  }
-  
-  .react-player > div {
-    position: absolute; 
-  }

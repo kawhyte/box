@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Card from "../components/Card";
-const axios = require("axios");
+import axios from 'axios';
 
 export const getStaticProps = async () => {
 	const games = await axios({
