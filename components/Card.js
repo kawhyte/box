@@ -3,13 +3,16 @@ import Link from "next/link";
 
 const Trending = ({ games, headerText }) => {
 	return (
-		<main class='grid  min-h-screen mt-12  p-5 container mx-auto pb-6  content-start items-center justify-center'>
-			<h1 className='pb-8  md:text-xl text-gray-400'> {headerText}</h1>
+		<main class='grid  min-h-screen container mx-auto pb-3  content-start items-center justify-center'>
+			<p className=' py-2 text-xl font-light leading-relaxed mt-0 mb-6 '>
+			{headerText}
+		
+		</p>
 			<div>
-				<section class='grid grid-cols-2 sm:grid-cols-4 gap-4'>
-					{games.map((game) => (
+				<section class='grid grid-cols-3 sm:grid-cols-4 gap-1'>
+					{games.map((game ,i) => (
 						<Link href={`/games/${game.id}`} key={game.id}>
-							<div class='bg-gray-800 shadow-lg rounded p-3 max-w-xs '>
+							<div class='bg-gray-800 shadow-lg rounded p-1 max-w-sm '>
 								<div class='group relative'>
 									<img
 										class='w-full  md:w-72 block rounded'
@@ -19,6 +22,20 @@ const Trending = ({ games, headerText }) => {
 										}
 										alt={game.name}
 									/>
+
+									<div className="p-1 absolute top-0 left-0 z-20 ml-0 ">
+									<span
+									  className={
+										"text-xl font-semibold py-1 px-2 rounded text-gray-800 align-middle  lava-text " 
+										
+									  }
+									>
+									{i+1}
+									</span>
+								  </div>
+
+
+
 									<div class='absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly'>
 										<button class='hover:scale-110 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>
 											<svg
@@ -57,10 +74,10 @@ const Trending = ({ games, headerText }) => {
 										</button>
 									</div>
 								</div>
-								<div class='px-2 py-2 '>
+								{/*<div class='px-2 py-2 '>
 									<h3 class='text-white text-sm my-2'>{game.name}</h3>
 									<p class='text-gray-400 text-sm'>{game.genres[0].name}</p>
-								</div>
+									</div>*/}
 							</div>
 						</Link>
 					))}

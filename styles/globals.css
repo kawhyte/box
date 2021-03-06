@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
 
 
 * {
@@ -16,13 +17,14 @@
   /* font-family: 'Press Start 2P', cursive; */
   /* font-family: 'DotGothic16', sans-serif; */
 
-  font-family: 'Roboto', sans-serif;
+  
+  font-family: 'Montserrat', sans-serif;
 
 }
 
 body {
   font-size: 1em;
-  background-color: #15191D;
+  background-color: #212830;
 
 
   color: #8C9CAC;
@@ -38,7 +40,10 @@ body {
 
 
 .headings {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  color:#fff;
+  margin:0;
 }
 
 
@@ -118,4 +123,17 @@ body {
 
 .logo {
   height: 4.5em;
+}
+
+
+.lava-text {
+	background-size: cover;
+	color: rgba(0, 0, 0, 0.3);;
+	
+
+  font-size:2.5em;
+  padding:0;
+  margin:0;
+  text-align:center;
+  -webkit-text-stroke: 3px #fdfdfe;
 }

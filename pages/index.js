@@ -4,6 +4,9 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Card from "../components/Card";
 import axios from 'axios';
+import Welcome from "../components/Welcome";
+import Categories from "../components/Categories";
+import SectionHeaderText from "../components/SectionHeaderText";
 
 export const getStaticProps = async () => {
 	const games = await axios({
@@ -40,6 +43,15 @@ const Home = ({ games }) => {
 			</Head>
 
 			<Hero />
+			<SectionHeaderText
+			
+			games={games.slice(0, 12)}
+			headerText={
+				"Check out the top 50 best video games, according to players:"
+			}
+			/>
+			<Welcome />
+			<Categories />
 
 			<Card
 				games={games}
