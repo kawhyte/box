@@ -72,12 +72,12 @@ function Footer() {
               Powered by
               </h5>
               <a
-              href="https://rawg.io/"
+              href="https://www.igdb.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
             <p className='mt-2 mb-4 text-blue-500'>
-            RAWG.io
+            www.igdb.com
           </p>
             </a>
             </div>

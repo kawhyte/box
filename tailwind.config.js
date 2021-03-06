@@ -22,7 +22,7 @@ module.exports = {
       
       textwhite: '#FFFFFF',
       textgray: '#8C9CAC',
-      lightgray:'#1F2830',
+      lightgray:'#1A1F2C',
       tagsgray: '#283038',
       boxgray: '#333',
 
