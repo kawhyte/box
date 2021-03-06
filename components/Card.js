@@ -9,7 +9,7 @@ const Trending = ({ games, headerText }) => {
 		
 		</p>
 			<div>
-				<section class='grid grid-cols-3 sm:grid-cols-4 gap-1'>
+				<section class='grid grid-cols-5 sm:grid-cols-4 gap-1'>
 					{games.map((game ,i) => (
 						<Link href={`/games/${game.id}`} key={game.id}>
 							<div class='bg-gray-800 shadow-lg rounded p-1 max-w-sm '>

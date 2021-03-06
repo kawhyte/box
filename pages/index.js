@@ -45,7 +45,7 @@ const Home = ({ games }) => {
 			<Hero />
 			<SectionHeaderText
 			
-			games={games.slice(0, 12)}
+			games={games.slice(0, 10)}
 			headerText={
 				"Check out the top 50 best video games, according to players:"
 			}
