@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const Trending = ({ games, headerText }) => {
 	return (
-		<main class='grid  min-h-screen container mx-auto pb-3  content-start items-center justify-center'>
+		<main class='grid container mx-auto pb-3  content-start items-center justify-center'>
 			<p className=' py-2 text-xl font-light leading-relaxed mt-0 mb-6 '>
 			{headerText}
 		
 		</p>
 			<div>
-				<section class='grid grid-cols-5 sm:grid-cols-4 gap-1'>
+				<section class='grid grid-cols-4 sm:grid-cols-4 gap-1'>
 					{games.map((game ,i) => (
 						<Link href={`/games/${game.id}`} key={game.id}>
 							<div class='bg-gray-800 shadow-lg rounded p-1 max-w-sm '>
@@ -26,11 +26,11 @@ const Trending = ({ games, headerText }) => {
 									<div className="p-1 absolute top-0 left-0 z-20 ml-0 ">
 									<span
 									  className={
-										"text-xl font-semibold py-1 px-2 rounded text-gray-800 align-middle  lava-text " 
+										"text-xl font-semibold py-1 px-2 rounded text-gray-800 align-middle bg-textwhite  " 
 										
 									  }
 									>
-									{i+1}
+									{i+1}.
 									</span>
 								  </div>
 

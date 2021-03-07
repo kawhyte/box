@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 @import "@fortawesome/fontawesome-free/css/all.min.css";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Shippori+Mincho+B1:wght@800&display=swap');
 
 
 * {
@@ -44,6 +44,12 @@ body {
   line-height: 1;
   color:#fff;
   margin:0;
+}
+
+.smallheadings{
+
+  font-family: 'Shippori Mincho B1', serif;
+  font-weight: 800;
 }
 
 

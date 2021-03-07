@@ -31,21 +31,19 @@ export default function Landing() {
 										<p className=' text-textwhite  sm:text-lg p-1'>
 											Find the best video games for each year.
 										</p>
-										<p className='text-textwhite sm:text-lg p-1'>
-											Save those you want to play.
-										</p>
+
 										<p className='text-textwhite sm:text-lg p-1'>
 											Tell your friends what’s good.
 										</p>
 										<br className='' />
 									</section>
 
-									<section>
+									{/*<section>
 									
 										<button class='uppercase   mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
 											<i class=" animate-pulse far fa-play-circle">{" "}</i> Get a game Suggestion
 										</button>
-									</section>
+									</section>*/}
 								</div>
 							</div>
 						</div>
