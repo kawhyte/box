@@ -50,12 +50,6 @@ const Home = ({ games }) => {
 			
 
 			
-			<Card
-			games={games}
-			headerText={
-				"Check out the top 50 best video games, according to players:"
-			}
-			/>
 			
 			<SectionHeaderText
 			
@@ -65,6 +59,12 @@ const Home = ({ games }) => {
 			}
 			/>
 			<HighestRatedCard games = {games} />
+			<Card
+			games={games}
+			headerText={
+				"Check out the top 50 best video games, according to players:"
+			}
+			/>
 		</>
 	);
 };

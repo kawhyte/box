@@ -32,13 +32,13 @@ const Trending = ({ games, headerText }) => {
 										
 									  }
 									>
-									{i+1}.
+									{(i+1)+1}.
 									</span>
 								  </div>
 
 
 
-									<div class='absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly'>
+									{/*<div class='absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly'>
 										<button class='hover:scale-110 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>
 											<svg
 												xmlns='http://www.w3.org/2000/svg'
@@ -74,7 +74,7 @@ const Trending = ({ games, headerText }) => {
 												<path d='M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z' />
 											</svg>
 										</button>
-									</div>
+									</div>*/}
 								</div>
 								{/*<div class='px-2 py-2 '>
 									<h3 class='text-white text-sm my-2'>{game.name}</h3>

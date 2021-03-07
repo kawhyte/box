@@ -2,9 +2,9 @@ import React from "react";
 
 function Categories() {
 	const categories = [
-		{ name: "Game of the Year", link:"#goty" },
-		{ name: "Best Casual Games", link:"#casual" },
-		{ name: "Most Played Games", link:"#played"  },
+		{ name: "Game of the Year", link: "#goty" },
+		{ name: "Best Casual Games", link: "#casual" },
+		{ name: "Most Played Games", link: "#played" },
 	];
 
 	return (
@@ -17,11 +17,12 @@ function Categories() {
 				{categories.map((category, i) => {
 					return (
 						<a href={category.link}>
-						<p
-							className='border-b py-3 cursor-pointer hover:bg-blue-700  text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase'
-							key={i}>
-							{category.name}
-						</p></a>
+							<p
+								className='border-b py-3 cursor-pointer hover:bg-blue-700  text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase'
+								key={i}>
+								{category.name}
+							</p>
+						</a>
 					);
 				})}
 
