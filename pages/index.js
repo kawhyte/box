@@ -45,6 +45,18 @@ const Home = ({ games }) => {
 
 			<Hero />
 			<Welcome />
+			<Categories />
+		
+			
+
+			
+			<Card
+			games={games}
+			headerText={
+				"Check out the top 50 best video games, according to players:"
+			}
+			/>
+			
 			<SectionHeaderText
 			
 			games={games.slice(0, 12)}
@@ -52,17 +64,7 @@ const Home = ({ games }) => {
 				"Check out the top 50 best video games, according to players:"
 			}
 			/>
-			
-			<Categories />
-
-			<HighestRatedCard games = {games}></HighestRatedCard>
-
-			<Card
-				games={games}
-				headerText={
-					"Check out the top 50 best video games, according to players:"
-				}
-			/>
+			<HighestRatedCard games = {games} />
 		</>
 	);
 };

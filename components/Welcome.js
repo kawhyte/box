@@ -2,9 +2,9 @@ import React from "react";
 
 function Welcome() {
 	return (
-		<div className='container text-textwhite text-center py-10 rounded-xl my-3'>
-			<h1 className='border-b pb-6 text-4xl font-black headings'>WELCOME</h1>
-			<p className='border-b py-6 text-xl font-light leading-relaxed mt-0 mb-4 '>
+		<div className='container text-textwhite text-center py-10 rounded-xl my-3 mt-48 '>
+			<h1 className='border-b pb-6 text-4xl font-black headings md:text-6xl'>WELCOME</h1>
+			<p className='border-b py-6 text-xl  font-light leading-relaxed mt-0 mb-4 md:text-2xl '>
 				We watched a lot of films in 2020. But it wasn’t just about how many, it
 				was about what we saw. As our worlds contracted, our horizons expanded.
 				The unasked-for gift of time indoors saw us plug historical gaps,

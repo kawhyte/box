@@ -1,23 +1,35 @@
 import React from "react";
 
 function Categories() {
-	return (
-		<div className='container text-textwhite text-left   py-10 rounded-xl my-12  '>
-			<h1 className='border-b pb-3 text-4xl headings font-black uppercase'>Categories</h1>
-			<p className='border-b py-3 text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase'>
-            Categories 1
-			</p>
-			<p className='border-b py-3 text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase'>
-            Categories 2
-			</p>
-			<p className='border-b py-3 text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase'>
-            Categories 3
-			</p>
+	const categories = [
+		{ name: "Game of the Year", link:"#goty" },
+		{ name: "Best Casual Games", link:"#casual" },
+		{ name: "Most Played Games", link:"#played"  },
+	];
 
-            <p className='py-3  tracking-normal text-sm font-thin mb-4 pt-4 text-center'>
-             Small detail will be here
-            </p>
-		</div>
+	return (
+		<>
+			<div className='container text-textwhite text-left max-w-7xl   py-10 rounded-xl my-12  '>
+				<h1 className='border-b pb-3 text-4xl headings font-black uppercase'>
+					Categories
+				</h1>
+
+				{categories.map((category, i) => {
+					return (
+						<a href={category.link}>
+						<p
+							className='border-b py-3 cursor-pointer hover:bg-blue-700  text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase'
+							key={i}>
+							{category.name}
+						</p></a>
+					);
+				})}
+
+				<p className='py-3  tracking-normal text-sm font-thin mb-4 pt-4 text-center'>
+					Small detail will be here
+				</p>
+			</div>
+		</>
 	);
 }
 

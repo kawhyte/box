@@ -23,8 +23,8 @@ const HighestRatedCard = ({ games }) => {
 					<p className='pb-1 text-sm pt-2 font-medium tracking-widest uppercase'>
 						Highest rated causal Game
 					</p>
-                    <Link href={`/games/${games[0].id}`}>
-					<p className='text-textwhite py-2 text-3xl  mt-0 smallheadings'>
+                    <Link  href={`/games/${games[0].id}`}>
+					<p className='text-textwhite hover:text-blue-700 cursor-pointer  py-2 text-3xl  mt-0 smallheadings'>
 						{games[0].name}
 					</p>
                     </Link>

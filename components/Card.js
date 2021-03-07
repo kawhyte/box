@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 
 const Trending = ({ games, headerText }) => {
+
+
 	return (
 		<main class='grid container mx-auto pb-3  content-start items-center justify-center'>
 			<p className=' py-2 text-xl font-light leading-relaxed mt-0 mb-6 '>
