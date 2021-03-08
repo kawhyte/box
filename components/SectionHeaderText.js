@@ -6,7 +6,7 @@ import ReactPlayer from "react-player/youtube";
 const SectionHeaderText = ({ games }) => {
 	
 	return (
-		<div id="casual" className='container bg-bgcolor text-textwhite text-center py-10 rounded-xl my-3'>
+		<div id="casual" className='container container flex	flex-col justify-center max-w-md bg-bgcolor text-textwhite text-center py-10 rounded-xl my-3'>
 			<h1 className=' pb-6 text-base font-bold tracking-widest headings uppercase'>
 				Trends
 			</h1>

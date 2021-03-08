@@ -9,7 +9,7 @@ function Categories() {
 
 	return (
 		<>
-			<div className='container text-textwhite text-left max-w-7xl   py-10 rounded-xl my-12  '>
+			<div className='container flex	flex-col justify-center max-w-md bg-blue-600 text-textwhite text-left    py-10 rounded-xl my-12  '>
 				<h1 className='border-b pb-3 text-4xl headings font-black uppercase'>
 					Categories
 				</h1>

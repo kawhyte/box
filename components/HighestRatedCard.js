@@ -9,7 +9,7 @@ const HighestRatedCard = ({ games }) => {
 	let ratings = games[0] && games[0].rating.toFixed(0);
 	return (
 		<>
-			<div className='container flex flex-col justify-center bg-bgcolor my-3    max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl'>
+			<div className='flex flex-col justify-center bg-bgcolor my-3 max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl'>
 				<div>
 					<ReactPlayer
 						url={`https://www.youtube.com/watch?v=${
@@ -22,7 +22,7 @@ const HighestRatedCard = ({ games }) => {
 					/>
 				</div>
 
-				<div className='text-left my-2 mt-1'>
+				<div className='text-left my-2 mx-5 mt-5'>
 					<p className='pb-1 text-sm pt-2 font-medium tracking-widest uppercase'>
 						Highest rated causal Game
 					</p>
@@ -49,9 +49,13 @@ const HighestRatedCard = ({ games }) => {
 						{games[0].summary}
 					</p>
 				</div>
+
+			<Card games={games.splice(1, 12) }  />
 			</div>
 			
-			<Card games={games.splice(1, 10) }  />
+			<div className='flex flex-col justify-center bg-bgcolor my-3    max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl'>
+			
+			</div>
 		</>
 	);
 };

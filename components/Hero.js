@@ -31,10 +31,10 @@ export default function Landing() {
 					<div className='w-full lg:w-8/12 px-4 ml-auto mr-auto text-center'>
 						<div className='flex flex-col items-center'>
 							<p className=' hero  text-textwhite   sm:p-5'>
-								2020
+							Video Game
 							</p>
 							<p className='text-4xl font-black headings text-textwhite tracking-wider uppercase   sm:text-5xl md:text-6xl '>
-								Video Game Concierge
+								Concierge
 							</p>
 						
 							{/*<section className='mb-1  mt-6 leading-10 font- text-gray-900 text-xl  sm:text-3xl md:text-4xl sm:leading-none lg:text-5xl'>
