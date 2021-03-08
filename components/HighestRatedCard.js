@@ -10,7 +10,7 @@ const HighestRatedCard = ({ games }) => {
 	return (
 		<>
 		
-			<div className='flex flex-col justify-center bg-bgcolor my-3   mx-auto rounded-xl shadow-md overflow-hidden max-w-md  md:max-w-xl lg:max-w-7xl'>
+			<div className='flex flex-col justify-center bg-bgcolor my-3   mx-auto rounded-xl shadow-md overflow-hidden max-w-md sm:max-w-lg  md:max-w-xl lg:max-w-7xl'>
 				<div className="hidden md:block  ">
 					<ReactPlayer
 						url={`https://www.youtube.com/watch?v=${
