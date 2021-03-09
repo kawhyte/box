@@ -50,8 +50,8 @@ export default function Landing() {
 
 							{/*<section>
 							
-								<button class='uppercase   mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
-									<i class=" animate-pulse far fa-play-circle">{" "}</i> Get a game Suggestion
+								<button className='uppercase   mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
+									<i className=" animate-pulse far fa-play-circle">{" "}</i> Get a game Suggestion
 								</button>
 							</section>*/}
 						</div>

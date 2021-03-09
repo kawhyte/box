@@ -14,7 +14,7 @@ export const getStaticPaths = async () => {
 			Authorization: process.env.Authorization,
 		},
 		data:
-			"fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos,websites;limit 50; where rating >= 80 & release_dates.date > 1609801680; sort rating desc;",
+			"fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;limit 50; where id = (11169,109462,26192,113112,75235);",
 	})
 		.then((response) => {
 			return response.data;
@@ -46,7 +46,7 @@ export const getStaticProps = async (context) => {
 			"Client-ID": process.env.ClientID,
 			Authorization: process.env.Authorization,
 		},
-		data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms.*,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;limit 1; where rating >= 80 & release_dates.date > 1609801680 & id = ${id}; sort rating desc;`,
+		data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms.*,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;limit 1; where id = ${id}; sort rating desc;`,
 	})
 		.then((response) => {
 			return response.data;
@@ -94,7 +94,7 @@ const Details = ({ data }) => {
 	if (ratings >= 86) {
 		must_play = "";
 	}
-
+	console.log("YYYYY3", data[0].release_dates[0].human);
 	return (
 		<>
 			<main>
@@ -127,30 +127,30 @@ const Details = ({ data }) => {
 
 				<section className='pb-8 md:pb-20 bg-bgcolor  -mt-32   '>
 					<div className='container mx-auto px-4'>
-						<div class='py-6'>
-							<div class=' relative flex flex-col md:flex-row justify-center items-center  max-w-xl min-w-min bg-white overflow-hidden'>
+						<div className='py-6'>
+							<div className=' relative flex flex-col md:flex-row justify-center items-center  max-w-xl min-w-min bg-white overflow-hidden'>
 								<img
-									class='w-3/6 min-w-max bg-cover '
+									className='w-3/6 min-w-max bg-cover '
 									src={
 										data[0].cover &&
 										data[0].cover.url.replace("t_thumb", "t_cover_big")
 									}></img>
 
-								<div class='w-2/3 p-4'>
-									<p class='text-textwhite text-center md:text-left font-bold text-2xl'>
+								<div className='w-2/3 p-4'>
+									<p className='text-textwhite text-center md:text-left font-bold text-2xl'>
 										{data[0].name}
 									</p>
-									<time class='mt-2  text-base text-center md:text-left md:text-base'>
-										Released on {data[0].first_release_date}
+									<time className='mt-2  text-base text-center md:text-left md:text-base'>
+										Released on {data[0].release_dates[0].human}
 									</time>
-									<p class='mt-2  text-base text-center md:text-left md:text-base'>
+									<p className='mt-2  text-base text-center md:text-left md:text-base'>
 										Genre: {data[0].genres[0].name}
 									</p>
 
-									<div class='mt-6 flex flex-col justify-center px-4 py-2 bg-white border border-gray-300 rounded'>
+									<div className='mt-6 flex flex-col justify-center px-4 py-2 bg-white border border-gray-300 rounded'>
 										<div>
 											<p
-												class={
+												className={
 													"text-3xl rounded font-semibold text-center bg-green-500 text-textwhite mt-2 " +
 													color
 												}>
@@ -261,6 +261,8 @@ const Details = ({ data }) => {
 							url={`https://www.youtube.com/watch?v=${data[0].videos[0].video_id}`}
 							width={`${factor * 16}vw`}
 							height={`${factor * 9}vw`}
+							playing
+							loop
 							controls
 							volume={0}
 							muted

@@ -22,16 +22,16 @@ export default function Navbar(props) {
 							}>
 							<a>
 								<img
-									class=' lg:block h-8 w-auto'
+									className=' lg:block h-8 w-auto'
 									src='https://res.cloudinary.com/babyhulk/image/upload/v1613758687/GameBox/gamebox-logo-indigo-500-mark-white-text-01.svg'
 									alt='Workflow'
 								/>
 							</a>
 						</Link>
 
-						<div class='flex-shrink-0 flex items-start'>
+						<div className='flex-shrink-0 flex items-start'>
 							<img
-								class='hidden  lg:hidden h-8 w-auto'
+								className='hidden  lg:hidden h-8 w-auto'
 								src='https://res.cloudinary.com/babyhulk/image/upload/v1613758689/GameBox/gamebox-mark-indigo-500-01.svg'
 								alt='Workflow'
 							/>

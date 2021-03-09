@@ -20,7 +20,7 @@ export const getStaticProps = async () => {
 			Authorization: process.env.Authorization,
 		},
 		data:
-			"fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;limit 50; where rating >= 80 & release_dates.date > 1609801680; sort rating desc;",
+			"fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;limit 50; where id = (11169,109462,26192,113112,75235); ",
 	})
 		.then((response) => {
 			// console.log(response.data);
@@ -36,6 +36,8 @@ export const getStaticProps = async () => {
 };
 
 const Home = ({ games }) => {
+
+
 	return (
 		<>
 			<Head>
@@ -53,9 +55,12 @@ const Home = ({ games }) => {
 			
 			<SectionHeaderText
 			
-			games={games.slice(0, 12)}
+			
 			headerText={
-				"Check out the top 50 best video games, according to players:"
+				"2020 GAME OF THE YEAR"
+			}
+			paragraphText={
+				"We watched a lot of films in 2020. But it wasn’t just about how many"
 			}
 			/>
 			<HighestRatedCard games = {games} />
