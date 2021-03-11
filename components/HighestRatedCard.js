@@ -14,7 +14,7 @@ const HighestRatedCard = ({ games }) => {
 				<div className='hidden md:block  '>
 					<ReactPlayer
 						url={`https://www.youtube.com/watch?v=${
-							games[0] && games[0].videos[0].video_id
+							games[0].videos && games[0].videos[0].video_id
 						}`}
 						playing
 						loop
@@ -80,6 +80,12 @@ const HighestRatedCard = ({ games }) => {
 					<p className='text-textwhite py-2 text-base font-medium  mt-2  '>
 						Rating {ratings}%
 					</p>
+
+
+					<time className='mt-2  text-base text-center md:text-left md:text-base'>
+					Released on {games[0].release_dates[0].date}
+				</time>
+
 					<p className='text-textgray py-2 text-base font-medium  mt-0 '>
 						{games[0].summary}
 					</p>
