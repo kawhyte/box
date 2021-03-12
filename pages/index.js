@@ -39,14 +39,24 @@ export const getStaticProps = async () => {
 };
 
 const Home = ({ games }) => {
-
-	
-	let sortedGames = games.sort((a, b) => {
-		//console.log("@@a.total_rating@@",a.total_rating ,"%%B.total_rating&&", b.total_rating);
+	const sortedGames = games.sort((a, b) => {
 		return b.total_rating - a.total_rating;
-	});
-	
-	console.log("@@TTT7@@",sortedGames);
+	}).sort((a,b)=>{
+		return b.rating_count - a.rating_count;
+
+	}
+
+
+	);
+
+	// console.log("@@sortedGames@@", sortedGames);
+
+	const nintendo = sortedGames.filter((game) => game.platforms.includes(130));
+	const ps4 = sortedGames.filter((game) => game.platforms.includes(48));
+	const xbox = sortedGames.filter((game) => game.platforms.includes(49));
+	const pc = sortedGames.filter((game) => game.platforms.includes(6));
+
+	console.log("Nintendo6", nintendo);
 
 	return (
 		<>
@@ -54,23 +64,55 @@ const Home = ({ games }) => {
 				<title>GameBox | Home</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-
 			<Hero games={sortedGames} />
 			<Welcome />
 			<Categories />
-
+			// Game of the Year section
 			<SectionHeaderText
-				headerText={"2020 GAME OF THE YEAR"}
+				headerText={"Highest rated  OF THE YEAR"}
 				paragraphText={
 					"We watched a lot of films in 2020. But it wasn’t just about how many"
 				}
 			/>
-
 			<HighestRatedCard
 				games={sortedGames}
 				headerText={"2020 Highest rated Games"}
 			/>
-
+			// Best Nintendo switch games of the Year section
+			<SectionHeaderText
+				headerText={"Best Nintendo Switch Games"}
+				paragraphText={
+					"We watched a lot of films in 2020. But it wasn’t just about how many"
+				}
+			/>
+			<HighestRatedCard
+				games={nintendo}
+				headerText={"2020 best Nintendo Switch Games"}
+			/>
+			// Best PlayStation games of the Year section
+			<SectionHeaderText
+				headerText={"Best PlayStation Games"}
+				paragraphText={
+					"We watched a lot of films in 2020. But it wasn’t just about how many"
+				}
+			/>
+			<HighestRatedCard games={ps4} headerText={"2020 best PS Games"} />
+			// Best Xbox games of the Year section
+			<SectionHeaderText
+				headerText={"Best Xbox Games"}
+				paragraphText={
+					"We watched a lot of films in 2020. But it wasn’t just about how many"
+				}
+			/>
+			<HighestRatedCard games={xbox} headerText={"2020 best Xbox Games"} />
+			// Best Xbox games of the Year section
+			<SectionHeaderText
+				headerText={"Best PC Games"}
+				paragraphText={
+					"We watched a lot of films in 2020. But it wasn’t just about how many"
+				}
+			/>
+			<HighestRatedCard games={pc} headerText={"2020 best PC Games"} />
 			<Card
 				games={sortedGames}
 				headerText={
