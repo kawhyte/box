@@ -39,6 +39,15 @@ export const getStaticProps = async () => {
 };
 
 const Home = ({ games }) => {
+
+	
+	let sortedGames = games.sort((a, b) => {
+		//console.log("@@a.total_rating@@",a.total_rating ,"%%B.total_rating&&", b.total_rating);
+		return b.total_rating - a.total_rating;
+	});
+	
+	console.log("@@TTT7@@",sortedGames);
+
 	return (
 		<>
 			<Head>
@@ -46,7 +55,7 @@ const Home = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<Hero games ={games} />
+			<Hero games={sortedGames} />
 			<Welcome />
 			<Categories />
 
@@ -57,9 +66,13 @@ const Home = ({ games }) => {
 				}
 			/>
 
-			<HighestRatedCard games={games} />
+			<HighestRatedCard
+				games={sortedGames}
+				headerText={"2020 Highest rated Games"}
+			/>
+
 			<Card
-				games={games}
+				games={sortedGames}
 				headerText={
 					"Check out the top 50 best video games, according to players:"
 				}

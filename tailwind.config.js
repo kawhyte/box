@@ -28,7 +28,7 @@ module.exports = {
       boxgray: '#333',
 
 
-      accentColor:'#ecc94a',
+      accentColor:'#6365F1',
       mainBrown:'#493d3b',
       bgColor:'#F8F5F0',
 

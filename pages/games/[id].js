@@ -97,7 +97,7 @@ const Details = ({ data }) => {
 	if (ratings >= 86) {
 		must_play = "";
 	}
-	console.log("YYYYY3", data[0].release_dates[0].date);
+	//console.log("YYYYY3", data[0].release_dates[0].date);
 	return (
 		<>
 			<main>

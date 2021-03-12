@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Landing({ games }) {
-	console.log(games);
+	//console.log(games);
 	return (
 		<>
 			<main className=''>
@@ -120,7 +120,7 @@ export default function Landing({ games }) {
 								<p className='text-5xl  font-black headings text-textwhite tracking-wider uppercase   sm:text-6xl md:text-6xl lg:text-15xl xl:text-10xl  '>
 									Video Game
 								</p>
-								<p className='text-5xl font-black headings text-textwhite tracking-wider uppercase   sm:text-5xl md:text-6xl '>
+								<p className='text-5xl font-black headings text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl '>
 									Concierge
 								</p>
 
