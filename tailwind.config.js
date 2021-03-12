@@ -153,6 +153,15 @@ module.exports = {
         '4xl': '2.25rem',
         '5xl': '3rem',
         '6xl': '4rem',
+        "7xl": "5rem",
+        "7.5xl": "6rem",
+        "8xl": "7rem",
+        "8.5xl": "8rem",
+        "9xl": "9rem",
+        "10xl": "10rem",
+        "11xl": "11rem",
+        "12xl": "12rem",
+        "15xl": "15rem",
       },
     },
 
@@ -160,7 +169,8 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    opacity: ["responsive", "hover", "focus", "group-hover"],
+    display: ["responsive", "hover", "focus", "last"],
   },
   plugins: [],
 }
