@@ -10,7 +10,7 @@ const SectionHeaderText = ({headerText, paragraphText}) => {
 			<h1 className=' pb-6 text-base font-bold tracking-widest headings uppercase'>
 				Trends
 			</h1>
-			<h1 className='pb-6 text-4xl font-black headings uppercase'>{headerText}</h1>
+			<h1 className='pb-6 text-3xl font-black headings uppercase'>{headerText}</h1>
 			<p className=' py-2 text-xl font-light leading-relaxed mt-0 mb-6 '>
 				{paragraphText}
 			</p>

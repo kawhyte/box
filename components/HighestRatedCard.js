@@ -56,7 +56,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 							</div>
 						</div>
 
-						<div className='container text-left my-2 mx-5 -mt-16  flex flex-col z-10 '>
+						<div className='container text-left my-2 mx-5 -mt-16  flex flex-col z-10  '>
 							<p className='pb-1 text-sm pt-2 text-gray-200 font-medium tracking-widest uppercase'>
 								{headerText}
 							</p>
@@ -71,7 +71,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 								</p>
 
 								<Link href={`/games/${game.id}`}>
-									<p className='text-textwhite hover:text-blue-700 cursor-pointer  py-2 text-3xl  mt-0 smallheadings'>
+									<p className='text-textwhite hover:text-blue-700 cursor-pointer  py-2 pr-8  text-3xl  mt-0 smallheadings'>
 										{game.name}
 									</p>
 								</Link>
@@ -80,7 +80,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 								Rating {game.total_rating.toFixed(2)}%
 							</p>
 
-							<p className='text-textgray py-2 text-base font-medium  mt-0 '>
+							<p className='text-textgray py-2 text-base font-medium mt-0 pr-8 '>
 								{game.summary}
 							</p>
 						</div>

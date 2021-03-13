@@ -51,15 +51,15 @@ export default function Navbar(props) {
 					<div
 						className={
 							"lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
-							(navbarOpen ? " block rounded shadow-lg" : " hidden")
+							(navbarOpen ? " block rounded shadow-lg bg-gray-300" : " hidden")
 						}
 						id='example-navbar-warning'>
-						<ul className='flex flex-col lg:flex-row list-none mr-auto'>
+						<ul className='flex flex-col lg:flex-row list-none mr-auto '>
 							<li className='flex items-center'>
 								<a
 									className={
 										(props.transparent
-											? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800"
+											? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
 											: "text-gray-800 hover:text-gray-600") +
 										" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
 									}
