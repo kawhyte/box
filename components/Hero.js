@@ -6,7 +6,7 @@ export default function Landing({ games }) {
 		<>
 			<main className=''>
 				<div
-					className='relative  pb-6 flex  content-end items-center justify-center  '
+					className='relative pb-6 flex  content-end items-center justify-center  '
 					style={{
 						minHeight: "43vh",
 					}}>
@@ -20,10 +20,17 @@ export default function Landing({ games }) {
 							id='blackOverlay'
 							className='w-full h-full absolute opacity-75 bg-black  '></span>
 					</div>*/}
+					<div className='absolute text-pop-up-top  top-0 w-full max-w-screen-2xl justify-center flex flex-col items-center z-10  h-full '>
+						<p className='text-7xl headings text-center  w-full  font-black headings text-textwhite tracking-wider uppercase   sm:text-8xl md:text-8xl lg:text-15xl xl:text-10xl  '>
+							Video Game 
+						</p>
+						<p className='text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl '>
+							Concierge
+						</p>
+					</div>
 					<div className=''>
-						<div class='relative w-full grid grid-cols-4 lg:grid-cols-5 lg:gap-4 -skew-y-12'>
+						<div class='relative w-full  grid grid-cols-3 md:grid-cols-3  lg:grid-cols-6 lg:gap-4'>
 							<div>
-								{" "}
 								<img
 									className='w-full col-span-2  md:w-72 block rounded'
 									src={
@@ -31,6 +38,47 @@ export default function Landing({ games }) {
 										games[0].cover.url.replace("t_thumb", "t_cover_big")
 									}
 									alt={games[0].name}
+								/>
+							</div>
+							<div>
+								<img
+									className='w-full col-span-2  md:w-72 block rounded'
+									src={
+										games[0].cover &&
+										games[0].cover.url.replace("t_thumb", "t_cover_big")
+									}
+									alt={games[0].name}
+								/>
+							</div>
+							<div>
+								<img
+									className='w-full col-span-2  md:w-72 block rounded'
+									src={
+										games[0].cover &&
+										games[0].cover.url.replace("t_thumb", "t_cover_big")
+									}
+									alt={games[0].name}
+								/>
+							</div>
+							<div>
+								<img
+									className='w-full col-span-2  md:w-72 block rounded'
+									src={
+										games[0].cover &&
+										games[0].cover.url.replace("t_thumb", "t_cover_big")
+									}
+									alt={games[0].name}
+								/>
+							</div>
+							<div>
+								{" "}
+								<img
+									className='w-full col-span-3  md:w-72 block rounded'
+									src={
+										games[1].cover &&
+										games[1].cover.url.replace("t_thumb", "t_cover_big")
+									}
+									alt={games[1].name}
 								/>
 							</div>
 							<div>
@@ -89,6 +137,7 @@ export default function Landing({ games }) {
 									alt={games[5].name}
 								/>
 							</div>
+
 							<div>
 								{" "}
 								<img
@@ -111,6 +160,9 @@ export default function Landing({ games }) {
 									alt={games[7].name}
 								/>
 							</div>
+							<span
+								id='blackOverlay'
+								className='w-full h-full absolute opacity-80 bg-gray-900  '></span>
 						</div>
 					</div>
 
@@ -118,18 +170,18 @@ export default function Landing({ games }) {
 						className='top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden'
 						style={{ height: "70px", transform: "translateZ(0)" }}></div>
 				</div>
-				<div className='container relative mx-auto -mt-32  '>
+				{/*<div className=' relative mx-auto -mt-40  '>
 					<div className='items-center flex flex-wrap'>
-						<div className='w-full lg:w-10/12 h-10/12  px-4 ml-auto mr-auto text-center'>
-							<div className='flex flex-col bg-bgcolor p-12 items-center text-pop-up-top'>
-								<p className='text-5xl  font-black headings text-textwhite tracking-wider uppercase   sm:text-6xl md:text-6xl lg:text-15xl xl:text-10xl  '>
+						<div className='w-full lg:w-11/12 h-10/12  px-4 ml-auto mr-auto text-center'>
+							<div className='flex flex-col p-12 items-center text-pop-up-top'>
+								<p className='text-5xl bg-red-100 font-black heading text-textwhite tracking-wider uppercase   sm:text-6xl md:text-6xl lg:text-15xl xl:text-10xl  '>
 									Video Game
 								</p>
-								<p className='text-5xl font-black headings text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl '>
+								<p className='text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl '>
 									Concierge
 								</p>
 
-								{/*<section className='mb-1  mt-6 leading-10 font- text-gray-900 text-xl  sm:text-3xl md:text-4xl sm:leading-none lg:text-5xl'>
+								<section className='mb-1  mt-6 leading-10 font- text-gray-900 text-xl  sm:text-3xl md:text-4xl sm:leading-none lg:text-5xl'>
 								<p className=' text-textwhite  sm:text-lg p-1'>
 									Find the best video games for each year.
 								</p>
@@ -140,16 +192,16 @@ export default function Landing({ games }) {
 								<br className='' />
 							</section> */}
 
-								{/*<section>
+				{/*<section>
 							
 								<button className='uppercase   mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
 									<i className=" animate-pulse far fa-play-circle">{" "}</i> Get a game Suggestion
 								</button>
-							</section>*/}
+							</section>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>*/}
 			</main>
 		</>
 	);
