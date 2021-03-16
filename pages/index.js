@@ -67,7 +67,7 @@ const Home = ({ games }) => {
 			<Hero games={sortedGames} />
 			<Welcome />
 			<Categories />
-			// Game of the Year section
+		
 			<SectionHeaderText
 				headerText={"Highest rated  OF THE YEAR"}
 				paragraphText={
@@ -78,7 +78,7 @@ const Home = ({ games }) => {
 				games={sortedGames}
 				headerText={"2020 Highest rated Games"}
 			/>
-			// Best Nintendo switch games of the Year section
+	
 			<SectionHeaderText
 				headerText={"Best Nintendo Switch Games"}
 				paragraphText={
@@ -89,7 +89,7 @@ const Home = ({ games }) => {
 				games={nintendo}
 				headerText={"2020 best Nintendo Switch Games"}
 			/>
-			// Best PlayStation games of the Year section
+		
 			<SectionHeaderText
 				headerText={"Best PlayStation Games"}
 				paragraphText={
@@ -97,7 +97,7 @@ const Home = ({ games }) => {
 				}
 			/>
 			<HighestRatedCard games={ps4} headerText={"2020 best PS Games"} />
-			// Best Xbox games of the Year section
+			
 			<SectionHeaderText
 				headerText={"Best Xbox Games"}
 				paragraphText={
@@ -105,7 +105,7 @@ const Home = ({ games }) => {
 				}
 			/>
 			<HighestRatedCard games={xbox} headerText={"2020 best Xbox Games"} />
-			// Best Xbox games of the Year section
+		
 			<SectionHeaderText
 				headerText={"Best PC Games"}
 				paragraphText={

@@ -1,14 +1,14 @@
 import React from "react";
 import axios from "axios";
 import Card from "./Card";
-import ReactPlayer from "react-player/youtube";
+import ReactPlayer from 'react-player/lazy';
 import Link from "next/link";
 
 const HighestRatedCard = ({ games, headerText }) => {
 	let factor = 5.7;
 	
 	return (
-		<div className="flex  flex-col items-center  justify-center">
+		<div className=" container flex  flex-col items-center  justify-center">
 		{games.slice(0, 3).map((game, i) => (
 			<>
 			<div className='flex flex-col justify-center bg-bgcolor my-12 rounded-xl lg:shadow-none overflow-hidden min-w-min max-w-2xl md:max-w-xl lg:max-w-5xl  '>
