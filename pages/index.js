@@ -49,8 +49,6 @@ const Home = ({ games }) => {
 
 	);
 
-	// console.log("@@sortedGames@@", sortedGames);
-
 	const nintendo = sortedGames.filter((game) => game.platforms.includes(130));
 	const ps4 = sortedGames.filter((game) => game.platforms.includes(48));
 	const xbox = sortedGames.filter((game) => game.platforms.includes(49));
