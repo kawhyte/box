@@ -10,7 +10,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 	return (
 		<div className=" container flex  flex-col items-center  justify-center">
 		{games.slice(0, 3).map((game, i) => (
-			<>
+			<div key={i} >
 			<div className='flex flex-col justify-center bg-bgcolor my-12 rounded-xl lg:shadow-none overflow-hidden min-w-min max-w-2xl md:max-w-xl lg:max-w-5xl  '>
 						
 						<div className='hidden md:block lg:hidden'>
@@ -98,7 +98,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 							</p>
 						</div>
 						</div>
-					</>
+					</div>
 				))}
 
 				<div className='flex flex-col lg:mb-56 justify-center pb-4 bg-bgcolor max-w-md mx-auto rounded-xl shadow-md  md:max-w-3xl'>

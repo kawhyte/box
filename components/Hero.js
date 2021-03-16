@@ -10,7 +10,7 @@ export default function Landing({ games }) {
 
 
 
-	//console.log(games);
+
 	return (
 		<>
 			<main className=''>
@@ -38,7 +38,7 @@ export default function Landing({ games }) {
 						</p>
 					</div>
 					<div className=''>
-						<div class='relative w-full   grid grid-cols-3 md:grid-cols-3  lg:grid-cols-6 lg:gap-4'>
+						<div className='relative w-full   grid grid-cols-3 md:grid-cols-3  lg:grid-cols-6 lg:gap-4'>
 							<div className="animate-pulse">
 								<img
 									className='w-full col-span-2  md:w-72 block rounded'

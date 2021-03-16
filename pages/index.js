@@ -26,7 +26,7 @@ export const getStaticProps = async () => {
 			 limit 500; where release_dates.date > 1577903637 & id = (${gameId});`,
 	})
 		.then((response) => {
-			// console.log(response.data);
+		
 			return response.data;
 		})
 		.catch((err) => {
@@ -54,7 +54,7 @@ const Home = ({ games }) => {
 	const xbox = sortedGames.filter((game) => game.platforms.includes(49));
 	const pc = sortedGames.filter((game) => game.platforms.includes(6));
 
-	console.log("Nintendo6", nintendo);
+
 
 	return (
 		<>

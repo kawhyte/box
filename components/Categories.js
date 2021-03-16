@@ -16,7 +16,7 @@ function Categories() {
 
 				{categories.map((category, i) => {
 					return (
-						<a href={category.link}>
+						<a href={category.link} key={i}>
 							<p
 								className='border-b py-3 cursor-pointer hover:bg-blue-700  text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase'
 								key={i}>

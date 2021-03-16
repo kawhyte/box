@@ -1,0 +1,17 @@
+# Next-on-Netlify Redirects
+/  /.netlify/functions/next_index  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/1QnYsB_qj6IT1QycUvrsg/games/109462.json  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/1QnYsB_qj6IT1QycUvrsg/games/11169.json  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/1QnYsB_qj6IT1QycUvrsg/games/113112.json  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/1QnYsB_qj6IT1QycUvrsg/games/133004.json  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/1QnYsB_qj6IT1QycUvrsg/games/26192.json  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/1QnYsB_qj6IT1QycUvrsg/games/75235.json  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/1QnYsB_qj6IT1QycUvrsg/index.json  /.netlify/functions/next_index  200!  Cookie=__prerender_bypass,__next_preview_data
+/api/hello  /.netlify/functions/next_api_hello  200
+/games/109462  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/games/11169  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/games/113112  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/games/133004  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/games/26192  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/games/75235  /.netlify/functions/next_games_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/image*  url=:url w=:width q=:quality  /.netlify/functions/next_image?url=:url&w=:width&q=:quality  200
