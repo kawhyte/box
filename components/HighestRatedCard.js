@@ -5,15 +5,15 @@ import ReactPlayer from "react-player/youtube";
 import Link from "next/link";
 
 const HighestRatedCard = ({ games, headerText }) => {
-	let factor = 4.5;
+	let factor = 5.7;
 	
 	return (
-		<>
+		<div className="flex  flex-col items-center  justify-center">
 		{games.slice(0, 3).map((game, i) => (
 			<>
-			<div className='flex flex-col justify-center bg-bgcolor my-3   mx-auto rounded-xl shadow-md overflow-hidden max-w-md sm:max-w-lg  md:max-w-xl lg:max-w-7xl'>
-						{console.log("This is he Rating - ", game.total_rating.toFixed(2))}
-						<div className='hidden md:block  '>
+			<div className='flex flex-col justify-center bg-bgcolor my-12 rounded-xl lg:shadow-none overflow-hidden min-w-min max-w-2xl md:max-w-xl lg:max-w-5xl  '>
+						
+						<div className='hidden md:block lg:hidden'>
 							<ReactPlayer
 								url={`https://www.youtube.com/watch?v=${
 									game.videos && game.videos[0].video_id
@@ -22,8 +22,21 @@ const HighestRatedCard = ({ games, headerText }) => {
 								loop
 								volume={0}
 								muted
-								width={`${factor * 16}vw`}
-								height={`${factor * 9}vw`}
+							
+							/>
+						</div>
+						<div className='hidden  lg:block'>
+							<ReactPlayer
+								url={`https://www.youtube.com/watch?v=${
+									game.videos && game.videos[0].video_id
+								}`}
+								playing
+								loop
+								volume={0}
+								muted
+								width= {1020}
+								height={600}
+							
 							/>
 						</div>
 
@@ -80,7 +93,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 								Rating {game.total_rating.toFixed(2)}%
 							</p>
 
-							<p className='text-textgray py-2 text-base font-medium mt-0 pr-8 '>
+							<p className='text-textgray py-2 lg:mr-32 text-base font-medium mt-0 pr-8 '>
 								{game.summary}
 							</p>
 						</div>
@@ -88,13 +101,13 @@ const HighestRatedCard = ({ games, headerText }) => {
 					</>
 				))}
 
-				<div className='flex flex-col  justify-center pb-4 bg-bgcolor max-w-md mx-auto rounded-xl shadow-md  md:max-w-3xl'>
+				<div className='flex flex-col lg:mb-56 justify-center pb-4 bg-bgcolor max-w-md mx-auto rounded-xl shadow-md  md:max-w-3xl'>
 					{/*<p className='pb-1 text-sm text-textwhite font-medium tracking-widest uppercase container'>
 						Full List
 							</p>*/}
 					<Card games={games.slice(3,11)} />
 				</div>
-		</>
+		</div>
 	);
 };
 
