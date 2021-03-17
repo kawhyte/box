@@ -46,7 +46,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 								style={{
 									minHeight: "35vh",
 								}}>
-								<div
+								{<div
 									className='absolute top-0 w-full h-full bg-center bg-cover'
 									style={{
 										backgroundImage: `url('${
@@ -61,7 +61,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 									<span
 										id='blackOverlay'
 										className='w-full h-full absolute opacity-50 bg-black bg-bgcolor'></span>
-								</div>
+								</div>}
 
 								<div
 									className='top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden'
@@ -90,7 +90,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 								</Link>
 							</div>
 							<p className='text-textwhite py-2 text-base font-medium  mt-2  '>
-								Rating {game.total_rating.toFixed(2)}%
+								Rating {game.total_rating}%
 							</p>
 
 							<p className='text-textgray py-2 lg:mr-32 text-base font-medium mt-0 pr-8 '>

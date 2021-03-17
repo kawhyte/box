@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "IkZV");
+/******/ 	return __webpack_require__(__webpack_require__.s = "wmiK");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3230,51 +3230,6 @@ function getConstructorName (obj) {
   return (receiver.constructor && receiver.constructor.name) || null
 }
 
-
-/***/ }),
-
-/***/ "IkZV":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
-var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("CpcB");
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__);
-
-        
-      const { processEnv } = __webpack_require__("fXeI")
-      processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nDB_PASS=mypassword"}])
-    
-        
-        const runtimeConfig = {}
-        
-        
-        
-        
-  
-        
-  
-        const apiHandler = Object(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__["getApiHandler"])({
-          pageModule: __webpack_require__("Nxiy"),
-          rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
-          i18n: undefined,
-          page: "/api/hello",
-          basePath: "",
-          pageIsDynamic: false,
-          encodedPreviewProps: {previewModeId:"cc68976179729a2366d9c9db384787a3",previewModeSigningKey:"f17017bd42bce930f89c6aa8bbaa58a61211f394dafdf73665318fb5b70acc9b",previewModeEncryptionKey:"e80a89bda920642aea14c006e1258f22415f83f0b5b4ec8ae8ae0e5eb21a4c4d"},
-          experimental: {
-            onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
-            initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
-          }
-        })
-        /* harmony default export */ __webpack_exports__["default"] = (apiHandler);
-      
 
 /***/ }),
 
@@ -13111,6 +13066,51 @@ module.exports = JSON.parse("[[\"8740\",\"䏰䰲䘃䖦䕸𧉧䵷䖳𧲱䳢𧳅�
 "use strict";
 exports.__esModule=true;exports.normalizePathSep=normalizePathSep;exports.denormalizePagePath=denormalizePagePath;function normalizePathSep(path){return path.replace(/\\/g,'/');}function denormalizePagePath(page){page=normalizePathSep(page);if(page.startsWith('/index/')){page=page.slice(6);}else if(page==='/index'){page='/';}return page;}
 //# sourceMappingURL=denormalize-page-path.js.map
+
+/***/ }),
+
+/***/ "wmiK":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
+var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("CpcB");
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__);
+
+        
+      const { processEnv } = __webpack_require__("fXeI")
+      processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nDB_PASS=mypassword"}])
+    
+        
+        const runtimeConfig = {}
+        
+        
+        
+        
+  
+        
+  
+        const apiHandler = Object(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__["getApiHandler"])({
+          pageModule: __webpack_require__("Nxiy"),
+          rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
+          i18n: undefined,
+          page: "/api/hello",
+          basePath: "",
+          pageIsDynamic: false,
+          encodedPreviewProps: {previewModeId:"9f6214d367288b8f03585b2dcb73a776",previewModeSigningKey:"79d5c804aca70328ce25bea3a523e69243d37ba9230f9ad8206648f9da5ae4ca",previewModeEncryptionKey:"fc3aaff58efed947964308e88151cf50aef440bdca574a0e3dbb8c6fedaf9e57"},
+          experimental: {
+            onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
+            initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
+          }
+        })
+        /* harmony default export */ __webpack_exports__["default"] = (apiHandler);
+      
 
 /***/ }),
 

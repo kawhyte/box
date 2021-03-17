@@ -39,108 +39,25 @@ export default function Landing({ games }) {
 					</div>
 					<div className=''>
 						<div className='relative w-full   grid grid-cols-3 md:grid-cols-3  lg:grid-cols-6 lg:gap-4'>
+							
+						{ games.map(game=>(
+
 							<div className="animate-pulse">
 								<img
 									className='w-full col-span-2  md:w-72 block rounded'
 									src={
-										games[0].cover &&
-										games[0].cover.url.replace("t_thumb", "t_cover_big")
+										game.cover &&
+										game.cover.url.replace("t_thumb", "t_cover_big")
 									}
-									alt={games[0].name}
+									alt={game.name}
 								/>
 							</div>
+						)) 
+						}
+						
 
 
-							<div>
-								{" "}
-								<img
-									className='w-full col-span-3  md:w-72 block rounded'
-									src={
-										games[1].cover &&
-										games[1].cover.url.replace("t_thumb", "t_cover_big")
-									}
-									alt={games[1].name}
-								/>
-							</div>
-							<div>
-								{" "}
-								<img
-									className='w-full col-span-3  md:w-72 block rounded'
-									src={
-										games[1].cover &&
-										games[1].cover.url.replace("t_thumb", "t_cover_big")
-									}
-									alt={games[1].name}
-								/>
-							</div>
-							<div>
-								{" "}
-								<img
-									className='w-full  md:w-72 block rounded'
-									src={
-										games[2].cover &&
-										games[2].cover.url.replace("t_thumb", "t_cover_big")
-									}
-									alt={games[2].name}
-								/>
-							</div>
-							<div>
-								{" "}
-								<img
-									className='w-full  md:w-72 block rounded'
-									src={
-										games[3].cover &&
-										games[3].cover.url.replace("t_thumb", "t_cover_big")
-									}
-									alt={games[3].name}
-								/>
-							</div>
-							<div>
-								{" "}
-								<img
-									className='w-full  md:w-72 block rounded'
-									src={
-										games[4].cover &&
-										games[4].cover.url.replace("t_thumb", "t_cover_big")
-									}
-									alt={games[4].name}
-								/>
-							</div>
-
-							<div>
-								{" "}
-								<img
-									className='w-full  md:w-72 block rounded'
-									src={
-										games[5].cover &&
-										games[5].cover.url.replace("t_thumb", "t_cover_big")
-									}
-									alt={games[5].name}
-								/>
-							</div>
-
-							<div>
-								{" "}
-								<img
-									className='w-full  md:w-72 block rounded'
-									src={
-										games[6].cover &&
-										games[6].cover.url.replace("t_thumb", "t_cover_big")
-									}
-									alt={games[6].name}
-								/>
-							</div>
-							<div>
-								{" "}
-								<img
-									className='w-full  md:w-72 block rounded'
-									src={
-										games[7].cover &&
-										games[7].cover.url.replace("t_thumb", "t_cover_big")
-									}
-									alt={games[7].name}
-								/>
-							</div>
+							
 							<span
 								id='blackOverlay'
 								className='w-full h-full absolute opacity-80 bg-gray-900  '></span>
