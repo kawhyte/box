@@ -33,7 +33,7 @@ const Trending = ({ games, headerText }) => {
 										
 									  }
 									>
-									{i+4}.
+									{i+2}.
 									</span>
 								  </div>
 

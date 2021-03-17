@@ -1,10 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
 function Categories() {
 	const categories = [
-		{ name: "Game of the Year", link: "#goty" },
-		{ name: "Best Casual Games", link: "#casual" },
-		{ name: "Most Played Games", link: "#played" },
+		{ name: "Nintendo of the Year", link: "nintendo", id:1 },
+		{ name: "xbox Games", link: "xbox", id:2 },
+		{ name: "Playstation Games", link: "playstation" ,id:3 },
 	];
 
 	return (
@@ -16,13 +17,15 @@ function Categories() {
 
 				{categories.map((category, i) => {
 					return (
+						<Link href={category.link} key={category.id}>
 						<a href={category.link} key={i}>
-							<p
-								className='border-b py-3 cursor-pointer hover:bg-blue-700  text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase'
-								key={i}>
-								{category.name}
-							</p>
+						<p
+						className='border-b py-3 cursor-pointer hover:bg-blue-700  text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase'
+						key={i}>
+						{category.name}
+						</p>
 						</a>
+						</Link>
 					);
 				})}
 
