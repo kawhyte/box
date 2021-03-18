@@ -10,7 +10,7 @@ export default function Navbar(props) {
 					(props.transparent
 						? "top-0 absolute z-50 w-full"
 						: "relative  bg-white shadow-lg") +
-					" flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+					" flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg "
 				}>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
@@ -50,31 +50,76 @@ export default function Navbar(props) {
 					</div>
 					<div
 						className={
-							"lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" +
+							"lg:flex flex-grow items-center bg-white pl-10 lg:bg-transparent lg:shadow-none" +
 							(navbarOpen ? " block rounded shadow-lg bg-gray-300" : " hidden")
 						}
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row list-none mr-auto '>
-							<li className='flex items-center'>
-								<a
-									className={
-										(props.transparent
-											? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
-											: "text-gray-800  hover:text-gray-600") +
-										" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-									}
-									href='https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing'>
-									<i
+							<Link href='playstation'>
+								<li className='flex items-center'>
+									<a
 										className={
 											(props.transparent
-												? "lg:text-gray-300 text-gray-500"
-												: "text-gray-500") +
-											" far fa-file-alt text-lg leading-lg mr-2"
+												? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
+												: "text-gray-800  hover:text-gray-600") +
+											" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+										}>
+										<i
+											className={
+												(props.transparent
+													? "lg:text-gray-300 text-gray-500"
+													: "text-gray-500") +
+												" fab fa-playstation text-lg leading-lg mr-2"
+											}
+										/>{" "}
+										PlayStation Games
+									</a>
+								</li>
+							</Link>
+							<Link href='nintendo'>
+								<li className='flex items-center'>
+									<a
+										className={
+											(props.transparent
+												? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
+												: "text-gray-800  hover:text-gray-600") +
+											" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
 										}
-									/>{" "}
-									About
-								</a>
-							</li>
+										>
+										<i
+											className={
+												(props.transparent
+													? "lg:text-gray-300 text-gray-500"
+													: "text-gray-500") +
+												" fas fa-gamepad text-lg leading-lg mr-2"
+											}
+										/>{" "}
+										Nintendo Games
+									</a>
+								</li>
+							</Link>
+							<Link href='xbox'>
+								<li className='flex items-center'>
+									<a
+										className={
+											(props.transparent
+												? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
+												: "text-gray-800  hover:text-gray-600") +
+											" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+										}
+										>
+										<i
+											className={
+												(props.transparent
+													? "lg:text-gray-300 text-gray-500"
+													: "text-gray-500") +
+												" fab fa-xbox text-lg leading-lg mr-2"
+											}
+										/>{" "}
+										Xbox Games
+									</a>
+								</li>
+							</Link>
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
 							<li className='flex items-center'>
