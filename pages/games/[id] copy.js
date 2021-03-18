@@ -4,99 +4,9 @@ import axios from "axios";
 import toDate from "date-fns/toDate";
 import TagList from "../../components/TagList";
 
-import { useRouter } from "next/router";
-import { id } from "date-fns/locale";
-const gameId = "26192,109462,113112,75235,11169,133004";
+const gameId =
+	"26192,109462,113112,75235,11169,133004";
 
-
-
-export const getServerSideProps = async (context) => {
-	const id = context.params.id;
-
-	const data = await axios({
-		url: "https://api.igdb.com/v4/games",
-		method: "POST",
-		headers: {
-			Accept: "application/json",
-			"Client-ID": process.env.ClientID,
-			Authorization: process.env.Authorization,
-		},
-		data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms.*,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites; where id = ${id};`,
-	})
-		.then((response) => {
-			return response.data;
-		})
-		.catch((err) => {
-			console.error(err);
-		});
-
-	return {
-		props: { data: data },
-	};
-};
-
-{/*export const getStaticProps = async (context) => {
-	const id = context.params.id;
-
-	const data = await axios({
-		url: "https://api.igdb.com/v4/games",
-		method: "POST",
-		headers: {
-			Accept: "application/json",
-			"Client-ID": process.env.ClientID,
-			Authorization: process.env.Authorization,
-		},
-		data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms.*,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;limit 500; where id = ${id};`,
-	})
-		.then((response) => {
-			return response.data;
-		})
-		.catch((err) => {
-			console.error(err);
-		});
-
-	return {
-		props: { data: data },
-	};
-};
-
-export const getStaticPaths = async () => {
-	const games = await axios({
-		url: "https://api.igdb.com/v4/games",
-		method: "POST",
-		headers: {
-			Accept: "application/json",
-			"Client-ID": process.env.ClientID,
-			Authorization: process.env.Authorization,
-		},
-		data: `fields age_ratings,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
-		limit 11; where first_release_date > 1577905941 & first_release_date < 1609528341 & platforms = {169,49,167,48,130} & rating > 60;`,
-	})
-		.then((response) => {
-			console.log("XXX", response.data)
-			return response.data;
-		})
-		.catch((err) => {
-			console.error(err);
-		});
-		//const ids = games.map((item) => item.id);
-		
-		//const paths = ids.map((id) => ({ params: { id: id.toString() } }));
-
-
-	const paths = games.map((game) => {
-		return {
-			params: { id: game.id.toString() },
-		};
-	});
-	return {
-		paths,
-		fallback: false,
-	};
-}; */}
-
-{
-	/*     
 export const getStaticPaths = async () => {
 	const games = await axios({
 		url: "https://api.igdb.com/v4/games",
@@ -153,8 +63,7 @@ export const getStaticProps = async (context) => {
 		
 	};
 };
-*/
-}
+
 const Details = ({ data }) => {
 	let factor = 3.5;
 	let color = "";
@@ -410,6 +319,4 @@ const Details = ({ data }) => {
 		</>
 	);
 };
-
-
 export default Details;

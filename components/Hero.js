@@ -1,21 +1,12 @@
 import React from "react";
+import Welcome from "./Welcome";
 
 export default function Landing({ games }) {
-
-
-
-
-
-
-
-
-
-
 	return (
 		<>
 			<main className=''>
 				<div
-					className='relative pb-6 flex  content-end items-center justify-center  '
+					className='relative flex  items-center mx-auto justify-center align-middle  '
 					style={{
 						minHeight: "43vh",
 					}}>
@@ -29,38 +20,39 @@ export default function Landing({ games }) {
 							id='blackOverlay'
 							className='w-full h-full absolute opacity-75 bg-black  '></span>
 					</div>*/}
-					<div className='absolute text-pop-up-top  top-0 w-full max-w-screen-2xl justify-center flex flex-col items-center z-10  h-full '>
-						<p className='text-7xl headings text-center  w-full  font-black headings text-textwhite tracking-wider uppercase   sm:text-8xl md:text-8xl lg:text-15xl xl:text-10xl  '>
-							Video Game 
+					<div class="flex h-screen justify-center ">
+
+					
+
+
+					
+					<div className='absolute h-screen mx-auto justify-center flex flex-col items-center z-10 '>
+						<p className='text-7xl  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-8xl md:text-8xl lg:text-15xl xl:text-10xl  '>
+							Video Game
 						</p>
 						<p className='text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl '>
 							Concierge
 						</p>
+						<button>Start</button>
 					</div>
-					<div className=''>
-						<div className='relative w-full   grid grid-cols-3 md:grid-cols-3  lg:grid-cols-6 lg:gap-4'>
-							
-						{ games.map(game=>(
 
-							<div className="animate-pulse">
-								<img
-									className='w-full col-span-2  md:w-72 block rounded'
-									src={
-										game.cover &&
-										game.cover.url.replace("t_thumb", "t_cover_big")
-									}
-									alt={game.name}
-								/>
-							</div>
-						)) 
-						}
-						
+						<div className='relative w-full grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 lg:gap-2'>
+							{games.slice(0,18).map((game) => (
+								<div className='animate-puls'>
+									<img
+										className='w-full col-span-2  md:w-72 block rounded'
+										src={
+											game.cover &&
+											game.cover.url.replace("t_thumb", "t_cover_big")
+										}
+										alt={game.name}
+									/>
+								</div>
+							))}
 
-
-							
 							<span
 								id='blackOverlay'
-								className='w-full h-full absolute opacity-80 bg-gray-900  '></span>
+								className='w-full h-screen absolute opacity-80 bg-gray-900  '></span>
 						</div>
 					</div>
 

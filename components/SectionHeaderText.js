@@ -1,7 +1,5 @@
 import React from "react";
-import axios from "axios";
-import Card from "./Card";
-import ReactPlayer from "react-player/youtube";
+
 
 const SectionHeaderText = ({headerText, paragraphText}) => {
 	

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Trending = ({ games, headerText }) => {
 	
-{console.log("GAMES ", games)}
+//{console.log("GAMES ", games)}
 	return (
 		<main className='grid container mx-auto pb-3  content-start items-center justify-center'>
 			<p className=' py-2 text-xl font-light leading-relaxed mt-0 mb-6 '>
@@ -11,7 +11,7 @@ const Trending = ({ games, headerText }) => {
 		
 		</p>
 			<div>
-				<section className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-1'>
+				<section className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-1'>
 					{games.map((game ,i) => (
 						<>
 						<Link href={`/games/${game.id}`} key={game.id}>

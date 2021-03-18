@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "axios";
 import Card from "./Card";
 import ReactPlayer from "react-player/lazy";
 import Link from "next/link";
