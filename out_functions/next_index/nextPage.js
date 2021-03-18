@@ -6,7 +6,7 @@ module.exports =
 /******/ 	// object to store loaded chunks
 /******/ 	// "0" means "already loaded"
 /******/ 	var installedChunks = {
-/******/ 		5: 0,
+/******/ 		6: 0,
 /******/ 		0: 0,
 /******/ 		1: 0
 /******/ 	};
@@ -103,10 +103,113 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "H2fC");
+/******/ 	return __webpack_require__(__webpack_require__.s = "+Q05");
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "+Q05":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
+var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
+/* harmony import */ var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("LZ9C");
+var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("LZ9C", 1);
+/* harmony import */ var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("67Bq");
+var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t("67Bq", 1);
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("7ZOo");
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__);
+
+      
+      
+      
+      
+      
+      
+  
+      
+      const { processEnv } = __webpack_require__("fXeI")
+      processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nDB_PASS=mypassword"}])
+    
+      
+      const runtimeConfig = {}
+      
+  
+      const appMod = __webpack_require__("1TCz")
+      let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
+  
+      const compMod = __webpack_require__("RNiq")
+  
+      const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
+      /* harmony default export */ __webpack_exports__["default"] = (Component);
+      const getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
+      const getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
+      const getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
+  
+      // kept for detecting legacy exports
+      const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
+      const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
+      const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
+      const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
+  
+      let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
+      const _app = App
+  
+      const { renderReqToHTML, render } = Object(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__["getPageHandler"])({
+        pageModule: compMod,
+        pageComponent: Component,
+        pageConfig: config,
+        appModule: App,
+        documentModule: __webpack_require__("VDXt"),
+        errorModule: __webpack_require__("/a9y"),
+        notFoundModule: undefined,
+        pageGetStaticProps: getStaticProps,
+        pageGetStaticPaths: getStaticPaths,
+        pageGetServerSideProps: getServerSideProps,
+  
+        assetPrefix: "",
+        canonicalBase: "",
+        generateEtags: true,
+        poweredByHeader: true,
+  
+        runtimeConfig,
+        buildManifest: private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__,
+        reactLoadableManifest: private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__,
+  
+        rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
+        i18n: undefined,
+        page: "/",
+        buildId: "jHwnMmIS0oCMXeJOGTLVI",
+        escapedBuildId: "jHwnMmIS0oCMXeJOGTLVI",
+        basePath: "",
+        pageIsDynamic: false,
+        encodedPreviewProps: {previewModeId:"bba3730818324043e16809b624e1e683",previewModeSigningKey:"3824bf1764f48e5d2395b8b934d001dc7a15c659ac751edd0b25fec76aaf5190",previewModeEncryptionKey:"a4d38bd7ca01e169e9dc3abdbeea59f5a9c6b8208bf34345b181bd73bc638cca"},
+        experimental: {
+          onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
+          initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
+        }
+      })
+      
+    
+
+/***/ }),
 
 /***/ "+lMf":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -117,6 +220,8 @@ module.exports =
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Welcome__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("rtAh");
+
 
 
 
@@ -128,83 +233,47 @@ function Landing({
     children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("main", {
       className: "",
       children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        className: "relative pb-6 flex  content-end items-center justify-center  ",
+        className: "relative flex  items-center mx-auto justify-center align-middle  ",
         style: {
           minHeight: "43vh"
         },
         children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-          className: "absolute text-pop-up-top  top-0 w-full max-w-screen-2xl justify-center flex flex-col items-center z-10  h-full ",
-          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-            className: "text-7xl headings text-center  w-full  font-black headings text-textwhite tracking-wider uppercase   sm:text-8xl md:text-8xl lg:text-15xl xl:text-10xl  ",
-            children: "Video Game"
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-            className: "text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl ",
-            children: "Concierge"
-          })]
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-          className: "",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "relative w-full   grid grid-cols-3 md:grid-cols-3  lg:grid-cols-6 lg:gap-4",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-              className: "animate-pulse",
+          class: "flex h-screen justify-center overflow-hidden ",
+          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+            className: "absolute h-screen mx-auto justify-center flex flex-col items-center z-10 ",
+            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+              className: "justify-center flex flex-col items-center text-pop-up-top",
+              children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+                className: "text-6xl  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-8xl lg:text-15xl xl:text-10xl  ",
+                children: "Video Game"
+              }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+                className: "text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl ",
+                children: "Concierge"
+              })]
+            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+              className: "py-6  text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl",
+              children: "Not sure which game to play next? We can help you out."
+            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("button", {
+              className: "uppercase    mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg",
+              children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
+                className: "far fa-play-circle",
+                children: " "
+              }), " Get a game Suggestion"]
+            })]
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+            className: "relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden",
+            children: [games.slice(0, 20).map(game => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+              className: "animate-puls",
               children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
                 className: "w-full col-span-2  md:w-72 block rounded",
-                src: games[0].cover && games[0].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[0].name
+                src: game.cover && game.cover.url.replace("t_thumb", "t_cover_big"),
+                alt: game.name
               })
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full col-span-3  md:w-72 block rounded",
-                src: games[1].cover && games[1].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[1].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full col-span-3  md:w-72 block rounded",
-                src: games[1].cover && games[1].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[1].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[2].cover && games[2].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[2].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[3].cover && games[3].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[3].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[4].cover && games[4].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[4].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[5].cover && games[5].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[5].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[6].cover && games[6].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[6].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[7].cover && games[7].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[7].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
+            })), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
               id: "blackOverlay",
-              className: "w-full h-full absolute opacity-80 bg-gray-900  "
+              className: "w-full h-screen absolute opacity-80 bg-gray-900  "
             })]
-          })
+          })]
         }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
           className: "top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden",
           style: {
@@ -274,355 +343,6 @@ function useAmp() {
 /***/ (function(module, exports) {
 
 module.exports = require("events");
-
-/***/ }),
-
-/***/ "/6c9":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("tbWI");
-
-var _patterns = __webpack_require__("mzdp");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://www.youtube.com/iframe_api';
-var SDK_GLOBAL = 'YT';
-var SDK_GLOBAL_READY = 'onYouTubeIframeAPIReady';
-var MATCH_PLAYLIST = /[?&](?:list|channel)=([a-zA-Z0-9_-]+)/;
-var MATCH_USER_UPLOADS = /user\/([a-zA-Z0-9_-]+)\/?/;
-var MATCH_NOCOOKIE = /youtube-nocookie\.com/;
-var NOCOOKIE_HOST = 'https://www.youtube-nocookie.com';
-
-var YouTube = /*#__PURE__*/function (_Component) {
-  _inherits(YouTube, _Component);
-
-  var _super = _createSuper(YouTube);
-
-  function YouTube() {
-    var _this;
-
-    _classCallCheck(this, YouTube);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "parsePlaylist", function (url) {
-      if (url instanceof Array) {
-        return {
-          listType: 'playlist',
-          playlist: url.map(_this.getID).join(',')
-        };
-      }
-
-      if (MATCH_PLAYLIST.test(url)) {
-        var _url$match = url.match(MATCH_PLAYLIST),
-            _url$match2 = _slicedToArray(_url$match, 2),
-            playlistId = _url$match2[1];
-
-        return {
-          listType: 'playlist',
-          list: playlistId.replace(/^UC/, 'UU')
-        };
-      }
-
-      if (MATCH_USER_UPLOADS.test(url)) {
-        var _url$match3 = url.match(MATCH_USER_UPLOADS),
-            _url$match4 = _slicedToArray(_url$match3, 2),
-            username = _url$match4[1];
-
-        return {
-          listType: 'user_uploads',
-          list: username
-        };
-      }
-
-      return {};
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onStateChange", function (event) {
-      var data = event.data;
-      var _this$props = _this.props,
-          onPlay = _this$props.onPlay,
-          onPause = _this$props.onPause,
-          onBuffer = _this$props.onBuffer,
-          onBufferEnd = _this$props.onBufferEnd,
-          onEnded = _this$props.onEnded,
-          onReady = _this$props.onReady,
-          loop = _this$props.loop,
-          _this$props$config = _this$props.config,
-          playerVars = _this$props$config.playerVars,
-          onUnstarted = _this$props$config.onUnstarted;
-      var _window$SDK_GLOBAL$Pl = window[SDK_GLOBAL].PlayerState,
-          UNSTARTED = _window$SDK_GLOBAL$Pl.UNSTARTED,
-          PLAYING = _window$SDK_GLOBAL$Pl.PLAYING,
-          PAUSED = _window$SDK_GLOBAL$Pl.PAUSED,
-          BUFFERING = _window$SDK_GLOBAL$Pl.BUFFERING,
-          ENDED = _window$SDK_GLOBAL$Pl.ENDED,
-          CUED = _window$SDK_GLOBAL$Pl.CUED;
-      if (data === UNSTARTED) onUnstarted();
-
-      if (data === PLAYING) {
-        onPlay();
-        onBufferEnd();
-      }
-
-      if (data === PAUSED) onPause();
-      if (data === BUFFERING) onBuffer();
-
-      if (data === ENDED) {
-        var isPlaylist = !!_this.callPlayer('getPlaylist'); // Only loop manually if not playing a playlist
-
-        if (loop && !isPlaylist) {
-          if (playerVars.start) {
-            _this.seekTo(playerVars.start);
-          } else {
-            _this.play();
-          }
-        }
-
-        onEnded();
-      }
-
-      if (data === CUED) onReady();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('mute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('unMute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (container) {
-      _this.container = container;
-    });
-
-    return _this;
-  }
-
-  _createClass(YouTube, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "getID",
-    value: function getID(url) {
-      if (!url || url instanceof Array || MATCH_PLAYLIST.test(url)) {
-        return null;
-      }
-
-      return url.match(_patterns.MATCH_URL_YOUTUBE)[1];
-    }
-  }, {
-    key: "load",
-    value: function load(url, isReady) {
-      var _this2 = this;
-
-      var _this$props2 = this.props,
-          playing = _this$props2.playing,
-          muted = _this$props2.muted,
-          playsinline = _this$props2.playsinline,
-          controls = _this$props2.controls,
-          loop = _this$props2.loop,
-          config = _this$props2.config,
-          _onError = _this$props2.onError;
-      var playerVars = config.playerVars,
-          embedOptions = config.embedOptions;
-      var id = this.getID(url);
-
-      if (isReady) {
-        if (MATCH_PLAYLIST.test(url) || MATCH_USER_UPLOADS.test(url) || url instanceof Array) {
-          this.player.loadPlaylist(this.parsePlaylist(url));
-          return;
-        }
-
-        this.player.cueVideoById({
-          videoId: id,
-          startSeconds: (0, _utils.parseStartTime)(url) || playerVars.start,
-          endSeconds: (0, _utils.parseEndTime)(url) || playerVars.end
-        });
-        return;
-      }
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY, function (YT) {
-        return YT.loaded;
-      }).then(function (YT) {
-        if (!_this2.container) return;
-        _this2.player = new YT.Player(_this2.container, _objectSpread({
-          width: '100%',
-          height: '100%',
-          videoId: id,
-          playerVars: _objectSpread(_objectSpread({
-            autoplay: playing ? 1 : 0,
-            mute: muted ? 1 : 0,
-            controls: controls ? 1 : 0,
-            start: (0, _utils.parseStartTime)(url),
-            end: (0, _utils.parseEndTime)(url),
-            origin: window.location.origin,
-            playsinline: playsinline ? 1 : 0
-          }, _this2.parsePlaylist(url)), playerVars),
-          events: {
-            onReady: function onReady() {
-              if (loop) {
-                _this2.player.setLoop(true); // Enable playlist looping
-
-              }
-
-              _this2.props.onReady();
-            },
-            onStateChange: _this2.onStateChange,
-            onError: function onError(event) {
-              return _onError(event.data);
-            }
-          },
-          host: MATCH_NOCOOKIE.test(url) ? NOCOOKIE_HOST : undefined
-        }, embedOptions));
-      }, _onError);
-
-      if (embedOptions.events) {
-        console.warn('Using `embedOptions.events` will likely break things. Use ReactPlayer’s callback props instead, eg onReady, onPlay, onPause');
-      }
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('playVideo');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pauseVideo');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      if (!document.body.contains(this.callPlayer('getIframe'))) return;
-      this.callPlayer('stopVideo');
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(amount) {
-      this.callPlayer('seekTo', amount);
-
-      if (!this.props.playing) {
-        this.pause();
-      }
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction * 100);
-    }
-  }, {
-    key: "setPlaybackRate",
-    value: function setPlaybackRate(rate) {
-      this.callPlayer('setPlaybackRate', rate);
-    }
-  }, {
-    key: "setLoop",
-    value: function setLoop(loop) {
-      this.callPlayer('setLoop', loop);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.callPlayer('getDuration');
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.callPlayer('getCurrentTime');
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.callPlayer('getVideoLoadedFraction') * this.getDuration();
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var display = this.props.display;
-      var style = {
-        width: '100%',
-        height: '100%',
-        display: display
-      };
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        style: style
-      }, /*#__PURE__*/_react["default"].createElement("div", {
-        ref: this.ref
-      }));
-    }
-  }]);
-
-  return YouTube;
-}(_react.Component);
-
-exports["default"] = YouTube;
-
-_defineProperty(YouTube, "displayName", 'YouTube');
-
-_defineProperty(YouTube, "canPlay", _patterns.canPlay.youtube);
 
 /***/ }),
 
@@ -2332,7 +2052,7 @@ function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = react_default.a.useState(false);
   return /*#__PURE__*/Object(jsx_runtime["jsx"])(jsx_runtime["Fragment"], {
     children: /*#__PURE__*/Object(jsx_runtime["jsx"])("nav", {
-      className: (props.transparent ? "top-0 absolute z-50 w-full" : "relative  bg-white shadow-lg") + " flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg",
+      className: (props.transparent ? "top-0 absolute z-50 w-full" : "relative  bg-white shadow-lg") + " flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg ",
       children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
         className: "container px-4 mx-auto flex flex-wrap items-center justify-between",
         children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
@@ -2363,59 +2083,58 @@ function Navbar(props) {
             })
           })]
         }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-          className: "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" + (navbarOpen ? " block rounded shadow-lg bg-gray-300" : " hidden"),
+          className: "lg:flex flex-grow items-center bg-white pl-10 lg:bg-transparent lg:shadow-none" + (navbarOpen ? " block rounded shadow-lg bg-gray-300" : " hidden"),
           id: "example-navbar-warning",
-          children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("ul", {
+          children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("ul", {
             className: "flex flex-col lg:flex-row list-none mr-auto ",
-            children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
-              className: "flex items-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
-                href: "https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing",
-                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                  className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " far fa-file-alt text-lg leading-lg mr-2"
-                }), " ", "About"]
+            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+              href: "playstation",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+                className: "flex items-center",
+                children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+                  className: (props.transparent ? "lg:text-yellow-300 lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
+                    className: (props.transparent ? "lg:text-yellow-300 text-yellow-500" : "text-gray-500") + " fas fa-crown text-lg leading-lg mr-2"
+                  }), " ", "2020 game in review"]
+                })
               })
-            })
-          }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("ul", {
+            }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+              href: "playstation",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+                className: "flex items-center",
+                children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
+                    className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-playstation text-lg leading-lg mr-2"
+                  }), " ", "PlayStation"]
+                })
+              })
+            }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+              href: "nintendo",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+                className: "flex items-center",
+                children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
+                    className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fas fa-gamepad text-lg leading-lg mr-2"
+                  }), " ", "Nintendo"]
+                })
+              })
+            }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+              href: "xbox",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+                className: "flex items-center",
+                children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
+                    className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-xbox text-lg leading-lg mr-2"
+                  }), " ", "Xbox"]
+                })
+              })
+            })]
+          }), /*#__PURE__*/Object(jsx_runtime["jsx"])("ul", {
             className: "flex flex-col lg:flex-row list-none lg:ml-auto",
-            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
-              className: "flex items-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800" : "text-gray-800 hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
-                href: "#pablo",
-                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                  className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-facebook text-lg leading-lg "
-                }), /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
-                  className: "lg:hidden inline-block ml-2",
-                  children: "Share"
-                })]
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
-              className: "flex items-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800" : "text-gray-800 hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
-                href: "#pablo",
-                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                  className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-twitter text-lg leading-lg "
-                }), /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
-                  className: "lg:hidden inline-block ml-2",
-                  children: "Tweet"
-                })]
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
-              className: "flex items-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800" : "text-gray-800 hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
-                href: "#pablo",
-                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                  className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-github text-lg leading-lg "
-                }), /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
-                  className: "lg:hidden inline-block ml-2",
-                  children: "Star"
-                })]
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+            children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
               className: "flex items-center",
               children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("button", {
                 className: (props.transparent ? "bg-white text-gray-800 active:bg-gray-100" : "bg-pink-500 text-textwhite active:bg-pink-600") + " text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3",
@@ -2427,7 +2146,7 @@ function Navbar(props) {
                   className: "fas fa-arrow-alt-circle-down"
                 }), " Download"]
               })
-            })]
+            })
           })]
         })]
       })
@@ -2793,6 +2512,65 @@ module.exports = function isAbsoluteURL(url) {
   return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
 };
 
+
+/***/ }),
+
+/***/ "2qGk":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+
+
+function Categories() {
+  const categories = [{
+    name: "Nintendo of the Year",
+    link: "nintendo",
+    id: 1
+  }, {
+    name: "xbox Games",
+    link: "xbox",
+    id: 2
+  }, {
+    name: "Playstation Games",
+    link: "playstation",
+    id: 3
+  }];
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+      className: "container flex\tflex-col justify-center  bg-accentColor lg:bg-transparent text-textwhite text-left py-10 rounded-xl my-12 max-w-md  md:max-w-xl lg:max-w-7xl  ",
+      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+        className: "border-b pb-3 text-4xl headings font-black uppercase",
+        children: "Categories"
+      }), categories.map((category, i) => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+          href: category.link,
+          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
+            href: category.link,
+            children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+              className: "border-b py-3 cursor-pointer hover:bg-blue-700  text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase",
+              children: category.name
+            }, i)
+          }, i)
+        }, category.id);
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+        className: "py-3  tracking-normal text-sm font-thin mb-4 pt-4 text-center",
+        children: "Small detail will be here"
+      })]
+    })
+  });
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (Categories);
 
 /***/ }),
 
@@ -3535,6 +3313,66 @@ function setup(env) {
 module.exports = setup;
 
 
+
+/***/ }),
+
+/***/ "3Mv1":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+
+
+const Trending = ({
+  games,
+  headerText
+}) => {
+  //{console.log("GAMES ", games)}
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("main", {
+    className: "grid container mx-auto pb-3  content-start items-center justify-center",
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+      className: " py-2 text-xl font-light leading-relaxed mt-0 mb-6 ",
+      children: headerText
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("section", {
+        className: "grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-1",
+        children: games.map((game, i) => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+            href: `/games/${game.id}`,
+            children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+              className: "bg-gray-800 shadow-lg rounded p-1 max-w-sm ",
+              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+                className: "group relative",
+                children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
+                  className: "w-full  md:w-72 block rounded",
+                  src: game.cover && game.cover.url.replace("t_thumb", "t_cover_big"),
+                  alt: game.name
+                }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+                  className: "p-1 absolute top-0 left-0 z-20 ml-0 ",
+                  children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("span", {
+                    className: "text-xl font-semibold py-1 px-2 rounded text-gray-800 align-middle bg-textwhite  ",
+                    children: [i + 2, "."]
+                  })
+                })]
+              })
+            })
+          }, game.id)
+        }))
+      })
+    })]
+  });
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Trending);
 
 /***/ }),
 
@@ -5027,7 +4865,7 @@ function detectLocaleCookie(req, locales) {
 /***/ "67Bq":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"./DailyMotion\":[{\"id\":\"oKWQ\",\"file\":\"static/chunks/reactPlayerDailyMotion.7cc5f9e9d9e09cf5e7cb.js\"}],\"./Facebook\":[{\"id\":\"nQ6K\",\"file\":\"static/chunks/reactPlayerFacebook.c16d94410e4ead9fd5a3.js\"}],\"./FilePlayer\":[{\"id\":\"Nn5g\",\"file\":\"static/chunks/reactPlayerFilePlayer.36e185f05d56abfe9c5a.js\"}],\"./Kaltura\":[{\"id\":\"4Xmi\",\"file\":\"static/chunks/reactPlayerKaltura.895b3e173c9b22982422.js\"}],\"./Mixcloud\":[{\"id\":\"eywx\",\"file\":\"static/chunks/reactPlayerMixcloud.61fd5005b7ed0adb60b9.js\"}],\"./Preview\":[{\"id\":\"0ZcZ\",\"file\":\"static/chunks/reactPlayerPreview.d7392fe7dba19c20bc04.js\"}],\"./SoundCloud\":[{\"id\":\"W6fG\",\"file\":\"static/chunks/reactPlayerSoundCloud.5c79f50b0fe0e1c8fae4.js\"}],\"./Streamable\":[{\"id\":\"v4zF\",\"file\":\"static/chunks/reactPlayerStreamable.8b8589e4ca36e39cd8f3.js\"}],\"./Twitch\":[{\"id\":\"Vzir\",\"file\":\"static/chunks/reactPlayerTwitch.882c25f39777e505ad60.js\"}],\"./Vidyard\":[{\"id\":\"WvJM\",\"file\":\"static/chunks/reactPlayerVidyard.222fcd6d8f2ede9e3fdd.js\"}],\"./Vimeo\":[{\"id\":\"VkHn\",\"file\":\"static/chunks/reactPlayerVimeo.c3848228aaeda27ced8b.js\"}],\"./Wistia\":[{\"id\":\"3yWd\",\"file\":\"static/chunks/reactPlayerWistia.482728e3d3d95cea3faf.js\"}],\"./YouTube\":[{\"id\":\"5RnD\",\"file\":\"static/chunks/reactPlayerYouTube.8b9d86f868427dd1bbef.js\"}]}");
+module.exports = JSON.parse("{\"./DailyMotion\":[{\"id\":\"oKWQ\",\"file\":\"static/chunks/reactPlayerDailyMotion.479a127ea03581f77a6d.js\"}],\"./Facebook\":[{\"id\":\"nQ6K\",\"file\":\"static/chunks/reactPlayerFacebook.16804fe2ce06861fafd6.js\"}],\"./FilePlayer\":[{\"id\":\"Nn5g\",\"file\":\"static/chunks/reactPlayerFilePlayer.d316b096ebd5b2000b46.js\"}],\"./Kaltura\":[{\"id\":\"4Xmi\",\"file\":\"static/chunks/reactPlayerKaltura.479e0b1de17e1b1a8b85.js\"}],\"./Mixcloud\":[{\"id\":\"eywx\",\"file\":\"static/chunks/reactPlayerMixcloud.3149def966b7a6bab128.js\"}],\"./Preview\":[{\"id\":\"0ZcZ\",\"file\":\"static/chunks/reactPlayerPreview.6273fdbbcf4cf186c6ef.js\"}],\"./SoundCloud\":[{\"id\":\"W6fG\",\"file\":\"static/chunks/reactPlayerSoundCloud.badeb64f84af36130922.js\"}],\"./Streamable\":[{\"id\":\"v4zF\",\"file\":\"static/chunks/reactPlayerStreamable.3b26125af1d4343647b7.js\"}],\"./Twitch\":[{\"id\":\"Vzir\",\"file\":\"static/chunks/reactPlayerTwitch.3c90851494c581a6d9d8.js\"}],\"./Vidyard\":[{\"id\":\"WvJM\",\"file\":\"static/chunks/reactPlayerVidyard.a0d541588a9a94e3dc82.js\"}],\"./Vimeo\":[{\"id\":\"VkHn\",\"file\":\"static/chunks/reactPlayerVimeo.bc308c5e3d89a4466f81.js\"}],\"./Wistia\":[{\"id\":\"3yWd\",\"file\":\"static/chunks/reactPlayerWistia.8f9c622f558daaf28f12.js\"}],\"./YouTube\":[{\"id\":\"5RnD\",\"file\":\"static/chunks/reactPlayerYouTube.117f09816e63b533d792.js\"}]}");
 
 /***/ }),
 
@@ -5356,311 +5194,6 @@ function prepareDestination(destination, params, query, appendParamsToQuery) {
     parsedDestination
   };
 }
-
-/***/ }),
-
-/***/ "6tYh":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.createReactPlayer = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _deepmerge = _interopRequireDefault(__webpack_require__("PE4B"));
-
-var _memoizeOne = _interopRequireDefault(__webpack_require__("oL8k"));
-
-var _reactFastCompare = _interopRequireDefault(__webpack_require__("bmMU"));
-
-var _props = __webpack_require__("QXAm");
-
-var _utils = __webpack_require__("tbWI");
-
-var _Player3 = _interopRequireDefault(__webpack_require__("q+qS"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-var Preview = /*#__PURE__*/(0, _react.lazy)(function () {
-  return Promise.resolve().then(function () {
-    return _interopRequireWildcard(__webpack_require__("fflM"));
-  });
-});
-var IS_BROWSER = typeof window !== 'undefined' && window.document;
-var IS_GLOBAL = typeof global !== 'undefined' && global.window && global.window.document;
-var SUPPORTED_PROPS = Object.keys(_props.propTypes); // Return null when rendering on the server
-// as Suspense is not supported yet
-
-var UniversalSuspense = IS_BROWSER || IS_GLOBAL ? _react.Suspense : function () {
-  return null;
-};
-var customPlayers = [];
-
-var createReactPlayer = function createReactPlayer(players, fallback) {
-  var _class, _temp;
-
-  return _temp = _class = /*#__PURE__*/function (_Component) {
-    _inherits(ReactPlayer, _Component);
-
-    var _super = _createSuper(ReactPlayer);
-
-    function ReactPlayer() {
-      var _this;
-
-      _classCallCheck(this, ReactPlayer);
-
-      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
-
-      _this = _super.call.apply(_super, [this].concat(args));
-
-      _defineProperty(_assertThisInitialized(_this), "state", {
-        showPreview: !!_this.props.light
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "references", {
-        wrapper: function wrapper(_wrapper) {
-          _this.wrapper = _wrapper;
-        },
-        player: function player(_player) {
-          _this.player = _player;
-        }
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "handleClickPreview", function (e) {
-        _this.setState({
-          showPreview: false
-        });
-
-        _this.props.onClickPreview(e);
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "showPreview", function () {
-        _this.setState({
-          showPreview: true
-        });
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getDuration", function () {
-        if (!_this.player) return null;
-        return _this.player.getDuration();
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getCurrentTime", function () {
-        if (!_this.player) return null;
-        return _this.player.getCurrentTime();
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getSecondsLoaded", function () {
-        if (!_this.player) return null;
-        return _this.player.getSecondsLoaded();
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getInternalPlayer", function () {
-        var key = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'player';
-        if (!_this.player) return null;
-        return _this.player.getInternalPlayer(key);
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "seekTo", function (fraction, type) {
-        if (!_this.player) return null;
-
-        _this.player.seekTo(fraction, type);
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "handleReady", function () {
-        _this.props.onReady(_assertThisInitialized(_this));
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getActivePlayer", (0, _memoizeOne["default"])(function (url) {
-        for (var _i = 0, _arr = [].concat(customPlayers, _toConsumableArray(players)); _i < _arr.length; _i++) {
-          var player = _arr[_i];
-
-          if (player.canPlay(url)) {
-            return player;
-          }
-        }
-
-        if (fallback) {
-          return fallback;
-        }
-
-        return null;
-      }));
-
-      _defineProperty(_assertThisInitialized(_this), "getConfig", (0, _memoizeOne["default"])(function (url, key) {
-        var config = _this.props.config;
-        return _deepmerge["default"].all([_props.defaultProps.config, _props.defaultProps.config[key] || {}, config, config[key] || {}]);
-      }));
-
-      _defineProperty(_assertThisInitialized(_this), "getAttributes", (0, _memoizeOne["default"])(function (url) {
-        return (0, _utils.omit)(_this.props, SUPPORTED_PROPS);
-      }));
-
-      _defineProperty(_assertThisInitialized(_this), "renderActivePlayer", function (url) {
-        if (!url) return null;
-
-        var player = _this.getActivePlayer(url);
-
-        if (!player) return null;
-
-        var config = _this.getConfig(url, player.key);
-
-        return /*#__PURE__*/_react["default"].createElement(_Player3["default"], _extends({}, _this.props, {
-          key: player.key,
-          ref: _this.references.player,
-          config: config,
-          activePlayer: player.lazyPlayer || player,
-          onReady: _this.handleReady
-        }));
-      });
-
-      return _this;
-    }
-
-    _createClass(ReactPlayer, [{
-      key: "shouldComponentUpdate",
-      value: function shouldComponentUpdate(nextProps, nextState) {
-        return !(0, _reactFastCompare["default"])(this.props, nextProps) || !(0, _reactFastCompare["default"])(this.state, nextState);
-      }
-    }, {
-      key: "componentDidUpdate",
-      value: function componentDidUpdate(prevProps) {
-        var light = this.props.light;
-
-        if (!prevProps.light && light) {
-          this.setState({
-            showPreview: true
-          });
-        }
-
-        if (prevProps.light && !light) {
-          this.setState({
-            showPreview: false
-          });
-        }
-      }
-    }, {
-      key: "renderPreview",
-      value: function renderPreview(url) {
-        if (!url) return null;
-        var _this$props = this.props,
-            light = _this$props.light,
-            playIcon = _this$props.playIcon,
-            previewTabIndex = _this$props.previewTabIndex;
-        return /*#__PURE__*/_react["default"].createElement(Preview, {
-          url: url,
-          light: light,
-          playIcon: playIcon,
-          previewTabIndex: previewTabIndex,
-          onClick: this.handleClickPreview
-        });
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var _this$props2 = this.props,
-            url = _this$props2.url,
-            style = _this$props2.style,
-            width = _this$props2.width,
-            height = _this$props2.height,
-            fallback = _this$props2.fallback,
-            Wrapper = _this$props2.wrapper;
-        var showPreview = this.state.showPreview;
-        var attributes = this.getAttributes(url);
-        return /*#__PURE__*/_react["default"].createElement(Wrapper, _extends({
-          ref: this.references.wrapper,
-          style: _objectSpread(_objectSpread({}, style), {}, {
-            width: width,
-            height: height
-          })
-        }, attributes), /*#__PURE__*/_react["default"].createElement(UniversalSuspense, {
-          fallback: fallback
-        }, showPreview ? this.renderPreview(url) : this.renderActivePlayer(url)));
-      }
-    }]);
-
-    return ReactPlayer;
-  }(_react.Component), _defineProperty(_class, "displayName", 'ReactPlayer'), _defineProperty(_class, "propTypes", _props.propTypes), _defineProperty(_class, "defaultProps", _props.defaultProps), _defineProperty(_class, "addCustomPlayer", function (player) {
-    customPlayers.push(player);
-  }), _defineProperty(_class, "removeCustomPlayers", function () {
-    customPlayers.length = 0;
-  }), _defineProperty(_class, "canPlay", function (url) {
-    for (var _i2 = 0, _arr2 = [].concat(customPlayers, _toConsumableArray(players)); _i2 < _arr2.length; _i2++) {
-      var _Player = _arr2[_i2];
-
-      if (_Player.canPlay(url)) {
-        return true;
-      }
-    }
-
-    return false;
-  }), _defineProperty(_class, "canEnablePIP", function (url) {
-    for (var _i3 = 0, _arr3 = [].concat(customPlayers, _toConsumableArray(players)); _i3 < _arr3.length; _i3++) {
-      var _Player2 = _arr3[_i3];
-
-      if (_Player2.canEnablePIP && _Player2.canEnablePIP(url)) {
-        return true;
-      }
-    }
-
-    return false;
-  }), _temp;
-};
-
-exports.createReactPlayer = createReactPlayer;
 
 /***/ }),
 
@@ -8428,109 +7961,6 @@ module.exports = function (condition, ...args) {
 
 /***/ }),
 
-/***/ "H2fC":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
-var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
-/* harmony import */ var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("LZ9C");
-var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("LZ9C", 1);
-/* harmony import */ var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("67Bq");
-var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t("67Bq", 1);
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("7ZOo");
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__);
-
-      
-      
-      
-      
-      
-      
-  
-      
-      const { processEnv } = __webpack_require__("fXeI")
-      processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nDB_PASS=mypassword"}])
-    
-      
-      const runtimeConfig = {}
-      
-  
-      const appMod = __webpack_require__("1TCz")
-      let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
-  
-      const compMod = __webpack_require__("RNiq")
-  
-      const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
-      /* harmony default export */ __webpack_exports__["default"] = (Component);
-      const getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
-      const getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
-      const getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
-  
-      // kept for detecting legacy exports
-      const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
-      const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
-      const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
-      const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
-  
-      let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
-      const _app = App
-  
-      const { renderReqToHTML, render } = Object(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__["getPageHandler"])({
-        pageModule: compMod,
-        pageComponent: Component,
-        pageConfig: config,
-        appModule: App,
-        documentModule: __webpack_require__("VDXt"),
-        errorModule: __webpack_require__("/a9y"),
-        notFoundModule: undefined,
-        pageGetStaticProps: getStaticProps,
-        pageGetStaticPaths: getStaticPaths,
-        pageGetServerSideProps: getServerSideProps,
-  
-        assetPrefix: "",
-        canonicalBase: "",
-        generateEtags: true,
-        poweredByHeader: true,
-  
-        runtimeConfig,
-        buildManifest: private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__,
-        reactLoadableManifest: private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__,
-  
-        rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
-        i18n: undefined,
-        page: "/",
-        buildId: "77Ngc-aEfV-59gVrMhKbq",
-        escapedBuildId: "77Ngc\-aEfV\-59gVrMhKbq",
-        basePath: "",
-        pageIsDynamic: false,
-        encodedPreviewProps: {previewModeId:"9f6214d367288b8f03585b2dcb73a776",previewModeSigningKey:"79d5c804aca70328ce25bea3a523e69243d37ba9230f9ad8206648f9da5ae4ca",previewModeEncryptionKey:"fc3aaff58efed947964308e88151cf50aef440bdca574a0e3dbb8c6fedaf9e57"},
-        experimental: {
-          onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
-          initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
-        }
-      })
-      
-    
-
-/***/ }),
-
 /***/ "HEcb":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9288,6 +8718,42 @@ exports.default = TextNode;
 
 /***/ }),
 
+/***/ "Kaw+":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+
+const SectionHeaderText = ({
+  headerText,
+  paragraphText
+}) => {
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+    id: "casual",
+    className: "container container flex lg:bg-transparent\tflex-col justify-center bg-bgcolor text-textwhite text-center py-10 rounded-xl my-3 max-w-md  md:max-w-xl lg:max-w-7xl",
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+      className: " pb-6 text-base font-bold tracking-widest headings uppercase",
+      children: "Trends"
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+      className: "pb-6 text-3xl font-black headings uppercase",
+      children: headerText
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+      className: " py-2 text-xl font-light leading-relaxed mt-0 mb-6 ",
+      children: paragraphText
+    })]
+  });
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (SectionHeaderText);
+
+/***/ }),
+
 /***/ "KmAU":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9444,7 +8910,7 @@ module.exports = function createError(message, config, code, request, response) 
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-8f31809deb7932dd0187.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/77Ngc-aEfV-59gVrMhKbq/_buildManifest.js\",\"static/77Ngc-aEfV-59gVrMhKbq/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-d81ea22c0658634f3125.js\",\"static/chunks/webpack-5c358bb8130e9e413254.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/3ef630e34cd10ba68f9d468ac363ff81c534e1e9.b0b5bb9b556358249417.js\",\"static/chunks/2fe99b9a9e1594d354d7740496741e904cbefe13.622d595ccf71a3d8e9ac.js\",\"static/chunks/pages/index-e1382ca8331a6dcc32f0.js\"],\"/_app\":[\"static/chunks/main-d81ea22c0658634f3125.js\",\"static/chunks/webpack-5c358bb8130e9e413254.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/3ef630e34cd10ba68f9d468ac363ff81c534e1e9.b0b5bb9b556358249417.js\",\"static/css/5403fed80ae3c5523250.css\",\"static/chunks/pages/_app-e0fd0860d52876600018.js\"],\"/_error\":[\"static/chunks/main-d81ea22c0658634f3125.js\",\"static/chunks/webpack-5c358bb8130e9e413254.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/pages/_error-92c485d3ee12935ea5b6.js\"],\"/games/[id]\":[\"static/chunks/main-d81ea22c0658634f3125.js\",\"static/chunks/webpack-5c358bb8130e9e413254.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/2fe99b9a9e1594d354d7740496741e904cbefe13.622d595ccf71a3d8e9ac.js\",\"static/chunks/pages/games/[id]-05ba8fda918e36acf6f9.js\"]},\"ampFirstPages\":[]}");
+module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-feb8a7604fa7fce626b2.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/jHwnMmIS0oCMXeJOGTLVI/_buildManifest.js\",\"static/jHwnMmIS0oCMXeJOGTLVI/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/index-c035399ff633ff17345c.js\"],\"/_app\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/css/baa45da4db8da6680c9d.css\",\"static/chunks/pages/_app-b984acc134a406642874.js\"],\"/_error\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/pages/_error-f4c6ef9c1129795098b3.js\"],\"/games/[id]\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/pages/games/[id]-ec50fab39fd8952c0433.js\"],\"/goty\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/goty-0e5ba106f0624932dbe2.js\"],\"/nintendo\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/nintendo-e56997b5ce51800933ca.js\"],\"/playstation\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/playstation-8b269b39c6feb76b9193.js\"],\"/xbox\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/xbox-5be3d5d11fdc47da4ee1.js\"]},\"ampFirstPages\":[]}");
 
 /***/ }),
 
@@ -11794,233 +11260,6 @@ if (typeof process === 'undefined' || process.type === 'renderer' || false === t
 
 /***/ }),
 
-/***/ "QXAm":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.defaultProps = exports.propTypes = void 0;
-
-var _propTypes = _interopRequireDefault(__webpack_require__("17x9"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var string = _propTypes["default"].string,
-    bool = _propTypes["default"].bool,
-    number = _propTypes["default"].number,
-    array = _propTypes["default"].array,
-    oneOfType = _propTypes["default"].oneOfType,
-    shape = _propTypes["default"].shape,
-    object = _propTypes["default"].object,
-    func = _propTypes["default"].func,
-    node = _propTypes["default"].node;
-var propTypes = {
-  url: oneOfType([string, array, object]),
-  playing: bool,
-  loop: bool,
-  controls: bool,
-  volume: number,
-  muted: bool,
-  playbackRate: number,
-  width: oneOfType([string, number]),
-  height: oneOfType([string, number]),
-  style: object,
-  progressInterval: number,
-  playsinline: bool,
-  pip: bool,
-  stopOnUnmount: bool,
-  light: oneOfType([bool, string]),
-  playIcon: node,
-  previewTabIndex: number,
-  fallback: node,
-  wrapper: oneOfType([string, func, shape({
-    render: func.isRequired
-  })]),
-  config: shape({
-    soundcloud: shape({
-      options: object
-    }),
-    youtube: shape({
-      playerVars: object,
-      embedOptions: object,
-      onUnstarted: func
-    }),
-    facebook: shape({
-      appId: string,
-      version: string,
-      playerId: string,
-      attributes: object
-    }),
-    dailymotion: shape({
-      params: object
-    }),
-    vimeo: shape({
-      playerOptions: object
-    }),
-    file: shape({
-      attributes: object,
-      tracks: array,
-      forceVideo: bool,
-      forceAudio: bool,
-      forceHLS: bool,
-      forceDASH: bool,
-      forceFLV: bool,
-      hlsOptions: object,
-      hlsVersion: string,
-      dashVersion: string,
-      flvVersion: string
-    }),
-    wistia: shape({
-      options: object,
-      playerId: string,
-      customControls: array
-    }),
-    mixcloud: shape({
-      options: object
-    }),
-    twitch: shape({
-      options: object,
-      playerId: string
-    }),
-    vidyard: shape({
-      options: object
-    })
-  }),
-  onReady: func,
-  onStart: func,
-  onPlay: func,
-  onPause: func,
-  onBuffer: func,
-  onBufferEnd: func,
-  onEnded: func,
-  onError: func,
-  onDuration: func,
-  onSeek: func,
-  onProgress: func,
-  onClickPreview: func,
-  onEnablePIP: func,
-  onDisablePIP: func
-};
-exports.propTypes = propTypes;
-
-var noop = function noop() {};
-
-var defaultProps = {
-  playing: false,
-  loop: false,
-  controls: false,
-  volume: null,
-  muted: false,
-  playbackRate: 1,
-  width: '640px',
-  height: '360px',
-  style: {},
-  progressInterval: 1000,
-  playsinline: false,
-  pip: false,
-  stopOnUnmount: true,
-  light: false,
-  fallback: null,
-  wrapper: 'div',
-  previewTabIndex: 0,
-  config: {
-    soundcloud: {
-      options: {
-        visual: true,
-        // Undocumented, but makes player fill container and look better
-        buying: false,
-        liking: false,
-        download: false,
-        sharing: false,
-        show_comments: false,
-        show_playcount: false
-      }
-    },
-    youtube: {
-      playerVars: {
-        playsinline: 1,
-        showinfo: 0,
-        rel: 0,
-        iv_load_policy: 3,
-        modestbranding: 1
-      },
-      embedOptions: {},
-      onUnstarted: noop
-    },
-    facebook: {
-      appId: '1309697205772819',
-      version: 'v3.3',
-      playerId: null,
-      attributes: {}
-    },
-    dailymotion: {
-      params: {
-        api: 1,
-        'endscreen-enable': false
-      }
-    },
-    vimeo: {
-      playerOptions: {
-        autopause: false,
-        byline: false,
-        portrait: false,
-        title: false
-      }
-    },
-    file: {
-      attributes: {},
-      tracks: [],
-      forceVideo: false,
-      forceAudio: false,
-      forceHLS: false,
-      forceDASH: false,
-      forceFLV: false,
-      hlsOptions: {},
-      hlsVersion: '0.14.16',
-      dashVersion: '3.1.3',
-      flvVersion: '1.5.0'
-    },
-    wistia: {
-      options: {},
-      playerId: null,
-      customControls: null
-    },
-    mixcloud: {
-      options: {
-        hide_cover: 1
-      }
-    },
-    twitch: {
-      options: {},
-      playerId: null
-    },
-    vidyard: {
-      options: {}
-    }
-  },
-  onReady: noop,
-  onStart: noop,
-  onPlay: noop,
-  onPause: noop,
-  onBuffer: noop,
-  onBufferEnd: noop,
-  onEnded: noop,
-  onError: noop,
-  onDuration: noop,
-  onSeek: noop,
-  onProgress: noop,
-  onClickPreview: noop,
-  onEnablePIP: noop,
-  onDisablePIP: noop
-};
-exports.defaultProps = defaultProps;
-
-/***/ }),
-
 /***/ "Qj8a":
 /***/ (function(module) {
 
@@ -12039,278 +11278,22 @@ module.exports = require("assert");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return /* binding */ getStaticProps; });
-
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__("nKUr");
-
-// EXTERNAL MODULE: ./node_modules/next/head.js
-var head = __webpack_require__("g4pe");
-var head_default = /*#__PURE__*/__webpack_require__.n(head);
-
-// EXTERNAL MODULE: ./components/Hero.js
-var Hero = __webpack_require__("+lMf");
-
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__("YFqc");
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__("q1tI");
-
-// CONCATENATED MODULE: ./components/Card.js
-
-
-
-
-
-const Trending = ({
-  games,
-  headerText
-}) => {
-  return /*#__PURE__*/Object(jsx_runtime["jsxs"])("main", {
-    className: "grid container mx-auto pb-3  content-start items-center justify-center",
-    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-      className: " py-2 text-xl font-light leading-relaxed mt-0 mb-6 ",
-      children: headerText
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-      children: /*#__PURE__*/Object(jsx_runtime["jsx"])("section", {
-        className: "grid grid-cols-4 sm:grid-cols-4 gap-1",
-        children: games.map((game, i) => /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
-          href: `/games/${game.id}`,
-          children: /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-            className: "bg-gray-800 shadow-lg rounded p-1 max-w-sm ",
-            children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-              className: "group relative",
-              children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: game.cover && game.cover.url.replace("t_thumb", "t_cover_big"),
-                alt: game.name
-              }), /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-                className: "p-1 absolute top-0 left-0 z-20 ml-0 ",
-                children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("span", {
-                  className: "text-xl font-semibold py-1 px-2 rounded text-gray-800 align-middle bg-textwhite  ",
-                  children: [i + 4, "."]
-                })
-              })]
-            })
-          })
-        }, game.id))
-      })
-    })]
-  });
-};
-
-/* harmony default export */ var Card = (Trending);
-// EXTERNAL MODULE: ./node_modules/axios/index.js
-var axios = __webpack_require__("vDqi");
-var axios_default = /*#__PURE__*/__webpack_require__.n(axios);
-
-// CONCATENATED MODULE: ./components/Welcome.js
-
-
-
-
-function Welcome() {
-  return /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-    className: "container flex\tflex-col justify-center  bg-accentColor lg:bg-transparent  text-textwhite text-center py-8 rounded-xl my-3 mt-48 max-w-md  md:max-w-xl lg:max-w-7xl ",
-    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("h1", {
-      className: "border-b pb-6 text-4xl font-black headings md:text-6xl",
-      children: "WELCOME"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-      className: "border-b py-6 text-xl  font-light leading-relaxed mt-0 mb-4 md:text-2xl ",
-      children: "We watched a lot of films in 2020. But it wasn\u2019t just about how many, it was about what we saw. As our worlds contracted, our horizons expanded. The unasked-for gift of time indoors saw us plug historical gaps, discover missing voices, revisit familiar favorites and examine our biases. We couldn\u2019t see each other, but we could see movies, and in them we saw more of each other than we thought possible. We roamed with nomads, walked with wolves, rocked with lovers, crashed the system, called for another round, and then we danced. Bring on the world of tomorrow."
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-      className: "  tracking-normal text-sm font-thin  pt-4 text-center",
-      children: "Small detail will be here"
-    })]
-  });
-}
-
-/* harmony default export */ var components_Welcome = (Welcome);
-// CONCATENATED MODULE: ./components/Categories.js
-
-
-
-
-
-function Categories() {
-  const categories = [{
-    name: "Game of the Year",
-    link: "#goty"
-  }, {
-    name: "Best Casual Games",
-    link: "#casual"
-  }, {
-    name: "Most Played Games",
-    link: "#played"
-  }];
-  return /*#__PURE__*/Object(jsx_runtime["jsx"])(jsx_runtime["Fragment"], {
-    children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-      className: "container flex\tflex-col justify-center  bg-accentColor lg:bg-transparent text-textwhite text-left py-10 rounded-xl my-12 max-w-md  md:max-w-xl lg:max-w-7xl  ",
-      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("h1", {
-        className: "border-b pb-3 text-4xl headings font-black uppercase",
-        children: "Categories"
-      }), categories.map((category, i) => {
-        return /*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
-          href: category.link,
-          children: /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-            className: "border-b py-3 cursor-pointer hover:bg-blue-700  text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase",
-            children: category.name
-          }, i)
-        }, i);
-      }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-        className: "py-3  tracking-normal text-sm font-thin mb-4 pt-4 text-center",
-        children: "Small detail will be here"
-      })]
-    })
-  });
-}
-
-/* harmony default export */ var components_Categories = (Categories);
-// EXTERNAL MODULE: ./node_modules/react-player/youtube.js
-var youtube = __webpack_require__("nEhc");
-
-// CONCATENATED MODULE: ./components/SectionHeaderText.js
-
-
-
-
-
-
-
-const SectionHeaderText = ({
-  headerText,
-  paragraphText
-}) => {
-  return /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-    id: "casual",
-    className: "container container flex lg:bg-transparent\tflex-col justify-center bg-bgcolor text-textwhite text-center py-10 rounded-xl my-3 max-w-md  md:max-w-xl lg:max-w-7xl",
-    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("h1", {
-      className: " pb-6 text-base font-bold tracking-widest headings uppercase",
-      children: "Trends"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])("h1", {
-      className: "pb-6 text-3xl font-black headings uppercase",
-      children: headerText
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-      className: " py-2 text-xl font-light leading-relaxed mt-0 mb-6 ",
-      children: paragraphText
-    })]
-  });
-};
-
-/* harmony default export */ var components_SectionHeaderText = (SectionHeaderText);
-// EXTERNAL MODULE: ./node_modules/react-player/lazy/index.js
-var lazy = __webpack_require__("jhf3");
-var lazy_default = /*#__PURE__*/__webpack_require__.n(lazy);
-
-// CONCATENATED MODULE: ./components/HighestRatedCard.js
-
-
-
-
-
-
-
-
-const HighestRatedCard = ({
-  games,
-  headerText
-}) => {
-  let factor = 5.7;
-  return /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-    className: " container flex  flex-col items-center  justify-center",
-    children: [games.slice(0, 3).map((game, i) => /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-      children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-        className: "flex flex-col justify-center bg-bgcolor my-12 rounded-xl lg:shadow-none overflow-hidden min-w-min max-w-2xl md:max-w-xl lg:max-w-5xl  ",
-        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-          className: "hidden md:block lg:hidden",
-          children: /*#__PURE__*/Object(jsx_runtime["jsx"])(lazy_default.a, {
-            url: `https://www.youtube.com/watch?v=${game.videos && game.videos[0].video_id}`,
-            playing: true,
-            loop: true,
-            volume: 0,
-            muted: true
-          })
-        }), /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-          className: "hidden  lg:block",
-          children: /*#__PURE__*/Object(jsx_runtime["jsx"])(lazy_default.a, {
-            url: `https://www.youtube.com/watch?v=${game.videos && game.videos[0].video_id}`,
-            playing: true,
-            loop: true,
-            volume: 0,
-            muted: true,
-            width: 1020,
-            height: 600
-          })
-        }), /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-          className: "block md:hidden ",
-          children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-            className: "relative pt-16 pb-32 flex content-center items-center justify-center",
-            style: {
-              minHeight: "35vh"
-            },
-            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-              className: "absolute top-0 w-full h-full bg-center bg-cover",
-              style: {
-                backgroundImage: `url('${ true && game.screenshots[0].url.replace("t_thumb", "t_screenshot_big")}')`
-              },
-              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
-                id: "blackOverlay",
-                className: "w-full h-full absolute opacity-50 bg-black bg-bgcolor"
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-              className: "top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden",
-              style: {
-                height: "70px",
-                transform: "translateZ(0)"
-              }
-            })]
-          })
-        }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-          className: "container text-left my-2 mx-5 -mt-16  flex flex-col z-10  ",
-          children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-            className: "pb-1 text-sm pt-2 text-gray-200 font-medium tracking-widest uppercase",
-            children: headerText
-          }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-            className: "flex flex-row ",
-            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-              className: "pt-3 top-0 left-0 z-20 ml-0 mr-3  ",
-              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
-                className: "text-3xl font-semibold py-1 px-5 rounded text-gray-800 align-middle bg-textwhite  ",
-                children: i + 1
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
-              href: `/games/${game.id}`,
-              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-                className: "text-textwhite hover:text-blue-700 cursor-pointer  py-2 pr-8  text-3xl  mt-0 smallheadings",
-                children: game.name
-              })
-            })]
-          }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("p", {
-            className: "text-textwhite py-2 text-base font-medium  mt-2  ",
-            children: ["Rating ", game.total_rating.toFixed(2), "%"]
-          }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-            className: "text-textgray py-2 lg:mr-32 text-base font-medium mt-0 pr-8 ",
-            children: game.summary
-          })]
-        })]
-      })
-    }, i)), /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-      className: "flex flex-col lg:mb-56 justify-center pb-4 bg-bgcolor max-w-md mx-auto rounded-xl shadow-md  md:max-w-3xl",
-      children: /*#__PURE__*/Object(jsx_runtime["jsx"])(Card, {
-        games: games.slice(3, 11)
-      })
-    })]
-  });
-};
-
-/* harmony default export */ var components_HighestRatedCard = (HighestRatedCard);
-// CONCATENATED MODULE: ./pages/index.js
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("g4pe");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("+lMf");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("3Mv1");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("vDqi");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_Welcome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("rtAh");
+/* harmony import */ var _components_Categories__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("2qGk");
+/* harmony import */ var _components_SectionHeaderText__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("Kaw+");
+/* harmony import */ var _components_HighestRatedCard__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("xtq8");
 
 
 
@@ -12326,7 +11309,7 @@ const HighestRatedCard = ({
 
 const gameId = "26192,109462,113112,75235,11169,133004, 1877, 126098, 134581, 119295, 37001, 115115, 90055, 119313, 75239, 119304, 11155, 119277, 107172, 111837, 131614, 131869, 131970, 123902, 52006, 127816, 107262, 131800, 134606, 133887, 135254, 133152, 131946, 138251, 110834, 36550, 86504, 127591, 123395, 107218, 134706, 114286, 114285, 119260, 90055, 114009, 119386, 103291, 113115, 133923, 116589, 119277, 135301, 137131, 131566, 136498, 103330, 133306, 124701, 127816, 133301, 139032, 123902, 138343, 130216, 119277, 138375, 126459, 124954";
 const getStaticProps = async () => {
-  const games = await axios_default()({
+  const games = await axios__WEBPACK_IMPORTED_MODULE_5___default()({
     //url: "http://localhost:8001/games",
     url: "https://api.igdb.com/v4/games",
     method: "POST",
@@ -12335,8 +11318,8 @@ const getStaticProps = async () => {
       "Client-ID": process.env.ClientID,
       Authorization: process.env.Authorization
     },
-    data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
-			 limit 500; where release_dates.date > 1577903637 & id = (${gameId});`
+    data: `fields age_ratings,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
+			 limit 100; where id = (${gameId});;`
   }).then(response => {
     return response.data;
   }).catch(err => {
@@ -12361,27 +11344,21 @@ const Home = ({
   const ps4 = sortedGames.filter(game => game.platforms.includes(48));
   const xbox = sortedGames.filter(game => game.platforms.includes(49));
   const pc = sortedGames.filter(game => game.platforms.includes(6));
-  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(jsx_runtime["Fragment"], {
-    children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])(head_default.a, {
-      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("title", {
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("title", {
         children: "GameBox | Home"
-      }), /*#__PURE__*/Object(jsx_runtime["jsx"])("link", {
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("link", {
         rel: "icon",
         href: "/favicon.ico"
       })]
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(Hero["a" /* default */], {
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Hero__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
       games: sortedGames
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Welcome, {}), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Categories, {}), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_SectionHeaderText, {
-      headerText: "Highest rated  OF THE YEAR",
-      paragraphText: "We watched a lot of films in 2020. But it wasn’t just about how many"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_HighestRatedCard, {
-      games: sortedGames,
-      headerText: "2020 Highest rated Games"
     })]
   });
 };
 
-/* harmony default export */ var pages = __webpack_exports__["default"] = (Home);
+/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
@@ -20966,207 +19943,6 @@ module.exports = function (iconv) {
 
 /***/ }),
 
-/***/ "fflM":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var ICON_SIZE = '64px';
-var cache = {};
-
-var Preview = /*#__PURE__*/function (_Component) {
-  _inherits(Preview, _Component);
-
-  var _super = _createSuper(Preview);
-
-  function Preview() {
-    var _this;
-
-    _classCallCheck(this, Preview);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "mounted", false);
-
-    _defineProperty(_assertThisInitialized(_this), "state", {
-      image: null
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleKeyPress", function (e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        _this.props.onClick();
-      }
-    });
-
-    return _this;
-  }
-
-  _createClass(Preview, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.mounted = true;
-      this.fetchImage(this.props);
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      var _this$props = this.props,
-          url = _this$props.url,
-          light = _this$props.light;
-
-      if (prevProps.url !== url || prevProps.light !== light) {
-        this.fetchImage(this.props);
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.mounted = false;
-    }
-  }, {
-    key: "fetchImage",
-    value: function fetchImage(_ref) {
-      var _this2 = this;
-
-      var url = _ref.url,
-          light = _ref.light;
-
-      if (typeof light === 'string') {
-        this.setState({
-          image: light
-        });
-        return;
-      }
-
-      if (cache[url]) {
-        this.setState({
-          image: cache[url]
-        });
-        return;
-      }
-
-      this.setState({
-        image: null
-      });
-      return window.fetch("https://noembed.com/embed?url=".concat(url)).then(function (response) {
-        return response.json();
-      }).then(function (data) {
-        if (data.thumbnail_url && _this2.mounted) {
-          var image = data.thumbnail_url.replace('height=100', 'height=480');
-
-          _this2.setState({
-            image: image
-          });
-
-          cache[url] = image;
-        }
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props2 = this.props,
-          onClick = _this$props2.onClick,
-          playIcon = _this$props2.playIcon,
-          previewTabIndex = _this$props2.previewTabIndex;
-      var image = this.state.image;
-      var flexCenter = {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      };
-      var styles = {
-        preview: _objectSpread({
-          width: '100%',
-          height: '100%',
-          backgroundImage: image ? "url(".concat(image, ")") : undefined,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          cursor: 'pointer'
-        }, flexCenter),
-        shadow: _objectSpread({
-          background: 'radial-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 60%)',
-          borderRadius: ICON_SIZE,
-          width: ICON_SIZE,
-          height: ICON_SIZE
-        }, flexCenter),
-        playIcon: {
-          borderStyle: 'solid',
-          borderWidth: '16px 0 16px 26px',
-          borderColor: 'transparent transparent transparent white',
-          marginLeft: '7px'
-        }
-      };
-
-      var defaultPlayIcon = /*#__PURE__*/_react["default"].createElement("div", {
-        style: styles.shadow,
-        className: "react-player__shadow"
-      }, /*#__PURE__*/_react["default"].createElement("div", {
-        style: styles.playIcon,
-        className: "react-player__play-icon"
-      }));
-
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        style: styles.preview,
-        className: "react-player__preview",
-        onClick: onClick,
-        tabIndex: previewTabIndex,
-        onKeyPress: this.handleKeyPress
-      }, playIcon || defaultPlayIcon);
-    }
-  }]);
-
-  return Preview;
-}(_react.Component);
-
-exports["default"] = Preview;
-
-/***/ }),
-
 /***/ "fkL1":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26683,156 +25459,6 @@ module.exports = require("fs");
 
 /***/ }),
 
-/***/ "mzdp":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.canPlay = exports.FLV_EXTENSIONS = exports.DASH_EXTENSIONS = exports.HLS_EXTENSIONS = exports.VIDEO_EXTENSIONS = exports.AUDIO_EXTENSIONS = exports.MATCH_URL_KALTURA = exports.MATCH_URL_VIDYARD = exports.MATCH_URL_MIXCLOUD = exports.MATCH_URL_DAILYMOTION = exports.MATCH_URL_TWITCH_CHANNEL = exports.MATCH_URL_TWITCH_VIDEO = exports.MATCH_URL_WISTIA = exports.MATCH_URL_STREAMABLE = exports.MATCH_URL_FACEBOOK_WATCH = exports.MATCH_URL_FACEBOOK = exports.MATCH_URL_VIMEO = exports.MATCH_URL_SOUNDCLOUD = exports.MATCH_URL_YOUTUBE = void 0;
-
-var _utils = __webpack_require__("tbWI");
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-var MATCH_URL_YOUTUBE = /(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:embed\/|v\/|watch\/|watch\?v=|watch\?.+&v=))((\w|-){11})|youtube\.com\/playlist\?list=|youtube\.com\/user\//;
-exports.MATCH_URL_YOUTUBE = MATCH_URL_YOUTUBE;
-var MATCH_URL_SOUNDCLOUD = /(?:soundcloud\.com|snd\.sc)\/[^.]+$/;
-exports.MATCH_URL_SOUNDCLOUD = MATCH_URL_SOUNDCLOUD;
-var MATCH_URL_VIMEO = /vimeo\.com\/.+/;
-exports.MATCH_URL_VIMEO = MATCH_URL_VIMEO;
-var MATCH_URL_FACEBOOK = /^https?:\/\/(www\.)?facebook\.com.*\/(video(s)?|watch|story)(\.php?|\/).+$/;
-exports.MATCH_URL_FACEBOOK = MATCH_URL_FACEBOOK;
-var MATCH_URL_FACEBOOK_WATCH = /^https?:\/\/fb\.watch\/.+$/;
-exports.MATCH_URL_FACEBOOK_WATCH = MATCH_URL_FACEBOOK_WATCH;
-var MATCH_URL_STREAMABLE = /streamable\.com\/([a-z0-9]+)$/;
-exports.MATCH_URL_STREAMABLE = MATCH_URL_STREAMABLE;
-var MATCH_URL_WISTIA = /(?:wistia\.(?:com|net)|wi\.st)\/(?:medias|embed)\/(?:iframe\/)?(.*)$/;
-exports.MATCH_URL_WISTIA = MATCH_URL_WISTIA;
-var MATCH_URL_TWITCH_VIDEO = /(?:www\.|go\.)?twitch\.tv\/videos\/(\d+)($|\?)/;
-exports.MATCH_URL_TWITCH_VIDEO = MATCH_URL_TWITCH_VIDEO;
-var MATCH_URL_TWITCH_CHANNEL = /(?:www\.|go\.)?twitch\.tv\/([a-zA-Z0-9_]+)($|\?)/;
-exports.MATCH_URL_TWITCH_CHANNEL = MATCH_URL_TWITCH_CHANNEL;
-var MATCH_URL_DAILYMOTION = /^(?:(?:https?):)?(?:\/\/)?(?:www\.)?(?:(?:dailymotion\.com(?:\/embed)?\/video)|dai\.ly)\/([a-zA-Z0-9]+)(?:_[\w_-]+)?$/;
-exports.MATCH_URL_DAILYMOTION = MATCH_URL_DAILYMOTION;
-var MATCH_URL_MIXCLOUD = /mixcloud\.com\/([^/]+\/[^/]+)/;
-exports.MATCH_URL_MIXCLOUD = MATCH_URL_MIXCLOUD;
-var MATCH_URL_VIDYARD = /vidyard.com\/(?:watch\/)?([a-zA-Z0-9-]+)/;
-exports.MATCH_URL_VIDYARD = MATCH_URL_VIDYARD;
-var MATCH_URL_KALTURA = /^https?:\/\/[a-zA-Z]+\.kaltura.(com|org)\/p\/([0-9]+)\/sp\/([0-9]+)00\/embedIframeJs\/uiconf_id\/([0-9]+)\/partner_id\/([0-9]+)(.*)entry_id.([a-zA-Z0-9-_]+)$/;
-exports.MATCH_URL_KALTURA = MATCH_URL_KALTURA;
-var AUDIO_EXTENSIONS = /\.(m4a|mp4a|mpga|mp2|mp2a|mp3|m2a|m3a|wav|weba|aac|oga|spx)($|\?)/i;
-exports.AUDIO_EXTENSIONS = AUDIO_EXTENSIONS;
-var VIDEO_EXTENSIONS = /\.(mp4|og[gv]|webm|mov|m4v)($|\?)/i;
-exports.VIDEO_EXTENSIONS = VIDEO_EXTENSIONS;
-var HLS_EXTENSIONS = /\.(m3u8)($|\?)/i;
-exports.HLS_EXTENSIONS = HLS_EXTENSIONS;
-var DASH_EXTENSIONS = /\.(mpd)($|\?)/i;
-exports.DASH_EXTENSIONS = DASH_EXTENSIONS;
-var FLV_EXTENSIONS = /\.(flv)($|\?)/i;
-exports.FLV_EXTENSIONS = FLV_EXTENSIONS;
-
-var canPlayFile = function canPlayFile(url) {
-  if (url instanceof Array) {
-    var _iterator = _createForOfIteratorHelper(url),
-        _step;
-
-    try {
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var item = _step.value;
-
-        if (typeof item === 'string' && canPlayFile(item)) {
-          return true;
-        }
-
-        if (canPlayFile(item.src)) {
-          return true;
-        }
-      }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
-    }
-
-    return false;
-  }
-
-  if ((0, _utils.isMediaStream)(url) || (0, _utils.isBlobUrl)(url)) {
-    return true;
-  }
-
-  return AUDIO_EXTENSIONS.test(url) || VIDEO_EXTENSIONS.test(url) || HLS_EXTENSIONS.test(url) || DASH_EXTENSIONS.test(url) || FLV_EXTENSIONS.test(url);
-};
-
-var canPlay = {
-  youtube: function youtube(url) {
-    if (url instanceof Array) {
-      return url.every(function (item) {
-        return MATCH_URL_YOUTUBE.test(item);
-      });
-    }
-
-    return MATCH_URL_YOUTUBE.test(url);
-  },
-  soundcloud: function soundcloud(url) {
-    return MATCH_URL_SOUNDCLOUD.test(url) && !AUDIO_EXTENSIONS.test(url);
-  },
-  vimeo: function vimeo(url) {
-    return MATCH_URL_VIMEO.test(url) && !VIDEO_EXTENSIONS.test(url) && !HLS_EXTENSIONS.test(url);
-  },
-  facebook: function facebook(url) {
-    return MATCH_URL_FACEBOOK.test(url) || MATCH_URL_FACEBOOK_WATCH.test(url);
-  },
-  streamable: function streamable(url) {
-    return MATCH_URL_STREAMABLE.test(url);
-  },
-  wistia: function wistia(url) {
-    return MATCH_URL_WISTIA.test(url);
-  },
-  twitch: function twitch(url) {
-    return MATCH_URL_TWITCH_VIDEO.test(url) || MATCH_URL_TWITCH_CHANNEL.test(url);
-  },
-  dailymotion: function dailymotion(url) {
-    return MATCH_URL_DAILYMOTION.test(url);
-  },
-  mixcloud: function mixcloud(url) {
-    return MATCH_URL_MIXCLOUD.test(url);
-  },
-  vidyard: function vidyard(url) {
-    return MATCH_URL_VIDYARD.test(url);
-  },
-  kaltura: function kaltura(url) {
-    return MATCH_URL_KALTURA.test(url);
-  },
-  file: canPlayFile
-};
-exports.canPlay = canPlay;
-
-/***/ }),
-
-/***/ "nEhc":
-/***/ (function(module, exports, __webpack_require__) {
-
-
-      const createReactPlayer = __webpack_require__("6tYh").createReactPlayer
-      const Player = __webpack_require__("/6c9").default
-      module.exports = createReactPlayer([{
-        key: 'youtube',
-        canPlay: Player.canPlay,
-        lazyPlayer: Player
-      }])
-    
-
-/***/ }),
-
 /***/ "nKUr":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28300,426 +26926,6 @@ var _default = [{
   })
 }];
 exports["default"] = _default;
-
-/***/ }),
-
-/***/ "q+qS":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _reactFastCompare = _interopRequireDefault(__webpack_require__("bmMU"));
-
-var _props = __webpack_require__("QXAm");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SEEK_ON_PLAY_EXPIRY = 5000;
-
-var Player = /*#__PURE__*/function (_Component) {
-  _inherits(Player, _Component);
-
-  var _super = _createSuper(Player);
-
-  function Player() {
-    var _this;
-
-    _classCallCheck(this, Player);
-
-    for (var _len = arguments.length, _args = new Array(_len), _key = 0; _key < _len; _key++) {
-      _args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(_args));
-
-    _defineProperty(_assertThisInitialized(_this), "mounted", false);
-
-    _defineProperty(_assertThisInitialized(_this), "isReady", false);
-
-    _defineProperty(_assertThisInitialized(_this), "isPlaying", false);
-
-    _defineProperty(_assertThisInitialized(_this), "isLoading", true);
-
-    _defineProperty(_assertThisInitialized(_this), "loadOnReady", null);
-
-    _defineProperty(_assertThisInitialized(_this), "startOnPlay", true);
-
-    _defineProperty(_assertThisInitialized(_this), "seekOnPlay", null);
-
-    _defineProperty(_assertThisInitialized(_this), "onDurationCalled", false);
-
-    _defineProperty(_assertThisInitialized(_this), "handlePlayerMount", function (player) {
-      _this.player = player;
-
-      _this.player.load(_this.props.url);
-
-      _this.progress();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "getInternalPlayer", function (key) {
-      if (!_this.player) return null;
-      return _this.player[key];
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "progress", function () {
-      if (_this.props.url && _this.player && _this.isReady) {
-        var playedSeconds = _this.getCurrentTime() || 0;
-
-        var loadedSeconds = _this.getSecondsLoaded();
-
-        var duration = _this.getDuration();
-
-        if (duration) {
-          var progress = {
-            playedSeconds: playedSeconds,
-            played: playedSeconds / duration
-          };
-
-          if (loadedSeconds !== null) {
-            progress.loadedSeconds = loadedSeconds;
-            progress.loaded = loadedSeconds / duration;
-          } // Only call onProgress if values have changed
-
-
-          if (progress.playedSeconds !== _this.prevPlayed || progress.loadedSeconds !== _this.prevLoaded) {
-            _this.props.onProgress(progress);
-          }
-
-          _this.prevPlayed = progress.playedSeconds;
-          _this.prevLoaded = progress.loadedSeconds;
-        }
-      }
-
-      _this.progressTimeout = setTimeout(_this.progress, _this.props.progressFrequency || _this.props.progressInterval);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleReady", function () {
-      if (!_this.mounted) return;
-      _this.isReady = true;
-      _this.isLoading = false;
-      var _this$props = _this.props,
-          onReady = _this$props.onReady,
-          playing = _this$props.playing,
-          volume = _this$props.volume,
-          muted = _this$props.muted;
-      onReady();
-
-      if (!muted && volume !== null) {
-        _this.player.setVolume(volume);
-      }
-
-      if (_this.loadOnReady) {
-        _this.player.load(_this.loadOnReady, true);
-
-        _this.loadOnReady = null;
-      } else if (playing) {
-        _this.player.play();
-      }
-
-      _this.handleDurationCheck();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handlePlay", function () {
-      _this.isPlaying = true;
-      _this.isLoading = false;
-      var _this$props2 = _this.props,
-          onStart = _this$props2.onStart,
-          onPlay = _this$props2.onPlay,
-          playbackRate = _this$props2.playbackRate;
-
-      if (_this.startOnPlay) {
-        if (_this.player.setPlaybackRate && playbackRate !== 1) {
-          _this.player.setPlaybackRate(playbackRate);
-        }
-
-        onStart();
-        _this.startOnPlay = false;
-      }
-
-      onPlay();
-
-      if (_this.seekOnPlay) {
-        _this.seekTo(_this.seekOnPlay);
-
-        _this.seekOnPlay = null;
-      }
-
-      _this.handleDurationCheck();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handlePause", function (e) {
-      _this.isPlaying = false;
-
-      if (!_this.isLoading) {
-        _this.props.onPause(e);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleEnded", function () {
-      var _this$props3 = _this.props,
-          activePlayer = _this$props3.activePlayer,
-          loop = _this$props3.loop,
-          onEnded = _this$props3.onEnded;
-
-      if (activePlayer.loopOnEnded && loop) {
-        _this.seekTo(0);
-      }
-
-      if (!loop) {
-        _this.isPlaying = false;
-        onEnded();
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleError", function () {
-      var _this$props4;
-
-      _this.isLoading = false;
-
-      (_this$props4 = _this.props).onError.apply(_this$props4, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleDurationCheck", function () {
-      clearTimeout(_this.durationCheckTimeout);
-
-      var duration = _this.getDuration();
-
-      if (duration) {
-        if (!_this.onDurationCalled) {
-          _this.props.onDuration(duration);
-
-          _this.onDurationCalled = true;
-        }
-      } else {
-        _this.durationCheckTimeout = setTimeout(_this.handleDurationCheck, 100);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleLoaded", function () {
-      // Sometimes we know loading has stopped but onReady/onPlay are never called
-      // so this provides a way for players to avoid getting stuck
-      _this.isLoading = false;
-    });
-
-    return _this;
-  }
-
-  _createClass(Player, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.mounted = true;
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      clearTimeout(this.progressTimeout);
-      clearTimeout(this.durationCheckTimeout);
-
-      if (this.isReady && this.props.stopOnUnmount) {
-        this.player.stop();
-
-        if (this.player.disablePIP) {
-          this.player.disablePIP();
-        }
-      }
-
-      this.mounted = false;
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      var _this2 = this;
-
-      // If there isn’t a player available, don’t do anything
-      if (!this.player) {
-        return;
-      } // Invoke player methods based on changed props
-
-
-      var _this$props5 = this.props,
-          url = _this$props5.url,
-          playing = _this$props5.playing,
-          volume = _this$props5.volume,
-          muted = _this$props5.muted,
-          playbackRate = _this$props5.playbackRate,
-          pip = _this$props5.pip,
-          loop = _this$props5.loop,
-          activePlayer = _this$props5.activePlayer;
-
-      if (!(0, _reactFastCompare["default"])(prevProps.url, url)) {
-        if (this.isLoading && !activePlayer.forceLoad) {
-          console.warn("ReactPlayer: the attempt to load ".concat(url, " is being deferred until the player has loaded"));
-          this.loadOnReady = url;
-          return;
-        }
-
-        this.isLoading = true;
-        this.startOnPlay = true;
-        this.onDurationCalled = false;
-        this.player.load(url, this.isReady);
-      }
-
-      if (!prevProps.playing && playing && !this.isPlaying) {
-        this.player.play();
-      }
-
-      if (prevProps.playing && !playing && this.isPlaying) {
-        this.player.pause();
-      }
-
-      if (!prevProps.pip && pip && this.player.enablePIP) {
-        this.player.enablePIP();
-      }
-
-      if (prevProps.pip && !pip && this.player.disablePIP) {
-        this.player.disablePIP();
-      }
-
-      if (prevProps.volume !== volume && volume !== null) {
-        this.player.setVolume(volume);
-      }
-
-      if (prevProps.muted !== muted) {
-        if (muted) {
-          this.player.mute();
-        } else {
-          this.player.unmute();
-
-          if (volume !== null) {
-            // Set volume next tick to fix a bug with DailyMotion
-            setTimeout(function () {
-              return _this2.player.setVolume(volume);
-            });
-          }
-        }
-      }
-
-      if (prevProps.playbackRate !== playbackRate && this.player.setPlaybackRate) {
-        this.player.setPlaybackRate(playbackRate);
-      }
-
-      if (prevProps.loop !== loop && this.player.setLoop) {
-        this.player.setLoop(loop);
-      }
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      if (!this.isReady) return null;
-      return this.player.getDuration();
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      if (!this.isReady) return null;
-      return this.player.getCurrentTime();
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      if (!this.isReady) return null;
-      return this.player.getSecondsLoaded();
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(amount, type) {
-      var _this3 = this;
-
-      // When seeking before player is ready, store value and seek later
-      if (!this.isReady && amount !== 0) {
-        this.seekOnPlay = amount;
-        setTimeout(function () {
-          _this3.seekOnPlay = null;
-        }, SEEK_ON_PLAY_EXPIRY);
-        return;
-      }
-
-      var isFraction = !type ? amount > 0 && amount < 1 : type === 'fraction';
-
-      if (isFraction) {
-        // Convert fraction to seconds based on duration
-        var duration = this.player.getDuration();
-
-        if (!duration) {
-          console.warn('ReactPlayer: could not seek using fraction – duration not yet available');
-          return;
-        }
-
-        this.player.seekTo(duration * amount);
-        return;
-      }
-
-      this.player.seekTo(amount);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var Player = this.props.activePlayer;
-
-      if (!Player) {
-        return null;
-      }
-
-      return /*#__PURE__*/_react["default"].createElement(Player, _extends({}, this.props, {
-        onMount: this.handlePlayerMount,
-        onReady: this.handleReady,
-        onPlay: this.handlePlay,
-        onPause: this.handlePause,
-        onEnded: this.handleEnded,
-        onLoaded: this.handleLoaded,
-        onError: this.handleError
-      }));
-    }
-  }]);
-
-  return Player;
-}(_react.Component);
-
-exports["default"] = Player;
-
-_defineProperty(Player, "displayName", 'Player');
-
-_defineProperty(Player, "propTypes", _props.propTypes);
-
-_defineProperty(Player, "defaultProps", _props.defaultProps);
 
 /***/ }),
 
@@ -30480,6 +28686,38 @@ exports.createReactPlayer = createReactPlayer;
 
 /***/ }),
 
+/***/ "rtAh":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+
+function Welcome() {
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+    className: "container flex\tflex-col justify-center  bg-accentColor lg:bg-transparent  text-textwhite text-center py-8 rounded-xl my-3 mt-48 max-w-md  md:max-w-xl lg:max-w-7xl ",
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+      className: "border-b pb-6 text-4xl font-black headings md:text-6xl",
+      children: "WELCOME"
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+      className: "border-b py-6 text-xl  font-light leading-relaxed mt-0 mb-4 md:text-2xl ",
+      children: "We watched a lot of films in 2020. But it wasn\u2019t just about how many, it was about what we saw. As our worlds contracted, our horizons expanded. The unasked-for gift of time indoors saw us plug historical gaps, discover missing voices, revisit familiar favorites and examine our biases. We couldn\u2019t see each other, but we could see movies, and in them we saw more of each other than we thought possible. We roamed with nomads, walked with wolves, rocked with lovers, crashed the system, called for another round, and then we danced. Bring on the world of tomorrow."
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+      className: "  tracking-normal text-sm font-thin  pt-4 text-center",
+      children: "Small detail will be here"
+    })]
+  });
+}
+
+/* unused harmony default export */ var _unused_webpack_default_export = (Welcome);
+
+/***/ }),
+
 /***/ "s8OG":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -31811,260 +30049,6 @@ module.exports = function xhrAdapter(config) {
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"100\":\"Continue\",\"101\":\"Switching Protocols\",\"102\":\"Processing\",\"103\":\"Early Hints\",\"200\":\"OK\",\"201\":\"Created\",\"202\":\"Accepted\",\"203\":\"Non-Authoritative Information\",\"204\":\"No Content\",\"205\":\"Reset Content\",\"206\":\"Partial Content\",\"207\":\"Multi-Status\",\"208\":\"Already Reported\",\"226\":\"IM Used\",\"300\":\"Multiple Choices\",\"301\":\"Moved Permanently\",\"302\":\"Found\",\"303\":\"See Other\",\"304\":\"Not Modified\",\"305\":\"Use Proxy\",\"306\":\"(Unused)\",\"307\":\"Temporary Redirect\",\"308\":\"Permanent Redirect\",\"400\":\"Bad Request\",\"401\":\"Unauthorized\",\"402\":\"Payment Required\",\"403\":\"Forbidden\",\"404\":\"Not Found\",\"405\":\"Method Not Allowed\",\"406\":\"Not Acceptable\",\"407\":\"Proxy Authentication Required\",\"408\":\"Request Timeout\",\"409\":\"Conflict\",\"410\":\"Gone\",\"411\":\"Length Required\",\"412\":\"Precondition Failed\",\"413\":\"Payload Too Large\",\"414\":\"URI Too Long\",\"415\":\"Unsupported Media Type\",\"416\":\"Range Not Satisfiable\",\"417\":\"Expectation Failed\",\"418\":\"I'm a teapot\",\"421\":\"Misdirected Request\",\"422\":\"Unprocessable Entity\",\"423\":\"Locked\",\"424\":\"Failed Dependency\",\"425\":\"Unordered Collection\",\"426\":\"Upgrade Required\",\"428\":\"Precondition Required\",\"429\":\"Too Many Requests\",\"431\":\"Request Header Fields Too Large\",\"451\":\"Unavailable For Legal Reasons\",\"500\":\"Internal Server Error\",\"501\":\"Not Implemented\",\"502\":\"Bad Gateway\",\"503\":\"Service Unavailable\",\"504\":\"Gateway Timeout\",\"505\":\"HTTP Version Not Supported\",\"506\":\"Variant Also Negotiates\",\"507\":\"Insufficient Storage\",\"508\":\"Loop Detected\",\"509\":\"Bandwidth Limit Exceeded\",\"510\":\"Not Extended\",\"511\":\"Network Authentication Required\"}");
-
-/***/ }),
-
-/***/ "tbWI":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.parseStartTime = parseStartTime;
-exports.parseEndTime = parseEndTime;
-exports.randomString = randomString;
-exports.queryString = queryString;
-exports.getSDK = getSDK;
-exports.getConfig = getConfig;
-exports.omit = omit;
-exports.callPlayer = callPlayer;
-exports.isMediaStream = isMediaStream;
-exports.isBlobUrl = isBlobUrl;
-exports.supportsWebKitPresentationMode = supportsWebKitPresentationMode;
-
-var _loadScript = _interopRequireDefault(__webpack_require__("MuZe"));
-
-var _deepmerge = _interopRequireDefault(__webpack_require__("PE4B"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var MATCH_START_QUERY = /[?&#](?:start|t)=([0-9hms]+)/;
-var MATCH_END_QUERY = /[?&#]end=([0-9hms]+)/;
-var MATCH_START_STAMP = /(\d+)(h|m|s)/g;
-var MATCH_NUMERIC = /^\d+$/; // Parse YouTube URL for a start time param, ie ?t=1h14m30s
-// and return the start time in seconds
-
-function parseTimeParam(url, pattern) {
-  if (url instanceof Array) {
-    return undefined;
-  }
-
-  var match = url.match(pattern);
-
-  if (match) {
-    var stamp = match[1];
-
-    if (stamp.match(MATCH_START_STAMP)) {
-      return parseTimeString(stamp);
-    }
-
-    if (MATCH_NUMERIC.test(stamp)) {
-      return parseInt(stamp);
-    }
-  }
-
-  return undefined;
-}
-
-function parseTimeString(stamp) {
-  var seconds = 0;
-  var array = MATCH_START_STAMP.exec(stamp);
-
-  while (array !== null) {
-    var _array = array,
-        _array2 = _slicedToArray(_array, 3),
-        count = _array2[1],
-        period = _array2[2];
-
-    if (period === 'h') seconds += parseInt(count, 10) * 60 * 60;
-    if (period === 'm') seconds += parseInt(count, 10) * 60;
-    if (period === 's') seconds += parseInt(count, 10);
-    array = MATCH_START_STAMP.exec(stamp);
-  }
-
-  return seconds;
-}
-
-function parseStartTime(url) {
-  return parseTimeParam(url, MATCH_START_QUERY);
-}
-
-function parseEndTime(url) {
-  return parseTimeParam(url, MATCH_END_QUERY);
-} // http://stackoverflow.com/a/38622545
-
-
-function randomString() {
-  return Math.random().toString(36).substr(2, 5);
-}
-
-function queryString(object) {
-  return Object.keys(object).map(function (key) {
-    return "".concat(key, "=").concat(object[key]);
-  }).join('&');
-}
-
-function getGlobal(key) {
-  if (window[key]) {
-    return window[key];
-  }
-
-  if (window.exports && window.exports[key]) {
-    return window.exports[key];
-  }
-
-  if (window.module && window.module.exports && window.module.exports[key]) {
-    return window.module.exports[key];
-  }
-
-  return null;
-} // Util function to load an external SDK
-// or return the SDK if it is already loaded
-
-
-var requests = {};
-
-function getSDK(url, sdkGlobal) {
-  var sdkReady = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-  var isLoaded = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : function () {
-    return true;
-  };
-  var fetchScript = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : _loadScript["default"];
-  var existingGlobal = getGlobal(sdkGlobal);
-
-  if (existingGlobal && isLoaded(existingGlobal)) {
-    return Promise.resolve(existingGlobal);
-  }
-
-  return new Promise(function (resolve, reject) {
-    // If we are already loading the SDK, add the resolve and reject
-    // functions to the existing array of requests
-    if (requests[url]) {
-      requests[url].push({
-        resolve: resolve,
-        reject: reject
-      });
-      return;
-    }
-
-    requests[url] = [{
-      resolve: resolve,
-      reject: reject
-    }];
-
-    var onLoaded = function onLoaded(sdk) {
-      // When loaded, resolve all pending request promises
-      requests[url].forEach(function (request) {
-        return request.resolve(sdk);
-      });
-    };
-
-    if (sdkReady) {
-      var previousOnReady = window[sdkReady];
-
-      window[sdkReady] = function () {
-        if (previousOnReady) previousOnReady();
-        onLoaded(getGlobal(sdkGlobal));
-      };
-    }
-
-    fetchScript(url, function (err) {
-      if (err) {
-        // Loading the SDK failed – reject all requests and
-        // reset the array of requests for this SDK
-        requests[url].forEach(function (request) {
-          return request.reject(err);
-        });
-        requests[url] = null;
-      } else if (!sdkReady) {
-        onLoaded(getGlobal(sdkGlobal));
-      }
-    });
-  });
-}
-
-function getConfig(props, defaultProps) {
-  return (0, _deepmerge["default"])(defaultProps.config, props.config);
-}
-
-function omit(object) {
-  var _ref;
-
-  for (var _len = arguments.length, arrays = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    arrays[_key - 1] = arguments[_key];
-  }
-
-  var omitKeys = (_ref = []).concat.apply(_ref, arrays);
-
-  var output = {};
-  var keys = Object.keys(object);
-
-  for (var _i2 = 0, _keys = keys; _i2 < _keys.length; _i2++) {
-    var key = _keys[_i2];
-
-    if (omitKeys.indexOf(key) === -1) {
-      output[key] = object[key];
-    }
-  }
-
-  return output;
-}
-
-function callPlayer(method) {
-  var _this$player;
-
-  // Util method for calling a method on this.player
-  // but guard against errors and console.warn instead
-  if (!this.player || !this.player[method]) {
-    var message = "ReactPlayer: ".concat(this.constructor.displayName, " player could not call %c").concat(method, "%c \u2013 ");
-
-    if (!this.player) {
-      message += 'The player was not available';
-    } else if (!this.player[method]) {
-      message += 'The method was not available';
-    }
-
-    console.warn(message, 'font-weight: bold', '');
-    return null;
-  }
-
-  for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-    args[_key2 - 1] = arguments[_key2];
-  }
-
-  return (_this$player = this.player)[method].apply(_this$player, args);
-}
-
-function isMediaStream(url) {
-  return typeof window !== 'undefined' && typeof window.MediaStream !== 'undefined' && url instanceof window.MediaStream;
-}
-
-function isBlobUrl(url) {
-  return /^blob:/.test(url);
-}
-
-function supportsWebKitPresentationMode() {
-  var video = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.createElement('video');
-  // Check if Safari supports PiP, and is not on mobile (other than iPad)
-  // iPhone safari appears to "support" PiP through the check, however PiP does not function
-  var notMobile = /iPhone|iPod/.test(navigator.userAgent) === false;
-  return video.webkitSupportsPresentationMode && typeof video.webkitSetPresentationMode === 'function' && notMobile;
-}
 
 /***/ }),
 
@@ -33980,6 +31964,135 @@ Utf7IMAPDecoder.prototype.end = function() {
 
 
 
+
+/***/ }),
+
+/***/ "xtq8":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("3Mv1");
+/* harmony import */ var react_player_lazy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("jhf3");
+/* harmony import */ var react_player_lazy__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_player_lazy__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+
+const HighestRatedCard = ({
+  games,
+  headerText
+}) => {
+  let factor = 5.7;
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+    className: " container flex  flex-col items-center  justify-center",
+    children: [games.slice(0, 1).map((game, i) => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+        className: "flex flex-col justify-center bg-bgcolor my-12 rounded-xl lg:shadow-none overflow-hidden min-w-min max-w-2xl md:max-w-xl lg:max-w-5xl  ",
+        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+          className: "hidden md:block lg:hidden",
+          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_player_lazy__WEBPACK_IMPORTED_MODULE_3___default.a, {
+            url: `https://www.youtube.com/watch?v=${game.videos && game.videos[0].video_id}`,
+            playing: true,
+            loop: true,
+            volume: 0,
+            muted: true
+          })
+        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+          className: "hidden  lg:block",
+          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_player_lazy__WEBPACK_IMPORTED_MODULE_3___default.a, {
+            url: `https://www.youtube.com/watch?v=${game.videos && game.videos[0].video_id}`,
+            playing: true,
+            loop: true,
+            volume: 0,
+            muted: true,
+            width: 1020,
+            height: 600
+          })
+        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+          className: "block md:hidden ",
+          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+            className: "relative pt-16 pb-32 flex content-center items-center justify-center",
+            style: {
+              minHeight: "35vh"
+            },
+            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+              className: "absolute top-0 w-full h-full bg-center bg-cover",
+              style: {
+                backgroundImage: `url('${ true && game.screenshots[0].url.replace("t_thumb", "t_screenshot_big")}')`
+              },
+              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
+                id: "blackOverlay",
+                className: "w-full h-full absolute opacity-50 bg-black bg-bgcolor"
+              })
+            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+              className: "top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden",
+              style: {
+                height: "70px",
+                transform: "translateZ(0)"
+              }
+            })]
+          })
+        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+          className: "container text-left my-2 mx-5 -mt-16  flex flex-col z-10  ",
+          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+            className: "pb-1 text-sm pt-2 text-gray-200 font-medium tracking-widest uppercase",
+            children: headerText
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+            className: "flex flex-row ",
+            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+              className: "pt-3 top-0 left-0 z-20 ml-0 mr-3  ",
+              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
+                className: "text-3xl font-semibold py-1 px-5 rounded text-gray-800 align-middle bg-textwhite  ",
+                children: i + 1
+              })
+            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+              href: `/games/${game.id}`,
+              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+                className: "text-textwhite hover:text-blue-700 cursor-pointer  py-2 pr-8  text-3xl  mt-0 smallheadings",
+                children: game.name
+              })
+            })]
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+            className: "text-textwhite py-2 text-base font-medium  mt-2 ",
+            children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("ul", {
+              className: "flex flex-wrap items-center",
+              children: ["Platform(s)", game.platforms.map((name, i) => {
+                return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                  className: "text-sm font-semibold inline-block py-1 pr-2  rounded  uppercase last: m-1  mr-1 ",
+                  children: name.abbreviation
+                }, i);
+              })]
+            })
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("p", {
+            className: "text-textwhite py-2 text-base font-medium  mt-2  ",
+            children: ["Rating ", game.total_rating, "%"]
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+            className: "text-textgray py-2 lg:mr-32 text-base font-medium mt-0 pr-8 ",
+            children: game.summary
+          })]
+        })]
+      })
+    }, i)), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+      className: "flex flex-col lg:mb-56 justify-center pb-4 bg-bgcolor max-w-md mx-auto rounded-xl shadow-md  md:max-w-3xl",
+      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_Card__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+        games: games.slice(1, 11)
+      })
+    })]
+  });
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (HighestRatedCard);
 
 /***/ }),
 

@@ -2,7 +2,7 @@ import React from "react";
 import ReactPlayer from "react-player";
 import axios from "axios";
 import toDate from "date-fns/toDate";
-import TagList from "../../components/TagList";
+import TagList from "../TagList";
 
 const gameId =
 	"26192,109462,113112,75235,11169,133004";

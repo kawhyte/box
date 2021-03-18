@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "PRBC");
+/******/ 	return __webpack_require__(__webpack_require__.s = "4j5J");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -102,6 +102,8 @@ module.exports =
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Welcome__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("rtAh");
+
 
 
 
@@ -113,83 +115,47 @@ function Landing({
     children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("main", {
       className: "",
       children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        className: "relative pb-6 flex  content-end items-center justify-center  ",
+        className: "relative flex  items-center mx-auto justify-center align-middle  ",
         style: {
           minHeight: "43vh"
         },
         children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-          className: "absolute text-pop-up-top  top-0 w-full max-w-screen-2xl justify-center flex flex-col items-center z-10  h-full ",
-          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-            className: "text-7xl headings text-center  w-full  font-black headings text-textwhite tracking-wider uppercase   sm:text-8xl md:text-8xl lg:text-15xl xl:text-10xl  ",
-            children: "Video Game"
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-            className: "text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl ",
-            children: "Concierge"
-          })]
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-          className: "",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "relative w-full   grid grid-cols-3 md:grid-cols-3  lg:grid-cols-6 lg:gap-4",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-              className: "animate-pulse",
+          class: "flex h-screen justify-center overflow-hidden ",
+          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+            className: "absolute h-screen mx-auto justify-center flex flex-col items-center z-10 ",
+            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+              className: "justify-center flex flex-col items-center text-pop-up-top",
+              children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+                className: "text-6xl  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-8xl lg:text-15xl xl:text-10xl  ",
+                children: "Video Game"
+              }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+                className: "text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl ",
+                children: "Concierge"
+              })]
+            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+              className: "py-6  text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl",
+              children: "Not sure which game to play next? We can help you out."
+            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("button", {
+              className: "uppercase    mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg",
+              children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
+                className: "far fa-play-circle",
+                children: " "
+              }), " Get a game Suggestion"]
+            })]
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+            className: "relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden",
+            children: [games.slice(0, 20).map(game => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+              className: "animate-puls",
               children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
                 className: "w-full col-span-2  md:w-72 block rounded",
-                src: games[0].cover && games[0].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[0].name
+                src: game.cover && game.cover.url.replace("t_thumb", "t_cover_big"),
+                alt: game.name
               })
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full col-span-3  md:w-72 block rounded",
-                src: games[1].cover && games[1].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[1].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full col-span-3  md:w-72 block rounded",
-                src: games[1].cover && games[1].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[1].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[2].cover && games[2].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[2].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[3].cover && games[3].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[3].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[4].cover && games[4].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[4].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[5].cover && games[5].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[5].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[6].cover && games[6].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[6].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              children: [" ", /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full  md:w-72 block rounded",
-                src: games[7].cover && games[7].cover.url.replace("t_thumb", "t_cover_big"),
-                alt: games[7].name
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
+            })), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
               id: "blackOverlay",
-              className: "w-full h-full absolute opacity-80 bg-gray-900  "
+              className: "w-full h-screen absolute opacity-80 bg-gray-900  "
             })]
-          })
+          })]
         }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
           className: "top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden",
           style: {
@@ -2116,7 +2082,7 @@ function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = react_default.a.useState(false);
   return /*#__PURE__*/Object(jsx_runtime["jsx"])(jsx_runtime["Fragment"], {
     children: /*#__PURE__*/Object(jsx_runtime["jsx"])("nav", {
-      className: (props.transparent ? "top-0 absolute z-50 w-full" : "relative  bg-white shadow-lg") + " flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg",
+      className: (props.transparent ? "top-0 absolute z-50 w-full" : "relative  bg-white shadow-lg") + " flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg ",
       children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
         className: "container px-4 mx-auto flex flex-wrap items-center justify-between",
         children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
@@ -2147,59 +2113,58 @@ function Navbar(props) {
             })
           })]
         }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-          className: "lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none" + (navbarOpen ? " block rounded shadow-lg bg-gray-300" : " hidden"),
+          className: "lg:flex flex-grow items-center bg-white pl-10 lg:bg-transparent lg:shadow-none" + (navbarOpen ? " block rounded shadow-lg bg-gray-300" : " hidden"),
           id: "example-navbar-warning",
-          children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("ul", {
+          children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("ul", {
             className: "flex flex-col lg:flex-row list-none mr-auto ",
-            children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
-              className: "flex items-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
-                href: "https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing",
-                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                  className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " far fa-file-alt text-lg leading-lg mr-2"
-                }), " ", "About"]
+            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+              href: "playstation",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+                className: "flex items-center",
+                children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+                  className: (props.transparent ? "lg:text-yellow-300 lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
+                    className: (props.transparent ? "lg:text-yellow-300 text-yellow-500" : "text-gray-500") + " fas fa-crown text-lg leading-lg mr-2"
+                  }), " ", "2020 game in review"]
+                })
               })
-            })
-          }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("ul", {
+            }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+              href: "playstation",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+                className: "flex items-center",
+                children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
+                    className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-playstation text-lg leading-lg mr-2"
+                  }), " ", "PlayStation"]
+                })
+              })
+            }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+              href: "nintendo",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+                className: "flex items-center",
+                children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
+                    className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fas fa-gamepad text-lg leading-lg mr-2"
+                  }), " ", "Nintendo"]
+                })
+              })
+            }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+              href: "xbox",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+                className: "flex items-center",
+                children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
+                    className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-xbox text-lg leading-lg mr-2"
+                  }), " ", "Xbox"]
+                })
+              })
+            })]
+          }), /*#__PURE__*/Object(jsx_runtime["jsx"])("ul", {
             className: "flex flex-col lg:flex-row list-none lg:ml-auto",
-            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
-              className: "flex items-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800" : "text-gray-800 hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
-                href: "#pablo",
-                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                  className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-facebook text-lg leading-lg "
-                }), /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
-                  className: "lg:hidden inline-block ml-2",
-                  children: "Share"
-                })]
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
-              className: "flex items-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800" : "text-gray-800 hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
-                href: "#pablo",
-                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                  className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-twitter text-lg leading-lg "
-                }), /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
-                  className: "lg:hidden inline-block ml-2",
-                  children: "Tweet"
-                })]
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
-              className: "flex items-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800" : "text-gray-800 hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
-                href: "#pablo",
-                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                  className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-github text-lg leading-lg "
-                }), /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
-                  className: "lg:hidden inline-block ml-2",
-                  children: "Star"
-                })]
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+            children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
               className: "flex items-center",
               children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("button", {
                 className: (props.transparent ? "bg-white text-gray-800 active:bg-gray-100" : "bg-pink-500 text-textwhite active:bg-pink-600") + " text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3",
@@ -2211,7 +2176,7 @@ function Navbar(props) {
                   className: "fas fa-arrow-alt-circle-down"
                 }), " Download"]
               })
-            })]
+            })
           })]
         })]
       })
@@ -2298,6 +2263,14 @@ Object.defineProperty(exports, "NodeType", { enumerable: true, get: function () 
 "use strict";
 exports.__esModule=true;exports.wait=wait;exports.error=error;exports.warn=warn;exports.ready=ready;exports.info=info;exports.event=event;exports.prefixes=void 0;var _chalk=_interopRequireDefault(__webpack_require__("4JQ2"));function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}const prefixes={wait:_chalk.default.cyan('wait')+'  -',error:_chalk.default.red('error')+' -',warn:_chalk.default.yellow('warn')+'  -',ready:_chalk.default.green('ready')+' -',info:_chalk.default.cyan('info')+'  -',event:_chalk.default.magenta('event')+' -'};exports.prefixes=prefixes;function wait(...message){console.log(prefixes.wait,...message);}function error(...message){console.error(prefixes.error,...message);}function warn(...message){console.warn(prefixes.warn,...message);}function ready(...message){console.log(prefixes.ready,...message);}function info(...message){console.log(prefixes.info,...message);}function event(...message){console.log(prefixes.event,...message);}
 //# sourceMappingURL=log.js.map
+
+/***/ }),
+
+/***/ "20a2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("nOHt")
+
 
 /***/ }),
 
@@ -3924,6 +3897,109 @@ module.exports.default = module.exports; // For TypeScript
 
 /***/ }),
 
+/***/ "4j5J":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
+var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
+/* harmony import */ var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("LZ9C");
+var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("LZ9C", 1);
+/* harmony import */ var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("67Bq");
+var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t("67Bq", 1);
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("7ZOo");
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__);
+
+      
+      
+      
+      
+      
+      
+  
+      
+      const { processEnv } = __webpack_require__("fXeI")
+      processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nDB_PASS=mypassword"}])
+    
+      
+      const runtimeConfig = {}
+      
+  
+      const appMod = __webpack_require__("1TCz")
+      let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
+  
+      const compMod = __webpack_require__("n5Vf")
+  
+      const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
+      /* harmony default export */ __webpack_exports__["default"] = (Component);
+      const getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
+      const getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
+      const getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
+  
+      // kept for detecting legacy exports
+      const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
+      const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
+      const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
+      const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
+  
+      let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
+      const _app = App
+  
+      const { renderReqToHTML, render } = Object(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__["getPageHandler"])({
+        pageModule: compMod,
+        pageComponent: Component,
+        pageConfig: config,
+        appModule: App,
+        documentModule: __webpack_require__("VDXt"),
+        errorModule: __webpack_require__("/a9y"),
+        notFoundModule: undefined,
+        pageGetStaticProps: getStaticProps,
+        pageGetStaticPaths: getStaticPaths,
+        pageGetServerSideProps: getServerSideProps,
+  
+        assetPrefix: "",
+        canonicalBase: "",
+        generateEtags: true,
+        poweredByHeader: true,
+  
+        runtimeConfig,
+        buildManifest: private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__,
+        reactLoadableManifest: private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__,
+  
+        rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
+        i18n: undefined,
+        page: "/games/[id]",
+        buildId: "jHwnMmIS0oCMXeJOGTLVI",
+        escapedBuildId: "jHwnMmIS0oCMXeJOGTLVI",
+        basePath: "",
+        pageIsDynamic: true,
+        encodedPreviewProps: {previewModeId:"bba3730818324043e16809b624e1e683",previewModeSigningKey:"3824bf1764f48e5d2395b8b934d001dc7a15c659ac751edd0b25fec76aaf5190",previewModeEncryptionKey:"a4d38bd7ca01e169e9dc3abdbeea59f5a9c6b8208bf34345b181bd73bc638cca"},
+        experimental: {
+          onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
+          initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
+        }
+      })
+      
+    
+
+/***/ }),
+
 /***/ "5Cgt":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4259,7 +4335,7 @@ function detectLocaleCookie(req, locales) {
 /***/ "67Bq":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"./DailyMotion\":[{\"id\":\"oKWQ\",\"file\":\"static/chunks/reactPlayerDailyMotion.7cc5f9e9d9e09cf5e7cb.js\"}],\"./Facebook\":[{\"id\":\"nQ6K\",\"file\":\"static/chunks/reactPlayerFacebook.c16d94410e4ead9fd5a3.js\"}],\"./FilePlayer\":[{\"id\":\"Nn5g\",\"file\":\"static/chunks/reactPlayerFilePlayer.36e185f05d56abfe9c5a.js\"}],\"./Kaltura\":[{\"id\":\"4Xmi\",\"file\":\"static/chunks/reactPlayerKaltura.895b3e173c9b22982422.js\"}],\"./Mixcloud\":[{\"id\":\"eywx\",\"file\":\"static/chunks/reactPlayerMixcloud.61fd5005b7ed0adb60b9.js\"}],\"./Preview\":[{\"id\":\"0ZcZ\",\"file\":\"static/chunks/reactPlayerPreview.d7392fe7dba19c20bc04.js\"}],\"./SoundCloud\":[{\"id\":\"W6fG\",\"file\":\"static/chunks/reactPlayerSoundCloud.5c79f50b0fe0e1c8fae4.js\"}],\"./Streamable\":[{\"id\":\"v4zF\",\"file\":\"static/chunks/reactPlayerStreamable.8b8589e4ca36e39cd8f3.js\"}],\"./Twitch\":[{\"id\":\"Vzir\",\"file\":\"static/chunks/reactPlayerTwitch.882c25f39777e505ad60.js\"}],\"./Vidyard\":[{\"id\":\"WvJM\",\"file\":\"static/chunks/reactPlayerVidyard.222fcd6d8f2ede9e3fdd.js\"}],\"./Vimeo\":[{\"id\":\"VkHn\",\"file\":\"static/chunks/reactPlayerVimeo.c3848228aaeda27ced8b.js\"}],\"./Wistia\":[{\"id\":\"3yWd\",\"file\":\"static/chunks/reactPlayerWistia.482728e3d3d95cea3faf.js\"}],\"./YouTube\":[{\"id\":\"5RnD\",\"file\":\"static/chunks/reactPlayerYouTube.8b9d86f868427dd1bbef.js\"}]}");
+module.exports = JSON.parse("{\"./DailyMotion\":[{\"id\":\"oKWQ\",\"file\":\"static/chunks/reactPlayerDailyMotion.479a127ea03581f77a6d.js\"}],\"./Facebook\":[{\"id\":\"nQ6K\",\"file\":\"static/chunks/reactPlayerFacebook.16804fe2ce06861fafd6.js\"}],\"./FilePlayer\":[{\"id\":\"Nn5g\",\"file\":\"static/chunks/reactPlayerFilePlayer.d316b096ebd5b2000b46.js\"}],\"./Kaltura\":[{\"id\":\"4Xmi\",\"file\":\"static/chunks/reactPlayerKaltura.479e0b1de17e1b1a8b85.js\"}],\"./Mixcloud\":[{\"id\":\"eywx\",\"file\":\"static/chunks/reactPlayerMixcloud.3149def966b7a6bab128.js\"}],\"./Preview\":[{\"id\":\"0ZcZ\",\"file\":\"static/chunks/reactPlayerPreview.6273fdbbcf4cf186c6ef.js\"}],\"./SoundCloud\":[{\"id\":\"W6fG\",\"file\":\"static/chunks/reactPlayerSoundCloud.badeb64f84af36130922.js\"}],\"./Streamable\":[{\"id\":\"v4zF\",\"file\":\"static/chunks/reactPlayerStreamable.3b26125af1d4343647b7.js\"}],\"./Twitch\":[{\"id\":\"Vzir\",\"file\":\"static/chunks/reactPlayerTwitch.3c90851494c581a6d9d8.js\"}],\"./Vidyard\":[{\"id\":\"WvJM\",\"file\":\"static/chunks/reactPlayerVidyard.a0d541588a9a94e3dc82.js\"}],\"./Vimeo\":[{\"id\":\"VkHn\",\"file\":\"static/chunks/reactPlayerVimeo.bc308c5e3d89a4466f81.js\"}],\"./Wistia\":[{\"id\":\"3yWd\",\"file\":\"static/chunks/reactPlayerWistia.8f9c622f558daaf28f12.js\"}],\"./YouTube\":[{\"id\":\"5RnD\",\"file\":\"static/chunks/reactPlayerYouTube.117f09816e63b533d792.js\"}]}");
 
 /***/ }),
 
@@ -8915,7 +8991,7 @@ module.exports = function createError(message, config, code, request, response) 
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-8f31809deb7932dd0187.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/77Ngc-aEfV-59gVrMhKbq/_buildManifest.js\",\"static/77Ngc-aEfV-59gVrMhKbq/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-d81ea22c0658634f3125.js\",\"static/chunks/webpack-5c358bb8130e9e413254.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/3ef630e34cd10ba68f9d468ac363ff81c534e1e9.b0b5bb9b556358249417.js\",\"static/chunks/2fe99b9a9e1594d354d7740496741e904cbefe13.622d595ccf71a3d8e9ac.js\",\"static/chunks/pages/index-e1382ca8331a6dcc32f0.js\"],\"/_app\":[\"static/chunks/main-d81ea22c0658634f3125.js\",\"static/chunks/webpack-5c358bb8130e9e413254.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/3ef630e34cd10ba68f9d468ac363ff81c534e1e9.b0b5bb9b556358249417.js\",\"static/css/5403fed80ae3c5523250.css\",\"static/chunks/pages/_app-e0fd0860d52876600018.js\"],\"/_error\":[\"static/chunks/main-d81ea22c0658634f3125.js\",\"static/chunks/webpack-5c358bb8130e9e413254.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/pages/_error-92c485d3ee12935ea5b6.js\"],\"/games/[id]\":[\"static/chunks/main-d81ea22c0658634f3125.js\",\"static/chunks/webpack-5c358bb8130e9e413254.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/2fe99b9a9e1594d354d7740496741e904cbefe13.622d595ccf71a3d8e9ac.js\",\"static/chunks/pages/games/[id]-05ba8fda918e36acf6f9.js\"]},\"ampFirstPages\":[]}");
+module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-feb8a7604fa7fce626b2.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/jHwnMmIS0oCMXeJOGTLVI/_buildManifest.js\",\"static/jHwnMmIS0oCMXeJOGTLVI/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/index-c035399ff633ff17345c.js\"],\"/_app\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/css/baa45da4db8da6680c9d.css\",\"static/chunks/pages/_app-b984acc134a406642874.js\"],\"/_error\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/pages/_error-f4c6ef9c1129795098b3.js\"],\"/games/[id]\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/pages/games/[id]-ec50fab39fd8952c0433.js\"],\"/goty\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/goty-0e5ba106f0624932dbe2.js\"],\"/nintendo\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/nintendo-e56997b5ce51800933ca.js\"],\"/playstation\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/playstation-8b269b39c6feb76b9193.js\"],\"/xbox\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/xbox-5be3d5d11fdc47da4ee1.js\"]},\"ampFirstPages\":[]}");
 
 /***/ }),
 
@@ -10376,109 +10452,6 @@ module.exports = {
 };
 
 
-
-/***/ }),
-
-/***/ "PRBC":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
-var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
-/* harmony import */ var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("LZ9C");
-var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("LZ9C", 1);
-/* harmony import */ var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("67Bq");
-var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t("67Bq", 1);
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("7ZOo");
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__);
-
-      
-      
-      
-      
-      
-      
-  
-      
-      const { processEnv } = __webpack_require__("fXeI")
-      processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nDB_PASS=mypassword"}])
-    
-      
-      const runtimeConfig = {}
-      
-  
-      const appMod = __webpack_require__("1TCz")
-      let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
-  
-      const compMod = __webpack_require__("n5Vf")
-  
-      const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
-      /* harmony default export */ __webpack_exports__["default"] = (Component);
-      const getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
-      const getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
-      const getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
-  
-      // kept for detecting legacy exports
-      const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
-      const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
-      const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
-      const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
-  
-      let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
-      const _app = App
-  
-      const { renderReqToHTML, render } = Object(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__["getPageHandler"])({
-        pageModule: compMod,
-        pageComponent: Component,
-        pageConfig: config,
-        appModule: App,
-        documentModule: __webpack_require__("VDXt"),
-        errorModule: __webpack_require__("/a9y"),
-        notFoundModule: undefined,
-        pageGetStaticProps: getStaticProps,
-        pageGetStaticPaths: getStaticPaths,
-        pageGetServerSideProps: getServerSideProps,
-  
-        assetPrefix: "",
-        canonicalBase: "",
-        generateEtags: true,
-        poweredByHeader: true,
-  
-        runtimeConfig,
-        buildManifest: private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__,
-        reactLoadableManifest: private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__,
-  
-        rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
-        i18n: undefined,
-        page: "/games/[id]",
-        buildId: "77Ngc-aEfV-59gVrMhKbq",
-        escapedBuildId: "77Ngc\-aEfV\-59gVrMhKbq",
-        basePath: "",
-        pageIsDynamic: true,
-        encodedPreviewProps: {previewModeId:"9f6214d367288b8f03585b2dcb73a776",previewModeSigningKey:"79d5c804aca70328ce25bea3a523e69243d37ba9230f9ad8206648f9da5ae4ca",previewModeEncryptionKey:"fc3aaff58efed947964308e88151cf50aef440bdca574a0e3dbb8c6fedaf9e57"},
-        experimental: {
-          onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
-          initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
-        }
-      })
-      
-    
 
 /***/ }),
 
@@ -25391,8 +25364,7 @@ exports.canPlay = canPlay;
 __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
-__webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return /* binding */ getStaticPaths; });
-__webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return /* binding */ getStaticProps; });
+__webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return /* binding */ getServerSideProps; });
 
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__("nKUr");
@@ -25445,6 +25417,9 @@ function TagList({
 }
 
 /* harmony default export */ var components_TagList = (TagList);
+// EXTERNAL MODULE: ./node_modules/next/router.js
+var router = __webpack_require__("20a2");
+
 // CONCATENATED MODULE: ./pages/games/[id].js
 
 
@@ -25454,36 +25429,10 @@ function TagList({
 
 
 
+
+
 const gameId = "26192,109462,113112,75235,11169,133004";
-const getStaticPaths = async () => {
-  const games = await axios_default()({
-    url: "https://api.igdb.com/v4/games",
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Client-ID": process.env.ClientID,
-      Authorization: process.env.Authorization
-    },
-    data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
-		limit 500; where release_dates.date >= 1578681411 & id = (${gameId}) & version_parent = null;`
-  }).then(response => {
-    return response.data;
-  }).catch(err => {
-    console.error(err);
-  });
-  const paths = games.map(game => {
-    return {
-      params: {
-        id: game.id.toString()
-      }
-    };
-  });
-  return {
-    paths: paths,
-    fallback: false
-  };
-};
-const getStaticProps = async context => {
+const getServerSideProps = async context => {
   const id = context.params.id;
   const data = await axios_default()({
     url: "https://api.igdb.com/v4/games",
@@ -25505,6 +25454,118 @@ const getStaticProps = async context => {
     }
   };
 };
+{
+  /*export const getStaticProps = async (context) => {
+  const id = context.params.id;
+  	const data = await axios({
+  	url: "https://api.igdb.com/v4/games",
+  	method: "POST",
+  	headers: {
+  		Accept: "application/json",
+  		"Client-ID": process.env.ClientID,
+  		Authorization: process.env.Authorization,
+  	},
+  	data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms.*,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;limit 500; where id = ${id};`,
+  })
+  	.then((response) => {
+  		return response.data;
+  	})
+  	.catch((err) => {
+  		console.error(err);
+  	});
+  	return {
+  	props: { data: data },
+  };
+  };
+  export const getStaticPaths = async () => {
+  const games = await axios({
+  	url: "https://api.igdb.com/v4/games",
+  	method: "POST",
+  	headers: {
+  		Accept: "application/json",
+  		"Client-ID": process.env.ClientID,
+  		Authorization: process.env.Authorization,
+  	},
+  	data: `fields age_ratings,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
+  	limit 11; where first_release_date > 1577905941 & first_release_date < 1609528341 & platforms = {169,49,167,48,130} & rating > 60;`,
+  })
+  	.then((response) => {
+  		console.log("XXX", response.data)
+  		return response.data;
+  	})
+  	.catch((err) => {
+  		console.error(err);
+  	});
+  	//const ids = games.map((item) => item.id);
+  	
+  	//const paths = ids.map((id) => ({ params: { id: id.toString() } }));
+  
+  const paths = games.map((game) => {
+  	return {
+  		params: { id: game.id.toString() },
+  	};
+  });
+  return {
+  	paths,
+  	fallback: false,
+  };
+  }; */
+}
+{
+  /*     
+  export const getStaticPaths = async () => {
+  const games = await axios({
+  	url: "https://api.igdb.com/v4/games",
+  	method: "POST",
+  	headers: {
+  		Accept: "application/json",
+  		"Client-ID": process.env.ClientID,
+  		Authorization: process.env.Authorization,
+  	},
+  	data: `fields age_ratings,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
+  	limit 11; where first_release_date > 1577905941 & first_release_date < 1609528341 & platforms = {169,49,167,48,130} & rating > 60;`,
+  })
+  	.then((response) => {
+  		return response.data;
+  	})
+  	.catch((err) => {
+  		console.error(err);
+  	});
+  	const paths = games.map((game) => {
+  	return {
+  		params: { id: game.id.toString() },
+  	};
+  });
+  	return {
+  	paths: paths,
+  	fallback: false
+  };
+  };
+  export const getStaticProps = async (context) => {
+  const id = context.params.id;
+  	const data = await axios({
+  	url: "https://api.igdb.com/v4/games",
+  	method: "POST",
+  	headers: {
+  		Accept: "application/json",
+  		"Client-ID": process.env.ClientID,
+  		Authorization: process.env.Authorization,
+  	},
+  	data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms.*,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites; where id = ${id};`,
+  })
+  	.then((response) => {
+  		return response.data;
+  	})
+  	.catch((err) => {
+  		console.error(err);
+  	});
+  	return {
+  	props: { data: data },
+  	
+  };
+  };
+  */
+}
 
 const Details = ({
   data
@@ -28522,6 +28583,38 @@ if (nodeVer) {
 
 if (false) {}
 
+
+/***/ }),
+
+/***/ "rtAh":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+
+function Welcome() {
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+    className: "container flex\tflex-col justify-center  bg-accentColor lg:bg-transparent  text-textwhite text-center py-8 rounded-xl my-3 mt-48 max-w-md  md:max-w-xl lg:max-w-7xl ",
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
+      className: "border-b pb-6 text-4xl font-black headings md:text-6xl",
+      children: "WELCOME"
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+      className: "border-b py-6 text-xl  font-light leading-relaxed mt-0 mb-4 md:text-2xl ",
+      children: "We watched a lot of films in 2020. But it wasn\u2019t just about how many, it was about what we saw. As our worlds contracted, our horizons expanded. The unasked-for gift of time indoors saw us plug historical gaps, discover missing voices, revisit familiar favorites and examine our biases. We couldn\u2019t see each other, but we could see movies, and in them we saw more of each other than we thought possible. We roamed with nomads, walked with wolves, rocked with lovers, crashed the system, called for another round, and then we danced. Bring on the world of tomorrow."
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+      className: "  tracking-normal text-sm font-thin  pt-4 text-center",
+      children: "Small detail will be here"
+    })]
+  });
+}
+
+/* unused harmony default export */ var _unused_webpack_default_export = (Welcome);
 
 /***/ }),
 
