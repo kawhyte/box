@@ -60,6 +60,27 @@ export default function Navbar(props) {
 									<a
 										className={
 											(props.transparent
+												? "lg:text-yellow-300 lg:hover:text-gray-300  text-gray-800"
+												: "text-gray-800  hover:text-gray-600") +
+											" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+										}>
+										<i
+											className={
+												(props.transparent
+													? "lg:text-yellow-300 text-yellow-500"
+													: "text-gray-500") +
+												" fas fa-crown text-lg leading-lg mr-2"
+											}
+										/>{" "}
+										2020 game in review
+									</a>
+								</li>
+							</Link>
+							<Link href='playstation'>
+								<li className='flex items-center'>
+									<a
+										className={
+											(props.transparent
 												? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
 												: "text-gray-800  hover:text-gray-600") +
 											" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -72,7 +93,7 @@ export default function Navbar(props) {
 												" fab fa-playstation text-lg leading-lg mr-2"
 											}
 										/>{" "}
-										PlayStation Games
+										PlayStation
 									</a>
 								</li>
 							</Link>
@@ -94,7 +115,7 @@ export default function Navbar(props) {
 												" fas fa-gamepad text-lg leading-lg mr-2"
 											}
 										/>{" "}
-										Nintendo Games
+										Nintendo
 									</a>
 								</li>
 							</Link>
@@ -116,74 +137,17 @@ export default function Navbar(props) {
 												" fab fa-xbox text-lg leading-lg mr-2"
 											}
 										/>{" "}
-										Xbox Games
+										Xbox
 									</a>
 								</li>
 							</Link>
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
-							<li className='flex items-center'>
-								<a
-									className={
-										(props.transparent
-											? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800"
-											: "text-gray-800 hover:text-gray-600") +
-										" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-									}
-									href='#pablo'>
-									<i
-										className={
-											(props.transparent
-												? "lg:text-gray-300 text-gray-500"
-												: "text-gray-500") +
-											" fab fa-facebook text-lg leading-lg "
-										}
-									/>
-									<span className='lg:hidden inline-block ml-2'>Share</span>
-								</a>
-							</li>
+				
 
-							<li className='flex items-center'>
-								<a
-									className={
-										(props.transparent
-											? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800"
-											: "text-gray-800 hover:text-gray-600") +
-										" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-									}
-									href='#pablo'>
-									<i
-										className={
-											(props.transparent
-												? "lg:text-gray-300 text-gray-500"
-												: "text-gray-500") +
-											" fab fa-twitter text-lg leading-lg "
-										}
-									/>
-									<span className='lg:hidden inline-block ml-2'>Tweet</span>
-								</a>
-							</li>
+		
 
-							<li className='flex items-center'>
-								<a
-									className={
-										(props.transparent
-											? "lg:text-textwhite lg:hover:text-gray-300 text-gray-800"
-											: "text-gray-800 hover:text-gray-600") +
-										" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-									}
-									href='#pablo'>
-									<i
-										className={
-											(props.transparent
-												? "lg:text-gray-300 text-gray-500"
-												: "text-gray-500") +
-											" fab fa-github text-lg leading-lg "
-										}
-									/>
-									<span className='lg:hidden inline-block ml-2'>Star</span>
-								</a>
-							</li>
+
 
 							<li className='flex items-center'>
 								<button

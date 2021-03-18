@@ -3,7 +3,7 @@ import Head from "next/head";
 import Categories from "../components/Categories";
 import SectionHeaderText from "../components/SectionHeaderText";
 import HighestRatedCard from "../components/HighestRatedCard";
-import { getGames } from "./getGames";
+import { getGames } from "../util/getGames";
 
 export const getStaticProps = getGames("(169,49)");
 

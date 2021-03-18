@@ -20,24 +20,28 @@ export default function Landing({ games }) {
 							id='blackOverlay'
 							className='w-full h-full absolute opacity-75 bg-black  '></span>
 					</div>*/}
-					<div class="flex h-screen justify-center ">
+					<div class='flex h-screen justify-center overflow-hidden '>
+						<div className='absolute h-screen mx-auto justify-center flex flex-col items-center z-10 '>
+							<div className='justify-center flex flex-col items-center text-pop-up-top'>
+								<p className='text-6xl  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-8xl lg:text-15xl xl:text-10xl  '>
+									Video Game
+								</p>
+								<p className='text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl '>
+									Concierge
+								</p>
+							</div>
+							<p className='py-6  text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
+								Not sure which game to play next? We can help you out.
+							</p>
 
-					
+							<button className='uppercase    mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
+								<i className='far fa-play-circle'> </i> Get a
+								game Suggestion
+							</button>
+						</div>
 
-
-					
-					<div className='absolute h-screen mx-auto justify-center flex flex-col items-center z-10 '>
-						<p className='text-7xl  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-8xl md:text-8xl lg:text-15xl xl:text-10xl  '>
-							Video Game
-						</p>
-						<p className='text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl '>
-							Concierge
-						</p>
-						<button>Start</button>
-					</div>
-
-						<div className='relative w-full grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 lg:gap-2'>
-							{games.slice(0,18).map((game) => (
+						<div className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden'>
+							{games.slice(0, 20).map((game) => (
 								<div className='animate-puls'>
 									<img
 										className='w-full col-span-2  md:w-72 block rounded'

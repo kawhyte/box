@@ -5,7 +5,7 @@ import SectionHeaderText from "../components/SectionHeaderText";
 import axios from "axios";
 import HighestRatedCard from "../components/HighestRatedCard";
 
-import { getGames } from "./getGames";
+import { getGames } from "../util/getGames";
 
 export const getStaticProps = getGames("(167,48)");
 
