@@ -1,6 +1,6 @@
 import React from "react";
 import Welcome from "./Welcome";
-import { motion } from 'framer-motion';
+import { animate, motion } from 'framer-motion';
 
 export default function Hero({ games }) {
 	return (
@@ -59,15 +59,7 @@ export default function Hero({ games }) {
 							</div>
 						</div>
 
-						<div className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden' whileHover={{
-							position: 'relative',
-							zIndex: 1,
-							background: 'white',
-							scale: 1.1,
-							transition: {
-							  duration: .2
-							}
-						  }}>
+						<motion.div className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden' >
 							{games.slice(0, 24).map((game) => (
 								<div className='' key={game.id}>
 									<img
@@ -84,7 +76,7 @@ export default function Hero({ games }) {
 							<span
 								id='blackOverlay'
 								className='w-full h-screen absolute  opacity-80 bg-gray-900  '></span>
-						</div>
+						</motion.div>
 					</div>
 
 					<div
