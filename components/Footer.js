@@ -4,25 +4,10 @@ import styles from "../styles/Home.module.css";
 function Footer() {
 	return (
 		<>
-			<section className='pb-2 relative block bg-gray-900 mt-12'>
-				<div
-					className='bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20'
-					style={{ height: "80px", transform: "translateZ(0)" }}>
-					<svg
-						className='absolute bottom-0 overflow-hidden'
-						xmlns='http://www.w3.org/2000/svg'
-						preserveAspectRatio='none'
-						version='1.1'
-						viewBox='0 0 2560 100'
-						x='0'
-						y='0'>
-						<polygon
-							className='text-gray-900 fill-current'
-							points='2560 0 2560 100 0 100'></polygon>
-					</svg>
-				</div>
+			<section className='pb-2 relative block bg-gray-900'>
+			
 
-				<div className='container mx-auto px-4 lg:pt-12 lg:pb-3'>
+				<div className='container mx-auto px-4 lg:pt-6 lg:pb-2'>
 					<div className='flex flex-wrap justify-center'>
 						<div className='w-full lg:w-3/12 px-4 text-center'>
 							<div className='text-gray-100 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center'>

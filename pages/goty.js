@@ -22,7 +22,7 @@ export const getStaticProps = async () => {
 			"Client-ID": process.env.ClientID,
 			Authorization: process.env.Authorization,
 		},
-		data: `fields age_ratings,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
+		data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms.*,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
 			 limit 100; where id = (${gameId});;`,
 	})
 		.then((response) => {
@@ -46,10 +46,16 @@ const GOTY = ({ games }) => {
 			return b.rating_count - a.rating_count;
 		});
 
-	const nintendo = sortedGames.filter((game) => game.platforms.includes(130));
-	const ps4 = sortedGames.filter((game) => game.platforms.includes(48));
-	const xbox = sortedGames.filter((game) => game.platforms.includes(49));
-	const pc = sortedGames.filter((game) => game.platforms.includes(6));
+const nintendo = filterByConsole(sortedGames, 130, null);
+const ps4 = filterByConsole(sortedGames, 48, null);
+const xbox = filterByConsole(sortedGames, 49, null);
+const pc = filterByConsole(sortedGames, 6, null);
+
+
+
+	{console.log("###11 ", nintendo)}
+
+
 
 	return (
 		<>
@@ -57,8 +63,8 @@ const GOTY = ({ games }) => {
 				<title>GameBox | Home</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Hero games={sortedGames} />
-			
+			//Add image hero here
+
 			<Categories />
 			<SectionHeaderText
 				headerText={"Highest rated  OF THE YEAR"}
@@ -70,7 +76,6 @@ const GOTY = ({ games }) => {
 				games={sortedGames}
 				headerText={"2020 Highest rated Games"}
 			/>
-			
 			<SectionHeaderText
 				headerText={"Best Nintendo Switch Games"}
 				paragraphText={
@@ -81,7 +86,6 @@ const GOTY = ({ games }) => {
 				games={nintendo}
 				headerText={"2020 best Nintendo Switch Games"}
 			/>
-		
 			<SectionHeaderText
 				headerText={"Best PlayStation Games"}
 				paragraphText={
@@ -89,7 +93,6 @@ const GOTY = ({ games }) => {
 				}
 			/>
 			<HighestRatedCard games={ps4} headerText={"2020 best PS Games"} />
-			
 			<SectionHeaderText
 				headerText={"Best Xbox Games"}
 				paragraphText={
@@ -97,16 +100,13 @@ const GOTY = ({ games }) => {
 				}
 			/>
 			<HighestRatedCard games={xbox} headerText={"2020 best Xbox Games"} />
-		
 			<SectionHeaderText
 				headerText={"Best PC Games"}
 				paragraphText={
 					"We watched a lot of films in 2020. But it wasn’t just about how many"
 				}
 			/>
-			<HighestRatedCard games={pc} headerText={"2020 best PC Games"} />
-		
-			{" "}
+			<HighestRatedCard games={pc} headerText={"2020 best PC Games"} />{" "}
 			<Card
 				games={sortedGames}
 				headerText={
@@ -118,3 +118,16 @@ const GOTY = ({ games }) => {
 };
 
 export default GOTY;
+
+function filterByConsole(sortedGames, gameId, gameId2) {
+	return sortedGames.filter(platforms => {
+		let found = false;
+		platforms.platforms.map(element => {
+			if (element.id === gameId || element.id === gameId2) {
+				found = true;
+			}
+		});
+		return found;
+	});
+}
+

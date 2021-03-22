@@ -42,14 +42,14 @@ const HighestRatedCard = ({ games, headerText }) => {
 								style={{
 									minHeight: "35vh",
 								}}>
-								{
+								
 									<div
 										className='absolute top-0 w-full h-full bg-center bg-cover'
 										style={{
 											backgroundImage: `url('${
 												"https://res.cloudinary.com/babyhulk/image/fetch/w_1248,h_256,c_fill,r_20,f_auto/" +
-													game.screenshots &&
-												game.screenshots[0].url.replace(
+													game?.screenshots &&
+												game?.screenshots[0]?.url?.replace(
 													"t_thumb",
 													"t_screenshot_big"
 												)
@@ -59,7 +59,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 											id='blackOverlay'
 											className='w-full h-full absolute opacity-50 bg-black bg-bgcolor'></span>
 									</div>
-								}
+								
 
 								<div
 									className='top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden'
@@ -117,11 +117,11 @@ const HighestRatedCard = ({ games, headerText }) => {
 				</div>
 			))}
 
-			<div className='flex flex-col lg:mb-56 justify-center pb-4 bg-bgcolor max-w-md mx-auto rounded-xl shadow-md  md:max-w-3xl'>
+			<div className='flex flex-col lg:mb-56 justify-center pb-4 bg-bgcolor max-w-lg mx-auto rounded-xl shadow-md  md:max-w-5xl'>
 				{/*<p className='pb-1 text-sm text-textwhite font-medium tracking-widest uppercase container'>
 						Full List
 							</p>*/}
-				<Card games={games.slice(1, 11)} />
+				<Card games={games.slice(1, 10)} />
 			</div>
 		</div>
 	);

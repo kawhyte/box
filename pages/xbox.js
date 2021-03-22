@@ -23,7 +23,7 @@ function playstation({ games }) {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<Categories />
+	
 			<SectionHeaderText
 				headerText={"Best Xbox Games"}
 				paragraphText={

@@ -8,7 +8,7 @@ export default function Navbar(props) {
 			<nav
 				className={
 					(props.transparent
-						? "top-0 absolute z-50 w-full"
+						? " top-2 absolute z-50 w-full"
 						: "relative  bg-white shadow-lg") +
 					" flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg "
 				}>
@@ -55,14 +55,14 @@ export default function Navbar(props) {
 						}
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row list-none mr-auto '>
-							<Link href='playstation'>
+							<Link href='goty'>
 								<li className='flex items-center'>
 									<a
 										className={
 											(props.transparent
 												? "lg:text-yellow-300 lg:hover:text-gray-300  text-gray-800"
 												: "text-gray-800  hover:text-gray-600") +
-											" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
 										}>
 										<i
 											className={

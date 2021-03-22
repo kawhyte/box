@@ -31,7 +31,7 @@ function nintendo({games}) {
 			</Head>
 
 
-            <Categories />
+   
             <SectionHeaderText
             headerText={"Best Nintendo Switch Games"}
             paragraphText={

@@ -1,7 +1,7 @@
 import React from "react";
 import Welcome from "./Welcome";
 
-export default function Landing({ games }) {
+export default function Hero({ games }) {
 	return (
 		<>
 			<main className=''>
@@ -22,29 +22,30 @@ export default function Landing({ games }) {
 					</div>*/}
 					<div class='flex h-screen justify-center overflow-hidden '>
 						<div className='absolute h-screen mx-auto justify-center flex flex-col items-center z-10 '>
-							<div className='justify-center flex flex-col items-center text-pop-up-top'>
-								<p className='text-6xl  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-8xl lg:text-15xl xl:text-10xl  '>
+							<div className='justify-center flex flex-col items-center '>
+								<p className='text-6xl hero  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
 									Video Game
 								</p>
-								<p className='text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl '>
+								<p className='text-5xl font-black heading text-textwhite tracking-wider uppercase   sm:text-5xl md:text-6xl '>
 									Concierge
 								</p>
 							</div>
 							<p className='py-6  text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
 								Not sure which game to play next? We can help you out.
 							</p>
-
-							<button className='uppercase    mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
-								<i className='far fa-play-circle'> </i> Get a
-								game Suggestion
-							</button>
+							<div className='flex flex-col md:flex-row '>
+							
+								<button className='uppercase  shake-lr color-change-2x  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
+									<i className='far fa-play-circle text-yellow-200'> </i> Get a game Suggestion
+								</button>
+							</div>
 						</div>
 
 						<div className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden'>
-							{games.slice(0, 20).map((game) => (
-								<div className='animate-puls'>
+							{games.slice(0, 24).map((game) => (
+								<div className='' key={game.id}>
 									<img
-										className='w-full col-span-2  md:w-72 block rounded'
+										className='w-full col-span-2  block rounded'
 										src={
 											game.cover &&
 											game.cover.url.replace("t_thumb", "t_cover_big")
@@ -56,7 +57,7 @@ export default function Landing({ games }) {
 
 							<span
 								id='blackOverlay'
-								className='w-full h-screen absolute opacity-80 bg-gray-900  '></span>
+								className='w-full h-screen absolute  opacity-80 bg-gray-900  '></span>
 						</div>
 					</div>
 
