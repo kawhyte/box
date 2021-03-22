@@ -1,5 +1,6 @@
 import React from "react";
 import Welcome from "./Welcome";
+import { motion } from 'framer-motion';
 
 export default function Hero({ games }) {
 	return (
@@ -22,13 +23,30 @@ export default function Hero({ games }) {
 					</div>*/}
 					<div class='flex h-screen justify-center overflow-hidden '>
 						<div className='absolute h-screen mx-auto justify-center flex flex-col items-center z-10 '>
-							<div className='justify-center flex flex-col items-center '>
-								<p className='text-6xl hero  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
+							
+						
+						<div className='justify-center flex flex-col items-center '>
+							<motion.div initial="hidden" animate="visible" variants={{
+								hidden: {
+									scale: .8,
+									opacity: 0
+								  },
+								  visible: {
+									scale: 1,
+									opacity: 1,
+									rotate:[0,10,-10,0],
+									transition: {
+									  delay: .4
+									}
+								}
+							  }}> 	
+							<p className='text-6xl hero  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
 									Video Game
-								</p>
+								</p></motion.div>
 								<p className='text-5xl font-black heading text-textwhite tracking-wider uppercase   sm:text-5xl md:text-6xl '>
 									Concierge
 								</p>
+								
 							</div>
 							<p className='py-6  text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
 								Not sure which game to play next? We can help you out.
@@ -41,7 +59,15 @@ export default function Hero({ games }) {
 							</div>
 						</div>
 
-						<div className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden'>
+						<div className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden' whileHover={{
+							position: 'relative',
+							zIndex: 1,
+							background: 'white',
+							scale: 1.1,
+							transition: {
+							  duration: .2
+							}
+						  }}>
 							{games.slice(0, 24).map((game) => (
 								<div className='' key={game.id}>
 									<img

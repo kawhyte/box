@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Trending = ({ games, headerText }) => {
 	
@@ -15,7 +16,15 @@ const Trending = ({ games, headerText }) => {
 					{games.map((game ,i) => (
 						<>
 						<Link href={`/games/${game.id}`} key={game.id}>
-							<div className='bg-gray-800 shadow-lg rounded p-1 max-w-sm '>
+							<motion.div className='bg-gray-800 shadow-lg rounded p-1 max-w-sm cursor-pointer ' whileHover={{
+								position: 'relative',
+								zIndex: 10,
+								background: 'white',
+								scale: [1, 1.3, 1.1],
+								transition: {
+								  duration: .3
+								}
+							  }}>
 								<div className='group relative'>
 									<img
 										className='w-full  md:w-72 block rounded'
@@ -81,7 +90,7 @@ const Trending = ({ games, headerText }) => {
 									<h3 className='text-white text-sm my-2'>{game.name}</h3>
 									<p className='text-gray-400 text-sm'>{game.genres[0].name}</p>
 									</div>*/}
-							</div>
+							</motion.div>
 						</Link>
 						</>
 					))}
