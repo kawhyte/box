@@ -4,6 +4,7 @@ import Categories from '../components/Categories';
 import SectionHeaderText from '../components/SectionHeaderText';
 import HighestRatedCard from '../components/HighestRatedCard';
 import { getGames } from "../util/getGames";
+import Card from "../components/Card";
 
 
 export const getStaticProps = getGames(130);
@@ -38,10 +39,18 @@ function nintendo({games}) {
                 "We watched a lot of films in 2020. But it wasn’t just about how many"
             }
         />
-        <HighestRatedCard
-            games={sortedGames}
-            headerText={"2020 best Nintendo Switch Games"}
-        />
+
+
+        <Card
+        games={sortedGames}
+        headerText={
+            "Check out the top 50 best video games, according to players:"
+        }
+    />
+
+
+
+
 
         </div>
     )

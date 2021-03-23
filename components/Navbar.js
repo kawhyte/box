@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
+import { animate, motion } from 'framer-motion';
+
 export default function Navbar(props) {
 	const [navbarOpen, setNavbarOpen] = React.useState(false);
 	return (
@@ -48,7 +50,7 @@ export default function Navbar(props) {
 								}></i>
 						</button>
 					</div>
-					<div
+					<div 
 						className={
 							"lg:flex flex-grow items-center bg-white pl-10 lg:bg-transparent lg:shadow-none" +
 							(navbarOpen ? " block rounded shadow-lg bg-gray-300" : " hidden")
@@ -56,7 +58,8 @@ export default function Navbar(props) {
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row list-none mr-auto '>
 							<Link href='goty'>
-								<li className='flex items-center'>
+								<motion.li whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }} className='flex items-center'>
 									<a
 										className={
 											(props.transparent
@@ -74,16 +77,17 @@ export default function Navbar(props) {
 										/>{" "}
 										2020 game in review
 									</a>
-								</li>
+								</motion.li>
 							</Link>
 							<Link href='playstation'>
-								<li className='flex items-center'>
+								<motion.li whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }} className='flex items-center'>
 									<a
 										className={
 											(props.transparent
 												? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
 												: "text-gray-800  hover:text-gray-600") +
-											" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
 										}>
 										<i
 											className={
@@ -95,16 +99,17 @@ export default function Navbar(props) {
 										/>{" "}
 										PlayStation
 									</a>
-								</li>
+								</motion.li>
 							</Link>
 							<Link href='nintendo'>
-								<li className='flex items-center'>
+								<motion.li whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }} className='flex items-center'>
 									<a
 										className={
 											(props.transparent
 												? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
 												: "text-gray-800  hover:text-gray-600") +
-											" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
 										}
 										>
 										<i
@@ -117,16 +122,17 @@ export default function Navbar(props) {
 										/>{" "}
 										Nintendo
 									</a>
-								</li>
+								</motion.li>
 							</Link>
 							<Link href='xbox'>
-								<li className='flex items-center'>
+								<motion.li whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }} className='flex items-center'>
 									<a
 										className={
 											(props.transparent
 												? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
 												: "text-gray-800  hover:text-gray-600") +
-											" px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+											" px-3 py-4  cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
 										}
 										>
 										<i
@@ -139,7 +145,7 @@ export default function Navbar(props) {
 										/>{" "}
 										Xbox
 									</a>
-								</li>
+								</motion.li>
 							</Link>
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
