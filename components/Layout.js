@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
 		<div className='content '>
 			<Navbar transparent/>
 			{children}
-			<Footer />
+	{/*<Footer />*/}
 		</div>
 	);
 };

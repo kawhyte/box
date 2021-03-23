@@ -8,6 +8,13 @@ import Welcome from "../components/Welcome";
 import Categories from "../components/Categories";
 import SectionHeaderText from "../components/SectionHeaderText";
 import HighestRatedCard from "../components/HighestRatedCard";
+import {
+	animate,
+	motion,
+	useViewportScroll,
+	useMotionValue,
+	useTransform,
+} from "framer-motion";
 
 const gameId =
 	"26192,109462,113112,75235,11169, 133004, 1877, 126098, 134581, 119295, 37001, 115115, 90055, 119313, 75239, 119304, 11155, 119277, 107172, 111837, 131614, 131869, 131970, 123902, 52006, 127816, 107262, 131800, 134606, 133887, 135254, 133152, 131946, 138251, 110834, 36550, 86504, 127591, 123395, 107218, 134706, 114286, 114285, 119260, 90055, 114009, 119386, 103291, 113115, 133923, 116589, 119277, 135301, 137131, 131566, 136498, 103330, 133306, 124701, 127816, 133301, 139032, 123902, 138343, 130216, 119277, 138375, 126459, 124954";
@@ -46,31 +53,30 @@ const GOTY = ({ games }) => {
 			return b.rating_count - a.rating_count;
 		});
 
-const nintendo = filterByConsole(sortedGames, 130, null);
-const ps4 = filterByConsole(sortedGames, 48, null);
-const xbox = filterByConsole(sortedGames, 49, null);
-const pc = filterByConsole(sortedGames, 6, null);
+	const nintendo = filterByConsole(sortedGames, 130, null);
+	const ps4 = filterByConsole(sortedGames, 48, null);
+	const xbox = filterByConsole(sortedGames, 49, null);
+	const pc = filterByConsole(sortedGames, 6, null);
 
+	// {console.log("###11 ", nintendo)}
 
-
-	{console.log("###11 ", nintendo)}
-
-
-
+	// const { scrollYProgress } = useViewportScroll();
+	// const invertFilter = useTransform(scrollYProgress, [0.1, 0.2, 0.3], ['black', 'red', "blue"]);
+	// const x = useMotionValue(0)
+	// const opacity = useTransform(scrollYProgress, [-100, 0, 100], [0, 1, 0])
 	return (
-		<>
+		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
 			<Head>
 				<title>GameBox | Home</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			//Add image hero here
-
-			<Card
+			{/*<Card
 				games={sortedGames}
 				headerText={
 					"Check out the top 50 best video games, according to players:"
 				}
-			/>
+			/>*/}
 			<Categories />
 			<SectionHeaderText
 				headerText={"Highest rated  OF THE YEAR"}
@@ -113,16 +119,16 @@ const pc = filterByConsole(sortedGames, 6, null);
 				}
 			/>
 			<HighestRatedCard games={pc} headerText={"2020 best PC Games"} />{" "}
-		</>
+		</motion.div>
 	);
 };
 
 export default GOTY;
 
 function filterByConsole(sortedGames, gameId, gameId2) {
-	return sortedGames.filter(platforms => {
+	return sortedGames.filter((platforms) => {
 		let found = false;
-		platforms.platforms.map(element => {
+		platforms.platforms.map((element) => {
 			if (element.id === gameId || element.id === gameId2) {
 				found = true;
 			}
@@ -130,4 +136,3 @@ function filterByConsole(sortedGames, gameId, gameId2) {
 		return found;
 	});
 }
-

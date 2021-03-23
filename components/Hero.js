@@ -7,7 +7,8 @@ export default function Hero({ games }) {
 	const stagger = { 
 		animate:{
 			transition:{
-		staggerChildren: 0.1
+				delayChildren: 0.3,
+		staggerChildren: 0.2
 	}}}
 	return (
 		<>
@@ -66,14 +67,14 @@ export default function Hero({ games }) {
 							</div>
 						</div>
 
-						<motion.div variants={{stagger}} className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden'
+						<motion.div  className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden'
 						
 						>
 							{games.slice(0, 24).map((game) => (
-								<div className='' key={game.id}>
+								<div className='' variants={{stagger}}  key={game.id}>
 									<motion.img initial={{ rotateY:180, opacity:0}}
 									animate={{rotateY :0, opacity:1}}
-									transition={{delay:.2}}
+									transition={{delay:.3}}
 										className='w-full col-span-2  block rounded'
 										src={
 											game.cover &&
