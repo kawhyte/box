@@ -13,7 +13,7 @@ const Trending = ({ games, headerText }) => {
 				{headerText}
 			</p>
 			<div >
-				<motion.div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-1'>
+				<motion.div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-1'>
 					{games.map((game, i) => (
 						<>
 							<Link href={`/games/${game.id}`} key={game.id}>
@@ -53,7 +53,7 @@ const Trending = ({ games, headerText }) => {
 												className={
 													"text-xl font-semibold py-1 px-2 rounded text-gray-800 align-middle bg-textwhite  "
 												}>
-												{i + 2}.
+												{i + 4}.
 											</span>
 										</div>
 
