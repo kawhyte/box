@@ -40,15 +40,15 @@ export default function Hero({ games }) {
 									}
 								}
 							  }}> 	
-							<p className='text-6xl hero  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
+							<p className='text-4xl mb-4 hero  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
 									Video Game
 								</p></motion.div>
-								<p className='text-5xl font-black heading text-textwhite tracking-wider uppercase   sm:text-5xl md:text-6xl '>
+								<p className='text-4xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-6xl '>
 									Concierge
 								</p>
 								
 							</div>
-							<p className='py-6  text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
+							<p className='py-6  text-center text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
 								Not sure which game to play next? We can help you out.
 							</p>
 							<div className='flex flex-col md:flex-row '>
