@@ -3,6 +3,12 @@ import Welcome from "./Welcome";
 import { animate, motion } from 'framer-motion';
 
 export default function Hero({ games }) {
+
+	const stagger = { 
+		animate:{
+			transition:{
+		staggerChildren: 0.1
+	}}}
 	return (
 		<>
 			<main className=''>
@@ -40,7 +46,7 @@ export default function Hero({ games }) {
 									}
 								}
 							  }}> 	
-							<p className='text-4xl mb-4 hero  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
+							<p className='text-4xl mb-4  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
 									Video Game
 								</p></motion.div>
 								<p className='text-4xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-6xl '>
@@ -53,16 +59,21 @@ export default function Hero({ games }) {
 							</p>
 							<div className='flex flex-col md:flex-row '>
 							
-								<button className='uppercase  shake-lr color-change-2x  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
+								<motion.button whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }} className='uppercase  shake-lr color-change-2x  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
 									<i className='far fa-play-circle text-yellow-200'> </i> Get a game Suggestion
-								</button>
+								</motion.button>
 							</div>
 						</div>
 
-						<motion.div className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden' >
+						<motion.div variants={{stagger}} className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden'
+						
+						>
 							{games.slice(0, 24).map((game) => (
 								<div className='' key={game.id}>
-									<img
+									<motion.img initial={{ rotateY:180, opacity:0}}
+									animate={{rotateY :0, opacity:1}}
+									transition={{delay:.2}}
 										className='w-full col-span-2  block rounded'
 										src={
 											game.cover &&

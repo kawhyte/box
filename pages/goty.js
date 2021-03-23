@@ -65,6 +65,12 @@ const pc = filterByConsole(sortedGames, 6, null);
 			</Head>
 			//Add image hero here
 
+			<Card
+				games={sortedGames}
+				headerText={
+					"Check out the top 50 best video games, according to players:"
+				}
+			/>
 			<Categories />
 			<SectionHeaderText
 				headerText={"Highest rated  OF THE YEAR"}
@@ -107,12 +113,6 @@ const pc = filterByConsole(sortedGames, 6, null);
 				}
 			/>
 			<HighestRatedCard games={pc} headerText={"2020 best PC Games"} />{" "}
-			<Card
-				games={sortedGames}
-				headerText={
-					"Check out the top 50 best video games, according to players:"
-				}
-			/>
 		</>
 	);
 };

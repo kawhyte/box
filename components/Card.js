@@ -3,52 +3,61 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Trending = ({ games, headerText }) => {
-	
-//{console.log("GAMES ", games)}
+	//{console.log("GAMES ", games)}
+	// const stagger = { animate:{transition:{
+	// 	staggerChildren: 0.1
+	// }}}
 	return (
 		<main className='grid container mx-auto pb-3  content-start items-center justify-center'>
 			<p className=' py-2 text-xl font-light leading-relaxed mt-0 mb-6 '>
-			{headerText}
-		
-		</p>
-			<div>
-				<section className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-1'>
-					{games.map((game ,i) => (
+				{headerText}
+			</p>
+			<div >
+				<motion.div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-1'>
+					{games.map((game, i) => (
 						<>
-						<Link href={`/games/${game.id}`} key={game.id}>
-							<motion.div className='bg-gray-800 shadow-lg rounded p-1 max-w-sm cursor-pointer ' whileHover={{
-								position: 'relative',
-								zIndex: 10,
-								background: 'white',
-								scale: [1, 1.3, 1.1],
-								transition: {
-								  duration: .3
-								}
-							  }}>
-								<div className='group relative'>
-									<img
-										className='w-full  md:w-72 block rounded'
-										src={
-											game.cover &&
-											game.cover.url.replace("t_thumb", "t_cover_big")
-										}
-										alt={game.name}
-									/>
+							<Link href={`/games/${game.id}`} key={game.id}>
+								<motion.div
+									className='bg-gray-800 shadow-lg rounded p-1 max-w-sm cursor-pointer '
+									animate={{
+										y: 0,
+										opacity: 1,
+										transition: {
+											duration: 0.6,
+											ease: [0.6, -0.05, 0.01, 0.99],
+										},
+									}}
+									initial={{ y: 60, opacity: 0 }}
+									whileTap={{scale:1}}
+									whileHover={{
+										position: "relative",
+										zIndex: 10,
+										background: "white",
+										scale: [1, 1.2, 1.1],
+										transition: {
+											duration: 0.3,
+										},
+									}}>
+									<div className='group relative'>
+										<img
+											className='w-full  md:w-72 block rounded'
+											src={
+												game.cover &&
+												game.cover.url.replace("t_thumb", "t_cover_big")
+											}
+											alt={game.name}
+										/>
 
-									<div className="p-1 absolute top-0 left-0 z-20 ml-0 ">
-									<span
-									  className={
-										"text-xl font-semibold py-1 px-2 rounded text-gray-800 align-middle bg-textwhite  " 
-										
-									  }
-									>
-									{i+2}.
-									</span>
-								  </div>
+										<div className='p-1 absolute top-0 left-0  ml-0 '>
+											<span
+												className={
+													"text-xl font-semibold py-1 px-2 rounded text-gray-800 align-middle bg-textwhite  "
+												}>
+												{i + 2}.
+											</span>
+										</div>
 
-
-
-									{/*<div className='absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly'>
+										{/*<div className='absolute bg-black rounded bg-opacity-0 group-hover:bg-opacity-60 w-full h-full top-0 flex items-center group-hover:opacity-100 transition justify-evenly'>
 										<button className='hover:scale-110 text-white opacity-0 transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>
 											<svg
 												xmlns='http://www.w3.org/2000/svg'
@@ -85,16 +94,16 @@ const Trending = ({ games, headerText }) => {
 											</svg>
 										</button>
 									</div>*/}
-								</div>
-								{/*<div className='px-2 py-2 '>
+									</div>
+									{/*<div className='px-2 py-2 '>
 									<h3 className='text-white text-sm my-2'>{game.name}</h3>
 									<p className='text-gray-400 text-sm'>{game.genres[0].name}</p>
 									</div>*/}
-							</motion.div>
-						</Link>
+								</motion.div>
+							</Link>
 						</>
 					))}
-				</section>
+				</motion.div>
 			</div>
 		</main>
 	);
