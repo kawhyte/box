@@ -47,7 +47,7 @@ export default function Hero({ games }) {
 									}
 								}
 							  }}> 	
-							<p className='text-4xl mb-4  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
+							<p className='text-4xl mb-4 hero text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
 									Video Game
 								</p></motion.div>
 								<p className='text-4xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-6xl '>
