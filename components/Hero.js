@@ -28,7 +28,7 @@ export default function Hero({ games }) {
 							id='blackOverlay'
 							className='w-full h-full absolute opacity-75 bg-black  '></span>
 					</div>*/}
-					<div class='flex h-screen justify-center overflow-hidden '>
+					<div className='flex h-screen justify-center overflow-hidden '>
 						<div className='absolute h-screen mx-auto justify-center flex flex-col items-center z-10 '>
 							
 						
