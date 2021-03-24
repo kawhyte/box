@@ -1,17 +1,19 @@
 import React from "react";
-import Welcome from "./Welcome";
 import { animate, motion } from 'framer-motion';
 
-export default function Hero({ games }) {
 
-	const stagger = { 
-		animate:{
-			transition:{
-				delayChildren: 0.3,
-		staggerChildren: 0.2
-	}}}
+
+  
+
+
+
+const Hero: React.FC <IGame> = ({games}) => {
+
+
 	return (
 		<>
+		{console.log(name)}
+	
 			<main className=''>
 				<div
 					className='relative flex  items-center mx-auto justify-center align-middle  '
@@ -71,19 +73,19 @@ export default function Hero({ games }) {
 						
 						>
 							{games.slice(0, 24).map((game) => (
-								<div className='' variants={{stagger}}  key={game.id}>
+								<div className=''  key={game.id}>
 									<motion.img initial={{ rotateY:180, opacity:0}}
 									animate={{rotateY :0, opacity:1}}
 									transition={{delay:.3}}
 										className='w-full col-span-2  block rounded'
 										src={
-											game.cover &&
-											game.cover.url.replace("t_thumb", "t_cover_big")
+											
+											game?.cover.url.replace("t_thumb", "t_cover_big")
 										}
 										alt={game.name}
 									/>
 								</div>
-							))}
+									))}
 
 							<span
 								id='blackOverlay'
@@ -131,3 +133,5 @@ export default function Hero({ games }) {
 		</>
 	);
 }
+
+export default Hero
