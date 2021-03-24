@@ -12,7 +12,7 @@ const Hero: React.FC <IGame> = ({games}) => {
 
 	return (
 		<>
-		{console.log(name)}
+
 	
 			<main className=''>
 				<div

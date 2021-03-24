@@ -3,14 +3,16 @@ import Card from "./Card";
 import ReactPlayer from "react-player/lazy";
 import Link from "next/link";
 
-const HighestRatedCard = ({ games, headerText }) => {
+
+
+
+
+
+const HighestRatedCard: React.FC<IHighestRatedCard> = ({ games, headerText }) => {
 	let factor = 5.7;
 
 	return (
-		<div className=' container flex  flex-col items-center  justify-center'
-		
-		
-		>
+		<div className=' container flex  flex-col items-center  justify-center'>
 			{games.slice(0, 3).map((game, i) => (
 				<div key={i}>
 					<div className='flex flex-col justify-center bg-bgcolor my-12 rounded-xl lg:shadow-none overflow-hidden min-w-min max-w-2xl md:max-w-xl lg:max-w-5xl  '>
@@ -30,7 +32,6 @@ const HighestRatedCard = ({ games, headerText }) => {
 								url={`https://www.youtube.com/watch?v=${
 									game.videos && game.videos[0].video_id
 								}`}
-								
 								loop
 								volume={0}
 								muted
@@ -45,24 +46,22 @@ const HighestRatedCard = ({ games, headerText }) => {
 								style={{
 									minHeight: "35vh",
 								}}>
-								
-									<div
-										className='absolute top-0 w-full h-full bg-center bg-cover'
-										style={{
-											backgroundImage: `url('${
-												"https://res.cloudinary.com/babyhulk/image/fetch/w_1248,h_256,c_fill,r_20,f_auto/" +
-													game?.screenshots &&
-												game?.screenshots[0]?.url?.replace(
-													"t_thumb",
-													"t_screenshot_big"
-												)
-											}')`,
-										}}>
-										<span
-											id='blackOverlay'
-											className='w-full h-full absolute opacity-50 bg-black bg-bgcolor'></span>
-									</div>
-								
+								<div
+									className='absolute top-0 w-full h-full bg-center bg-cover'
+									style={{
+										backgroundImage: `url('${
+											"https://res.cloudinary.com/babyhulk/image/fetch/w_1248,h_256,c_fill,r_20,f_auto/" +
+												game?.screenshots &&
+											game?.screenshots[0]?.url?.replace(
+												"t_thumb",
+												"t_screenshot_big"
+											)
+										}')`,
+									}}>
+									<span
+										id='blackOverlay'
+										className='w-full h-full absolute opacity-50 bg-black bg-bgcolor'></span>
+								</div>
 
 								<div
 									className='top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden'
@@ -97,8 +96,6 @@ const HighestRatedCard = ({ games, headerText }) => {
 										return (
 											<span
 												key={i}
-												target='_blank'
-												rel='noopener noreferrer'
 												className={
 													"text-sm font-semibold inline-block py-1 pr-2  rounded  uppercase last: m-1  mr-1 "
 												}>
@@ -124,7 +121,7 @@ const HighestRatedCard = ({ games, headerText }) => {
 				{/*<p className='pb-1 text-sm text-textwhite font-medium tracking-widest uppercase container'>
 						Full List
 							</p>*/}
-				<Card games={games.slice(3, 10)} />
+				<Card games={games.slice(3, 10) } headerText/> 
 			</div>
 		</div>
 	);
