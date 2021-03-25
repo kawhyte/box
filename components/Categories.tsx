@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-function Categories() {
+const Categories: React.FC = () => {
 	const categories = [
 		{ name: "Nintendo of the Year", link: "nintendo", id:1 },
 		{ name: "xbox Games", link: "xbox", id:2 },

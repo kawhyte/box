@@ -1,18 +1,12 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
 
-function Footer() {
+const Footer : React.FC = () => {
 	return (
 		<>
 			<section className='pb-2 relative block bg-gray-900'>
-			
-
 				<div className='container mx-auto px-4 lg:pt-6 lg:pb-2'>
 					<div className='flex flex-wrap justify-center'>
-					
-				
 						<div className='w-full lg:w-3/12 px-4 text-center'>
-						
 							<h5 className='text-lg mt-5 font-semibold text-white'>
 								Powered by
 							</h5>
@@ -28,6 +22,6 @@ function Footer() {
 			</section>
 		</>
 	);
-}
+};
 
 export default Footer;

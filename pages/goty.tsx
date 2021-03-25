@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Card from "../components/Card";
 import axios from "axios";
 import Welcome from "../components/Welcome";
 import Categories from "../components/Categories";

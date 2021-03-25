@@ -47,7 +47,7 @@ const Home : React.FC<IGame> = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<Hero games ={games}   />
+			<Hero games ={games} headerText={null}  />
 		</>
 	);
 };

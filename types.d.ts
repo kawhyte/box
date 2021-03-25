@@ -48,17 +48,20 @@ interface IGameFull{
 
 }
 
-
 interface ITags {
 list:[
 	{name:string}
 ]
 	headerText: string
 	tagBGcolor: string
+}
 
+interface ISectionHeader {
+	paragraphText: string
+	headerText: string
+}
 
-
-
-
-
+interface ISectionHeader {
+	paragraphText: string
+	headerText: string
 }

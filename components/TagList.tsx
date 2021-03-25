@@ -2,7 +2,6 @@ import React from "react";
 
 const TagList: React.FC <ITags> = ({ list, headerText, tagBGcolor }) => {
 
-	console.log("LIST- ", list)
 	return (
 		<>
 			<div className='w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4'>

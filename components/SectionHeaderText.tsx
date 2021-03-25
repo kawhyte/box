@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const SectionHeaderText = ({headerText, paragraphText}) => {
+const SectionHeaderText: React.FC<ISectionHeader> = ({headerText, paragraphText}) => {
 	
 	return (
 		<div id="casual" className='container container flex lg:bg-transparent	flex-col justify-center bg-bgcolor text-textwhite text-center py-10 rounded-xl my-3 max-w-md  md:max-w-xl lg:max-w-7xl'>

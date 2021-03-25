@@ -12,17 +12,7 @@ const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText }) => {
 			{games.slice(0, 3).map((game, i) => (
 				<div key={i}>
 					<div className='flex flex-col justify-center bg-bgcolor my-12 rounded-xl lg:shadow-none overflow-hidden min-w-min max-w-2xl md:max-w-xl lg:max-w-5xl  '>
-						<div className='hidden md:block lg:hidden'>
-							<ReactPlayer
-								url={`https://www.youtube.com/watch?v=${
-									game.videos && game.videos[0].video_id
-								}`}
-								playing
-								loop
-								volume={0}
-								muted
-							/>
-						</div>
+				
 						<div className='hidden  lg:block'>
 							<ReactPlayer
 								url={`https://www.youtube.com/watch?v=${
@@ -36,7 +26,7 @@ const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText }) => {
 							/>
 						</div>
 
-						<div className='block md:hidden '>
+						<div className='block lg:hidden '>
 							<div
 								className='relative pt-16 pb-32 flex content-center items-center justify-center'
 								style={{
@@ -117,7 +107,7 @@ const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText }) => {
 				{/*<p className='pb-1 text-sm text-textwhite font-medium tracking-widest uppercase container'>
 						Full List
 							</p>*/}
-				<Card games={games.slice(3, 10) } headerText/> 
+				<Card games={games} headerText={null}/> 
 			</div>
 		</div>
 	);
