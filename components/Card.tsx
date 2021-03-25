@@ -12,7 +12,7 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 			<div >
 				<motion.div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-1'>
 					{games.map((game, i) => (
-						<>
+						
 							<Link href={`/games/${game.id}`} key={game.id}>
 								<motion.div key={game.id}
 									className='bg-gray-800 shadow-lg rounded p-1 max-w-sm cursor-pointer '
@@ -98,7 +98,7 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 									</div>*/}
 								</motion.div>
 							</Link>
-						</>
+						
 					))}
 				</motion.div>
 			</div>
