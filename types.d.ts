@@ -7,7 +7,7 @@ interface IGame {
       url: string
 	}
 }]
-
+startCountAt?: number
 headerText: string
 }
 
@@ -45,6 +45,7 @@ interface IGameFull{
 	}]
 	
 	headerText?: string
+	startCountAt?:number
 
 }
 

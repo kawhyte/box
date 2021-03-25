@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "./Card";
-import ReactPlayer from "react-player/lazy";
+import ReactPlayer from "react-player/youtube";
 import Link from "next/link";
 
 
-const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText }) => {
+const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText, startCountAt }) => {
 	let factor = 5.7;
 
 	return (
@@ -107,7 +107,7 @@ const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText }) => {
 				{/*<p className='pb-1 text-sm text-textwhite font-medium tracking-widest uppercase container'>
 						Full List
 							</p>*/}
-				<Card games={games} headerText={null}/> 
+				<Card games={games} headerText={null} startCountAt={startCountAt}/> 
 			</div>
 		</div>
 	);

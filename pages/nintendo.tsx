@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Categories from "../components/Categories";
-import SectionHeaderText from "../components/SectionHeaderText.tsx";
+import SectionHeaderText from "../components/SectionHeaderText";
 import HighestRatedCard from "../components/HighestRatedCard";
 import { getGames } from "../util/getGames";
 import Card from "../components/Card";
@@ -9,7 +9,7 @@ import { GetStaticProps} from 'next'
 
 export const getStaticProps:GetStaticProps = getGames(130);
 
-const nintendo: React.FC<IGameFull>= ({ games }) => {
+const nintendo: React.FC<IGameFull>= ({ games, startCountAt }) => {
 	const sortedGames = games
 		.sort((a, b) => {
 			return b.total_rating - a.total_rating;
@@ -34,6 +34,7 @@ const nintendo: React.FC<IGameFull>= ({ games }) => {
 
 			<Card
 				games={sortedGames}
+				startCountAt={1}
 				headerText={
 					"Check out the top 50 best video games, according to players:"
 				}

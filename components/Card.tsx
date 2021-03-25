@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const Trending: React.FC <IGame> = ({ games, headerText }) => {
+const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 
 	return (
 		<main className='grid container mx-auto pb-3  content-start items-center justify-center'>
@@ -14,7 +14,7 @@ const Trending: React.FC <IGame> = ({ games, headerText }) => {
 					{games.map((game, i) => (
 						<>
 							<Link href={`/games/${game.id}`} key={game.id}>
-								<motion.div
+								<motion.div key={game.id}
 									className='bg-gray-800 shadow-lg rounded p-1 max-w-sm cursor-pointer '
 									animate={{
 										y: 0,
@@ -50,7 +50,7 @@ const Trending: React.FC <IGame> = ({ games, headerText }) => {
 												className={
 													"text-xl font-semibold py-1 px-2 rounded text-gray-800 align-middle bg-textwhite  "
 												}>
-												{i + 4}.
+												{i + startCountAt}.
 											</span>
 										</div>
 

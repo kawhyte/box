@@ -6,7 +6,7 @@ import TagList from "../../components/TagList";
 
 import { useRouter } from "next/router";
 import { id } from "date-fns/locale";
-const gameId = "26192,109462,113112,75235,11169,133004";
+
 
 
 

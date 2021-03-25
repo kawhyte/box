@@ -1,14 +1,15 @@
 import React from "react";
 import Head from "next/head";
 import Categories from "../components/Categories";
-import SectionHeaderText from "../components/SectionHeaderText.tsx";
+import SectionHeaderText from "../components/SectionHeaderText";
 import HighestRatedCard from "../components/HighestRatedCard";
 import { GetStaticProps} from 'next'
 import { getGames } from "../util/getGames";
+import Card from "../components/Card";
 
 export const getStaticProps:GetStaticProps = getGames("(169,49)");
 
-const xbox: React.FC <IGameFull> = ({ games }) => {
+const xbox: React.FC <IGameFull> = ({ games, startCountAt }) => {
 	const sortedGames = games
 		.sort((a, b) => {
 			return b.total_rating - a.total_rating;
@@ -31,10 +32,15 @@ const xbox: React.FC <IGameFull> = ({ games }) => {
 					"We watched a lot of films in 2020. But it wasn’t just about how many"
 				}
 			/>
-			<HighestRatedCard
+
+<Card
 				games={sortedGames}
-				headerText={"2020 best xbox Games"}
+				startCountAt ={1}
+				headerText={
+					"Check out the top 50 best video games, according to players:"
+				}
 			/>
+
 		</div>
 	);
 }
