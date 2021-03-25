@@ -7,9 +7,9 @@ interface IGame {
       url: string
 	}
 }]
+
+headerText: string
 }
-
-
 
 interface IGameFull{
 	games: [{
@@ -23,27 +23,42 @@ interface IGameFull{
 		  url: string
 		}
 		videos:[{
-			"id": number,
-			"name": string,
-			"video_id": string
+			id: number,
+			name: string,
+			video_id: string
 		}]
 		screenshots:[{
-			"id": number,
-			"url": string,
+			id: number,
+			url: string,
 		}]
 
 		platforms: [
 			{
-			  "id": number,
-			  "abbreviation": string,
-			  "created_at": number,
-			  "name": string,
-			  "platform_logo": number,
-			  "updated_at": number,
+			  id: number,
+			  abbreviation: string,
+			  created_at: number,
+			  name: string,
+			  platform_logo: number,
+			  updated_at: number,
 			},
 		]
 	}]
 	
 	headerText?: string
+
+}
+
+
+interface ITags {
+list:[
+	{name:string}
+]
+	headerText: string
+	tagBGcolor: string
+
+
+
+
+
 
 }

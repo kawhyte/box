@@ -2,18 +2,10 @@ import React from "react";
 import { animate, motion } from 'framer-motion';
 
 
-
-  
-
-
-
 const Hero: React.FC <IGame> = ({games}) => {
-
 
 	return (
 		<>
-
-	
 			<main className=''>
 				<div
 					className='relative flex  items-center mx-auto justify-center align-middle  '

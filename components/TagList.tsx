@@ -1,6 +1,8 @@
 import React from "react";
 
-function TagList({ list, headerText, tagBGcolor }) {
+const TagList: React.FC <ITags> = ({ list, headerText, tagBGcolor }) => {
+
+	console.log("LIST- ", list)
 	return (
 		<>
 			<div className='w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4'>
@@ -10,8 +12,6 @@ function TagList({ list, headerText, tagBGcolor }) {
 						return (
 							<span
 								key={i}
-								target='_blank'
-								rel='noopener noreferrer'
 								className={
 									"text-xs font-semibold inline-block py-1 px-2  rounded  uppercase last: m-1  mr-1 " +
 									tagBGcolor

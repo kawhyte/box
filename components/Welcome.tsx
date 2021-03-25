@@ -1,6 +1,6 @@
 import React from "react";
 
-function Welcome() {
+const  Welcome = () => {
 	return (
 		<div className='container flex	flex-col justify-center  bg-accentColor lg:bg-transparent  text-textwhite text-center py-8 rounded-xl my-3 mt-48 max-w-md  md:max-w-xl lg:max-w-7xl '>
 			<h1 className='border-b pb-6 text-4xl font-black headings md:text-6xl'>WELCOME</h1>
