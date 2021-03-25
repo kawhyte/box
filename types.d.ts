@@ -11,11 +11,12 @@ interface IGame {
 
 
 
-interface IHighestRatedCard {
+interface IGameFull{
 	games: [{
 		id:number
 		name: string
 		total_rating:number
+		rating_count:number
 		summary:string
 		cover: {
 		  id: number

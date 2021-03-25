@@ -3,11 +3,12 @@ import Head from "next/head";
 import Categories from "../components/Categories";
 import SectionHeaderText from "../components/SectionHeaderText";
 import HighestRatedCard from "../components/HighestRatedCard";
+import { GetStaticProps} from 'next'
 import { getGames } from "../util/getGames";
 
-export const getStaticProps = getGames("(169,49)");
+export const getStaticProps:GetStaticProps = getGames("(169,49)");
 
-function playstation({ games }) {
+const xbox: React.FC <IGameFull> = ({ games }) => {
 	const sortedGames = games
 		.sort((a, b) => {
 			return b.total_rating - a.total_rating;
@@ -38,4 +39,4 @@ function playstation({ games }) {
 	);
 }
 
-export default playstation;
+export default xbox;

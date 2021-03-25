@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
 import axios from "axios";
-import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
+import { GetStaticProps } from 'next'
 import  React  from 'react';
 
 

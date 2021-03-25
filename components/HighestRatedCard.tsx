@@ -4,11 +4,7 @@ import ReactPlayer from "react-player/lazy";
 import Link from "next/link";
 
 
-
-
-
-
-const HighestRatedCard: React.FC<IHighestRatedCard> = ({ games, headerText }) => {
+const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText }) => {
 	let factor = 5.7;
 
 	return (
