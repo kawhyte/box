@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F","\u002Fplaystation","\u002Fnintendo","\u002Fxbox","\u002Fgoty"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

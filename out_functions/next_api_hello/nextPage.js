@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "hqY8");
+/******/ 	return __webpack_require__(__webpack_require__.s = "hcYg");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -8134,24 +8134,7 @@ function parseRelativeUrl(url, base) {
 
 /***/ }),
 
-/***/ "hpEj":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-const internals = {};
-
-
-module.exports = function (promise) {
-
-    return !!promise && typeof promise.then === 'function';
-};
-
-
-/***/ }),
-
-/***/ "hqY8":
+/***/ "hcYg":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8185,7 +8168,7 @@ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace
           page: "/api/hello",
           basePath: "",
           pageIsDynamic: false,
-          encodedPreviewProps: {previewModeId:"993db912b4a4bd1fb9461bccf5daabe0",previewModeSigningKey:"2bee2fe6b000651fd2b8a208ea894526a1f323dc6dc5c37cc98dddfbcf9f490e",previewModeEncryptionKey:"50a0fd134fd18b18f4dde75233acbe6d6d64e8569afe74afa920975159f86021"},
+          encodedPreviewProps: {previewModeId:"539b1a6e75a3c8f2091ba4710be87a9e",previewModeSigningKey:"7494a029414f1f440792eedc66493aaa54e9f075419026bc4b788a8052e77332",previewModeEncryptionKey:"485ee768aad4a27689d4c744b257786e023c39625ab214b43291cbbd40554bd1"},
           experimental: {
             onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
             initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
@@ -8193,6 +8176,23 @@ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace
         })
         /* harmony default export */ __webpack_exports__["default"] = (apiHandler);
       
+
+/***/ }),
+
+/***/ "hpEj":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+const internals = {};
+
+
+module.exports = function (promise) {
+
+    return !!promise && typeof promise.then === 'function';
+};
+
 
 /***/ }),
 
