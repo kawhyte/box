@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "f3229cb24ff81e360b6c";
+/******/ 	var hotCurrentHash = "70cdba911b57218e5aca";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -830,7 +830,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "static/chunks/" + ({"reactPlayerDailyMotion":"reactPlayerDailyMotion","reactPlayerFacebook":"reactPlayerFacebook","reactPlayerFilePlayer":"reactPlayerFilePlayer","reactPlayerKaltura":"reactPlayerKaltura","reactPlayerMixcloud":"reactPlayerMixcloud","reactPlayerPreview":"reactPlayerPreview","reactPlayerSoundCloud":"reactPlayerSoundCloud","reactPlayerStreamable":"reactPlayerStreamable","reactPlayerTwitch":"reactPlayerTwitch","reactPlayerVidyard":"reactPlayerVidyard","reactPlayerVimeo":"reactPlayerVimeo","reactPlayerWistia":"reactPlayerWistia","reactPlayerYouTube":"reactPlayerYouTube"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "static/chunks/" + ({}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// noop fns to prevent runtime errors during initialization

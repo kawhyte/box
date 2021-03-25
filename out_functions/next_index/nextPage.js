@@ -3,14 +3,6 @@ module.exports =
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
-/******/ 	// object to store loaded chunks
-/******/ 	// "0" means "already loaded"
-/******/ 	var installedChunks = {
-/******/ 		6: 0,
-/******/ 		0: 0,
-/******/ 		1: 0
-/******/ 	};
-/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/
@@ -94,215 +86,12 @@ module.exports =
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
-/******/ 	// uncaught error handler for webpack runtime
-/******/ 	__webpack_require__.oe = function(err) {
-/******/ 		process.nextTick(function() {
-/******/ 			throw err; // catch this error by using import().catch()
-/******/ 		});
-/******/ 	};
-/******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "+Q05");
+/******/ 	return __webpack_require__(__webpack_require__.s = "iFpu");
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "+Q05":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
-var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
-/* harmony import */ var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("LZ9C");
-var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("LZ9C", 1);
-/* harmony import */ var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("67Bq");
-var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t("67Bq", 1);
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("7ZOo");
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__);
-
-      
-      
-      
-      
-      
-      
-  
-      
-      const { processEnv } = __webpack_require__("fXeI")
-      processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nDB_PASS=mypassword"}])
-    
-      
-      const runtimeConfig = {}
-      
-  
-      const appMod = __webpack_require__("1TCz")
-      let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
-  
-      const compMod = __webpack_require__("RNiq")
-  
-      const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
-      /* harmony default export */ __webpack_exports__["default"] = (Component);
-      const getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
-      const getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
-      const getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
-  
-      // kept for detecting legacy exports
-      const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
-      const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
-      const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
-      const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
-  
-      let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
-      const _app = App
-  
-      const { renderReqToHTML, render } = Object(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__["getPageHandler"])({
-        pageModule: compMod,
-        pageComponent: Component,
-        pageConfig: config,
-        appModule: App,
-        documentModule: __webpack_require__("VDXt"),
-        errorModule: __webpack_require__("/a9y"),
-        notFoundModule: undefined,
-        pageGetStaticProps: getStaticProps,
-        pageGetStaticPaths: getStaticPaths,
-        pageGetServerSideProps: getServerSideProps,
-  
-        assetPrefix: "",
-        canonicalBase: "",
-        generateEtags: true,
-        poweredByHeader: true,
-  
-        runtimeConfig,
-        buildManifest: private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__,
-        reactLoadableManifest: private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__,
-  
-        rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
-        i18n: undefined,
-        page: "/",
-        buildId: "jHwnMmIS0oCMXeJOGTLVI",
-        escapedBuildId: "jHwnMmIS0oCMXeJOGTLVI",
-        basePath: "",
-        pageIsDynamic: false,
-        encodedPreviewProps: {previewModeId:"bba3730818324043e16809b624e1e683",previewModeSigningKey:"3824bf1764f48e5d2395b8b934d001dc7a15c659ac751edd0b25fec76aaf5190",previewModeEncryptionKey:"a4d38bd7ca01e169e9dc3abdbeea59f5a9c6b8208bf34345b181bd73bc638cca"},
-        experimental: {
-          onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
-          initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
-        }
-      })
-      
-    
-
-/***/ }),
-
-/***/ "+lMf":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Landing; });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Welcome__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("rtAh");
-
-
-
-
-
-function Landing({
-  games
-}) {
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("main", {
-      className: "",
-      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        className: "relative flex  items-center mx-auto justify-center align-middle  ",
-        style: {
-          minHeight: "43vh"
-        },
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-          class: "flex h-screen justify-center overflow-hidden ",
-          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "absolute h-screen mx-auto justify-center flex flex-col items-center z-10 ",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-              className: "justify-center flex flex-col items-center text-pop-up-top",
-              children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-                className: "text-6xl  text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-8xl lg:text-15xl xl:text-10xl  ",
-                children: "Video Game"
-              }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-                className: "text-5xl font-black heading text-accentColor tracking-wider uppercase   sm:text-5xl md:text-6xl ",
-                children: "Concierge"
-              })]
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              className: "py-6  text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl",
-              children: "Not sure which game to play next? We can help you out."
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("button", {
-              className: "uppercase    mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg",
-              children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
-                className: "far fa-play-circle",
-                children: " "
-              }), " Get a game Suggestion"]
-            })]
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden",
-            children: [games.slice(0, 20).map(game => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-              className: "animate-puls",
-              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                className: "w-full col-span-2  md:w-72 block rounded",
-                src: game.cover && game.cover.url.replace("t_thumb", "t_cover_big"),
-                alt: game.name
-              })
-            })), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-              id: "blackOverlay",
-              className: "w-full h-screen absolute opacity-80 bg-gray-900  "
-            })]
-          })]
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-          className: "top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden",
-          style: {
-            height: "70px",
-            transform: "translateZ(0)"
-          }
-        })]
-      })
-    })
-  });
-}
-
-/***/ }),
-
-/***/ "+s1t":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = (flag, argv = process.argv) => {
-	const prefix = flag.startsWith('-') ? '' : (flag.length === 1 ? '-' : '--');
-	const position = argv.indexOf(prefix + flag);
-	const terminatorPosition = argv.indexOf('--');
-	return position !== -1 && (terminatorPosition === -1 || position < terminatorPosition);
-};
-
-
-/***/ }),
 
 /***/ "/0+H":
 /***/ (function(module, exports, __webpack_require__) {
@@ -352,7 +141,7 @@ module.exports = require("events");
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__("TqRt");
+var _interopRequireDefault = __webpack_require__("AroE");
 
 exports.__esModule = true;
 exports.default = void 0;
@@ -675,6 +464,246 @@ if(false){}if(renderOpts.optimizeCss){// eslint-disable-next-line import/no-extr
 const Critters=__webpack_require__("WADY");const cssOptimizer=new Critters({ssrMode:true,reduceInlineStyles:false,path:renderOpts.distDir,publicPath:'/_next/',preload:'media',fonts:false,...renderOpts.optimizeCss});html=await cssOptimizer.process(html);}if(inAmpMode||hybridAmp){// fix &amp being escaped for amphtml rel link
 html=html.replace(/&amp;amp=1/g,'&amp=1');}return html;}function errorToJSON(err){const{name,message,stack}=err;return{name,message,stack};}function serializeError(dev,err){if(dev){return errorToJSON(err);}return{name:'Internal Server Error.',message:'500 - Internal Server Error.',statusCode:500};}
 //# sourceMappingURL=render.js.map
+
+/***/ }),
+
+/***/ "/ekA":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var tslib = __webpack_require__("cd2u");
+
+var clamp = function (min, max) { return function (v) {
+    return Math.max(Math.min(v, max), min);
+}; };
+var sanitize = function (v) { return (v % 1 ? Number(v.toFixed(5)) : v); };
+var floatRegex = /(-)?([\d]*\.?[\d])+/g;
+var colorRegex = /(#[0-9a-f]{6}|#[0-9a-f]{3}|#(?:[0-9a-f]{2}){2,4}|(rgb|hsl)a?\((-?[\d\.]+%?[,\s]+){2,3}\s*\/*\s*[\d\.]+%?\))/gi;
+var singleColorRegex = /^(#[0-9a-f]{3}|#(?:[0-9a-f]{2}){2,4}|(rgb|hsl)a?\((-?[\d\.]+%?[,\s]+){2,3}\s*\/*\s*[\d\.]+%?\))$/i;
+function isString(v) {
+    return typeof v === 'string';
+}
+
+var number = {
+    test: function (v) { return typeof v === 'number'; },
+    parse: parseFloat,
+    transform: function (v) { return v; },
+};
+var alpha = tslib.__assign(tslib.__assign({}, number), { transform: clamp(0, 1) });
+var scale = tslib.__assign(tslib.__assign({}, number), { default: 1 });
+
+var createUnitType = function (unit) { return ({
+    test: function (v) {
+        return isString(v) && v.endsWith(unit) && v.split(' ').length === 1;
+    },
+    parse: parseFloat,
+    transform: function (v) { return "" + v + unit; },
+}); };
+var degrees = createUnitType('deg');
+var percent = createUnitType('%');
+var px = createUnitType('px');
+var vh = createUnitType('vh');
+var vw = createUnitType('vw');
+var progressPercentage = tslib.__assign(tslib.__assign({}, percent), { parse: function (v) { return percent.parse(v) / 100; }, transform: function (v) { return percent.transform(v * 100); } });
+
+var isColorString = function (type, testProp) { return function (v) {
+    return Boolean((isString(v) && singleColorRegex.test(v) && v.startsWith(type)) ||
+        (testProp && Object.prototype.hasOwnProperty.call(v, testProp)));
+}; };
+var splitColor = function (aName, bName, cName) { return function (v) {
+    var _a;
+    if (!isString(v))
+        return v;
+    var _b = v.match(floatRegex), a = _b[0], b = _b[1], c = _b[2], alpha = _b[3];
+    return _a = {},
+        _a[aName] = parseFloat(a),
+        _a[bName] = parseFloat(b),
+        _a[cName] = parseFloat(c),
+        _a.alpha = alpha !== undefined ? parseFloat(alpha) : 1,
+        _a;
+}; };
+
+var hsla = {
+    test: isColorString('hsl', 'hue'),
+    parse: splitColor('hue', 'saturation', 'lightness'),
+    transform: function (_a) {
+        var hue = _a.hue, saturation = _a.saturation, lightness = _a.lightness, _b = _a.alpha, alpha$1 = _b === void 0 ? 1 : _b;
+        return ('hsla(' +
+            Math.round(hue) +
+            ', ' +
+            percent.transform(sanitize(saturation)) +
+            ', ' +
+            percent.transform(sanitize(lightness)) +
+            ', ' +
+            sanitize(alpha.transform(alpha$1)) +
+            ')');
+    },
+};
+
+var clampRgbUnit = clamp(0, 255);
+var rgbUnit = tslib.__assign(tslib.__assign({}, number), { transform: function (v) { return Math.round(clampRgbUnit(v)); } });
+var rgba = {
+    test: isColorString('rgb', 'red'),
+    parse: splitColor('red', 'green', 'blue'),
+    transform: function (_a) {
+        var red = _a.red, green = _a.green, blue = _a.blue, _b = _a.alpha, alpha$1 = _b === void 0 ? 1 : _b;
+        return 'rgba(' +
+            rgbUnit.transform(red) +
+            ', ' +
+            rgbUnit.transform(green) +
+            ', ' +
+            rgbUnit.transform(blue) +
+            ', ' +
+            sanitize(alpha.transform(alpha$1)) +
+            ')';
+    },
+};
+
+function parseHex(v) {
+    var r = '';
+    var g = '';
+    var b = '';
+    var a = '';
+    if (v.length > 5) {
+        r = v.substr(1, 2);
+        g = v.substr(3, 2);
+        b = v.substr(5, 2);
+        a = v.substr(7, 2);
+    }
+    else {
+        r = v.substr(1, 1);
+        g = v.substr(2, 1);
+        b = v.substr(3, 1);
+        a = v.substr(4, 1);
+        r += r;
+        g += g;
+        b += b;
+        a += a;
+    }
+    return {
+        red: parseInt(r, 16),
+        green: parseInt(g, 16),
+        blue: parseInt(b, 16),
+        alpha: a ? parseInt(a, 16) / 255 : 1,
+    };
+}
+var hex = {
+    test: isColorString('#'),
+    parse: parseHex,
+    transform: rgba.transform,
+};
+
+var color = {
+    test: function (v) { return rgba.test(v) || hex.test(v) || hsla.test(v); },
+    parse: function (v) {
+        if (rgba.test(v)) {
+            return rgba.parse(v);
+        }
+        else if (hsla.test(v)) {
+            return hsla.parse(v);
+        }
+        else {
+            return hex.parse(v);
+        }
+    },
+    transform: function (v) {
+        return isString(v)
+            ? v
+            : v.hasOwnProperty('red')
+                ? rgba.transform(v)
+                : hsla.transform(v);
+    },
+};
+
+var colorToken = '${c}';
+var numberToken = '${n}';
+function test(v) {
+    var _a, _b, _c, _d;
+    return (isNaN(v) &&
+        isString(v) &&
+        ((_b = (_a = v.match(floatRegex)) === null || _a === void 0 ? void 0 : _a.length) !== null && _b !== void 0 ? _b : 0) + ((_d = (_c = v.match(colorRegex)) === null || _c === void 0 ? void 0 : _c.length) !== null && _d !== void 0 ? _d : 0) > 0);
+}
+function analyse(v) {
+    var values = [];
+    var numColors = 0;
+    var colors = v.match(colorRegex);
+    if (colors) {
+        numColors = colors.length;
+        v = v.replace(colorRegex, colorToken);
+        values.push.apply(values, colors.map(color.parse));
+    }
+    var numbers = v.match(floatRegex);
+    if (numbers) {
+        v = v.replace(floatRegex, numberToken);
+        values.push.apply(values, numbers.map(number.parse));
+    }
+    return { values: values, numColors: numColors, tokenised: v };
+}
+function parse(v) {
+    return analyse(v).values;
+}
+function createTransformer(v) {
+    var _a = analyse(v), values = _a.values, numColors = _a.numColors, tokenised = _a.tokenised;
+    var numValues = values.length;
+    return function (v) {
+        var output = tokenised;
+        for (var i = 0; i < numValues; i++) {
+            output = output.replace(i < numColors ? colorToken : numberToken, i < numColors ? color.transform(v[i]) : sanitize(v[i]));
+        }
+        return output;
+    };
+}
+var convertNumbersToZero = function (v) {
+    return typeof v === 'number' ? 0 : v;
+};
+function getAnimatableNone(v) {
+    var parsed = parse(v);
+    var transformer = createTransformer(v);
+    return transformer(parsed.map(convertNumbersToZero));
+}
+var complex = { test: test, parse: parse, createTransformer: createTransformer, getAnimatableNone: getAnimatableNone };
+
+var maxDefaults = new Set(['brightness', 'contrast', 'saturate', 'opacity']);
+function applyDefaultFilter(v) {
+    var _a = v.slice(0, -1).split('('), name = _a[0], value = _a[1];
+    if (name === 'drop-shadow')
+        return v;
+    var number = (value.match(floatRegex) || [])[0];
+    if (!number)
+        return v;
+    var unit = value.replace(number, '');
+    var defaultValue = maxDefaults.has(name) ? 1 : 0;
+    if (number !== value)
+        defaultValue *= 100;
+    return name + '(' + defaultValue + unit + ')';
+}
+var functionRegex = /([a-z-]*)\(.*?\)/g;
+var filter = tslib.__assign(tslib.__assign({}, complex), { getAnimatableNone: function (v) {
+        var functions = v.match(functionRegex);
+        return functions ? functions.map(applyDefaultFilter).join(' ') : v;
+    } });
+
+exports.alpha = alpha;
+exports.color = color;
+exports.complex = complex;
+exports.degrees = degrees;
+exports.filter = filter;
+exports.hex = hex;
+exports.hsla = hsla;
+exports.number = number;
+exports.percent = percent;
+exports.progressPercentage = progressPercentage;
+exports.px = px;
+exports.rgbUnit = rgbUnit;
+exports.rgba = rgba;
+exports.scale = scale;
+exports.vh = vh;
+exports.vw = vw;
+
 
 /***/ }),
 
@@ -1044,17 +1073,6 @@ function RedirectableRequest(options, responseCallback) {
 }
 RedirectableRequest.prototype = Object.create(Writable.prototype);
 
-RedirectableRequest.prototype.abort = function () {
-  // Abort the internal request
-  this._currentRequest.removeAllListeners();
-  this._currentRequest.on("error", noop);
-  this._currentRequest.abort();
-
-  // Abort this request
-  this.emit("abort");
-  this.removeAllListeners();
-};
-
 // Writes buffered data to the current native request
 RedirectableRequest.prototype.write = function (data, encoding, callback) {
   // Writing is not allowed if end has been called
@@ -1134,39 +1152,18 @@ RedirectableRequest.prototype.removeHeader = function (name) {
 
 // Global timeout for all underlying requests
 RedirectableRequest.prototype.setTimeout = function (msecs, callback) {
-  var self = this;
   if (callback) {
-    this.on("timeout", callback);
+    this.once("timeout", callback);
   }
 
-  // Sets up a timer to trigger a timeout event
-  function startTimer() {
-    if (self._timeout) {
-      clearTimeout(self._timeout);
-    }
-    self._timeout = setTimeout(function () {
-      self.emit("timeout");
-      clearTimer();
-    }, msecs);
-  }
-
-  // Prevent a timeout from triggering
-  function clearTimer() {
-    clearTimeout(this._timeout);
-    if (callback) {
-      self.removeListener("timeout", callback);
-    }
-    if (!this.socket) {
-      self._currentRequest.removeListener("socket", startTimer);
-    }
-  }
-
-  // Start the timer when the socket is opened
   if (this.socket) {
-    startTimer();
+    startTimer(this, msecs);
   }
   else {
-    this._currentRequest.once("socket", startTimer);
+    var self = this;
+    this._currentRequest.once("socket", function () {
+      startTimer(self, msecs);
+    });
   }
 
   this.once("response", clearTimer);
@@ -1175,9 +1172,20 @@ RedirectableRequest.prototype.setTimeout = function (msecs, callback) {
   return this;
 };
 
+function startTimer(request, msecs) {
+  clearTimeout(request._timeout);
+  request._timeout = setTimeout(function () {
+    request.emit("timeout");
+  }, msecs);
+}
+
+function clearTimer() {
+  clearTimeout(this._timeout);
+}
+
 // Proxy all other public ClientRequest methods
 [
-  "flushHeaders", "getHeader",
+  "abort", "flushHeaders", "getHeader",
   "setNoDelay", "setSocketKeepAlive",
 ].forEach(function (method) {
   RedirectableRequest.prototype[method] = function (a, b) {
@@ -1516,7 +1524,7 @@ module.exports.wrap = wrap;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__("TqRt");
+var _interopRequireDefault = __webpack_require__("AroE");
 
 exports.__esModule = true;
 exports.default = withRouter;
@@ -1587,207 +1595,6 @@ try {
   module.exports = __webpack_require__("P7XM");
 }
 
-
-/***/ }),
-
-/***/ "0ZcZ":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var ICON_SIZE = '64px';
-var cache = {};
-
-var Preview = /*#__PURE__*/function (_Component) {
-  _inherits(Preview, _Component);
-
-  var _super = _createSuper(Preview);
-
-  function Preview() {
-    var _this;
-
-    _classCallCheck(this, Preview);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "mounted", false);
-
-    _defineProperty(_assertThisInitialized(_this), "state", {
-      image: null
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleKeyPress", function (e) {
-      if (e.key === 'Enter' || e.key === ' ') {
-        _this.props.onClick();
-      }
-    });
-
-    return _this;
-  }
-
-  _createClass(Preview, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.mounted = true;
-      this.fetchImage(this.props);
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      var _this$props = this.props,
-          url = _this$props.url,
-          light = _this$props.light;
-
-      if (prevProps.url !== url || prevProps.light !== light) {
-        this.fetchImage(this.props);
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.mounted = false;
-    }
-  }, {
-    key: "fetchImage",
-    value: function fetchImage(_ref) {
-      var _this2 = this;
-
-      var url = _ref.url,
-          light = _ref.light;
-
-      if (typeof light === 'string') {
-        this.setState({
-          image: light
-        });
-        return;
-      }
-
-      if (cache[url]) {
-        this.setState({
-          image: cache[url]
-        });
-        return;
-      }
-
-      this.setState({
-        image: null
-      });
-      return window.fetch("https://noembed.com/embed?url=".concat(url)).then(function (response) {
-        return response.json();
-      }).then(function (data) {
-        if (data.thumbnail_url && _this2.mounted) {
-          var image = data.thumbnail_url.replace('height=100', 'height=480');
-
-          _this2.setState({
-            image: image
-          });
-
-          cache[url] = image;
-        }
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props2 = this.props,
-          onClick = _this$props2.onClick,
-          playIcon = _this$props2.playIcon,
-          previewTabIndex = _this$props2.previewTabIndex;
-      var image = this.state.image;
-      var flexCenter = {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      };
-      var styles = {
-        preview: _objectSpread({
-          width: '100%',
-          height: '100%',
-          backgroundImage: image ? "url(".concat(image, ")") : undefined,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          cursor: 'pointer'
-        }, flexCenter),
-        shadow: _objectSpread({
-          background: 'radial-gradient(rgb(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 60%)',
-          borderRadius: ICON_SIZE,
-          width: ICON_SIZE,
-          height: ICON_SIZE
-        }, flexCenter),
-        playIcon: {
-          borderStyle: 'solid',
-          borderWidth: '16px 0 16px 26px',
-          borderColor: 'transparent transparent transparent white',
-          marginLeft: '7px'
-        }
-      };
-
-      var defaultPlayIcon = /*#__PURE__*/_react["default"].createElement("div", {
-        style: styles.shadow,
-        className: "react-player__shadow"
-      }, /*#__PURE__*/_react["default"].createElement("div", {
-        style: styles.playIcon,
-        className: "react-player__play-icon"
-      }));
-
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        style: styles.preview,
-        className: "react-player__preview",
-        onClick: onClick,
-        tabIndex: previewTabIndex,
-        onKeyPress: this.handleKeyPress
-      }, playIcon || defaultPlayIcon);
-    }
-  }]);
-
-  return Preview;
-}(_react.Component);
-
-exports["default"] = Preview;
 
 /***/ }),
 
@@ -1942,83 +1749,33 @@ __webpack_require__.r(__webpack_exports__);
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__("nKUr");
 
-// EXTERNAL MODULE: ./components/Hero.js
-var Hero = __webpack_require__("+lMf");
+// EXTERNAL MODULE: ./node_modules/framer-motion/dist/framer-motion.cjs.js
+var framer_motion_cjs = __webpack_require__("1vpa");
+
+// EXTERNAL MODULE: ./components/Hero.tsx
+var Hero = __webpack_require__("6S8T");
 
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__("q1tI");
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
-// CONCATENATED MODULE: ./components/Footer.js
+// CONCATENATED MODULE: ./components/Footer.tsx
 
 
 
 
 
-
-function Footer() {
+const Footer = () => {
   return /*#__PURE__*/Object(jsx_runtime["jsx"])(jsx_runtime["Fragment"], {
-    children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("section", {
-      className: "pb-2 relative block bg-gray-900 mt-12",
-      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-        className: "bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20",
-        style: {
-          height: "80px",
-          transform: "translateZ(0)"
-        },
-        children: /*#__PURE__*/Object(jsx_runtime["jsx"])("svg", {
-          className: "absolute bottom-0 overflow-hidden",
-          xmlns: "http://www.w3.org/2000/svg",
-          preserveAspectRatio: "none",
-          version: "1.1",
-          viewBox: "0 0 2560 100",
-          x: "0",
-          y: "0",
-          children: /*#__PURE__*/Object(jsx_runtime["jsx"])("polygon", {
-            className: "text-gray-900 fill-current",
-            points: "2560 0 2560 100 0 100"
-          })
-        })
-      }), /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-        className: "container mx-auto px-4 lg:pt-12 lg:pb-3",
-        children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+    children: /*#__PURE__*/Object(jsx_runtime["jsx"])("section", {
+      className: "pb-2 relative block bg-gray-900",
+      children: /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
+        className: "container mx-auto px-4 lg:pt-6 lg:pb-2",
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
           className: "flex flex-wrap justify-center",
-          children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+          children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
             className: "w-full lg:w-3/12 px-4 text-center",
-            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-              className: "text-gray-100 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                className: "fas fa-medal text-xl"
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("h6", {
-              className: "text-xl mt-5 font-semibold text-white",
-              children: "GameBox"
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-              className: "mt-2 mb-4 text-gray-500",
-              children: "Some quick example text to build on the card title and make up the bulk of the card's content."
-            })]
-          }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-            className: "w-full lg:w-3/12 px-4 text-center",
-            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-              className: "text-gray-100 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                className: "fas fa-poll text-xl"
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("h5", {
-              className: "text-xl mt-5 font-semibold text-white",
-              children: "Grow your market"
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-              className: "mt-2 mb-4 text-gray-500",
-              children: "Some quick example text to build on the card title and make up the bulk of the card's content."
-            })]
-          }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-            className: "w-full lg:w-3/12 px-4 text-center",
-            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-              className: "text-gray-100 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                className: "fas fa-lightbulb text-xl"
-              })
-            }), /*#__PURE__*/Object(jsx_runtime["jsx"])("h5", {
+            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("h5", {
               className: "text-lg mt-5 font-semibold text-white",
               children: "Powered by"
             }), /*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
@@ -2030,12 +1787,12 @@ function Footer() {
                 children: "www.igdb.com"
               })
             })]
-          })]
+          })
         })
-      })]
+      })
     })
   });
-}
+};
 
 /* harmony default export */ var components_Footer = (Footer);
 // EXTERNAL MODULE: ./node_modules/next/link.js
@@ -2048,11 +1805,12 @@ var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
 
 
+
 function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = react_default.a.useState(false);
   return /*#__PURE__*/Object(jsx_runtime["jsx"])(jsx_runtime["Fragment"], {
     children: /*#__PURE__*/Object(jsx_runtime["jsx"])("nav", {
-      className: (props.transparent ? "top-0 absolute z-50 w-full" : "relative  bg-white shadow-lg") + " flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg ",
+      className: (props.transparent ? " top-2 absolute z-50 w-full" : "relative  bg-white shadow-lg") + " flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg ",
       children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
         className: "container px-4 mx-auto flex flex-wrap items-center justify-between",
         children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
@@ -2088,11 +1846,17 @@ function Navbar(props) {
           children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("ul", {
             className: "flex flex-col lg:flex-row list-none mr-auto ",
             children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
-              href: "playstation",
-              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+              href: "goty",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])(framer_motion_cjs["motion"].li, {
+                whileHover: {
+                  scale: 1.1
+                },
+                whileTap: {
+                  scale: 0.9
+                },
                 className: "flex items-center",
                 children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                  className: (props.transparent ? "lg:text-yellow-300 lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  className: (props.transparent ? "lg:text-yellow-300 lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold",
                   children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
                     className: (props.transparent ? "lg:text-yellow-300 text-yellow-500" : "text-gray-500") + " fas fa-crown text-lg leading-lg mr-2"
                   }), " ", "2020 game in review"]
@@ -2100,10 +1864,16 @@ function Navbar(props) {
               })
             }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
               href: "playstation",
-              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])(framer_motion_cjs["motion"].li, {
+                whileHover: {
+                  scale: 1.1
+                },
+                whileTap: {
+                  scale: 0.9
+                },
                 className: "flex items-center",
                 children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold",
                   children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
                     className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-playstation text-lg leading-lg mr-2"
                   }), " ", "PlayStation"]
@@ -2111,10 +1881,16 @@ function Navbar(props) {
               })
             }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
               href: "nintendo",
-              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])(framer_motion_cjs["motion"].li, {
+                whileHover: {
+                  scale: 1.1
+                },
+                whileTap: {
+                  scale: 0.9
+                },
                 className: "flex items-center",
                 children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold",
                   children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
                     className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fas fa-gamepad text-lg leading-lg mr-2"
                   }), " ", "Nintendo"]
@@ -2122,10 +1898,16 @@ function Navbar(props) {
               })
             }), /*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
               href: "xbox",
-              children: /*#__PURE__*/Object(jsx_runtime["jsx"])("li", {
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])(framer_motion_cjs["motion"].li, {
+                whileHover: {
+                  scale: 1.1
+                },
+                whileTap: {
+                  scale: 0.9
+                },
                 className: "flex items-center",
                 children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold",
+                  className: (props.transparent ? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4  cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold",
                   children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
                     className: (props.transparent ? "lg:text-gray-300 text-gray-500" : "text-gray-500") + " fab fa-xbox text-lg leading-lg mr-2"
                   }), " ", "Xbox"]
@@ -2167,7 +1949,7 @@ const Layout = ({
     className: "content ",
     children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(Navbar, {
       transparent: true
-    }), children, /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Footer, {})]
+    }), children]
   });
 };
 
@@ -2186,14 +1968,35 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
+
  // import '../styles.css'
 
 function MyApp({
   Component,
-  pageProps
+  pageProps,
+  router
 }) {
   return /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Layout, {
-    children: /*#__PURE__*/Object(jsx_runtime["jsx"])(Component, _objectSpread({}, pageProps))
+    children: /*#__PURE__*/Object(jsx_runtime["jsx"])(framer_motion_cjs["AnimatePresence"], {
+      exitBeforeEnter: true,
+      children: /*#__PURE__*/Object(jsx_runtime["jsx"])(framer_motion_cjs["motion"].div, {
+        initial: "pageInitial",
+        animate: "pageAnimate",
+        exit: "pageExit",
+        variants: {
+          pageInitial: {
+            opacity: 0
+          },
+          pageAnimate: {
+            opacity: 1
+          },
+          pageExit: {
+            opacity: 0
+          }
+        },
+        children: /*#__PURE__*/Object(jsx_runtime["jsx"])(Component, _objectSpread({}, pageProps))
+      }, router.route)
+    })
   });
 }
 
@@ -2227,6 +2030,7767 @@ Object.defineProperty(exports, "NodeType", { enumerable: true, get: function () 
 
 /***/ }),
 
+/***/ "1vpa":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+var tslib = __webpack_require__("q3qI");
+var React = __webpack_require__("q1tI");
+var heyListen = __webpack_require__("4LOC");
+var styleValueTypes = __webpack_require__("/ekA");
+var popmotion = __webpack_require__("4zEH");
+var sync = __webpack_require__("s1vs");
+
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+function _interopNamespace(e) {
+    if (e && e.__esModule) return e;
+    var n = Object.create(null);
+    if (e) {
+        Object.keys(e).forEach(function (k) {
+            if (k !== 'default') {
+                var d = Object.getOwnPropertyDescriptor(e, k);
+                Object.defineProperty(n, k, d.get ? d : {
+                    enumerable: true,
+                    get: function () {
+                        return e[k];
+                    }
+                });
+            }
+        });
+    }
+    n['default'] = e;
+    return Object.freeze(n);
+}
+
+var React__namespace = /*#__PURE__*/_interopNamespace(React);
+var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
+var sync__default = /*#__PURE__*/_interopDefaultLegacy(sync);
+
+var createDefinition = function (propNames) { return ({
+    isEnabled: function (props) { return propNames.some(function (name) { return !!props[name]; }); },
+}); };
+var featureDefinitions = {
+    measureLayout: createDefinition(["layout", "layoutId", "drag"]),
+    animation: createDefinition([
+        "animate",
+        "exit",
+        "variants",
+        "whileHover",
+        "whileTap",
+        "whileFocus",
+        "whileDrag",
+    ]),
+    exit: createDefinition(["exit"]),
+    drag: createDefinition(["drag", "dragControls"]),
+    focus: createDefinition(["whileFocus"]),
+    hover: createDefinition(["whileHover", "onHoverStart", "onHoverEnd"]),
+    tap: createDefinition(["whileTap", "onTap", "onTapStart", "onTapCancel"]),
+    pan: createDefinition([
+        "onPan",
+        "onPanStart",
+        "onPanSessionStart",
+        "onPanEnd",
+    ]),
+    layoutAnimation: createDefinition(["layout", "layoutId"]),
+};
+function loadFeatures(features) {
+    for (var key in features) {
+        var Component = features[key];
+        if (Component !== null)
+            featureDefinitions[key].Component = Component;
+    }
+}
+
+var LazyContext = React.createContext({ strict: false });
+
+var featureNames = Object.keys(featureDefinitions);
+var numFeatures = featureNames.length;
+/**
+ * Load features via renderless components based on the provided MotionProps.
+ */
+function useFeatures(props, visualElement, preloadedFeatures) {
+    var features = [];
+    var lazyContext = React.useContext(LazyContext);
+    if (!visualElement)
+        return null;
+    /**
+     * If we're in development mode, check to make sure we're not rendering a motion component
+     * as a child of LazyMotion, as this will break the file-size benefits of using it.
+     */
+    if (false) {}
+    for (var i = 0; i < numFeatures; i++) {
+        var name_1 = featureNames[i];
+        var _a = featureDefinitions[name_1], isEnabled = _a.isEnabled, Component = _a.Component;
+        /**
+         * It might be possible in the future to use this moment to
+         * dynamically request functionality. In initial tests this
+         * was producing a lot of duplication amongst bundles.
+         */
+        if (isEnabled(props) && Component) {
+            features.push(React__namespace.createElement(Component, tslib.__assign({ key: name_1 }, props, { visualElement: visualElement })));
+        }
+    }
+    return features;
+}
+
+/**
+ * @public
+ */
+var MotionConfigContext = React.createContext({
+    transformPagePoint: function (p) { return p; },
+    isStatic: false,
+});
+
+var MotionContext = React.createContext({});
+function useVisualElementContext() {
+    return React.useContext(MotionContext).visualElement;
+}
+
+/**
+ * @public
+ */
+var PresenceContext = React.createContext(null);
+
+/**
+ * Creates a constant value over the lifecycle of a component.
+ *
+ * Even if `useMemo` is provided an empty array as its final argument, it doesn't offer
+ * a guarantee that it won't re-run for performance reasons later on. By using `useConstant`
+ * you can ensure that initialisers don't execute twice or more.
+ */
+function useConstant(init) {
+    var ref = React.useRef(null);
+    if (ref.current === null) {
+        ref.current = init();
+    }
+    return ref.current;
+}
+
+/**
+ * When a component is the child of `AnimatePresence`, it can use `usePresence`
+ * to access information about whether it's still present in the React tree.
+ *
+ * ```jsx
+ * import { usePresence } from "framer-motion"
+ *
+ * export const Component = () => {
+ *   const [isPresent, safeToRemove] = usePresence()
+ *
+ *   useEffect(() => {
+ *     !isPresent && setTimeout(safeToRemove, 1000)
+ *   }, [isPresent])
+ *
+ *   return <div />
+ * }
+ * ```
+ *
+ * If `isPresent` is `false`, it means that a component has been removed the tree, but
+ * `AnimatePresence` won't really remove it until `safeToRemove` has been called.
+ *
+ * @public
+ */
+function usePresence() {
+    var context = React.useContext(PresenceContext);
+    if (context === null)
+        return [true, null];
+    var isPresent = context.isPresent, onExitComplete = context.onExitComplete, register = context.register;
+    // It's safe to call the following hooks conditionally (after an early return) because the context will always
+    // either be null or non-null for the lifespan of the component.
+    // Replace with useOpaqueId when released in React
+    var id = useUniqueId();
+    React.useEffect(function () { return register(id); }, []);
+    var safeToRemove = function () { return onExitComplete === null || onExitComplete === void 0 ? void 0 : onExitComplete(id); };
+    return !isPresent && onExitComplete ? [false, safeToRemove] : [true];
+}
+/**
+ * Similar to `usePresence`, except `useIsPresent` simply returns whether or not the component is present.
+ * There is no `safeToRemove` function.
+ *
+ * ```jsx
+ * import { useIsPresent } from "framer-motion"
+ *
+ * export const Component = () => {
+ *   const isPresent = useIsPresent()
+ *
+ *   useEffect(() => {
+ *     !isPresent && console.log("I've been removed!")
+ *   }, [isPresent])
+ *
+ *   return <div />
+ * }
+ * ```
+ *
+ * @public
+ */
+function useIsPresent() {
+    return isPresent(React.useContext(PresenceContext));
+}
+function isPresent(context) {
+    return context === null ? true : context.isPresent;
+}
+var counter = 0;
+var incrementId = function () { return counter++; };
+var useUniqueId = function () { return useConstant(incrementId); };
+
+/**
+ * @internal
+ */
+var LayoutGroupContext = React.createContext(null);
+
+var isBrowser = typeof window !== "undefined";
+
+var useIsomorphicLayoutEffect = isBrowser ? React.useLayoutEffect : React.useEffect;
+
+function useLayoutId(_a) {
+    var layoutId = _a.layoutId;
+    var layoutGroupId = React.useContext(LayoutGroupContext);
+    return layoutGroupId && layoutId !== undefined
+        ? layoutGroupId + "-" + layoutId
+        : layoutId;
+}
+function useVisualElement(Component, visualState, props, createVisualElement) {
+    var config = React.useContext(MotionConfigContext);
+    var lazyContext = React.useContext(LazyContext);
+    var parent = useVisualElementContext();
+    var presenceContext = React.useContext(PresenceContext);
+    var layoutId = useLayoutId(props);
+    var visualElementRef = React.useRef(undefined);
+    /**
+     * If we haven't preloaded a renderer, check to see if we have one lazy-loaded
+     */
+    if (!createVisualElement)
+        createVisualElement = lazyContext.renderer;
+    if (!visualElementRef.current && createVisualElement) {
+        visualElementRef.current = createVisualElement(Component, {
+            visualState: visualState,
+            parent: parent,
+            props: tslib.__assign(tslib.__assign({}, props), { layoutId: layoutId }),
+            presenceId: presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.id,
+            blockInitialAnimation: (presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.initial) === false,
+        });
+    }
+    var visualElement = visualElementRef.current;
+    useIsomorphicLayoutEffect(function () {
+        if (!visualElement)
+            return;
+        visualElement.setProps(tslib.__assign(tslib.__assign(tslib.__assign({}, config), props), { layoutId: layoutId }));
+        visualElement.isPresent = isPresent(presenceContext);
+        visualElement.isPresenceRoot =
+            !parent || parent.presenceId !== (presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.id);
+        /**
+         * Fire a render to ensure the latest state is reflected on-screen.
+         */
+        visualElement.syncRender();
+    });
+    React.useEffect(function () {
+        var _a;
+        if (!visualElement)
+            return;
+        /**
+         * In a future refactor we can replace the features-as-components and
+         * have this loop through them all firing "effect" listeners
+         */
+        (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.animateChanges();
+    });
+    useIsomorphicLayoutEffect(function () { return function () { return visualElement === null || visualElement === void 0 ? void 0 : visualElement.notifyUnmount(); }; }, []);
+    return visualElement;
+}
+
+function isRefObject(ref) {
+    return (typeof ref === "object" &&
+        Object.prototype.hasOwnProperty.call(ref, "current"));
+}
+
+/**
+ * Creates a ref function that, when called, hydrates the provided
+ * external ref and VisualElement.
+ */
+function useMotionRef(visualState, visualElement, externalRef) {
+    return React.useCallback(function (instance) {
+        var _a;
+        instance && ((_a = visualState.mount) === null || _a === void 0 ? void 0 : _a.call(visualState, instance));
+        if (visualElement) {
+            instance
+                ? visualElement.mount(instance)
+                : visualElement.unmount();
+        }
+        if (externalRef) {
+            if (typeof externalRef === "function") {
+                externalRef(instance);
+            }
+            else if (isRefObject(externalRef)) {
+                externalRef.current = instance;
+            }
+        }
+    }, [visualElement]);
+}
+
+/**
+ * Decides if the supplied variable is an array of variant labels
+ */
+function isVariantLabels(v) {
+    return Array.isArray(v);
+}
+/**
+ * Decides if the supplied variable is variant label
+ */
+function isVariantLabel(v) {
+    return typeof v === "string" || isVariantLabels(v);
+}
+/**
+ * Creates an object containing the latest state of every MotionValue on a VisualElement
+ */
+function getCurrent(visualElement) {
+    var current = {};
+    visualElement.forEachValue(function (value, key) { return (current[key] = value.get()); });
+    return current;
+}
+/**
+ * Creates an object containing the latest velocity of every MotionValue on a VisualElement
+ */
+function getVelocity$1(visualElement) {
+    var velocity = {};
+    visualElement.forEachValue(function (value, key) { return (velocity[key] = value.getVelocity()); });
+    return velocity;
+}
+function resolveVariantFromProps(props, definition, custom, currentValues, currentVelocity) {
+    var _a;
+    if (currentValues === void 0) { currentValues = {}; }
+    if (currentVelocity === void 0) { currentVelocity = {}; }
+    if (typeof definition === "string") {
+        definition = (_a = props.variants) === null || _a === void 0 ? void 0 : _a[definition];
+    }
+    return typeof definition === "function"
+        ? definition(custom !== null && custom !== void 0 ? custom : props.custom, currentValues, currentVelocity)
+        : definition;
+}
+function resolveVariant(visualElement, definition, custom) {
+    var props = visualElement.getProps();
+    return resolveVariantFromProps(props, definition, custom !== null && custom !== void 0 ? custom : props.custom, getCurrent(visualElement), getVelocity$1(visualElement));
+}
+function checkIfControllingVariants(props) {
+    var _a;
+    return (typeof ((_a = props.animate) === null || _a === void 0 ? void 0 : _a.start) === "function" ||
+        isVariantLabel(props.initial) ||
+        isVariantLabel(props.animate) ||
+        isVariantLabel(props.whileHover) ||
+        isVariantLabel(props.whileDrag) ||
+        isVariantLabel(props.whileTap) ||
+        isVariantLabel(props.whileFocus) ||
+        isVariantLabel(props.exit));
+}
+function checkIfVariantNode(props) {
+    return Boolean(checkIfControllingVariants(props) || props.variants);
+}
+
+function getCurrentTreeVariants(props, context) {
+    if (checkIfControllingVariants(props)) {
+        var initial = props.initial, animate = props.animate;
+        return {
+            initial: initial === false || isVariantLabel(initial)
+                ? initial
+                : undefined,
+            animate: isVariantLabel(animate) ? animate : undefined,
+        };
+    }
+    return props.inherit !== false ? context : {};
+}
+
+function useCreateMotionContext(props, isStatic) {
+    var _a = getCurrentTreeVariants(props, React.useContext(MotionContext)), initial = _a.initial, animate = _a.animate;
+    return React.useMemo(function () { return ({ initial: initial, animate: animate }); }, 
+    /**
+     * Only break memoisation in static mode
+     */
+    isStatic
+        ? [
+            variantLabelsAsDependency(initial),
+            variantLabelsAsDependency(animate),
+        ]
+        : []);
+}
+function variantLabelsAsDependency(prop) {
+    return Array.isArray(prop) ? prop.join(" ") : prop;
+}
+
+/**
+ * Create a `motion` component.
+ *
+ * This function accepts a Component argument, which can be either a string (ie "div"
+ * for `motion.div`), or an actual React component.
+ *
+ * Alongside this is a config option which provides a way of rendering the provided
+ * component "offline", or outside the React render cycle.
+ *
+ * @internal
+ */
+function createMotionComponent(_a) {
+    var preloadedFeatures = _a.preloadedFeatures, createVisualElement = _a.createVisualElement, useRender = _a.useRender, useVisualState = _a.useVisualState, Component = _a.Component;
+    preloadedFeatures && loadFeatures(preloadedFeatures);
+    function MotionComponent(props, externalRef) {
+        /**
+         * If we're rendering in a static environment, we only visually update the component
+         * as a result of a React-rerender rather than interactions or animations. This
+         * means we don't need to load additional memory structures like VisualElement,
+         * or any gesture/animation features.
+         */
+        var isStatic = React.useContext(MotionConfigContext).isStatic;
+        var features = null;
+        /**
+         * Create the tree context. This is memoized and will only trigger renders
+         * when the current tree variant changes in static mode.
+         */
+        var context = useCreateMotionContext(props, isStatic);
+        /**
+         *
+         */
+        var visualState = useVisualState(props, isStatic);
+        if (!isStatic && isBrowser) {
+            /**
+             * Create a VisualElement for this component. A VisualElement provides a common
+             * interface to renderer-specific APIs (ie DOM/Three.js etc) as well as
+             * providing a way of rendering to these APIs outside of the React render loop
+             * for more performant animations and interactions
+             */
+            context.visualElement = useVisualElement(Component, visualState, props, createVisualElement);
+            /**
+             * Load Motion gesture and animation features. These are rendered as renderless
+             * components so each feature can optionally make use of React lifecycle methods.
+             *
+             * TODO: The intention is to move these away from a React-centric to a
+             * VisualElement-centric lifecycle scheme.
+             */
+            features = useFeatures(props, context.visualElement, preloadedFeatures);
+        }
+        /**
+         * The mount order and hierarchy is specific to ensure our element ref
+         * is hydrated by the time features fire their effects.
+         */
+        return (React__namespace.createElement(React__namespace.Fragment, null,
+            React__namespace.createElement(MotionContext.Provider, { value: context }, useRender(Component, props, useMotionRef(visualState, context.visualElement, externalRef), visualState, isStatic)),
+            features));
+    }
+    return React.forwardRef(MotionComponent);
+}
+
+/**
+ * Convert any React component into a `motion` component. The provided component
+ * **must** use `React.forwardRef` to the underlying DOM component you want to animate.
+ *
+ * ```jsx
+ * const Component = React.forwardRef((props, ref) => {
+ *   return <div ref={ref} />
+ * })
+ *
+ * const MotionComponent = motion(Component)
+ * ```
+ *
+ * @public
+ */
+function createMotionProxy(createConfig) {
+    function custom(Component, customMotionComponentConfig) {
+        if (customMotionComponentConfig === void 0) { customMotionComponentConfig = {}; }
+        return createMotionComponent(createConfig(Component, customMotionComponentConfig));
+    }
+    /**
+     * A cache of generated `motion` components, e.g `motion.div`, `motion.input` etc.
+     * Rather than generating them anew every render.
+     */
+    var componentCache = new Map();
+    return new Proxy(custom, {
+        /**
+         * Called when `motion` is referenced with a prop: `motion.div`, `motion.input` etc.
+         * The prop name is passed through as `key` and we can use that to generate a `motion`
+         * DOM component with that name.
+         */
+        get: function (_target, key) {
+            /**
+             * If this element doesn't exist in the component cache, create it and cache.
+             */
+            if (!componentCache.has(key)) {
+                componentCache.set(key, custom(key));
+            }
+            return componentCache.get(key);
+        },
+    });
+}
+
+/**
+ * We keep these listed seperately as we use the lowercase tag names as part
+ * of the runtime bundle to detect SVG components
+ */
+var lowercaseSVGElements = [
+    "animate",
+    "circle",
+    "defs",
+    "desc",
+    "ellipse",
+    "g",
+    "image",
+    "line",
+    "filter",
+    "marker",
+    "mask",
+    "metadata",
+    "path",
+    "pattern",
+    "polygon",
+    "polyline",
+    "rect",
+    "stop",
+    "svg",
+    "switch",
+    "symbol",
+    "text",
+    "tspan",
+    "use",
+    "view",
+];
+
+function isSVGComponent(Component) {
+    if (
+    /**
+     * If it's not a string, it's a custom React component. Currently we only support
+     * HTML custom React components.
+     */
+    typeof Component !== "string" ||
+        /**
+         * If it contains a dash, the element is a custom HTML webcomponent.
+         */
+        Component.includes("-")) {
+        return false;
+    }
+    else if (
+    /**
+     * If it's in our list of lowercase SVG tags, it's an SVG component
+     */
+    lowercaseSVGElements.indexOf(Component) > -1 ||
+        /**
+         * If it contains a capital letter, it's an SVG component
+         */
+        /[A-Z]/.test(Component)) {
+        return true;
+    }
+    return false;
+}
+
+var valueScaleCorrection = {};
+/**
+ * @internal
+ */
+function addScaleCorrection(correctors) {
+    for (var key in correctors) {
+        valueScaleCorrection[key] = correctors[key];
+    }
+}
+
+/**
+ * A list of all transformable axes. We'll use this list to generated a version
+ * of each axes for each transform.
+ */
+var transformAxes = ["", "X", "Y", "Z"];
+/**
+ * An ordered array of each transformable value. By default, transform values
+ * will be sorted to this order.
+ */
+var order = ["translate", "scale", "rotate", "skew"];
+/**
+ * Generate a list of every possible transform key.
+ */
+var transformProps = ["transformPerspective", "x", "y", "z"];
+order.forEach(function (operationKey) {
+    return transformAxes.forEach(function (axesKey) {
+        return transformProps.push(operationKey + axesKey);
+    });
+});
+/**
+ * A function to use with Array.sort to sort transform keys by their default order.
+ */
+function sortTransformProps(a, b) {
+    return transformProps.indexOf(a) - transformProps.indexOf(b);
+}
+/**
+ * A quick lookup for transform props.
+ */
+var transformPropSet = new Set(transformProps);
+function isTransformProp(key) {
+    return transformPropSet.has(key);
+}
+/**
+ * A quick lookup for transform origin props
+ */
+var transformOriginProps = new Set(["originX", "originY", "originZ"]);
+function isTransformOriginProp(key) {
+    return transformOriginProps.has(key);
+}
+
+function isForcedMotionValue(key, _a) {
+    var layout = _a.layout, layoutId = _a.layoutId;
+    return (isTransformProp(key) ||
+        isTransformOriginProp(key) ||
+        ((layout || layoutId !== undefined) &&
+            (!!valueScaleCorrection[key] || key === "opacity")));
+}
+
+var isMotionValue = function (value) {
+    return value !== null && typeof value === "object" && value.getVelocity;
+};
+
+var translateAlias = {
+    x: "translateX",
+    y: "translateY",
+    z: "translateZ",
+    transformPerspective: "perspective",
+};
+/**
+ * Build a CSS transform style from individual x/y/scale etc properties.
+ *
+ * This outputs with a default order of transforms/scales/rotations, this can be customised by
+ * providing a transformTemplate function.
+ */
+function buildTransform(_a, _b, transformIsDefault, transformTemplate) {
+    var transform = _a.transform, transformKeys = _a.transformKeys;
+    var _c = _b.enableHardwareAcceleration, enableHardwareAcceleration = _c === void 0 ? true : _c, _d = _b.allowTransformNone, allowTransformNone = _d === void 0 ? true : _d;
+    // The transform string we're going to build into.
+    var transformString = "";
+    // Transform keys into their default order - this will determine the output order.
+    transformKeys.sort(sortTransformProps);
+    // Track whether the defined transform has a defined z so we don't add a
+    // second to enable hardware acceleration
+    var transformHasZ = false;
+    // Loop over each transform and build them into transformString
+    var numTransformKeys = transformKeys.length;
+    for (var i = 0; i < numTransformKeys; i++) {
+        var key = transformKeys[i];
+        transformString += (translateAlias[key] || key) + "(" + transform[key] + ") ";
+        if (key === "z")
+            transformHasZ = true;
+    }
+    if (!transformHasZ && enableHardwareAcceleration) {
+        transformString += "translateZ(0)";
+    }
+    else {
+        transformString = transformString.trim();
+    }
+    // If we have a custom `transform` template, pass our transform values and
+    // generated transformString to that before returning
+    if (transformTemplate) {
+        transformString = transformTemplate(transform, transformIsDefault ? "" : transformString);
+    }
+    else if (allowTransformNone && transformIsDefault) {
+        transformString = "none";
+    }
+    return transformString;
+}
+/**
+ * Build a transformOrigin style. Uses the same defaults as the browser for
+ * undefined origins.
+ */
+function buildTransformOrigin(_a) {
+    var _b = _a.originX, originX = _b === void 0 ? "50%" : _b, _c = _a.originY, originY = _c === void 0 ? "50%" : _c, _d = _a.originZ, originZ = _d === void 0 ? 0 : _d;
+    return originX + " " + originY + " " + originZ;
+}
+
+/**
+ * Returns true if the provided key is a CSS variable
+ */
+function isCSSVariable$1(key) {
+    return key.startsWith("--");
+}
+
+/**
+ * Provided a value and a ValueType, returns the value as that value type.
+ */
+var getValueAsType = function (value, type) {
+    return type && typeof value === "number"
+        ? type.transform(value)
+        : value;
+};
+
+var int = tslib.__assign(tslib.__assign({}, styleValueTypes.number), { transform: Math.round });
+
+var numberValueTypes = {
+    // Border props
+    borderWidth: styleValueTypes.px,
+    borderTopWidth: styleValueTypes.px,
+    borderRightWidth: styleValueTypes.px,
+    borderBottomWidth: styleValueTypes.px,
+    borderLeftWidth: styleValueTypes.px,
+    borderRadius: styleValueTypes.px,
+    radius: styleValueTypes.px,
+    borderTopLeftRadius: styleValueTypes.px,
+    borderTopRightRadius: styleValueTypes.px,
+    borderBottomRightRadius: styleValueTypes.px,
+    borderBottomLeftRadius: styleValueTypes.px,
+    // Positioning props
+    width: styleValueTypes.px,
+    maxWidth: styleValueTypes.px,
+    height: styleValueTypes.px,
+    maxHeight: styleValueTypes.px,
+    size: styleValueTypes.px,
+    top: styleValueTypes.px,
+    right: styleValueTypes.px,
+    bottom: styleValueTypes.px,
+    left: styleValueTypes.px,
+    // Spacing props
+    padding: styleValueTypes.px,
+    paddingTop: styleValueTypes.px,
+    paddingRight: styleValueTypes.px,
+    paddingBottom: styleValueTypes.px,
+    paddingLeft: styleValueTypes.px,
+    margin: styleValueTypes.px,
+    marginTop: styleValueTypes.px,
+    marginRight: styleValueTypes.px,
+    marginBottom: styleValueTypes.px,
+    marginLeft: styleValueTypes.px,
+    // Transform props
+    rotate: styleValueTypes.degrees,
+    rotateX: styleValueTypes.degrees,
+    rotateY: styleValueTypes.degrees,
+    rotateZ: styleValueTypes.degrees,
+    scale: styleValueTypes.scale,
+    scaleX: styleValueTypes.scale,
+    scaleY: styleValueTypes.scale,
+    scaleZ: styleValueTypes.scale,
+    skew: styleValueTypes.degrees,
+    skewX: styleValueTypes.degrees,
+    skewY: styleValueTypes.degrees,
+    distance: styleValueTypes.px,
+    translateX: styleValueTypes.px,
+    translateY: styleValueTypes.px,
+    translateZ: styleValueTypes.px,
+    x: styleValueTypes.px,
+    y: styleValueTypes.px,
+    z: styleValueTypes.px,
+    perspective: styleValueTypes.px,
+    transformPerspective: styleValueTypes.px,
+    opacity: styleValueTypes.alpha,
+    originX: styleValueTypes.progressPercentage,
+    originY: styleValueTypes.progressPercentage,
+    originZ: styleValueTypes.px,
+    // Misc
+    zIndex: int,
+    // SVG
+    fillOpacity: styleValueTypes.alpha,
+    strokeOpacity: styleValueTypes.alpha,
+    numOctaves: int,
+};
+
+function buildHTMLStyles(state, latestValues, projection, layoutState, options, transformTemplate, buildProjectionTransform, buildProjectionTransformOrigin) {
+    var _a;
+    var style = state.style, vars = state.vars, transform = state.transform, transformKeys = state.transformKeys, transformOrigin = state.transformOrigin;
+    // Empty the transformKeys array. As we're throwing out refs to its items
+    // this might not be as cheap as suspected. Maybe using the array as a buffer
+    // with a manual incrementation would be better.
+    transformKeys.length = 0;
+    // Track whether we encounter any transform or transformOrigin values.
+    var hasTransform = false;
+    var hasTransformOrigin = false;
+    // Does the calculated transform essentially equal "none"?
+    var transformIsNone = true;
+    /**
+     * Loop over all our latest animated values and decide whether to handle them
+     * as a style or CSS variable.
+     *
+     * Transforms and transform origins are kept seperately for further processing.
+     */
+    for (var key in latestValues) {
+        var value = latestValues[key];
+        /**
+         * If this is a CSS variable we don't do any further processing.
+         */
+        if (isCSSVariable$1(key)) {
+            vars[key] = value;
+            continue;
+        }
+        // Convert the value to its default value type, ie 0 -> "0px"
+        var valueType = numberValueTypes[key];
+        var valueAsType = getValueAsType(value, valueType);
+        if (isTransformProp(key)) {
+            // If this is a transform, flag to enable further transform processing
+            hasTransform = true;
+            transform[key] = valueAsType;
+            transformKeys.push(key);
+            // If we already know we have a non-default transform, early return
+            if (!transformIsNone)
+                continue;
+            // Otherwise check to see if this is a default transform
+            if (value !== ((_a = valueType.default) !== null && _a !== void 0 ? _a : 0))
+                transformIsNone = false;
+        }
+        else if (isTransformOriginProp(key)) {
+            transformOrigin[key] = valueAsType;
+            // If this is a transform origin, flag and enable further transform-origin processing
+            hasTransformOrigin = true;
+        }
+        else {
+            /**
+             * If layout projection is on, and we need to perform scale correction for this
+             * value type, perform it.
+             */
+            if (layoutState &&
+                projection &&
+                layoutState.isHydrated &&
+                valueScaleCorrection[key]) {
+                var correctedValue = valueScaleCorrection[key].process(value, layoutState, projection);
+                /**
+                 * Scale-correctable values can define a number of other values to break
+                 * down into. For instance borderRadius needs applying to borderBottomLeftRadius etc
+                 */
+                var applyTo = valueScaleCorrection[key].applyTo;
+                if (applyTo) {
+                    var num = applyTo.length;
+                    for (var i = 0; i < num; i++) {
+                        style[applyTo[i]] = correctedValue;
+                    }
+                }
+                else {
+                    style[key] = correctedValue;
+                }
+            }
+            else {
+                style[key] = valueAsType;
+            }
+        }
+    }
+    if (layoutState &&
+        projection &&
+        buildProjectionTransform &&
+        buildProjectionTransformOrigin) {
+        style.transform = buildProjectionTransform(layoutState.deltaFinal, layoutState.treeScale, hasTransform ? transform : undefined);
+        if (transformTemplate) {
+            style.transform = transformTemplate(transform, style.transform);
+        }
+        style.transformOrigin = buildProjectionTransformOrigin(layoutState);
+    }
+    else {
+        if (hasTransform) {
+            style.transform = buildTransform(state, options, transformIsNone, transformTemplate);
+        }
+        if (hasTransformOrigin) {
+            style.transformOrigin = buildTransformOrigin(transformOrigin);
+        }
+    }
+}
+
+var createHtmlRenderState = function () { return ({
+    style: {},
+    transform: {},
+    transformKeys: [],
+    transformOrigin: {},
+    vars: {},
+}); };
+
+function copyRawValuesOnly(target, source, props) {
+    for (var key in source) {
+        if (!isMotionValue(source[key]) && !isForcedMotionValue(key, props)) {
+            target[key] = source[key];
+        }
+    }
+}
+function useInitialMotionValues(_a, visualState, isStatic) {
+    var transformTemplate = _a.transformTemplate;
+    return React.useMemo(function () {
+        var state = createHtmlRenderState();
+        buildHTMLStyles(state, visualState, undefined, undefined, { enableHardwareAcceleration: !isStatic }, transformTemplate);
+        var vars = state.vars, style = state.style;
+        return tslib.__assign(tslib.__assign({}, vars), style);
+    }, [visualState]);
+}
+function useStyle(props, visualState, isStatic) {
+    var styleProp = props.style || {};
+    var style = {};
+    /**
+     * Copy non-Motion Values straight into style
+     */
+    copyRawValuesOnly(style, styleProp, props);
+    Object.assign(style, useInitialMotionValues(props, visualState, isStatic));
+    if (props.transformValues) {
+        style = props.transformValues(style);
+    }
+    return style;
+}
+function useHTMLProps(props, visualState, isStatic) {
+    // The `any` isn't ideal but it is the type of createElement props argument
+    var htmlProps = {};
+    var style = useStyle(props, visualState, isStatic);
+    if (Boolean(props.drag)) {
+        // Disable the ghost element when a user drags
+        htmlProps.draggable = false;
+        // Disable text selection
+        style.userSelect = style.WebkitUserSelect = style.WebkitTouchCallout =
+            "none";
+        // Disable scrolling on the draggable direction
+        style.touchAction =
+            props.drag === true
+                ? "none"
+                : "pan-" + (props.drag === "x" ? "y" : "x");
+    }
+    htmlProps.style = style;
+    return htmlProps;
+}
+
+/**
+ * A list of all valid MotionProps.
+ *
+ * @internalremarks
+ * This doesn't throw if a `MotionProp` name is missing - it should.
+ */
+var validMotionProps = new Set([
+    "initial",
+    "animate",
+    "exit",
+    "style",
+    "variants",
+    "transition",
+    "transformTemplate",
+    "transformValues",
+    "custom",
+    "inherit",
+    "layout",
+    "layoutId",
+    "onLayoutAnimationComplete",
+    "onViewportBoxUpdate",
+    "onLayoutMeasure",
+    "onBeforeLayoutMeasure",
+    "onAnimationStart",
+    "onAnimationComplete",
+    "onUpdate",
+    "onDragStart",
+    "onDrag",
+    "onDragEnd",
+    "onMeasureDragConstraints",
+    "onDirectionLock",
+    "onDragTransitionEnd",
+    "drag",
+    "dragControls",
+    "dragListener",
+    "dragConstraints",
+    "dragDirectionLock",
+    "_dragX",
+    "_dragY",
+    "dragElastic",
+    "dragMomentum",
+    "dragPropagation",
+    "dragTransition",
+    "whileDrag",
+    "onPan",
+    "onPanStart",
+    "onPanEnd",
+    "onPanSessionStart",
+    "onTap",
+    "onTapStart",
+    "onTapCancel",
+    "onHoverStart",
+    "onHoverEnd",
+    "whileFocus",
+    "whileTap",
+    "whileHover",
+]);
+/**
+ * Check whether a prop name is a valid `MotionProp` key.
+ *
+ * @param key - Name of the property to check
+ * @returns `true` is key is a valid `MotionProp`.
+ *
+ * @public
+ */
+function isValidMotionProp(key) {
+    return validMotionProps.has(key);
+}
+
+var shouldForward = function (key) { return !isValidMotionProp(key); };
+/**
+ * Emotion and Styled Components both allow users to pass through arbitrary props to their components
+ * to dynamically generate CSS. They both use the `@emotion/is-prop-valid` package to determine which
+ * of these should be passed to the underlying DOM node.
+ *
+ * However, when styling a Motion component `styled(motion.div)`, both packages pass through *all* props
+ * as it's seen as an arbitrary component rather than a DOM node. Motion only allows arbitrary props
+ * passed through the `custom` prop so it doesn't *need* the payload or computational overhead of
+ * `@emotion/is-prop-valid`, however to fix this problem we need to use it.
+ *
+ * By making it an optionalDependency we can offer this functionality only in the situations where it's
+ * actually required.
+ */
+try {
+    var emotionIsPropValid_1 = __webpack_require__("sdKu").default;
+    shouldForward = function (key) {
+        // Handle events explicitly as Emotion validates them all as true
+        if (key.startsWith("on")) {
+            return !isValidMotionProp(key);
+        }
+        else {
+            return emotionIsPropValid_1(key);
+        }
+    };
+}
+catch (_a) {
+    // We don't need to actually do anything here - the fallback is the existing `isPropValid`.
+}
+function filterProps(props, isDom, forwardMotionProps) {
+    var filteredProps = {};
+    for (var key in props) {
+        if (shouldForward(key) ||
+            (forwardMotionProps === true && isValidMotionProp(key)) ||
+            (!isDom && !isValidMotionProp(key))) {
+            filteredProps[key] = props[key];
+        }
+    }
+    return filteredProps;
+}
+
+function calcOrigin$1(origin, offset, size) {
+    return typeof origin === "string"
+        ? origin
+        : styleValueTypes.px.transform(offset + size * origin);
+}
+/**
+ * The SVG transform origin defaults are different to CSS and is less intuitive,
+ * so we use the measured dimensions of the SVG to reconcile these.
+ */
+function calcSVGTransformOrigin(dimensions, originX, originY) {
+    var pxOriginX = calcOrigin$1(originX, dimensions.x, dimensions.width);
+    var pxOriginY = calcOrigin$1(originY, dimensions.y, dimensions.height);
+    return pxOriginX + " " + pxOriginY;
+}
+
+// Convert a progress 0-1 to a pixels value based on the provided length
+var progressToPixels = function (progress, length) {
+    return styleValueTypes.px.transform(progress * length);
+};
+var dashKeys = {
+    offset: "stroke-dashoffset",
+    array: "stroke-dasharray",
+};
+var camelKeys = {
+    offset: "strokeDashoffset",
+    array: "strokeDasharray",
+};
+/**
+ * Build SVG path properties. Uses the path's measured length to convert
+ * our custom pathLength, pathSpacing and pathOffset into stroke-dashoffset
+ * and stroke-dasharray attributes.
+ *
+ * This function is mutative to reduce per-frame GC.
+ */
+function buildSVGPath(attrs, totalLength, length, spacing, offset, useDashCase) {
+    if (spacing === void 0) { spacing = 1; }
+    if (offset === void 0) { offset = 0; }
+    if (useDashCase === void 0) { useDashCase = true; }
+    // We use dash case when setting attributes directly to the DOM node and camel case
+    // when defining props on a React component.
+    var keys = useDashCase ? dashKeys : camelKeys;
+    // Build the dash offset
+    attrs[keys.offset] = progressToPixels(-offset, totalLength);
+    // Build the dash array
+    var pathLength = progressToPixels(length, totalLength);
+    var pathSpacing = progressToPixels(spacing, totalLength);
+    attrs[keys.array] = pathLength + " " + pathSpacing;
+}
+
+/**
+ * Build SVG visual attrbutes, like cx and style.transform
+ */
+function buildSVGAttrs(state, _a, projection, layoutState, options, transformTemplate, buildProjectionTransform, buildProjectionTransformOrigin) {
+    var attrX = _a.attrX, attrY = _a.attrY, originX = _a.originX, originY = _a.originY, pathLength = _a.pathLength, _b = _a.pathSpacing, pathSpacing = _b === void 0 ? 1 : _b, _c = _a.pathOffset, pathOffset = _c === void 0 ? 0 : _c, 
+    // This is object creation, which we try to avoid per-frame.
+    latest = tslib.__rest(_a, ["attrX", "attrY", "originX", "originY", "pathLength", "pathSpacing", "pathOffset"]);
+    buildHTMLStyles(state, latest, projection, layoutState, options, transformTemplate, buildProjectionTransform, buildProjectionTransformOrigin);
+    state.attrs = state.style;
+    state.style = {};
+    var attrs = state.attrs, style = state.style, dimensions = state.dimensions, totalPathLength = state.totalPathLength;
+    /**
+     * However, we apply transforms as CSS transforms. So if we detect a transform we take it from attrs
+     * and copy it into style.
+     */
+    if (attrs.transform) {
+        if (dimensions)
+            style.transform = attrs.transform;
+        delete attrs.transform;
+    }
+    // Parse transformOrigin
+    if (dimensions &&
+        (originX !== undefined || originY !== undefined || style.transform)) {
+        style.transformOrigin = calcSVGTransformOrigin(dimensions, originX !== undefined ? originX : 0.5, originY !== undefined ? originY : 0.5);
+    }
+    // Treat x/y not as shortcuts but as actual attributes
+    if (attrX !== undefined)
+        attrs.x = attrX;
+    if (attrY !== undefined)
+        attrs.y = attrY;
+    // Build SVG path if one has been measured
+    if (totalPathLength !== undefined && pathLength !== undefined) {
+        buildSVGPath(attrs, totalPathLength, pathLength, pathSpacing, pathOffset, false);
+    }
+}
+
+var createSvgRenderState = function () { return (tslib.__assign(tslib.__assign({}, createHtmlRenderState()), { attrs: {} })); };
+
+function useSVGProps(props, visualState) {
+    var visualProps = React.useMemo(function () {
+        var state = createSvgRenderState();
+        buildSVGAttrs(state, visualState, undefined, undefined, { enableHardwareAcceleration: false }, props.transformTemplate);
+        return tslib.__assign(tslib.__assign({}, state.attrs), { style: tslib.__assign({}, state.style) });
+    }, [visualState]);
+    if (props.style) {
+        var rawStyles = {};
+        copyRawValuesOnly(rawStyles, props.style, props);
+        visualProps.style = tslib.__assign(tslib.__assign({}, rawStyles), visualProps.style);
+    }
+    return visualProps;
+}
+
+function createUseRender(forwardMotionProps) {
+    if (forwardMotionProps === void 0) { forwardMotionProps = false; }
+    var useRender = function (Component, props, ref, _a, isStatic) {
+        var latestValues = _a.latestValues;
+        var useVisualProps = isSVGComponent(Component)
+            ? useSVGProps
+            : useHTMLProps;
+        var visualProps = useVisualProps(props, latestValues, isStatic);
+        var filteredProps = filterProps(props, typeof Component === "string", forwardMotionProps);
+        var elementProps = tslib.__assign(tslib.__assign(tslib.__assign({}, filteredProps), visualProps), { ref: ref });
+        return React.createElement(Component, elementProps);
+    };
+    return useRender;
+}
+
+var CAMEL_CASE_PATTERN = /([a-z])([A-Z])/g;
+var REPLACE_TEMPLATE = "$1-$2";
+/**
+ * Convert camelCase to dash-case properties.
+ */
+var camelToDash = function (str) {
+    return str.replace(CAMEL_CASE_PATTERN, REPLACE_TEMPLATE).toLowerCase();
+};
+
+function renderHTML(element, _a) {
+    var style = _a.style, vars = _a.vars;
+    // Directly assign style into the Element's style prop. In tests Object.assign is the
+    // fastest way to assign styles.
+    Object.assign(element.style, style);
+    // Loop over any CSS variables and assign those.
+    for (var key in vars) {
+        element.style.setProperty(key, vars[key]);
+    }
+}
+
+/**
+ * A set of attribute names that are always read/written as camel case.
+ */
+var camelCaseAttributes = new Set([
+    "baseFrequency",
+    "diffuseConstant",
+    "kernelMatrix",
+    "kernelUnitLength",
+    "keySplines",
+    "keyTimes",
+    "limitingConeAngle",
+    "markerHeight",
+    "markerWidth",
+    "numOctaves",
+    "targetX",
+    "targetY",
+    "surfaceScale",
+    "specularConstant",
+    "specularExponent",
+    "stdDeviation",
+    "tableValues",
+    "viewBox",
+]);
+
+function renderSVG(element, renderState) {
+    renderHTML(element, renderState);
+    for (var key in renderState.attrs) {
+        element.setAttribute(!camelCaseAttributes.has(key) ? camelToDash(key) : key, renderState.attrs[key]);
+    }
+}
+
+function scrapeMotionValuesFromProps$1(props) {
+    var style = props.style;
+    var newValues = {};
+    for (var key in style) {
+        if (isMotionValue(style[key]) || isForcedMotionValue(key, props)) {
+            newValues[key] = style[key];
+        }
+    }
+    return newValues;
+}
+
+function scrapeMotionValuesFromProps(props) {
+    var newValues = scrapeMotionValuesFromProps$1(props);
+    for (var key in props) {
+        if (isMotionValue(props[key])) {
+            var targetKey = key === "x" || key === "y" ? "attr" + key.toUpperCase() : key;
+            newValues[targetKey] = props[key];
+        }
+    }
+    return newValues;
+}
+
+function isAnimationControls(v) {
+    return typeof v === "object" && typeof v.start === "function";
+}
+
+var isKeyframesTarget = function (v) {
+    return Array.isArray(v);
+};
+
+var isCustomValue = function (v) {
+    return Boolean(v && typeof v === "object" && v.mix && v.toValue);
+};
+var resolveFinalValueInKeyframes = function (v) {
+    // TODO maybe throw if v.length - 1 is placeholder token?
+    return isKeyframesTarget(v) ? v[v.length - 1] || 0 : v;
+};
+
+/**
+ * If the provided value is a MotionValue, this returns the actual value, otherwise just the value itself
+ *
+ * TODO: Remove and move to library
+ *
+ * @internal
+ */
+function resolveMotionValue(value) {
+    var unwrappedValue = isMotionValue(value) ? value.get() : value;
+    return isCustomValue(unwrappedValue)
+        ? unwrappedValue.toValue()
+        : unwrappedValue;
+}
+
+function makeState(_a, props, context, presenceContext) {
+    var scrapeMotionValuesFromProps = _a.scrapeMotionValuesFromProps, createRenderState = _a.createRenderState, onMount = _a.onMount;
+    var state = {
+        latestValues: makeLatestValues(props, context, presenceContext, scrapeMotionValuesFromProps),
+        renderState: createRenderState(),
+    };
+    if (onMount) {
+        state.mount = function (instance) { return onMount(props, instance, state); };
+    }
+    return state;
+}
+var makeUseVisualState = function (config) { return function (props, isStatic) {
+    var context = React.useContext(MotionContext);
+    var presenceContext = React.useContext(PresenceContext);
+    return isStatic
+        ? makeState(config, props, context, presenceContext)
+        : useConstant(function () { return makeState(config, props, context, presenceContext); });
+}; };
+function makeLatestValues(props, context, presenceContext, scrapeMotionValues) {
+    var values = {};
+    var blockInitialAnimation = (presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.initial) === false;
+    var motionValues = scrapeMotionValues(props);
+    for (var key in motionValues) {
+        values[key] = resolveMotionValue(motionValues[key]);
+    }
+    var initial = props.initial, animate = props.animate;
+    var isControllingVariants = checkIfControllingVariants(props);
+    var isVariantNode = checkIfVariantNode(props);
+    if (context &&
+        isVariantNode &&
+        !isControllingVariants &&
+        props.inherit !== false) {
+        initial !== null && initial !== void 0 ? initial : (initial = context.initial);
+        animate !== null && animate !== void 0 ? animate : (animate = context.animate);
+    }
+    var variantToSet = blockInitialAnimation || initial === false ? animate : initial;
+    if (variantToSet &&
+        typeof variantToSet !== "boolean" &&
+        !isAnimationControls(variantToSet)) {
+        var list = Array.isArray(variantToSet) ? variantToSet : [variantToSet];
+        list.forEach(function (definition) {
+            var resolved = resolveVariantFromProps(props, definition);
+            if (!resolved)
+                return;
+            var transitionEnd = resolved.transitionEnd; resolved.transition; var target = tslib.__rest(resolved, ["transitionEnd", "transition"]);
+            for (var key in target)
+                values[key] = target[key];
+            for (var key in transitionEnd)
+                values[key] = transitionEnd[key];
+        });
+    }
+    return values;
+}
+
+var svgMotionConfig = {
+    useVisualState: makeUseVisualState({
+        scrapeMotionValuesFromProps: scrapeMotionValuesFromProps,
+        createRenderState: createSvgRenderState,
+        onMount: function (props, instance, _a) {
+            var renderState = _a.renderState, latestValues = _a.latestValues;
+            try {
+                renderState.dimensions =
+                    typeof instance.getBBox ===
+                        "function"
+                        ? instance.getBBox()
+                        : instance.getBoundingClientRect();
+            }
+            catch (e) {
+                // Most likely trying to measure an unrendered element under Firefox
+                renderState.dimensions = {
+                    x: 0,
+                    y: 0,
+                    width: 0,
+                    height: 0,
+                };
+            }
+            if (isPath(instance)) {
+                renderState.totalPathLength = instance.getTotalLength();
+            }
+            buildSVGAttrs(renderState, latestValues, undefined, undefined, { enableHardwareAcceleration: false }, props.transformTemplate);
+            // TODO: Replace with direct assignment
+            renderSVG(instance, renderState);
+        },
+    }),
+};
+function isPath(element) {
+    return element.tagName === "path";
+}
+
+var htmlMotionConfig = {
+    useVisualState: makeUseVisualState({
+        scrapeMotionValuesFromProps: scrapeMotionValuesFromProps$1,
+        createRenderState: createHtmlRenderState,
+    }),
+};
+
+function createDomMotionConfig(Component, _a, preloadedFeatures, createVisualElement) {
+    var _b = _a.forwardMotionProps, forwardMotionProps = _b === void 0 ? false : _b;
+    var baseConfig = isSVGComponent(Component)
+        ? svgMotionConfig
+        : htmlMotionConfig;
+    return tslib.__assign(tslib.__assign({}, baseConfig), { preloadedFeatures: preloadedFeatures, useRender: createUseRender(forwardMotionProps), createVisualElement: createVisualElement,
+        Component: Component });
+}
+
+var AnimationType;
+(function (AnimationType) {
+    AnimationType["Animate"] = "animate";
+    AnimationType["Hover"] = "whileHover";
+    AnimationType["Tap"] = "whileTap";
+    AnimationType["Drag"] = "whileDrag";
+    AnimationType["Focus"] = "whileFocus";
+    AnimationType["Exit"] = "exit";
+})(AnimationType || (AnimationType = {}));
+
+function addDomEvent(target, eventName, handler, options) {
+    target.addEventListener(eventName, handler, options);
+    return function () { return target.removeEventListener(eventName, handler, options); };
+}
+/**
+ * Attaches an event listener directly to the provided DOM element.
+ *
+ * Bypassing React's event system can be desirable, for instance when attaching non-passive
+ * event handlers.
+ *
+ * ```jsx
+ * const ref = useRef(null)
+ *
+ * useDomEvent(ref, 'wheel', onWheel, { passive: false })
+ *
+ * return <div ref={ref} />
+ * ```
+ *
+ * @param ref - React.RefObject that's been provided to the element you want to bind the listener to.
+ * @param eventName - Name of the event you want listen for.
+ * @param handler - Function to fire when receiving the event.
+ * @param options - Options to pass to `Event.addEventListener`.
+ *
+ * @public
+ */
+function useDomEvent(ref, eventName, handler, options) {
+    React.useEffect(function () {
+        var element = ref.current;
+        if (handler && element) {
+            return addDomEvent(element, eventName, handler, options);
+        }
+    }, [ref, eventName, handler, options]);
+}
+
+/**
+ *
+ * @param props
+ * @param ref
+ * @internal
+ */
+function useFocusGesture(_a) {
+    var whileFocus = _a.whileFocus, visualElement = _a.visualElement;
+    var onFocus = function () {
+        var _a;
+        (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Focus, true);
+    };
+    var onBlur = function () {
+        var _a;
+        (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Focus, false);
+    };
+    useDomEvent(visualElement, "focus", whileFocus ? onFocus : undefined);
+    useDomEvent(visualElement, "blur", whileFocus ? onBlur : undefined);
+}
+
+function isMouseEvent(event) {
+    // PointerEvent inherits from MouseEvent so we can't use a straight instanceof check.
+    if (typeof PointerEvent !== "undefined" && event instanceof PointerEvent) {
+        return !!(event.pointerType === "mouse");
+    }
+    return event instanceof MouseEvent;
+}
+function isTouchEvent(event) {
+    var hasTouches = !!event.touches;
+    return hasTouches;
+}
+
+/**
+ * Filters out events not attached to the primary pointer (currently left mouse button)
+ * @param eventHandler
+ */
+function filterPrimaryPointer(eventHandler) {
+    return function (event) {
+        var isMouseEvent = event instanceof MouseEvent;
+        var isPrimaryPointer = !isMouseEvent ||
+            (isMouseEvent && event.button === 0);
+        if (isPrimaryPointer) {
+            eventHandler(event);
+        }
+    };
+}
+var defaultPagePoint = { pageX: 0, pageY: 0 };
+function pointFromTouch(e, pointType) {
+    if (pointType === void 0) { pointType = "page"; }
+    var primaryTouch = e.touches[0] || e.changedTouches[0];
+    var point = primaryTouch || defaultPagePoint;
+    return {
+        x: point[pointType + "X"],
+        y: point[pointType + "Y"],
+    };
+}
+function pointFromMouse(point, pointType) {
+    if (pointType === void 0) { pointType = "page"; }
+    return {
+        x: point[pointType + "X"],
+        y: point[pointType + "Y"],
+    };
+}
+function extractEventInfo(event, pointType) {
+    if (pointType === void 0) { pointType = "page"; }
+    return {
+        point: isTouchEvent(event)
+            ? pointFromTouch(event, pointType)
+            : pointFromMouse(event, pointType),
+    };
+}
+function getViewportPointFromEvent(event) {
+    return extractEventInfo(event, "client");
+}
+var wrapHandler = function (handler, shouldFilterPrimaryPointer) {
+    if (shouldFilterPrimaryPointer === void 0) { shouldFilterPrimaryPointer = false; }
+    var listener = function (event) {
+        return handler(event, extractEventInfo(event));
+    };
+    return shouldFilterPrimaryPointer
+        ? filterPrimaryPointer(listener)
+        : listener;
+};
+
+// We check for event support via functions in case they've been mocked by a testing suite.
+var supportsPointerEvents = function () {
+    return isBrowser && window.onpointerdown === null;
+};
+var supportsTouchEvents = function () {
+    return isBrowser && window.ontouchstart === null;
+};
+var supportsMouseEvents = function () {
+    return isBrowser && window.onmousedown === null;
+};
+
+var mouseEventNames = {
+    pointerdown: "mousedown",
+    pointermove: "mousemove",
+    pointerup: "mouseup",
+    pointercancel: "mousecancel",
+    pointerover: "mouseover",
+    pointerout: "mouseout",
+    pointerenter: "mouseenter",
+    pointerleave: "mouseleave",
+};
+var touchEventNames = {
+    pointerdown: "touchstart",
+    pointermove: "touchmove",
+    pointerup: "touchend",
+    pointercancel: "touchcancel",
+};
+function getPointerEventName(name) {
+    if (supportsPointerEvents()) {
+        return name;
+    }
+    else if (supportsTouchEvents()) {
+        return touchEventNames[name];
+    }
+    else if (supportsMouseEvents()) {
+        return mouseEventNames[name];
+    }
+    return name;
+}
+function addPointerEvent(target, eventName, handler, options) {
+    return addDomEvent(target, getPointerEventName(eventName), wrapHandler(handler, eventName === "pointerdown"), options);
+}
+function usePointerEvent(ref, eventName, handler, options) {
+    return useDomEvent(ref, getPointerEventName(eventName), handler && wrapHandler(handler, eventName === "pointerdown"), options);
+}
+
+function createHoverEvent(visualElement, isActive, callback) {
+    return function (event, info) {
+        var _a;
+        if (!isMouseEvent(event) || !visualElement.isHoverEventsEnabled)
+            return;
+        callback === null || callback === void 0 ? void 0 : callback(event, info);
+        (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Hover, isActive);
+    };
+}
+function useHoverGesture(_a) {
+    var onHoverStart = _a.onHoverStart, onHoverEnd = _a.onHoverEnd, whileHover = _a.whileHover, visualElement = _a.visualElement;
+    usePointerEvent(visualElement, "pointerenter", onHoverStart || whileHover
+        ? createHoverEvent(visualElement, true, onHoverStart)
+        : undefined);
+    usePointerEvent(visualElement, "pointerleave", onHoverEnd || whileHover
+        ? createHoverEvent(visualElement, false, onHoverEnd)
+        : undefined);
+}
+
+/**
+ * Recursively traverse up the tree to check whether the provided child node
+ * is the parent or a descendant of it.
+ *
+ * @param parent - Element to find
+ * @param child - Element to test against parent
+ */
+var isNodeOrChild = function (parent, child) {
+    if (!child) {
+        return false;
+    }
+    else if (parent === child) {
+        return true;
+    }
+    else {
+        return isNodeOrChild(parent, child.parentElement);
+    }
+};
+
+function useUnmountEffect(callback) {
+    return React.useEffect(function () { return function () { return callback(); }; }, []);
+}
+
+function createLock(name) {
+    var lock = null;
+    return function () {
+        var openLock = function () {
+            lock = null;
+        };
+        if (lock === null) {
+            lock = name;
+            return openLock;
+        }
+        return false;
+    };
+}
+var globalHorizontalLock = createLock("dragHorizontal");
+var globalVerticalLock = createLock("dragVertical");
+function getGlobalLock(drag) {
+    var lock = false;
+    if (drag === "y") {
+        lock = globalVerticalLock();
+    }
+    else if (drag === "x") {
+        lock = globalHorizontalLock();
+    }
+    else {
+        var openHorizontal_1 = globalHorizontalLock();
+        var openVertical_1 = globalVerticalLock();
+        if (openHorizontal_1 && openVertical_1) {
+            lock = function () {
+                openHorizontal_1();
+                openVertical_1();
+            };
+        }
+        else {
+            // Release the locks because we don't use them
+            if (openHorizontal_1)
+                openHorizontal_1();
+            if (openVertical_1)
+                openVertical_1();
+        }
+    }
+    return lock;
+}
+function isDragActive() {
+    // Check the gesture lock - if we get it, it means no drag gesture is active
+    // and we can safely fire the tap gesture.
+    var openGestureLock = getGlobalLock(true);
+    if (!openGestureLock)
+        return true;
+    openGestureLock();
+    return false;
+}
+
+/**
+ * @param handlers -
+ * @internal
+ */
+function useTapGesture(_a) {
+    var onTap = _a.onTap, onTapStart = _a.onTapStart, onTapCancel = _a.onTapCancel, whileTap = _a.whileTap, visualElement = _a.visualElement;
+    var hasPressListeners = onTap || onTapStart || onTapCancel || whileTap;
+    var isPressing = React.useRef(false);
+    var cancelPointerEndListeners = React.useRef(null);
+    function removePointerEndListener() {
+        var _a;
+        (_a = cancelPointerEndListeners.current) === null || _a === void 0 ? void 0 : _a.call(cancelPointerEndListeners);
+        cancelPointerEndListeners.current = null;
+    }
+    function checkPointerEnd() {
+        var _a;
+        removePointerEndListener();
+        isPressing.current = false;
+        (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Tap, false);
+        return !isDragActive();
+    }
+    function onPointerUp(event, info) {
+        if (!checkPointerEnd())
+            return;
+        /**
+         * We only count this as a tap gesture if the event.target is the same
+         * as, or a child of, this component's element
+         */
+        !isNodeOrChild(visualElement.getInstance(), event.target)
+            ? onTapCancel === null || onTapCancel === void 0 ? void 0 : onTapCancel(event, info)
+            : onTap === null || onTap === void 0 ? void 0 : onTap(event, info);
+    }
+    function onPointerCancel(event, info) {
+        if (!checkPointerEnd())
+            return;
+        onTapCancel === null || onTapCancel === void 0 ? void 0 : onTapCancel(event, info);
+    }
+    function onPointerDown(event, info) {
+        var _a;
+        removePointerEndListener();
+        if (isPressing.current)
+            return;
+        isPressing.current = true;
+        cancelPointerEndListeners.current = popmotion.pipe(addPointerEvent(window, "pointerup", onPointerUp), addPointerEvent(window, "pointercancel", onPointerCancel));
+        onTapStart === null || onTapStart === void 0 ? void 0 : onTapStart(event, info);
+        (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Tap, true);
+    }
+    usePointerEvent(visualElement, "pointerdown", hasPressListeners ? onPointerDown : undefined);
+    useUnmountEffect(removePointerEndListener);
+}
+
+var makeRenderlessComponent = function (hook) { return function (props) {
+    hook(props);
+    return null;
+}; };
+
+var gestureAnimations = {
+    tap: makeRenderlessComponent(useTapGesture),
+    focus: makeRenderlessComponent(useFocusGesture),
+    hover: makeRenderlessComponent(useHoverGesture),
+};
+
+function shallowCompare(next, prev) {
+    if (!Array.isArray(prev))
+        return false;
+    var prevLength = prev.length;
+    if (prevLength !== next.length)
+        return false;
+    for (var i = 0; i < prevLength; i++) {
+        if (prev[i] !== next[i])
+            return false;
+    }
+    return true;
+}
+
+/**
+ * Converts seconds to milliseconds
+ *
+ * @param seconds - Time in seconds.
+ * @return milliseconds - Converted time in milliseconds.
+ */
+var secondsToMilliseconds = function (seconds) { return seconds * 1000; };
+
+var easingLookup = {
+    linear: popmotion.linear,
+    easeIn: popmotion.easeIn,
+    easeInOut: popmotion.easeInOut,
+    easeOut: popmotion.easeOut,
+    circIn: popmotion.circIn,
+    circInOut: popmotion.circInOut,
+    circOut: popmotion.circOut,
+    backIn: popmotion.backIn,
+    backInOut: popmotion.backInOut,
+    backOut: popmotion.backOut,
+    anticipate: popmotion.anticipate,
+    bounceIn: popmotion.bounceIn,
+    bounceInOut: popmotion.bounceInOut,
+    bounceOut: popmotion.bounceOut,
+};
+var easingDefinitionToFunction = function (definition) {
+    if (Array.isArray(definition)) {
+        // If cubic bezier definition, create bezier curve
+        heyListen.invariant(definition.length === 4, "Cubic bezier arrays must contain four numerical values.");
+        var _a = tslib.__read(definition, 4), x1 = _a[0], y1 = _a[1], x2 = _a[2], y2 = _a[3];
+        return popmotion.cubicBezier(x1, y1, x2, y2);
+    }
+    else if (typeof definition === "string") {
+        // Else lookup from table
+        heyListen.invariant(easingLookup[definition] !== undefined, "Invalid easing type '" + definition + "'");
+        return easingLookup[definition];
+    }
+    return definition;
+};
+var isEasingArray = function (ease) {
+    return Array.isArray(ease) && typeof ease[0] !== "number";
+};
+
+/**
+ * Check if a value is animatable. Examples:
+ *
+ * ✅: 100, "100px", "#fff"
+ * ❌: "block", "url(2.jpg)"
+ * @param value
+ *
+ * @internal
+ */
+var isAnimatable = function (key, value) {
+    // If the list of keys tat might be non-animatable grows, replace with Set
+    if (key === "zIndex")
+        return false;
+    // If it's a number or a keyframes array, we can animate it. We might at some point
+    // need to do a deep isAnimatable check of keyframes, or let Popmotion handle this,
+    // but for now lets leave it like this for performance reasons
+    if (typeof value === "number" || Array.isArray(value))
+        return true;
+    if (typeof value === "string" && // It's animatable if we have a string
+        styleValueTypes.complex.test(value) && // And it contains numbers and/or colors
+        !value.startsWith("url(") // Unless it starts with "url("
+    ) {
+        return true;
+    }
+    return false;
+};
+
+var underDampedSpring = function () { return ({
+    type: "spring",
+    stiffness: 500,
+    damping: 25,
+    restDelta: 0.5,
+    restSpeed: 10,
+}); };
+var criticallyDampedSpring = function (to) { return ({
+    type: "spring",
+    stiffness: 550,
+    damping: to === 0 ? 2 * Math.sqrt(550) : 30,
+    restDelta: 0.01,
+    restSpeed: 10,
+}); };
+var linearTween = function () { return ({
+    type: "keyframes",
+    ease: "linear",
+    duration: 0.3,
+}); };
+var keyframes = function (values) { return ({
+    type: "keyframes",
+    duration: 0.8,
+    values: values,
+}); };
+var defaultTransitions = {
+    x: underDampedSpring,
+    y: underDampedSpring,
+    z: underDampedSpring,
+    rotate: underDampedSpring,
+    rotateX: underDampedSpring,
+    rotateY: underDampedSpring,
+    rotateZ: underDampedSpring,
+    scaleX: criticallyDampedSpring,
+    scaleY: criticallyDampedSpring,
+    scale: criticallyDampedSpring,
+    opacity: linearTween,
+    backgroundColor: linearTween,
+    color: linearTween,
+    default: criticallyDampedSpring,
+};
+var getDefaultTransition = function (valueKey, to) {
+    var transitionFactory;
+    if (isKeyframesTarget(to)) {
+        transitionFactory = keyframes;
+    }
+    else {
+        transitionFactory =
+            defaultTransitions[valueKey] || defaultTransitions.default;
+    }
+    return tslib.__assign({ to: to }, transitionFactory(to));
+};
+
+/**
+ * A map of default value types for common values
+ */
+var defaultValueTypes = tslib.__assign(tslib.__assign({}, numberValueTypes), { 
+    // Color props
+    color: styleValueTypes.color, backgroundColor: styleValueTypes.color, outlineColor: styleValueTypes.color, fill: styleValueTypes.color, stroke: styleValueTypes.color, 
+    // Border props
+    borderColor: styleValueTypes.color, borderTopColor: styleValueTypes.color, borderRightColor: styleValueTypes.color, borderBottomColor: styleValueTypes.color, borderLeftColor: styleValueTypes.color, filter: styleValueTypes.filter, WebkitFilter: styleValueTypes.filter });
+/**
+ * Gets the default ValueType for the provided value key
+ */
+var getDefaultValueType = function (key) { return defaultValueTypes[key]; };
+
+function getAnimatableNone(key, value) {
+    var _a;
+    var defaultValueType = getDefaultValueType(key);
+    if (defaultValueType !== styleValueTypes.filter)
+        defaultValueType = styleValueTypes.complex;
+    // If value is not recognised as animatable, ie "none", create an animatable version origin based on the target
+    return (_a = defaultValueType.getAnimatableNone) === null || _a === void 0 ? void 0 : _a.call(defaultValueType, value);
+}
+
+/**
+ * Decide whether a transition is defined on a given Transition.
+ * This filters out orchestration options and returns true
+ * if any options are left.
+ */
+function isTransitionDefined(_a) {
+    _a.when; _a.delay; _a.delayChildren; _a.staggerChildren; _a.staggerDirection; _a.repeat; _a.repeatType; _a.repeatDelay; _a.from; var transition = tslib.__rest(_a, ["when", "delay", "delayChildren", "staggerChildren", "staggerDirection", "repeat", "repeatType", "repeatDelay", "from"]);
+    return !!Object.keys(transition).length;
+}
+var legacyRepeatWarning = false;
+/**
+ * Convert Framer Motion's Transition type into Popmotion-compatible options.
+ */
+function convertTransitionToAnimationOptions(_a) {
+    var ease = _a.ease, times = _a.times, yoyo = _a.yoyo, flip = _a.flip, loop = _a.loop, transition = tslib.__rest(_a, ["ease", "times", "yoyo", "flip", "loop"]);
+    var options = tslib.__assign({}, transition);
+    if (times)
+        options["offset"] = times;
+    /**
+     * Convert any existing durations from seconds to milliseconds
+     */
+    if (transition.duration)
+        options["duration"] = secondsToMilliseconds(transition.duration);
+    if (transition.repeatDelay)
+        options.repeatDelay = secondsToMilliseconds(transition.repeatDelay);
+    /**
+     * Map easing names to Popmotion's easing functions
+     */
+    if (ease) {
+        options["ease"] = isEasingArray(ease)
+            ? ease.map(easingDefinitionToFunction)
+            : easingDefinitionToFunction(ease);
+    }
+    /**
+     * Support legacy transition API
+     */
+    if (transition.type === "tween")
+        options.type = "keyframes";
+    /**
+     * TODO: These options are officially removed from the API.
+     */
+    if (yoyo || loop || flip) {
+        heyListen.warning(!legacyRepeatWarning, "yoyo, loop and flip have been removed from the API. Replace with repeat and repeatType options.");
+        legacyRepeatWarning = true;
+        if (yoyo) {
+            options.repeatType = "reverse";
+        }
+        else if (loop) {
+            options.repeatType = "loop";
+        }
+        else if (flip) {
+            options.repeatType = "mirror";
+        }
+        options.repeat = loop || yoyo || flip || transition.repeat;
+    }
+    /**
+     * TODO: Popmotion 9 has the ability to automatically detect whether to use
+     * a keyframes or spring animation, but does so by detecting velocity and other spring options.
+     * It'd be good to introduce a similar thing here.
+     */
+    if (transition.type !== "spring")
+        options.type = "keyframes";
+    return options;
+}
+/**
+ * Get the delay for a value by checking Transition with decreasing specificity.
+ */
+function getDelayFromTransition(transition, key) {
+    var _a;
+    var valueTransition = getValueTransition(transition, key) || {};
+    return (_a = valueTransition.delay) !== null && _a !== void 0 ? _a : 0;
+}
+function hydrateKeyframes(options) {
+    if (Array.isArray(options.to) && options.to[0] === null) {
+        options.to = tslib.__spreadArray([], tslib.__read(options.to));
+        options.to[0] = options.from;
+    }
+    return options;
+}
+function getPopmotionAnimationOptions(transition, options, key) {
+    var _a;
+    if (Array.isArray(options.to)) {
+        (_a = transition.duration) !== null && _a !== void 0 ? _a : (transition.duration = 0.8);
+    }
+    hydrateKeyframes(options);
+    /**
+     * Get a default transition if none is determined to be defined.
+     */
+    if (!isTransitionDefined(transition)) {
+        transition = tslib.__assign(tslib.__assign({}, transition), getDefaultTransition(key, options.to));
+    }
+    return tslib.__assign(tslib.__assign({}, options), convertTransitionToAnimationOptions(transition));
+}
+/**
+ *
+ */
+function getAnimation(key, value, target, transition, onComplete) {
+    var _a;
+    var valueTransition = getValueTransition(transition, key);
+    var origin = (_a = valueTransition.from) !== null && _a !== void 0 ? _a : value.get();
+    var isTargetAnimatable = isAnimatable(key, target);
+    /**
+     * If we're trying to animate from "none", try and get an animatable version
+     * of the target. This could be improved to work both ways.
+     */
+    if (origin === "none" && isTargetAnimatable && typeof target === "string") {
+        origin = getAnimatableNone(key, target);
+    }
+    var isOriginAnimatable = isAnimatable(key, origin);
+    heyListen.warning(isOriginAnimatable === isTargetAnimatable, "You are trying to animate " + key + " from \"" + origin + "\" to \"" + target + "\". " + origin + " is not an animatable value - to enable this animation set " + origin + " to a value animatable to " + target + " via the `style` property.");
+    function start() {
+        var options = {
+            from: origin,
+            to: target,
+            velocity: value.getVelocity(),
+            onComplete: onComplete,
+            onUpdate: function (v) { return value.set(v); },
+        };
+        return valueTransition.type === "inertia" ||
+            valueTransition.type === "decay"
+            ? popmotion.inertia(tslib.__assign(tslib.__assign({}, options), valueTransition))
+            : popmotion.animate(tslib.__assign(tslib.__assign({}, getPopmotionAnimationOptions(valueTransition, options, key)), { onUpdate: function (v) {
+                    var _a;
+                    options.onUpdate(v);
+                    (_a = valueTransition.onUpdate) === null || _a === void 0 ? void 0 : _a.call(valueTransition, v);
+                }, onComplete: function () {
+                    var _a;
+                    options.onComplete();
+                    (_a = valueTransition.onComplete) === null || _a === void 0 ? void 0 : _a.call(valueTransition);
+                } }));
+    }
+    function set() {
+        var _a;
+        value.set(target);
+        onComplete();
+        (_a = valueTransition === null || valueTransition === void 0 ? void 0 : valueTransition.onComplete) === null || _a === void 0 ? void 0 : _a.call(valueTransition);
+        return { stop: function () { } };
+    }
+    return !isOriginAnimatable ||
+        !isTargetAnimatable ||
+        valueTransition.type === false
+        ? set
+        : start;
+}
+function getValueTransition(transition, key) {
+    return transition[key] || transition["default"] || transition;
+}
+/**
+ * Start animation on a MotionValue. This function is an interface between
+ * Framer Motion and Popmotion
+ *
+ * @internal
+ */
+function startAnimation(key, value, target, transition) {
+    if (transition === void 0) { transition = {}; }
+    return value.start(function (onComplete) {
+        var delayTimer;
+        var controls;
+        var animation = getAnimation(key, value, target, transition, onComplete);
+        var delay = getDelayFromTransition(transition, key);
+        var start = function () { return (controls = animation()); };
+        if (delay) {
+            delayTimer = setTimeout(start, secondsToMilliseconds(delay));
+        }
+        else {
+            start();
+        }
+        return function () {
+            clearTimeout(delayTimer);
+            controls === null || controls === void 0 ? void 0 : controls.stop();
+        };
+    });
+}
+
+/**
+ * Check if value is a numerical string, ie a string that is purely a number eg "100" or "-100.1"
+ */
+var isNumericalString = function (v) { return /^\-?\d*\.?\d+$/.test(v); };
+
+function addUniqueItem(arr, item) {
+    arr.indexOf(item) === -1 && arr.push(item);
+}
+function removeItem(arr, item) {
+    var index = arr.indexOf(item);
+    index > -1 && arr.splice(index, 1);
+}
+
+var SubscriptionManager = /** @class */ (function () {
+    function SubscriptionManager() {
+        this.subscriptions = [];
+    }
+    SubscriptionManager.prototype.add = function (handler) {
+        var _this = this;
+        addUniqueItem(this.subscriptions, handler);
+        return function () { return removeItem(_this.subscriptions, handler); };
+    };
+    SubscriptionManager.prototype.notify = function (a, b, c) {
+        var numSubscriptions = this.subscriptions.length;
+        if (!numSubscriptions)
+            return;
+        if (numSubscriptions === 1) {
+            /**
+             * If there's only a single handler we can just call it without invoking a loop.
+             */
+            this.subscriptions[0](a, b, c);
+        }
+        else {
+            for (var i = 0; i < numSubscriptions; i++) {
+                /**
+                 * Check whether the handler exists before firing as it's possible
+                 * the subscriptions were modified during this loop running.
+                 */
+                var handler = this.subscriptions[i];
+                handler && handler(a, b, c);
+            }
+        }
+    };
+    SubscriptionManager.prototype.getSize = function () {
+        return this.subscriptions.length;
+    };
+    SubscriptionManager.prototype.clear = function () {
+        this.subscriptions.length = 0;
+    };
+    return SubscriptionManager;
+}());
+
+var isFloat = function (value) {
+    return !isNaN(parseFloat(value));
+};
+/**
+ * `MotionValue` is used to track the state and velocity of motion values.
+ *
+ * @public
+ */
+var MotionValue = /** @class */ (function () {
+    /**
+     * @param init - The initiating value
+     * @param config - Optional configuration options
+     *
+     * -  `transformer`: A function to transform incoming values with.
+     *
+     * @internal
+     */
+    function MotionValue(init) {
+        var _this = this;
+        /**
+         * Duration, in milliseconds, since last updating frame.
+         *
+         * @internal
+         */
+        this.timeDelta = 0;
+        /**
+         * Timestamp of the last time this `MotionValue` was updated.
+         *
+         * @internal
+         */
+        this.lastUpdated = 0;
+        /**
+         * Functions to notify when the `MotionValue` updates.
+         *
+         * @internal
+         */
+        this.updateSubscribers = new SubscriptionManager();
+        /**
+         * Functions to notify when the velocity updates.
+         *
+         * @internal
+         */
+        this.velocityUpdateSubscribers = new SubscriptionManager();
+        /**
+         * Functions to notify when the `MotionValue` updates and `render` is set to `true`.
+         *
+         * @internal
+         */
+        this.renderSubscribers = new SubscriptionManager();
+        /**
+         * Tracks whether this value can output a velocity. Currently this is only true
+         * if the value is numerical, but we might be able to widen the scope here and support
+         * other value types.
+         *
+         * @internal
+         */
+        this.canTrackVelocity = false;
+        this.updateAndNotify = function (v, render) {
+            if (render === void 0) { render = true; }
+            _this.prev = _this.current;
+            _this.current = v;
+            // Update timestamp
+            var _a = sync.getFrameData(), delta = _a.delta, timestamp = _a.timestamp;
+            if (_this.lastUpdated !== timestamp) {
+                _this.timeDelta = delta;
+                _this.lastUpdated = timestamp;
+                sync__default['default'].postRender(_this.scheduleVelocityCheck);
+            }
+            // Update update subscribers
+            if (_this.prev !== _this.current) {
+                _this.updateSubscribers.notify(_this.current);
+            }
+            // Update velocity subscribers
+            if (_this.velocityUpdateSubscribers.getSize()) {
+                _this.velocityUpdateSubscribers.notify(_this.getVelocity());
+            }
+            // Update render subscribers
+            if (render) {
+                _this.renderSubscribers.notify(_this.current);
+            }
+        };
+        /**
+         * Schedule a velocity check for the next frame.
+         *
+         * This is an instanced and bound function to prevent generating a new
+         * function once per frame.
+         *
+         * @internal
+         */
+        this.scheduleVelocityCheck = function () { return sync__default['default'].postRender(_this.velocityCheck); };
+        /**
+         * Updates `prev` with `current` if the value hasn't been updated this frame.
+         * This ensures velocity calculations return `0`.
+         *
+         * This is an instanced and bound function to prevent generating a new
+         * function once per frame.
+         *
+         * @internal
+         */
+        this.velocityCheck = function (_a) {
+            var timestamp = _a.timestamp;
+            if (timestamp !== _this.lastUpdated) {
+                _this.prev = _this.current;
+                _this.velocityUpdateSubscribers.notify(_this.getVelocity());
+            }
+        };
+        this.hasAnimated = false;
+        this.prev = this.current = init;
+        this.canTrackVelocity = isFloat(this.current);
+    }
+    /**
+     * Adds a function that will be notified when the `MotionValue` is updated.
+     *
+     * It returns a function that, when called, will cancel the subscription.
+     *
+     * When calling `onChange` inside a React component, it should be wrapped with the
+     * `useEffect` hook. As it returns an unsubscribe function, this should be returned
+     * from the `useEffect` function to ensure you don't add duplicate subscribers..
+     *
+     * @library
+     *
+     * ```jsx
+     * function MyComponent() {
+     *   const x = useMotionValue(0)
+     *   const y = useMotionValue(0)
+     *   const opacity = useMotionValue(1)
+     *
+     *   useEffect(() => {
+     *     function updateOpacity() {
+     *       const maxXY = Math.max(x.get(), y.get())
+     *       const newOpacity = transform(maxXY, [0, 100], [1, 0])
+     *       opacity.set(newOpacity)
+     *     }
+     *
+     *     const unsubscribeX = x.onChange(updateOpacity)
+     *     const unsubscribeY = y.onChange(updateOpacity)
+     *
+     *     return () => {
+     *       unsubscribeX()
+     *       unsubscribeY()
+     *     }
+     *   }, [])
+     *
+     *   return <Frame x={x} />
+     * }
+     * ```
+     *
+     * @motion
+     *
+     * ```jsx
+     * export const MyComponent = () => {
+     *   const x = useMotionValue(0)
+     *   const y = useMotionValue(0)
+     *   const opacity = useMotionValue(1)
+     *
+     *   useEffect(() => {
+     *     function updateOpacity() {
+     *       const maxXY = Math.max(x.get(), y.get())
+     *       const newOpacity = transform(maxXY, [0, 100], [1, 0])
+     *       opacity.set(newOpacity)
+     *     }
+     *
+     *     const unsubscribeX = x.onChange(updateOpacity)
+     *     const unsubscribeY = y.onChange(updateOpacity)
+     *
+     *     return () => {
+     *       unsubscribeX()
+     *       unsubscribeY()
+     *     }
+     *   }, [])
+     *
+     *   return <motion.div style={{ x }} />
+     * }
+     * ```
+     *
+     * @internalremarks
+     *
+     * We could look into a `useOnChange` hook if the above lifecycle management proves confusing.
+     *
+     * ```jsx
+     * useOnChange(x, () => {})
+     * ```
+     *
+     * @param subscriber - A function that receives the latest value.
+     * @returns A function that, when called, will cancel this subscription.
+     *
+     * @public
+     */
+    MotionValue.prototype.onChange = function (subscription) {
+        return this.updateSubscribers.add(subscription);
+    };
+    MotionValue.prototype.clearListeners = function () {
+        this.updateSubscribers.clear();
+    };
+    /**
+     * Adds a function that will be notified when the `MotionValue` requests a render.
+     *
+     * @param subscriber - A function that's provided the latest value.
+     * @returns A function that, when called, will cancel this subscription.
+     *
+     * @internal
+     */
+    MotionValue.prototype.onRenderRequest = function (subscription) {
+        // Render immediately
+        subscription(this.get());
+        return this.renderSubscribers.add(subscription);
+    };
+    /**
+     * Attaches a passive effect to the `MotionValue`.
+     *
+     * @internal
+     */
+    MotionValue.prototype.attach = function (passiveEffect) {
+        this.passiveEffect = passiveEffect;
+    };
+    /**
+     * Sets the state of the `MotionValue`.
+     *
+     * @remarks
+     *
+     * ```jsx
+     * const x = useMotionValue(0)
+     * x.set(10)
+     * ```
+     *
+     * @param latest - Latest value to set.
+     * @param render - Whether to notify render subscribers. Defaults to `true`
+     *
+     * @public
+     */
+    MotionValue.prototype.set = function (v, render) {
+        if (render === void 0) { render = true; }
+        if (!render || !this.passiveEffect) {
+            this.updateAndNotify(v, render);
+        }
+        else {
+            this.passiveEffect(v, this.updateAndNotify);
+        }
+    };
+    /**
+     * Returns the latest state of `MotionValue`
+     *
+     * @returns - The latest state of `MotionValue`
+     *
+     * @public
+     */
+    MotionValue.prototype.get = function () {
+        return this.current;
+    };
+    /**
+     * @public
+     */
+    MotionValue.prototype.getPrevious = function () {
+        return this.prev;
+    };
+    /**
+     * Returns the latest velocity of `MotionValue`
+     *
+     * @returns - The latest velocity of `MotionValue`. Returns `0` if the state is non-numerical.
+     *
+     * @public
+     */
+    MotionValue.prototype.getVelocity = function () {
+        // This could be isFloat(this.prev) && isFloat(this.current), but that would be wasteful
+        return this.canTrackVelocity
+            ? // These casts could be avoided if parseFloat would be typed better
+                popmotion.velocityPerSecond(parseFloat(this.current) -
+                    parseFloat(this.prev), this.timeDelta)
+            : 0;
+    };
+    /**
+     * Registers a new animation to control this `MotionValue`. Only one
+     * animation can drive a `MotionValue` at one time.
+     *
+     * ```jsx
+     * value.start()
+     * ```
+     *
+     * @param animation - A function that starts the provided animation
+     *
+     * @internal
+     */
+    MotionValue.prototype.start = function (animation) {
+        var _this = this;
+        this.stop();
+        return new Promise(function (resolve) {
+            _this.hasAnimated = true;
+            _this.stopAnimation = animation(resolve);
+        }).then(function () { return _this.clearAnimation(); });
+    };
+    /**
+     * Stop the currently active animation.
+     *
+     * @public
+     */
+    MotionValue.prototype.stop = function () {
+        if (this.stopAnimation)
+            this.stopAnimation();
+        this.clearAnimation();
+    };
+    /**
+     * Returns `true` if this value is currently animating.
+     *
+     * @public
+     */
+    MotionValue.prototype.isAnimating = function () {
+        return !!this.stopAnimation;
+    };
+    MotionValue.prototype.clearAnimation = function () {
+        this.stopAnimation = null;
+    };
+    /**
+     * Destroy and clean up subscribers to this `MotionValue`.
+     *
+     * The `MotionValue` hooks like `useMotionValue` and `useTransform` automatically
+     * handle the lifecycle of the returned `MotionValue`, so this method is only necessary if you've manually
+     * created a `MotionValue` via the `motionValue` function.
+     *
+     * @public
+     */
+    MotionValue.prototype.destroy = function () {
+        this.updateSubscribers.clear();
+        this.renderSubscribers.clear();
+        this.stop();
+    };
+    return MotionValue;
+}());
+/**
+ * @internal
+ */
+function motionValue(init) {
+    return new MotionValue(init);
+}
+
+/**
+ * Tests a provided value against a ValueType
+ */
+var testValueType = function (v) { return function (type) { return type.test(v); }; };
+
+/**
+ * ValueType for "auto"
+ */
+var auto = {
+    test: function (v) { return v === "auto"; },
+    parse: function (v) { return v; },
+};
+
+/**
+ * A list of value types commonly used for dimensions
+ */
+var dimensionValueTypes = [styleValueTypes.number, styleValueTypes.px, styleValueTypes.percent, styleValueTypes.degrees, styleValueTypes.vw, styleValueTypes.vh, auto];
+/**
+ * Tests a dimensional value against the list of dimension ValueTypes
+ */
+var findDimensionValueType = function (v) {
+    return dimensionValueTypes.find(testValueType(v));
+};
+
+/**
+ * A list of all ValueTypes
+ */
+var valueTypes = tslib.__spreadArray(tslib.__spreadArray([], tslib.__read(dimensionValueTypes)), [styleValueTypes.color, styleValueTypes.complex]);
+/**
+ * Tests a value against the list of ValueTypes
+ */
+var findValueType = function (v) { return valueTypes.find(testValueType(v)); };
+
+/**
+ * Set VisualElement's MotionValue, creating a new MotionValue for it if
+ * it doesn't exist.
+ */
+function setMotionValue(visualElement, key, value) {
+    if (visualElement.hasValue(key)) {
+        visualElement.getValue(key).set(value);
+    }
+    else {
+        visualElement.addValue(key, motionValue(value));
+    }
+}
+function setTarget(visualElement, definition) {
+    var resolved = resolveVariant(visualElement, definition);
+    var _a = resolved
+        ? visualElement.makeTargetAnimatable(resolved, false)
+        : {}, _b = _a.transitionEnd, transitionEnd = _b === void 0 ? {} : _b; _a.transition; var target = tslib.__rest(_a, ["transitionEnd", "transition"]);
+    target = tslib.__assign(tslib.__assign({}, target), transitionEnd);
+    for (var key in target) {
+        var value = resolveFinalValueInKeyframes(target[key]);
+        setMotionValue(visualElement, key, value);
+    }
+}
+function setVariants(visualElement, variantLabels) {
+    var reversedLabels = tslib.__spreadArray([], tslib.__read(variantLabels)).reverse();
+    reversedLabels.forEach(function (key) {
+        var _a;
+        var variant = visualElement.getVariant(key);
+        variant && setTarget(visualElement, variant);
+        (_a = visualElement.variantChildren) === null || _a === void 0 ? void 0 : _a.forEach(function (child) {
+            setVariants(child, variantLabels);
+        });
+    });
+}
+function setValues(visualElement, definition) {
+    if (Array.isArray(definition)) {
+        return setVariants(visualElement, definition);
+    }
+    else if (typeof definition === "string") {
+        return setVariants(visualElement, [definition]);
+    }
+    else {
+        setTarget(visualElement, definition);
+    }
+}
+function checkTargetForNewValues(visualElement, target, origin) {
+    var _a, _b, _c;
+    var _d;
+    var newValueKeys = Object.keys(target).filter(function (key) { return !visualElement.hasValue(key); });
+    var numNewValues = newValueKeys.length;
+    if (!numNewValues)
+        return;
+    for (var i = 0; i < numNewValues; i++) {
+        var key = newValueKeys[i];
+        var targetValue = target[key];
+        var value = null;
+        /**
+         * If the target is a series of keyframes, we can use the first value
+         * in the array. If this first value is null, we'll still need to read from the DOM.
+         */
+        if (Array.isArray(targetValue)) {
+            value = targetValue[0];
+        }
+        /**
+         * If the target isn't keyframes, or the first keyframe was null, we need to
+         * first check if an origin value was explicitly defined in the transition as "from",
+         * if not read the value from the DOM. As an absolute fallback, take the defined target value.
+         */
+        if (value === null) {
+            value = (_b = (_a = origin[key]) !== null && _a !== void 0 ? _a : visualElement.readValue(key)) !== null && _b !== void 0 ? _b : target[key];
+        }
+        /**
+         * If value is still undefined or null, ignore it. Preferably this would throw,
+         * but this was causing issues in Framer.
+         */
+        if (value === undefined || value === null)
+            continue;
+        if (typeof value === "string" && isNumericalString(value)) {
+            // If this is a number read as a string, ie "0" or "200", convert it to a number
+            value = parseFloat(value);
+        }
+        else if (!findValueType(value) && styleValueTypes.complex.test(targetValue)) {
+            value = getAnimatableNone(key, targetValue);
+        }
+        visualElement.addValue(key, motionValue(value));
+        (_c = (_d = origin)[key]) !== null && _c !== void 0 ? _c : (_d[key] = value);
+        visualElement.setBaseTarget(key, value);
+    }
+}
+function getOriginFromTransition(key, transition) {
+    if (!transition)
+        return;
+    var valueTransition = transition[key] || transition["default"] || transition;
+    return valueTransition.from;
+}
+function getOrigin(target, transition, visualElement) {
+    var _a, _b;
+    var origin = {};
+    for (var key in target) {
+        origin[key] =
+            (_a = getOriginFromTransition(key, transition)) !== null && _a !== void 0 ? _a : (_b = visualElement.getValue(key)) === null || _b === void 0 ? void 0 : _b.get();
+    }
+    return origin;
+}
+
+/**
+ * @internal
+ */
+function animateVisualElement(visualElement, definition, options) {
+    if (options === void 0) { options = {}; }
+    visualElement.notifyAnimationStart();
+    var animation;
+    if (Array.isArray(definition)) {
+        var animations = definition.map(function (variant) {
+            return animateVariant(visualElement, variant, options);
+        });
+        animation = Promise.all(animations);
+    }
+    else if (typeof definition === "string") {
+        animation = animateVariant(visualElement, definition, options);
+    }
+    else {
+        var resolvedDefinition = typeof definition === "function"
+            ? resolveVariant(visualElement, definition, options.custom)
+            : definition;
+        animation = animateTarget(visualElement, resolvedDefinition, options);
+    }
+    return animation.then(function () {
+        return visualElement.notifyAnimationComplete(definition);
+    });
+}
+function animateVariant(visualElement, variant, options) {
+    var _a;
+    if (options === void 0) { options = {}; }
+    var resolved = resolveVariant(visualElement, variant, options.custom);
+    var _b = (resolved || {}).transition, transition = _b === void 0 ? visualElement.getDefaultTransition() || {} : _b;
+    if (options.transitionOverride) {
+        transition = options.transitionOverride;
+    }
+    /**
+     * If we have a variant, create a callback that runs it as an animation.
+     * Otherwise, we resolve a Promise immediately for a composable no-op.
+     */
+    var getAnimation = resolved
+        ? function () { return animateTarget(visualElement, resolved, options); }
+        : function () { return Promise.resolve(); };
+    /**
+     * If we have children, create a callback that runs all their animations.
+     * Otherwise, we resolve a Promise immediately for a composable no-op.
+     */
+    var getChildAnimations = ((_a = visualElement.variantChildren) === null || _a === void 0 ? void 0 : _a.size)
+        ? function (forwardDelay) {
+            if (forwardDelay === void 0) { forwardDelay = 0; }
+            var _a = transition.delayChildren, delayChildren = _a === void 0 ? 0 : _a, staggerChildren = transition.staggerChildren, staggerDirection = transition.staggerDirection;
+            return animateChildren(visualElement, variant, delayChildren + forwardDelay, staggerChildren, staggerDirection, options);
+        }
+        : function () { return Promise.resolve(); };
+    /**
+     * If the transition explicitly defines a "when" option, we need to resolve either
+     * this animation or all children animations before playing the other.
+     */
+    var when = transition.when;
+    if (when) {
+        var _c = tslib.__read(when === "beforeChildren"
+            ? [getAnimation, getChildAnimations]
+            : [getChildAnimations, getAnimation], 2), first = _c[0], last = _c[1];
+        return first().then(last);
+    }
+    else {
+        return Promise.all([getAnimation(), getChildAnimations(options.delay)]);
+    }
+}
+/**
+ * @internal
+ */
+function animateTarget(visualElement, definition, _a) {
+    var _b;
+    var _c = _a === void 0 ? {} : _a, _d = _c.delay, delay = _d === void 0 ? 0 : _d, transitionOverride = _c.transitionOverride, type = _c.type;
+    var _e = visualElement.makeTargetAnimatable(definition), _f = _e.transition, transition = _f === void 0 ? visualElement.getDefaultTransition() : _f, transitionEnd = _e.transitionEnd, target = tslib.__rest(_e, ["transition", "transitionEnd"]);
+    if (transitionOverride)
+        transition = transitionOverride;
+    var animations = [];
+    var animationTypeState = type && ((_b = visualElement.animationState) === null || _b === void 0 ? void 0 : _b.getState()[type]);
+    for (var key in target) {
+        var value = visualElement.getValue(key);
+        var valueTarget = target[key];
+        if (!value ||
+            valueTarget === undefined ||
+            (animationTypeState &&
+                shouldBlockAnimation(animationTypeState, key))) {
+            continue;
+        }
+        var animation = startAnimation(key, value, valueTarget, tslib.__assign({ delay: delay }, transition));
+        animations.push(animation);
+    }
+    return Promise.all(animations).then(function () {
+        transitionEnd && setTarget(visualElement, transitionEnd);
+    });
+}
+function animateChildren(visualElement, variant, delayChildren, staggerChildren, staggerDirection, options) {
+    if (delayChildren === void 0) { delayChildren = 0; }
+    if (staggerChildren === void 0) { staggerChildren = 0; }
+    if (staggerDirection === void 0) { staggerDirection = 1; }
+    var animations = [];
+    var maxStaggerDuration = (visualElement.variantChildren.size - 1) * staggerChildren;
+    var generateStaggerDuration = staggerDirection === 1
+        ? function (i) {
+            if (i === void 0) { i = 0; }
+            return i * staggerChildren;
+        }
+        : function (i) {
+            if (i === void 0) { i = 0; }
+            return maxStaggerDuration - i * staggerChildren;
+        };
+    Array.from(visualElement.variantChildren)
+        .sort(sortByTreeOrder)
+        .forEach(function (child, i) {
+        animations.push(animateVariant(child, variant, tslib.__assign(tslib.__assign({}, options), { delay: delayChildren + generateStaggerDuration(i) })).then(function () { return child.notifyAnimationComplete(variant); }));
+    });
+    return Promise.all(animations);
+}
+function stopAnimation(visualElement) {
+    visualElement.forEachValue(function (value) { return value.stop(); });
+}
+function sortByTreeOrder(a, b) {
+    return a.sortNodePosition(b);
+}
+/**
+ * Decide whether we should block this animation. Previously, we achieved this
+ * just by checking whether the key was listed in protectedKeys, but this
+ * posed problems if an animation was triggered by afterChildren and protectedKeys
+ * had been set to true in the meantime.
+ */
+function shouldBlockAnimation(_a, key) {
+    var protectedKeys = _a.protectedKeys, needsAnimating = _a.needsAnimating;
+    var shouldBlock = protectedKeys.hasOwnProperty(key) && needsAnimating[key] !== true;
+    needsAnimating[key] = false;
+    return shouldBlock;
+}
+
+var variantPriorityOrder = [
+    AnimationType.Animate,
+    AnimationType.Hover,
+    AnimationType.Tap,
+    AnimationType.Drag,
+    AnimationType.Focus,
+    AnimationType.Exit,
+];
+var reversePriorityOrder = tslib.__spreadArray([], tslib.__read(variantPriorityOrder)).reverse();
+var numAnimationTypes = variantPriorityOrder.length;
+function animateList(visualElement) {
+    return function (animations) {
+        return Promise.all(animations.map(function (_a) {
+            var animation = _a.animation, options = _a.options;
+            return animateVisualElement(visualElement, animation, options);
+        }));
+    };
+}
+function createAnimationState(visualElement) {
+    var animate = animateList(visualElement);
+    var state = createState();
+    var allAnimatedKeys = {};
+    var isInitialRender = true;
+    /**
+     * This function will be used to reduce the animation definitions for
+     * each active animation type into an object of resolved values for it.
+     */
+    var buildResolvedTypeValues = function (acc, definition) {
+        var resolved = resolveVariant(visualElement, definition);
+        if (resolved) {
+            resolved.transition; var transitionEnd = resolved.transitionEnd, target = tslib.__rest(resolved, ["transition", "transitionEnd"]);
+            acc = tslib.__assign(tslib.__assign(tslib.__assign({}, acc), target), transitionEnd);
+        }
+        return acc;
+    };
+    function isAnimated(key) {
+        return allAnimatedKeys[key] !== undefined;
+    }
+    /**
+     * This just allows us to inject mocked animation functions
+     * @internal
+     */
+    function setAnimateFunction(makeAnimator) {
+        animate = makeAnimator(visualElement);
+    }
+    /**
+     * When we receive new props, we need to:
+     * 1. Create a list of protected keys for each type. This is a directory of
+     *    value keys that are currently being "handled" by types of a higher priority
+     *    so that whenever an animation is played of a given type, these values are
+     *    protected from being animated.
+     * 2. Determine if an animation type needs animating.
+     * 3. Determine if any values have been removed from a type and figure out
+     *    what to animate those to.
+     */
+    function animateChanges(options, changedActiveType) {
+        var _a;
+        var props = visualElement.getProps();
+        var context = visualElement.getVariantContext(true) || {};
+        /**
+         * A list of animations that we'll build into as we iterate through the animation
+         * types. This will get executed at the end of the function.
+         */
+        var animations = [];
+        /**
+         * Keep track of which values have been removed. Then, as we hit lower priority
+         * animation types, we can check if they contain removed values and animate to that.
+         */
+        var removedKeys = new Set();
+        /**
+         * A dictionary of all encountered keys. This is an object to let us build into and
+         * copy it without iteration. Each time we hit an animation type we set its protected
+         * keys - the keys its not allowed to animate - to the latest version of this object.
+         */
+        var encounteredKeys = {};
+        /**
+         * If a variant has been removed at a given index, and this component is controlling
+         * variant animations, we want to ensure lower-priority variants are forced to animate.
+         */
+        var removedVariantIndex = Infinity;
+        var _loop_1 = function (i) {
+            var type = reversePriorityOrder[i];
+            var typeState = state[type];
+            var prop = (_a = props[type]) !== null && _a !== void 0 ? _a : context[type];
+            var propIsVariant = isVariantLabel(prop);
+            /**
+             * If this type has *just* changed isActive status, set activeDelta
+             * to that status. Otherwise set to null.
+             */
+            var activeDelta = type === changedActiveType ? typeState.isActive : null;
+            if (activeDelta === false)
+                removedVariantIndex = i;
+            /**
+             * If this prop is an inherited variant, rather than been set directly on the
+             * component itself, we want to make sure we allow the parent to trigger animations.
+             *
+             * TODO: Can probably change this to a !isControllingVariants check
+             */
+            var isInherited = prop === context[type] && prop !== props[type] && propIsVariant;
+            /**
+             *
+             */
+            if (isInherited &&
+                isInitialRender &&
+                visualElement.manuallyAnimateOnMount) {
+                isInherited = false;
+            }
+            /**
+             * Set all encountered keys so far as the protected keys for this type. This will
+             * be any key that has been animated or otherwise handled by active, higher-priortiy types.
+             */
+            typeState.protectedKeys = tslib.__assign({}, encounteredKeys);
+            // Check if we can skip analysing this prop early
+            if (
+            // If it isn't active and hasn't *just* been set as inactive
+            (!typeState.isActive && activeDelta === null) ||
+                // If we didn't and don't have any defined prop for this animation type
+                (!prop && !typeState.prevProp) ||
+                // Or if the prop doesn't define an animation
+                isAnimationControls(prop) ||
+                typeof prop === "boolean") {
+                return "continue";
+            }
+            /**
+             * As we go look through the values defined on this type, if we detect
+             * a changed value or a value that was removed in a higher priority, we set
+             * this to true and add this prop to the animation list.
+             */
+            var shouldAnimateType = variantsHaveChanged(typeState.prevProp, prop) ||
+                // If we're making this variant active, we want to always make it active
+                (type === changedActiveType &&
+                    typeState.isActive &&
+                    !isInherited &&
+                    propIsVariant) ||
+                // If we removed a higher-priority variant (i is in reverse order)
+                (i > removedVariantIndex && propIsVariant);
+            /**
+             * As animations can be set as variant lists, variants or target objects, we
+             * coerce everything to an array if it isn't one already
+             */
+            var definitionList = Array.isArray(prop) ? prop : [prop];
+            /**
+             * Build an object of all the resolved values. We'll use this in the subsequent
+             * animateChanges calls to determine whether a value has changed.
+             */
+            var resolvedValues = definitionList.reduce(buildResolvedTypeValues, {});
+            if (activeDelta === false)
+                resolvedValues = {};
+            /**
+             * Now we need to loop through all the keys in the prev prop and this prop,
+             * and decide:
+             * 1. If the value has changed, and needs animating
+             * 2. If it has been removed, and needs adding to the removedKeys set
+             * 3. If it has been removed in a higher priority type and needs animating
+             * 4. If it hasn't been removed in a higher priority but hasn't changed, and
+             *    needs adding to the type's protectedKeys list.
+             */
+            var _b = typeState.prevResolvedValues, prevResolvedValues = _b === void 0 ? {} : _b;
+            var allKeys = tslib.__assign(tslib.__assign({}, prevResolvedValues), resolvedValues);
+            var markToAnimate = function (key) {
+                shouldAnimateType = true;
+                removedKeys.delete(key);
+                typeState.needsAnimating[key] = true;
+            };
+            for (var key in allKeys) {
+                var next = resolvedValues[key];
+                var prev = prevResolvedValues[key];
+                // If we've already handled this we can just skip ahead
+                if (encounteredKeys.hasOwnProperty(key))
+                    continue;
+                /**
+                 * If the value has changed, we probably want to animate it.
+                 */
+                if (next !== prev) {
+                    /**
+                     * If both values are keyframes, we need to shallow compare them to
+                     * detect whether any value has changed. If it has, we animate it.
+                     */
+                    if (isKeyframesTarget(next) && isKeyframesTarget(prev)) {
+                        if (!shallowCompare(next, prev)) {
+                            markToAnimate(key);
+                        }
+                        else {
+                            /**
+                             * If it hasn't changed, we want to ensure it doesn't animate by
+                             * adding it to the list of protected keys.
+                             */
+                            typeState.protectedKeys[key] = true;
+                        }
+                    }
+                    else if (next !== undefined) {
+                        // If next is defined and doesn't equal prev, it needs animating
+                        markToAnimate(key);
+                    }
+                    else {
+                        // If it's undefined, it's been removed.
+                        removedKeys.add(key);
+                    }
+                }
+                else if (next !== undefined && removedKeys.has(key)) {
+                    /**
+                     * If next hasn't changed and it isn't undefined, we want to check if it's
+                     * been removed by a higher priority
+                     */
+                    markToAnimate(key);
+                }
+                else {
+                    /**
+                     * If it hasn't changed, we add it to the list of protected values
+                     * to ensure it doesn't get animated.
+                     */
+                    typeState.protectedKeys[key] = true;
+                }
+            }
+            /**
+             * Update the typeState so next time animateChanges is called we can compare the
+             * latest prop and resolvedValues to these.
+             */
+            typeState.prevProp = prop;
+            typeState.prevResolvedValues = resolvedValues;
+            /**
+             *
+             */
+            if (typeState.isActive) {
+                encounteredKeys = tslib.__assign(tslib.__assign({}, encounteredKeys), resolvedValues);
+            }
+            if (isInitialRender && visualElement.blockInitialAnimation) {
+                shouldAnimateType = false;
+            }
+            /**
+             * If this is an inherited prop we want to hard-block animations
+             * TODO: Test as this should probably still handle animations triggered
+             * by removed values?
+             */
+            if (shouldAnimateType && !isInherited) {
+                animations.push.apply(animations, tslib.__spreadArray([], tslib.__read(definitionList.map(function (animation) { return ({
+                    animation: animation,
+                    options: tslib.__assign({ type: type }, options),
+                }); }))));
+            }
+        };
+        /**
+         * Iterate through all animation types in reverse priority order. For each, we want to
+         * detect which values it's handling and whether or not they've changed (and therefore
+         * need to be animated). If any values have been removed, we want to detect those in
+         * lower priority props and flag for animation.
+         */
+        for (var i = 0; i < numAnimationTypes; i++) {
+            _loop_1(i);
+        }
+        allAnimatedKeys = tslib.__assign({}, encounteredKeys);
+        /**
+         * If there are some removed value that haven't been dealt with,
+         * we need to create a new animation that falls back either to the value
+         * defined in the style prop, or the last read value.
+         */
+        if (removedKeys.size) {
+            var fallbackAnimation_1 = {};
+            removedKeys.forEach(function (key) {
+                var fallbackTarget = visualElement.getBaseTarget(key);
+                if (fallbackTarget !== undefined) {
+                    fallbackAnimation_1[key] = fallbackTarget;
+                }
+            });
+            animations.push({ animation: fallbackAnimation_1 });
+        }
+        var shouldAnimate = Boolean(animations.length);
+        if (isInitialRender &&
+            props.initial === false &&
+            !visualElement.manuallyAnimateOnMount) {
+            shouldAnimate = false;
+        }
+        isInitialRender = false;
+        return shouldAnimate ? animate(animations) : Promise.resolve();
+    }
+    /**
+     * Change whether a certain animation type is active.
+     */
+    function setActive(type, isActive, options) {
+        var _a;
+        // If the active state hasn't changed, we can safely do nothing here
+        if (state[type].isActive === isActive)
+            return Promise.resolve();
+        // Propagate active change to children
+        (_a = visualElement.variantChildren) === null || _a === void 0 ? void 0 : _a.forEach(function (child) { var _a; return (_a = child.animationState) === null || _a === void 0 ? void 0 : _a.setActive(type, isActive); });
+        state[type].isActive = isActive;
+        return animateChanges(options, type);
+    }
+    return {
+        isAnimated: isAnimated,
+        animateChanges: animateChanges,
+        setActive: setActive,
+        setAnimateFunction: setAnimateFunction,
+        getState: function () { return state; },
+    };
+}
+function variantsHaveChanged(prev, next) {
+    if (typeof next === "string") {
+        return next !== prev;
+    }
+    else if (isVariantLabels(next)) {
+        return !shallowCompare(next, prev);
+    }
+    return false;
+}
+function createTypeState(isActive) {
+    if (isActive === void 0) { isActive = false; }
+    return {
+        isActive: isActive,
+        protectedKeys: {},
+        needsAnimating: {},
+        prevResolvedValues: {},
+    };
+}
+function createState() {
+    var _a;
+    return _a = {},
+        _a[AnimationType.Animate] = createTypeState(true),
+        _a[AnimationType.Hover] = createTypeState(),
+        _a[AnimationType.Tap] = createTypeState(),
+        _a[AnimationType.Drag] = createTypeState(),
+        _a[AnimationType.Focus] = createTypeState(),
+        _a[AnimationType.Exit] = createTypeState(),
+        _a;
+}
+
+var animations = {
+    animation: makeRenderlessComponent(function (_a) {
+        var visualElement = _a.visualElement, animate = _a.animate;
+        /**
+         * We dynamically generate the AnimationState manager as it contains a reference
+         * to the underlying animation library. We only want to load that if we load this,
+         * so people can optionally code split it out using the `m` component.
+         */
+        visualElement.animationState || (visualElement.animationState = createAnimationState(visualElement));
+        /**
+         * Subscribe any provided AnimationControls to the component's VisualElement
+         */
+        if (isAnimationControls(animate)) {
+            React.useEffect(function () { return animate.subscribe(visualElement); }, [animate]);
+        }
+    }),
+    exit: makeRenderlessComponent(function (props) {
+        var custom = props.custom, visualElement = props.visualElement;
+        var _a = tslib.__read(usePresence(), 2), isPresent = _a[0], onExitComplete = _a[1];
+        var presenceContext = React.useContext(PresenceContext);
+        React.useEffect(function () {
+            var _a, _b;
+            var animation = (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Exit, !isPresent, { custom: (_b = presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.custom) !== null && _b !== void 0 ? _b : custom });
+            !isPresent && (animation === null || animation === void 0 ? void 0 : animation.then(onExitComplete));
+        }, [isPresent]);
+    }),
+};
+
+/**
+ * @internal
+ */
+var PanSession = /** @class */ (function () {
+    function PanSession(event, handlers, _a) {
+        var _this = this;
+        var _b = _a === void 0 ? {} : _a, transformPagePoint = _b.transformPagePoint;
+        /**
+         * @internal
+         */
+        this.startEvent = null;
+        /**
+         * @internal
+         */
+        this.lastMoveEvent = null;
+        /**
+         * @internal
+         */
+        this.lastMoveEventInfo = null;
+        /**
+         * @internal
+         */
+        this.handlers = {};
+        this.updatePoint = function () {
+            if (!(_this.lastMoveEvent && _this.lastMoveEventInfo))
+                return;
+            var info = getPanInfo(_this.lastMoveEventInfo, _this.history);
+            var isPanStarted = _this.startEvent !== null;
+            // Only start panning if the offset is larger than 3 pixels. If we make it
+            // any larger than this we'll want to reset the pointer history
+            // on the first update to avoid visual snapping to the cursoe.
+            var isDistancePastThreshold = popmotion.distance(info.offset, { x: 0, y: 0 }) >= 3;
+            if (!isPanStarted && !isDistancePastThreshold)
+                return;
+            var point = info.point;
+            var timestamp = sync.getFrameData().timestamp;
+            _this.history.push(tslib.__assign(tslib.__assign({}, point), { timestamp: timestamp }));
+            var _a = _this.handlers, onStart = _a.onStart, onMove = _a.onMove;
+            if (!isPanStarted) {
+                onStart && onStart(_this.lastMoveEvent, info);
+                _this.startEvent = _this.lastMoveEvent;
+            }
+            onMove && onMove(_this.lastMoveEvent, info);
+        };
+        this.handlePointerMove = function (event, info) {
+            _this.lastMoveEvent = event;
+            _this.lastMoveEventInfo = transformPoint(info, _this.transformPagePoint);
+            // Because Safari doesn't trigger mouseup events when it's above a `<select>`
+            if (isMouseEvent(event) && event.buttons === 0) {
+                _this.handlePointerUp(event, info);
+                return;
+            }
+            // Throttle mouse move event to once per frame
+            sync__default['default'].update(_this.updatePoint, true);
+        };
+        this.handlePointerUp = function (event, info) {
+            _this.end();
+            var onEnd = _this.handlers.onEnd;
+            if (!onEnd || !_this.startEvent)
+                return;
+            var panInfo = getPanInfo(transformPoint(info, _this.transformPagePoint), _this.history);
+            onEnd && onEnd(event, panInfo);
+        };
+        // If we have more than one touch, don't start detecting this gesture
+        if (isTouchEvent(event) && event.touches.length > 1)
+            return;
+        this.handlers = handlers;
+        this.transformPagePoint = transformPagePoint;
+        var info = extractEventInfo(event);
+        var initialInfo = transformPoint(info, this.transformPagePoint);
+        var point = initialInfo.point;
+        var timestamp = sync.getFrameData().timestamp;
+        this.history = [tslib.__assign(tslib.__assign({}, point), { timestamp: timestamp })];
+        var onSessionStart = handlers.onSessionStart;
+        onSessionStart &&
+            onSessionStart(event, getPanInfo(initialInfo, this.history));
+        this.removeListeners = popmotion.pipe(addPointerEvent(window, "pointermove", this.handlePointerMove), addPointerEvent(window, "pointerup", this.handlePointerUp), addPointerEvent(window, "pointercancel", this.handlePointerUp));
+    }
+    PanSession.prototype.updateHandlers = function (handlers) {
+        this.handlers = handlers;
+    };
+    PanSession.prototype.end = function () {
+        this.removeListeners && this.removeListeners();
+        sync.cancelSync.update(this.updatePoint);
+    };
+    return PanSession;
+}());
+function transformPoint(info, transformPagePoint) {
+    return transformPagePoint ? { point: transformPagePoint(info.point) } : info;
+}
+function subtractPoint(a, b) {
+    return { x: a.x - b.x, y: a.y - b.y };
+}
+function getPanInfo(_a, history) {
+    var point = _a.point;
+    return {
+        point: point,
+        delta: subtractPoint(point, lastDevicePoint(history)),
+        offset: subtractPoint(point, startDevicePoint(history)),
+        velocity: getVelocity(history, 0.1),
+    };
+}
+function startDevicePoint(history) {
+    return history[0];
+}
+function lastDevicePoint(history) {
+    return history[history.length - 1];
+}
+function getVelocity(history, timeDelta) {
+    if (history.length < 2) {
+        return { x: 0, y: 0 };
+    }
+    var i = history.length - 1;
+    var timestampedPoint = null;
+    var lastPoint = lastDevicePoint(history);
+    while (i >= 0) {
+        timestampedPoint = history[i];
+        if (lastPoint.timestamp - timestampedPoint.timestamp >
+            secondsToMilliseconds(timeDelta)) {
+            break;
+        }
+        i--;
+    }
+    if (!timestampedPoint) {
+        return { x: 0, y: 0 };
+    }
+    var time = (lastPoint.timestamp - timestampedPoint.timestamp) / 1000;
+    if (time === 0) {
+        return { x: 0, y: 0 };
+    }
+    var currentVelocity = {
+        x: (lastPoint.x - timestampedPoint.x) / time,
+        y: (lastPoint.y - timestampedPoint.y) / time,
+    };
+    if (currentVelocity.x === Infinity) {
+        currentVelocity.x = 0;
+    }
+    if (currentVelocity.y === Infinity) {
+        currentVelocity.y = 0;
+    }
+    return currentVelocity;
+}
+
+function noop(any) {
+    return any;
+}
+
+/**
+ * Bounding boxes tend to be defined as top, left, right, bottom. For various operations
+ * it's easier to consider each axis individually. This function returns a bounding box
+ * as a map of single-axis min/max values.
+ */
+function convertBoundingBoxToAxisBox(_a) {
+    var top = _a.top, left = _a.left, right = _a.right, bottom = _a.bottom;
+    return {
+        x: { min: left, max: right },
+        y: { min: top, max: bottom },
+    };
+}
+function convertAxisBoxToBoundingBox(_a) {
+    var x = _a.x, y = _a.y;
+    return {
+        top: y.min,
+        bottom: y.max,
+        left: x.min,
+        right: x.max,
+    };
+}
+/**
+ * Applies a TransformPoint function to a bounding box. TransformPoint is usually a function
+ * provided by Framer to allow measured points to be corrected for device scaling. This is used
+ * when measuring DOM elements and DOM event points.
+ */
+function transformBoundingBox(_a, transformPoint) {
+    var top = _a.top, left = _a.left, bottom = _a.bottom, right = _a.right;
+    if (transformPoint === void 0) { transformPoint = noop; }
+    var topLeft = transformPoint({ x: left, y: top });
+    var bottomRight = transformPoint({ x: right, y: bottom });
+    return {
+        top: topLeft.y,
+        left: topLeft.x,
+        bottom: bottomRight.y,
+        right: bottomRight.x,
+    };
+}
+/**
+ * Create an empty axis box of zero size
+ */
+function axisBox() {
+    return { x: { min: 0, max: 1 }, y: { min: 0, max: 1 } };
+}
+function copyAxisBox(box) {
+    return {
+        x: tslib.__assign({}, box.x),
+        y: tslib.__assign({}, box.y),
+    };
+}
+/**
+ * Create an empty box delta
+ */
+var zeroDelta = {
+    translate: 0,
+    scale: 1,
+    origin: 0,
+    originPoint: 0,
+};
+function delta() {
+    return {
+        x: tslib.__assign({}, zeroDelta),
+        y: tslib.__assign({}, zeroDelta),
+    };
+}
+
+// Call a handler once for each axis
+function eachAxis(handler) {
+    return [handler("x"), handler("y")];
+}
+
+var clampProgress = function (v) { return popmotion.clamp(0, 1, v); };
+/**
+ * Returns true if the provided value is within maxDistance of the provided target
+ */
+function isNear(value, target, maxDistance) {
+    if (target === void 0) { target = 0; }
+    if (maxDistance === void 0) { maxDistance = 0.01; }
+    return popmotion.distance(value, target) < maxDistance;
+}
+function calcLength(axis) {
+    return axis.max - axis.min;
+}
+/**
+ * Calculate a transform origin relative to the source axis, between 0-1, that results
+ * in an asthetically pleasing scale/transform needed to project from source to target.
+ */
+function calcOrigin(source, target) {
+    var origin = 0.5;
+    var sourceLength = calcLength(source);
+    var targetLength = calcLength(target);
+    if (targetLength > sourceLength) {
+        origin = popmotion.progress(target.min, target.max - sourceLength, source.min);
+    }
+    else if (sourceLength > targetLength) {
+        origin = popmotion.progress(source.min, source.max - targetLength, target.min);
+    }
+    return clampProgress(origin);
+}
+/**
+ * Update the AxisDelta with a transform that projects source into target.
+ *
+ * The transform `origin` is optional. If not provided, it'll be automatically
+ * calculated based on the relative positions of the two bounding boxes.
+ */
+function updateAxisDelta(delta, source, target, origin) {
+    if (origin === void 0) { origin = 0.5; }
+    delta.origin = origin;
+    delta.originPoint = popmotion.mix(source.min, source.max, delta.origin);
+    delta.scale = calcLength(target) / calcLength(source);
+    if (isNear(delta.scale, 1, 0.0001))
+        delta.scale = 1;
+    delta.translate =
+        popmotion.mix(target.min, target.max, delta.origin) - delta.originPoint;
+    if (isNear(delta.translate))
+        delta.translate = 0;
+}
+/**
+ * Update the BoxDelta with a transform that projects the source into the target.
+ *
+ * The transform `origin` is optional. If not provided, it'll be automatically
+ * calculated based on the relative positions of the two bounding boxes.
+ */
+function updateBoxDelta(delta, source, target, origin) {
+    updateAxisDelta(delta.x, source.x, target.x, defaultOrigin(origin.originX));
+    updateAxisDelta(delta.y, source.y, target.y, defaultOrigin(origin.originY));
+}
+/**
+ * Currently this only accepts numerical origins, measured as 0-1, but could
+ * accept pixel values by comparing to the target axis.
+ */
+function defaultOrigin(origin) {
+    return typeof origin === "number" ? origin : 0.5;
+}
+
+/**
+ * Apply constraints to a point. These constraints are both physical along an
+ * axis, and an elastic factor that determines how much to constrain the point
+ * by if it does lie outside the defined parameters.
+ */
+function applyConstraints(point, _a, elastic) {
+    var min = _a.min, max = _a.max;
+    if (min !== undefined && point < min) {
+        // If we have a min point defined, and this is outside of that, constrain
+        point = elastic ? popmotion.mix(min, point, elastic.min) : Math.max(point, min);
+    }
+    else if (max !== undefined && point > max) {
+        // If we have a max point defined, and this is outside of that, constrain
+        point = elastic ? popmotion.mix(max, point, elastic.max) : Math.min(point, max);
+    }
+    return point;
+}
+/**
+ * Calculates a min projection point based on a pointer, pointer progress
+ * within the drag target, and constraints.
+ *
+ * For instance if an element was 100px width, we were dragging from 0.25
+ * along this axis, the pointer is at 200px, and there were no constraints,
+ * we would calculate a min projection point of 175px.
+ */
+function calcConstrainedMinPoint(point, length, progress, constraints, elastic) {
+    // Calculate a min point for this axis and apply it to the current pointer
+    var min = point - length * progress;
+    return constraints ? applyConstraints(min, constraints, elastic) : min;
+}
+/**
+ * Calculate constraints in terms of the viewport when defined relatively to the
+ * measured axis. This is measured from the nearest edge, so a max constraint of 200
+ * on an axis with a max value of 300 would return a constraint of 500 - axis length
+ */
+function calcRelativeAxisConstraints(axis, min, max) {
+    return {
+        min: min !== undefined ? axis.min + min : undefined,
+        max: max !== undefined
+            ? axis.max + max - (axis.max - axis.min)
+            : undefined,
+    };
+}
+/**
+ * Calculate constraints in terms of the viewport when
+ * defined relatively to the measured bounding box.
+ */
+function calcRelativeConstraints(layoutBox, _a) {
+    var top = _a.top, left = _a.left, bottom = _a.bottom, right = _a.right;
+    return {
+        x: calcRelativeAxisConstraints(layoutBox.x, left, right),
+        y: calcRelativeAxisConstraints(layoutBox.y, top, bottom),
+    };
+}
+/**
+ * Calculate viewport constraints when defined as another viewport-relative axis
+ */
+function calcViewportAxisConstraints(layoutAxis, constraintsAxis) {
+    var _a;
+    var min = constraintsAxis.min - layoutAxis.min;
+    var max = constraintsAxis.max - layoutAxis.max;
+    // If the constraints axis is actually smaller than the layout axis then we can
+    // flip the constraints
+    if (constraintsAxis.max - constraintsAxis.min <
+        layoutAxis.max - layoutAxis.min) {
+        _a = tslib.__read([max, min], 2), min = _a[0], max = _a[1];
+    }
+    return {
+        min: layoutAxis.min + min,
+        max: layoutAxis.min + max,
+    };
+}
+/**
+ * Calculate viewport constraints when defined as another viewport-relative box
+ */
+function calcViewportConstraints(layoutBox, constraintsBox) {
+    return {
+        x: calcViewportAxisConstraints(layoutBox.x, constraintsBox.x),
+        y: calcViewportAxisConstraints(layoutBox.y, constraintsBox.y),
+    };
+}
+/**
+ * Calculate the an axis position based on two axes and a progress value.
+ */
+function calcPositionFromProgress(axis, constraints, progress) {
+    var axisLength = axis.max - axis.min;
+    var min = popmotion.mix(constraints.min, constraints.max - axisLength, progress);
+    return { min: min, max: min + axisLength };
+}
+/**
+ * Rebase the calculated viewport constraints relative to the layout.min point.
+ */
+function rebaseAxisConstraints(layout, constraints) {
+    var relativeConstraints = {};
+    if (constraints.min !== undefined) {
+        relativeConstraints.min = constraints.min - layout.min;
+    }
+    if (constraints.max !== undefined) {
+        relativeConstraints.max = constraints.max - layout.min;
+    }
+    return relativeConstraints;
+}
+var defaultElastic = 0.35;
+/**
+ * Accepts a dragElastic prop and returns resolved elastic values for each axis.
+ */
+function resolveDragElastic(dragElastic) {
+    if (dragElastic === false) {
+        dragElastic = 0;
+    }
+    else if (dragElastic === true) {
+        dragElastic = defaultElastic;
+    }
+    return {
+        x: resolveAxisElastic(dragElastic, "left", "right"),
+        y: resolveAxisElastic(dragElastic, "top", "bottom"),
+    };
+}
+function resolveAxisElastic(dragElastic, minLabel, maxLabel) {
+    return {
+        min: resolvePointElastic(dragElastic, minLabel),
+        max: resolvePointElastic(dragElastic, maxLabel),
+    };
+}
+function resolvePointElastic(dragElastic, label) {
+    var _a;
+    return typeof dragElastic === "number"
+        ? dragElastic
+        : (_a = dragElastic[label]) !== null && _a !== void 0 ? _a : 0;
+}
+
+/**
+ * Measure and return the element bounding box.
+ *
+ * We convert the box into an AxisBox2D to make it easier to work with each axis
+ * individually and programmatically.
+ *
+ * This function optionally accepts a transformPagePoint function which allows us to compensate
+ * for, for instance, measuring the element within a scaled plane like a Framer devivce preview component.
+ */
+function getBoundingBox(element, transformPagePoint) {
+    var box = element.getBoundingClientRect();
+    return convertBoundingBoxToAxisBox(transformBoundingBox(box, transformPagePoint));
+}
+
+var elementDragControls = new WeakMap();
+/**
+ *
+ */
+var lastPointerEvent;
+var VisualElementDragControls = /** @class */ (function () {
+    function VisualElementDragControls(_a) {
+        var visualElement = _a.visualElement;
+        /**
+         * Track whether we're currently dragging.
+         *
+         * @internal
+         */
+        this.isDragging = false;
+        /**
+         * The current direction of drag, or `null` if both.
+         *
+         * @internal
+         */
+        this.currentDirection = null;
+        /**
+         * The permitted boundaries of travel, in pixels.
+         *
+         * @internal
+         */
+        this.constraints = false;
+        /**
+         * The per-axis resolved elastic values.
+         *
+         * @internal
+         */
+        this.elastic = axisBox();
+        /**
+         * A reference to the host component's latest props.
+         *
+         * @internal
+         */
+        this.props = {};
+        /**
+         * @internal
+         */
+        this.hasMutatedConstraints = false;
+        /**
+         * Track the initial position of the cursor relative to the dragging element
+         * when dragging starts as a value of 0-1 on each axis. We then use this to calculate
+         * an ideal bounding box for the VisualElement renderer to project into every frame.
+         *
+         * @internal
+         */
+        this.cursorProgress = {
+            x: 0.5,
+            y: 0.5,
+        };
+        // When updating _dragX, or _dragY instead of the VisualElement,
+        // persist their values between drag gestures.
+        this.originPoint = {};
+        // This is a reference to the global drag gesture lock, ensuring only one component
+        // can "capture" the drag of one or both axes.
+        // TODO: Look into moving this into pansession?
+        this.openGlobalLock = null;
+        /**
+         * @internal
+         */
+        this.panSession = null;
+        this.visualElement = visualElement;
+        this.visualElement.enableLayoutProjection();
+        elementDragControls.set(visualElement, this);
+    }
+    /**
+     * Instantiate a PanSession for the drag gesture
+     *
+     * @public
+     */
+    VisualElementDragControls.prototype.start = function (originEvent, _a) {
+        var _this = this;
+        var _b = _a === void 0 ? {} : _a, _c = _b.snapToCursor, snapToCursor = _c === void 0 ? false : _c, cursorProgress = _b.cursorProgress;
+        /**
+         * If this drag session has been manually triggered by the user, it might be from an event
+         * outside the draggable element. If snapToCursor is set to true, we need to measure the position
+         * of the element and snap it to the cursor.
+         */
+        snapToCursor && this.snapToCursor(originEvent);
+        var onSessionStart = function () {
+            // Stop any animations on both axis values immediately. This allows the user to throw and catch
+            // the component.
+            _this.stopMotion();
+        };
+        var onStart = function (event, info) {
+            var _a, _b, _c;
+            // Attempt to grab the global drag gesture lock - maybe make this part of PanSession
+            var _d = _this.props, drag = _d.drag, dragPropagation = _d.dragPropagation;
+            if (drag && !dragPropagation) {
+                if (_this.openGlobalLock)
+                    _this.openGlobalLock();
+                _this.openGlobalLock = getGlobalLock(drag);
+                // If we don 't have the lock, don't start dragging
+                if (!_this.openGlobalLock)
+                    return;
+            }
+            /**
+             * Record the progress of the mouse within the draggable element on each axis.
+             * onPan, we're going to use this to calculate a new bounding box for the element to
+             * project into. This will ensure that even if the DOM element moves via a relayout, it'll
+             * stick to the correct place under the pointer.
+             */
+            _this.prepareBoundingBox();
+            _this.visualElement.lockProjectionTarget();
+            /**
+             * Resolve the drag constraints. These are either set as top/right/bottom/left constraints
+             * relative to the element's layout, or a ref to another element. Both need converting to
+             * viewport coordinates.
+             */
+            _this.resolveDragConstraints();
+            /**
+             * When dragging starts, we want to find where the cursor is relative to the bounding box
+             * of the element. Every frame, we calculate a new bounding box using this relative position
+             * and let the visualElement renderer figure out how to reproject the element into this bounding
+             * box.
+             *
+             * By doing it this way, rather than applying an x/y transform directly to the element,
+             * we can ensure the component always visually sticks to the cursor as we'd expect, even
+             * if the DOM element itself changes layout as a result of React updates the user might
+             * make based on the drag position.
+             */
+            var point = getViewportPointFromEvent(event).point;
+            eachAxis(function (axis) {
+                var _a = _this.visualElement.projection.target[axis], min = _a.min, max = _a.max;
+                _this.cursorProgress[axis] = cursorProgress
+                    ? cursorProgress[axis]
+                    : popmotion.progress(min, max, point[axis]);
+                /**
+                 * If we have external drag MotionValues, record their origin point. On pointermove
+                 * we'll apply the pan gesture offset directly to this value.
+                 */
+                var axisValue = _this.getAxisMotionValue(axis);
+                if (axisValue) {
+                    _this.originPoint[axis] = axisValue.get();
+                }
+            });
+            // Set current drag status
+            _this.isDragging = true;
+            _this.currentDirection = null;
+            // Fire onDragStart event
+            (_b = (_a = _this.props).onDragStart) === null || _b === void 0 ? void 0 : _b.call(_a, event, info);
+            (_c = _this.visualElement.animationState) === null || _c === void 0 ? void 0 : _c.setActive(AnimationType.Drag, true);
+        };
+        var onMove = function (event, info) {
+            var _a, _b, _c, _d;
+            var _e = _this.props, dragPropagation = _e.dragPropagation, dragDirectionLock = _e.dragDirectionLock;
+            // If we didn't successfully receive the gesture lock, early return.
+            if (!dragPropagation && !_this.openGlobalLock)
+                return;
+            var offset = info.offset;
+            // Attempt to detect drag direction if directionLock is true
+            if (dragDirectionLock && _this.currentDirection === null) {
+                _this.currentDirection = getCurrentDirection(offset);
+                // If we've successfully set a direction, notify listener
+                if (_this.currentDirection !== null) {
+                    (_b = (_a = _this.props).onDirectionLock) === null || _b === void 0 ? void 0 : _b.call(_a, _this.currentDirection);
+                }
+                return;
+            }
+            // Update each point with the latest position
+            _this.updateAxis("x", event, offset);
+            _this.updateAxis("y", event, offset);
+            // Fire onDrag event
+            (_d = (_c = _this.props).onDrag) === null || _d === void 0 ? void 0 : _d.call(_c, event, info);
+            // Update the last pointer event
+            lastPointerEvent = event;
+        };
+        var onEnd = function (event, info) { return _this.stop(event, info); };
+        var transformPagePoint = this.props.transformPagePoint;
+        this.panSession = new PanSession(originEvent, {
+            onSessionStart: onSessionStart,
+            onStart: onStart,
+            onMove: onMove,
+            onEnd: onEnd,
+        }, { transformPagePoint: transformPagePoint });
+    };
+    /**
+     * Ensure the component's layout and target bounding boxes are up-to-date.
+     */
+    VisualElementDragControls.prototype.prepareBoundingBox = function () {
+        var visualElement = this.visualElement;
+        visualElement.withoutTransform(function () {
+            visualElement.updateLayoutMeasurement();
+        });
+        visualElement.rebaseProjectionTarget(true, visualElement.measureViewportBox(false));
+    };
+    VisualElementDragControls.prototype.resolveDragConstraints = function () {
+        var _this = this;
+        var _a = this.props, dragConstraints = _a.dragConstraints, dragElastic = _a.dragElastic;
+        if (dragConstraints) {
+            this.constraints = isRefObject(dragConstraints)
+                ? this.resolveRefConstraints(this.visualElement.getLayoutState().layout, dragConstraints)
+                : calcRelativeConstraints(this.visualElement.getLayoutState().layout, dragConstraints);
+        }
+        else {
+            this.constraints = false;
+        }
+        this.elastic = resolveDragElastic(dragElastic);
+        /**
+         * If we're outputting to external MotionValues, we want to rebase the measured constraints
+         * from viewport-relative to component-relative.
+         */
+        if (this.constraints && !this.hasMutatedConstraints) {
+            eachAxis(function (axis) {
+                if (_this.getAxisMotionValue(axis)) {
+                    _this.constraints[axis] = rebaseAxisConstraints(_this.visualElement.getLayoutState().layout[axis], _this.constraints[axis]);
+                }
+            });
+        }
+    };
+    VisualElementDragControls.prototype.resolveRefConstraints = function (layoutBox, constraints) {
+        var _a = this.props, onMeasureDragConstraints = _a.onMeasureDragConstraints, transformPagePoint = _a.transformPagePoint;
+        var constraintsElement = constraints.current;
+        heyListen.invariant(constraintsElement !== null, "If `dragConstraints` is set as a React ref, that ref must be passed to another component's `ref` prop.");
+        this.constraintsBox = getBoundingBox(constraintsElement, transformPagePoint);
+        var measuredConstraints = calcViewportConstraints(layoutBox, this.constraintsBox);
+        /**
+         * If there's an onMeasureDragConstraints listener we call it and
+         * if different constraints are returned, set constraints to that
+         */
+        if (onMeasureDragConstraints) {
+            var userConstraints = onMeasureDragConstraints(convertAxisBoxToBoundingBox(measuredConstraints));
+            this.hasMutatedConstraints = !!userConstraints;
+            if (userConstraints) {
+                measuredConstraints = convertBoundingBoxToAxisBox(userConstraints);
+            }
+        }
+        return measuredConstraints;
+    };
+    VisualElementDragControls.prototype.cancelDrag = function () {
+        var _a;
+        this.isDragging = false;
+        this.panSession && this.panSession.end();
+        this.panSession = null;
+        if (!this.props.dragPropagation && this.openGlobalLock) {
+            this.openGlobalLock();
+            this.openGlobalLock = null;
+        }
+        (_a = this.visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Drag, false);
+    };
+    VisualElementDragControls.prototype.stop = function (event, info) {
+        var _a;
+        this.visualElement.unlockProjectionTarget();
+        (_a = this.panSession) === null || _a === void 0 ? void 0 : _a.end();
+        this.panSession = null;
+        var isDragging = this.isDragging;
+        this.cancelDrag();
+        if (!isDragging)
+            return;
+        var _b = this.props, dragMomentum = _b.dragMomentum, onDragEnd = _b.onDragEnd;
+        if (dragMomentum || this.elastic) {
+            var velocity = info.velocity;
+            this.animateDragEnd(velocity);
+        }
+        onDragEnd === null || onDragEnd === void 0 ? void 0 : onDragEnd(event, info);
+    };
+    VisualElementDragControls.prototype.snapToCursor = function (event) {
+        var _this = this;
+        this.prepareBoundingBox();
+        eachAxis(function (axis) {
+            var drag = _this.props.drag;
+            // If we're not dragging this axis, do an early return.
+            if (!shouldDrag(axis, drag, _this.currentDirection))
+                return;
+            var axisValue = _this.getAxisMotionValue(axis);
+            if (axisValue) {
+                var point = getViewportPointFromEvent(event).point;
+                var box = _this.visualElement.getLayoutState().layout;
+                var length_1 = box[axis].max - box[axis].min;
+                var center = box[axis].min + length_1 / 2;
+                var offset = point[axis] - center;
+                _this.originPoint[axis] = point[axis];
+                axisValue.set(offset);
+            }
+            else {
+                _this.cursorProgress[axis] = 0.5;
+                _this.updateVisualElementAxis(axis, event);
+            }
+        });
+    };
+    /**
+     * Update the specified axis with the latest pointer information.
+     */
+    VisualElementDragControls.prototype.updateAxis = function (axis, event, offset) {
+        var drag = this.props.drag;
+        // If we're not dragging this axis, do an early return.
+        if (!shouldDrag(axis, drag, this.currentDirection))
+            return;
+        return this.getAxisMotionValue(axis)
+            ? this.updateAxisMotionValue(axis, offset)
+            : this.updateVisualElementAxis(axis, event);
+    };
+    VisualElementDragControls.prototype.updateAxisMotionValue = function (axis, offset) {
+        var axisValue = this.getAxisMotionValue(axis);
+        if (!offset || !axisValue)
+            return;
+        var nextValue = this.originPoint[axis] + offset[axis];
+        var update = this.constraints
+            ? applyConstraints(nextValue, this.constraints[axis], this.elastic[axis])
+            : nextValue;
+        axisValue.set(update);
+    };
+    VisualElementDragControls.prototype.updateVisualElementAxis = function (axis, event) {
+        var _a;
+        // Get the actual layout bounding box of the element
+        var axisLayout = this.visualElement.getLayoutState().layout[axis];
+        // Calculate its current length. In the future we might want to lerp this to animate
+        // between lengths if the layout changes as we change the DOM
+        var axisLength = axisLayout.max - axisLayout.min;
+        // Get the initial progress that the pointer sat on this axis on gesture start.
+        var axisProgress = this.cursorProgress[axis];
+        var point = getViewportPointFromEvent(event).point;
+        // Calculate a new min point based on the latest pointer position, constraints and elastic
+        var min = calcConstrainedMinPoint(point[axis], axisLength, axisProgress, (_a = this.constraints) === null || _a === void 0 ? void 0 : _a[axis], this.elastic[axis]);
+        // Update the axis viewport target with this new min and the length
+        this.visualElement.setProjectionTargetAxis(axis, min, min + axisLength);
+    };
+    VisualElementDragControls.prototype.setProps = function (_a) {
+        var _b = _a.drag, drag = _b === void 0 ? false : _b, _c = _a.dragDirectionLock, dragDirectionLock = _c === void 0 ? false : _c, _d = _a.dragPropagation, dragPropagation = _d === void 0 ? false : _d, _e = _a.dragConstraints, dragConstraints = _e === void 0 ? false : _e, _f = _a.dragElastic, dragElastic = _f === void 0 ? defaultElastic : _f, _g = _a.dragMomentum, dragMomentum = _g === void 0 ? true : _g, remainingProps = tslib.__rest(_a, ["drag", "dragDirectionLock", "dragPropagation", "dragConstraints", "dragElastic", "dragMomentum"]);
+        this.props = tslib.__assign({ drag: drag,
+            dragDirectionLock: dragDirectionLock,
+            dragPropagation: dragPropagation,
+            dragConstraints: dragConstraints,
+            dragElastic: dragElastic,
+            dragMomentum: dragMomentum }, remainingProps);
+    };
+    /**
+     * Drag works differently depending on which props are provided.
+     *
+     * - If _dragX and _dragY are provided, we output the gesture delta directly to those motion values.
+     * - If the component will perform layout animations, we output the gesture to the component's
+     *      visual bounding box
+     * - Otherwise, we apply the delta to the x/y motion values.
+     */
+    VisualElementDragControls.prototype.getAxisMotionValue = function (axis) {
+        var _a = this.props, layout = _a.layout, layoutId = _a.layoutId;
+        var dragKey = "_drag" + axis.toUpperCase();
+        if (this.props[dragKey]) {
+            return this.props[dragKey];
+        }
+        else if (!layout && layoutId === undefined) {
+            return this.visualElement.getValue(axis, 0);
+        }
+    };
+    VisualElementDragControls.prototype.animateDragEnd = function (velocity) {
+        var _this = this;
+        var _a = this.props, drag = _a.drag, dragMomentum = _a.dragMomentum, dragElastic = _a.dragElastic, dragTransition = _a.dragTransition;
+        var momentumAnimations = eachAxis(function (axis) {
+            if (!shouldDrag(axis, drag, _this.currentDirection)) {
+                return;
+            }
+            var transition = _this.constraints ? _this.constraints[axis] : {};
+            /**
+             * Overdamp the boundary spring if `dragElastic` is disabled. There's still a frame
+             * of spring animations so we should look into adding a disable spring option to `inertia`.
+             * We could do something here where we affect the `bounceStiffness` and `bounceDamping`
+             * using the value of `dragElastic`.
+             */
+            var bounceStiffness = dragElastic ? 200 : 1000000;
+            var bounceDamping = dragElastic ? 40 : 10000000;
+            var inertia = tslib.__assign(tslib.__assign({ type: "inertia", velocity: dragMomentum ? velocity[axis] : 0, bounceStiffness: bounceStiffness,
+                bounceDamping: bounceDamping, timeConstant: 750, restDelta: 1, restSpeed: 10 }, dragTransition), transition);
+            // If we're not animating on an externally-provided `MotionValue` we can use the
+            // component's animation controls which will handle interactions with whileHover (etc),
+            // otherwise we just have to animate the `MotionValue` itself.
+            return _this.getAxisMotionValue(axis)
+                ? _this.startAxisValueAnimation(axis, inertia)
+                : _this.visualElement.startLayoutAnimation(axis, inertia);
+        });
+        // Run all animations and then resolve the new drag constraints.
+        return Promise.all(momentumAnimations).then(function () {
+            var _a, _b;
+            (_b = (_a = _this.props).onDragTransitionEnd) === null || _b === void 0 ? void 0 : _b.call(_a);
+        });
+    };
+    VisualElementDragControls.prototype.stopMotion = function () {
+        var _this = this;
+        eachAxis(function (axis) {
+            var axisValue = _this.getAxisMotionValue(axis);
+            axisValue
+                ? axisValue.stop()
+                : _this.visualElement.stopLayoutAnimation();
+        });
+    };
+    VisualElementDragControls.prototype.startAxisValueAnimation = function (axis, transition) {
+        var axisValue = this.getAxisMotionValue(axis);
+        if (!axisValue)
+            return;
+        var currentValue = axisValue.get();
+        axisValue.set(currentValue);
+        axisValue.set(currentValue); // Set twice to hard-reset velocity
+        return startAnimation(axis, axisValue, 0, transition);
+    };
+    VisualElementDragControls.prototype.scalePoint = function () {
+        var _this = this;
+        var _a = this.props, drag = _a.drag, dragConstraints = _a.dragConstraints;
+        if (!isRefObject(dragConstraints) || !this.constraintsBox)
+            return;
+        // Stop any current animations as there can be some visual glitching if we resize mid animation
+        this.stopMotion();
+        // Record the relative progress of the targetBox relative to the constraintsBox
+        var boxProgress = { x: 0, y: 0 };
+        eachAxis(function (axis) {
+            boxProgress[axis] = calcOrigin(_this.visualElement.projection.target[axis], _this.constraintsBox[axis]);
+        });
+        /**
+         * For each axis, calculate the current progress of the layout axis within the constraints.
+         * Then, using the latest layout and constraints measurements, reposition the new layout axis
+         * proportionally within the constraints.
+         */
+        this.prepareBoundingBox();
+        this.resolveDragConstraints();
+        eachAxis(function (axis) {
+            if (!shouldDrag(axis, drag, null))
+                return;
+            // Calculate the position of the targetBox relative to the constraintsBox using the
+            // previously calculated progress
+            var _a = calcPositionFromProgress(_this.visualElement.projection.target[axis], _this.constraintsBox[axis], boxProgress[axis]), min = _a.min, max = _a.max;
+            _this.visualElement.setProjectionTargetAxis(axis, min, max);
+        });
+    };
+    VisualElementDragControls.prototype.mount = function (visualElement) {
+        var _this = this;
+        var element = visualElement.getInstance();
+        /**
+         * Attach a pointerdown event listener on this DOM element to initiate drag tracking.
+         */
+        var stopPointerListener = addPointerEvent(element, "pointerdown", function (event) {
+            var _a = _this.props, drag = _a.drag, _b = _a.dragListener, dragListener = _b === void 0 ? true : _b;
+            drag && dragListener && _this.start(event);
+        });
+        /**
+         * Attach a window resize listener to scale the draggable target within its defined
+         * constraints as the window resizes.
+         */
+        var stopResizeListener = addDomEvent(window, "resize", function () {
+            _this.scalePoint();
+        });
+        /**
+         * Ensure drag constraints are resolved correctly relative to the dragging element
+         * whenever its layout changes.
+         */
+        var stopLayoutUpdateListener = visualElement.onLayoutUpdate(function () {
+            if (_this.isDragging)
+                _this.resolveDragConstraints();
+        });
+        /**
+         * If the previous component with this same layoutId was dragging at the time
+         * it was unmounted, we want to continue the same gesture on this component.
+         */
+        var prevDragCursor = visualElement.prevDragCursor;
+        if (prevDragCursor) {
+            this.start(lastPointerEvent, { cursorProgress: prevDragCursor });
+        }
+        /**
+         * Return a function that will teardown the drag gesture
+         */
+        return function () {
+            stopPointerListener === null || stopPointerListener === void 0 ? void 0 : stopPointerListener();
+            stopResizeListener === null || stopResizeListener === void 0 ? void 0 : stopResizeListener();
+            stopLayoutUpdateListener === null || stopLayoutUpdateListener === void 0 ? void 0 : stopLayoutUpdateListener();
+            _this.cancelDrag();
+        };
+    };
+    return VisualElementDragControls;
+}());
+function shouldDrag(direction, drag, currentDirection) {
+    return ((drag === true || drag === direction) &&
+        (currentDirection === null || currentDirection === direction));
+}
+/**
+ * Based on an x/y offset determine the current drag direction. If both axis' offsets are lower
+ * than the provided threshold, return `null`.
+ *
+ * @param offset - The x/y offset from origin.
+ * @param lockThreshold - (Optional) - the minimum absolute offset before we can determine a drag direction.
+ */
+function getCurrentDirection(offset, lockThreshold) {
+    if (lockThreshold === void 0) { lockThreshold = 10; }
+    var direction = null;
+    if (Math.abs(offset.y) > lockThreshold) {
+        direction = "y";
+    }
+    else if (Math.abs(offset.x) > lockThreshold) {
+        direction = "x";
+    }
+    return direction;
+}
+
+/**
+ * A hook that allows an element to be dragged.
+ *
+ * @internal
+ */
+function useDrag(props) {
+    var groupDragControls = props.dragControls, visualElement = props.visualElement;
+    var transformPagePoint = React.useContext(MotionConfigContext).transformPagePoint;
+    var dragControls = useConstant(function () {
+        return new VisualElementDragControls({
+            visualElement: visualElement,
+        });
+    });
+    dragControls.setProps(tslib.__assign(tslib.__assign({}, props), { transformPagePoint: transformPagePoint }));
+    // If we've been provided a DragControls for manual control over the drag gesture,
+    // subscribe this component to it on mount.
+    React.useEffect(function () { return groupDragControls && groupDragControls.subscribe(dragControls); }, [dragControls]);
+    // Mount the drag controls with the visualElement
+    React.useEffect(function () { return dragControls.mount(visualElement); }, []);
+}
+
+/**
+ *
+ * @param handlers -
+ * @param ref -
+ *
+ * @internalremarks
+ * Currently this sets new pan gesture functions every render. The memo route has been explored
+ * in the past but ultimately we're still creating new functions every render. An optimisation
+ * to explore is creating the pan gestures and loading them into a `ref`.
+ *
+ * @internal
+ */
+function usePanGesture(_a) {
+    var onPan = _a.onPan, onPanStart = _a.onPanStart, onPanEnd = _a.onPanEnd, onPanSessionStart = _a.onPanSessionStart, visualElement = _a.visualElement;
+    var hasPanEvents = onPan || onPanStart || onPanEnd || onPanSessionStart;
+    var panSession = React.useRef(null);
+    var transformPagePoint = React.useContext(MotionConfigContext).transformPagePoint;
+    var handlers = {
+        onSessionStart: onPanSessionStart,
+        onStart: onPanStart,
+        onMove: onPan,
+        onEnd: function (event, info) {
+            panSession.current = null;
+            onPanEnd && onPanEnd(event, info);
+        },
+    };
+    React.useEffect(function () {
+        if (panSession.current !== null) {
+            panSession.current.updateHandlers(handlers);
+        }
+    });
+    function onPointerDown(event) {
+        panSession.current = new PanSession(event, handlers, {
+            transformPagePoint: transformPagePoint,
+        });
+    }
+    usePointerEvent(visualElement, "pointerdown", hasPanEvents && onPointerDown);
+    useUnmountEffect(function () { return panSession.current && panSession.current.end(); });
+}
+
+var drag = {
+    pan: makeRenderlessComponent(usePanGesture),
+    drag: makeRenderlessComponent(useDrag),
+};
+
+function tweenAxis(target, prev, next, p) {
+    target.min = popmotion.mix(prev.min, next.min, p);
+    target.max = popmotion.mix(prev.max, next.max, p);
+}
+
+/**
+ * @public
+ */
+var Presence;
+(function (Presence) {
+    Presence[Presence["Entering"] = 0] = "Entering";
+    Presence[Presence["Present"] = 1] = "Present";
+    Presence[Presence["Exiting"] = 2] = "Exiting";
+})(Presence || (Presence = {}));
+/**
+ * @public
+ */
+exports.VisibilityAction = void 0;
+(function (VisibilityAction) {
+    VisibilityAction[VisibilityAction["Hide"] = 0] = "Hide";
+    VisibilityAction[VisibilityAction["Show"] = 1] = "Show";
+})(exports.VisibilityAction || (exports.VisibilityAction = {}));
+
+function isCSSVariable(value) {
+    return typeof value === "string" && value.startsWith("var(--");
+}
+/**
+ * Parse Framer's special CSS variable format into a CSS token and a fallback.
+ *
+ * ```
+ * `var(--foo, #fff)` => [`--foo`, '#fff']
+ * ```
+ *
+ * @param current
+ */
+var cssVariableRegex = /var\((--[a-zA-Z0-9-_]+),? ?([a-zA-Z0-9 ()%#.,-]+)?\)/;
+function parseCSSVariable(current) {
+    var match = cssVariableRegex.exec(current);
+    if (!match)
+        return [,];
+    var _a = tslib.__read(match, 3), token = _a[1], fallback = _a[2];
+    return [token, fallback];
+}
+var maxDepth = 4;
+function getVariableValue(current, element, depth) {
+    if (depth === void 0) { depth = 1; }
+    heyListen.invariant(depth <= maxDepth, "Max CSS variable fallback depth detected in property \"" + current + "\". This may indicate a circular fallback dependency.");
+    var _a = tslib.__read(parseCSSVariable(current), 2), token = _a[0], fallback = _a[1];
+    // No CSS variable detected
+    if (!token)
+        return;
+    // Attempt to read this CSS variable off the element
+    var resolved = window.getComputedStyle(element).getPropertyValue(token);
+    if (resolved) {
+        return resolved.trim();
+    }
+    else if (isCSSVariable(fallback)) {
+        // The fallback might itself be a CSS variable, in which case we attempt to resolve it too.
+        return getVariableValue(fallback, element, depth + 1);
+    }
+    else {
+        return fallback;
+    }
+}
+/**
+ * Resolve CSS variables from
+ *
+ * @internal
+ */
+function resolveCSSVariables(visualElement, _a, transitionEnd) {
+    var _b;
+    var target = tslib.__rest(_a, []);
+    var element = visualElement.getInstance();
+    if (!(element instanceof HTMLElement))
+        return { target: target, transitionEnd: transitionEnd };
+    // If `transitionEnd` isn't `undefined`, clone it. We could clone `target` and `transitionEnd`
+    // only if they change but I think this reads clearer and this isn't a performance-critical path.
+    if (transitionEnd) {
+        transitionEnd = tslib.__assign({}, transitionEnd);
+    }
+    // Go through existing `MotionValue`s and ensure any existing CSS variables are resolved
+    visualElement.forEachValue(function (value) {
+        var current = value.get();
+        if (!isCSSVariable(current))
+            return;
+        var resolved = getVariableValue(current, element);
+        if (resolved)
+            value.set(resolved);
+    });
+    // Cycle through every target property and resolve CSS variables. Currently
+    // we only read single-var properties like `var(--foo)`, not `calc(var(--foo) + 20px)`
+    for (var key in target) {
+        var current = target[key];
+        if (!isCSSVariable(current))
+            continue;
+        var resolved = getVariableValue(current, element);
+        if (!resolved)
+            continue;
+        // Clone target if it hasn't already been
+        target[key] = resolved;
+        // If the user hasn't already set this key on `transitionEnd`, set it to the unresolved
+        // CSS variable. This will ensure that after the animation the component will reflect
+        // changes in the value of the CSS variable.
+        if (transitionEnd)
+            (_b = transitionEnd[key]) !== null && _b !== void 0 ? _b : (transitionEnd[key] = current);
+    }
+    return { target: target, transitionEnd: transitionEnd };
+}
+
+function pixelsToPercent(pixels, axis) {
+    return (pixels / (axis.max - axis.min)) * 100;
+}
+/**
+ * We always correct borderRadius as a percentage rather than pixels to reduce paints.
+ * For example, if you are projecting a box that is 100px wide with a 10px borderRadius
+ * into a box that is 200px wide with a 20px borderRadius, that is actually a 10%
+ * borderRadius in both states. If we animate between the two in pixels that will trigger
+ * a paint each time. If we animate between the two in percentage we'll avoid a paint.
+ */
+function correctBorderRadius(latest, _layoutState, _a) {
+    var target = _a.target;
+    /**
+     * If latest is a string, if it's a percentage we can return immediately as it's
+     * going to be stretched appropriately. Otherwise, if it's a pixel, convert it to a number.
+     */
+    if (typeof latest === "string") {
+        if (styleValueTypes.px.test(latest)) {
+            latest = parseFloat(latest);
+        }
+        else {
+            return latest;
+        }
+    }
+    /**
+     * If latest is a number, it's a pixel value. We use the current viewportBox to calculate that
+     * pixel value as a percentage of each axis
+     */
+    var x = pixelsToPercent(latest, target.x);
+    var y = pixelsToPercent(latest, target.y);
+    return x + "% " + y + "%";
+}
+var varToken = "_$css";
+function correctBoxShadow(latest, _a) {
+    var delta = _a.delta, treeScale = _a.treeScale;
+    var original = latest;
+    /**
+     * We need to first strip and store CSS variables from the string.
+     */
+    var containsCSSVariables = latest.includes("var(");
+    var cssVariables = [];
+    if (containsCSSVariables) {
+        latest = latest.replace(cssVariableRegex, function (match) {
+            cssVariables.push(match);
+            return varToken;
+        });
+    }
+    var shadow = styleValueTypes.complex.parse(latest);
+    // TODO: Doesn't support multiple shadows
+    if (shadow.length > 5)
+        return original;
+    var template = styleValueTypes.complex.createTransformer(latest);
+    var offset = typeof shadow[0] !== "number" ? 1 : 0;
+    // Calculate the overall context scale
+    var xScale = delta.x.scale * treeScale.x;
+    var yScale = delta.y.scale * treeScale.y;
+    shadow[0 + offset] /= xScale;
+    shadow[1 + offset] /= yScale;
+    /**
+     * Ideally we'd correct x and y scales individually, but because blur and
+     * spread apply to both we have to take a scale average and apply that instead.
+     * We could potentially improve the outcome of this by incorporating the ratio between
+     * the two scales.
+     */
+    var averageScale = popmotion.mix(xScale, yScale, 0.5);
+    // Blur
+    if (typeof shadow[2 + offset] === "number")
+        shadow[2 + offset] /= averageScale;
+    // Spread
+    if (typeof shadow[3 + offset] === "number")
+        shadow[3 + offset] /= averageScale;
+    var output = template(shadow);
+    if (containsCSSVariables) {
+        var i_1 = 0;
+        output = output.replace(varToken, function () {
+            var cssVariable = cssVariables[i_1];
+            i_1++;
+            return cssVariable;
+        });
+    }
+    return output;
+}
+var borderCorrectionDefinition = {
+    process: correctBorderRadius,
+};
+var defaultScaleCorrectors = {
+    borderRadius: tslib.__assign(tslib.__assign({}, borderCorrectionDefinition), { applyTo: [
+            "borderTopLeftRadius",
+            "borderTopRightRadius",
+            "borderBottomLeftRadius",
+            "borderBottomRightRadius",
+        ] }),
+    borderTopLeftRadius: borderCorrectionDefinition,
+    borderTopRightRadius: borderCorrectionDefinition,
+    borderBottomLeftRadius: borderCorrectionDefinition,
+    borderBottomRightRadius: borderCorrectionDefinition,
+    boxShadow: {
+        process: correctBoxShadow,
+    },
+};
+
+var progressTarget = 1000;
+var Animate = /** @class */ (function (_super) {
+    tslib.__extends(Animate, _super);
+    function Animate() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        /**
+         * A mutable object that tracks the target viewport box
+         * for the current animation frame.
+         */
+        _this.frameTarget = axisBox();
+        /**
+         * The current animation target, we use this to check whether to start
+         * a new animation or continue the existing one.
+         */
+        _this.currentAnimationTarget = axisBox();
+        /**
+         * Track whether we're animating this axis.
+         */
+        _this.isAnimating = {
+            x: false,
+            y: false,
+        };
+        _this.stopAxisAnimation = {
+            x: undefined,
+            y: undefined,
+        };
+        _this.isAnimatingTree = false;
+        _this.animate = function (target, origin, _a) {
+            if (_a === void 0) { _a = {}; }
+            var originBox = _a.originBox, targetBox = _a.targetBox, visibilityAction = _a.visibilityAction, shouldStackAnimate = _a.shouldStackAnimate, onComplete = _a.onComplete, config = tslib.__rest(_a, ["originBox", "targetBox", "visibilityAction", "shouldStackAnimate", "onComplete"]);
+            var _b = _this.props, visualElement = _b.visualElement, layout = _b.layout;
+            /**
+             * Early return if we've been instructed not to animate this render.
+             */
+            if (shouldStackAnimate === false) {
+                _this.isAnimatingTree = false;
+                return _this.safeToRemove();
+            }
+            /**
+             * Prioritise tree animations
+             */
+            if (_this.isAnimatingTree && shouldStackAnimate !== true) {
+                return;
+            }
+            else if (shouldStackAnimate) {
+                _this.isAnimatingTree = true;
+            }
+            /**
+             * Allow the measured origin (prev bounding box) and target (actual layout) to be
+             * overridden by the provided config.
+             */
+            origin = originBox || origin;
+            target = targetBox || target;
+            var boxHasMoved = hasMoved(origin, target);
+            var animations = eachAxis(function (axis) {
+                /**
+                 * If layout is set to "position", we can resize the origin box based on the target
+                 * box and only animate its position.
+                 */
+                if (layout === "position") {
+                    var targetLength = target[axis].max - target[axis].min;
+                    origin[axis].max = origin[axis].min + targetLength;
+                }
+                if (visualElement.projection.isTargetLocked) {
+                    return;
+                }
+                else if (visibilityAction !== undefined) {
+                    visualElement.setVisibility(visibilityAction === exports.VisibilityAction.Show);
+                }
+                else if (boxHasMoved) {
+                    // If the box has moved, animate between it's current visual state and its
+                    // final state
+                    return _this.animateAxis(axis, target[axis], origin[axis], config);
+                }
+                else {
+                    // If the box has remained in the same place, immediately set the axis target
+                    // to the final desired state
+                    return visualElement.setProjectionTargetAxis(axis, target[axis].min, target[axis].max);
+                }
+            });
+            // Force a render to ensure there's no flash of uncorrected bounding box.
+            visualElement.syncRender();
+            /**
+             * If this visualElement isn't present (ie it's been removed from the tree by the user but
+             * kept in by the tree by AnimatePresence) then call safeToRemove when all axis animations
+             * have successfully finished.
+             */
+            return Promise.all(animations).then(function () {
+                _this.isAnimatingTree = false;
+                onComplete && onComplete();
+                visualElement.notifyLayoutAnimationComplete();
+            });
+        };
+        return _this;
+    }
+    Animate.prototype.componentDidMount = function () {
+        var _this = this;
+        var visualElement = this.props.visualElement;
+        visualElement.animateMotionValue = startAnimation;
+        visualElement.enableLayoutProjection();
+        this.unsubLayoutReady = visualElement.onLayoutUpdate(this.animate);
+        visualElement.layoutSafeToRemove = function () { return _this.safeToRemove(); };
+        addScaleCorrection(defaultScaleCorrectors);
+    };
+    Animate.prototype.componentWillUnmount = function () {
+        var _this = this;
+        this.unsubLayoutReady();
+        eachAxis(function (axis) { var _a, _b; return (_b = (_a = _this.stopAxisAnimation)[axis]) === null || _b === void 0 ? void 0 : _b.call(_a); });
+    };
+    /**
+     * TODO: This manually performs animations on the visualElement's layout progress
+     * values. It'd be preferable to amend the startLayoutAxisAnimation
+     * API to accept more custom animations like this.
+     */
+    Animate.prototype.animateAxis = function (axis, target, origin, _a) {
+        var _this = this;
+        var _b, _c;
+        var _d = _a === void 0 ? {} : _a, transition = _d.transition;
+        /**
+         * If we're not animating to a new target, don't run this animation
+         */
+        if (this.isAnimating[axis] &&
+            axisIsEqual(target, this.currentAnimationTarget[axis])) {
+            return;
+        }
+        (_c = (_b = this.stopAxisAnimation)[axis]) === null || _c === void 0 ? void 0 : _c.call(_b);
+        this.isAnimating[axis] = true;
+        var visualElement = this.props.visualElement;
+        var frameTarget = this.frameTarget[axis];
+        var layoutProgress = visualElement.getProjectionAnimationProgress()[axis];
+        /**
+         * Set layout progress back to 0. We set it twice to hard-reset any velocity that might
+         * be re-incoporated into a subsequent spring animation.
+         */
+        layoutProgress.clearListeners();
+        layoutProgress.set(0);
+        layoutProgress.set(0);
+        /**
+         * Create an animation function to run once per frame. This will tween the visual bounding box from
+         * origin to target using the latest progress value.
+         */
+        var frame = function () {
+            // Convert the latest layoutProgress, which is a value from 0-1000, into a 0-1 progress
+            var p = layoutProgress.get() / progressTarget;
+            // Tween the axis and update the visualElement with the latest values
+            tweenAxis(frameTarget, origin, target, p);
+            visualElement.setProjectionTargetAxis(axis, frameTarget.min, frameTarget.max);
+        };
+        // Synchronously run a frame to ensure there's no flash of the uncorrected bounding box.
+        frame();
+        // Ensure that the layout delta is updated for this frame.
+        visualElement.updateLayoutProjection();
+        // Create a function to stop animation on this specific axis
+        var unsubscribeProgress = layoutProgress.onChange(frame);
+        this.stopAxisAnimation[axis] = function () {
+            _this.isAnimating[axis] = false;
+            layoutProgress.stop();
+            unsubscribeProgress();
+        };
+        this.currentAnimationTarget[axis] = target;
+        // Start the animation on this axis
+        var animation = startAnimation(axis === "x" ? "layoutX" : "layoutY", layoutProgress, progressTarget, transition || this.props.transition || defaultTransition).then(this.stopAxisAnimation[axis]);
+        return animation;
+    };
+    Animate.prototype.safeToRemove = function () {
+        var _a, _b;
+        (_b = (_a = this.props).safeToRemove) === null || _b === void 0 ? void 0 : _b.call(_a);
+    };
+    Animate.prototype.render = function () {
+        return null;
+    };
+    return Animate;
+}(React__namespace.Component));
+function AnimateLayoutContextProvider(props) {
+    var _a = tslib.__read(usePresence(), 2), safeToRemove = _a[1];
+    return React__namespace.createElement(Animate, tslib.__assign({}, props, { safeToRemove: safeToRemove }));
+}
+function hasMoved(a, b) {
+    return (!isZeroBox(a) &&
+        !isZeroBox(b) &&
+        (!axisIsEqual(a.x, b.x) || !axisIsEqual(a.y, b.y)));
+}
+var zeroAxis = { min: 0, max: 0 };
+function isZeroBox(a) {
+    return axisIsEqual(a.x, zeroAxis) && axisIsEqual(a.y, zeroAxis);
+}
+function axisIsEqual(a, b) {
+    return a.min === b.min && a.max === b.max;
+}
+var defaultTransition = {
+    duration: 0.45,
+    ease: [0.4, 0, 0.1, 1],
+};
+
+/**
+ * Default handlers for batching VisualElements
+ */
+var defaultHandler = {
+    measureLayout: function (child) { return child.updateLayoutMeasurement(); },
+    layoutReady: function (child) { return child.notifyLayoutReady(); },
+};
+/**
+ * Create a batcher to process VisualElements
+ */
+function createBatcher() {
+    var queue = new Set();
+    return {
+        add: function (child) { return queue.add(child); },
+        flush: function (_a) {
+            var _b = _a === void 0 ? defaultHandler : _a, measureLayout = _b.measureLayout, layoutReady = _b.layoutReady, parent = _b.parent;
+            var order = Array.from(queue).sort(function (a, b) { return a.depth - b.depth; });
+            var resetAndMeasure = function () {
+                /**
+                 * Write: Reset any transforms on children elements so we can read their actual layout
+                 */
+                order.forEach(function (child) { return child.resetTransform(); });
+                /**
+                 * Read: Measure the actual layout
+                 */
+                order.forEach(measureLayout);
+            };
+            parent
+                ? parent.withoutTransform(resetAndMeasure)
+                : resetAndMeasure();
+            /**
+             * Write: Notify the VisualElements they're ready for further write operations.
+             */
+            order.forEach(layoutReady);
+            /**
+             * After all children have started animating, ensure any Entering components are set to Present.
+             * If we add deferred animations (set up all animations and then start them in two loops) this
+             * could be moved to the start loop. But it needs to happen after all the animations configs
+             * are generated in AnimateSharedLayout as this relies on presence data
+             */
+            order.forEach(function (child) {
+                if (child.isPresent)
+                    child.presence = Presence.Present;
+            });
+            queue.clear();
+        },
+    };
+}
+
+var SharedLayoutContext = React.createContext(createBatcher());
+/**
+ * @internal
+ */
+var FramerTreeLayoutContext = React.createContext(createBatcher());
+function isSharedLayout(context) {
+    return !!context.forceUpdate;
+}
+
+/**
+ * This component is responsible for scheduling the measuring of the motion component
+ */
+var Measure = /** @class */ (function (_super) {
+    tslib.__extends(Measure, _super);
+    function Measure() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    /**
+     * If this is a child of a SyncContext, register the VisualElement with it on mount.
+     */
+    Measure.prototype.componentDidMount = function () {
+        var _a = this.props, syncLayout = _a.syncLayout, framerSyncLayout = _a.framerSyncLayout, visualElement = _a.visualElement;
+        isSharedLayout(syncLayout) && syncLayout.register(visualElement);
+        isSharedLayout(framerSyncLayout) &&
+            framerSyncLayout.register(visualElement);
+        visualElement.onUnmount(function () {
+            if (isSharedLayout(syncLayout)) {
+                syncLayout.remove(visualElement);
+            }
+            if (isSharedLayout(framerSyncLayout)) {
+                framerSyncLayout.remove(visualElement);
+            }
+        });
+    };
+    /**
+     * If this is a child of a SyncContext, notify it that it needs to re-render. It will then
+     * handle the snapshotting.
+     *
+     * If it is stand-alone component, add it to the batcher.
+     */
+    Measure.prototype.getSnapshotBeforeUpdate = function () {
+        var _a = this.props, syncLayout = _a.syncLayout, visualElement = _a.visualElement;
+        if (isSharedLayout(syncLayout)) {
+            syncLayout.syncUpdate();
+        }
+        else {
+            visualElement.snapshotViewportBox();
+            syncLayout.add(visualElement);
+        }
+        return null;
+    };
+    Measure.prototype.componentDidUpdate = function () {
+        var _a = this.props, syncLayout = _a.syncLayout, visualElement = _a.visualElement;
+        if (!isSharedLayout(syncLayout))
+            syncLayout.flush();
+        /**
+         * If this axis isn't animating as a result of this render we want to reset the targetBox
+         * to the measured box
+         */
+        visualElement.rebaseProjectionTarget();
+    };
+    Measure.prototype.render = function () {
+        return null;
+    };
+    return Measure;
+}(React__default['default'].Component));
+function MeasureContextProvider(props) {
+    var syncLayout = React.useContext(SharedLayoutContext);
+    var framerSyncLayout = React.useContext(FramerTreeLayoutContext);
+    return (React__default['default'].createElement(Measure, tslib.__assign({}, props, { syncLayout: syncLayout, framerSyncLayout: framerSyncLayout })));
+}
+
+var layoutAnimations = {
+    measureLayout: MeasureContextProvider,
+    layoutAnimation: AnimateLayoutContextProvider,
+};
+
+/**
+ * Reset an axis to the provided origin box.
+ *
+ * This is a mutative operation.
+ */
+function resetAxis(axis, originAxis) {
+    axis.min = originAxis.min;
+    axis.max = originAxis.max;
+}
+/**
+ * Reset a box to the provided origin box.
+ *
+ * This is a mutative operation.
+ */
+function resetBox(box, originBox) {
+    resetAxis(box.x, originBox.x);
+    resetAxis(box.y, originBox.y);
+}
+/**
+ * Scales a point based on a factor and an originPoint
+ */
+function scalePoint(point, scale, originPoint) {
+    var distanceFromOrigin = point - originPoint;
+    var scaled = scale * distanceFromOrigin;
+    return originPoint + scaled;
+}
+/**
+ * Applies a translate/scale delta to a point
+ */
+function applyPointDelta(point, translate, scale, originPoint, boxScale) {
+    if (boxScale !== undefined) {
+        point = scalePoint(point, boxScale, originPoint);
+    }
+    return scalePoint(point, scale, originPoint) + translate;
+}
+/**
+ * Applies a translate/scale delta to an axis
+ */
+function applyAxisDelta(axis, translate, scale, originPoint, boxScale) {
+    if (translate === void 0) { translate = 0; }
+    if (scale === void 0) { scale = 1; }
+    axis.min = applyPointDelta(axis.min, translate, scale, originPoint, boxScale);
+    axis.max = applyPointDelta(axis.max, translate, scale, originPoint, boxScale);
+}
+/**
+ * Applies a translate/scale delta to a box
+ */
+function applyBoxDelta(box, _a) {
+    var x = _a.x, y = _a.y;
+    applyAxisDelta(box.x, x.translate, x.scale, x.originPoint);
+    applyAxisDelta(box.y, y.translate, y.scale, y.originPoint);
+}
+/**
+ * Apply a transform to an axis from the latest resolved motion values.
+ * This function basically acts as a bridge between a flat motion value map
+ * and applyAxisDelta
+ */
+function applyAxisTransforms(final, axis, transforms, _a) {
+    var _b = tslib.__read(_a, 3), key = _b[0], scaleKey = _b[1], originKey = _b[2];
+    // Copy the current axis to the final axis before mutation
+    final.min = axis.min;
+    final.max = axis.max;
+    var axisOrigin = transforms[originKey] !== undefined ? transforms[originKey] : 0.5;
+    var originPoint = popmotion.mix(axis.min, axis.max, axisOrigin);
+    // Apply the axis delta to the final axis
+    applyAxisDelta(final, transforms[key], transforms[scaleKey], originPoint, transforms.scale);
+}
+/**
+ * The names of the motion values we want to apply as translation, scale and origin.
+ */
+var xKeys = ["x", "scaleX", "originX"];
+var yKeys = ["y", "scaleY", "originY"];
+/**
+ * Apply a transform to a box from the latest resolved motion values.
+ */
+function applyBoxTransforms(finalBox, box, transforms) {
+    applyAxisTransforms(finalBox.x, box.x, transforms, xKeys);
+    applyAxisTransforms(finalBox.y, box.y, transforms, yKeys);
+}
+/**
+ * Remove a delta from a point. This is essentially the steps of applyPointDelta in reverse
+ */
+function removePointDelta(point, translate, scale, originPoint, boxScale) {
+    point -= translate;
+    point = scalePoint(point, 1 / scale, originPoint);
+    if (boxScale !== undefined) {
+        point = scalePoint(point, 1 / boxScale, originPoint);
+    }
+    return point;
+}
+/**
+ * Remove a delta from an axis. This is essentially the steps of applyAxisDelta in reverse
+ */
+function removeAxisDelta(axis, translate, scale, origin, boxScale) {
+    if (translate === void 0) { translate = 0; }
+    if (scale === void 0) { scale = 1; }
+    if (origin === void 0) { origin = 0.5; }
+    var originPoint = popmotion.mix(axis.min, axis.max, origin) - translate;
+    axis.min = removePointDelta(axis.min, translate, scale, originPoint, boxScale);
+    axis.max = removePointDelta(axis.max, translate, scale, originPoint, boxScale);
+}
+/**
+ * Remove a transforms from an axis. This is essentially the steps of applyAxisTransforms in reverse
+ * and acts as a bridge between motion values and removeAxisDelta
+ */
+function removeAxisTransforms(axis, transforms, _a) {
+    var _b = tslib.__read(_a, 3), key = _b[0], scaleKey = _b[1], originKey = _b[2];
+    removeAxisDelta(axis, transforms[key], transforms[scaleKey], transforms[originKey], transforms.scale);
+}
+/**
+ * Remove a transforms from an box. This is essentially the steps of applyAxisBox in reverse
+ * and acts as a bridge between motion values and removeAxisDelta
+ */
+function removeBoxTransforms(box, transforms) {
+    removeAxisTransforms(box.x, transforms, xKeys);
+    removeAxisTransforms(box.y, transforms, yKeys);
+}
+/**
+ * Apply a tree of deltas to a box. We do this to calculate the effect of all the transforms
+ * in a tree upon our box before then calculating how to project it into our desired viewport-relative box
+ *
+ * This is the final nested loop within updateLayoutDelta for future refactoring
+ */
+function applyTreeDeltas(box, treeScale, treePath) {
+    var treeLength = treePath.length;
+    if (!treeLength)
+        return;
+    // Reset the treeScale
+    treeScale.x = treeScale.y = 1;
+    for (var i = 0; i < treeLength; i++) {
+        var delta = treePath[i].getLayoutState().delta;
+        // Incoporate each ancestor's scale into a culmulative treeScale for this component
+        treeScale.x *= delta.x.scale;
+        treeScale.y *= delta.y.scale;
+        // Apply each ancestor's calculated delta into this component's recorded layout box
+        applyBoxDelta(box, delta);
+    }
+}
+
+var createProjectionState = function () { return ({
+    isEnabled: false,
+    isTargetLocked: false,
+    target: axisBox(),
+    targetFinal: axisBox(),
+}); };
+function createLayoutState() {
+    return {
+        isHydrated: false,
+        layout: axisBox(),
+        layoutCorrected: axisBox(),
+        treeScale: { x: 1, y: 1 },
+        delta: delta(),
+        deltaFinal: delta(),
+        deltaTransform: "",
+    };
+}
+var zeroLayout = createLayoutState();
+
+/**
+ * Build a transform style that takes a calculated delta between the element's current
+ * space on screen and projects it into the desired space.
+ */
+function buildLayoutProjectionTransform(_a, treeScale, latestTransform) {
+    var x = _a.x, y = _a.y;
+    /**
+     * The translations we use to calculate are always relative to the viewport coordinate space.
+     * But when we apply scales, we also scale the coordinate space of an element and its children.
+     * For instance if we have a treeScale (the culmination of all parent scales) of 0.5 and we need
+     * to move an element 100 pixels, we actually need to move it 200 in within that scaled space.
+     */
+    var xTranslate = x.translate / treeScale.x;
+    var yTranslate = y.translate / treeScale.y;
+    var transform = "translate3d(" + xTranslate + "px, " + yTranslate + "px, 0) ";
+    if (latestTransform) {
+        var rotate = latestTransform.rotate, rotateX = latestTransform.rotateX, rotateY = latestTransform.rotateY;
+        if (rotate)
+            transform += "rotate(" + rotate + ") ";
+        if (rotateX)
+            transform += "rotateX(" + rotateX + ") ";
+        if (rotateY)
+            transform += "rotateY(" + rotateY + ") ";
+    }
+    transform += "scale(" + x.scale + ", " + y.scale + ")";
+    return !latestTransform && transform === identityProjection ? "" : transform;
+}
+/**
+ * Take the calculated delta origin and apply it as a transform string.
+ */
+function buildLayoutProjectionTransformOrigin(_a) {
+    var deltaFinal = _a.deltaFinal;
+    return deltaFinal.x.origin * 100 + "% " + deltaFinal.y.origin * 100 + "% 0";
+}
+var identityProjection = buildLayoutProjectionTransform(zeroLayout.delta, zeroLayout.treeScale, { x: 1, y: 1 });
+
+var names = [
+    "LayoutMeasure",
+    "BeforeLayoutMeasure",
+    "LayoutUpdate",
+    "ViewportBoxUpdate",
+    "Update",
+    "Render",
+    "AnimationComplete",
+    "LayoutAnimationComplete",
+    "AnimationStart",
+    "SetAxisTarget",
+    "Unmount",
+];
+function createLifecycles() {
+    var managers = names.map(function () { return new SubscriptionManager(); });
+    var propSubscriptions = {};
+    var lifecycles = {
+        clearAllListeners: function () { return managers.forEach(function (manager) { return manager.clear(); }); },
+        updatePropListeners: function (props) {
+            return names.forEach(function (name) {
+                var _a;
+                (_a = propSubscriptions[name]) === null || _a === void 0 ? void 0 : _a.call(propSubscriptions);
+                var on = "on" + name;
+                var propListener = props[on];
+                if (propListener) {
+                    propSubscriptions[name] = lifecycles[on](propListener);
+                }
+            });
+        },
+    };
+    managers.forEach(function (manager, i) {
+        lifecycles["on" + names[i]] = function (handler) { return manager.add(handler); };
+        lifecycles["notify" + names[i]] = function () {
+            var args = [];
+            for (var _i = 0; _i < arguments.length; _i++) {
+                args[_i] = arguments[_i];
+            }
+            return manager.notify.apply(manager, tslib.__spreadArray([], tslib.__read(args)));
+        };
+    });
+    return lifecycles;
+}
+
+function updateMotionValuesFromProps(element, next, prev) {
+    var _a;
+    for (var key in next) {
+        var nextValue = next[key];
+        var prevValue = prev[key];
+        if (isMotionValue(nextValue)) {
+            /**
+             * If this is a motion value found in props or style, we want to add it
+             * to our visual element's motion value map.
+             */
+            element.addValue(key, nextValue);
+        }
+        else if (isMotionValue(prevValue)) {
+            /**
+             * If we're swapping to a new motion value, create a new motion value
+             * from that
+             */
+            element.addValue(key, motionValue(nextValue));
+        }
+        else if (prevValue !== nextValue) {
+            /**
+             * If this is a flat value that has changed, update the motion value
+             * or create one if it doesn't exist. We only want to do this if we're
+             * not handling the value with our animation state.
+             */
+            if (element.hasValue(key)) {
+                var existingValue = element.getValue(key);
+                // TODO: Only update values that aren't being animated or even looked at
+                !existingValue.hasAnimated && existingValue.set(nextValue);
+            }
+            else {
+                element.addValue(key, motionValue((_a = element.getStaticValue(key)) !== null && _a !== void 0 ? _a : nextValue));
+            }
+        }
+    }
+    // Handle removed values
+    for (var key in prev) {
+        if (next[key] === undefined)
+            element.removeValue(key);
+    }
+    return next;
+}
+
+function updateLayoutDeltas(_a, _b, treePath, transformOrigin) {
+    var delta = _a.delta, layout = _a.layout, layoutCorrected = _a.layoutCorrected, treeScale = _a.treeScale;
+    var target = _b.target;
+    /**
+     * Reset the corrected box with the latest values from box, as we're then going
+     * to perform mutative operations on it.
+     */
+    resetBox(layoutCorrected, layout);
+    /**
+     * Apply all the parent deltas to this box to produce the corrected box. This
+     * is the layout box, as it will appear on screen as a result of the transforms of its parents.
+     */
+    applyTreeDeltas(layoutCorrected, treeScale, treePath);
+    /**
+     * Update the delta between the corrected box and the target box before user-set transforms were applied.
+     * This will allow us to calculate the corrected borderRadius and boxShadow to compensate
+     * for our layout reprojection, but still allow them to be scaled correctly by the user.
+     * It might be that to simplify this we may want to accept that user-set scale1 is also corrected
+     * and we wouldn't have to keep and calc both deltas, OR we could support a user setting
+     * to allow people to choose whether these styles are corrected based on just the
+     * layout reprojection or the final bounding box.
+     */
+    updateBoxDelta(delta, layoutCorrected, target, transformOrigin);
+}
+
+var visualElement = function (_a) {
+    var _b = _a.treeType, treeType = _b === void 0 ? "" : _b, build = _a.build, getBaseTarget = _a.getBaseTarget, makeTargetAnimatable = _a.makeTargetAnimatable, measureViewportBox = _a.measureViewportBox, renderInstance = _a.render, readValueFromInstance = _a.readValueFromInstance, resetTransform = _a.resetTransform, restoreTransform = _a.restoreTransform, removeValueFromRenderState = _a.removeValueFromRenderState, sortNodePosition = _a.sortNodePosition, scrapeMotionValuesFromProps = _a.scrapeMotionValuesFromProps;
+    return function (_a, options) {
+        var parent = _a.parent, props = _a.props, presenceId = _a.presenceId, blockInitialAnimation = _a.blockInitialAnimation, visualState = _a.visualState;
+        if (options === void 0) { options = {}; }
+        var latestValues = visualState.latestValues, renderState = visualState.renderState;
+        /**
+         * The instance of the render-specific node that will be hydrated by the
+         * exposed React ref. So for example, this visual element can host a
+         * HTMLElement, plain object, or Three.js object. The functions provided
+         * in VisualElementConfig allow us to interface with this instance.
+         */
+        var instance;
+        /**
+         * A set of all children of this visual element. We use this to traverse
+         * the tree when updating layout projections.
+         */
+        var children = new Set();
+        /**
+         * Manages the subscriptions for a visual element's lifecycle, for instance
+         * onRender and onViewportBoxUpdate.
+         */
+        var lifecycles = createLifecycles();
+        /**
+         *
+         */
+        var projection = createProjectionState();
+        /**
+         * This is a reference to the visual state of the "lead" visual element.
+         * Usually, this will be this visual element. But if it shares a layoutId
+         * with other visual elements, only one of them will be designated lead by
+         * AnimateSharedLayout. All the other visual elements will take on the visual
+         * appearance of the lead while they crossfade to it.
+         */
+        var leadProjection = projection;
+        var leadLatestValues = latestValues;
+        var unsubscribeFromLeadVisualElement;
+        /**
+         * The latest layout measurements and calculated projections. This
+         * is seperate from the target projection data in visualState as
+         * many visual elements might point to the same piece of visualState as
+         * a target, whereas they might each have different layouts and thus
+         * projection calculations needed to project into the same viewport box.
+         */
+        var layoutState = createLayoutState();
+        /**
+         *
+         */
+        var crossfader;
+        /**
+         * Keep track of whether the viewport box has been updated since the
+         * last time the layout projection was re-calculated.
+         */
+        var hasViewportBoxUpdated = false;
+        /**
+         * A map of all motion values attached to this visual element. Motion
+         * values are source of truth for any given animated value. A motion
+         * value might be provided externally by the component via props.
+         */
+        var values = new Map();
+        /**
+         * A map of every subscription that binds the provided or generated
+         * motion values onChange listeners to this visual element.
+         */
+        var valueSubscriptions = new Map();
+        /**
+         * A reference to the previously-provided motion values as returned
+         * from scrapeMotionValuesFromProps. We use the keys in here to determine
+         * if any motion values need to be removed after props are updated.
+         */
+        var prevMotionValues = {};
+        /**
+         * x/y motion values that track the progress of initiated layout
+         * animations.
+         *
+         * TODO: Target for removal
+         */
+        var projectionTargetProgress;
+        /**
+         * When values are removed from all animation props we need to search
+         * for a fallback value to animate to. These values are tracked in baseTarget.
+         */
+        var baseTarget = tslib.__assign({}, latestValues);
+        // Internal methods ========================
+        /**
+         * On mount, this will be hydrated with a callback to disconnect
+         * this visual element from its parent on unmount.
+         */
+        var removeFromMotionTree;
+        var removeFromVariantTree;
+        /**
+         *
+         */
+        function isProjecting() {
+            return projection.isEnabled && layoutState.isHydrated;
+        }
+        /**
+         *
+         */
+        function render() {
+            if (!instance)
+                return;
+            if (isProjecting()) {
+                /**
+                 * Apply the latest user-set transforms to the targetBox to produce the targetBoxFinal.
+                 * This is the final box that we will then project into by calculating a transform delta and
+                 * applying it to the corrected box.
+                 */
+                applyBoxTransforms(leadProjection.targetFinal, leadProjection.target, leadLatestValues);
+                /**
+                 * Update the delta between the corrected box and the final target box, after
+                 * user-set transforms are applied to it. This will be used by the renderer to
+                 * create a transform style that will reproject the element from its actual layout
+                 * into the desired bounding box.
+                 */
+                updateBoxDelta(layoutState.deltaFinal, layoutState.layoutCorrected, leadProjection.targetFinal, latestValues);
+            }
+            triggerBuild();
+            renderInstance(instance, renderState);
+        }
+        function triggerBuild() {
+            var valuesToRender = latestValues;
+            if (crossfader && crossfader.isActive()) {
+                var crossfadedValues = crossfader.getCrossfadeState(element);
+                if (crossfadedValues)
+                    valuesToRender = crossfadedValues;
+            }
+            build(element, renderState, valuesToRender, leadProjection, layoutState, options, props);
+        }
+        function update() {
+            lifecycles.notifyUpdate(latestValues);
+        }
+        function updateLayoutProjection() {
+            var delta = layoutState.delta, treeScale = layoutState.treeScale;
+            var prevTreeScaleX = treeScale.x;
+            var prevTreeScaleY = treeScale.x;
+            var prevDeltaTransform = layoutState.deltaTransform;
+            updateLayoutDeltas(layoutState, leadProjection, element.path, latestValues);
+            hasViewportBoxUpdated &&
+                element.notifyViewportBoxUpdate(leadProjection.target, delta);
+            hasViewportBoxUpdated = false;
+            var deltaTransform = buildLayoutProjectionTransform(delta, treeScale);
+            if (deltaTransform !== prevDeltaTransform ||
+                // Also compare calculated treeScale, for values that rely on this only for scale correction
+                prevTreeScaleX !== treeScale.x ||
+                prevTreeScaleY !== treeScale.y) {
+                element.scheduleRender();
+            }
+            layoutState.deltaTransform = deltaTransform;
+        }
+        /**
+         *
+         */
+        function bindToMotionValue(key, value) {
+            var removeOnChange = value.onChange(function (latestValue) {
+                latestValues[key] = latestValue;
+                props.onUpdate && sync__default['default'].update(update, false, true);
+            });
+            var removeOnRenderRequest = value.onRenderRequest(element.scheduleRender);
+            valueSubscriptions.set(key, function () {
+                removeOnChange();
+                removeOnRenderRequest();
+            });
+        }
+        /**
+         * Any motion values that are provided to the element when created
+         * aren't yet bound to the element, as this would technically be impure.
+         * However, we iterate through the motion values and set them to the
+         * initial values for this component.
+         *
+         * TODO: This is impure and we should look at changing this to run on mount.
+         * Doing so will break some tests but this isn't neccessarily a breaking change,
+         * more a reflection of the test.
+         */
+        var initialMotionValues = scrapeMotionValuesFromProps(props);
+        for (var key in initialMotionValues) {
+            var value = initialMotionValues[key];
+            if (latestValues[key] !== undefined && isMotionValue(value)) {
+                value.set(latestValues[key], false);
+            }
+        }
+        /**
+         * Determine what role this visual element should take in the variant tree.
+         */
+        var isControllingVariants = checkIfControllingVariants(props);
+        var isVariantNode = checkIfVariantNode(props);
+        var element = tslib.__assign(tslib.__assign({ treeType: treeType, 
+            /**
+             * This is a mirror of the internal instance prop, which keeps
+             * VisualElement type-compatible with React's RefObject.
+             */
+            current: null, 
+            /**
+             * The depth of this visual element within the visual element tree.
+             */
+            depth: parent ? parent.depth + 1 : 0, 
+            /**
+             * An ancestor path back to the root visual element. This is used
+             * by layout projection to quickly recurse back up the tree.
+             */
+            path: parent ? tslib.__spreadArray(tslib.__spreadArray([], tslib.__read(parent.path)), [parent]) : [], 
+            /**
+             *
+             */
+            presenceId: presenceId,
+            projection: projection, 
+            /**
+             * If this component is part of the variant tree, it should track
+             * any children that are also part of the tree. This is essentially
+             * a shadow tree to simplify logic around how to stagger over children.
+             */
+            variantChildren: isVariantNode ? new Set() : undefined, 
+            /**
+             * Whether this instance is visible. This can be changed imperatively
+             * by AnimateSharedLayout, is analogous to CSS's visibility in that
+             * hidden elements should take up layout, and needs enacting by the configured
+             * render function.
+             */
+            isVisible: undefined, 
+            /**
+             * Normally, if a component is controlled by a parent's variants, it can
+             * rely on that ancestor to trigger animations further down the tree.
+             * However, if a component is created after its parent is mounted, the parent
+             * won't trigger that mount animation so the child needs to.
+             *
+             * TODO: This might be better replaced with a method isParentMounted
+             */
+            manuallyAnimateOnMount: Boolean(parent === null || parent === void 0 ? void 0 : parent.isMounted()), 
+            /**
+             * This can be set by AnimatePresence to force components that mount
+             * at the same time as it to mount as if they have initial={false} set.
+             */
+            blockInitialAnimation: blockInitialAnimation, 
+            /**
+             * A boolean that can be used to determine whether to respect hover events.
+             * For layout measurements we often have to reposition the instance by
+             * removing its transform. This can trigger hover events, which is
+             * undesired.
+             */
+            isHoverEventsEnabled: true, 
+            /**
+             * Determine whether this component has mounted yet. This is mostly used
+             * by variant children to determine whether they need to trigger their
+             * own animations on mount.
+             */
+            isMounted: function () { return Boolean(instance); }, mount: function (newInstance) {
+                instance = element.current = newInstance;
+                element.pointTo(element);
+                removeFromMotionTree = parent === null || parent === void 0 ? void 0 : parent.addChild(element);
+                if (isVariantNode && parent && !isControllingVariants) {
+                    removeFromVariantTree = parent === null || parent === void 0 ? void 0 : parent.addVariantChild(element);
+                }
+            },
+            /**
+             *
+             */
+            unmount: function () {
+                sync.cancelSync.update(update);
+                sync.cancelSync.render(render);
+                sync.cancelSync.preRender(element.updateLayoutProjection);
+                valueSubscriptions.forEach(function (remove) { return remove(); });
+                element.stopLayoutAnimation();
+                removeFromMotionTree === null || removeFromMotionTree === void 0 ? void 0 : removeFromMotionTree();
+                removeFromVariantTree === null || removeFromVariantTree === void 0 ? void 0 : removeFromVariantTree();
+                unsubscribeFromLeadVisualElement === null || unsubscribeFromLeadVisualElement === void 0 ? void 0 : unsubscribeFromLeadVisualElement();
+                lifecycles.clearAllListeners();
+            },
+            /**
+             * Add a child visual element to our set of children.
+             */
+            addChild: function (child) {
+                children.add(child);
+                return function () { return children.delete(child); };
+            },
+            /**
+             * Add a child visual element to our set of children.
+             */
+            addVariantChild: function (child) {
+                var _a;
+                var closestVariantNode = element.getClosestVariantNode();
+                if (closestVariantNode) {
+                    (_a = closestVariantNode.variantChildren) === null || _a === void 0 ? void 0 : _a.add(child);
+                    return function () { return closestVariantNode.variantChildren.delete(child); };
+                }
+            },
+            sortNodePosition: function (other) {
+                /**
+                 * If these nodes aren't even of the same type we can't compare their depth.
+                 */
+                if (!sortNodePosition || treeType !== other.treeType)
+                    return 0;
+                return sortNodePosition(element.getInstance(), other.getInstance());
+            }, 
+            /**
+             * Returns the closest variant node in the tree starting from
+             * this visual element.
+             */
+            getClosestVariantNode: function () {
+                return isVariantNode ? element : parent === null || parent === void 0 ? void 0 : parent.getClosestVariantNode();
+            }, 
+            /**
+             * A method that schedules an update to layout projections throughout
+             * the tree. We inherit from the parent so there's only ever one
+             * job scheduled on the next frame - that of the root visual element.
+             */
+            scheduleUpdateLayoutProjection: parent
+                ? parent.scheduleUpdateLayoutProjection
+                : function () { return sync__default['default'].preRender(element.updateLayoutProjection, false, true); }, 
+            /**
+             * Expose the latest layoutId prop.
+             */
+            getLayoutId: function () { return props.layoutId; }, 
+            /**
+             * Returns the current instance.
+             */
+            getInstance: function () { return instance; }, 
+            /**
+             * Get/set the latest static values.
+             */
+            getStaticValue: function (key) { return latestValues[key]; }, setStaticValue: function (key, value) { return (latestValues[key] = value); }, 
+            /**
+             * Returns the latest motion value state. Currently only used to take
+             * a snapshot of the visual element - perhaps this can return the whole
+             * visual state
+             */
+            getLatestValues: function () { return latestValues; }, 
+            /**
+             * Set the visiblity of the visual element. If it's changed, schedule
+             * a render to reflect these changes.
+             */
+            setVisibility: function (visibility) {
+                if (element.isVisible === visibility)
+                    return;
+                element.isVisible = visibility;
+                element.scheduleRender();
+            },
+            /**
+             * Make a target animatable by Popmotion. For instance, if we're
+             * trying to animate width from 100px to 100vw we need to measure 100vw
+             * in pixels to determine what we really need to animate to. This is also
+             * pluggable to support Framer's custom value types like Color,
+             * and CSS variables.
+             */
+            makeTargetAnimatable: function (target, canMutate) {
+                if (canMutate === void 0) { canMutate = true; }
+                return makeTargetAnimatable(element, target, props, canMutate);
+            },
+            /**
+             * Temporarily suspend hover events while we remove transforms in order to measure the layout.
+             *
+             * This seems like an odd bit of scheduling but what we're doing is saying after
+             * the next render, wait 10 milliseconds before reenabling hover events. Waiting until
+             * the next frame results in missed, valid hover events. But triggering on the postRender
+             * frame is too soon to avoid triggering events with layout measurements.
+             *
+             * Note: If we figure out a way of measuring layout while transforms remain applied, this can be removed.
+             */
+            suspendHoverEvents: function () {
+                element.isHoverEventsEnabled = false;
+                sync__default['default'].postRender(function () {
+                    return setTimeout(function () { return (element.isHoverEventsEnabled = true); }, 10);
+                });
+            },
+            // Motion values ========================
+            /**
+             * Add a motion value and bind it to this visual element.
+             */
+            addValue: function (key, value) {
+                // Remove existing value if it exists
+                if (element.hasValue(key))
+                    element.removeValue(key);
+                values.set(key, value);
+                latestValues[key] = value.get();
+                bindToMotionValue(key, value);
+            },
+            /**
+             * Remove a motion value and unbind any active subscriptions.
+             */
+            removeValue: function (key) {
+                var _a;
+                values.delete(key);
+                (_a = valueSubscriptions.get(key)) === null || _a === void 0 ? void 0 : _a();
+                valueSubscriptions.delete(key);
+                delete latestValues[key];
+                removeValueFromRenderState(key, renderState);
+            }, 
+            /**
+             * Check whether we have a motion value for this key
+             */
+            hasValue: function (key) { return values.has(key); }, 
+            /**
+             * Get a motion value for this key. If called with a default
+             * value, we'll create one if none exists.
+             */
+            getValue: function (key, defaultValue) {
+                var value = values.get(key);
+                if (value === undefined && defaultValue !== undefined) {
+                    value = motionValue(defaultValue);
+                    element.addValue(key, value);
+                }
+                return value;
+            }, 
+            /**
+             * Iterate over our motion values.
+             */
+            forEachValue: function (callback) { return values.forEach(callback); }, 
+            /**
+             * If we're trying to animate to a previously unencountered value,
+             * we need to check for it in our state and as a last resort read it
+             * directly from the instance (which might have performance implications).
+             */
+            readValue: function (key) { var _a; return (_a = latestValues[key]) !== null && _a !== void 0 ? _a : readValueFromInstance(instance, key, options); }, 
+            /**
+             * Set the base target to later animate back to. This is currently
+             * only hydrated on creation and when we first read a value.
+             */
+            setBaseTarget: function (key, value) {
+                baseTarget[key] = value;
+            },
+            /**
+             * Find the base target for a value thats been removed from all animation
+             * props.
+             */
+            getBaseTarget: function (key) {
+                if (getBaseTarget) {
+                    var target = getBaseTarget(props, key);
+                    if (target !== undefined && !isMotionValue(target))
+                        return target;
+                }
+                return baseTarget[key];
+            } }, lifecycles), { 
+            /**
+             * Build the renderer state based on the latest visual state.
+             */
+            build: function () {
+                triggerBuild();
+                return renderState;
+            },
+            /**
+             * Schedule a render on the next animation frame.
+             */
+            scheduleRender: function () {
+                sync__default['default'].render(render, false, true);
+            }, 
+            /**
+             * Synchronously fire render. It's prefered that we batch renders but
+             * in many circumstances, like layout measurement, we need to run this
+             * synchronously. However in those instances other measures should be taken
+             * to batch reads/writes.
+             */
+            syncRender: render, 
+            /**
+             * Update the provided props. Ensure any newly-added motion values are
+             * added to our map, old ones removed, and listeners updated.
+             */
+            setProps: function (newProps) {
+                props = newProps;
+                lifecycles.updatePropListeners(newProps);
+                prevMotionValues = updateMotionValuesFromProps(element, scrapeMotionValuesFromProps(props), prevMotionValues);
+            }, getProps: function () { return props; }, 
+            // Variants ==============================
+            /**
+             * Returns the variant definition with a given name.
+             */
+            getVariant: function (name) { var _a; return (_a = props.variants) === null || _a === void 0 ? void 0 : _a[name]; }, 
+            /**
+             * Returns the defined default transition on this component.
+             */
+            getDefaultTransition: function () { return props.transition; }, 
+            /**
+             * Used by child variant nodes to get the closest ancestor variant props.
+             */
+            getVariantContext: function (startAtParent) {
+                if (startAtParent === void 0) { startAtParent = false; }
+                if (startAtParent)
+                    return parent === null || parent === void 0 ? void 0 : parent.getVariantContext();
+                if (!isControllingVariants) {
+                    var context_1 = (parent === null || parent === void 0 ? void 0 : parent.getVariantContext()) || {};
+                    if (props.initial !== undefined) {
+                        context_1.initial = props.initial;
+                    }
+                    return context_1;
+                }
+                var context = {};
+                for (var i = 0; i < numVariantProps; i++) {
+                    var name_1 = variantProps[i];
+                    var prop = props[name_1];
+                    if (isVariantLabel(prop) || prop === false) {
+                        context[name_1] = prop;
+                    }
+                }
+                return context;
+            },
+            // Layout projection ==============================
+            /**
+             * Enable layout projection for this visual element. Won't actually
+             * occur until we also have hydrated layout measurements.
+             */
+            enableLayoutProjection: function () {
+                projection.isEnabled = true;
+            },
+            /**
+             * Lock the projection target, for instance when dragging, so
+             * nothing else can try and animate it.
+             */
+            lockProjectionTarget: function () {
+                projection.isTargetLocked = true;
+            },
+            unlockProjectionTarget: function () {
+                element.stopLayoutAnimation();
+                projection.isTargetLocked = false;
+            },
+            /**
+             * Record the viewport box as it was before an expected mutation/re-render
+             */
+            snapshotViewportBox: function () {
+                // TODO: Store this snapshot in LayoutState
+                element.prevViewportBox = element.measureViewportBox(false);
+                /**
+                 * Update targetBox to match the prevViewportBox. This is just to ensure
+                 * that targetBox is affected by scroll in the same way as the measured box
+                 */
+                element.rebaseProjectionTarget(false, element.prevViewportBox);
+            }, getLayoutState: function () { return layoutState; }, setCrossfader: function (newCrossfader) {
+                crossfader = newCrossfader;
+            },
+            /**
+             * Start a layout animation on a given axis.
+             * TODO: This could be better.
+             */
+            startLayoutAnimation: function (axis, transition) {
+                var progress = element.getProjectionAnimationProgress()[axis];
+                var _a = projection.target[axis], min = _a.min, max = _a.max;
+                var length = max - min;
+                progress.clearListeners();
+                progress.set(min);
+                progress.set(min); // Set twice to hard-reset velocity
+                progress.onChange(function (v) {
+                    return element.setProjectionTargetAxis(axis, v, v + length);
+                });
+                return element.animateMotionValue(axis, progress, 0, transition);
+            },
+            /**
+             * Stop layout animations.
+             */
+            stopLayoutAnimation: function () {
+                eachAxis(function (axis) {
+                    return element.getProjectionAnimationProgress()[axis].stop();
+                });
+            },
+            /**
+             * Measure the current viewport box with or without transforms.
+             * Only measures axis-aligned boxes, rotate and skew must be manually
+             * removed with a re-render to work.
+             */
+            measureViewportBox: function (withTransform) {
+                if (withTransform === void 0) { withTransform = true; }
+                var viewportBox = measureViewportBox(instance, options);
+                if (!withTransform)
+                    removeBoxTransforms(viewportBox, latestValues);
+                return viewportBox;
+            },
+            /**
+             * Update the layoutState by measuring the DOM layout. This
+             * should be called after resetting any layout-affecting transforms.
+             */
+            updateLayoutMeasurement: function () {
+                element.notifyBeforeLayoutMeasure(layoutState.layout);
+                layoutState.isHydrated = true;
+                layoutState.layout = element.measureViewportBox();
+                layoutState.layoutCorrected = copyAxisBox(layoutState.layout);
+                element.notifyLayoutMeasure(layoutState.layout, element.prevViewportBox || layoutState.layout);
+                sync__default['default'].update(function () { return element.rebaseProjectionTarget(); });
+            },
+            /**
+             * Get the motion values tracking the layout animations on each
+             * axis. Lazy init if not already created.
+             */
+            getProjectionAnimationProgress: function () {
+                projectionTargetProgress || (projectionTargetProgress = {
+                    x: motionValue(0),
+                    y: motionValue(0),
+                });
+                return projectionTargetProgress;
+            },
+            /**
+             * Update the projection of a single axis. Schedule an update to
+             * the tree layout projection.
+             */
+            setProjectionTargetAxis: function (axis, min, max) {
+                var target = projection.target[axis];
+                target.min = min;
+                target.max = max;
+                // Flag that we want to fire the onViewportBoxUpdate event handler
+                hasViewportBoxUpdated = true;
+                lifecycles.notifySetAxisTarget();
+            },
+            /**
+             * Rebase the projection target on top of the provided viewport box
+             * or the measured layout. This ensures that non-animating elements
+             * don't fall out of sync differences in measurements vs projections
+             * after a page scroll or other relayout.
+             */
+            rebaseProjectionTarget: function (force, box) {
+                if (box === void 0) { box = layoutState.layout; }
+                var _a = element.getProjectionAnimationProgress(), x = _a.x, y = _a.y;
+                var shouldRebase = !projection.isTargetLocked &&
+                    !x.isAnimating() &&
+                    !y.isAnimating();
+                if (force || shouldRebase) {
+                    eachAxis(function (axis) {
+                        var _a = box[axis], min = _a.min, max = _a.max;
+                        element.setProjectionTargetAxis(axis, min, max);
+                    });
+                }
+            },
+            /**
+             * Notify the visual element that its layout is up-to-date.
+             * Currently Animate.tsx uses this to check whether a layout animation
+             * needs to be performed.
+             */
+            notifyLayoutReady: function (config) {
+                element.notifyLayoutUpdate(layoutState.layout, element.prevViewportBox || layoutState.layout, config);
+            }, 
+            /**
+             * Temporarily reset the transform of the instance.
+             */
+            resetTransform: function () { return resetTransform(element, instance, props); }, 
+            /**
+             * Perform the callback after temporarily unapplying the transform
+             * upwards through the tree.
+             */
+            withoutTransform: function (callback) {
+                var isEnabled = projection.isEnabled;
+                isEnabled && element.resetTransform();
+                parent ? parent.withoutTransform(callback) : callback();
+                isEnabled && restoreTransform(instance, renderState);
+            },
+            updateLayoutProjection: function () {
+                isProjecting() && updateLayoutProjection();
+                children.forEach(fireUpdateLayoutProjection);
+            },
+            /**
+             *
+             */
+            pointTo: function (newLead) {
+                leadProjection = newLead.projection;
+                leadLatestValues = newLead.getLatestValues();
+                /**
+                 * Subscribe to lead component's layout animations
+                 */
+                unsubscribeFromLeadVisualElement === null || unsubscribeFromLeadVisualElement === void 0 ? void 0 : unsubscribeFromLeadVisualElement();
+                unsubscribeFromLeadVisualElement = popmotion.pipe(newLead.onSetAxisTarget(element.scheduleUpdateLayoutProjection), newLead.onLayoutAnimationComplete(function () {
+                    var _a;
+                    if (element.isPresent) {
+                        element.presence = Presence.Present;
+                    }
+                    else {
+                        (_a = element.layoutSafeToRemove) === null || _a === void 0 ? void 0 : _a.call(element);
+                    }
+                }));
+            }, 
+            // TODO: Clean this up
+            isPresent: true, presence: Presence.Entering });
+        return element;
+    };
+};
+function fireUpdateLayoutProjection(child) {
+    child.updateLayoutProjection();
+}
+var variantProps = tslib.__spreadArray(["initial"], tslib.__read(variantPriorityOrder));
+var numVariantProps = variantProps.length;
+
+var positionalKeys = new Set([
+    "width",
+    "height",
+    "top",
+    "left",
+    "right",
+    "bottom",
+    "x",
+    "y",
+]);
+var isPositionalKey = function (key) { return positionalKeys.has(key); };
+var hasPositionalKey = function (target) {
+    return Object.keys(target).some(isPositionalKey);
+};
+var setAndResetVelocity = function (value, to) {
+    // Looks odd but setting it twice doesn't render, it'll just
+    // set both prev and current to the latest value
+    value.set(to, false);
+    value.set(to);
+};
+var isNumOrPxType = function (v) {
+    return v === styleValueTypes.number || v === styleValueTypes.px;
+};
+var BoundingBoxDimension;
+(function (BoundingBoxDimension) {
+    BoundingBoxDimension["width"] = "width";
+    BoundingBoxDimension["height"] = "height";
+    BoundingBoxDimension["left"] = "left";
+    BoundingBoxDimension["right"] = "right";
+    BoundingBoxDimension["top"] = "top";
+    BoundingBoxDimension["bottom"] = "bottom";
+})(BoundingBoxDimension || (BoundingBoxDimension = {}));
+var getPosFromMatrix = function (matrix, pos) {
+    return parseFloat(matrix.split(", ")[pos]);
+};
+var getTranslateFromMatrix = function (pos2, pos3) { return function (_bbox, _a) {
+    var transform = _a.transform;
+    if (transform === "none" || !transform)
+        return 0;
+    var matrix3d = transform.match(/^matrix3d\((.+)\)$/);
+    if (matrix3d) {
+        return getPosFromMatrix(matrix3d[1], pos3);
+    }
+    else {
+        var matrix = transform.match(/^matrix\((.+)\)$/);
+        if (matrix) {
+            return getPosFromMatrix(matrix[1], pos2);
+        }
+        else {
+            return 0;
+        }
+    }
+}; };
+var transformKeys = new Set(["x", "y", "z"]);
+var nonTranslationalTransformKeys = transformProps.filter(function (key) { return !transformKeys.has(key); });
+function removeNonTranslationalTransform(visualElement) {
+    var removedTransforms = [];
+    nonTranslationalTransformKeys.forEach(function (key) {
+        var value = visualElement.getValue(key);
+        if (value !== undefined) {
+            removedTransforms.push([key, value.get()]);
+            value.set(key.startsWith("scale") ? 1 : 0);
+        }
+    });
+    // Apply changes to element before measurement
+    if (removedTransforms.length)
+        visualElement.syncRender();
+    return removedTransforms;
+}
+var positionalValues = {
+    // Dimensions
+    width: function (_a) {
+        var x = _a.x;
+        return x.max - x.min;
+    },
+    height: function (_a) {
+        var y = _a.y;
+        return y.max - y.min;
+    },
+    top: function (_bbox, _a) {
+        var top = _a.top;
+        return parseFloat(top);
+    },
+    left: function (_bbox, _a) {
+        var left = _a.left;
+        return parseFloat(left);
+    },
+    bottom: function (_a, _b) {
+        var y = _a.y;
+        var top = _b.top;
+        return parseFloat(top) + (y.max - y.min);
+    },
+    right: function (_a, _b) {
+        var x = _a.x;
+        var left = _b.left;
+        return parseFloat(left) + (x.max - x.min);
+    },
+    // Transform
+    x: getTranslateFromMatrix(4, 13),
+    y: getTranslateFromMatrix(5, 14),
+};
+var convertChangedValueTypes = function (target, visualElement, changedKeys) {
+    var originBbox = visualElement.measureViewportBox();
+    var element = visualElement.getInstance();
+    var elementComputedStyle = getComputedStyle(element);
+    var display = elementComputedStyle.display, top = elementComputedStyle.top, left = elementComputedStyle.left, bottom = elementComputedStyle.bottom, right = elementComputedStyle.right, transform = elementComputedStyle.transform;
+    var originComputedStyle = { top: top, left: left, bottom: bottom, right: right, transform: transform };
+    // If the element is currently set to display: "none", make it visible before
+    // measuring the target bounding box
+    if (display === "none") {
+        visualElement.setStaticValue("display", target.display || "block");
+    }
+    // Apply the latest values (as set in checkAndConvertChangedValueTypes)
+    visualElement.syncRender();
+    var targetBbox = visualElement.measureViewportBox();
+    changedKeys.forEach(function (key) {
+        // Restore styles to their **calculated computed style**, not their actual
+        // originally set style. This allows us to animate between equivalent pixel units.
+        var value = visualElement.getValue(key);
+        setAndResetVelocity(value, positionalValues[key](originBbox, originComputedStyle));
+        target[key] = positionalValues[key](targetBbox, elementComputedStyle);
+    });
+    return target;
+};
+var checkAndConvertChangedValueTypes = function (visualElement, target, origin, transitionEnd) {
+    if (origin === void 0) { origin = {}; }
+    if (transitionEnd === void 0) { transitionEnd = {}; }
+    target = tslib.__assign({}, target);
+    transitionEnd = tslib.__assign({}, transitionEnd);
+    var targetPositionalKeys = Object.keys(target).filter(isPositionalKey);
+    // We want to remove any transform values that could affect the element's bounding box before
+    // it's measured. We'll reapply these later.
+    var removedTransformValues = [];
+    var hasAttemptedToRemoveTransformValues = false;
+    var changedValueTypeKeys = [];
+    targetPositionalKeys.forEach(function (key) {
+        var value = visualElement.getValue(key);
+        if (!visualElement.hasValue(key))
+            return;
+        var from = origin[key];
+        var to = target[key];
+        var fromType = findDimensionValueType(from);
+        var toType;
+        // TODO: The current implementation of this basically throws an error
+        // if you try and do value conversion via keyframes. There's probably
+        // a way of doing this but the performance implications would need greater scrutiny,
+        // as it'd be doing multiple resize-remeasure operations.
+        if (isKeyframesTarget(to)) {
+            var numKeyframes = to.length;
+            for (var i = to[0] === null ? 1 : 0; i < numKeyframes; i++) {
+                if (!toType) {
+                    toType = findDimensionValueType(to[i]);
+                    heyListen.invariant(toType === fromType ||
+                        (isNumOrPxType(fromType) && isNumOrPxType(toType)), "Keyframes must be of the same dimension as the current value");
+                }
+                else {
+                    heyListen.invariant(findDimensionValueType(to[i]) === toType, "All keyframes must be of the same type");
+                }
+            }
+        }
+        else {
+            toType = findDimensionValueType(to);
+        }
+        if (fromType !== toType) {
+            // If they're both just number or px, convert them both to numbers rather than
+            // relying on resize/remeasure to convert (which is wasteful in this situation)
+            if (isNumOrPxType(fromType) && isNumOrPxType(toType)) {
+                var current = value.get();
+                if (typeof current === "string") {
+                    value.set(parseFloat(current));
+                }
+                if (typeof to === "string") {
+                    target[key] = parseFloat(to);
+                }
+                else if (Array.isArray(to) && toType === styleValueTypes.px) {
+                    target[key] = to.map(parseFloat);
+                }
+            }
+            else if ((fromType === null || fromType === void 0 ? void 0 : fromType.transform) &&
+                (toType === null || toType === void 0 ? void 0 : toType.transform) &&
+                (from === 0 || to === 0)) {
+                // If one or the other value is 0, it's safe to coerce it to the
+                // type of the other without measurement
+                if (from === 0) {
+                    value.set(toType.transform(from));
+                }
+                else {
+                    target[key] = fromType.transform(to);
+                }
+            }
+            else {
+                // If we're going to do value conversion via DOM measurements, we first
+                // need to remove non-positional transform values that could affect the bbox measurements.
+                if (!hasAttemptedToRemoveTransformValues) {
+                    removedTransformValues = removeNonTranslationalTransform(visualElement);
+                    hasAttemptedToRemoveTransformValues = true;
+                }
+                changedValueTypeKeys.push(key);
+                transitionEnd[key] =
+                    transitionEnd[key] !== undefined
+                        ? transitionEnd[key]
+                        : target[key];
+                setAndResetVelocity(value, to);
+            }
+        }
+    });
+    if (changedValueTypeKeys.length) {
+        var convertedTarget = convertChangedValueTypes(target, visualElement, changedValueTypeKeys);
+        // If we removed transform values, reapply them before the next render
+        if (removedTransformValues.length) {
+            removedTransformValues.forEach(function (_a) {
+                var _b = tslib.__read(_a, 2), key = _b[0], value = _b[1];
+                visualElement.getValue(key).set(value);
+            });
+        }
+        // Reapply original values
+        visualElement.syncRender();
+        return { target: convertedTarget, transitionEnd: transitionEnd };
+    }
+    else {
+        return { target: target, transitionEnd: transitionEnd };
+    }
+};
+/**
+ * Convert value types for x/y/width/height/top/left/bottom/right
+ *
+ * Allows animation between `'auto'` -> `'100%'` or `0` -> `'calc(50% - 10vw)'`
+ *
+ * @internal
+ */
+function unitConversion(visualElement, target, origin, transitionEnd) {
+    return hasPositionalKey(target)
+        ? checkAndConvertChangedValueTypes(visualElement, target, origin, transitionEnd)
+        : { target: target, transitionEnd: transitionEnd };
+}
+
+/**
+ * Parse a DOM variant to make it animatable. This involves resolving CSS variables
+ * and ensuring animations like "20%" => "calc(50vw)" are performed in pixels.
+ */
+var parseDomVariant = function (visualElement, target, origin, transitionEnd) {
+    var resolved = resolveCSSVariables(visualElement, target, transitionEnd);
+    target = resolved.target;
+    transitionEnd = resolved.transitionEnd;
+    return unitConversion(visualElement, target, origin, transitionEnd);
+};
+
+function getComputedStyle$1(element) {
+    return window.getComputedStyle(element);
+}
+var htmlConfig = {
+    treeType: "dom",
+    readValueFromInstance: function (domElement, key) {
+        if (isTransformProp(key)) {
+            var defaultType = getDefaultValueType(key);
+            return defaultType ? defaultType.default || 0 : 0;
+        }
+        else {
+            var computedStyle = getComputedStyle$1(domElement);
+            return ((isCSSVariable$1(key)
+                ? computedStyle.getPropertyValue(key)
+                : computedStyle[key]) || 0);
+        }
+    },
+    sortNodePosition: function (a, b) {
+        /**
+         * compareDocumentPosition returns a bitmask, by using the bitwise &
+         * we're returning true if 2 in that bitmask is set to true. 2 is set
+         * to true if b preceeds a.
+         */
+        return a.compareDocumentPosition(b) & 2 ? 1 : -1;
+    },
+    getBaseTarget: function (props, key) {
+        var _a;
+        return (_a = props.style) === null || _a === void 0 ? void 0 : _a[key];
+    },
+    measureViewportBox: function (element, _a) {
+        var transformPagePoint = _a.transformPagePoint;
+        return getBoundingBox(element, transformPagePoint);
+    },
+    /**
+     * Reset the transform on the current Element. This is called as part
+     * of a batched process across the entire layout tree. To remove this write
+     * cycle it'd be interesting to see if it's possible to "undo" all the current
+     * layout transforms up the tree in the same way this.getBoundingBoxWithoutTransforms
+     * works
+     */
+    resetTransform: function (element, domElement, props) {
+        /**
+         * When we reset the transform of an element, there's a fair possibility that
+         * the element will visually move from underneath the pointer, triggering attached
+         * pointerenter/leave events. We temporarily suspend these while measurement takes place.
+         */
+        element.suspendHoverEvents();
+        var transformTemplate = props.transformTemplate;
+        domElement.style.transform = transformTemplate
+            ? transformTemplate({}, "")
+            : "none";
+        // Ensure that whatever happens next, we restore our transform on the next frame
+        element.scheduleRender();
+    },
+    restoreTransform: function (instance, mutableState) {
+        instance.style.transform = mutableState.style.transform;
+    },
+    removeValueFromRenderState: function (key, _a) {
+        var vars = _a.vars, style = _a.style;
+        delete vars[key];
+        delete style[key];
+    },
+    /**
+     * Ensure that HTML and Framer-specific value types like `px`->`%` and `Color`
+     * can be animated by Motion.
+     */
+    makeTargetAnimatable: function (element, _a, _b, isMounted) {
+        var transformValues = _b.transformValues;
+        if (isMounted === void 0) { isMounted = true; }
+        var transition = _a.transition, transitionEnd = _a.transitionEnd, target = tslib.__rest(_a, ["transition", "transitionEnd"]);
+        var origin = getOrigin(target, transition || {}, element);
+        /**
+         * If Framer has provided a function to convert `Color` etc value types, convert them
+         */
+        if (transformValues) {
+            if (transitionEnd)
+                transitionEnd = transformValues(transitionEnd);
+            if (target)
+                target = transformValues(target);
+            if (origin)
+                origin = transformValues(origin);
+        }
+        if (isMounted) {
+            checkTargetForNewValues(element, target, origin);
+            var parsed = parseDomVariant(element, target, origin, transitionEnd);
+            transitionEnd = parsed.transitionEnd;
+            target = parsed.target;
+        }
+        return tslib.__assign({ transition: transition,
+            transitionEnd: transitionEnd }, target);
+    },
+    scrapeMotionValuesFromProps: scrapeMotionValuesFromProps$1,
+    build: function (element, renderState, latestValues, projection, layoutState, options, props) {
+        if (element.isVisible !== undefined) {
+            renderState.style.visibility = element.isVisible
+                ? "visible"
+                : "hidden";
+        }
+        var isProjectionTranform = projection.isEnabled && layoutState.isHydrated;
+        buildHTMLStyles(renderState, latestValues, projection, layoutState, options, props.transformTemplate, isProjectionTranform ? buildLayoutProjectionTransform : undefined, isProjectionTranform
+            ? buildLayoutProjectionTransformOrigin
+            : undefined);
+    },
+    render: renderHTML,
+};
+var htmlVisualElement = visualElement(htmlConfig);
+
+var svgVisualElement = visualElement(tslib.__assign(tslib.__assign({}, htmlConfig), { getBaseTarget: function (props, key) {
+        return props[key];
+    },
+    readValueFromInstance: function (domElement, key) {
+        var _a;
+        if (isTransformProp(key)) {
+            return ((_a = getDefaultValueType(key)) === null || _a === void 0 ? void 0 : _a.default) || 0;
+        }
+        key = !camelCaseAttributes.has(key) ? camelToDash(key) : key;
+        return domElement.getAttribute(key);
+    },
+    scrapeMotionValuesFromProps: scrapeMotionValuesFromProps,
+    build: function (_element, renderState, latestValues, projection, layoutState, options, props) {
+        var isProjectionTranform = projection.isEnabled && layoutState.isHydrated;
+        buildSVGAttrs(renderState, latestValues, projection, layoutState, options, props.transformTemplate, isProjectionTranform ? buildLayoutProjectionTransform : undefined, isProjectionTranform
+            ? buildLayoutProjectionTransformOrigin
+            : undefined);
+    }, render: renderSVG }));
+
+var createDomVisualElement = function (Component, options) {
+    return isSVGComponent(Component)
+        ? svgVisualElement(options, { enableHardwareAcceleration: false })
+        : htmlVisualElement(options, { enableHardwareAcceleration: true });
+};
+
+var featureBundle = tslib.__assign(tslib.__assign(tslib.__assign(tslib.__assign({}, animations), gestureAnimations), drag), layoutAnimations);
+/**
+ * HTML & SVG components, optimised for use with gestures and animation. These can be used as
+ * drop-in replacements for any HTML & SVG component, all CSS & SVG properties are supported.
+ *
+ * @public
+ */
+var motion = /*@__PURE__*/ createMotionProxy(function (Component, config) {
+    return createDomMotionConfig(Component, config, featureBundle, createDomVisualElement);
+});
+/**
+ * Create a DOM `motion` component with the provided string. This is primarily intended
+ * as a full alternative to `motion` for consumers who have to support environments that don't
+ * support `Proxy`.
+ *
+ * ```javascript
+ * import { createDomMotionComponent } from "framer-motion"
+ *
+ * const motion = {
+ *   div: createDomMotionComponent('div')
+ * }
+ * ```
+ *
+ * @public
+ */
+function createDomMotionComponent(key) {
+    return createMotionComponent(createDomMotionConfig(key, { forwardMotionProps: false }, featureBundle, createDomVisualElement));
+}
+
+/**
+ * @public
+ */
+var m = createMotionProxy(createDomMotionConfig);
+
+function useForceUpdate() {
+    var unloadingRef = React.useRef(false);
+    var _a = tslib.__read(React.useState(0), 2), forcedRenderCount = _a[0], setForcedRenderCount = _a[1];
+    useUnmountEffect(function () { return (unloadingRef.current = true); });
+    return React.useCallback(function () {
+        !unloadingRef.current && setForcedRenderCount(forcedRenderCount + 1);
+    }, [forcedRenderCount]);
+}
+
+var presenceId = 0;
+function getPresenceId() {
+    var id = presenceId;
+    presenceId++;
+    return id;
+}
+var PresenceChild = function (_a) {
+    var children = _a.children, initial = _a.initial, isPresent = _a.isPresent, onExitComplete = _a.onExitComplete, custom = _a.custom, presenceAffectsLayout = _a.presenceAffectsLayout;
+    var presenceChildren = useConstant(newChildrenMap);
+    var id = useConstant(getPresenceId);
+    var context = React.useMemo(function () { return ({
+        id: id,
+        initial: initial,
+        isPresent: isPresent,
+        custom: custom,
+        onExitComplete: function (childId) {
+            presenceChildren.set(childId, true);
+            var allComplete = true;
+            presenceChildren.forEach(function (isComplete) {
+                if (!isComplete)
+                    allComplete = false;
+            });
+            allComplete && (onExitComplete === null || onExitComplete === void 0 ? void 0 : onExitComplete());
+        },
+        register: function (childId) {
+            presenceChildren.set(childId, false);
+            return function () { return presenceChildren.delete(childId); };
+        },
+    }); }, 
+    /**
+     * If the presence of a child affects the layout of the components around it,
+     * we want to make a new context value to ensure they get re-rendered
+     * so they can detect that layout change.
+     */
+    presenceAffectsLayout ? undefined : [isPresent]);
+    React.useMemo(function () {
+        presenceChildren.forEach(function (_, key) { return presenceChildren.set(key, false); });
+    }, [isPresent]);
+    /**
+     * If there's no `motion` components to fire exit animations, we want to remove this
+     * component immediately.
+     */
+    React__namespace.useEffect(function () {
+        !isPresent && !presenceChildren.size && (onExitComplete === null || onExitComplete === void 0 ? void 0 : onExitComplete());
+    }, [isPresent]);
+    return (React__namespace.createElement(PresenceContext.Provider, { value: context }, children));
+};
+function newChildrenMap() {
+    return new Map();
+}
+
+function getChildKey(child) {
+    return child.key || "";
+}
+function updateChildLookup(children, allChildren) {
+    var seenChildren =  false ? undefined : null;
+    children.forEach(function (child) {
+        var key = getChildKey(child);
+        if (false) {}
+        allChildren.set(key, child);
+    });
+}
+function onlyElements(children) {
+    var filtered = [];
+    // We use forEach here instead of map as map mutates the component key by preprending `.$`
+    React.Children.forEach(children, function (child) {
+        if (React.isValidElement(child))
+            filtered.push(child);
+    });
+    return filtered;
+}
+/**
+ * `AnimatePresence` enables the animation of components that have been removed from the tree.
+ *
+ * When adding/removing more than a single child, every child **must** be given a unique `key` prop.
+ *
+ * @library
+ *
+ * Any `Frame` components that have an `exit` property defined will animate out when removed from
+ * the tree.
+ *
+ * ```jsx
+ * import { Frame, AnimatePresence } from 'framer'
+ *
+ * // As items are added and removed from `items`
+ * export function Items({ items }) {
+ *   return (
+ *     <AnimatePresence>
+ *       {items.map(item => (
+ *         <Frame
+ *           key={item.id}
+ *           initial={{ opacity: 0 }}
+ *           animate={{ opacity: 1 }}
+ *           exit={{ opacity: 0 }}
+ *         />
+ *       ))}
+ *     </AnimatePresence>
+ *   )
+ * }
+ * ```
+ *
+ * You can sequence exit animations throughout a tree using variants.
+ *
+ * @motion
+ *
+ * Any `motion` components that have an `exit` property defined will animate out when removed from
+ * the tree.
+ *
+ * ```jsx
+ * import { motion, AnimatePresence } from 'framer-motion'
+ *
+ * export const Items = ({ items }) => (
+ *   <AnimatePresence>
+ *     {items.map(item => (
+ *       <motion.div
+ *         key={item.id}
+ *         initial={{ opacity: 0 }}
+ *         animate={{ opacity: 1 }}
+ *         exit={{ opacity: 0 }}
+ *       />
+ *     ))}
+ *   </AnimatePresence>
+ * )
+ * ```
+ *
+ * You can sequence exit animations throughout a tree using variants.
+ *
+ * If a child contains multiple `motion` components with `exit` props, it will only unmount the child
+ * once all `motion` components have finished animating out. Likewise, any components using
+ * `usePresence` all need to call `safeToRemove`.
+ *
+ * @public
+ */
+var AnimatePresence = function (_a) {
+    var children = _a.children, custom = _a.custom, _b = _a.initial, initial = _b === void 0 ? true : _b, onExitComplete = _a.onExitComplete, exitBeforeEnter = _a.exitBeforeEnter, _c = _a.presenceAffectsLayout, presenceAffectsLayout = _c === void 0 ? true : _c;
+    // We want to force a re-render once all exiting animations have finished. We
+    // either use a local forceRender function, or one from a parent context if it exists.
+    var forceRender = useForceUpdate();
+    var layoutContext = React.useContext(SharedLayoutContext);
+    if (isSharedLayout(layoutContext)) {
+        forceRender = layoutContext.forceUpdate;
+    }
+    var isInitialRender = React.useRef(true);
+    // Filter out any children that aren't ReactElements. We can only track ReactElements with a props.key
+    var filteredChildren = onlyElements(children);
+    // Keep a living record of the children we're actually rendering so we
+    // can diff to figure out which are entering and exiting
+    var presentChildren = React.useRef(filteredChildren);
+    // A lookup table to quickly reference components by key
+    var allChildren = React.useRef(new Map())
+        .current;
+    // A living record of all currently exiting components.
+    var exiting = React.useRef(new Set()).current;
+    updateChildLookup(filteredChildren, allChildren);
+    // If this is the initial component render, just deal with logic surrounding whether
+    // we play onMount animations or not.
+    if (isInitialRender.current) {
+        isInitialRender.current = false;
+        return (React__namespace.createElement(React__namespace.Fragment, null, filteredChildren.map(function (child) { return (React__namespace.createElement(PresenceChild, { key: getChildKey(child), isPresent: true, initial: initial ? undefined : false, presenceAffectsLayout: presenceAffectsLayout }, child)); })));
+    }
+    // If this is a subsequent render, deal with entering and exiting children
+    var childrenToRender = tslib.__spreadArray([], tslib.__read(filteredChildren));
+    // Diff the keys of the currently-present and target children to update our
+    // exiting list.
+    var presentKeys = presentChildren.current.map(getChildKey);
+    var targetKeys = filteredChildren.map(getChildKey);
+    // Diff the present children with our target children and mark those that are exiting
+    var numPresent = presentKeys.length;
+    for (var i = 0; i < numPresent; i++) {
+        var key = presentKeys[i];
+        if (targetKeys.indexOf(key) === -1) {
+            exiting.add(key);
+        }
+        else {
+            // In case this key has re-entered, remove from the exiting list
+            exiting.delete(key);
+        }
+    }
+    // If we currently have exiting children, and we're deferring rendering incoming children
+    // until after all current children have exiting, empty the childrenToRender array
+    if (exitBeforeEnter && exiting.size) {
+        childrenToRender = [];
+    }
+    // Loop through all currently exiting components and clone them to overwrite `animate`
+    // with any `exit` prop they might have defined.
+    exiting.forEach(function (key) {
+        // If this component is actually entering again, early return
+        if (targetKeys.indexOf(key) !== -1)
+            return;
+        var child = allChildren.get(key);
+        if (!child)
+            return;
+        var insertionIndex = presentKeys.indexOf(key);
+        var onExit = function () {
+            allChildren.delete(key);
+            exiting.delete(key);
+            // Remove this child from the present children
+            var removeIndex = presentChildren.current.findIndex(function (presentChild) { return presentChild.key === key; });
+            presentChildren.current.splice(removeIndex, 1);
+            // Defer re-rendering until all exiting children have indeed left
+            if (!exiting.size) {
+                presentChildren.current = filteredChildren;
+                forceRender();
+                onExitComplete && onExitComplete();
+            }
+        };
+        childrenToRender.splice(insertionIndex, 0, React__namespace.createElement(PresenceChild, { key: getChildKey(child), isPresent: false, onExitComplete: onExit, custom: custom, presenceAffectsLayout: presenceAffectsLayout }, child));
+    });
+    // Add `MotionContext` even to children that don't need it to ensure we're rendering
+    // the same tree between renders
+    childrenToRender = childrenToRender.map(function (child) {
+        var key = child.key;
+        return exiting.has(key) ? (child) : (React__namespace.createElement(PresenceChild, { key: getChildKey(child), isPresent: true, presenceAffectsLayout: presenceAffectsLayout }, child));
+    });
+    presentChildren.current = childrenToRender;
+    if (false) {}
+    return (React__namespace.createElement(React__namespace.Fragment, null, exiting.size
+        ? childrenToRender
+        : childrenToRender.map(function (child) { return React.cloneElement(child); })));
+};
+
+/**
+ * Animate a single value or a `MotionValue`.
+ *
+ * The first argument is either a `MotionValue` to animate, or an initial animation value.
+ *
+ * The second is either a value to animate to, or an array of keyframes to animate through.
+ *
+ * The third argument can be either tween or spring options, and optional lifecycle methods: `onUpdate`, `onPlay`, `onComplete`, `onRepeat` and `onStop`.
+ *
+ * Returns `AnimationPlaybackControls`, currently just a `stop` method.
+ *
+ * ```javascript
+ * const x = useMotionValue(0)
+ *
+ * useEffect(() => {
+ *   const controls = animate(x, 100, {
+ *     type: "spring",
+ *     stiffness: 2000,
+ *     onComplete: v => {}
+ *   })
+ *
+ *   return controls.stop
+ * })
+ * ```
+ *
+ * @public
+ */
+function animate(from, to, transition) {
+    if (transition === void 0) { transition = {}; }
+    var value = isMotionValue(from) ? from : motionValue(from);
+    startAnimation("", value, to, transition);
+    return {
+        stop: function () { return value.stop(); },
+    };
+}
+
+function createCrossfader() {
+    /**
+     * The current state of the crossfade as a value between 0 and 1
+     */
+    var progress = motionValue(1);
+    var options = {
+        lead: undefined,
+        follow: undefined,
+        crossfadeOpacity: false,
+        preserveFollowOpacity: false,
+    };
+    var leadState = {};
+    var followState = {};
+    /**
+     *
+     */
+    var isActive = false;
+    /**
+     *
+     */
+    var finalCrossfadeFrame = null;
+    /**
+     * Framestamp of the last frame we updated values at.
+     */
+    var prevUpdate = 0;
+    function startCrossfadeAnimation(target, transition) {
+        var lead = options.lead, follow = options.follow;
+        isActive = true;
+        finalCrossfadeFrame = null;
+        var hasUpdated = false;
+        var onUpdate = function () {
+            hasUpdated = true;
+            lead && lead.scheduleRender();
+            follow && follow.scheduleRender();
+        };
+        var onComplete = function () {
+            isActive = false;
+            /**
+             * If the crossfade animation is no longer active, flag a frame
+             * that we're still allowed to crossfade
+             */
+            finalCrossfadeFrame = sync.getFrameData().timestamp;
+        };
+        return animate(progress, target, tslib.__assign(tslib.__assign({}, transition), { onUpdate: onUpdate, onComplete: function () {
+                if (!hasUpdated) {
+                    progress.set(1);
+                    /**
+                     * If we never ran an update, for instance if this was an instant transition, fire a
+                     * simulated final frame to ensure the crossfade gets applied correctly.
+                     */
+                    sync__default['default'].read(onComplete);
+                }
+                else {
+                    onComplete();
+                }
+                onUpdate();
+            } }));
+    }
+    function updateCrossfade() {
+        var _a, _b;
+        /**
+         * We only want to compute the crossfade once per frame, so we
+         * compare the previous update framestamp with the current frame
+         * and early return if they're the same.
+         */
+        var timestamp = sync.getFrameData().timestamp;
+        var lead = options.lead, follow = options.follow;
+        if (timestamp === prevUpdate || !lead)
+            return;
+        prevUpdate = timestamp;
+        /**
+         * Merge each component's latest values into our crossfaded state
+         * before crossfading.
+         */
+        var latestLeadValues = lead.getLatestValues();
+        Object.assign(leadState, latestLeadValues);
+        var latestFollowValues = follow
+            ? follow.getLatestValues()
+            : options.prevValues;
+        Object.assign(followState, latestFollowValues);
+        var p = progress.get();
+        /**
+         * Crossfade the opacity between the two components. This will result
+         * in a different opacity for each component.
+         */
+        var leadTargetOpacity = (_a = latestLeadValues.opacity) !== null && _a !== void 0 ? _a : 1;
+        var followTargetOpacity = (_b = latestFollowValues === null || latestFollowValues === void 0 ? void 0 : latestFollowValues.opacity) !== null && _b !== void 0 ? _b : 1;
+        if (options.crossfadeOpacity && follow) {
+            leadState.opacity = popmotion.mix(0, leadTargetOpacity, easeCrossfadeIn(p));
+            followState.opacity = options.preserveFollowOpacity
+                ? followTargetOpacity
+                : popmotion.mix(followTargetOpacity, 0, easeCrossfadeOut(p));
+        }
+        else if (!follow) {
+            leadState.opacity = popmotion.mix(followTargetOpacity, leadTargetOpacity, p);
+        }
+        mixValues(leadState, followState, latestLeadValues, latestFollowValues || {}, Boolean(follow), p);
+    }
+    return {
+        isActive: function () {
+            return leadState &&
+                (isActive || sync.getFrameData().timestamp === finalCrossfadeFrame);
+        },
+        fromLead: function (transition) {
+            return startCrossfadeAnimation(0, transition);
+        },
+        toLead: function (transition) {
+            progress.set(options.follow ? 1 - progress.get() : 0);
+            return startCrossfadeAnimation(1, transition);
+        },
+        reset: function () { return progress.set(1); },
+        stop: function () { return progress.stop(); },
+        getCrossfadeState: function (element) {
+            updateCrossfade();
+            if (element === options.lead) {
+                return leadState;
+            }
+            else if (element === options.follow) {
+                return followState;
+            }
+        },
+        setOptions: function (newOptions) {
+            options = newOptions;
+            leadState = {};
+            followState = {};
+        },
+        getLatestValues: function () {
+            return leadState;
+        },
+    };
+}
+var easeCrossfadeIn = compress(0, 0.5, popmotion.circOut);
+var easeCrossfadeOut = compress(0.5, 0.95, popmotion.linear);
+function compress(min, max, easing) {
+    return function (p) {
+        // Could replace ifs with clamp
+        if (p < min)
+            return 0;
+        if (p > max)
+            return 1;
+        return easing(popmotion.progress(min, max, p));
+    };
+}
+var borders = ["TopLeft", "TopRight", "BottomLeft", "BottomRight"];
+var numBorders = borders.length;
+function mixValues(leadState, followState, latestLeadValues, latestFollowValues, hasFollowElement, p) {
+    /**
+     * Mix border radius
+     */
+    for (var i = 0; i < numBorders; i++) {
+        var borderLabel = "border" + borders[i] + "Radius";
+        var followRadius = getRadius(latestFollowValues, borderLabel);
+        var leadRadius = getRadius(latestLeadValues, borderLabel);
+        if (followRadius === undefined && leadRadius === undefined)
+            continue;
+        followRadius || (followRadius = 0);
+        leadRadius || (leadRadius = 0);
+        /**
+         * Currently we're only crossfading between numerical border radius.
+         * It would be possible to crossfade between percentages for a little
+         * extra bundle size.
+         */
+        if (typeof followRadius === "number" &&
+            typeof leadRadius === "number") {
+            var radius = popmotion.mix(followRadius, leadRadius, p);
+            leadState[borderLabel] = followState[borderLabel] = radius;
+        }
+    }
+    /**
+     * Mix rotation
+     */
+    if (latestFollowValues.rotate || latestLeadValues.rotate) {
+        var rotate = popmotion.mix(latestFollowValues.rotate || 0, latestLeadValues.rotate || 0, p);
+        leadState.rotate = followState.rotate = rotate;
+    }
+    /**
+     * We only want to mix the background color if there's a follow element
+     * that we're not crossfading opacity between. For instance with switch
+     * AnimateSharedLayout animations, this helps the illusion of a continuous
+     * element being animated but also cuts down on the number of paints triggered
+     * for elements where opacity is doing that work for us.
+     */
+    if (!hasFollowElement &&
+        latestLeadValues.backgroundColor &&
+        latestFollowValues.backgroundColor) {
+        /**
+         * This isn't ideal performance-wise as mixColor is creating a new function every frame.
+         * We could probably create a mixer that runs at the start of the animation but
+         * the idea behind the crossfader is that it runs dynamically between two potentially
+         * changing targets (ie opacity or borderRadius may be animating independently via variants)
+         */
+        leadState.backgroundColor = followState.backgroundColor = popmotion.mixColor(latestFollowValues.backgroundColor, latestLeadValues.backgroundColor)(p);
+    }
+}
+function getRadius(values, radiusName) {
+    var _a;
+    return (_a = values[radiusName]) !== null && _a !== void 0 ? _a : values.borderRadius;
+}
+
+function layoutStack() {
+    var stack = new Set();
+    var state = { leadIsExiting: false };
+    var prevState = tslib.__assign({}, state);
+    var prevValues;
+    var prevViewportBox;
+    var prevDragCursor;
+    var crossfader = createCrossfader();
+    var needsCrossfadeAnimation = false;
+    function getFollowViewportBox() {
+        return state.follow ? state.follow.prevViewportBox : prevViewportBox;
+    }
+    function getFollowLayout() {
+        var _a;
+        return (_a = state.follow) === null || _a === void 0 ? void 0 : _a.getLayoutState().layout;
+    }
+    return {
+        add: function (element) {
+            element.setCrossfader(crossfader);
+            stack.add(element);
+            /**
+             * Hydrate new element with previous drag position if we have one
+             */
+            if (prevDragCursor)
+                element.prevDragCursor = prevDragCursor;
+            if (!state.lead)
+                state.lead = element;
+        },
+        remove: function (element) {
+            stack.delete(element);
+        },
+        getLead: function () { return state.lead; },
+        updateSnapshot: function () {
+            if (!state.lead)
+                return;
+            prevValues = crossfader.isActive()
+                ? crossfader.getLatestValues()
+                : state.lead.getLatestValues();
+            prevViewportBox = state.lead.prevViewportBox;
+            var dragControls = elementDragControls.get(state.lead);
+            if (dragControls && dragControls.isDragging) {
+                prevDragCursor = dragControls.cursorProgress;
+            }
+        },
+        clearSnapshot: function () {
+            prevDragCursor = prevViewportBox = undefined;
+        },
+        updateLeadAndFollow: function () {
+            var _a;
+            prevState = tslib.__assign({}, state);
+            var lead;
+            var follow;
+            var order = Array.from(stack);
+            for (var i = order.length; i--; i >= 0) {
+                var element = order[i];
+                if (lead)
+                    follow !== null && follow !== void 0 ? follow : (follow = element);
+                lead !== null && lead !== void 0 ? lead : (lead = element);
+                if (lead && follow)
+                    break;
+            }
+            state.lead = lead;
+            state.follow = follow;
+            state.leadIsExiting = ((_a = state.lead) === null || _a === void 0 ? void 0 : _a.presence) === Presence.Exiting;
+            crossfader.setOptions({
+                lead: lead,
+                follow: follow,
+                prevValues: prevValues,
+                crossfadeOpacity: (follow === null || follow === void 0 ? void 0 : follow.isPresenceRoot) || (lead === null || lead === void 0 ? void 0 : lead.isPresenceRoot),
+            });
+            if (state.follow &&
+                (prevState.lead !== state.lead ||
+                    prevState.leadIsExiting !== state.leadIsExiting)) {
+                needsCrossfadeAnimation = true;
+            }
+        },
+        animate: function (child, shouldCrossfade) {
+            if (shouldCrossfade === void 0) { shouldCrossfade = false; }
+            if (child === state.lead) {
+                if (shouldCrossfade) {
+                    /**
+                     * Point a lead to itself in case it was previously pointing
+                     * to a different visual element
+                     */
+                    child.pointTo(state.lead);
+                }
+                else {
+                    child.setVisibility(true);
+                }
+                var config = {};
+                if (child.presence === Presence.Entering) {
+                    config.originBox = getFollowViewportBox();
+                }
+                else if (child.presence === Presence.Exiting) {
+                    config.targetBox = getFollowLayout();
+                }
+                if (needsCrossfadeAnimation) {
+                    needsCrossfadeAnimation = false;
+                    var transition = child.getDefaultTransition();
+                    child.presence === Presence.Entering
+                        ? crossfader.toLead(transition)
+                        : crossfader.fromLead(transition);
+                }
+                child.notifyLayoutReady(config);
+            }
+            else {
+                if (shouldCrossfade) {
+                    state.lead && child.pointTo(state.lead);
+                }
+                else {
+                    child.setVisibility(false);
+                }
+            }
+        },
+    };
+}
+
+function resetRotate(child) {
+    // If there's no detected rotation values, we can early return without a forced render.
+    var hasRotate = false;
+    // Keep a record of all the values we've reset
+    var resetValues = {};
+    // Check the rotate value of all axes and reset to 0
+    for (var i = 0; i < transformAxes.length; i++) {
+        var axis = transformAxes[i];
+        var key = "rotate" + axis;
+        // If this rotation doesn't exist as a motion value, then we don't
+        // need to reset it
+        if (!child.hasValue(key) || child.getStaticValue(key) === 0)
+            continue;
+        hasRotate = true;
+        // Record the rotation and then temporarily set it to 0
+        resetValues[key] = child.getStaticValue(key);
+        child.setStaticValue(key, 0);
+    }
+    // If there's no rotation values, we don't need to do any more.
+    if (!hasRotate)
+        return;
+    // Force a render of this element to apply the transform with all rotations
+    // set to 0.
+    child.syncRender();
+    // Put back all the values we reset
+    for (var key in resetValues) {
+        child.setStaticValue(key, resetValues[key]);
+    }
+    // Schedule a render for the next frame. This ensures we won't visually
+    // see the element with the reset rotate value applied.
+    child.scheduleRender();
+}
+
+/**
+ * @public
+ */
+var AnimateSharedLayout = /** @class */ (function (_super) {
+    tslib.__extends(AnimateSharedLayout, _super);
+    function AnimateSharedLayout() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        /**
+         * A list of all the children in the shared layout
+         */
+        _this.children = new Set();
+        /**
+         * As animate components with a defined `layoutId` are added/removed to the tree,
+         * we store them in order. When one is added, it will animate out from the
+         * previous one, and when it's removed, it'll animate to the previous one.
+         */
+        _this.stacks = new Map();
+        /**
+         * Track whether the component has mounted. If it hasn't, the presence of added children
+         * are set to Present, whereas if it has they're considered Entering
+         */
+        _this.hasMounted = false;
+        /**
+         * Track whether we already have an update scheduled. If we don't, we'll run snapshots
+         * and schedule one.
+         */
+        _this.updateScheduled = false;
+        /**
+         * Tracks whether we already have a render scheduled. If we don't, we'll force one with this.forceRender
+         */
+        _this.renderScheduled = false;
+        /**
+         * The methods provided to all children in the shared layout tree.
+         */
+        _this.syncContext = tslib.__assign(tslib.__assign({}, createBatcher()), { syncUpdate: function (force) { return _this.scheduleUpdate(force); }, forceUpdate: function () {
+                // By copying syncContext to itself, when this component re-renders it'll also re-render
+                // all children subscribed to the SharedLayout context.
+                _this.syncContext = tslib.__assign({}, _this.syncContext);
+                _this.scheduleUpdate(true);
+            }, register: function (child) { return _this.addChild(child); }, remove: function (child) { return _this.removeChild(child); } });
+        return _this;
+    }
+    AnimateSharedLayout.prototype.componentDidMount = function () {
+        this.hasMounted = true;
+    };
+    AnimateSharedLayout.prototype.componentDidUpdate = function () {
+        this.startLayoutAnimation();
+    };
+    AnimateSharedLayout.prototype.shouldComponentUpdate = function () {
+        this.renderScheduled = true;
+        return true;
+    };
+    AnimateSharedLayout.prototype.startLayoutAnimation = function () {
+        var _this = this;
+        /**
+         * Reset update and render scheduled status
+         */
+        this.renderScheduled = this.updateScheduled = false;
+        var type = this.props.type;
+        /**
+         * Update presence metadata based on the latest AnimatePresence status.
+         * This is a kind of goofy way of dealing with this, perhaps there's a better model to find.
+         */
+        this.children.forEach(function (child) {
+            if (!child.isPresent) {
+                child.presence = Presence.Exiting;
+            }
+            else if (child.presence !== Presence.Entering) {
+                child.presence =
+                    child.presence === Presence.Exiting
+                        ? Presence.Entering
+                        : Presence.Present;
+            }
+        });
+        this.updateStacks();
+        /**
+         * Create a handler which we can use to flush the children animations
+         */
+        var handler = {
+            measureLayout: function (child) { return child.updateLayoutMeasurement(); },
+            layoutReady: function (child) {
+                if (child.getLayoutId() !== undefined) {
+                    var stack = _this.getStack(child);
+                    stack.animate(child, type === "crossfade");
+                }
+                else {
+                    child.notifyLayoutReady();
+                }
+            },
+            parent: this.context.visualElement,
+        };
+        /**
+         * Shared layout animations can be used without the AnimateSharedLayout wrapping component.
+         * This requires some co-ordination across components to stop layout thrashing
+         * and ensure measurements are taken at the correct time.
+         *
+         * Here we use that same mechanism of schedule/flush.
+         */
+        this.children.forEach(function (child) { return _this.syncContext.add(child); });
+        this.syncContext.flush(handler);
+        /**
+         * Clear snapshots so subsequent rerenders don't retain memory of outgoing components
+         */
+        this.stacks.forEach(function (stack) { return stack.clearSnapshot(); });
+    };
+    AnimateSharedLayout.prototype.updateStacks = function () {
+        this.stacks.forEach(function (stack) { return stack.updateLeadAndFollow(); });
+    };
+    AnimateSharedLayout.prototype.scheduleUpdate = function (force) {
+        if (force === void 0) { force = false; }
+        if (!(force || !this.updateScheduled))
+            return;
+        /**
+         * Flag we've scheduled an update
+         */
+        this.updateScheduled = true;
+        /**
+         * Write: Reset rotation transforms so bounding boxes can be accurately measured.
+         */
+        this.children.forEach(function (child) { return resetRotate(child); });
+        /**
+         * Read: Snapshot children
+         */
+        this.children.forEach(function (child) { return child.snapshotViewportBox(); });
+        /**
+         * Every child keeps a local snapshot, but we also want to record
+         * snapshots of the visible children as, if they're are being removed
+         * in this render, we can still access them.
+         *
+         * TODO: What would be better here is doing a single loop where we
+         * only snapshotViewportBoxes of undefined layoutIds and then one for each stack
+         */
+        this.stacks.forEach(function (stack) { return stack.updateSnapshot(); });
+        /**
+         * Force a rerender by setting state if we aren't already going to render.
+         */
+        if (force || !this.renderScheduled) {
+            this.renderScheduled = true;
+            this.forceUpdate();
+        }
+    };
+    AnimateSharedLayout.prototype.addChild = function (child) {
+        this.children.add(child);
+        this.addToStack(child);
+        child.presence = this.hasMounted ? Presence.Entering : Presence.Present;
+    };
+    AnimateSharedLayout.prototype.removeChild = function (child) {
+        this.scheduleUpdate();
+        this.children.delete(child);
+        this.removeFromStack(child);
+    };
+    AnimateSharedLayout.prototype.addToStack = function (child) {
+        var stack = this.getStack(child);
+        stack === null || stack === void 0 ? void 0 : stack.add(child);
+    };
+    AnimateSharedLayout.prototype.removeFromStack = function (child) {
+        var stack = this.getStack(child);
+        stack === null || stack === void 0 ? void 0 : stack.remove(child);
+    };
+    /**
+     * Return a stack of animate children based on the provided layoutId.
+     * Will create a stack if none currently exists with that layoutId.
+     */
+    AnimateSharedLayout.prototype.getStack = function (child) {
+        var id = child.getLayoutId();
+        if (id === undefined)
+            return;
+        // Create stack if it doesn't already exist
+        !this.stacks.has(id) && this.stacks.set(id, layoutStack());
+        return this.stacks.get(id);
+    };
+    AnimateSharedLayout.prototype.render = function () {
+        return (React__namespace.createElement(SharedLayoutContext.Provider, { value: this.syncContext }, this.props.children));
+    };
+    AnimateSharedLayout.contextType = MotionContext;
+    return AnimateSharedLayout;
+}(React__namespace.Component));
+
+/**
+ * `MotionConfig` is used to set configuration options for all children `motion` components.
+ *
+ * ```jsx
+ * import { motion, MotionConfig } from "framer-motion"
+ *
+ * export function App() {
+ *   return (
+ *     <MotionConfig transition={{ type: "spring" }}>
+ *       <motion.div animate={{ x: 100 }} />
+ *     </MotionConfig>
+ *   )
+ * }
+ * ```
+ *
+ * @public
+ */
+function MotionConfig(_a) {
+    var children = _a.children, config = tslib.__rest(_a, ["children"]);
+    /**
+     * Inherit props from any parent MotionConfig components
+     */
+    config = tslib.__assign(tslib.__assign({}, React.useContext(MotionConfigContext)), config);
+    /**
+     * Don't allow isStatic to change between renders as it affects how many hooks
+     * motion components fire.
+     */
+    config.isStatic = useConstant(function () { return config.isStatic; });
+    /**
+     * Creating a new config context object will re-render every `motion` component
+     * every time it renders. So we only want to create a new one sparingly.
+     */
+    var transitionDependency = typeof config.transition === "object"
+        ? config.transition.toString()
+        : "";
+    var context = React.useMemo(function () { return config; }, [
+        transitionDependency,
+        config.transformPagePoint,
+    ]);
+    return (React__namespace.createElement(MotionConfigContext.Provider, { value: context }, children));
+}
+
+/**
+ * Used in conjunction with the `m` component to reduce bundle size.
+ *
+ * `m` is a version of the `motion` component that only loads functionality
+ * critical for the initial render.
+ *
+ * `LazyMotion` can then be used to either synchronously or asynchronously
+ * load animation and gesture support.
+ *
+ * ```jsx
+ * // Synchronous loading
+ * import { LazyMotion, m, domAnimations } from "framer-motion"
+ *
+ * function App() {
+ *   return (
+ *     <LazyMotion features={domAnimations}>
+ *       <m.div animate={{ scale: 2 }} />
+ *     </LazyMotion>
+ *   )
+ * }
+ *
+ * // Asynchronous loading
+ * import { LazyMotion, m } from "framer-motion"
+ *
+ * function App() {
+ *   return (
+ *     <LazyMotion features={() => import('./path/to/domAnimations')}>
+ *       <m.div animate={{ scale: 2 }} />
+ *     </LazyMotion>
+ *   )
+ * }
+ * ```
+ *
+ * @public
+ */
+function LazyMotion(_a) {
+    var children = _a.children, features = _a.features, _b = _a.strict, strict = _b === void 0 ? false : _b;
+    var _c = tslib.__read(React.useState(!isLazyBundle(features)), 2), setIsLoaded = _c[1];
+    var loadedRenderer = React.useRef(undefined);
+    /**
+     * If this is a synchronous load, load features immediately
+     */
+    if (!isLazyBundle(features)) {
+        var renderer = features.renderer, loadedFeatures = tslib.__rest(features, ["renderer"]);
+        loadedRenderer.current = renderer;
+        loadFeatures(loadedFeatures);
+    }
+    React.useEffect(function () {
+        if (isLazyBundle(features)) {
+            features().then(function (_a) {
+                var renderer = _a.renderer, loadedFeatures = tslib.__rest(_a, ["renderer"]);
+                loadFeatures(loadedFeatures);
+                loadedRenderer.current = renderer;
+                setIsLoaded(true);
+            });
+        }
+    }, []);
+    return (React__namespace.createElement(LazyContext.Provider, { value: { renderer: loadedRenderer.current, strict: strict } }, children));
+}
+function isLazyBundle(features) {
+    return typeof features === "function";
+}
+
+/**
+ * @public
+ */
+var domAnimation = tslib.__assign(tslib.__assign({ renderer: createDomVisualElement }, animations), gestureAnimations);
+
+/**
+ * @public
+ */
+var domMax = tslib.__assign(tslib.__assign(tslib.__assign({}, domAnimation), drag), layoutAnimations);
+
+/**
+ * Creates a `MotionValue` to track the state and velocity of a value.
+ *
+ * Usually, these are created automatically. For advanced use-cases, like use with `useTransform`, you can create `MotionValue`s externally and pass them into the animated component via the `style` prop.
+ *
+ * @library
+ *
+ * ```jsx
+ * export function MyComponent() {
+ *   const scale = useMotionValue(1)
+ *
+ *   return <Frame scale={scale} />
+ * }
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * export const MyComponent = () => {
+ *   const scale = useMotionValue(1)
+ *
+ *   return <motion.div style={{ scale }} />
+ * }
+ * ```
+ *
+ * @param initial - The initial state.
+ *
+ * @public
+ */
+function useMotionValue(initial) {
+    var value = useConstant(function () { return motionValue(initial); });
+    /**
+     * If this motion value is being used in static mode, like on
+     * the Framer canvas, force components to rerender when the motion
+     * value is updated.
+     */
+    var isStatic = React.useContext(MotionConfigContext).isStatic;
+    if (isStatic) {
+        var _a = tslib.__read(React.useState(initial), 2), setLatest_1 = _a[1];
+        React.useEffect(function () { return value.onChange(setLatest_1); }, []);
+    }
+    return value;
+}
+
+function useOnChange(value, callback) {
+    React.useEffect(function () {
+        if (isMotionValue(value))
+            return value.onChange(callback);
+    }, [callback]);
+}
+function useMultiOnChange(values, handler) {
+    React.useEffect(function () {
+        var subscriptions = values.map(function (value) { return value.onChange(handler); });
+        return function () { return subscriptions.forEach(function (unsubscribe) { return unsubscribe(); }); };
+    });
+}
+
+function useCombineMotionValues(values, combineValues) {
+    /**
+     * Initialise the returned motion value. This remains the same between renders.
+     */
+    var value = useMotionValue(combineValues());
+    /**
+     * Create a function that will update the template motion value with the latest values.
+     * This is pre-bound so whenever a motion value updates it can schedule its
+     * execution in Framesync. If it's already been scheduled it won't be fired twice
+     * in a single frame.
+     */
+    var updateValue = function () { return value.set(combineValues()); };
+    /**
+     * Synchronously update the motion value with the latest values during the render.
+     * This ensures that within a React render, the styles applied to the DOM are up-to-date.
+     */
+    updateValue();
+    /**
+     * Subscribe to all motion values found within the template. Whenever any of them change,
+     * schedule an update.
+     */
+    useMultiOnChange(values, function () { return sync__default['default'].update(updateValue, false, true); });
+    return value;
+}
+
+/**
+ * Combine multiple motion values into a new one using a string template literal.
+ *
+ * ```jsx
+ * import {
+ *   motion,
+ *   useSpring,
+ *   useMotionValue,
+ *   useMotionTemplate
+ * } from "framer-motion"
+ *
+ * function Component() {
+ *   const shadowX = useSpring(0)
+ *   const shadowY = useMotionValue(0)
+ *   const shadow = useMotionTemplate`drop-shadow(${shadowX}px ${shadowY}px 20px rgba(0,0,0,0.3))`
+ *
+ *   return <motion.div style={{ filter: shadow }} />
+ * }
+ * ```
+ *
+ * @public
+ */
+function useMotionTemplate(fragments) {
+    var values = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        values[_i - 1] = arguments[_i];
+    }
+    /**
+     * Create a function that will build a string from the latest motion values.
+     */
+    var numFragments = fragments.length;
+    function buildValue() {
+        var output = "";
+        for (var i = 0; i < numFragments; i++) {
+            output += fragments[i];
+            var value = values[i];
+            if (value)
+                output += values[i].get();
+        }
+        return output;
+    }
+    return useCombineMotionValues(values, buildValue);
+}
+
+var isCustomValueType = function (v) {
+    return typeof v === "object" && v.mix;
+};
+var getMixer = function (v) { return (isCustomValueType(v) ? v.mix : undefined); };
+function transform() {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
+    }
+    var useImmediate = !Array.isArray(args[0]);
+    var argOffset = useImmediate ? 0 : -1;
+    var inputValue = args[0 + argOffset];
+    var inputRange = args[1 + argOffset];
+    var outputRange = args[2 + argOffset];
+    var options = args[3 + argOffset];
+    var interpolator = popmotion.interpolate(inputRange, outputRange, tslib.__assign({ mixer: getMixer(outputRange[0]) }, options));
+    return useImmediate ? interpolator(inputValue) : interpolator;
+}
+
+function useTransform(input, inputRangeOrTransformer, outputRange, options) {
+    var transformer = typeof inputRangeOrTransformer === "function"
+        ? inputRangeOrTransformer
+        : transform(inputRangeOrTransformer, outputRange, options);
+    return Array.isArray(input)
+        ? useListTransform(input, transformer)
+        : useListTransform([input], function (_a) {
+            var _b = tslib.__read(_a, 1), latest = _b[0];
+            return transformer(latest);
+        });
+}
+function useListTransform(values, transformer) {
+    var latest = useConstant(function () { return []; });
+    return useCombineMotionValues(values, function () {
+        latest.length = 0;
+        var numValues = values.length;
+        for (var i = 0; i < numValues; i++) {
+            latest[i] = values[i].get();
+        }
+        return transformer(latest);
+    });
+}
+
+/**
+ * Creates a `MotionValue` that, when `set`, will use a spring animation to animate to its new state.
+ *
+ * It can either work as a stand-alone `MotionValue` by initialising it with a value, or as a subscriber
+ * to another `MotionValue`.
+ *
+ * @remarks
+ *
+ * ```jsx
+ * const x = useSpring(0, { stiffness: 300 })
+ * const y = useSpring(x, { damping: 10 })
+ * ```
+ *
+ * @param inputValue - `MotionValue` or number. If provided a `MotionValue`, when the input `MotionValue` changes, the created `MotionValue` will spring towards that value.
+ * @param springConfig - Configuration options for the spring.
+ * @returns `MotionValue`
+ *
+ * @public
+ */
+function useSpring(source, config) {
+    if (config === void 0) { config = {}; }
+    var isStatic = React.useContext(MotionConfigContext).isStatic;
+    var activeSpringAnimation = React.useRef(null);
+    var value = useMotionValue(isMotionValue(source) ? source.get() : source);
+    React.useMemo(function () {
+        return value.attach(function (v, set) {
+            /**
+             * A more hollistic approach to this might be to use isStatic to fix VisualElement animations
+             * at that level, but this will work for now
+             */
+            if (isStatic)
+                return set(v);
+            if (activeSpringAnimation.current) {
+                activeSpringAnimation.current.stop();
+            }
+            activeSpringAnimation.current = popmotion.animate(tslib.__assign(tslib.__assign({ from: value.get(), to: v, velocity: value.getVelocity() }, config), { onUpdate: set }));
+            return value.get();
+        });
+    }, Object.values(config));
+    useOnChange(source, function (v) { return value.set(parseFloat(v)); });
+    return value;
+}
+
+/**
+ * Creates a `MotionValue` that updates when the velocity of the provided `MotionValue` changes.
+ *
+ * ```javascript
+ * const x = useMotionValue(0)
+ * const xVelocity = useVelocity(x)
+ * const xAcceleration = useVelocity(xVelocity)
+ * ```
+ *
+ * @public
+ */
+function useVelocity(value) {
+    var velocity = useMotionValue(value.getVelocity());
+    React.useEffect(function () {
+        return value.velocityUpdateSubscribers.add(function (newVelocity) {
+            velocity.set(newVelocity);
+        });
+    }, [value]);
+    return velocity;
+}
+
+function createScrollMotionValues() {
+    return {
+        scrollX: motionValue(0),
+        scrollY: motionValue(0),
+        scrollXProgress: motionValue(0),
+        scrollYProgress: motionValue(0),
+    };
+}
+function setProgress(offset, maxOffset, value) {
+    value.set(!offset || !maxOffset ? 0 : offset / maxOffset);
+}
+function createScrollUpdater(values, getOffsets) {
+    var update = function () {
+        var _a = getOffsets(), xOffset = _a.xOffset, yOffset = _a.yOffset, xMaxOffset = _a.xMaxOffset, yMaxOffset = _a.yMaxOffset;
+        // Set absolute positions
+        values.scrollX.set(xOffset);
+        values.scrollY.set(yOffset);
+        // Set 0-1 progress
+        setProgress(xOffset, xMaxOffset, values.scrollXProgress);
+        setProgress(yOffset, yMaxOffset, values.scrollYProgress);
+    };
+    update();
+    return update;
+}
+
+var getElementScrollOffsets = function (element) { return function () {
+    return {
+        xOffset: element.scrollLeft,
+        yOffset: element.scrollTop,
+        xMaxOffset: element.scrollWidth - element.offsetWidth,
+        yMaxOffset: element.scrollHeight - element.offsetHeight,
+    };
+}; };
+/**
+ * Returns MotionValues that update when the provided element scrolls:
+ *
+ * - `scrollX` — Horizontal scroll distance in pixels.
+ * - `scrollY` — Vertical scroll distance in pixels.
+ * - `scrollXProgress` — Horizontal scroll progress between `0` and `1`.
+ * - `scrollYProgress` — Vertical scroll progress between `0` and `1`.
+ *
+ * This element must be set to `overflow: scroll` on either or both axes to report scroll offset.
+ *
+ * @library
+ *
+ * ```jsx
+ * import * as React from "react"
+ * import {
+ *   Frame,
+ *   useElementScroll,
+ *   useTransform
+ * } from "framer"
+ *
+ * export function MyComponent() {
+ *   const ref = React.useRef()
+ *   const { scrollYProgress } = useElementScroll(ref)
+ *
+ *   return (
+ *     <Frame ref={ref}>
+ *       <Frame scaleX={scrollYProgress} />
+ *     </Frame>
+ *   )
+ * }
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * export const MyComponent = () => {
+ *   const ref = useRef()
+ *   const { scrollYProgress } = useElementScroll(ref)
+ *
+ *   return (
+ *     <div ref={ref}>
+ *       <motion.div style={{ scaleX: scrollYProgress }} />
+ *     </div>
+ *   )
+ * }
+ * ```
+ *
+ * @public
+ */
+function useElementScroll(ref) {
+    var values = useConstant(createScrollMotionValues);
+    useIsomorphicLayoutEffect(function () {
+        var element = ref.current;
+        heyListen.invariant(!!element, "ref provided to useScroll must be passed into a HTML element.");
+        if (!element)
+            return;
+        var updateScrollValues = createScrollUpdater(values, getElementScrollOffsets(element));
+        var scrollListener = addDomEvent(element, "scroll", updateScrollValues, { passive: true });
+        var resizeListener = addDomEvent(element, "resize", updateScrollValues);
+        return function () {
+            scrollListener && scrollListener();
+            resizeListener && resizeListener();
+        };
+    }, []);
+    return values;
+}
+
+var viewportScrollValues;
+function getViewportScrollOffsets() {
+    return {
+        xOffset: window.pageXOffset,
+        yOffset: window.pageYOffset,
+        xMaxOffset: document.body.clientWidth - window.innerWidth,
+        yMaxOffset: document.body.clientHeight - window.innerHeight,
+    };
+}
+var hasListeners = false;
+function addEventListeners() {
+    hasListeners = true;
+    if (typeof window === "undefined")
+        return;
+    var updateScrollValues = createScrollUpdater(viewportScrollValues, getViewportScrollOffsets);
+    addDomEvent(window, "scroll", updateScrollValues, { passive: true });
+    addDomEvent(window, "resize", updateScrollValues);
+}
+/**
+ * Returns MotionValues that update when the viewport scrolls:
+ *
+ * - `scrollX` — Horizontal scroll distance in pixels.
+ * - `scrollY` — Vertical scroll distance in pixels.
+ * - `scrollXProgress` — Horizontal scroll progress between `0` and `1`.
+ * - `scrollYProgress` — Vertical scroll progress between `0` and `1`.
+ *
+ * **Warning:** Setting `body` or `html` to `height: 100%` or similar will break the `Progress`
+ * values as this breaks the browser's capability to accurately measure the page length.
+ *
+ * @library
+ *
+ * ```jsx
+ * import * as React from "react"
+ * import {
+ *   Frame,
+ *   useViewportScroll,
+ *   useTransform
+ * } from "framer"
+ *
+ * export function MyComponent() {
+ *   const { scrollYProgress } = useViewportScroll()
+ *   return <Frame scaleX={scrollYProgress} />
+ * }
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * export const MyComponent = () => {
+ *   const { scrollYProgress } = useViewportScroll()
+ *   return <motion.div style={{ scaleX: scrollYProgress }} />
+ * }
+ * ```
+ *
+ * @public
+ */
+function useViewportScroll() {
+    /**
+     * Lazy-initialise the viewport scroll values
+     */
+    if (!viewportScrollValues) {
+        viewportScrollValues = createScrollMotionValues();
+    }
+    useIsomorphicLayoutEffect(function () {
+        !hasListeners && addEventListeners();
+    }, []);
+    return viewportScrollValues;
+}
+
+// Does this device prefer reduced motion? Returns `null` server-side.
+var prefersReducedMotion;
+function initPrefersReducedMotion() {
+    prefersReducedMotion = motionValue(null);
+    if (typeof window === "undefined")
+        return;
+    if (window.matchMedia) {
+        var motionMediaQuery_1 = window.matchMedia("(prefers-reduced-motion)");
+        var setReducedMotionPreferences = function () {
+            return prefersReducedMotion.set(motionMediaQuery_1.matches);
+        };
+        motionMediaQuery_1.addListener(setReducedMotionPreferences);
+        setReducedMotionPreferences();
+    }
+    else {
+        prefersReducedMotion.set(false);
+    }
+}
+/**
+ * A hook that returns `true` if we should be using reduced motion based on the current device's Reduced Motion setting.
+ *
+ * This can be used to implement changes to your UI based on Reduced Motion. For instance, replacing motion-sickness inducing
+ * `x`/`y` animations with `opacity`, disabling the autoplay of background videos, or turning off parallax motion.
+ *
+ * It will actively respond to changes and re-render your components with the latest setting.
+ *
+ * ```jsx
+ * export function Sidebar({ isOpen }) {
+ *   const shouldReduceMotion = useReducedMotion()
+ *   const closedX = shouldReduceMotion ? 0 : "-100%"
+ *
+ *   return (
+ *     <motion.div animate={{
+ *       opacity: isOpen ? 1 : 0,
+ *       x: isOpen ? 0 : closedX
+ *     }} />
+ *   )
+ * }
+ * ```
+ *
+ * @return boolean
+ *
+ * @public
+ */
+function useReducedMotion() {
+    /**
+     * Lazy initialisation of prefersReducedMotion
+     */
+    !prefersReducedMotion && initPrefersReducedMotion();
+    var _a = tslib.__read(React.useState(prefersReducedMotion.get()), 2), shouldReduceMotion = _a[0], setShouldReduceMotion = _a[1];
+    useOnChange(prefersReducedMotion, setShouldReduceMotion);
+    return shouldReduceMotion;
+}
+
+/**
+ * @public
+ */
+function animationControls() {
+    /**
+     * Track whether the host component has mounted.
+     */
+    var hasMounted = false;
+    /**
+     * Pending animations that are started before a component is mounted.
+     * TODO: Remove this as animations should only run in effects
+     */
+    var pendingAnimations = [];
+    /**
+     * A collection of linked component animation controls.
+     */
+    var subscribers = new Set();
+    var controls = {
+        subscribe: function (visualElement) {
+            subscribers.add(visualElement);
+            return function () { return void subscribers.delete(visualElement); };
+        },
+        start: function (definition, transitionOverride) {
+            /**
+             * TODO: We only perform this hasMounted check because in Framer we used to
+             * encourage the ability to start an animation within the render phase. This
+             * isn't behaviour concurrent-safe so when we make Framer concurrent-safe
+             * we can ditch this.
+             */
+            if (hasMounted) {
+                var animations_1 = [];
+                subscribers.forEach(function (visualElement) {
+                    animations_1.push(animateVisualElement(visualElement, definition, {
+                        transitionOverride: transitionOverride,
+                    }));
+                });
+                return Promise.all(animations_1);
+            }
+            else {
+                return new Promise(function (resolve) {
+                    pendingAnimations.push({
+                        animation: [definition, transitionOverride],
+                        resolve: resolve,
+                    });
+                });
+            }
+        },
+        set: function (definition) {
+            heyListen.invariant(hasMounted, "controls.set() should only be called after a component has mounted. Consider calling within a useEffect hook.");
+            return subscribers.forEach(function (visualElement) {
+                setValues(visualElement, definition);
+            });
+        },
+        stop: function () {
+            subscribers.forEach(function (visualElement) {
+                stopAnimation(visualElement);
+            });
+        },
+        mount: function () {
+            hasMounted = true;
+            pendingAnimations.forEach(function (_a) {
+                var animation = _a.animation, resolve = _a.resolve;
+                controls.start.apply(controls, tslib.__spreadArray([], tslib.__read(animation))).then(resolve);
+            });
+            return function () {
+                hasMounted = false;
+                controls.stop();
+            };
+        },
+    };
+    return controls;
+}
+
+/**
+ * Creates `AnimationControls`, which can be used to manually start, stop
+ * and sequence animations on one or more components.
+ *
+ * The returned `AnimationControls` should be passed to the `animate` property
+ * of the components you want to animate.
+ *
+ * These components can then be animated with the `start` method.
+ *
+ * @library
+ *
+ * ```jsx
+ * import * as React from 'react'
+ * import { Frame, useAnimation } from 'framer'
+ *
+ * export function MyComponent(props) {
+ *    const controls = useAnimation()
+ *
+ *    controls.start({
+ *        x: 100,
+ *        transition: { duration: 0.5 },
+ *    })
+ *
+ *    return <Frame animate={controls} />
+ * }
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * import * as React from 'react'
+ * import { motion, useAnimation } from 'framer-motion'
+ *
+ * export function MyComponent(props) {
+ *    const controls = useAnimation()
+ *
+ *    controls.start({
+ *        x: 100,
+ *        transition: { duration: 0.5 },
+ *    })
+ *
+ *    return <motion.div animate={controls} />
+ * }
+ * ```
+ *
+ * @returns Animation controller with `start` and `stop` methods
+ *
+ * @public
+ */
+function useAnimation() {
+    var controls = useConstant(animationControls);
+    React.useEffect(controls.mount, []);
+    return controls;
+}
+
+/**
+ * Cycles through a series of visual properties. Can be used to toggle between or cycle through animations. It works similar to `useState` in React. It is provided an initial array of possible states, and returns an array of two arguments.
+ *
+ * @library
+ *
+ * ```jsx
+ * import * as React from "react"
+ * import { Frame, useCycle } from "framer"
+ *
+ * export function MyComponent() {
+ *   const [x, cycleX] = useCycle(0, 50, 100)
+ *
+ *   return (
+ *     <Frame
+ *       animate={{ x: x }}
+ *       onTap={() => cycleX()}
+ *      />
+ *    )
+ * }
+ * ```
+ *
+ * @motion
+ *
+ * An index value can be passed to the returned `cycle` function to cycle to a specific index.
+ *
+ * ```jsx
+ * import * as React from "react"
+ * import { motion, useCycle } from "framer-motion"
+ *
+ * export const MyComponent = () => {
+ *   const [x, cycleX] = useCycle(0, 50, 100)
+ *
+ *   return (
+ *     <motion.div
+ *       animate={{ x: x }}
+ *       onTap={() => cycleX()}
+ *      />
+ *    )
+ * }
+ * ```
+ *
+ * @param items - items to cycle through
+ * @returns [currentState, cycleState]
+ *
+ * @public
+ */
+function useCycle() {
+    var items = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        items[_i] = arguments[_i];
+    }
+    var index = React.useRef(0);
+    var _a = tslib.__read(React.useState(items[index.current]), 2), item = _a[0], setItem = _a[1];
+    return [
+        item,
+        function (next) {
+            index.current =
+                typeof next !== "number"
+                    ? popmotion.wrap(0, items.length, index.current + 1)
+                    : next;
+            setItem(items[index.current]);
+        },
+    ];
+}
+
+/**
+ * Can manually trigger a drag gesture on one or more `drag`-enabled `motion` components.
+ *
+ * @library
+ *
+ * ```jsx
+ * const dragControls = useDragControls()
+ *
+ * function startDrag(event) {
+ *   dragControls.start(event, { snapToCursor: true })
+ * }
+ *
+ * return (
+ *   <>
+ *     <Frame onTapStart={startDrag} />
+ *     <Frame drag="x" dragControls={dragControls} />
+ *   </>
+ * )
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * const dragControls = useDragControls()
+ *
+ * function startDrag(event) {
+ *   dragControls.start(event, { snapToCursor: true })
+ * }
+ *
+ * return (
+ *   <>
+ *     <div onPointerDown={startDrag} />
+ *     <motion.div drag="x" dragControls={dragControls} />
+ *   </>
+ * )
+ * ```
+ *
+ * @public
+ */
+var DragControls = /** @class */ (function () {
+    function DragControls() {
+        this.componentControls = new Set();
+    }
+    /**
+     * Subscribe a component's internal `VisualElementDragControls` to the user-facing API.
+     *
+     * @internal
+     */
+    DragControls.prototype.subscribe = function (controls) {
+        var _this = this;
+        this.componentControls.add(controls);
+        return function () { return _this.componentControls.delete(controls); };
+    };
+    /**
+     * Start a drag gesture on every `motion` component that has this set of drag controls
+     * passed into it via the `dragControls` prop.
+     *
+     * ```jsx
+     * dragControls.start(e, {
+     *   snapToCursor: true
+     * })
+     * ```
+     *
+     * @param event - PointerEvent
+     * @param options - Options
+     *
+     * @public
+     */
+    DragControls.prototype.start = function (event, options) {
+        this.componentControls.forEach(function (controls) {
+            controls.start(event.nativeEvent || event, options);
+        });
+    };
+    DragControls.prototype.updateConstraints = function () {
+        this.componentControls.forEach(function (controls) {
+            controls.prepareBoundingBox();
+            controls.resolveDragConstraints();
+        });
+    };
+    return DragControls;
+}());
+var createDragControls = function () { return new DragControls(); };
+/**
+ * Usually, dragging is initiated by pressing down on a `motion` component with a `drag` prop
+ * and moving it. For some use-cases, for instance clicking at an arbitrary point on a video scrubber, we
+ * might want to initiate that dragging from a different component than the draggable one.
+ *
+ * By creating a `dragControls` using the `useDragControls` hook, we can pass this into
+ * the draggable component's `dragControls` prop. It exposes a `start` method
+ * that can start dragging from pointer events on other components.
+ *
+ * @library
+ *
+ * ```jsx
+ * const dragControls = useDragControls()
+ *
+ * function startDrag(event) {
+ *   dragControls.start(event, { snapToCursor: true })
+ * }
+ *
+ * return (
+ *   <>
+ *     <Frame onTapStart={startDrag} />
+ *     <Frame drag="x" dragControls={dragControls} />
+ *   </>
+ * )
+ * ```
+ *
+ * @motion
+ *
+ * ```jsx
+ * const dragControls = useDragControls()
+ *
+ * function startDrag(event) {
+ *   dragControls.start(event, { snapToCursor: true })
+ * }
+ *
+ * return (
+ *   <>
+ *     <div onPointerDown={startDrag} />
+ *     <motion.div drag="x" dragControls={dragControls} />
+ *   </>
+ * )
+ * ```
+ *
+ * @public
+ */
+function useDragControls() {
+    return useConstant(createDragControls);
+}
+
+var createObject = function () { return ({}); };
+var stateVisualElement = visualElement({
+    build: function () { },
+    measureViewportBox: axisBox,
+    resetTransform: function () { },
+    restoreTransform: function () { },
+    removeValueFromRenderState: function () { },
+    render: function () { },
+    scrapeMotionValuesFromProps: createObject,
+    readValueFromInstance: function (_state, key, options) {
+        return options.initialState[key] || 0;
+    },
+    makeTargetAnimatable: function (element, _a) {
+        var transition = _a.transition, transitionEnd = _a.transitionEnd, target = tslib.__rest(_a, ["transition", "transitionEnd"]);
+        var origin = getOrigin(target, transition || {}, element);
+        checkTargetForNewValues(element, target, origin);
+        return tslib.__assign({ transition: transition, transitionEnd: transitionEnd }, target);
+    },
+});
+var useVisualState = makeUseVisualState({
+    scrapeMotionValuesFromProps: createObject,
+    createRenderState: createObject,
+});
+/**
+ * This is not an officially supported API and may be removed
+ * on any version.
+ * @internal
+ */
+function useAnimatedState(initialState) {
+    var _a = tslib.__read(React.useState(initialState), 2), animationState = _a[0], setAnimationState = _a[1];
+    var visualState = useVisualState({}, false);
+    var element = useConstant(function () {
+        return stateVisualElement({ props: {}, visualState: visualState }, { initialState: initialState });
+    });
+    React.useEffect(function () {
+        element.mount({});
+        return element.unmount();
+    }, []);
+    React.useEffect(function () {
+        element.setProps({
+            onUpdate: function (v) { return setAnimationState(tslib.__assign({}, v)); },
+        });
+    });
+    var startAnimation = useConstant(function () { return function (animationDefinition) {
+        return animateVisualElement(element, animationDefinition);
+    }; });
+    return [animationState, startAnimation];
+}
+
+// Keep things reasonable and avoid scale: Infinity. In practise we might need
+// to add another value, opacity, that could interpolate scaleX/Y [0,0.01] => [0,1]
+// to simply hide content at unreasonable scales.
+var maxScale = 100000;
+var invertScale = function (scale) {
+    return scale > 0.001 ? 1 / scale : maxScale;
+};
+var hasWarned = false;
+/**
+ * Returns a `MotionValue` each for `scaleX` and `scaleY` that update with the inverse
+ * of their respective parent scales.
+ *
+ * This is useful for undoing the distortion of content when scaling a parent component.
+ *
+ * By default, `useInvertedScale` will automatically fetch `scaleX` and `scaleY` from the nearest parent.
+ * By passing other `MotionValue`s in as `useInvertedScale({ scaleX, scaleY })`, it will invert the output
+ * of those instead.
+ *
+ * @motion
+ *
+ * ```jsx
+ * const MyComponent = () => {
+ *   const { scaleX, scaleY } = useInvertedScale()
+ *   return <motion.div style={{ scaleX, scaleY }} />
+ * }
+ * ```
+ *
+ * @library
+ *
+ * ```jsx
+ * function MyComponent() {
+ *   const { scaleX, scaleY } = useInvertedScale()
+ *   return <Frame scaleX={scaleX} scaleY={scaleY} />
+ * }
+ * ```
+ *
+ * @deprecated
+ * @internal
+ */
+function useInvertedScale(scale) {
+    var parentScaleX = useMotionValue(1);
+    var parentScaleY = useMotionValue(1);
+    var visualElement = useVisualElementContext();
+    heyListen.invariant(!!(scale || visualElement), "If no scale values are provided, useInvertedScale must be used within a child of another motion component.");
+    heyListen.warning(hasWarned, "useInvertedScale is deprecated and will be removed in 3.0. Use the layout prop instead.");
+    hasWarned = true;
+    if (scale) {
+        parentScaleX = scale.scaleX || parentScaleX;
+        parentScaleY = scale.scaleY || parentScaleY;
+    }
+    else if (visualElement) {
+        parentScaleX = visualElement.getValue("scaleX", 1);
+        parentScaleY = visualElement.getValue("scaleY", 1);
+    }
+    var scaleX = useTransform(parentScaleX, invertScale);
+    var scaleY = useTransform(parentScaleY, invertScale);
+    return { scaleX: scaleX, scaleY: scaleY };
+}
+
+exports.AnimatePresence = AnimatePresence;
+exports.AnimateSharedLayout = AnimateSharedLayout;
+exports.DragControls = DragControls;
+exports.FramerTreeLayoutContext = FramerTreeLayoutContext;
+exports.LayoutGroupContext = LayoutGroupContext;
+exports.LazyMotion = LazyMotion;
+exports.MotionConfig = MotionConfig;
+exports.MotionConfigContext = MotionConfigContext;
+exports.MotionValue = MotionValue;
+exports.PresenceContext = PresenceContext;
+exports.SharedLayoutContext = SharedLayoutContext;
+exports.addScaleCorrection = addScaleCorrection;
+exports.animate = animate;
+exports.animateVisualElement = animateVisualElement;
+exports.animationControls = animationControls;
+exports.createBatcher = createBatcher;
+exports.createCrossfader = createCrossfader;
+exports.createDomMotionComponent = createDomMotionComponent;
+exports.createMotionComponent = createMotionComponent;
+exports.domAnimation = domAnimation;
+exports.domMax = domMax;
+exports.isValidMotionProp = isValidMotionProp;
+exports.m = m;
+exports.motion = motion;
+exports.motionValue = motionValue;
+exports.resolveMotionValue = resolveMotionValue;
+exports.transform = transform;
+exports.useAnimation = useAnimation;
+exports.useCycle = useCycle;
+exports.useDeprecatedAnimatedState = useAnimatedState;
+exports.useDeprecatedInvertedScale = useInvertedScale;
+exports.useDomEvent = useDomEvent;
+exports.useDragControls = useDragControls;
+exports.useElementScroll = useElementScroll;
+exports.useIsPresent = useIsPresent;
+exports.useMotionTemplate = useMotionTemplate;
+exports.useMotionValue = useMotionValue;
+exports.usePresence = usePresence;
+exports.useReducedMotion = useReducedMotion;
+exports.useSpring = useSpring;
+exports.useTransform = useTransform;
+exports.useVelocity = useVelocity;
+exports.useViewportScroll = useViewportScroll;
+exports.visualElement = visualElement;
+
+
+/***/ }),
+
 /***/ "1yX1":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2236,64 +9800,72 @@ exports.__esModule=true;exports.wait=wait;exports.error=error;exports.warn=warn;
 
 /***/ }),
 
-/***/ "284h":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "23aj":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var _typeof = __webpack_require__("cDf5");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("g4pe");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("6S8T");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("vDqi");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("q1tI");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
 
-function _getRequireWildcardCache() {
-  if (typeof WeakMap !== "function") return null;
-  var cache = new WeakMap();
 
-  _getRequireWildcardCache = function _getRequireWildcardCache() {
-    return cache;
-  };
 
-  return cache;
-}
 
-function _interopRequireWildcard(obj) {
-  if (obj && obj.__esModule) {
-    return obj;
-  }
 
-  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
-    return {
-      "default": obj
-    };
-  }
 
-  var cache = _getRequireWildcardCache();
 
-  if (cache && cache.has(obj)) {
-    return cache.get(obj);
-  }
-
-  var newObj = {};
-  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
-
-  for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
-
-      if (desc && (desc.get || desc.set)) {
-        Object.defineProperty(newObj, key, desc);
-      } else {
-        newObj[key] = obj[key];
-      }
+const gameId = "26192,109462,113112,75235,11169,133004, 1877, 126098, 134581, 119295, 37001, 115115, 90055, 119313, 75239, 119304, 11155, 119277, 107172, 111837, 131614, 131869, 131970, 123902, 52006, 127816, 107262, 131800, 134606, 133887, 135254, 133152, 131946, 138251, 110834, 36550, 86504, 127591, 123395, 107218, 134706, 114286, 114285, 119260, 90055, 114009, 119386, 103291, 113115, 133923, 116589, 119277, 135301, 137131, 131566, 136498, 103330, 133306, 124701, 127816, 133301, 139032, 123902, 138343, 130216, 119277, 138375, 126459, 124954";
+const getStaticProps = async () => {
+  const games = await axios__WEBPACK_IMPORTED_MODULE_3___default()({
+    //url: "http://localhost:8001/games",
+    url: "https://api.igdb.com/v4/games",
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Client-ID": process.env.ClientID,
+      Authorization: process.env.Authorization
+    },
+    data: `fields age_ratings,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
+			 limit 100; where id = (${gameId});;`
+  }).then(response => {
+    return response.data;
+  }).catch(err => {
+    console.error(err);
+  });
+  return {
+    props: {
+      games
     }
-  }
+  };
+};
 
-  newObj["default"] = obj;
+const Home = ({
+  games
+}) => {
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("title", {
+        children: "GameBox | Home"
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("link", {
+        rel: "icon",
+        href: "/favicon.ico"
+      })]
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Hero__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+      games: games,
+      headerText: null
+    })]
+  });
+};
 
-  if (cache) {
-    cache.set(obj, newObj);
-  }
-
-  return newObj;
-}
-
-module.exports = _interopRequireWildcard;
+/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
@@ -2512,65 +10084,6 @@ module.exports = function isAbsoluteURL(url) {
   return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
 };
 
-
-/***/ }),
-
-/***/ "2qGk":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-
-
-function Categories() {
-  const categories = [{
-    name: "Nintendo of the Year",
-    link: "nintendo",
-    id: 1
-  }, {
-    name: "xbox Games",
-    link: "xbox",
-    id: 2
-  }, {
-    name: "Playstation Games",
-    link: "playstation",
-    id: 3
-  }];
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-      className: "container flex\tflex-col justify-center  bg-accentColor lg:bg-transparent text-textwhite text-left py-10 rounded-xl my-12 max-w-md  md:max-w-xl lg:max-w-7xl  ",
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-        className: "border-b pb-3 text-4xl headings font-black uppercase",
-        children: "Categories"
-      }), categories.map((category, i) => {
-        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-          href: category.link,
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
-            href: category.link,
-            children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              className: "border-b py-3 cursor-pointer hover:bg-blue-700  text-lg tracking-wider font-semibold  mt-0 mb-4 headings uppercase",
-              children: category.name
-            }, i)
-          }, i)
-        }, category.id);
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-        className: "py-3  tracking-normal text-sm font-thin mb-4 pt-4 text-center",
-        children: "Small detail will be here"
-      })]
-    })
-  });
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (Categories);
 
 /***/ }),
 
@@ -3316,66 +10829,6 @@ module.exports = setup;
 
 /***/ }),
 
-/***/ "3Mv1":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-
-
-const Trending = ({
-  games,
-  headerText
-}) => {
-  //{console.log("GAMES ", games)}
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("main", {
-    className: "grid container mx-auto pb-3  content-start items-center justify-center",
-    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-      className: " py-2 text-xl font-light leading-relaxed mt-0 mb-6 ",
-      children: headerText
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("section", {
-        className: "grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-1",
-        children: games.map((game, i) => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-            href: `/games/${game.id}`,
-            children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-              className: "bg-gray-800 shadow-lg rounded p-1 max-w-sm ",
-              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-                className: "group relative",
-                children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("img", {
-                  className: "w-full  md:w-72 block rounded",
-                  src: game.cover && game.cover.url.replace("t_thumb", "t_cover_big"),
-                  alt: game.name
-                }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-                  className: "p-1 absolute top-0 left-0 z-20 ml-0 ",
-                  children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("span", {
-                    className: "text-xl font-semibold py-1 px-2 rounded text-gray-800 align-middle bg-textwhite  ",
-                    children: [i + 2, "."]
-                  })
-                })]
-              })
-            })
-          }, game.id)
-        }))
-      })
-    })]
-  });
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Trending);
-
-/***/ }),
-
 /***/ "3SI8":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3664,260 +11117,6 @@ function normalizeLocalePath(pathname, locales) {
 
 /***/ }),
 
-/***/ "3yWd":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://fast.wistia.com/assets/external/E-v1.js';
-var SDK_GLOBAL = 'Wistia';
-var PLAYER_ID_PREFIX = 'wistia-player-';
-
-var Wistia = /*#__PURE__*/function (_Component) {
-  _inherits(Wistia, _Component);
-
-  var _super = _createSuper(Wistia);
-
-  function Wistia() {
-    var _this;
-
-    _classCallCheck(this, Wistia);
-
-    for (var _len = arguments.length, _args = new Array(_len), _key = 0; _key < _len; _key++) {
-      _args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(_args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "playerID", _this.props.config.playerId || "".concat(PLAYER_ID_PREFIX).concat((0, _utils.randomString)()));
-
-    _defineProperty(_assertThisInitialized(_this), "onPlay", function () {
-      var _this$props;
-
-      return (_this$props = _this.props).onPlay.apply(_this$props, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onPause", function () {
-      var _this$props2;
-
-      return (_this$props2 = _this.props).onPause.apply(_this$props2, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onSeek", function () {
-      var _this$props3;
-
-      return (_this$props3 = _this.props).onSeek.apply(_this$props3, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onEnded", function () {
-      var _this$props4;
-
-      return (_this$props4 = _this.props).onEnded.apply(_this$props4, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('mute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('unmute');
-    });
-
-    return _this;
-  }
-
-  _createClass(Wistia, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      var _this$props5 = this.props,
-          playing = _this$props5.playing,
-          muted = _this$props5.muted,
-          controls = _this$props5.controls,
-          _onReady = _this$props5.onReady,
-          config = _this$props5.config,
-          onError = _this$props5.onError;
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (Wistia) {
-        if (config.customControls) {
-          config.customControls.forEach(function (control) {
-            return Wistia.defineControl(control);
-          });
-        }
-
-        window._wq = window._wq || [];
-
-        window._wq.push({
-          id: _this2.playerID,
-          options: _objectSpread({
-            autoPlay: playing,
-            silentAutoPlay: 'allow',
-            muted: muted,
-            controlsVisibleOnLoad: controls,
-            fullscreenButton: controls,
-            playbar: controls,
-            playbackRateControl: controls,
-            qualityControl: controls,
-            volumeControl: controls,
-            settingsControl: controls,
-            smallPlayButton: controls
-          }, config.options),
-          onReady: function onReady(player) {
-            _this2.player = player;
-
-            _this2.unbind();
-
-            _this2.player.bind('play', _this2.onPlay);
-
-            _this2.player.bind('pause', _this2.onPause);
-
-            _this2.player.bind('seek', _this2.onSeek);
-
-            _this2.player.bind('end', _this2.onEnded);
-
-            _onReady();
-          }
-        });
-      }, onError);
-    }
-  }, {
-    key: "unbind",
-    value: function unbind() {
-      this.player.unbind('play', this.onPlay);
-      this.player.unbind('pause', this.onPause);
-      this.player.unbind('seek', this.onSeek);
-      this.player.unbind('end', this.onEnded);
-    } // Proxy methods to prevent listener leaks
-
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      this.unbind();
-      this.callPlayer('remove');
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('time', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('volume', fraction);
-    }
-  }, {
-    key: "setPlaybackRate",
-    value: function setPlaybackRate(rate) {
-      this.callPlayer('playbackRate', rate);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.callPlayer('duration');
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.callPlayer('time');
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return null;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var url = this.props.url;
-      var videoID = url && url.match(_patterns.MATCH_URL_WISTIA)[1];
-      var className = "wistia_embed wistia_async_".concat(videoID);
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        id: this.playerID,
-        key: videoID,
-        className: className,
-        style: style
-      });
-    }
-  }]);
-
-  return Wistia;
-}(_react.Component);
-
-exports["default"] = Wistia;
-
-_defineProperty(Wistia, "displayName", 'Wistia');
-
-_defineProperty(Wistia, "canPlay", _patterns.canPlay.wistia);
-
-_defineProperty(Wistia, "loopOnEnded", true);
-
-/***/ }),
-
 /***/ "4Hvf":
 /***/ (function(module, exports) {
 
@@ -3932,8 +11131,8 @@ _defineProperty(Wistia, "loopOnEnded", true);
 "use strict";
 
 const escapeStringRegexp = __webpack_require__("oxjq");
-const ansiStyles = __webpack_require__("ijAY");
-const stdoutColor = __webpack_require__("w1s3").stdout;
+const ansiStyles = __webpack_require__("w5ch");
+const stdoutColor = __webpack_require__("bAum").stdout;
 
 const template = __webpack_require__("2xV5");
 
@@ -4162,568 +11361,1014 @@ module.exports.default = module.exports; // For TypeScript
 
 /***/ }),
 
-/***/ "4Xmi":
+/***/ "4LOC":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+Object.defineProperty(exports, '__esModule', { value: true });
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
+exports.warning = function () { };
+exports.invariant = function () { };
+if (false) {}
 
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://cdn.embed.ly/player-0.1.0.min.js';
-var SDK_GLOBAL = 'playerjs';
-
-var Kaltura = /*#__PURE__*/function (_Component) {
-  _inherits(Kaltura, _Component);
-
-  var _super = _createSuper(Kaltura);
-
-  function Kaltura() {
-    var _this;
-
-    _classCallCheck(this, Kaltura);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "duration", null);
-
-    _defineProperty(_assertThisInitialized(_this), "currentTime", null);
-
-    _defineProperty(_assertThisInitialized(_this), "secondsLoaded", null);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('mute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('unmute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (iframe) {
-      _this.iframe = iframe;
-    });
-
-    return _this;
-  }
-
-  _createClass(Kaltura, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (playerjs) {
-        if (!_this2.iframe) return;
-        _this2.player = new playerjs.Player(_this2.iframe);
-
-        _this2.player.on('ready', function () {
-          _this2.player.isReady = true;
-
-          _this2.player.on('play', _this2.props.onPlay);
-
-          _this2.player.on('pause', _this2.props.onPause);
-
-          _this2.player.on('seeked', _this2.props.onSeek);
-
-          _this2.player.on('ended', _this2.props.onEnded);
-
-          _this2.player.on('error', _this2.props.onError);
-
-          _this2.player.on('timeupdate', function (_ref) {
-            var duration = _ref.duration,
-                seconds = _ref.seconds;
-            _this2.duration = duration;
-            _this2.currentTime = seconds;
-          });
-
-          _this2.player.on('buffered', function (_ref2) {
-            var percent = _ref2.percent;
-
-            if (_this2.duration) {
-              _this2.secondsLoaded = _this2.duration * percent;
-            }
-          });
-
-          _this2.player.setLoop(_this2.props.loop);
-
-          if (_this2.props.muted) {
-            _this2.player.mute();
-          }
-
-          setTimeout(function () {
-            _this2.props.onReady();
-          });
-        });
-      }, this.props.onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('setCurrentTime', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction);
-    }
-  }, {
-    key: "setLoop",
-    value: function setLoop(loop) {
-      this.callPlayer('setLoop', loop);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.secondsLoaded;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      return /*#__PURE__*/_react["default"].createElement("iframe", {
-        ref: this.ref,
-        src: this.props.url,
-        frameBorder: "0",
-        scrolling: "no",
-        style: style,
-        allowFullScreen: true,
-        allow: "encrypted-media",
-        referrerPolicy: "no-referrer-when-downgrade"
-      });
-    }
-  }]);
-
-  return Kaltura;
-}(_react.Component);
-
-exports["default"] = Kaltura;
-
-_defineProperty(Kaltura, "displayName", 'Kaltura');
-
-_defineProperty(Kaltura, "canPlay", _patterns.canPlay.kaltura);
 
 /***/ }),
 
-/***/ "5RnD":
+/***/ "4zEH":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+Object.defineProperty(exports, '__esModule', { value: true });
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
+var tslib = __webpack_require__("BEkO");
+var heyListen = __webpack_require__("4LOC");
+var styleValueTypes = __webpack_require__("/ekA");
+var sync = __webpack_require__("s1vs");
 
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var _utils = __webpack_require__("ODpG");
+var sync__default = /*#__PURE__*/_interopDefaultLegacy(sync);
 
-var _patterns = __webpack_require__("AEgf");
+var clamp = function (min, max, v) {
+    return Math.min(Math.max(v, min), max);
+};
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://www.youtube.com/iframe_api';
-var SDK_GLOBAL = 'YT';
-var SDK_GLOBAL_READY = 'onYouTubeIframeAPIReady';
-var MATCH_PLAYLIST = /[?&](?:list|channel)=([a-zA-Z0-9_-]+)/;
-var MATCH_USER_UPLOADS = /user\/([a-zA-Z0-9_-]+)\/?/;
-var MATCH_NOCOOKIE = /youtube-nocookie\.com/;
-var NOCOOKIE_HOST = 'https://www.youtube-nocookie.com';
-
-var YouTube = /*#__PURE__*/function (_Component) {
-  _inherits(YouTube, _Component);
-
-  var _super = _createSuper(YouTube);
-
-  function YouTube() {
-    var _this;
-
-    _classCallCheck(this, YouTube);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
+var safeMin = 0.001;
+var minDuration = 0.01;
+var maxDuration = 10.0;
+var minDamping = 0.05;
+var maxDamping = 1;
+function findSpring(_a) {
+    var _b = _a.duration, duration = _b === void 0 ? 800 : _b, _c = _a.bounce, bounce = _c === void 0 ? 0.25 : _c, _d = _a.velocity, velocity = _d === void 0 ? 0 : _d, _e = _a.mass, mass = _e === void 0 ? 1 : _e;
+    var envelope;
+    var derivative;
+    heyListen.warning(duration <= maxDuration * 1000, "Spring duration must be 10 seconds or less");
+    var dampingRatio = 1 - bounce;
+    dampingRatio = clamp(minDamping, maxDamping, dampingRatio);
+    duration = clamp(minDuration, maxDuration, duration / 1000);
+    if (dampingRatio < 1) {
+        envelope = function (undampedFreq) {
+            var exponentialDecay = undampedFreq * dampingRatio;
+            var delta = exponentialDecay * duration;
+            var a = exponentialDecay - velocity;
+            var b = calcAngularFreq(undampedFreq, dampingRatio);
+            var c = Math.exp(-delta);
+            return safeMin - (a / b) * c;
+        };
+        derivative = function (undampedFreq) {
+            var exponentialDecay = undampedFreq * dampingRatio;
+            var delta = exponentialDecay * duration;
+            var d = delta * velocity + velocity;
+            var e = Math.pow(dampingRatio, 2) * Math.pow(undampedFreq, 2) * duration;
+            var f = Math.exp(-delta);
+            var g = calcAngularFreq(Math.pow(undampedFreq, 2), dampingRatio);
+            var factor = -envelope(undampedFreq) + safeMin > 0 ? -1 : 1;
+            return (factor * ((d - e) * f)) / g;
+        };
     }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "parsePlaylist", function (url) {
-      if (url instanceof Array) {
-        return {
-          listType: 'playlist',
-          playlist: url.map(_this.getID).join(',')
+    else {
+        envelope = function (undampedFreq) {
+            var a = Math.exp(-undampedFreq * duration);
+            var b = (undampedFreq - velocity) * duration + 1;
+            return -safeMin + a * b;
         };
-      }
-
-      if (MATCH_PLAYLIST.test(url)) {
-        var _url$match = url.match(MATCH_PLAYLIST),
-            _url$match2 = _slicedToArray(_url$match, 2),
-            playlistId = _url$match2[1];
-
-        return {
-          listType: 'playlist',
-          list: playlistId.replace(/^UC/, 'UU')
+        derivative = function (undampedFreq) {
+            var a = Math.exp(-undampedFreq * duration);
+            var b = (velocity - undampedFreq) * (duration * duration);
+            return a * b;
         };
-      }
-
-      if (MATCH_USER_UPLOADS.test(url)) {
-        var _url$match3 = url.match(MATCH_USER_UPLOADS),
-            _url$match4 = _slicedToArray(_url$match3, 2),
-            username = _url$match4[1];
-
+    }
+    var initialGuess = 5 / duration;
+    var undampedFreq = approximateRoot(envelope, derivative, initialGuess);
+    if (isNaN(undampedFreq)) {
         return {
-          listType: 'user_uploads',
-          list: username
+            stiffness: 100,
+            damping: 10,
         };
-      }
+    }
+    else {
+        var stiffness = Math.pow(undampedFreq, 2) * mass;
+        return {
+            stiffness: stiffness,
+            damping: dampingRatio * 2 * Math.sqrt(mass * stiffness),
+        };
+    }
+}
+var rootIterations = 12;
+function approximateRoot(envelope, derivative, initialGuess) {
+    var result = initialGuess;
+    for (var i = 1; i < rootIterations; i++) {
+        result = result - envelope(result) / derivative(result);
+    }
+    return result;
+}
+function calcAngularFreq(undampedFreq, dampingRatio) {
+    return undampedFreq * Math.sqrt(1 - dampingRatio * dampingRatio);
+}
 
-      return {};
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onStateChange", function (event) {
-      var data = event.data;
-      var _this$props = _this.props,
-          onPlay = _this$props.onPlay,
-          onPause = _this$props.onPause,
-          onBuffer = _this$props.onBuffer,
-          onBufferEnd = _this$props.onBufferEnd,
-          onEnded = _this$props.onEnded,
-          onReady = _this$props.onReady,
-          loop = _this$props.loop,
-          _this$props$config = _this$props.config,
-          playerVars = _this$props$config.playerVars,
-          onUnstarted = _this$props$config.onUnstarted;
-      var _window$SDK_GLOBAL$Pl = window[SDK_GLOBAL].PlayerState,
-          UNSTARTED = _window$SDK_GLOBAL$Pl.UNSTARTED,
-          PLAYING = _window$SDK_GLOBAL$Pl.PLAYING,
-          PAUSED = _window$SDK_GLOBAL$Pl.PAUSED,
-          BUFFERING = _window$SDK_GLOBAL$Pl.BUFFERING,
-          ENDED = _window$SDK_GLOBAL$Pl.ENDED,
-          CUED = _window$SDK_GLOBAL$Pl.CUED;
-      if (data === UNSTARTED) onUnstarted();
-
-      if (data === PLAYING) {
-        onPlay();
-        onBufferEnd();
-      }
-
-      if (data === PAUSED) onPause();
-      if (data === BUFFERING) onBuffer();
-
-      if (data === ENDED) {
-        var isPlaylist = !!_this.callPlayer('getPlaylist'); // Only loop manually if not playing a playlist
-
-        if (loop && !isPlaylist) {
-          if (playerVars.start) {
-            _this.seekTo(playerVars.start);
-          } else {
-            _this.play();
-          }
+var durationKeys = ["duration", "bounce"];
+var physicsKeys = ["stiffness", "damping", "mass"];
+function isSpringType(options, keys) {
+    return keys.some(function (key) { return options[key] !== undefined; });
+}
+function getSpringOptions(options) {
+    var springOptions = tslib.__assign({ velocity: 0.0, stiffness: 100, damping: 10, mass: 1.0, isResolvedFromDuration: false }, options);
+    if (!isSpringType(options, physicsKeys) &&
+        isSpringType(options, durationKeys)) {
+        var derived = findSpring(options);
+        springOptions = tslib.__assign(tslib.__assign(tslib.__assign({}, springOptions), derived), { velocity: 0.0, mass: 1.0 });
+        springOptions.isResolvedFromDuration = true;
+    }
+    return springOptions;
+}
+function spring(_a) {
+    var _b = _a.from, from = _b === void 0 ? 0.0 : _b, _c = _a.to, to = _c === void 0 ? 1.0 : _c, _d = _a.restSpeed, restSpeed = _d === void 0 ? 2 : _d, restDelta = _a.restDelta, options = tslib.__rest(_a, ["from", "to", "restSpeed", "restDelta"]);
+    var state = { done: false, value: from };
+    var _e = getSpringOptions(options), stiffness = _e.stiffness, damping = _e.damping, mass = _e.mass, velocity = _e.velocity, isResolvedFromDuration = _e.isResolvedFromDuration;
+    var resolveSpring = zero;
+    var resolveVelocity = zero;
+    function createSpring() {
+        var initialVelocity = velocity ? -(velocity / 1000) : 0.0;
+        var initialDelta = to - from;
+        var dampingRatio = damping / (2 * Math.sqrt(stiffness * mass));
+        var undampedAngularFreq = Math.sqrt(stiffness / mass) / 1000;
+        restDelta !== null && restDelta !== void 0 ? restDelta : (restDelta = Math.abs(to - from) <= 1 ? 0.01 : 0.4);
+        if (dampingRatio < 1) {
+            var angularFreq_1 = calcAngularFreq(undampedAngularFreq, dampingRatio);
+            resolveSpring = function (t) {
+                var envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
+                return (to -
+                    envelope *
+                        (((initialVelocity +
+                            dampingRatio * undampedAngularFreq * initialDelta) /
+                            angularFreq_1) *
+                            Math.sin(angularFreq_1 * t) +
+                            initialDelta * Math.cos(angularFreq_1 * t)));
+            };
+            resolveVelocity = function (t) {
+                var envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
+                return (dampingRatio *
+                    undampedAngularFreq *
+                    envelope *
+                    ((Math.sin(angularFreq_1 * t) *
+                        (initialVelocity +
+                            dampingRatio *
+                                undampedAngularFreq *
+                                initialDelta)) /
+                        angularFreq_1 +
+                        initialDelta * Math.cos(angularFreq_1 * t)) -
+                    envelope *
+                        (Math.cos(angularFreq_1 * t) *
+                            (initialVelocity +
+                                dampingRatio *
+                                    undampedAngularFreq *
+                                    initialDelta) -
+                            angularFreq_1 *
+                                initialDelta *
+                                Math.sin(angularFreq_1 * t)));
+            };
         }
-
-        onEnded();
-      }
-
-      if (data === CUED) onReady();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('mute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('unMute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (container) {
-      _this.container = container;
-    });
-
-    return _this;
-  }
-
-  _createClass(YouTube, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "getID",
-    value: function getID(url) {
-      if (!url || url instanceof Array || MATCH_PLAYLIST.test(url)) {
-        return null;
-      }
-
-      return url.match(_patterns.MATCH_URL_YOUTUBE)[1];
-    }
-  }, {
-    key: "load",
-    value: function load(url, isReady) {
-      var _this2 = this;
-
-      var _this$props2 = this.props,
-          playing = _this$props2.playing,
-          muted = _this$props2.muted,
-          playsinline = _this$props2.playsinline,
-          controls = _this$props2.controls,
-          loop = _this$props2.loop,
-          config = _this$props2.config,
-          _onError = _this$props2.onError;
-      var playerVars = config.playerVars,
-          embedOptions = config.embedOptions;
-      var id = this.getID(url);
-
-      if (isReady) {
-        if (MATCH_PLAYLIST.test(url) || MATCH_USER_UPLOADS.test(url) || url instanceof Array) {
-          this.player.loadPlaylist(this.parsePlaylist(url));
-          return;
+        else if (dampingRatio === 1) {
+            resolveSpring = function (t) {
+                return to -
+                    Math.exp(-undampedAngularFreq * t) *
+                        (initialDelta +
+                            (initialVelocity + undampedAngularFreq * initialDelta) *
+                                t);
+            };
         }
-
-        this.player.cueVideoById({
-          videoId: id,
-          startSeconds: (0, _utils.parseStartTime)(url) || playerVars.start,
-          endSeconds: (0, _utils.parseEndTime)(url) || playerVars.end
-        });
-        return;
-      }
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY, function (YT) {
-        return YT.loaded;
-      }).then(function (YT) {
-        if (!_this2.container) return;
-        _this2.player = new YT.Player(_this2.container, _objectSpread({
-          width: '100%',
-          height: '100%',
-          videoId: id,
-          playerVars: _objectSpread(_objectSpread({
-            autoplay: playing ? 1 : 0,
-            mute: muted ? 1 : 0,
-            controls: controls ? 1 : 0,
-            start: (0, _utils.parseStartTime)(url),
-            end: (0, _utils.parseEndTime)(url),
-            origin: window.location.origin,
-            playsinline: playsinline ? 1 : 0
-          }, _this2.parsePlaylist(url)), playerVars),
-          events: {
-            onReady: function onReady() {
-              if (loop) {
-                _this2.player.setLoop(true); // Enable playlist looping
-
-              }
-
-              _this2.props.onReady();
-            },
-            onStateChange: _this2.onStateChange,
-            onError: function onError(event) {
-              return _onError(event.data);
+        else {
+            var dampedAngularFreq_1 = undampedAngularFreq * Math.sqrt(dampingRatio * dampingRatio - 1);
+            resolveSpring = function (t) {
+                var envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
+                var freqForT = Math.min(dampedAngularFreq_1 * t, 300);
+                return (to -
+                    (envelope *
+                        ((initialVelocity +
+                            dampingRatio * undampedAngularFreq * initialDelta) *
+                            Math.sinh(freqForT) +
+                            dampedAngularFreq_1 *
+                                initialDelta *
+                                Math.cosh(freqForT))) /
+                        dampedAngularFreq_1);
+            };
+        }
+    }
+    createSpring();
+    return {
+        next: function (t) {
+            var current = resolveSpring(t);
+            if (!isResolvedFromDuration) {
+                var currentVelocity = resolveVelocity(t) * 1000;
+                var isBelowVelocityThreshold = Math.abs(currentVelocity) <= restSpeed;
+                var isBelowDisplacementThreshold = Math.abs(to - current) <= restDelta;
+                state.done =
+                    isBelowVelocityThreshold && isBelowDisplacementThreshold;
             }
-          },
-          host: MATCH_NOCOOKIE.test(url) ? NOCOOKIE_HOST : undefined
-        }, embedOptions));
-      }, _onError);
+            else {
+                state.done = t >= options.duration;
+            }
+            state.value = state.done ? to : current;
+            return state;
+        },
+        flipTarget: function () {
+            var _a;
+            velocity = -velocity;
+            _a = [to, from], from = _a[0], to = _a[1];
+            createSpring();
+        },
+    };
+}
+spring.needsInterpolation = function (a, b) {
+    return typeof a === "string" || typeof b === "string";
+};
+var zero = function (_t) { return 0; };
 
-      if (embedOptions.events) {
-        console.warn('Using `embedOptions.events` will likely break things. Use ReactPlayer’s callback props instead, eg onReady, onPlay, onPause');
-      }
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('playVideo');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pauseVideo');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      if (!document.body.contains(this.callPlayer('getIframe'))) return;
-      this.callPlayer('stopVideo');
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(amount) {
-      this.callPlayer('seekTo', amount);
+var progress = function (from, to, value) {
+    var toFromDifference = to - from;
+    return toFromDifference === 0 ? 1 : (value - from) / toFromDifference;
+};
 
-      if (!this.props.playing) {
-        this.pause();
-      }
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction * 100);
-    }
-  }, {
-    key: "setPlaybackRate",
-    value: function setPlaybackRate(rate) {
-      this.callPlayer('setPlaybackRate', rate);
-    }
-  }, {
-    key: "setLoop",
-    value: function setLoop(loop) {
-      this.callPlayer('setLoop', loop);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.callPlayer('getDuration');
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.callPlayer('getCurrentTime');
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.callPlayer('getVideoLoadedFraction') * this.getDuration();
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var display = this.props.display;
-      var style = {
-        width: '100%',
-        height: '100%',
-        display: display
-      };
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        style: style
-      }, /*#__PURE__*/_react["default"].createElement("div", {
-        ref: this.ref
-      }));
-    }
-  }]);
+var mix = function (from, to, progress) {
+    return -progress * from + progress * to + from;
+};
 
-  return YouTube;
-}(_react.Component);
+var mixLinearColor = function (from, to, v) {
+    var fromExpo = from * from;
+    var toExpo = to * to;
+    return Math.sqrt(Math.max(0, v * (toExpo - fromExpo) + fromExpo));
+};
+var colorTypes = [styleValueTypes.hex, styleValueTypes.rgba, styleValueTypes.hsla];
+var getColorType = function (v) {
+    return colorTypes.find(function (type) { return type.test(v); });
+};
+var notAnimatable = function (color) {
+    return "'" + color + "' is not an animatable color. Use the equivalent color code instead.";
+};
+var mixColor = function (from, to) {
+    var fromColorType = getColorType(from);
+    var toColorType = getColorType(to);
+    heyListen.invariant(!!fromColorType, notAnimatable(from));
+    heyListen.invariant(!!toColorType, notAnimatable(to));
+    heyListen.invariant(fromColorType.transform === toColorType.transform, "Both colors must be hex/RGBA, OR both must be HSLA.");
+    var fromColor = fromColorType.parse(from);
+    var toColor = toColorType.parse(to);
+    var blended = tslib.__assign({}, fromColor);
+    var mixFunc = fromColorType === styleValueTypes.hsla ? mix : mixLinearColor;
+    return function (v) {
+        for (var key in blended) {
+            if (key !== "alpha") {
+                blended[key] = mixFunc(fromColor[key], toColor[key], v);
+            }
+        }
+        blended.alpha = mix(fromColor.alpha, toColor.alpha, v);
+        return fromColorType.transform(blended);
+    };
+};
 
-exports["default"] = YouTube;
+var zeroPoint = {
+    x: 0,
+    y: 0,
+    z: 0
+};
+var isNum = function (v) { return typeof v === 'number'; };
 
-_defineProperty(YouTube, "displayName", 'YouTube');
+var combineFunctions = function (a, b) { return function (v) { return b(a(v)); }; };
+var pipe = function () {
+    var transformers = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        transformers[_i] = arguments[_i];
+    }
+    return transformers.reduce(combineFunctions);
+};
 
-_defineProperty(YouTube, "canPlay", _patterns.canPlay.youtube);
+function getMixer(origin, target) {
+    if (isNum(origin)) {
+        return function (v) { return mix(origin, target, v); };
+    }
+    else if (styleValueTypes.color.test(origin)) {
+        return mixColor(origin, target);
+    }
+    else {
+        return mixComplex(origin, target);
+    }
+}
+var mixArray = function (from, to) {
+    var output = tslib.__spreadArray([], from);
+    var numValues = output.length;
+    var blendValue = from.map(function (fromThis, i) { return getMixer(fromThis, to[i]); });
+    return function (v) {
+        for (var i = 0; i < numValues; i++) {
+            output[i] = blendValue[i](v);
+        }
+        return output;
+    };
+};
+var mixObject = function (origin, target) {
+    var output = tslib.__assign(tslib.__assign({}, origin), target);
+    var blendValue = {};
+    for (var key in output) {
+        if (origin[key] !== undefined && target[key] !== undefined) {
+            blendValue[key] = getMixer(origin[key], target[key]);
+        }
+    }
+    return function (v) {
+        for (var key in blendValue) {
+            output[key] = blendValue[key](v);
+        }
+        return output;
+    };
+};
+function analyse(value) {
+    var parsed = styleValueTypes.complex.parse(value);
+    var numValues = parsed.length;
+    var numNumbers = 0;
+    var numRGB = 0;
+    var numHSL = 0;
+    for (var i = 0; i < numValues; i++) {
+        if (numNumbers || typeof parsed[i] === "number") {
+            numNumbers++;
+        }
+        else {
+            if (parsed[i].hue !== undefined) {
+                numHSL++;
+            }
+            else {
+                numRGB++;
+            }
+        }
+    }
+    return { parsed: parsed, numNumbers: numNumbers, numRGB: numRGB, numHSL: numHSL };
+}
+var mixComplex = function (origin, target) {
+    var template = styleValueTypes.complex.createTransformer(target);
+    var originStats = analyse(origin);
+    var targetStats = analyse(target);
+    heyListen.invariant(originStats.numHSL === targetStats.numHSL &&
+        originStats.numRGB === targetStats.numRGB &&
+        originStats.numNumbers >= targetStats.numNumbers, "Complex values '" + origin + "' and '" + target + "' too different to mix. Ensure all colors are of the same type.");
+    return pipe(mixArray(originStats.parsed, targetStats.parsed), template);
+};
+
+var mixNumber = function (from, to) { return function (p) { return mix(from, to, p); }; };
+function detectMixerFactory(v) {
+    if (typeof v === 'number') {
+        return mixNumber;
+    }
+    else if (typeof v === 'string') {
+        if (styleValueTypes.color.test(v)) {
+            return mixColor;
+        }
+        else {
+            return mixComplex;
+        }
+    }
+    else if (Array.isArray(v)) {
+        return mixArray;
+    }
+    else if (typeof v === 'object') {
+        return mixObject;
+    }
+}
+function createMixers(output, ease, customMixer) {
+    var mixers = [];
+    var mixerFactory = customMixer || detectMixerFactory(output[0]);
+    var numMixers = output.length - 1;
+    for (var i = 0; i < numMixers; i++) {
+        var mixer = mixerFactory(output[i], output[i + 1]);
+        if (ease) {
+            var easingFunction = Array.isArray(ease) ? ease[i] : ease;
+            mixer = pipe(easingFunction, mixer);
+        }
+        mixers.push(mixer);
+    }
+    return mixers;
+}
+function fastInterpolate(_a, _b) {
+    var from = _a[0], to = _a[1];
+    var mixer = _b[0];
+    return function (v) { return mixer(progress(from, to, v)); };
+}
+function slowInterpolate(input, mixers) {
+    var inputLength = input.length;
+    var lastInputIndex = inputLength - 1;
+    return function (v) {
+        var mixerIndex = 0;
+        var foundMixerIndex = false;
+        if (v <= input[0]) {
+            foundMixerIndex = true;
+        }
+        else if (v >= input[lastInputIndex]) {
+            mixerIndex = lastInputIndex - 1;
+            foundMixerIndex = true;
+        }
+        if (!foundMixerIndex) {
+            var i = 1;
+            for (; i < inputLength; i++) {
+                if (input[i] > v || i === lastInputIndex) {
+                    break;
+                }
+            }
+            mixerIndex = i - 1;
+        }
+        var progressInRange = progress(input[mixerIndex], input[mixerIndex + 1], v);
+        return mixers[mixerIndex](progressInRange);
+    };
+}
+function interpolate(input, output, _a) {
+    var _b = _a === void 0 ? {} : _a, _c = _b.clamp, isClamp = _c === void 0 ? true : _c, ease = _b.ease, mixer = _b.mixer;
+    var inputLength = input.length;
+    heyListen.invariant(inputLength === output.length, 'Both input and output ranges must be the same length');
+    heyListen.invariant(!ease || !Array.isArray(ease) || ease.length === inputLength - 1, 'Array of easing functions must be of length `input.length - 1`, as it applies to the transitions **between** the defined values.');
+    if (input[0] > input[inputLength - 1]) {
+        input = [].concat(input);
+        output = [].concat(output);
+        input.reverse();
+        output.reverse();
+    }
+    var mixers = createMixers(output, ease, mixer);
+    var interpolator = inputLength === 2
+        ? fastInterpolate(input, mixers)
+        : slowInterpolate(input, mixers);
+    return isClamp
+        ? function (v) { return interpolator(clamp(input[0], input[inputLength - 1], v)); }
+        : interpolator;
+}
+
+var reverseEasing = function (easing) { return function (p) { return 1 - easing(1 - p); }; };
+var mirrorEasing = function (easing) { return function (p) {
+    return p <= 0.5 ? easing(2 * p) / 2 : (2 - easing(2 * (1 - p))) / 2;
+}; };
+var createExpoIn = function (power) { return function (p) { return Math.pow(p, power); }; };
+var createBackIn = function (power) { return function (p) {
+    return p * p * ((power + 1) * p - power);
+}; };
+var createAnticipate = function (power) {
+    var backEasing = createBackIn(power);
+    return function (p) {
+        return (p *= 2) < 1
+            ? 0.5 * backEasing(p)
+            : 0.5 * (2 - Math.pow(2, -10 * (p - 1)));
+    };
+};
+
+var DEFAULT_OVERSHOOT_STRENGTH = 1.525;
+var BOUNCE_FIRST_THRESHOLD = 4.0 / 11.0;
+var BOUNCE_SECOND_THRESHOLD = 8.0 / 11.0;
+var BOUNCE_THIRD_THRESHOLD = 9.0 / 10.0;
+var linear = function (p) { return p; };
+var easeIn = createExpoIn(2);
+var easeOut = reverseEasing(easeIn);
+var easeInOut = mirrorEasing(easeIn);
+var circIn = function (p) { return 1 - Math.sin(Math.acos(p)); };
+var circOut = reverseEasing(circIn);
+var circInOut = mirrorEasing(circOut);
+var backIn = createBackIn(DEFAULT_OVERSHOOT_STRENGTH);
+var backOut = reverseEasing(backIn);
+var backInOut = mirrorEasing(backIn);
+var anticipate = createAnticipate(DEFAULT_OVERSHOOT_STRENGTH);
+var ca = 4356.0 / 361.0;
+var cb = 35442.0 / 1805.0;
+var cc = 16061.0 / 1805.0;
+var bounceOut = function (p) {
+    if (p === 1 || p === 0)
+        return p;
+    var p2 = p * p;
+    return p < BOUNCE_FIRST_THRESHOLD
+        ? 7.5625 * p2
+        : p < BOUNCE_SECOND_THRESHOLD
+            ? 9.075 * p2 - 9.9 * p + 3.4
+            : p < BOUNCE_THIRD_THRESHOLD
+                ? ca * p2 - cb * p + cc
+                : 10.8 * p * p - 20.52 * p + 10.72;
+};
+var bounceIn = reverseEasing(bounceOut);
+var bounceInOut = function (p) {
+    return p < 0.5
+        ? 0.5 * (1.0 - bounceOut(1.0 - p * 2.0))
+        : 0.5 * bounceOut(p * 2.0 - 1.0) + 0.5;
+};
+
+function defaultEasing(values, easing) {
+    return values.map(function () { return easing || easeInOut; }).splice(0, values.length - 1);
+}
+function defaultOffset(values) {
+    var numValues = values.length;
+    return values.map(function (_value, i) {
+        return i !== 0 ? i / (numValues - 1) : 0;
+    });
+}
+function convertOffsetToTimes(offset, duration) {
+    return offset.map(function (o) { return o * duration; });
+}
+function keyframes(_a) {
+    var _b = _a.from, from = _b === void 0 ? 0 : _b, _c = _a.to, to = _c === void 0 ? 1 : _c, ease = _a.ease, offset = _a.offset, _d = _a.duration, duration = _d === void 0 ? 300 : _d;
+    var state = { done: false, value: from };
+    var values = Array.isArray(to) ? to : [from, to];
+    var times = convertOffsetToTimes(offset && offset.length === values.length
+        ? offset
+        : defaultOffset(values), duration);
+    function createInterpolator() {
+        return interpolate(times, values, {
+            ease: Array.isArray(ease) ? ease : defaultEasing(values, ease),
+        });
+    }
+    var interpolator = createInterpolator();
+    return {
+        next: function (t) {
+            state.value = interpolator(t);
+            state.done = t >= duration;
+            return state;
+        },
+        flipTarget: function () {
+            values.reverse();
+            interpolator = createInterpolator();
+        },
+    };
+}
+
+function decay(_a) {
+    var _b = _a.velocity, velocity = _b === void 0 ? 0 : _b, _c = _a.from, from = _c === void 0 ? 0 : _c, _d = _a.power, power = _d === void 0 ? 0.8 : _d, _e = _a.timeConstant, timeConstant = _e === void 0 ? 350 : _e, _f = _a.restDelta, restDelta = _f === void 0 ? 0.5 : _f, modifyTarget = _a.modifyTarget;
+    var state = { done: false, value: from };
+    var amplitude = power * velocity;
+    var ideal = from + amplitude;
+    var target = modifyTarget === undefined ? ideal : modifyTarget(ideal);
+    if (target !== ideal)
+        amplitude = target - from;
+    return {
+        next: function (t) {
+            var delta = -amplitude * Math.exp(-t / timeConstant);
+            state.done = !(delta > restDelta || delta < -restDelta);
+            state.value = state.done ? target : target + delta;
+            return state;
+        },
+        flipTarget: function () { },
+    };
+}
+
+var types = { keyframes: keyframes, spring: spring, decay: decay };
+function detectAnimationFromOptions(config) {
+    if (Array.isArray(config.to)) {
+        return keyframes;
+    }
+    else if (types[config.type]) {
+        return types[config.type];
+    }
+    var keys = new Set(Object.keys(config));
+    if (keys.has("ease") ||
+        (keys.has("duration") && !keys.has("dampingRatio"))) {
+        return keyframes;
+    }
+    else if (keys.has("dampingRatio") ||
+        keys.has("stiffness") ||
+        keys.has("mass") ||
+        keys.has("damping") ||
+        keys.has("restSpeed") ||
+        keys.has("restDelta")) {
+        return spring;
+    }
+    return keyframes;
+}
+
+function loopElapsed(elapsed, duration, delay) {
+    if (delay === void 0) { delay = 0; }
+    return elapsed - duration - delay;
+}
+function reverseElapsed(elapsed, duration, delay, isForwardPlayback) {
+    if (delay === void 0) { delay = 0; }
+    if (isForwardPlayback === void 0) { isForwardPlayback = true; }
+    return isForwardPlayback
+        ? loopElapsed(duration + -elapsed, duration, delay)
+        : duration - (elapsed - duration) + delay;
+}
+function hasRepeatDelayElapsed(elapsed, duration, delay, isForwardPlayback) {
+    return isForwardPlayback ? elapsed >= duration + delay : elapsed <= -delay;
+}
+
+var framesync = function (update) {
+    var passTimestamp = function (_a) {
+        var delta = _a.delta;
+        return update(delta);
+    };
+    return {
+        start: function () { return sync__default['default'].update(passTimestamp, true); },
+        stop: function () { return sync.cancelSync.update(passTimestamp); },
+    };
+};
+function animate(_a) {
+    var _b, _c;
+    var from = _a.from, _d = _a.autoplay, autoplay = _d === void 0 ? true : _d, _e = _a.driver, driver = _e === void 0 ? framesync : _e, _f = _a.elapsed, elapsed = _f === void 0 ? 0 : _f, _g = _a.repeat, repeatMax = _g === void 0 ? 0 : _g, _h = _a.repeatType, repeatType = _h === void 0 ? "loop" : _h, _j = _a.repeatDelay, repeatDelay = _j === void 0 ? 0 : _j, onPlay = _a.onPlay, onStop = _a.onStop, onComplete = _a.onComplete, onRepeat = _a.onRepeat, onUpdate = _a.onUpdate, options = tslib.__rest(_a, ["from", "autoplay", "driver", "elapsed", "repeat", "repeatType", "repeatDelay", "onPlay", "onStop", "onComplete", "onRepeat", "onUpdate"]);
+    var to = options.to;
+    var driverControls;
+    var repeatCount = 0;
+    var computedDuration = options.duration;
+    var latest;
+    var isComplete = false;
+    var isForwardPlayback = true;
+    var interpolateFromNumber;
+    var animator = detectAnimationFromOptions(options);
+    if ((_c = (_b = animator).needsInterpolation) === null || _c === void 0 ? void 0 : _c.call(_b, from, to)) {
+        interpolateFromNumber = interpolate([0, 100], [from, to], {
+            clamp: false,
+        });
+        from = 0;
+        to = 100;
+    }
+    var animation = animator(tslib.__assign(tslib.__assign({}, options), { from: from, to: to }));
+    function repeat() {
+        repeatCount++;
+        if (repeatType === "reverse") {
+            isForwardPlayback = repeatCount % 2 === 0;
+            elapsed = reverseElapsed(elapsed, computedDuration, repeatDelay, isForwardPlayback);
+        }
+        else {
+            elapsed = loopElapsed(elapsed, computedDuration, repeatDelay);
+            if (repeatType === "mirror")
+                animation.flipTarget();
+        }
+        isComplete = false;
+        onRepeat && onRepeat();
+    }
+    function complete() {
+        driverControls.stop();
+        onComplete && onComplete();
+    }
+    function update(delta) {
+        if (!isForwardPlayback)
+            delta = -delta;
+        elapsed += delta;
+        if (!isComplete) {
+            var state = animation.next(Math.max(0, elapsed));
+            latest = state.value;
+            if (interpolateFromNumber)
+                latest = interpolateFromNumber(latest);
+            isComplete = isForwardPlayback ? state.done : elapsed <= 0;
+        }
+        onUpdate === null || onUpdate === void 0 ? void 0 : onUpdate(latest);
+        if (isComplete) {
+            if (repeatCount === 0)
+                computedDuration !== null && computedDuration !== void 0 ? computedDuration : (computedDuration = elapsed);
+            if (repeatCount < repeatMax) {
+                hasRepeatDelayElapsed(elapsed, computedDuration, repeatDelay, isForwardPlayback) && repeat();
+            }
+            else {
+                complete();
+            }
+        }
+    }
+    function play() {
+        onPlay === null || onPlay === void 0 ? void 0 : onPlay();
+        driverControls = driver(update);
+        driverControls.start();
+    }
+    autoplay && play();
+    return {
+        stop: function () {
+            onStop === null || onStop === void 0 ? void 0 : onStop();
+            driverControls.stop();
+        },
+    };
+}
+
+function velocityPerSecond(velocity, frameDuration) {
+    return frameDuration ? velocity * (1000 / frameDuration) : 0;
+}
+
+function inertia(_a) {
+    var _b = _a.from, from = _b === void 0 ? 0 : _b, _c = _a.velocity, velocity = _c === void 0 ? 0 : _c, min = _a.min, max = _a.max, _d = _a.power, power = _d === void 0 ? 0.8 : _d, _e = _a.timeConstant, timeConstant = _e === void 0 ? 750 : _e, _f = _a.bounceStiffness, bounceStiffness = _f === void 0 ? 500 : _f, _g = _a.bounceDamping, bounceDamping = _g === void 0 ? 10 : _g, _h = _a.restDelta, restDelta = _h === void 0 ? 1 : _h, modifyTarget = _a.modifyTarget, driver = _a.driver, onUpdate = _a.onUpdate, onComplete = _a.onComplete;
+    var currentAnimation;
+    function isOutOfBounds(v) {
+        return (min !== undefined && v < min) || (max !== undefined && v > max);
+    }
+    function boundaryNearest(v) {
+        if (min === undefined)
+            return max;
+        if (max === undefined)
+            return min;
+        return Math.abs(min - v) < Math.abs(max - v) ? min : max;
+    }
+    function startAnimation(options) {
+        currentAnimation === null || currentAnimation === void 0 ? void 0 : currentAnimation.stop();
+        currentAnimation = animate(tslib.__assign(tslib.__assign({}, options), { driver: driver, onUpdate: function (v) {
+                var _a;
+                onUpdate === null || onUpdate === void 0 ? void 0 : onUpdate(v);
+                (_a = options.onUpdate) === null || _a === void 0 ? void 0 : _a.call(options, v);
+            }, onComplete: onComplete }));
+    }
+    function startSpring(options) {
+        startAnimation(tslib.__assign({ type: "spring", stiffness: bounceStiffness, damping: bounceDamping, restDelta: restDelta }, options));
+    }
+    if (isOutOfBounds(from)) {
+        startSpring({ from: from, velocity: velocity, to: boundaryNearest(from) });
+    }
+    else {
+        var target = power * velocity + from;
+        if (typeof modifyTarget !== "undefined")
+            target = modifyTarget(target);
+        var boundary_1 = boundaryNearest(target);
+        var heading_1 = boundary_1 === min ? -1 : 1;
+        var prev_1;
+        var current_1;
+        var checkBoundary = function (v) {
+            prev_1 = current_1;
+            current_1 = v;
+            velocity = velocityPerSecond(v - prev_1, sync.getFrameData().delta);
+            if ((heading_1 === 1 && v > boundary_1) ||
+                (heading_1 === -1 && v < boundary_1)) {
+                startSpring({ from: v, to: boundary_1, velocity: velocity });
+            }
+        };
+        startAnimation({
+            type: "decay",
+            from: from,
+            velocity: velocity,
+            timeConstant: timeConstant,
+            power: power,
+            restDelta: restDelta,
+            modifyTarget: modifyTarget,
+            onUpdate: isOutOfBounds(target) ? checkBoundary : undefined,
+        });
+    }
+    return {
+        stop: function () { return currentAnimation === null || currentAnimation === void 0 ? void 0 : currentAnimation.stop(); },
+    };
+}
+
+var radiansToDegrees = function (radians) { return (radians * 180) / Math.PI; };
+
+var angle = function (a, b) {
+    if (b === void 0) { b = zeroPoint; }
+    return radiansToDegrees(Math.atan2(b.y - a.y, b.x - a.x));
+};
+
+var applyOffset = function (from, to) {
+    var hasReceivedFrom = true;
+    if (to === undefined) {
+        to = from;
+        hasReceivedFrom = false;
+    }
+    return function (v) {
+        if (hasReceivedFrom) {
+            return v - from + to;
+        }
+        else {
+            from = v;
+            hasReceivedFrom = true;
+            return to;
+        }
+    };
+};
+
+var identity = function (v) { return v; };
+var createAttractor = function (alterDisplacement) {
+    if (alterDisplacement === void 0) { alterDisplacement = identity; }
+    return function (constant, origin, v) {
+        var displacement = origin - v;
+        var springModifiedDisplacement = -(0 - constant + 1) * (0 - alterDisplacement(Math.abs(displacement)));
+        return displacement <= 0
+            ? origin + springModifiedDisplacement
+            : origin - springModifiedDisplacement;
+    };
+};
+var attract = createAttractor();
+var attractExpo = createAttractor(Math.sqrt);
+
+var degreesToRadians = function (degrees) { return (degrees * Math.PI) / 180; };
+
+var isPoint = function (point) {
+    return point.hasOwnProperty('x') && point.hasOwnProperty('y');
+};
+
+var isPoint3D = function (point) {
+    return isPoint(point) && point.hasOwnProperty('z');
+};
+
+var distance1D = function (a, b) { return Math.abs(a - b); };
+function distance(a, b) {
+    if (isNum(a) && isNum(b)) {
+        return distance1D(a, b);
+    }
+    else if (isPoint(a) && isPoint(b)) {
+        var xDelta = distance1D(a.x, b.x);
+        var yDelta = distance1D(a.y, b.y);
+        var zDelta = isPoint3D(a) && isPoint3D(b) ? distance1D(a.z, b.z) : 0;
+        return Math.sqrt(Math.pow(xDelta, 2) + Math.pow(yDelta, 2) + Math.pow(zDelta, 2));
+    }
+}
+
+var pointFromVector = function (origin, angle, distance) {
+    angle = degreesToRadians(angle);
+    return {
+        x: distance * Math.cos(angle) + origin.x,
+        y: distance * Math.sin(angle) + origin.y
+    };
+};
+
+var toDecimal = function (num, precision) {
+    if (precision === void 0) { precision = 2; }
+    precision = Math.pow(10, precision);
+    return Math.round(num * precision) / precision;
+};
+
+var smoothFrame = function (prevValue, nextValue, duration, smoothing) {
+    if (smoothing === void 0) { smoothing = 0; }
+    return toDecimal(prevValue +
+        (duration * (nextValue - prevValue)) / Math.max(smoothing, duration));
+};
+
+var smooth = function (strength) {
+    if (strength === void 0) { strength = 50; }
+    var previousValue = 0;
+    var lastUpdated = 0;
+    return function (v) {
+        var currentFramestamp = sync.getFrameData().timestamp;
+        var timeDelta = currentFramestamp !== lastUpdated ? currentFramestamp - lastUpdated : 0;
+        var newValue = timeDelta
+            ? smoothFrame(previousValue, v, timeDelta, strength)
+            : previousValue;
+        lastUpdated = currentFramestamp;
+        previousValue = newValue;
+        return newValue;
+    };
+};
+
+var snap = function (points) {
+    if (typeof points === 'number') {
+        return function (v) { return Math.round(v / points) * points; };
+    }
+    else {
+        var i_1 = 0;
+        var numPoints_1 = points.length;
+        return function (v) {
+            var lastDistance = Math.abs(points[0] - v);
+            for (i_1 = 1; i_1 < numPoints_1; i_1++) {
+                var point = points[i_1];
+                var distance = Math.abs(point - v);
+                if (distance === 0)
+                    return point;
+                if (distance > lastDistance)
+                    return points[i_1 - 1];
+                if (i_1 === numPoints_1 - 1)
+                    return point;
+                lastDistance = distance;
+            }
+        };
+    }
+};
+
+function velocityPerFrame(xps, frameDuration) {
+    return xps / (1000 / frameDuration);
+}
+
+var wrap = function (min, max, v) {
+    var rangeSize = max - min;
+    return ((((v - min) % rangeSize) + rangeSize) % rangeSize) + min;
+};
+
+var a = function (a1, a2) { return 1.0 - 3.0 * a2 + 3.0 * a1; };
+var b = function (a1, a2) { return 3.0 * a2 - 6.0 * a1; };
+var c = function (a1) { return 3.0 * a1; };
+var calcBezier = function (t, a1, a2) {
+    return ((a(a1, a2) * t + b(a1, a2)) * t + c(a1)) * t;
+};
+var getSlope = function (t, a1, a2) {
+    return 3.0 * a(a1, a2) * t * t + 2.0 * b(a1, a2) * t + c(a1);
+};
+var subdivisionPrecision = 0.0000001;
+var subdivisionMaxIterations = 10;
+function binarySubdivide(aX, aA, aB, mX1, mX2) {
+    var currentX;
+    var currentT;
+    var i = 0;
+    do {
+        currentT = aA + (aB - aA) / 2.0;
+        currentX = calcBezier(currentT, mX1, mX2) - aX;
+        if (currentX > 0.0) {
+            aB = currentT;
+        }
+        else {
+            aA = currentT;
+        }
+    } while (Math.abs(currentX) > subdivisionPrecision &&
+        ++i < subdivisionMaxIterations);
+    return currentT;
+}
+var newtonIterations = 8;
+var newtonMinSlope = 0.001;
+function newtonRaphsonIterate(aX, aGuessT, mX1, mX2) {
+    for (var i = 0; i < newtonIterations; ++i) {
+        var currentSlope = getSlope(aGuessT, mX1, mX2);
+        if (currentSlope === 0.0) {
+            return aGuessT;
+        }
+        var currentX = calcBezier(aGuessT, mX1, mX2) - aX;
+        aGuessT -= currentX / currentSlope;
+    }
+    return aGuessT;
+}
+var kSplineTableSize = 11;
+var kSampleStepSize = 1.0 / (kSplineTableSize - 1.0);
+function cubicBezier(mX1, mY1, mX2, mY2) {
+    if (mX1 === mY1 && mX2 === mY2)
+        return linear;
+    var sampleValues = new Float32Array(kSplineTableSize);
+    for (var i = 0; i < kSplineTableSize; ++i) {
+        sampleValues[i] = calcBezier(i * kSampleStepSize, mX1, mX2);
+    }
+    function getTForX(aX) {
+        var intervalStart = 0.0;
+        var currentSample = 1;
+        var lastSample = kSplineTableSize - 1;
+        for (; currentSample !== lastSample && sampleValues[currentSample] <= aX; ++currentSample) {
+            intervalStart += kSampleStepSize;
+        }
+        --currentSample;
+        var dist = (aX - sampleValues[currentSample]) /
+            (sampleValues[currentSample + 1] - sampleValues[currentSample]);
+        var guessForT = intervalStart + dist * kSampleStepSize;
+        var initialSlope = getSlope(guessForT, mX1, mX2);
+        if (initialSlope >= newtonMinSlope) {
+            return newtonRaphsonIterate(aX, guessForT, mX1, mX2);
+        }
+        else if (initialSlope === 0.0) {
+            return guessForT;
+        }
+        else {
+            return binarySubdivide(aX, intervalStart, intervalStart + kSampleStepSize, mX1, mX2);
+        }
+    }
+    return function (t) {
+        return t === 0 || t === 1 ? t : calcBezier(getTForX(t), mY1, mY2);
+    };
+}
+
+var steps = function (steps, direction) {
+    if (direction === void 0) { direction = 'end'; }
+    return function (progress) {
+        progress =
+            direction === 'end' ? Math.min(progress, 0.999) : Math.max(progress, 0.001);
+        var expanded = progress * steps;
+        var rounded = direction === 'end' ? Math.floor(expanded) : Math.ceil(expanded);
+        return clamp(0, 1, rounded / steps);
+    };
+};
+
+exports.angle = angle;
+exports.animate = animate;
+exports.anticipate = anticipate;
+exports.applyOffset = applyOffset;
+exports.attract = attract;
+exports.attractExpo = attractExpo;
+exports.backIn = backIn;
+exports.backInOut = backInOut;
+exports.backOut = backOut;
+exports.bounceIn = bounceIn;
+exports.bounceInOut = bounceInOut;
+exports.bounceOut = bounceOut;
+exports.circIn = circIn;
+exports.circInOut = circInOut;
+exports.circOut = circOut;
+exports.clamp = clamp;
+exports.createAnticipate = createAnticipate;
+exports.createAttractor = createAttractor;
+exports.createBackIn = createBackIn;
+exports.createExpoIn = createExpoIn;
+exports.cubicBezier = cubicBezier;
+exports.decay = decay;
+exports.degreesToRadians = degreesToRadians;
+exports.distance = distance;
+exports.easeIn = easeIn;
+exports.easeInOut = easeInOut;
+exports.easeOut = easeOut;
+exports.inertia = inertia;
+exports.interpolate = interpolate;
+exports.isPoint = isPoint;
+exports.isPoint3D = isPoint3D;
+exports.keyframes = keyframes;
+exports.linear = linear;
+exports.mirrorEasing = mirrorEasing;
+exports.mix = mix;
+exports.mixColor = mixColor;
+exports.mixComplex = mixComplex;
+exports.pipe = pipe;
+exports.pointFromVector = pointFromVector;
+exports.progress = progress;
+exports.radiansToDegrees = radiansToDegrees;
+exports.reverseEasing = reverseEasing;
+exports.smooth = smooth;
+exports.smoothFrame = smoothFrame;
+exports.snap = snap;
+exports.spring = spring;
+exports.steps = steps;
+exports.toDecimal = toDecimal;
+exports.velocityPerFrame = velocityPerFrame;
+exports.velocityPerSecond = velocityPerSecond;
+exports.wrap = wrap;
+
 
 /***/ }),
 
@@ -4865,7 +12510,7 @@ function detectLocaleCookie(req, locales) {
 /***/ "67Bq":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"./DailyMotion\":[{\"id\":\"oKWQ\",\"file\":\"static/chunks/reactPlayerDailyMotion.479a127ea03581f77a6d.js\"}],\"./Facebook\":[{\"id\":\"nQ6K\",\"file\":\"static/chunks/reactPlayerFacebook.16804fe2ce06861fafd6.js\"}],\"./FilePlayer\":[{\"id\":\"Nn5g\",\"file\":\"static/chunks/reactPlayerFilePlayer.d316b096ebd5b2000b46.js\"}],\"./Kaltura\":[{\"id\":\"4Xmi\",\"file\":\"static/chunks/reactPlayerKaltura.479e0b1de17e1b1a8b85.js\"}],\"./Mixcloud\":[{\"id\":\"eywx\",\"file\":\"static/chunks/reactPlayerMixcloud.3149def966b7a6bab128.js\"}],\"./Preview\":[{\"id\":\"0ZcZ\",\"file\":\"static/chunks/reactPlayerPreview.6273fdbbcf4cf186c6ef.js\"}],\"./SoundCloud\":[{\"id\":\"W6fG\",\"file\":\"static/chunks/reactPlayerSoundCloud.badeb64f84af36130922.js\"}],\"./Streamable\":[{\"id\":\"v4zF\",\"file\":\"static/chunks/reactPlayerStreamable.3b26125af1d4343647b7.js\"}],\"./Twitch\":[{\"id\":\"Vzir\",\"file\":\"static/chunks/reactPlayerTwitch.3c90851494c581a6d9d8.js\"}],\"./Vidyard\":[{\"id\":\"WvJM\",\"file\":\"static/chunks/reactPlayerVidyard.a0d541588a9a94e3dc82.js\"}],\"./Vimeo\":[{\"id\":\"VkHn\",\"file\":\"static/chunks/reactPlayerVimeo.bc308c5e3d89a4466f81.js\"}],\"./Wistia\":[{\"id\":\"3yWd\",\"file\":\"static/chunks/reactPlayerWistia.8f9c622f558daaf28f12.js\"}],\"./YouTube\":[{\"id\":\"5RnD\",\"file\":\"static/chunks/reactPlayerYouTube.117f09816e63b533d792.js\"}]}");
+module.exports = JSON.parse("{}");
 
 /***/ }),
 
@@ -4997,6 +12642,124 @@ function formatUrl(urlObj) {
   search = search.replace('#', '%23');
   return `${protocol}${host}${pathname}${search}${hash}`;
 }
+
+/***/ }),
+
+/***/ "6S8T":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("1vpa");
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(framer_motion__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+
+
+const Hero = ({
+  games
+}) => {
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
+    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("main", {
+      className: "",
+      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+        className: "relative flex  items-center mx-auto justify-center align-middle  ",
+        style: {
+          minHeight: "43vh"
+        },
+        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+          className: "flex h-screen justify-center overflow-hidden ",
+          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+            className: "absolute h-screen mx-auto justify-center flex flex-col items-center z-10 ",
+            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
+              className: "justify-center flex flex-col items-center ",
+              children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].div, {
+                initial: "hidden",
+                animate: "visible",
+                variants: {
+                  hidden: {
+                    scale: .8,
+                    opacity: 0
+                  },
+                  visible: {
+                    scale: 1,
+                    opacity: 1,
+                    rotate: [0, 10, -10, 0],
+                    transition: {
+                      delay: .4
+                    }
+                  }
+                },
+                children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+                  className: "text-4xl mb-4 hero text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  ",
+                  children: "Video Game"
+                })
+              }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+                className: "text-4xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-6xl ",
+                children: "Concierge"
+              })]
+            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
+              className: "py-6  text-center text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl",
+              children: "Not sure which game to play next? We can help you out."
+            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+              className: "flex flex-col md:flex-row ",
+              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].button, {
+                whileHover: {
+                  scale: 1.1
+                },
+                whileTap: {
+                  scale: 0.9
+                },
+                className: "uppercase  shake-lr color-change-2x  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg",
+                children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("i", {
+                  className: "far fa-play-circle text-yellow-200",
+                  children: " "
+                }), " Get a game Suggestion"]
+              })
+            })]
+          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].div, {
+            className: "relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden",
+            children: [games.slice(0, 24).map(game => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+              className: "",
+              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(framer_motion__WEBPACK_IMPORTED_MODULE_2__["motion"].img, {
+                initial: {
+                  rotateY: 180,
+                  opacity: 0
+                },
+                animate: {
+                  rotateY: 0,
+                  opacity: 1
+                },
+                transition: {
+                  delay: .3
+                },
+                className: "w-full col-span-2  block rounded",
+                src: game === null || game === void 0 ? void 0 : game.cover.url.replace("t_thumb", "t_cover_big"),
+                alt: game.name
+              })
+            }, game.id)), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
+              id: "blackOverlay",
+              className: "w-full h-screen absolute  opacity-80 bg-gray-900  "
+            })]
+          })]
+        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
+          className: "top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden",
+          style: {
+            height: "70px",
+            transform: "translateZ(0)"
+          }
+        })]
+      })
+    })
+  });
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Hero);
 
 /***/ }),
 
@@ -5509,6 +13272,67 @@ internals.shallow = function (a, b) {
     return a === b;
 };
 
+
+/***/ }),
+
+/***/ "7KCV":
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__("C+bE");
+
+function _getRequireWildcardCache() {
+  if (typeof WeakMap !== "function") return null;
+  var cache = new WeakMap();
+
+  _getRequireWildcardCache = function _getRequireWildcardCache() {
+    return cache;
+  };
+
+  return cache;
+}
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
+    return {
+      "default": obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache();
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj["default"] = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+module.exports = _interopRequireWildcard;
 
 /***/ }),
 
@@ -6679,141 +14503,6 @@ module.exports = InterceptorManager;
 
 /***/ }),
 
-/***/ "AEgf":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.canPlay = exports.FLV_EXTENSIONS = exports.DASH_EXTENSIONS = exports.HLS_EXTENSIONS = exports.VIDEO_EXTENSIONS = exports.AUDIO_EXTENSIONS = exports.MATCH_URL_KALTURA = exports.MATCH_URL_VIDYARD = exports.MATCH_URL_MIXCLOUD = exports.MATCH_URL_DAILYMOTION = exports.MATCH_URL_TWITCH_CHANNEL = exports.MATCH_URL_TWITCH_VIDEO = exports.MATCH_URL_WISTIA = exports.MATCH_URL_STREAMABLE = exports.MATCH_URL_FACEBOOK_WATCH = exports.MATCH_URL_FACEBOOK = exports.MATCH_URL_VIMEO = exports.MATCH_URL_SOUNDCLOUD = exports.MATCH_URL_YOUTUBE = void 0;
-
-var _utils = __webpack_require__("ODpG");
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-var MATCH_URL_YOUTUBE = /(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:embed\/|v\/|watch\/|watch\?v=|watch\?.+&v=))((\w|-){11})|youtube\.com\/playlist\?list=|youtube\.com\/user\//;
-exports.MATCH_URL_YOUTUBE = MATCH_URL_YOUTUBE;
-var MATCH_URL_SOUNDCLOUD = /(?:soundcloud\.com|snd\.sc)\/[^.]+$/;
-exports.MATCH_URL_SOUNDCLOUD = MATCH_URL_SOUNDCLOUD;
-var MATCH_URL_VIMEO = /vimeo\.com\/.+/;
-exports.MATCH_URL_VIMEO = MATCH_URL_VIMEO;
-var MATCH_URL_FACEBOOK = /^https?:\/\/(www\.)?facebook\.com.*\/(video(s)?|watch|story)(\.php?|\/).+$/;
-exports.MATCH_URL_FACEBOOK = MATCH_URL_FACEBOOK;
-var MATCH_URL_FACEBOOK_WATCH = /^https?:\/\/fb\.watch\/.+$/;
-exports.MATCH_URL_FACEBOOK_WATCH = MATCH_URL_FACEBOOK_WATCH;
-var MATCH_URL_STREAMABLE = /streamable\.com\/([a-z0-9]+)$/;
-exports.MATCH_URL_STREAMABLE = MATCH_URL_STREAMABLE;
-var MATCH_URL_WISTIA = /(?:wistia\.(?:com|net)|wi\.st)\/(?:medias|embed)\/(?:iframe\/)?(.*)$/;
-exports.MATCH_URL_WISTIA = MATCH_URL_WISTIA;
-var MATCH_URL_TWITCH_VIDEO = /(?:www\.|go\.)?twitch\.tv\/videos\/(\d+)($|\?)/;
-exports.MATCH_URL_TWITCH_VIDEO = MATCH_URL_TWITCH_VIDEO;
-var MATCH_URL_TWITCH_CHANNEL = /(?:www\.|go\.)?twitch\.tv\/([a-zA-Z0-9_]+)($|\?)/;
-exports.MATCH_URL_TWITCH_CHANNEL = MATCH_URL_TWITCH_CHANNEL;
-var MATCH_URL_DAILYMOTION = /^(?:(?:https?):)?(?:\/\/)?(?:www\.)?(?:(?:dailymotion\.com(?:\/embed)?\/video)|dai\.ly)\/([a-zA-Z0-9]+)(?:_[\w_-]+)?$/;
-exports.MATCH_URL_DAILYMOTION = MATCH_URL_DAILYMOTION;
-var MATCH_URL_MIXCLOUD = /mixcloud\.com\/([^/]+\/[^/]+)/;
-exports.MATCH_URL_MIXCLOUD = MATCH_URL_MIXCLOUD;
-var MATCH_URL_VIDYARD = /vidyard.com\/(?:watch\/)?([a-zA-Z0-9-]+)/;
-exports.MATCH_URL_VIDYARD = MATCH_URL_VIDYARD;
-var MATCH_URL_KALTURA = /^https?:\/\/[a-zA-Z]+\.kaltura.(com|org)\/p\/([0-9]+)\/sp\/([0-9]+)00\/embedIframeJs\/uiconf_id\/([0-9]+)\/partner_id\/([0-9]+)(.*)entry_id.([a-zA-Z0-9-_]+)$/;
-exports.MATCH_URL_KALTURA = MATCH_URL_KALTURA;
-var AUDIO_EXTENSIONS = /\.(m4a|mp4a|mpga|mp2|mp2a|mp3|m2a|m3a|wav|weba|aac|oga|spx)($|\?)/i;
-exports.AUDIO_EXTENSIONS = AUDIO_EXTENSIONS;
-var VIDEO_EXTENSIONS = /\.(mp4|og[gv]|webm|mov|m4v)($|\?)/i;
-exports.VIDEO_EXTENSIONS = VIDEO_EXTENSIONS;
-var HLS_EXTENSIONS = /\.(m3u8)($|\?)/i;
-exports.HLS_EXTENSIONS = HLS_EXTENSIONS;
-var DASH_EXTENSIONS = /\.(mpd)($|\?)/i;
-exports.DASH_EXTENSIONS = DASH_EXTENSIONS;
-var FLV_EXTENSIONS = /\.(flv)($|\?)/i;
-exports.FLV_EXTENSIONS = FLV_EXTENSIONS;
-
-var canPlayFile = function canPlayFile(url) {
-  if (url instanceof Array) {
-    var _iterator = _createForOfIteratorHelper(url),
-        _step;
-
-    try {
-      for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var item = _step.value;
-
-        if (typeof item === 'string' && canPlayFile(item)) {
-          return true;
-        }
-
-        if (canPlayFile(item.src)) {
-          return true;
-        }
-      }
-    } catch (err) {
-      _iterator.e(err);
-    } finally {
-      _iterator.f();
-    }
-
-    return false;
-  }
-
-  if ((0, _utils.isMediaStream)(url) || (0, _utils.isBlobUrl)(url)) {
-    return true;
-  }
-
-  return AUDIO_EXTENSIONS.test(url) || VIDEO_EXTENSIONS.test(url) || HLS_EXTENSIONS.test(url) || DASH_EXTENSIONS.test(url) || FLV_EXTENSIONS.test(url);
-};
-
-var canPlay = {
-  youtube: function youtube(url) {
-    if (url instanceof Array) {
-      return url.every(function (item) {
-        return MATCH_URL_YOUTUBE.test(item);
-      });
-    }
-
-    return MATCH_URL_YOUTUBE.test(url);
-  },
-  soundcloud: function soundcloud(url) {
-    return MATCH_URL_SOUNDCLOUD.test(url) && !AUDIO_EXTENSIONS.test(url);
-  },
-  vimeo: function vimeo(url) {
-    return MATCH_URL_VIMEO.test(url) && !VIDEO_EXTENSIONS.test(url) && !HLS_EXTENSIONS.test(url);
-  },
-  facebook: function facebook(url) {
-    return MATCH_URL_FACEBOOK.test(url) || MATCH_URL_FACEBOOK_WATCH.test(url);
-  },
-  streamable: function streamable(url) {
-    return MATCH_URL_STREAMABLE.test(url);
-  },
-  wistia: function wistia(url) {
-    return MATCH_URL_WISTIA.test(url);
-  },
-  twitch: function twitch(url) {
-    return MATCH_URL_TWITCH_VIDEO.test(url) || MATCH_URL_TWITCH_CHANNEL.test(url);
-  },
-  dailymotion: function dailymotion(url) {
-    return MATCH_URL_DAILYMOTION.test(url);
-  },
-  mixcloud: function mixcloud(url) {
-    return MATCH_URL_MIXCLOUD.test(url);
-  },
-  vidyard: function vidyard(url) {
-    return MATCH_URL_VIDYARD.test(url);
-  },
-  kaltura: function kaltura(url) {
-    return MATCH_URL_KALTURA.test(url);
-  },
-  file: canPlayFile
-};
-exports.canPlay = canPlay;
-
-/***/ }),
-
 /***/ "AWHq":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6831,6 +14520,349 @@ exports.__esModule=true;exports.htmlEscapeJsonString=htmlEscapeJsonString;// Thi
 // License: https://github.com/zertosh/htmlescape/blob/0527ca7156a524d256101bb310a9f970f63078ad/LICENSE
 const ESCAPE_LOOKUP={'&':'\\u0026','>':'\\u003e','<':'\\u003c','\u2028':'\\u2028','\u2029':'\\u2029'};const ESCAPE_REGEX=/[&><\u2028\u2029]/g;function htmlEscapeJsonString(str){return str.replace(ESCAPE_REGEX,match=>ESCAPE_LOOKUP[match]);}
 //# sourceMappingURL=htmlescape.js.map
+
+/***/ }),
+
+/***/ "AroE":
+/***/ (function(module, exports) {
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+
+module.exports = _interopRequireDefault;
+
+/***/ }),
+
+/***/ "BEkO":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global global, define, System, Reflect, Promise */
+var __extends;
+var __assign;
+var __rest;
+var __decorate;
+var __param;
+var __metadata;
+var __awaiter;
+var __generator;
+var __exportStar;
+var __values;
+var __read;
+var __spread;
+var __spreadArrays;
+var __spreadArray;
+var __await;
+var __asyncGenerator;
+var __asyncDelegator;
+var __asyncValues;
+var __makeTemplateObject;
+var __importStar;
+var __importDefault;
+var __classPrivateFieldGet;
+var __classPrivateFieldSet;
+var __createBinding;
+(function (factory) {
+    var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
+    if (true) {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (exports) { factory(createExporter(root, createExporter(exports))); }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    }
+    else {}
+    function createExporter(exports, previous) {
+        if (exports !== root) {
+            if (typeof Object.create === "function") {
+                Object.defineProperty(exports, "__esModule", { value: true });
+            }
+            else {
+                exports.__esModule = true;
+            }
+        }
+        return function (id, v) { return exports[id] = previous ? previous(id, v) : v; };
+    }
+})
+(function (exporter) {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+
+    __extends = function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+
+    __assign = Object.assign || function (t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+
+    __rest = function (s, e) {
+        var t = {};
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+            t[p] = s[p];
+        if (s != null && typeof Object.getOwnPropertySymbols === "function")
+            for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+                if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                    t[p[i]] = s[p[i]];
+            }
+        return t;
+    };
+
+    __decorate = function (decorators, target, key, desc) {
+        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+        if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+        else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+        return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+
+    __param = function (paramIndex, decorator) {
+        return function (target, key) { decorator(target, key, paramIndex); }
+    };
+
+    __metadata = function (metadataKey, metadataValue) {
+        if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+    };
+
+    __awaiter = function (thisArg, _arguments, P, generator) {
+        function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+        return new (P || (P = Promise))(function (resolve, reject) {
+            function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+            function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+            function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+            step((generator = generator.apply(thisArg, _arguments || [])).next());
+        });
+    };
+
+    __generator = function (thisArg, body) {
+        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+        function verb(n) { return function (v) { return step([n, v]); }; }
+        function step(op) {
+            if (f) throw new TypeError("Generator is already executing.");
+            while (_) try {
+                if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+                if (y = 0, t) op = [op[0] & 2, t.value];
+                switch (op[0]) {
+                    case 0: case 1: t = op; break;
+                    case 4: _.label++; return { value: op[1], done: false };
+                    case 5: _.label++; y = op[1]; op = [0]; continue;
+                    case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                    default:
+                        if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                        if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                        if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                        if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                        if (t[2]) _.ops.pop();
+                        _.trys.pop(); continue;
+                }
+                op = body.call(thisArg, _);
+            } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+            if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+        }
+    };
+
+    __exportStar = function(m, o) {
+        for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+    };
+
+    __createBinding = Object.create ? (function(o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+    }) : (function(o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        o[k2] = m[k];
+    });
+
+    __values = function (o) {
+        var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+        if (m) return m.call(o);
+        if (o && typeof o.length === "number") return {
+            next: function () {
+                if (o && i >= o.length) o = void 0;
+                return { value: o && o[i++], done: !o };
+            }
+        };
+        throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+    };
+
+    __read = function (o, n) {
+        var m = typeof Symbol === "function" && o[Symbol.iterator];
+        if (!m) return o;
+        var i = m.call(o), r, ar = [], e;
+        try {
+            while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+        }
+        catch (error) { e = { error: error }; }
+        finally {
+            try {
+                if (r && !r.done && (m = i["return"])) m.call(i);
+            }
+            finally { if (e) throw e.error; }
+        }
+        return ar;
+    };
+
+    /** @deprecated */
+    __spread = function () {
+        for (var ar = [], i = 0; i < arguments.length; i++)
+            ar = ar.concat(__read(arguments[i]));
+        return ar;
+    };
+
+    /** @deprecated */
+    __spreadArrays = function () {
+        for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+        for (var r = Array(s), k = 0, i = 0; i < il; i++)
+            for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+                r[k] = a[j];
+        return r;
+    };
+
+    __spreadArray = function (to, from) {
+        for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+            to[j] = from[i];
+        return to;
+    };
+
+    __await = function (v) {
+        return this instanceof __await ? (this.v = v, this) : new __await(v);
+    };
+
+    __asyncGenerator = function (thisArg, _arguments, generator) {
+        if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+        var g = generator.apply(thisArg, _arguments || []), i, q = [];
+        return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+        function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+        function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+        function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);  }
+        function fulfill(value) { resume("next", value); }
+        function reject(value) { resume("throw", value); }
+        function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+    };
+
+    __asyncDelegator = function (o) {
+        var i, p;
+        return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+        function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+    };
+
+    __asyncValues = function (o) {
+        if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+        var m = o[Symbol.asyncIterator], i;
+        return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+        function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+        function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+    };
+
+    __makeTemplateObject = function (cooked, raw) {
+        if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+        return cooked;
+    };
+
+    var __setModuleDefault = Object.create ? (function(o, v) {
+        Object.defineProperty(o, "default", { enumerable: true, value: v });
+    }) : function(o, v) {
+        o["default"] = v;
+    };
+
+    __importStar = function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+
+    __importDefault = function (mod) {
+        return (mod && mod.__esModule) ? mod : { "default": mod };
+    };
+
+    __classPrivateFieldGet = function (receiver, privateMap) {
+        if (!privateMap.has(receiver)) {
+            throw new TypeError("attempted to get private field on non-instance");
+        }
+        return privateMap.get(receiver);
+    };
+
+    __classPrivateFieldSet = function (receiver, privateMap, value) {
+        if (!privateMap.has(receiver)) {
+            throw new TypeError("attempted to set private field on non-instance");
+        }
+        privateMap.set(receiver, value);
+        return value;
+    };
+
+    exporter("__extends", __extends);
+    exporter("__assign", __assign);
+    exporter("__rest", __rest);
+    exporter("__decorate", __decorate);
+    exporter("__param", __param);
+    exporter("__metadata", __metadata);
+    exporter("__awaiter", __awaiter);
+    exporter("__generator", __generator);
+    exporter("__exportStar", __exportStar);
+    exporter("__createBinding", __createBinding);
+    exporter("__values", __values);
+    exporter("__read", __read);
+    exporter("__spread", __spread);
+    exporter("__spreadArrays", __spreadArrays);
+    exporter("__spreadArray", __spreadArray);
+    exporter("__await", __await);
+    exporter("__asyncGenerator", __asyncGenerator);
+    exporter("__asyncDelegator", __asyncDelegator);
+    exporter("__asyncValues", __asyncValues);
+    exporter("__makeTemplateObject", __makeTemplateObject);
+    exporter("__importStar", __importStar);
+    exporter("__importDefault", __importDefault);
+    exporter("__classPrivateFieldGet", __classPrivateFieldGet);
+    exporter("__classPrivateFieldSet", __classPrivateFieldSet);
+});
+
+
+/***/ }),
+
+/***/ "C+bE":
+/***/ (function(module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
 
 /***/ }),
 
@@ -7259,233 +15291,6 @@ internals.SeenEntry = class {
     }
 };
 
-
-/***/ }),
-
-/***/ "DMug":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.defaultProps = exports.propTypes = void 0;
-
-var _propTypes = _interopRequireDefault(__webpack_require__("17x9"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var string = _propTypes["default"].string,
-    bool = _propTypes["default"].bool,
-    number = _propTypes["default"].number,
-    array = _propTypes["default"].array,
-    oneOfType = _propTypes["default"].oneOfType,
-    shape = _propTypes["default"].shape,
-    object = _propTypes["default"].object,
-    func = _propTypes["default"].func,
-    node = _propTypes["default"].node;
-var propTypes = {
-  url: oneOfType([string, array, object]),
-  playing: bool,
-  loop: bool,
-  controls: bool,
-  volume: number,
-  muted: bool,
-  playbackRate: number,
-  width: oneOfType([string, number]),
-  height: oneOfType([string, number]),
-  style: object,
-  progressInterval: number,
-  playsinline: bool,
-  pip: bool,
-  stopOnUnmount: bool,
-  light: oneOfType([bool, string]),
-  playIcon: node,
-  previewTabIndex: number,
-  fallback: node,
-  wrapper: oneOfType([string, func, shape({
-    render: func.isRequired
-  })]),
-  config: shape({
-    soundcloud: shape({
-      options: object
-    }),
-    youtube: shape({
-      playerVars: object,
-      embedOptions: object,
-      onUnstarted: func
-    }),
-    facebook: shape({
-      appId: string,
-      version: string,
-      playerId: string,
-      attributes: object
-    }),
-    dailymotion: shape({
-      params: object
-    }),
-    vimeo: shape({
-      playerOptions: object
-    }),
-    file: shape({
-      attributes: object,
-      tracks: array,
-      forceVideo: bool,
-      forceAudio: bool,
-      forceHLS: bool,
-      forceDASH: bool,
-      forceFLV: bool,
-      hlsOptions: object,
-      hlsVersion: string,
-      dashVersion: string,
-      flvVersion: string
-    }),
-    wistia: shape({
-      options: object,
-      playerId: string,
-      customControls: array
-    }),
-    mixcloud: shape({
-      options: object
-    }),
-    twitch: shape({
-      options: object,
-      playerId: string
-    }),
-    vidyard: shape({
-      options: object
-    })
-  }),
-  onReady: func,
-  onStart: func,
-  onPlay: func,
-  onPause: func,
-  onBuffer: func,
-  onBufferEnd: func,
-  onEnded: func,
-  onError: func,
-  onDuration: func,
-  onSeek: func,
-  onProgress: func,
-  onClickPreview: func,
-  onEnablePIP: func,
-  onDisablePIP: func
-};
-exports.propTypes = propTypes;
-
-var noop = function noop() {};
-
-var defaultProps = {
-  playing: false,
-  loop: false,
-  controls: false,
-  volume: null,
-  muted: false,
-  playbackRate: 1,
-  width: '640px',
-  height: '360px',
-  style: {},
-  progressInterval: 1000,
-  playsinline: false,
-  pip: false,
-  stopOnUnmount: true,
-  light: false,
-  fallback: null,
-  wrapper: 'div',
-  previewTabIndex: 0,
-  config: {
-    soundcloud: {
-      options: {
-        visual: true,
-        // Undocumented, but makes player fill container and look better
-        buying: false,
-        liking: false,
-        download: false,
-        sharing: false,
-        show_comments: false,
-        show_playcount: false
-      }
-    },
-    youtube: {
-      playerVars: {
-        playsinline: 1,
-        showinfo: 0,
-        rel: 0,
-        iv_load_policy: 3,
-        modestbranding: 1
-      },
-      embedOptions: {},
-      onUnstarted: noop
-    },
-    facebook: {
-      appId: '1309697205772819',
-      version: 'v3.3',
-      playerId: null,
-      attributes: {}
-    },
-    dailymotion: {
-      params: {
-        api: 1,
-        'endscreen-enable': false
-      }
-    },
-    vimeo: {
-      playerOptions: {
-        autopause: false,
-        byline: false,
-        portrait: false,
-        title: false
-      }
-    },
-    file: {
-      attributes: {},
-      tracks: [],
-      forceVideo: false,
-      forceAudio: false,
-      forceHLS: false,
-      forceDASH: false,
-      forceFLV: false,
-      hlsOptions: {},
-      hlsVersion: '0.14.16',
-      dashVersion: '3.1.3',
-      flvVersion: '1.5.0'
-    },
-    wistia: {
-      options: {},
-      playerId: null,
-      customControls: null
-    },
-    mixcloud: {
-      options: {
-        hide_cover: 1
-      }
-    },
-    twitch: {
-      options: {},
-      playerId: null
-    },
-    vidyard: {
-      options: {}
-    }
-  },
-  onReady: noop,
-  onStart: noop,
-  onPlay: noop,
-  onPause: noop,
-  onBuffer: noop,
-  onBufferEnd: noop,
-  onEnded: noop,
-  onError: noop,
-  onDuration: noop,
-  onSeek: noop,
-  onProgress: noop,
-  onClickPreview: noop,
-  onEnablePIP: noop,
-  onDisablePIP: noop
-};
-exports.defaultProps = defaultProps;
 
 /***/ }),
 
@@ -8718,42 +16523,6 @@ exports.default = TextNode;
 
 /***/ }),
 
-/***/ "Kaw+":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-
-const SectionHeaderText = ({
-  headerText,
-  paragraphText
-}) => {
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-    id: "casual",
-    className: "container container flex lg:bg-transparent\tflex-col justify-center bg-bgcolor text-textwhite text-center py-10 rounded-xl my-3 max-w-md  md:max-w-xl lg:max-w-7xl",
-    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-      className: " pb-6 text-base font-bold tracking-widest headings uppercase",
-      children: "Trends"
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-      className: "pb-6 text-3xl font-black headings uppercase",
-      children: headerText
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-      className: " py-2 text-xl font-light leading-relaxed mt-0 mb-6 ",
-      children: paragraphText
-    })]
-  });
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (SectionHeaderText);
-
-/***/ }),
-
 /***/ "KmAU":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8797,6 +16566,29 @@ exports.__esModule=true;exports.setRevalidateHeaders=setRevalidateHeaders;export
      * ETag, Expires, and Vary. https://tools.ietf.org/html/rfc7232#section-4.1
      */res.setHeader('ETag',etag);}if((0,_fresh.default)(req.headers,{etag})){res.statusCode=304;res.end();return true;}return false;}
 //# sourceMappingURL=send-payload.js.map
+
+/***/ }),
+
+/***/ "L/Hi":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _interopDefault(ex) {
+  return ex && "object" == typeof ex && "default" in ex ? ex.default : ex;
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: !0
+});
+
+var memoize = _interopDefault(__webpack_require__("TiPX")), reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|inert|itemProp|itemScope|itemType|itemID|itemRef|on|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/, index = memoize(function(prop) {
+  return reactPropsRegex.test(prop) || 111 === prop.charCodeAt(0) && 110 === prop.charCodeAt(1) && prop.charCodeAt(2) < 91;
+});
+
+exports.default = index;
+
 
 /***/ }),
 
@@ -8910,7 +16702,7 @@ module.exports = function createError(message, config, code, request, response) 
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-feb8a7604fa7fce626b2.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/jHwnMmIS0oCMXeJOGTLVI/_buildManifest.js\",\"static/jHwnMmIS0oCMXeJOGTLVI/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/index-c035399ff633ff17345c.js\"],\"/_app\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/css/baa45da4db8da6680c9d.css\",\"static/chunks/pages/_app-b984acc134a406642874.js\"],\"/_error\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/pages/_error-f4c6ef9c1129795098b3.js\"],\"/games/[id]\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/pages/games/[id]-ec50fab39fd8952c0433.js\"],\"/goty\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/goty-0e5ba106f0624932dbe2.js\"],\"/nintendo\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/nintendo-e56997b5ce51800933ca.js\"],\"/playstation\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/playstation-8b269b39c6feb76b9193.js\"],\"/xbox\":[\"static/chunks/main-7bfd99e4e6ce3a7ca7b2.js\",\"static/chunks/webpack-7f3adeb56f39e2d5c7c9.js\",\"static/chunks/framework.29f9e2f3d4a33bafbaa5.js\",\"static/chunks/commons.06a1eaaf95eb48ca6fcc.js\",\"static/chunks/9edd15382a15c33d9099fc1bec9f4966dc422e71.f53003c7d6b738b9eec7.js\",\"static/chunks/pages/xbox-5be3d5d11fdc47da4ee1.js\"]},\"ampFirstPages\":[]}");
+module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-28654a8145d7603786fc.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/9I3PgIpgaGJhekVTugaaE/_buildManifest.js\",\"static/9I3PgIpgaGJhekVTugaaE/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-76a0f058bc07561dc639.js\",\"static/chunks/webpack-50bee04d1dc61f8adf5b.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/b64132c2d4190d504ccfc1684977146c535c6128.dc48ee16fd13cbab15f5.js\",\"static/chunks/pages/index-848bb28485394be5b3a8.js\"],\"/_app\":[\"static/chunks/main-76a0f058bc07561dc639.js\",\"static/chunks/webpack-50bee04d1dc61f8adf5b.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/85bf9256d70b3f36194cc50918c9eac95f1d381d.2f5ef48c5900ac0b054a.js\",\"static/chunks/b64132c2d4190d504ccfc1684977146c535c6128.dc48ee16fd13cbab15f5.js\",\"static/css/44b230adcf423cc5f754.css\",\"static/chunks/pages/_app-56c1020c188ca0ac6b1f.js\"],\"/_error\":[\"static/chunks/main-76a0f058bc07561dc639.js\",\"static/chunks/webpack-50bee04d1dc61f8adf5b.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/pages/_error-d69f0278ba1c14cb54e9.js\"],\"/games/[id]\":[\"static/chunks/main-76a0f058bc07561dc639.js\",\"static/chunks/webpack-50bee04d1dc61f8adf5b.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/85bf9256d70b3f36194cc50918c9eac95f1d381d.2f5ef48c5900ac0b054a.js\",\"static/chunks/039e83126c3a3f3eb9758a859f2984aad7950ec9.b27b583682f79bd6e419.js\",\"static/chunks/pages/games/[id]-a8ad460c9f5c41b8486a.js\"],\"/goty\":[\"static/chunks/main-76a0f058bc07561dc639.js\",\"static/chunks/webpack-50bee04d1dc61f8adf5b.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/85bf9256d70b3f36194cc50918c9eac95f1d381d.2f5ef48c5900ac0b054a.js\",\"static/chunks/b64132c2d4190d504ccfc1684977146c535c6128.dc48ee16fd13cbab15f5.js\",\"static/chunks/876fddf8a018427e66497b636348cb59e854b53a.5b22775d5e7940ae6e65.js\",\"static/chunks/039e83126c3a3f3eb9758a859f2984aad7950ec9.b27b583682f79bd6e419.js\",\"static/chunks/pages/goty-265bcb927c6495a287cb.js\"],\"/nintendo\":[\"static/chunks/main-76a0f058bc07561dc639.js\",\"static/chunks/webpack-50bee04d1dc61f8adf5b.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/85bf9256d70b3f36194cc50918c9eac95f1d381d.2f5ef48c5900ac0b054a.js\",\"static/chunks/b64132c2d4190d504ccfc1684977146c535c6128.dc48ee16fd13cbab15f5.js\",\"static/chunks/876fddf8a018427e66497b636348cb59e854b53a.5b22775d5e7940ae6e65.js\",\"static/chunks/pages/nintendo-cdc651f85e6feed77ddf.js\"],\"/playstation\":[\"static/chunks/main-76a0f058bc07561dc639.js\",\"static/chunks/webpack-50bee04d1dc61f8adf5b.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/85bf9256d70b3f36194cc50918c9eac95f1d381d.2f5ef48c5900ac0b054a.js\",\"static/chunks/b64132c2d4190d504ccfc1684977146c535c6128.dc48ee16fd13cbab15f5.js\",\"static/chunks/876fddf8a018427e66497b636348cb59e854b53a.5b22775d5e7940ae6e65.js\",\"static/chunks/pages/playstation-a71de9cd6949d539c1b9.js\"],\"/xbox\":[\"static/chunks/main-76a0f058bc07561dc639.js\",\"static/chunks/webpack-50bee04d1dc61f8adf5b.js\",\"static/chunks/framework.0c239260661ae1d12aa2.js\",\"static/chunks/85bf9256d70b3f36194cc50918c9eac95f1d381d.2f5ef48c5900ac0b054a.js\",\"static/chunks/b64132c2d4190d504ccfc1684977146c535c6128.dc48ee16fd13cbab15f5.js\",\"static/chunks/876fddf8a018427e66497b636348cb59e854b53a.5b22775d5e7940ae6e65.js\",\"static/chunks/pages/xbox-3e6ad1603bbf4f27289b.js\"]},\"ampFirstPages\":[]}");
 
 /***/ }),
 
@@ -9123,78 +16915,6 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-
-
-/***/ }),
-
-/***/ "MuZe":
-/***/ (function(module, exports) {
-
-
-module.exports = function load (src, opts, cb) {
-  var head = document.head || document.getElementsByTagName('head')[0]
-  var script = document.createElement('script')
-
-  if (typeof opts === 'function') {
-    cb = opts
-    opts = {}
-  }
-
-  opts = opts || {}
-  cb = cb || function() {}
-
-  script.type = opts.type || 'text/javascript'
-  script.charset = opts.charset || 'utf8';
-  script.async = 'async' in opts ? !!opts.async : true
-  script.src = src
-
-  if (opts.attrs) {
-    setAttributes(script, opts.attrs)
-  }
-
-  if (opts.text) {
-    script.text = '' + opts.text
-  }
-
-  var onend = 'onload' in script ? stdOnEnd : ieOnEnd
-  onend(script, cb)
-
-  // some good legacy browsers (firefox) fail the 'in' detection above
-  // so as a fallback we always set onload
-  // old IE will ignore this and new IE will set onload
-  if (!script.onload) {
-    stdOnEnd(script, cb);
-  }
-
-  head.appendChild(script)
-}
-
-function setAttributes(script, attrs) {
-  for (var attr in attrs) {
-    script.setAttribute(attr, attrs[attr]);
-  }
-}
-
-function stdOnEnd (script, cb) {
-  script.onload = function () {
-    this.onerror = this.onload = null
-    cb(null, script)
-  }
-  script.onerror = function () {
-    // this.onload = null here is necessary
-    // because even IE9 works not like others
-    this.onerror = this.onload = null
-    cb(new Error('Failed to load ' + this.src), script)
-  }
-}
-
-function ieOnEnd (script, cb) {
-  script.onreadystatechange = function () {
-    if (this.readyState != 'complete' && this.readyState != 'loaded') return
-    this.onreadystatechange = null
-    cb(null, script) // there is no way to catch loading errors in IE8
-  }
-}
 
 
 /***/ }),
@@ -9507,7 +17227,7 @@ formatters.j = function (v) {
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__("TqRt");
+var _interopRequireDefault = __webpack_require__("AroE");
 
 exports.__esModule = true;
 exports.markAssetError = markAssetError;
@@ -9768,563 +17488,6 @@ module.exports = require("buffer");
 
 /***/ }),
 
-/***/ "Nn5g":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var HAS_NAVIGATOR = typeof navigator !== 'undefined';
-var IS_IPAD_PRO = HAS_NAVIGATOR && navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
-var IS_IOS = HAS_NAVIGATOR && (/iPad|iPhone|iPod/.test(navigator.userAgent) || IS_IPAD_PRO) && !window.MSStream;
-var HLS_SDK_URL = 'https://cdn.jsdelivr.net/npm/hls.js@VERSION/dist/hls.min.js';
-var HLS_GLOBAL = 'Hls';
-var DASH_SDK_URL = 'https://cdnjs.cloudflare.com/ajax/libs/dashjs/VERSION/dash.all.min.js';
-var DASH_GLOBAL = 'dashjs';
-var FLV_SDK_URL = 'https://cdn.jsdelivr.net/npm/flv.js@VERSION/dist/flv.min.js';
-var FLV_GLOBAL = 'flvjs';
-var MATCH_DROPBOX_URL = /www\.dropbox\.com\/.+/;
-var MATCH_CLOUDFLARE_STREAM = /https:\/\/watch\.cloudflarestream\.com\/([a-z0-9]+)/;
-var REPLACE_CLOUDFLARE_STREAM = 'https://videodelivery.net/{id}/manifest/video.m3u8';
-
-var FilePlayer = /*#__PURE__*/function (_Component) {
-  _inherits(FilePlayer, _Component);
-
-  var _super = _createSuper(FilePlayer);
-
-  function FilePlayer() {
-    var _this;
-
-    _classCallCheck(this, FilePlayer);
-
-    for (var _len = arguments.length, _args = new Array(_len), _key = 0; _key < _len; _key++) {
-      _args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(_args));
-
-    _defineProperty(_assertThisInitialized(_this), "onReady", function () {
-      var _this$props;
-
-      return (_this$props = _this.props).onReady.apply(_this$props, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onPlay", function () {
-      var _this$props2;
-
-      return (_this$props2 = _this.props).onPlay.apply(_this$props2, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onBuffer", function () {
-      var _this$props3;
-
-      return (_this$props3 = _this.props).onBuffer.apply(_this$props3, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onBufferEnd", function () {
-      var _this$props4;
-
-      return (_this$props4 = _this.props).onBufferEnd.apply(_this$props4, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onPause", function () {
-      var _this$props5;
-
-      return (_this$props5 = _this.props).onPause.apply(_this$props5, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onEnded", function () {
-      var _this$props6;
-
-      return (_this$props6 = _this.props).onEnded.apply(_this$props6, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onError", function () {
-      var _this$props7;
-
-      return (_this$props7 = _this.props).onError.apply(_this$props7, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onEnablePIP", function () {
-      var _this$props8;
-
-      return (_this$props8 = _this.props).onEnablePIP.apply(_this$props8, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onDisablePIP", function (e) {
-      var _this$props9 = _this.props,
-          onDisablePIP = _this$props9.onDisablePIP,
-          playing = _this$props9.playing;
-      onDisablePIP(e);
-
-      if (playing) {
-        _this.play();
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onPresentationModeChange", function (e) {
-      if (_this.player && (0, _utils.supportsWebKitPresentationMode)(_this.player)) {
-        var webkitPresentationMode = _this.player.webkitPresentationMode;
-
-        if (webkitPresentationMode === 'picture-in-picture') {
-          _this.onEnablePIP(e);
-        } else if (webkitPresentationMode === 'inline') {
-          _this.onDisablePIP(e);
-        }
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "onSeek", function (e) {
-      _this.props.onSeek(e.target.currentTime);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.player.muted = true;
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.player.muted = false;
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "renderSourceElement", function (source, index) {
-      if (typeof source === 'string') {
-        return /*#__PURE__*/_react["default"].createElement("source", {
-          key: index,
-          src: source
-        });
-      }
-
-      return /*#__PURE__*/_react["default"].createElement("source", _extends({
-        key: index
-      }, source));
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "renderTrack", function (track, index) {
-      return /*#__PURE__*/_react["default"].createElement("track", _extends({
-        key: index
-      }, track));
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (player) {
-      if (_this.player) {
-        // Store previous player to be used by removeListeners()
-        _this.prevPlayer = _this.player;
-      }
-
-      _this.player = player;
-    });
-
-    return _this;
-  }
-
-  _createClass(FilePlayer, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-      this.addListeners(this.player);
-
-      if (IS_IOS) {
-        this.player.load();
-      }
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      if (this.shouldUseAudio(this.props) !== this.shouldUseAudio(prevProps)) {
-        this.removeListeners(this.prevPlayer, prevProps.url);
-        this.addListeners(this.player);
-      }
-
-      if (this.props.url !== prevProps.url && !(0, _utils.isMediaStream)(this.props.url)) {
-        this.player.srcObject = null;
-      }
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      this.removeListeners(this.player);
-
-      if (this.hls) {
-        this.hls.destroy();
-      }
-    }
-  }, {
-    key: "addListeners",
-    value: function addListeners(player) {
-      var _this$props10 = this.props,
-          url = _this$props10.url,
-          playsinline = _this$props10.playsinline;
-      player.addEventListener('play', this.onPlay);
-      player.addEventListener('waiting', this.onBuffer);
-      player.addEventListener('playing', this.onBufferEnd);
-      player.addEventListener('pause', this.onPause);
-      player.addEventListener('seeked', this.onSeek);
-      player.addEventListener('ended', this.onEnded);
-      player.addEventListener('error', this.onError);
-      player.addEventListener('enterpictureinpicture', this.onEnablePIP);
-      player.addEventListener('leavepictureinpicture', this.onDisablePIP);
-      player.addEventListener('webkitpresentationmodechanged', this.onPresentationModeChange);
-
-      if (!this.shouldUseHLS(url)) {
-        // onReady is handled by hls.js
-        player.addEventListener('canplay', this.onReady);
-      }
-
-      if (playsinline) {
-        player.setAttribute('playsinline', '');
-        player.setAttribute('webkit-playsinline', '');
-        player.setAttribute('x5-playsinline', '');
-      }
-    }
-  }, {
-    key: "removeListeners",
-    value: function removeListeners(player, url) {
-      player.removeEventListener('canplay', this.onReady);
-      player.removeEventListener('play', this.onPlay);
-      player.removeEventListener('waiting', this.onBuffer);
-      player.removeEventListener('playing', this.onBufferEnd);
-      player.removeEventListener('pause', this.onPause);
-      player.removeEventListener('seeked', this.onSeek);
-      player.removeEventListener('ended', this.onEnded);
-      player.removeEventListener('error', this.onError);
-      player.removeEventListener('enterpictureinpicture', this.onEnablePIP);
-      player.removeEventListener('leavepictureinpicture', this.onDisablePIP);
-      player.removeEventListener('webkitpresentationmodechanged', this.onPresentationModeChange);
-
-      if (!this.shouldUseHLS(url)) {
-        // onReady is handled by hls.js
-        player.removeEventListener('canplay', this.onReady);
-      }
-    } // Proxy methods to prevent listener leaks
-
-  }, {
-    key: "shouldUseAudio",
-    value: function shouldUseAudio(props) {
-      if (props.config.forceVideo) {
-        return false;
-      }
-
-      if (props.config.attributes.poster) {
-        return false; // Use <video> so that poster is shown
-      }
-
-      return _patterns.AUDIO_EXTENSIONS.test(props.url) || props.config.forceAudio;
-    }
-  }, {
-    key: "shouldUseHLS",
-    value: function shouldUseHLS(url) {
-      if (this.props.config.forceHLS) {
-        return true;
-      }
-
-      if (IS_IOS) {
-        return false;
-      }
-
-      return _patterns.HLS_EXTENSIONS.test(url) || MATCH_CLOUDFLARE_STREAM.test(url);
-    }
-  }, {
-    key: "shouldUseDASH",
-    value: function shouldUseDASH(url) {
-      return _patterns.DASH_EXTENSIONS.test(url) || this.props.config.forceDASH;
-    }
-  }, {
-    key: "shouldUseFLV",
-    value: function shouldUseFLV(url) {
-      return _patterns.FLV_EXTENSIONS.test(url) || this.props.config.forceFLV;
-    }
-  }, {
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      var _this$props$config = this.props.config,
-          hlsVersion = _this$props$config.hlsVersion,
-          hlsOptions = _this$props$config.hlsOptions,
-          dashVersion = _this$props$config.dashVersion,
-          flvVersion = _this$props$config.flvVersion;
-
-      if (this.hls) {
-        this.hls.destroy();
-      }
-
-      if (this.dash) {
-        this.dash.reset();
-      }
-
-      if (this.shouldUseHLS(url)) {
-        (0, _utils.getSDK)(HLS_SDK_URL.replace('VERSION', hlsVersion), HLS_GLOBAL).then(function (Hls) {
-          _this2.hls = new Hls(hlsOptions);
-
-          _this2.hls.on(Hls.Events.MANIFEST_PARSED, function () {
-            _this2.props.onReady();
-          });
-
-          _this2.hls.on(Hls.Events.ERROR, function (e, data) {
-            _this2.props.onError(e, data, _this2.hls, Hls);
-          });
-
-          if (MATCH_CLOUDFLARE_STREAM.test(url)) {
-            var id = url.match(MATCH_CLOUDFLARE_STREAM)[1];
-
-            _this2.hls.loadSource(REPLACE_CLOUDFLARE_STREAM.replace('{id}', id));
-          } else {
-            _this2.hls.loadSource(url);
-          }
-
-          _this2.hls.attachMedia(_this2.player);
-
-          _this2.props.onLoaded();
-        });
-      }
-
-      if (this.shouldUseDASH(url)) {
-        (0, _utils.getSDK)(DASH_SDK_URL.replace('VERSION', dashVersion), DASH_GLOBAL).then(function (dashjs) {
-          _this2.dash = dashjs.MediaPlayer().create();
-
-          _this2.dash.initialize(_this2.player, url, _this2.props.playing);
-
-          _this2.dash.on('error', _this2.props.onError);
-
-          if (parseInt(dashVersion) < 3) {
-            _this2.dash.getDebug().setLogToBrowserConsole(false);
-          } else {
-            _this2.dash.updateSettings({
-              debug: {
-                logLevel: dashjs.Debug.LOG_LEVEL_NONE
-              }
-            });
-          }
-
-          _this2.props.onLoaded();
-        });
-      }
-
-      if (this.shouldUseFLV(url)) {
-        (0, _utils.getSDK)(FLV_SDK_URL.replace('VERSION', flvVersion), FLV_GLOBAL).then(function (flvjs) {
-          _this2.flv = flvjs.createPlayer({
-            type: 'flv',
-            url: url
-          });
-
-          _this2.flv.attachMediaElement(_this2.player);
-
-          _this2.flv.load();
-
-          _this2.props.onLoaded();
-        });
-      }
-
-      if (url instanceof Array) {
-        // When setting new urls (<source>) on an already loaded video,
-        // HTMLMediaElement.load() is needed to reset the media element
-        // and restart the media resource. Just replacing children source
-        // dom nodes is not enough
-        this.player.load();
-      } else if ((0, _utils.isMediaStream)(url)) {
-        try {
-          this.player.srcObject = url;
-        } catch (e) {
-          this.player.src = window.URL.createObjectURL(url);
-        }
-      }
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      var promise = this.player.play();
-
-      if (promise) {
-        promise["catch"](this.props.onError);
-      }
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.player.pause();
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      this.player.removeAttribute('src');
-
-      if (this.dash) {
-        this.dash.reset();
-      }
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.player.currentTime = seconds;
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.player.volume = fraction;
-    }
-  }, {
-    key: "enablePIP",
-    value: function enablePIP() {
-      if (this.player.requestPictureInPicture && document.pictureInPictureElement !== this.player) {
-        this.player.requestPictureInPicture();
-      } else if ((0, _utils.supportsWebKitPresentationMode)(this.player) && this.player.webkitPresentationMode !== 'picture-in-picture') {
-        this.player.webkitSetPresentationMode('picture-in-picture');
-      }
-    }
-  }, {
-    key: "disablePIP",
-    value: function disablePIP() {
-      if (document.exitPictureInPicture && document.pictureInPictureElement === this.player) {
-        document.exitPictureInPicture();
-      } else if ((0, _utils.supportsWebKitPresentationMode)(this.player) && this.player.webkitPresentationMode !== 'inline') {
-        this.player.webkitSetPresentationMode('inline');
-      }
-    }
-  }, {
-    key: "setPlaybackRate",
-    value: function setPlaybackRate(rate) {
-      this.player.playbackRate = rate;
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      if (!this.player) return null;
-      var _this$player = this.player,
-          duration = _this$player.duration,
-          seekable = _this$player.seekable; // on iOS, live streams return Infinity for the duration
-      // so instead we use the end of the seekable timerange
-
-      if (duration === Infinity && seekable.length > 0) {
-        return seekable.end(seekable.length - 1);
-      }
-
-      return duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      if (!this.player) return null;
-      return this.player.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      if (!this.player) return null;
-      var buffered = this.player.buffered;
-
-      if (buffered.length === 0) {
-        return 0;
-      }
-
-      var end = buffered.end(buffered.length - 1);
-      var duration = this.getDuration();
-
-      if (end > duration) {
-        return duration;
-      }
-
-      return end;
-    }
-  }, {
-    key: "getSource",
-    value: function getSource(url) {
-      var useHLS = this.shouldUseHLS(url);
-      var useDASH = this.shouldUseDASH(url);
-      var useFLV = this.shouldUseFLV(url);
-
-      if (url instanceof Array || (0, _utils.isMediaStream)(url) || useHLS || useDASH || useFLV) {
-        return undefined;
-      }
-
-      if (MATCH_DROPBOX_URL.test(url)) {
-        return url.replace('www.dropbox.com', 'dl.dropboxusercontent.com');
-      }
-
-      return url;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props11 = this.props,
-          url = _this$props11.url,
-          playing = _this$props11.playing,
-          loop = _this$props11.loop,
-          controls = _this$props11.controls,
-          muted = _this$props11.muted,
-          config = _this$props11.config,
-          width = _this$props11.width,
-          height = _this$props11.height;
-      var useAudio = this.shouldUseAudio(this.props);
-      var Element = useAudio ? 'audio' : 'video';
-      var style = {
-        width: width === 'auto' ? width : '100%',
-        height: height === 'auto' ? height : '100%'
-      };
-      return /*#__PURE__*/_react["default"].createElement(Element, _extends({
-        ref: this.ref,
-        src: this.getSource(url),
-        style: style,
-        preload: "auto",
-        autoPlay: playing || undefined,
-        controls: controls,
-        muted: muted,
-        loop: loop
-      }, config.attributes), url instanceof Array && url.map(this.renderSourceElement), config.tracks.map(this.renderTrack));
-    }
-  }]);
-
-  return FilePlayer;
-}(_react.Component);
-
-exports["default"] = FilePlayer;
-
-_defineProperty(FilePlayer, "displayName", 'FilePlayer');
-
-_defineProperty(FilePlayer, "canPlay", _patterns.canPlay.file);
-
-/***/ }),
-
 /***/ "O0PD":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10339,260 +17502,6 @@ exports.keys = function (obj, options = {}) {
     return options.symbols !== false ? Reflect.ownKeys(obj) : Object.getOwnPropertyNames(obj);  // Defaults to true
 };
 
-
-/***/ }),
-
-/***/ "ODpG":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.parseStartTime = parseStartTime;
-exports.parseEndTime = parseEndTime;
-exports.randomString = randomString;
-exports.queryString = queryString;
-exports.getSDK = getSDK;
-exports.getConfig = getConfig;
-exports.omit = omit;
-exports.callPlayer = callPlayer;
-exports.isMediaStream = isMediaStream;
-exports.isBlobUrl = isBlobUrl;
-exports.supportsWebKitPresentationMode = supportsWebKitPresentationMode;
-
-var _loadScript = _interopRequireDefault(__webpack_require__("MuZe"));
-
-var _deepmerge = _interopRequireDefault(__webpack_require__("PE4B"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var MATCH_START_QUERY = /[?&#](?:start|t)=([0-9hms]+)/;
-var MATCH_END_QUERY = /[?&#]end=([0-9hms]+)/;
-var MATCH_START_STAMP = /(\d+)(h|m|s)/g;
-var MATCH_NUMERIC = /^\d+$/; // Parse YouTube URL for a start time param, ie ?t=1h14m30s
-// and return the start time in seconds
-
-function parseTimeParam(url, pattern) {
-  if (url instanceof Array) {
-    return undefined;
-  }
-
-  var match = url.match(pattern);
-
-  if (match) {
-    var stamp = match[1];
-
-    if (stamp.match(MATCH_START_STAMP)) {
-      return parseTimeString(stamp);
-    }
-
-    if (MATCH_NUMERIC.test(stamp)) {
-      return parseInt(stamp);
-    }
-  }
-
-  return undefined;
-}
-
-function parseTimeString(stamp) {
-  var seconds = 0;
-  var array = MATCH_START_STAMP.exec(stamp);
-
-  while (array !== null) {
-    var _array = array,
-        _array2 = _slicedToArray(_array, 3),
-        count = _array2[1],
-        period = _array2[2];
-
-    if (period === 'h') seconds += parseInt(count, 10) * 60 * 60;
-    if (period === 'm') seconds += parseInt(count, 10) * 60;
-    if (period === 's') seconds += parseInt(count, 10);
-    array = MATCH_START_STAMP.exec(stamp);
-  }
-
-  return seconds;
-}
-
-function parseStartTime(url) {
-  return parseTimeParam(url, MATCH_START_QUERY);
-}
-
-function parseEndTime(url) {
-  return parseTimeParam(url, MATCH_END_QUERY);
-} // http://stackoverflow.com/a/38622545
-
-
-function randomString() {
-  return Math.random().toString(36).substr(2, 5);
-}
-
-function queryString(object) {
-  return Object.keys(object).map(function (key) {
-    return "".concat(key, "=").concat(object[key]);
-  }).join('&');
-}
-
-function getGlobal(key) {
-  if (window[key]) {
-    return window[key];
-  }
-
-  if (window.exports && window.exports[key]) {
-    return window.exports[key];
-  }
-
-  if (window.module && window.module.exports && window.module.exports[key]) {
-    return window.module.exports[key];
-  }
-
-  return null;
-} // Util function to load an external SDK
-// or return the SDK if it is already loaded
-
-
-var requests = {};
-
-function getSDK(url, sdkGlobal) {
-  var sdkReady = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-  var isLoaded = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : function () {
-    return true;
-  };
-  var fetchScript = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : _loadScript["default"];
-  var existingGlobal = getGlobal(sdkGlobal);
-
-  if (existingGlobal && isLoaded(existingGlobal)) {
-    return Promise.resolve(existingGlobal);
-  }
-
-  return new Promise(function (resolve, reject) {
-    // If we are already loading the SDK, add the resolve and reject
-    // functions to the existing array of requests
-    if (requests[url]) {
-      requests[url].push({
-        resolve: resolve,
-        reject: reject
-      });
-      return;
-    }
-
-    requests[url] = [{
-      resolve: resolve,
-      reject: reject
-    }];
-
-    var onLoaded = function onLoaded(sdk) {
-      // When loaded, resolve all pending request promises
-      requests[url].forEach(function (request) {
-        return request.resolve(sdk);
-      });
-    };
-
-    if (sdkReady) {
-      var previousOnReady = window[sdkReady];
-
-      window[sdkReady] = function () {
-        if (previousOnReady) previousOnReady();
-        onLoaded(getGlobal(sdkGlobal));
-      };
-    }
-
-    fetchScript(url, function (err) {
-      if (err) {
-        // Loading the SDK failed – reject all requests and
-        // reset the array of requests for this SDK
-        requests[url].forEach(function (request) {
-          return request.reject(err);
-        });
-        requests[url] = null;
-      } else if (!sdkReady) {
-        onLoaded(getGlobal(sdkGlobal));
-      }
-    });
-  });
-}
-
-function getConfig(props, defaultProps) {
-  return (0, _deepmerge["default"])(defaultProps.config, props.config);
-}
-
-function omit(object) {
-  var _ref;
-
-  for (var _len = arguments.length, arrays = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    arrays[_key - 1] = arguments[_key];
-  }
-
-  var omitKeys = (_ref = []).concat.apply(_ref, arrays);
-
-  var output = {};
-  var keys = Object.keys(object);
-
-  for (var _i2 = 0, _keys = keys; _i2 < _keys.length; _i2++) {
-    var key = _keys[_i2];
-
-    if (omitKeys.indexOf(key) === -1) {
-      output[key] = object[key];
-    }
-  }
-
-  return output;
-}
-
-function callPlayer(method) {
-  var _this$player;
-
-  // Util method for calling a method on this.player
-  // but guard against errors and console.warn instead
-  if (!this.player || !this.player[method]) {
-    var message = "ReactPlayer: ".concat(this.constructor.displayName, " player could not call %c").concat(method, "%c \u2013 ");
-
-    if (!this.player) {
-      message += 'The player was not available';
-    } else if (!this.player[method]) {
-      message += 'The method was not available';
-    }
-
-    console.warn(message, 'font-weight: bold', '');
-    return null;
-  }
-
-  for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-    args[_key2 - 1] = arguments[_key2];
-  }
-
-  return (_this$player = this.player)[method].apply(_this$player, args);
-}
-
-function isMediaStream(url) {
-  return typeof window !== 'undefined' && typeof window.MediaStream !== 'undefined' && url instanceof window.MediaStream;
-}
-
-function isBlobUrl(url) {
-  return /^blob:/.test(url);
-}
-
-function supportsWebKitPresentationMode() {
-  var video = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.createElement('video');
-  // Check if Safari supports PiP, and is not on mobile (other than iPad)
-  // iPhone safari appears to "support" PiP through the check, however PiP does not function
-  var notMobile = /iPhone|iPod/.test(navigator.userAgent) === false;
-  return video.webkitSupportsPresentationMode && typeof video.webkitSetPresentationMode === 'function' && notMobile;
-}
 
 /***/ }),
 
@@ -10731,6 +17640,26 @@ exports.__esModule=true;exports.default=optimize;async function optimize(html,co
 
 /***/ }),
 
+/***/ "ObCZ":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function memoize(fn) {
+  var cache = {};
+  return function(arg) {
+    return void 0 === cache[arg] && (cache[arg] = fn(arg)), cache[arg];
+  };
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: !0
+}), exports.default = memoize;
+
+
+/***/ }),
+
 /***/ "P7XM":
 /***/ (function(module, exports) {
 
@@ -10837,147 +17766,6 @@ expires:new Date(0),httpOnly:true,sameSite: true?'none':undefined,secure:"produc
  */function setLazyProp({req,params},prop,getter){const opts={configurable:true,enumerable:true};const optsReset={...opts,writable:true};Object.defineProperty(req,prop,{...opts,get:()=>{let value=getter();if(params&&typeof params!=='boolean'){value={...value,...params};}// we set the property on the object to avoid recalculating it
 Object.defineProperty(req,prop,{...optsReset,value});return value;},set:value=>{Object.defineProperty(req,prop,{...optsReset,value});}});}
 //# sourceMappingURL=api-utils.js.map
-
-/***/ }),
-
-/***/ "PE4B":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var isMergeableObject = function isMergeableObject(value) {
-	return isNonNullObject(value)
-		&& !isSpecial(value)
-};
-
-function isNonNullObject(value) {
-	return !!value && typeof value === 'object'
-}
-
-function isSpecial(value) {
-	var stringValue = Object.prototype.toString.call(value);
-
-	return stringValue === '[object RegExp]'
-		|| stringValue === '[object Date]'
-		|| isReactElement(value)
-}
-
-// see https://github.com/facebook/react/blob/b5ac963fb791d1298e7f396236383bc955f916c1/src/isomorphic/classic/element/ReactElement.js#L21-L25
-var canUseSymbol = typeof Symbol === 'function' && Symbol.for;
-var REACT_ELEMENT_TYPE = canUseSymbol ? Symbol.for('react.element') : 0xeac7;
-
-function isReactElement(value) {
-	return value.$$typeof === REACT_ELEMENT_TYPE
-}
-
-function emptyTarget(val) {
-	return Array.isArray(val) ? [] : {}
-}
-
-function cloneUnlessOtherwiseSpecified(value, options) {
-	return (options.clone !== false && options.isMergeableObject(value))
-		? deepmerge(emptyTarget(value), value, options)
-		: value
-}
-
-function defaultArrayMerge(target, source, options) {
-	return target.concat(source).map(function(element) {
-		return cloneUnlessOtherwiseSpecified(element, options)
-	})
-}
-
-function getMergeFunction(key, options) {
-	if (!options.customMerge) {
-		return deepmerge
-	}
-	var customMerge = options.customMerge(key);
-	return typeof customMerge === 'function' ? customMerge : deepmerge
-}
-
-function getEnumerableOwnPropertySymbols(target) {
-	return Object.getOwnPropertySymbols
-		? Object.getOwnPropertySymbols(target).filter(function(symbol) {
-			return target.propertyIsEnumerable(symbol)
-		})
-		: []
-}
-
-function getKeys(target) {
-	return Object.keys(target).concat(getEnumerableOwnPropertySymbols(target))
-}
-
-function propertyIsOnObject(object, property) {
-	try {
-		return property in object
-	} catch(_) {
-		return false
-	}
-}
-
-// Protects from prototype poisoning and unexpected merging up the prototype chain.
-function propertyIsUnsafe(target, key) {
-	return propertyIsOnObject(target, key) // Properties are safe to merge if they don't exist in the target yet,
-		&& !(Object.hasOwnProperty.call(target, key) // unsafe if they exist up the prototype chain,
-			&& Object.propertyIsEnumerable.call(target, key)) // and also unsafe if they're nonenumerable.
-}
-
-function mergeObject(target, source, options) {
-	var destination = {};
-	if (options.isMergeableObject(target)) {
-		getKeys(target).forEach(function(key) {
-			destination[key] = cloneUnlessOtherwiseSpecified(target[key], options);
-		});
-	}
-	getKeys(source).forEach(function(key) {
-		if (propertyIsUnsafe(target, key)) {
-			return
-		}
-
-		if (propertyIsOnObject(target, key) && options.isMergeableObject(source[key])) {
-			destination[key] = getMergeFunction(key, options)(target[key], source[key], options);
-		} else {
-			destination[key] = cloneUnlessOtherwiseSpecified(source[key], options);
-		}
-	});
-	return destination
-}
-
-function deepmerge(target, source, options) {
-	options = options || {};
-	options.arrayMerge = options.arrayMerge || defaultArrayMerge;
-	options.isMergeableObject = options.isMergeableObject || isMergeableObject;
-	// cloneUnlessOtherwiseSpecified is added to `options` so that custom arrayMerge()
-	// implementations can use it. The caller may not replace it.
-	options.cloneUnlessOtherwiseSpecified = cloneUnlessOtherwiseSpecified;
-
-	var sourceIsArray = Array.isArray(source);
-	var targetIsArray = Array.isArray(target);
-	var sourceAndTargetTypesMatch = sourceIsArray === targetIsArray;
-
-	if (!sourceAndTargetTypesMatch) {
-		return cloneUnlessOtherwiseSpecified(source, options)
-	} else if (sourceIsArray) {
-		return options.arrayMerge(target, source, options)
-	} else {
-		return mergeObject(target, source, options)
-	}
-}
-
-deepmerge.all = function deepmergeAll(array, options) {
-	if (!Array.isArray(array)) {
-		throw new Error('first argument should be an array')
-	}
-
-	return array.reduce(function(prev, next) {
-		return deepmerge(prev, next, options)
-	}, {})
-};
-
-var deepmerge_1 = deepmerge;
-
-module.exports = deepmerge_1;
-
 
 /***/ }),
 
@@ -11271,94 +18059,6 @@ module.exports = JSON.parse("{\"uChars\":[128,165,169,178,184,216,226,235,238,24
 /***/ (function(module, exports) {
 
 module.exports = require("assert");
-
-/***/ }),
-
-/***/ "RNiq":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("g4pe");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("+lMf");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("3Mv1");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("vDqi");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_Welcome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("rtAh");
-/* harmony import */ var _components_Categories__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("2qGk");
-/* harmony import */ var _components_SectionHeaderText__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("Kaw+");
-/* harmony import */ var _components_HighestRatedCard__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("xtq8");
-
-
-
-
-
-
-
-
-
-
-
-
-
-const gameId = "26192,109462,113112,75235,11169,133004, 1877, 126098, 134581, 119295, 37001, 115115, 90055, 119313, 75239, 119304, 11155, 119277, 107172, 111837, 131614, 131869, 131970, 123902, 52006, 127816, 107262, 131800, 134606, 133887, 135254, 133152, 131946, 138251, 110834, 36550, 86504, 127591, 123395, 107218, 134706, 114286, 114285, 119260, 90055, 114009, 119386, 103291, 113115, 133923, 116589, 119277, 135301, 137131, 131566, 136498, 103330, 133306, 124701, 127816, 133301, 139032, 123902, 138343, 130216, 119277, 138375, 126459, 124954";
-const getStaticProps = async () => {
-  const games = await axios__WEBPACK_IMPORTED_MODULE_5___default()({
-    //url: "http://localhost:8001/games",
-    url: "https://api.igdb.com/v4/games",
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Client-ID": process.env.ClientID,
-      Authorization: process.env.Authorization
-    },
-    data: `fields age_ratings,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
-			 limit 100; where id = (${gameId});;`
-  }).then(response => {
-    return response.data;
-  }).catch(err => {
-    console.error(err);
-  });
-  return {
-    props: {
-      games
-    }
-  };
-};
-
-const Home = ({
-  games
-}) => {
-  const sortedGames = games.sort((a, b) => {
-    return b.total_rating - a.total_rating;
-  }).sort((a, b) => {
-    return b.rating_count - a.rating_count;
-  });
-  const nintendo = sortedGames.filter(game => game.platforms.includes(130));
-  const ps4 = sortedGames.filter(game => game.platforms.includes(48));
-  const xbox = sortedGames.filter(game => game.platforms.includes(49));
-  const pc = sortedGames.filter(game => game.platforms.includes(6));
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["Fragment"], {
-    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("title", {
-        children: "GameBox | Home"
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("link", {
-        rel: "icon",
-        href: "/favicon.ico"
-      })]
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_Hero__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
-      games: sortedGames
-    })]
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
@@ -11983,7 +18683,7 @@ function invariant(condition, message) {
 /***/ "SgzI":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"_from\":\"axios@^0.21.1\",\"_id\":\"axios@0.21.1\",\"_inBundle\":false,\"_integrity\":\"sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==\",\"_location\":\"/axios\",\"_phantomChildren\":{},\"_requested\":{\"type\":\"range\",\"registry\":true,\"raw\":\"axios@^0.21.1\",\"name\":\"axios\",\"escapedName\":\"axios\",\"rawSpec\":\"^0.21.1\",\"saveSpec\":null,\"fetchSpec\":\"^0.21.1\"},\"_requiredBy\":[\"#USER\",\"/\"],\"_resolved\":\"https://registry.npmjs.org/axios/-/axios-0.21.1.tgz\",\"_shasum\":\"22563481962f4d6bde9a76d516ef0e5d3c09b2b8\",\"_spec\":\"axios@^0.21.1\",\"_where\":\"/Users/Kenny/Gamebox/box\",\"author\":{\"name\":\"Matt Zabriskie\"},\"browser\":{\"./lib/adapters/http.js\":\"./lib/adapters/xhr.js\"},\"bugs\":{\"url\":\"https://github.com/axios/axios/issues\"},\"bundleDependencies\":false,\"bundlesize\":[{\"path\":\"./dist/axios.min.js\",\"threshold\":\"5kB\"}],\"dependencies\":{\"follow-redirects\":\"^1.10.0\"},\"deprecated\":false,\"description\":\"Promise based HTTP client for the browser and node.js\",\"devDependencies\":{\"bundlesize\":\"^0.17.0\",\"coveralls\":\"^3.0.0\",\"es6-promise\":\"^4.2.4\",\"grunt\":\"^1.0.2\",\"grunt-banner\":\"^0.6.0\",\"grunt-cli\":\"^1.2.0\",\"grunt-contrib-clean\":\"^1.1.0\",\"grunt-contrib-watch\":\"^1.0.0\",\"grunt-eslint\":\"^20.1.0\",\"grunt-karma\":\"^2.0.0\",\"grunt-mocha-test\":\"^0.13.3\",\"grunt-ts\":\"^6.0.0-beta.19\",\"grunt-webpack\":\"^1.0.18\",\"istanbul-instrumenter-loader\":\"^1.0.0\",\"jasmine-core\":\"^2.4.1\",\"karma\":\"^1.3.0\",\"karma-chrome-launcher\":\"^2.2.0\",\"karma-coverage\":\"^1.1.1\",\"karma-firefox-launcher\":\"^1.1.0\",\"karma-jasmine\":\"^1.1.1\",\"karma-jasmine-ajax\":\"^0.1.13\",\"karma-opera-launcher\":\"^1.0.0\",\"karma-safari-launcher\":\"^1.0.0\",\"karma-sauce-launcher\":\"^1.2.0\",\"karma-sinon\":\"^1.0.5\",\"karma-sourcemap-loader\":\"^0.3.7\",\"karma-webpack\":\"^1.7.0\",\"load-grunt-tasks\":\"^3.5.2\",\"minimist\":\"^1.2.0\",\"mocha\":\"^5.2.0\",\"sinon\":\"^4.5.0\",\"typescript\":\"^2.8.1\",\"url-search-params\":\"^0.10.0\",\"webpack\":\"^1.13.1\",\"webpack-dev-server\":\"^1.14.1\"},\"homepage\":\"https://github.com/axios/axios\",\"jsdelivr\":\"dist/axios.min.js\",\"keywords\":[\"xhr\",\"http\",\"ajax\",\"promise\",\"node\"],\"license\":\"MIT\",\"main\":\"index.js\",\"name\":\"axios\",\"repository\":{\"type\":\"git\",\"url\":\"git+https://github.com/axios/axios.git\"},\"scripts\":{\"build\":\"NODE_ENV=production grunt build\",\"coveralls\":\"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js\",\"examples\":\"node ./examples/server.js\",\"fix\":\"eslint --fix lib/**/*.js\",\"postversion\":\"git push && git push --tags\",\"preversion\":\"npm test\",\"start\":\"node ./sandbox/server.js\",\"test\":\"grunt test && bundlesize\",\"version\":\"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json\"},\"typings\":\"./index.d.ts\",\"unpkg\":\"dist/axios.min.js\",\"version\":\"0.21.1\"}");
+module.exports = JSON.parse("{\"name\":\"axios\",\"version\":\"0.21.1\",\"description\":\"Promise based HTTP client for the browser and node.js\",\"main\":\"index.js\",\"scripts\":{\"test\":\"grunt test && bundlesize\",\"start\":\"node ./sandbox/server.js\",\"build\":\"NODE_ENV=production grunt build\",\"preversion\":\"npm test\",\"version\":\"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json\",\"postversion\":\"git push && git push --tags\",\"examples\":\"node ./examples/server.js\",\"coveralls\":\"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js\",\"fix\":\"eslint --fix lib/**/*.js\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/axios/axios.git\"},\"keywords\":[\"xhr\",\"http\",\"ajax\",\"promise\",\"node\"],\"author\":\"Matt Zabriskie\",\"license\":\"MIT\",\"bugs\":{\"url\":\"https://github.com/axios/axios/issues\"},\"homepage\":\"https://github.com/axios/axios\",\"devDependencies\":{\"bundlesize\":\"^0.17.0\",\"coveralls\":\"^3.0.0\",\"es6-promise\":\"^4.2.4\",\"grunt\":\"^1.0.2\",\"grunt-banner\":\"^0.6.0\",\"grunt-cli\":\"^1.2.0\",\"grunt-contrib-clean\":\"^1.1.0\",\"grunt-contrib-watch\":\"^1.0.0\",\"grunt-eslint\":\"^20.1.0\",\"grunt-karma\":\"^2.0.0\",\"grunt-mocha-test\":\"^0.13.3\",\"grunt-ts\":\"^6.0.0-beta.19\",\"grunt-webpack\":\"^1.0.18\",\"istanbul-instrumenter-loader\":\"^1.0.0\",\"jasmine-core\":\"^2.4.1\",\"karma\":\"^1.3.0\",\"karma-chrome-launcher\":\"^2.2.0\",\"karma-coverage\":\"^1.1.1\",\"karma-firefox-launcher\":\"^1.1.0\",\"karma-jasmine\":\"^1.1.1\",\"karma-jasmine-ajax\":\"^0.1.13\",\"karma-opera-launcher\":\"^1.0.0\",\"karma-safari-launcher\":\"^1.0.0\",\"karma-sauce-launcher\":\"^1.2.0\",\"karma-sinon\":\"^1.0.5\",\"karma-sourcemap-loader\":\"^0.3.7\",\"karma-webpack\":\"^1.7.0\",\"load-grunt-tasks\":\"^3.5.2\",\"minimist\":\"^1.2.0\",\"mocha\":\"^5.2.0\",\"sinon\":\"^4.5.0\",\"typescript\":\"^2.8.1\",\"url-search-params\":\"^0.10.0\",\"webpack\":\"^1.13.1\",\"webpack-dev-server\":\"^1.14.1\"},\"browser\":{\"./lib/adapters/http.js\":\"./lib/adapters/xhr.js\"},\"jsdelivr\":\"dist/axios.min.js\",\"unpkg\":\"dist/axios.min.js\",\"typings\":\"./index.d.ts\",\"dependencies\":{\"follow-redirects\":\"^1.10.0\"},\"bundlesize\":[{\"path\":\"./dist/axios.min.js\",\"threshold\":\"5kB\"}]}");
 
 /***/ }),
 
@@ -12416,16 +19116,16 @@ IconvLiteDecoderStream.prototype.collect = function(cb) {
 
 /***/ }),
 
-/***/ "TqRt":
-/***/ (function(module, exports) {
+/***/ "TiPX":
+/***/ (function(module, exports, __webpack_require__) {
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
+"use strict";
 
-module.exports = _interopRequireDefault;
+
+if (true) {
+  module.exports = __webpack_require__("ObCZ");
+} else {}
+
 
 /***/ }),
 
@@ -13666,259 +20366,6 @@ function getAmpPath(ampPath, asPath) {
 
 /***/ }),
 
-/***/ "VkHn":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://player.vimeo.com/api/player.js';
-var SDK_GLOBAL = 'Vimeo';
-
-var Vimeo = /*#__PURE__*/function (_Component) {
-  _inherits(Vimeo, _Component);
-
-  var _super = _createSuper(Vimeo);
-
-  function Vimeo() {
-    var _this;
-
-    _classCallCheck(this, Vimeo);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "duration", null);
-
-    _defineProperty(_assertThisInitialized(_this), "currentTime", null);
-
-    _defineProperty(_assertThisInitialized(_this), "secondsLoaded", null);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.setVolume(0);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      if (_this.props.volume !== null) {
-        _this.setVolume(_this.props.volume);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (container) {
-      _this.container = container;
-    });
-
-    return _this;
-  }
-
-  _createClass(Vimeo, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      this.duration = null;
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (Vimeo) {
-        if (!_this2.container) return;
-        _this2.player = new Vimeo.Player(_this2.container, _objectSpread({
-          url: url,
-          autoplay: _this2.props.playing,
-          muted: _this2.props.muted,
-          loop: _this2.props.loop,
-          playsinline: _this2.props.playsinline,
-          controls: _this2.props.controls
-        }, _this2.props.config.playerOptions));
-
-        _this2.player.ready().then(function () {
-          var iframe = _this2.container.querySelector('iframe');
-
-          iframe.style.width = '100%';
-          iframe.style.height = '100%';
-        })["catch"](_this2.props.onError);
-
-        _this2.player.on('loaded', function () {
-          _this2.props.onReady();
-
-          _this2.refreshDuration();
-        });
-
-        _this2.player.on('play', function () {
-          _this2.props.onPlay();
-
-          _this2.refreshDuration();
-        });
-
-        _this2.player.on('pause', _this2.props.onPause);
-
-        _this2.player.on('seeked', function (e) {
-          return _this2.props.onSeek(e.seconds);
-        });
-
-        _this2.player.on('ended', _this2.props.onEnded);
-
-        _this2.player.on('error', _this2.props.onError);
-
-        _this2.player.on('timeupdate', function (_ref) {
-          var seconds = _ref.seconds;
-          _this2.currentTime = seconds;
-        });
-
-        _this2.player.on('progress', function (_ref2) {
-          var seconds = _ref2.seconds;
-          _this2.secondsLoaded = seconds;
-        });
-
-        _this2.player.on('bufferstart', _this2.props.onBuffer);
-
-        _this2.player.on('bufferend', _this2.props.onBufferEnd);
-      }, this.props.onError);
-    }
-  }, {
-    key: "refreshDuration",
-    value: function refreshDuration() {
-      var _this3 = this;
-
-      this.player.getDuration().then(function (duration) {
-        _this3.duration = duration;
-      });
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      var promise = this.callPlayer('play');
-
-      if (promise) {
-        promise["catch"](this.props.onError);
-      }
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      this.callPlayer('unload');
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('setCurrentTime', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction);
-    }
-  }, {
-    key: "setLoop",
-    value: function setLoop(loop) {
-      this.callPlayer('setLoop', loop);
-    }
-  }, {
-    key: "setPlaybackRate",
-    value: function setPlaybackRate(rate) {
-      this.callPlayer('setPlaybackRate', rate);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.secondsLoaded;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var display = this.props.display;
-      var style = {
-        width: '100%',
-        height: '100%',
-        overflow: 'hidden',
-        display: display
-      };
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        key: this.props.url,
-        ref: this.ref,
-        style: style
-      });
-    }
-  }]);
-
-  return Vimeo;
-}(_react.Component);
-
-exports["default"] = Vimeo;
-
-_defineProperty(Vimeo, "displayName", 'Vimeo');
-
-_defineProperty(Vimeo, "canPlay", _patterns.canPlay.vimeo);
-
-_defineProperty(Vimeo, "forceLoad", true);
-
-/***/ }),
-
 /***/ "VraX":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13941,870 +20388,10 @@ module.exports = function (...args) {
 
 /***/ }),
 
-/***/ "Vzir":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://player.twitch.tv/js/embed/v1.js';
-var SDK_GLOBAL = 'Twitch';
-var PLAYER_ID_PREFIX = 'twitch-player-';
-
-var Twitch = /*#__PURE__*/function (_Component) {
-  _inherits(Twitch, _Component);
-
-  var _super = _createSuper(Twitch);
-
-  function Twitch() {
-    var _this;
-
-    _classCallCheck(this, Twitch);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "playerID", _this.props.config.playerId || "".concat(PLAYER_ID_PREFIX).concat((0, _utils.randomString)()));
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('setMuted', true);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('setMuted', false);
-    });
-
-    return _this;
-  }
-
-  _createClass(Twitch, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "load",
-    value: function load(url, isReady) {
-      var _this2 = this;
-
-      var _this$props = this.props,
-          playsinline = _this$props.playsinline,
-          onError = _this$props.onError,
-          config = _this$props.config,
-          controls = _this$props.controls;
-
-      var isChannel = _patterns.MATCH_URL_TWITCH_CHANNEL.test(url);
-
-      var id = isChannel ? url.match(_patterns.MATCH_URL_TWITCH_CHANNEL)[1] : url.match(_patterns.MATCH_URL_TWITCH_VIDEO)[1];
-
-      if (isReady) {
-        if (isChannel) {
-          this.player.setChannel(id);
-        } else {
-          this.player.setVideo('v' + id);
-        }
-
-        return;
-      }
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (Twitch) {
-        _this2.player = new Twitch.Player(_this2.playerID, _objectSpread({
-          video: isChannel ? '' : id,
-          channel: isChannel ? id : '',
-          height: '100%',
-          width: '100%',
-          playsinline: playsinline,
-          autoplay: _this2.props.playing,
-          muted: _this2.props.muted,
-          // https://github.com/CookPete/react-player/issues/733#issuecomment-549085859
-          controls: isChannel ? true : controls,
-          time: (0, _utils.parseStartTime)(url)
-        }, config.options));
-        var _Twitch$Player = Twitch.Player,
-            READY = _Twitch$Player.READY,
-            PLAYING = _Twitch$Player.PLAYING,
-            PAUSE = _Twitch$Player.PAUSE,
-            ENDED = _Twitch$Player.ENDED,
-            ONLINE = _Twitch$Player.ONLINE,
-            OFFLINE = _Twitch$Player.OFFLINE;
-
-        _this2.player.addEventListener(READY, _this2.props.onReady);
-
-        _this2.player.addEventListener(PLAYING, _this2.props.onPlay);
-
-        _this2.player.addEventListener(PAUSE, _this2.props.onPause);
-
-        _this2.player.addEventListener(ENDED, _this2.props.onEnded); // Prevent weird isLoading behaviour when streams are offline
-
-
-        _this2.player.addEventListener(ONLINE, _this2.props.onLoaded);
-
-        _this2.player.addEventListener(OFFLINE, _this2.props.onLoaded);
-      }, onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('seek', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.callPlayer('getDuration');
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.callPlayer('getCurrentTime');
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return null;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        style: style,
-        id: this.playerID
-      });
-    }
-  }]);
-
-  return Twitch;
-}(_react.Component);
-
-exports["default"] = Twitch;
-
-_defineProperty(Twitch, "displayName", 'Twitch');
-
-_defineProperty(Twitch, "canPlay", _patterns.canPlay.twitch);
-
-_defineProperty(Twitch, "loopOnEnded", true);
-
-/***/ }),
-
-/***/ "W6fG":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://w.soundcloud.com/player/api.js';
-var SDK_GLOBAL = 'SC';
-
-var SoundCloud = /*#__PURE__*/function (_Component) {
-  _inherits(SoundCloud, _Component);
-
-  var _super = _createSuper(SoundCloud);
-
-  function SoundCloud() {
-    var _this;
-
-    _classCallCheck(this, SoundCloud);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "duration", null);
-
-    _defineProperty(_assertThisInitialized(_this), "currentTime", null);
-
-    _defineProperty(_assertThisInitialized(_this), "fractionLoaded", null);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.setVolume(0);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      if (_this.props.volume !== null) {
-        _this.setVolume(_this.props.volume);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (iframe) {
-      _this.iframe = iframe;
-    });
-
-    return _this;
-  }
-
-  _createClass(SoundCloud, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "load",
-    value: function load(url, isReady) {
-      var _this2 = this;
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (SC) {
-        if (!_this2.iframe) return;
-        var _SC$Widget$Events = SC.Widget.Events,
-            PLAY = _SC$Widget$Events.PLAY,
-            PLAY_PROGRESS = _SC$Widget$Events.PLAY_PROGRESS,
-            PAUSE = _SC$Widget$Events.PAUSE,
-            FINISH = _SC$Widget$Events.FINISH,
-            ERROR = _SC$Widget$Events.ERROR;
-
-        if (!isReady) {
-          _this2.player = SC.Widget(_this2.iframe);
-
-          _this2.player.bind(PLAY, _this2.props.onPlay);
-
-          _this2.player.bind(PAUSE, function () {
-            var remaining = _this2.duration - _this2.currentTime;
-
-            if (remaining < 0.05) {
-              // Prevent onPause firing right before onEnded
-              return;
-            }
-
-            _this2.props.onPause();
-          });
-
-          _this2.player.bind(PLAY_PROGRESS, function (e) {
-            _this2.currentTime = e.currentPosition / 1000;
-            _this2.fractionLoaded = e.loadedProgress;
-          });
-
-          _this2.player.bind(FINISH, function () {
-            return _this2.props.onEnded();
-          });
-
-          _this2.player.bind(ERROR, function (e) {
-            return _this2.props.onError(e);
-          });
-        }
-
-        _this2.player.load(url, _objectSpread(_objectSpread({}, _this2.props.config.options), {}, {
-          callback: function callback() {
-            _this2.player.getDuration(function (duration) {
-              _this2.duration = duration / 1000;
-
-              _this2.props.onReady();
-            });
-          }
-        }));
-      });
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('seekTo', seconds * 1000);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction * 100);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.fractionLoaded * this.duration;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var display = this.props.display;
-      var style = {
-        width: '100%',
-        height: '100%',
-        display: display
-      };
-      return /*#__PURE__*/_react["default"].createElement("iframe", {
-        ref: this.ref,
-        src: "https://w.soundcloud.com/player/?url=".concat(encodeURIComponent(this.props.url)),
-        style: style,
-        frameBorder: 0,
-        allow: "autoplay"
-      });
-    }
-  }]);
-
-  return SoundCloud;
-}(_react.Component);
-
-exports["default"] = SoundCloud;
-
-_defineProperty(SoundCloud, "displayName", 'SoundCloud');
-
-_defineProperty(SoundCloud, "canPlay", _patterns.canPlay.soundcloud);
-
-_defineProperty(SoundCloud, "loopOnEnded", true);
-
-/***/ }),
-
 /***/ "WADY":
 /***/ (function(module, exports) {
 
 module.exports = require("critters");
-
-/***/ }),
-
-/***/ "WFMG":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _reactFastCompare = _interopRequireDefault(__webpack_require__("bmMU"));
-
-var _props = __webpack_require__("DMug");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SEEK_ON_PLAY_EXPIRY = 5000;
-
-var Player = /*#__PURE__*/function (_Component) {
-  _inherits(Player, _Component);
-
-  var _super = _createSuper(Player);
-
-  function Player() {
-    var _this;
-
-    _classCallCheck(this, Player);
-
-    for (var _len = arguments.length, _args = new Array(_len), _key = 0; _key < _len; _key++) {
-      _args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(_args));
-
-    _defineProperty(_assertThisInitialized(_this), "mounted", false);
-
-    _defineProperty(_assertThisInitialized(_this), "isReady", false);
-
-    _defineProperty(_assertThisInitialized(_this), "isPlaying", false);
-
-    _defineProperty(_assertThisInitialized(_this), "isLoading", true);
-
-    _defineProperty(_assertThisInitialized(_this), "loadOnReady", null);
-
-    _defineProperty(_assertThisInitialized(_this), "startOnPlay", true);
-
-    _defineProperty(_assertThisInitialized(_this), "seekOnPlay", null);
-
-    _defineProperty(_assertThisInitialized(_this), "onDurationCalled", false);
-
-    _defineProperty(_assertThisInitialized(_this), "handlePlayerMount", function (player) {
-      _this.player = player;
-
-      _this.player.load(_this.props.url);
-
-      _this.progress();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "getInternalPlayer", function (key) {
-      if (!_this.player) return null;
-      return _this.player[key];
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "progress", function () {
-      if (_this.props.url && _this.player && _this.isReady) {
-        var playedSeconds = _this.getCurrentTime() || 0;
-
-        var loadedSeconds = _this.getSecondsLoaded();
-
-        var duration = _this.getDuration();
-
-        if (duration) {
-          var progress = {
-            playedSeconds: playedSeconds,
-            played: playedSeconds / duration
-          };
-
-          if (loadedSeconds !== null) {
-            progress.loadedSeconds = loadedSeconds;
-            progress.loaded = loadedSeconds / duration;
-          } // Only call onProgress if values have changed
-
-
-          if (progress.playedSeconds !== _this.prevPlayed || progress.loadedSeconds !== _this.prevLoaded) {
-            _this.props.onProgress(progress);
-          }
-
-          _this.prevPlayed = progress.playedSeconds;
-          _this.prevLoaded = progress.loadedSeconds;
-        }
-      }
-
-      _this.progressTimeout = setTimeout(_this.progress, _this.props.progressFrequency || _this.props.progressInterval);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleReady", function () {
-      if (!_this.mounted) return;
-      _this.isReady = true;
-      _this.isLoading = false;
-      var _this$props = _this.props,
-          onReady = _this$props.onReady,
-          playing = _this$props.playing,
-          volume = _this$props.volume,
-          muted = _this$props.muted;
-      onReady();
-
-      if (!muted && volume !== null) {
-        _this.player.setVolume(volume);
-      }
-
-      if (_this.loadOnReady) {
-        _this.player.load(_this.loadOnReady, true);
-
-        _this.loadOnReady = null;
-      } else if (playing) {
-        _this.player.play();
-      }
-
-      _this.handleDurationCheck();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handlePlay", function () {
-      _this.isPlaying = true;
-      _this.isLoading = false;
-      var _this$props2 = _this.props,
-          onStart = _this$props2.onStart,
-          onPlay = _this$props2.onPlay,
-          playbackRate = _this$props2.playbackRate;
-
-      if (_this.startOnPlay) {
-        if (_this.player.setPlaybackRate && playbackRate !== 1) {
-          _this.player.setPlaybackRate(playbackRate);
-        }
-
-        onStart();
-        _this.startOnPlay = false;
-      }
-
-      onPlay();
-
-      if (_this.seekOnPlay) {
-        _this.seekTo(_this.seekOnPlay);
-
-        _this.seekOnPlay = null;
-      }
-
-      _this.handleDurationCheck();
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handlePause", function (e) {
-      _this.isPlaying = false;
-
-      if (!_this.isLoading) {
-        _this.props.onPause(e);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleEnded", function () {
-      var _this$props3 = _this.props,
-          activePlayer = _this$props3.activePlayer,
-          loop = _this$props3.loop,
-          onEnded = _this$props3.onEnded;
-
-      if (activePlayer.loopOnEnded && loop) {
-        _this.seekTo(0);
-      }
-
-      if (!loop) {
-        _this.isPlaying = false;
-        onEnded();
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleError", function () {
-      var _this$props4;
-
-      _this.isLoading = false;
-
-      (_this$props4 = _this.props).onError.apply(_this$props4, arguments);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleDurationCheck", function () {
-      clearTimeout(_this.durationCheckTimeout);
-
-      var duration = _this.getDuration();
-
-      if (duration) {
-        if (!_this.onDurationCalled) {
-          _this.props.onDuration(duration);
-
-          _this.onDurationCalled = true;
-        }
-      } else {
-        _this.durationCheckTimeout = setTimeout(_this.handleDurationCheck, 100);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "handleLoaded", function () {
-      // Sometimes we know loading has stopped but onReady/onPlay are never called
-      // so this provides a way for players to avoid getting stuck
-      _this.isLoading = false;
-    });
-
-    return _this;
-  }
-
-  _createClass(Player, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.mounted = true;
-    }
-  }, {
-    key: "componentWillUnmount",
-    value: function componentWillUnmount() {
-      clearTimeout(this.progressTimeout);
-      clearTimeout(this.durationCheckTimeout);
-
-      if (this.isReady && this.props.stopOnUnmount) {
-        this.player.stop();
-
-        if (this.player.disablePIP) {
-          this.player.disablePIP();
-        }
-      }
-
-      this.mounted = false;
-    }
-  }, {
-    key: "componentDidUpdate",
-    value: function componentDidUpdate(prevProps) {
-      var _this2 = this;
-
-      // If there isn’t a player available, don’t do anything
-      if (!this.player) {
-        return;
-      } // Invoke player methods based on changed props
-
-
-      var _this$props5 = this.props,
-          url = _this$props5.url,
-          playing = _this$props5.playing,
-          volume = _this$props5.volume,
-          muted = _this$props5.muted,
-          playbackRate = _this$props5.playbackRate,
-          pip = _this$props5.pip,
-          loop = _this$props5.loop,
-          activePlayer = _this$props5.activePlayer;
-
-      if (!(0, _reactFastCompare["default"])(prevProps.url, url)) {
-        if (this.isLoading && !activePlayer.forceLoad) {
-          console.warn("ReactPlayer: the attempt to load ".concat(url, " is being deferred until the player has loaded"));
-          this.loadOnReady = url;
-          return;
-        }
-
-        this.isLoading = true;
-        this.startOnPlay = true;
-        this.onDurationCalled = false;
-        this.player.load(url, this.isReady);
-      }
-
-      if (!prevProps.playing && playing && !this.isPlaying) {
-        this.player.play();
-      }
-
-      if (prevProps.playing && !playing && this.isPlaying) {
-        this.player.pause();
-      }
-
-      if (!prevProps.pip && pip && this.player.enablePIP) {
-        this.player.enablePIP();
-      }
-
-      if (prevProps.pip && !pip && this.player.disablePIP) {
-        this.player.disablePIP();
-      }
-
-      if (prevProps.volume !== volume && volume !== null) {
-        this.player.setVolume(volume);
-      }
-
-      if (prevProps.muted !== muted) {
-        if (muted) {
-          this.player.mute();
-        } else {
-          this.player.unmute();
-
-          if (volume !== null) {
-            // Set volume next tick to fix a bug with DailyMotion
-            setTimeout(function () {
-              return _this2.player.setVolume(volume);
-            });
-          }
-        }
-      }
-
-      if (prevProps.playbackRate !== playbackRate && this.player.setPlaybackRate) {
-        this.player.setPlaybackRate(playbackRate);
-      }
-
-      if (prevProps.loop !== loop && this.player.setLoop) {
-        this.player.setLoop(loop);
-      }
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      if (!this.isReady) return null;
-      return this.player.getDuration();
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      if (!this.isReady) return null;
-      return this.player.getCurrentTime();
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      if (!this.isReady) return null;
-      return this.player.getSecondsLoaded();
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(amount, type) {
-      var _this3 = this;
-
-      // When seeking before player is ready, store value and seek later
-      if (!this.isReady && amount !== 0) {
-        this.seekOnPlay = amount;
-        setTimeout(function () {
-          _this3.seekOnPlay = null;
-        }, SEEK_ON_PLAY_EXPIRY);
-        return;
-      }
-
-      var isFraction = !type ? amount > 0 && amount < 1 : type === 'fraction';
-
-      if (isFraction) {
-        // Convert fraction to seconds based on duration
-        var duration = this.player.getDuration();
-
-        if (!duration) {
-          console.warn('ReactPlayer: could not seek using fraction – duration not yet available');
-          return;
-        }
-
-        this.player.seekTo(duration * amount);
-        return;
-      }
-
-      this.player.seekTo(amount);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var Player = this.props.activePlayer;
-
-      if (!Player) {
-        return null;
-      }
-
-      return /*#__PURE__*/_react["default"].createElement(Player, _extends({}, this.props, {
-        onMount: this.handlePlayerMount,
-        onReady: this.handleReady,
-        onPlay: this.handlePlay,
-        onPause: this.handlePause,
-        onEnded: this.handleEnded,
-        onLoaded: this.handleLoaded,
-        onError: this.handleError
-      }));
-    }
-  }]);
-
-  return Player;
-}(_react.Component);
-
-exports["default"] = Player;
-
-_defineProperty(Player, "displayName", 'Player');
-
-_defineProperty(Player, "propTypes", _props.propTypes);
-
-_defineProperty(Player, "defaultProps", _props.defaultProps);
 
 /***/ }),
 
@@ -14832,214 +20419,6 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-
-/***/ }),
-
-/***/ "WvJM":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://play.vidyard.com/embed/v4.js';
-var SDK_GLOBAL = 'VidyardV4';
-var SDK_GLOBAL_READY = 'onVidyardAPI';
-
-var Vidyard = /*#__PURE__*/function (_Component) {
-  _inherits(Vidyard, _Component);
-
-  var _super = _createSuper(Vidyard);
-
-  function Vidyard() {
-    var _this;
-
-    _classCallCheck(this, Vidyard);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.setVolume(0);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      if (_this.props.volume !== null) {
-        _this.setVolume(_this.props.volume);
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (container) {
-      _this.container = container;
-    });
-
-    return _this;
-  }
-
-  _createClass(Vidyard, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      var _this$props = this.props,
-          playing = _this$props.playing,
-          config = _this$props.config,
-          onError = _this$props.onError,
-          onDuration = _this$props.onDuration;
-      var id = url && url.match(_patterns.MATCH_URL_VIDYARD)[1];
-
-      if (this.player) {
-        this.stop();
-      }
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY).then(function (Vidyard) {
-        if (!_this2.container) return;
-        Vidyard.api.addReadyListener(function (data, player) {
-          _this2.player = player;
-
-          _this2.player.on('ready', _this2.props.onReady);
-
-          _this2.player.on('play', _this2.props.onPlay);
-
-          _this2.player.on('pause', _this2.props.onPause);
-
-          _this2.player.on('seek', _this2.props.onSeek);
-
-          _this2.player.on('playerComplete', _this2.props.onEnded);
-        }, id);
-        Vidyard.api.renderPlayer(_objectSpread({
-          uuid: id,
-          container: _this2.container,
-          autoplay: playing ? 1 : 0
-        }, config.options));
-        Vidyard.api.getPlayerMetadata(id).then(function (meta) {
-          _this2.duration = meta.length_in_seconds;
-          onDuration(meta.length_in_seconds);
-        });
-      }, onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {
-      window.VidyardV4.api.destroyPlayer(this.player);
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(amount) {
-      this.callPlayer('seek', amount);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction);
-    }
-  }, {
-    key: "setPlaybackRate",
-    value: function setPlaybackRate(rate) {
-      this.callPlayer('setPlaybackSpeed', rate);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.callPlayer('currentTime');
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return null;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var display = this.props.display;
-      var style = {
-        width: '100%',
-        height: '100%',
-        display: display
-      };
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        style: style
-      }, /*#__PURE__*/_react["default"].createElement("div", {
-        ref: this.ref
-      }));
-    }
-  }]);
-
-  return Vidyard;
-}(_react.Component);
-
-exports["default"] = Vidyard;
-
-_defineProperty(Vidyard, "displayName", 'Vidyard');
-
-_defineProperty(Vidyard, "canPlay", _patterns.canPlay.vidyard);
 
 /***/ }),
 
@@ -16314,32 +21693,23 @@ module.exports = safer
 "use strict";
 
 const os = __webpack_require__("jle/");
-const tty = __webpack_require__("UNVE");
-const hasFlag = __webpack_require__("+s1t");
+const hasFlag = __webpack_require__("X5QW");
 
-const {env} = process;
+const env = process.env;
 
 let forceColor;
 if (hasFlag('no-color') ||
 	hasFlag('no-colors') ||
-	hasFlag('color=false') ||
-	hasFlag('color=never')) {
-	forceColor = 0;
+	hasFlag('color=false')) {
+	forceColor = false;
 } else if (hasFlag('color') ||
 	hasFlag('colors') ||
 	hasFlag('color=true') ||
 	hasFlag('color=always')) {
-	forceColor = 1;
+	forceColor = true;
 }
-
 if ('FORCE_COLOR' in env) {
-	if (env.FORCE_COLOR === 'true') {
-		forceColor = 1;
-	} else if (env.FORCE_COLOR === 'false') {
-		forceColor = 0;
-	} else {
-		forceColor = env.FORCE_COLOR.length === 0 ? 1 : Math.min(parseInt(env.FORCE_COLOR, 10), 3);
-	}
+	forceColor = env.FORCE_COLOR.length === 0 || parseInt(env.FORCE_COLOR, 10) !== 0;
 }
 
 function translateLevel(level) {
@@ -16355,8 +21725,8 @@ function translateLevel(level) {
 	};
 }
 
-function supportsColor(haveStream, streamIsTTY) {
-	if (forceColor === 0) {
+function supportsColor(stream) {
+	if (forceColor === false) {
 		return 0;
 	}
 
@@ -16370,21 +21740,22 @@ function supportsColor(haveStream, streamIsTTY) {
 		return 2;
 	}
 
-	if (haveStream && !streamIsTTY && forceColor === undefined) {
+	if (stream && !stream.isTTY && forceColor !== true) {
 		return 0;
 	}
 
-	const min = forceColor || 0;
-
-	if (env.TERM === 'dumb') {
-		return min;
-	}
+	const min = forceColor ? 1 : 0;
 
 	if (process.platform === 'win32') {
-		// Windows 10 build 10586 is the first Windows release that supports 256 colors.
-		// Windows 10 build 14931 is the first release that supports 16m/TrueColor.
+		// Node.js 7.5.0 is the first version of Node.js to include a patch to
+		// libuv that enables 256 color output on Windows. Anything earlier and it
+		// won't work. However, here we target Node.js 8 at minimum as it is an LTS
+		// release, and Node.js 7 is not. Windows 10 build 10586 is the first Windows
+		// release that supports 256 colors. Windows 10 build 14931 is the first release
+		// that supports 16m/TrueColor.
 		const osRelease = os.release().split('.');
 		if (
+			Number(process.versions.node.split('.')[0]) >= 8 &&
 			Number(osRelease[0]) >= 10 &&
 			Number(osRelease[2]) >= 10586
 		) {
@@ -16395,7 +21766,7 @@ function supportsColor(haveStream, streamIsTTY) {
 	}
 
 	if ('CI' in env) {
-		if (['TRAVIS', 'CIRCLECI', 'APPVEYOR', 'GITLAB_CI', 'GITHUB_ACTIONS', 'BUILDKITE'].some(sign => sign in env) || env.CI_NAME === 'codeship') {
+		if (['TRAVIS', 'CIRCLECI', 'APPVEYOR', 'GITLAB_CI'].some(sign => sign in env) || env.CI_NAME === 'codeship') {
 			return 1;
 		}
 
@@ -16434,18 +21805,22 @@ function supportsColor(haveStream, streamIsTTY) {
 		return 1;
 	}
 
+	if (env.TERM === 'dumb') {
+		return min;
+	}
+
 	return min;
 }
 
 function getSupportLevel(stream) {
-	const level = supportsColor(stream, stream && stream.isTTY);
+	const level = supportsColor(stream);
 	return translateLevel(level);
 }
 
 module.exports = {
 	supportsColor: getSupportLevel,
-	stdout: translateLevel(supportsColor(true, tty.isatty(1))),
-	stderr: translateLevel(supportsColor(true, tty.isatty(2)))
+	stdout: getSupportLevel(process.stdout),
+	stderr: getSupportLevel(process.stderr)
 };
 
 
@@ -16744,147 +22119,6 @@ function invariant(condition, message) {
 
 /***/ }),
 
-/***/ "bmMU":
-/***/ (function(module, exports) {
-
-/* global Map:readonly, Set:readonly, ArrayBuffer:readonly */
-
-var hasElementType = typeof Element !== 'undefined';
-var hasMap = typeof Map === 'function';
-var hasSet = typeof Set === 'function';
-var hasArrayBuffer = typeof ArrayBuffer === 'function' && !!ArrayBuffer.isView;
-
-// Note: We **don't** need `envHasBigInt64Array` in fde es6/index.js
-
-function equal(a, b) {
-  // START: fast-deep-equal es6/index.js 3.1.1
-  if (a === b) return true;
-
-  if (a && b && typeof a == 'object' && typeof b == 'object') {
-    if (a.constructor !== b.constructor) return false;
-
-    var length, i, keys;
-    if (Array.isArray(a)) {
-      length = a.length;
-      if (length != b.length) return false;
-      for (i = length; i-- !== 0;)
-        if (!equal(a[i], b[i])) return false;
-      return true;
-    }
-
-    // START: Modifications:
-    // 1. Extra `has<Type> &&` helpers in initial condition allow es6 code
-    //    to co-exist with es5.
-    // 2. Replace `for of` with es5 compliant iteration using `for`.
-    //    Basically, take:
-    //
-    //    ```js
-    //    for (i of a.entries())
-    //      if (!b.has(i[0])) return false;
-    //    ```
-    //
-    //    ... and convert to:
-    //
-    //    ```js
-    //    it = a.entries();
-    //    while (!(i = it.next()).done)
-    //      if (!b.has(i.value[0])) return false;
-    //    ```
-    //
-    //    **Note**: `i` access switches to `i.value`.
-    var it;
-    if (hasMap && (a instanceof Map) && (b instanceof Map)) {
-      if (a.size !== b.size) return false;
-      it = a.entries();
-      while (!(i = it.next()).done)
-        if (!b.has(i.value[0])) return false;
-      it = a.entries();
-      while (!(i = it.next()).done)
-        if (!equal(i.value[1], b.get(i.value[0]))) return false;
-      return true;
-    }
-
-    if (hasSet && (a instanceof Set) && (b instanceof Set)) {
-      if (a.size !== b.size) return false;
-      it = a.entries();
-      while (!(i = it.next()).done)
-        if (!b.has(i.value[0])) return false;
-      return true;
-    }
-    // END: Modifications
-
-    if (hasArrayBuffer && ArrayBuffer.isView(a) && ArrayBuffer.isView(b)) {
-      length = a.length;
-      if (length != b.length) return false;
-      for (i = length; i-- !== 0;)
-        if (a[i] !== b[i]) return false;
-      return true;
-    }
-
-    if (a.constructor === RegExp) return a.source === b.source && a.flags === b.flags;
-    if (a.valueOf !== Object.prototype.valueOf) return a.valueOf() === b.valueOf();
-    if (a.toString !== Object.prototype.toString) return a.toString() === b.toString();
-
-    keys = Object.keys(a);
-    length = keys.length;
-    if (length !== Object.keys(b).length) return false;
-
-    for (i = length; i-- !== 0;)
-      if (!Object.prototype.hasOwnProperty.call(b, keys[i])) return false;
-    // END: fast-deep-equal
-
-    // START: react-fast-compare
-    // custom handling for DOM elements
-    if (hasElementType && a instanceof Element) return false;
-
-    // custom handling for React/Preact
-    for (i = length; i-- !== 0;) {
-      if ((keys[i] === '_owner' || keys[i] === '__v' || keys[i] === '__o') && a.$$typeof) {
-        // React-specific: avoid traversing React elements' _owner
-        // Preact-specific: avoid traversing Preact elements' __v and __o
-        //    __v = $_original / $_vnode
-        //    __o = $_owner
-        // These properties contain circular references and are not needed when
-        // comparing the actual elements (and not their owners)
-        // .$$typeof and ._store on just reasonable markers of elements
-
-        continue;
-      }
-
-      // all other properties should be traversed as usual
-      if (!equal(a[keys[i]], b[keys[i]])) return false;
-    }
-    // END: react-fast-compare
-
-    // START: fast-deep-equal
-    return true;
-  }
-
-  return a !== a && b !== b;
-}
-// end fast-deep-equal
-
-module.exports = function isEqual(a, b) {
-  try {
-    return equal(a, b);
-  } catch (error) {
-    if (((error.message || '').match(/stack|recursion/i))) {
-      // warn on circular references, don't crash
-      // browsers give this different errors name and messages:
-      // chrome/safari: "RangeError", "Maximum call stack size exceeded"
-      // firefox: "InternalError", too much recursion"
-      // edge: "Error", "Out of stack space"
-      console.warn('react-fast-compare cannot handle circular refs');
-      return false;
-    }
-    // some other error. we should definitely know about these
-    throw error;
-  }
-};
-
-
-/***/ }),
-
 /***/ "bzos":
 /***/ (function(module, exports) {
 
@@ -17117,29 +22351,6 @@ module.exports = function (iconv) {
 
 /***/ }),
 
-/***/ "cDf5":
-/***/ (function(module, exports) {
-
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    module.exports = _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-module.exports = _typeof;
-
-/***/ }),
-
 /***/ "cHUA":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17330,7 +22541,7 @@ module.exports = {
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__("284h");
+var _interopRequireWildcard = __webpack_require__("7KCV");
 
 exports.__esModule = true;
 exports.default = void 0;
@@ -17498,6 +22709,313 @@ function Link(props) {
 
 var _default = Link;
 exports.default = _default;
+
+/***/ }),
+
+/***/ "cd2u":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global global, define, System, Reflect, Promise */
+var __extends;
+var __assign;
+var __rest;
+var __decorate;
+var __param;
+var __metadata;
+var __awaiter;
+var __generator;
+var __exportStar;
+var __values;
+var __read;
+var __spread;
+var __spreadArrays;
+var __spreadArray;
+var __await;
+var __asyncGenerator;
+var __asyncDelegator;
+var __asyncValues;
+var __makeTemplateObject;
+var __importStar;
+var __importDefault;
+var __classPrivateFieldGet;
+var __classPrivateFieldSet;
+var __createBinding;
+(function (factory) {
+    var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
+    if (true) {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (exports) { factory(createExporter(root, createExporter(exports))); }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    }
+    else {}
+    function createExporter(exports, previous) {
+        if (exports !== root) {
+            if (typeof Object.create === "function") {
+                Object.defineProperty(exports, "__esModule", { value: true });
+            }
+            else {
+                exports.__esModule = true;
+            }
+        }
+        return function (id, v) { return exports[id] = previous ? previous(id, v) : v; };
+    }
+})
+(function (exporter) {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+
+    __extends = function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+
+    __assign = Object.assign || function (t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+
+    __rest = function (s, e) {
+        var t = {};
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+            t[p] = s[p];
+        if (s != null && typeof Object.getOwnPropertySymbols === "function")
+            for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+                if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                    t[p[i]] = s[p[i]];
+            }
+        return t;
+    };
+
+    __decorate = function (decorators, target, key, desc) {
+        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+        if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+        else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+        return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+
+    __param = function (paramIndex, decorator) {
+        return function (target, key) { decorator(target, key, paramIndex); }
+    };
+
+    __metadata = function (metadataKey, metadataValue) {
+        if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+    };
+
+    __awaiter = function (thisArg, _arguments, P, generator) {
+        function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+        return new (P || (P = Promise))(function (resolve, reject) {
+            function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+            function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+            function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+            step((generator = generator.apply(thisArg, _arguments || [])).next());
+        });
+    };
+
+    __generator = function (thisArg, body) {
+        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+        function verb(n) { return function (v) { return step([n, v]); }; }
+        function step(op) {
+            if (f) throw new TypeError("Generator is already executing.");
+            while (_) try {
+                if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+                if (y = 0, t) op = [op[0] & 2, t.value];
+                switch (op[0]) {
+                    case 0: case 1: t = op; break;
+                    case 4: _.label++; return { value: op[1], done: false };
+                    case 5: _.label++; y = op[1]; op = [0]; continue;
+                    case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                    default:
+                        if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                        if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                        if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                        if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                        if (t[2]) _.ops.pop();
+                        _.trys.pop(); continue;
+                }
+                op = body.call(thisArg, _);
+            } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+            if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+        }
+    };
+
+    __exportStar = function(m, o) {
+        for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+    };
+
+    __createBinding = Object.create ? (function(o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+    }) : (function(o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        o[k2] = m[k];
+    });
+
+    __values = function (o) {
+        var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+        if (m) return m.call(o);
+        if (o && typeof o.length === "number") return {
+            next: function () {
+                if (o && i >= o.length) o = void 0;
+                return { value: o && o[i++], done: !o };
+            }
+        };
+        throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+    };
+
+    __read = function (o, n) {
+        var m = typeof Symbol === "function" && o[Symbol.iterator];
+        if (!m) return o;
+        var i = m.call(o), r, ar = [], e;
+        try {
+            while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+        }
+        catch (error) { e = { error: error }; }
+        finally {
+            try {
+                if (r && !r.done && (m = i["return"])) m.call(i);
+            }
+            finally { if (e) throw e.error; }
+        }
+        return ar;
+    };
+
+    /** @deprecated */
+    __spread = function () {
+        for (var ar = [], i = 0; i < arguments.length; i++)
+            ar = ar.concat(__read(arguments[i]));
+        return ar;
+    };
+
+    /** @deprecated */
+    __spreadArrays = function () {
+        for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+        for (var r = Array(s), k = 0, i = 0; i < il; i++)
+            for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+                r[k] = a[j];
+        return r;
+    };
+
+    __spreadArray = function (to, from) {
+        for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+            to[j] = from[i];
+        return to;
+    };
+
+    __await = function (v) {
+        return this instanceof __await ? (this.v = v, this) : new __await(v);
+    };
+
+    __asyncGenerator = function (thisArg, _arguments, generator) {
+        if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+        var g = generator.apply(thisArg, _arguments || []), i, q = [];
+        return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+        function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+        function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+        function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);  }
+        function fulfill(value) { resume("next", value); }
+        function reject(value) { resume("throw", value); }
+        function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+    };
+
+    __asyncDelegator = function (o) {
+        var i, p;
+        return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+        function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+    };
+
+    __asyncValues = function (o) {
+        if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+        var m = o[Symbol.asyncIterator], i;
+        return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+        function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+        function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+    };
+
+    __makeTemplateObject = function (cooked, raw) {
+        if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+        return cooked;
+    };
+
+    var __setModuleDefault = Object.create ? (function(o, v) {
+        Object.defineProperty(o, "default", { enumerable: true, value: v });
+    }) : function(o, v) {
+        o["default"] = v;
+    };
+
+    __importStar = function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+
+    __importDefault = function (mod) {
+        return (mod && mod.__esModule) ? mod : { "default": mod };
+    };
+
+    __classPrivateFieldGet = function (receiver, privateMap) {
+        if (!privateMap.has(receiver)) {
+            throw new TypeError("attempted to get private field on non-instance");
+        }
+        return privateMap.get(receiver);
+    };
+
+    __classPrivateFieldSet = function (receiver, privateMap, value) {
+        if (!privateMap.has(receiver)) {
+            throw new TypeError("attempted to set private field on non-instance");
+        }
+        privateMap.set(receiver, value);
+        return value;
+    };
+
+    exporter("__extends", __extends);
+    exporter("__assign", __assign);
+    exporter("__rest", __rest);
+    exporter("__decorate", __decorate);
+    exporter("__param", __param);
+    exporter("__metadata", __metadata);
+    exporter("__awaiter", __awaiter);
+    exporter("__generator", __generator);
+    exporter("__exportStar", __exportStar);
+    exporter("__createBinding", __createBinding);
+    exporter("__values", __values);
+    exporter("__read", __read);
+    exporter("__spread", __spread);
+    exporter("__spreadArrays", __spreadArrays);
+    exporter("__spreadArray", __spreadArray);
+    exporter("__await", __await);
+    exporter("__asyncGenerator", __asyncGenerator);
+    exporter("__asyncDelegator", __asyncDelegator);
+    exporter("__asyncValues", __asyncValues);
+    exporter("__makeTemplateObject", __makeTemplateObject);
+    exporter("__importStar", __importStar);
+    exporter("__importDefault", __importDefault);
+    exporter("__classPrivateFieldGet", __classPrivateFieldGet);
+    exporter("__classPrivateFieldSet", __classPrivateFieldSet);
+});
+
 
 /***/ }),
 
@@ -18917,203 +24435,6 @@ module.exports = (
     })()
 );
 
-
-/***/ }),
-
-/***/ "eywx":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://widget.mixcloud.com/media/js/widgetApi.js';
-var SDK_GLOBAL = 'Mixcloud';
-
-var Mixcloud = /*#__PURE__*/function (_Component) {
-  _inherits(Mixcloud, _Component);
-
-  var _super = _createSuper(Mixcloud);
-
-  function Mixcloud() {
-    var _this;
-
-    _classCallCheck(this, Mixcloud);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "duration", null);
-
-    _defineProperty(_assertThisInitialized(_this), "currentTime", null);
-
-    _defineProperty(_assertThisInitialized(_this), "secondsLoaded", null);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {// No volume support
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {// No volume support
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (iframe) {
-      _this.iframe = iframe;
-    });
-
-    return _this;
-  }
-
-  _createClass(Mixcloud, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (Mixcloud) {
-        _this2.player = Mixcloud.PlayerWidget(_this2.iframe);
-
-        _this2.player.ready.then(function () {
-          _this2.player.events.play.on(_this2.props.onPlay);
-
-          _this2.player.events.pause.on(_this2.props.onPause);
-
-          _this2.player.events.ended.on(_this2.props.onEnded);
-
-          _this2.player.events.error.on(_this2.props.error);
-
-          _this2.player.events.progress.on(function (seconds, duration) {
-            _this2.currentTime = seconds;
-            _this2.duration = duration;
-          });
-
-          _this2.props.onReady();
-        });
-      }, this.props.onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('seek', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {// No volume support
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return null;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          url = _this$props.url,
-          config = _this$props.config;
-      var id = url.match(_patterns.MATCH_URL_MIXCLOUD)[1];
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      var query = (0, _utils.queryString)(_objectSpread(_objectSpread({}, config.options), {}, {
-        feed: "/".concat(id, "/")
-      })); // We have to give the iframe a key here to prevent a
-      // weird dialog appearing when loading a new track
-
-      return /*#__PURE__*/_react["default"].createElement("iframe", {
-        key: id,
-        ref: this.ref,
-        style: style,
-        src: "https://www.mixcloud.com/widget/iframe/?".concat(query),
-        frameBorder: "0"
-      });
-    }
-  }]);
-
-  return Mixcloud;
-}(_react.Component);
-
-exports["default"] = Mixcloud;
-
-_defineProperty(Mixcloud, "displayName", 'Mixcloud');
-
-_defineProperty(Mixcloud, "canPlay", _patterns.canPlay.mixcloud);
-
-_defineProperty(Mixcloud, "loopOnEnded", true);
 
 /***/ }),
 
@@ -22028,177 +27349,106 @@ module.exports = function (method) {
 
 /***/ }),
 
-/***/ "ijAY":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "iFpu":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
-const colorConvert = __webpack_require__("uxXc");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
+var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
+/* harmony import */ var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("LZ9C");
+var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("LZ9C", 1);
+/* harmony import */ var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("67Bq");
+var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t("67Bq", 1);
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("7ZOo");
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__);
 
-const wrapAnsi16 = (fn, offset) => function () {
-	const code = fn.apply(colorConvert, arguments);
-	return `\u001B[${code + offset}m`;
-};
-
-const wrapAnsi256 = (fn, offset) => function () {
-	const code = fn.apply(colorConvert, arguments);
-	return `\u001B[${38 + offset};5;${code}m`;
-};
-
-const wrapAnsi16m = (fn, offset) => function () {
-	const rgb = fn.apply(colorConvert, arguments);
-	return `\u001B[${38 + offset};2;${rgb[0]};${rgb[1]};${rgb[2]}m`;
-};
-
-function assembleStyles() {
-	const codes = new Map();
-	const styles = {
-		modifier: {
-			reset: [0, 0],
-			// 21 isn't widely supported and 22 does the same thing
-			bold: [1, 22],
-			dim: [2, 22],
-			italic: [3, 23],
-			underline: [4, 24],
-			inverse: [7, 27],
-			hidden: [8, 28],
-			strikethrough: [9, 29]
-		},
-		color: {
-			black: [30, 39],
-			red: [31, 39],
-			green: [32, 39],
-			yellow: [33, 39],
-			blue: [34, 39],
-			magenta: [35, 39],
-			cyan: [36, 39],
-			white: [37, 39],
-			gray: [90, 39],
-
-			// Bright color
-			redBright: [91, 39],
-			greenBright: [92, 39],
-			yellowBright: [93, 39],
-			blueBright: [94, 39],
-			magentaBright: [95, 39],
-			cyanBright: [96, 39],
-			whiteBright: [97, 39]
-		},
-		bgColor: {
-			bgBlack: [40, 49],
-			bgRed: [41, 49],
-			bgGreen: [42, 49],
-			bgYellow: [43, 49],
-			bgBlue: [44, 49],
-			bgMagenta: [45, 49],
-			bgCyan: [46, 49],
-			bgWhite: [47, 49],
-
-			// Bright color
-			bgBlackBright: [100, 49],
-			bgRedBright: [101, 49],
-			bgGreenBright: [102, 49],
-			bgYellowBright: [103, 49],
-			bgBlueBright: [104, 49],
-			bgMagentaBright: [105, 49],
-			bgCyanBright: [106, 49],
-			bgWhiteBright: [107, 49]
-		}
-	};
-
-	// Fix humans
-	styles.color.grey = styles.color.gray;
-
-	for (const groupName of Object.keys(styles)) {
-		const group = styles[groupName];
-
-		for (const styleName of Object.keys(group)) {
-			const style = group[styleName];
-
-			styles[styleName] = {
-				open: `\u001B[${style[0]}m`,
-				close: `\u001B[${style[1]}m`
-			};
-
-			group[styleName] = styles[styleName];
-
-			codes.set(style[0], style[1]);
-		}
-
-		Object.defineProperty(styles, groupName, {
-			value: group,
-			enumerable: false
-		});
-
-		Object.defineProperty(styles, 'codes', {
-			value: codes,
-			enumerable: false
-		});
-	}
-
-	const ansi2ansi = n => n;
-	const rgb2rgb = (r, g, b) => [r, g, b];
-
-	styles.color.close = '\u001B[39m';
-	styles.bgColor.close = '\u001B[49m';
-
-	styles.color.ansi = {
-		ansi: wrapAnsi16(ansi2ansi, 0)
-	};
-	styles.color.ansi256 = {
-		ansi256: wrapAnsi256(ansi2ansi, 0)
-	};
-	styles.color.ansi16m = {
-		rgb: wrapAnsi16m(rgb2rgb, 0)
-	};
-
-	styles.bgColor.ansi = {
-		ansi: wrapAnsi16(ansi2ansi, 10)
-	};
-	styles.bgColor.ansi256 = {
-		ansi256: wrapAnsi256(ansi2ansi, 10)
-	};
-	styles.bgColor.ansi16m = {
-		rgb: wrapAnsi16m(rgb2rgb, 10)
-	};
-
-	for (let key of Object.keys(colorConvert)) {
-		if (typeof colorConvert[key] !== 'object') {
-			continue;
-		}
-
-		const suite = colorConvert[key];
-
-		if (key === 'ansi16') {
-			key = 'ansi';
-		}
-
-		if ('ansi16' in suite) {
-			styles.color.ansi[key] = wrapAnsi16(suite.ansi16, 0);
-			styles.bgColor.ansi[key] = wrapAnsi16(suite.ansi16, 10);
-		}
-
-		if ('ansi256' in suite) {
-			styles.color.ansi256[key] = wrapAnsi256(suite.ansi256, 0);
-			styles.bgColor.ansi256[key] = wrapAnsi256(suite.ansi256, 10);
-		}
-
-		if ('rgb' in suite) {
-			styles.color.ansi16m[key] = wrapAnsi16m(suite.rgb, 0);
-			styles.bgColor.ansi16m[key] = wrapAnsi16m(suite.rgb, 10);
-		}
-	}
-
-	return styles;
-}
-
-// Make the export immutable
-Object.defineProperty(module, 'exports', {
-	enumerable: true,
-	get: assembleStyles
-});
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("LY0y")(module)))
+      
+      
+      
+      
+      
+      
+  
+      
+      const { processEnv } = __webpack_require__("fXeI")
+      processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nDB_PASS=mypassword"}])
+    
+      
+      const runtimeConfig = {}
+      
+  
+      const appMod = __webpack_require__("1TCz")
+      let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
+  
+      const compMod = __webpack_require__("23aj")
+  
+      const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
+      /* harmony default export */ __webpack_exports__["default"] = (Component);
+      const getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
+      const getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
+      const getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
+  
+      // kept for detecting legacy exports
+      const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
+      const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
+      const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
+      const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
+  
+      let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
+      const _app = App
+  
+      const { renderReqToHTML, render } = Object(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__["getPageHandler"])({
+        pageModule: compMod,
+        pageComponent: Component,
+        pageConfig: config,
+        appModule: App,
+        documentModule: __webpack_require__("VDXt"),
+        errorModule: __webpack_require__("/a9y"),
+        notFoundModule: undefined,
+        pageGetStaticProps: getStaticProps,
+        pageGetStaticPaths: getStaticPaths,
+        pageGetServerSideProps: getServerSideProps,
+  
+        assetPrefix: "",
+        canonicalBase: "",
+        generateEtags: true,
+        poweredByHeader: true,
+  
+        runtimeConfig,
+        buildManifest: private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__,
+        reactLoadableManifest: private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__,
+  
+        rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
+        i18n: undefined,
+        page: "/",
+        buildId: "9I3PgIpgaGJhekVTugaaE",
+        escapedBuildId: "9I3PgIpgaGJhekVTugaaE",
+        basePath: "",
+        pageIsDynamic: false,
+        encodedPreviewProps: {previewModeId:"993db912b4a4bd1fb9461bccf5daabe0",previewModeSigningKey:"2bee2fe6b000651fd2b8a208ea894526a1f323dc6dc5c37cc98dddfbcf9f490e",previewModeEncryptionKey:"50a0fd134fd18b18f4dde75233acbe6d6d64e8569afe74afa920975159f86021"},
+        experimental: {
+          onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
+          initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
+        }
+      })
+      
+    
 
 /***/ }),
 
@@ -22271,32 +27521,6 @@ CancelToken.source = function source() {
 
 module.exports = CancelToken;
 
-
-/***/ }),
-
-/***/ "jhf3":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _players = _interopRequireDefault(__webpack_require__("pnjj"));
-
-var _ReactPlayer = __webpack_require__("rc9V");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-// Fall back to FilePlayer if nothing else can play the URL
-var fallback = _players["default"][_players["default"].length - 1];
-
-var _default = (0, _ReactPlayer.createReactPlayer)(_players["default"], fallback);
-
-exports["default"] = _default;
 
 /***/ }),
 
@@ -25478,9 +30702,9 @@ if (true) {
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__("284h");
+var _interopRequireWildcard = __webpack_require__("7KCV");
 
-var _interopRequireDefault = __webpack_require__("TqRt");
+var _interopRequireDefault = __webpack_require__("AroE");
 
 exports.__esModule = true;
 exports.useRouter = useRouter;
@@ -25621,220 +30845,6 @@ function makePublicRouterInstance(router) {
   });
   return instance;
 }
-
-/***/ }),
-
-/***/ "nQ6K":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://connect.facebook.net/en_US/sdk.js';
-var SDK_GLOBAL = 'FB';
-var SDK_GLOBAL_READY = 'fbAsyncInit';
-var PLAYER_ID_PREFIX = 'facebook-player-';
-
-var Facebook = /*#__PURE__*/function (_Component) {
-  _inherits(Facebook, _Component);
-
-  var _super = _createSuper(Facebook);
-
-  function Facebook() {
-    var _this;
-
-    _classCallCheck(this, Facebook);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "playerID", _this.props.config.playerId || "".concat(PLAYER_ID_PREFIX).concat((0, _utils.randomString)()));
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('mute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('unmute');
-    });
-
-    return _this;
-  }
-
-  _createClass(Facebook, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "load",
-    value: function load(url, isReady) {
-      var _this2 = this;
-
-      if (isReady) {
-        (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY).then(function (FB) {
-          return FB.XFBML.parse();
-        });
-        return;
-      }
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY).then(function (FB) {
-        FB.init({
-          appId: _this2.props.config.appId,
-          xfbml: true,
-          version: _this2.props.config.version
-        });
-        FB.Event.subscribe('xfbml.render', function (msg) {
-          // Here we know the SDK has loaded, even if onReady/onPlay
-          // is not called due to a video that cannot be embedded
-          _this2.props.onLoaded();
-        });
-        FB.Event.subscribe('xfbml.ready', function (msg) {
-          if (msg.type === 'video' && msg.id === _this2.playerID) {
-            _this2.player = msg.instance;
-
-            _this2.player.subscribe('startedPlaying', _this2.props.onPlay);
-
-            _this2.player.subscribe('paused', _this2.props.onPause);
-
-            _this2.player.subscribe('finishedPlaying', _this2.props.onEnded);
-
-            _this2.player.subscribe('startedBuffering', _this2.props.onBuffer);
-
-            _this2.player.subscribe('finishedBuffering', _this2.props.onBufferEnd);
-
-            _this2.player.subscribe('error', _this2.props.onError);
-
-            if (_this2.props.muted) {
-              _this2.callPlayer('mute');
-            } else {
-              _this2.callPlayer('unmute');
-            }
-
-            _this2.props.onReady(); // For some reason Facebook have added `visibility: hidden`
-            // to the iframe when autoplay fails, so here we set it back
-
-
-            document.getElementById(_this2.playerID).querySelector('iframe').style.visibility = 'visible';
-          }
-        });
-      });
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('seek', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.callPlayer('getDuration');
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.callPlayer('getCurrentPosition');
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return null;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var attributes = this.props.config.attributes;
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      return /*#__PURE__*/_react["default"].createElement("div", _extends({
-        style: style,
-        id: this.playerID,
-        className: "fb-video",
-        "data-href": this.props.url,
-        "data-autoplay": this.props.playing ? 'true' : 'false',
-        "data-allowfullscreen": "true",
-        "data-controls": this.props.controls ? 'true' : 'false'
-      }, attributes));
-    }
-  }]);
-
-  return Facebook;
-}(_react.Component);
-
-exports["default"] = Facebook;
-
-_defineProperty(Facebook, "displayName", 'Facebook');
-
-_defineProperty(Facebook, "canPlay", _patterns.canPlay.facebook);
-
-_defineProperty(Facebook, "loopOnEnded", true);
 
 /***/ }),
 
@@ -26212,286 +31222,6 @@ Utf7IMAPDecoder.prototype.end = function() {
 
 /***/ }),
 
-/***/ "oKWQ":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://api.dmcdn.net/all.js';
-var SDK_GLOBAL = 'DM';
-var SDK_GLOBAL_READY = 'dmAsyncInit';
-
-var DailyMotion = /*#__PURE__*/function (_Component) {
-  _inherits(DailyMotion, _Component);
-
-  var _super = _createSuper(DailyMotion);
-
-  function DailyMotion() {
-    var _this;
-
-    _classCallCheck(this, DailyMotion);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "onDurationChange", function () {
-      var duration = _this.getDuration();
-
-      _this.props.onDuration(duration);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('setMuted', true);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('setMuted', false);
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (container) {
-      _this.container = container;
-    });
-
-    return _this;
-  }
-
-  _createClass(DailyMotion, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      var _this$props = this.props,
-          controls = _this$props.controls,
-          config = _this$props.config,
-          onError = _this$props.onError,
-          playing = _this$props.playing;
-
-      var _url$match = url.match(_patterns.MATCH_URL_DAILYMOTION),
-          _url$match2 = _slicedToArray(_url$match, 2),
-          id = _url$match2[1];
-
-      if (this.player) {
-        this.player.load(id, {
-          start: (0, _utils.parseStartTime)(url),
-          autoplay: playing
-        });
-        return;
-      }
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL, SDK_GLOBAL_READY, function (DM) {
-        return DM.player;
-      }).then(function (DM) {
-        if (!_this2.container) return;
-        var Player = DM.player;
-        _this2.player = new Player(_this2.container, {
-          width: '100%',
-          height: '100%',
-          video: id,
-          params: _objectSpread({
-            controls: controls,
-            autoplay: _this2.props.playing,
-            mute: _this2.props.muted,
-            start: (0, _utils.parseStartTime)(url),
-            origin: window.location.origin
-          }, config.params),
-          events: {
-            apiready: _this2.props.onReady,
-            seeked: function seeked() {
-              return _this2.props.onSeek(_this2.player.currentTime);
-            },
-            video_end: _this2.props.onEnded,
-            durationchange: _this2.onDurationChange,
-            pause: _this2.props.onPause,
-            playing: _this2.props.onPlay,
-            waiting: _this2.props.onBuffer,
-            error: function error(event) {
-              return onError(event);
-            }
-          }
-        });
-      }, onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('seek', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.player.duration || null;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.player.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.player.bufferedTime;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var display = this.props.display;
-      var style = {
-        width: '100%',
-        height: '100%',
-        display: display
-      };
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        style: style
-      }, /*#__PURE__*/_react["default"].createElement("div", {
-        ref: this.ref
-      }));
-    }
-  }]);
-
-  return DailyMotion;
-}(_react.Component);
-
-exports["default"] = DailyMotion;
-
-_defineProperty(DailyMotion, "displayName", 'DailyMotion');
-
-_defineProperty(DailyMotion, "canPlay", _patterns.canPlay.dailymotion);
-
-_defineProperty(DailyMotion, "loopOnEnded", true);
-
-/***/ }),
-
-/***/ "oL8k":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function areInputsEqual(newInputs, lastInputs) {
-    if (newInputs.length !== lastInputs.length) {
-        return false;
-    }
-    for (var i = 0; i < newInputs.length; i++) {
-        if (newInputs[i] !== lastInputs[i]) {
-            return false;
-        }
-    }
-    return true;
-}
-
-function memoizeOne(resultFn, isEqual) {
-    if (isEqual === void 0) { isEqual = areInputsEqual; }
-    var lastThis;
-    var lastArgs = [];
-    var lastResult;
-    var calledOnce = false;
-    function memoized() {
-        var newArgs = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            newArgs[_i] = arguments[_i];
-        }
-        if (calledOnce && lastThis === this && isEqual(newArgs, lastArgs)) {
-            return lastResult;
-        }
-        lastResult = resultFn.apply(this, newArgs);
-        calledOnce = true;
-        lastThis = this;
-        lastArgs = newArgs;
-        return lastResult;
-    }
-    return memoized;
-}
-
-module.exports = memoizeOne;
-
-
-/***/ }),
-
 /***/ "onlc":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26820,115 +31550,6 @@ function detectEncoding(buf, defaultEncoding) {
 
 /***/ }),
 
-/***/ "pnjj":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = __webpack_require__("q1tI");
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-var _default = [{
-  key: 'youtube',
-  name: 'YouTube',
-  canPlay: _patterns.canPlay.youtube,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "5RnD", 7));
-  })
-}, {
-  key: 'soundcloud',
-  name: 'SoundCloud',
-  canPlay: _patterns.canPlay.soundcloud,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "W6fG", 7));
-  })
-}, {
-  key: 'vimeo',
-  name: 'Vimeo',
-  canPlay: _patterns.canPlay.vimeo,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "VkHn", 7));
-  })
-}, {
-  key: 'facebook',
-  name: 'Facebook',
-  canPlay: _patterns.canPlay.facebook,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "nQ6K", 7));
-  })
-}, {
-  key: 'streamable',
-  name: 'Streamable',
-  canPlay: _patterns.canPlay.streamable,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "v4zF", 7));
-  })
-}, {
-  key: 'wistia',
-  name: 'Wistia',
-  canPlay: _patterns.canPlay.wistia,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "3yWd", 7));
-  })
-}, {
-  key: 'twitch',
-  name: 'Twitch',
-  canPlay: _patterns.canPlay.twitch,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "Vzir", 7));
-  })
-}, {
-  key: 'dailymotion',
-  name: 'DailyMotion',
-  canPlay: _patterns.canPlay.dailymotion,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "oKWQ", 7));
-  })
-}, {
-  key: 'mixcloud',
-  name: 'Mixcloud',
-  canPlay: _patterns.canPlay.mixcloud,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "eywx", 7));
-  })
-}, {
-  key: 'vidyard',
-  name: 'Vidyard',
-  canPlay: _patterns.canPlay.vidyard,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "WvJM", 7));
-  })
-}, {
-  key: 'kaltura',
-  name: 'Kaltura',
-  canPlay: _patterns.canPlay.kaltura,
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "4Xmi", 7));
-  })
-}, {
-  key: 'file',
-  name: 'FilePlayer',
-  canPlay: _patterns.canPlay.file,
-  canEnablePIP: function canEnablePIP(url) {
-    return _patterns.canPlay.file(url) && (document.pictureInPictureEnabled || (0, _utils.supportsWebKitPresentationMode)()) && !_patterns.AUDIO_EXTENSIONS.test(url);
-  },
-  lazyPlayer: /*#__PURE__*/(0, _react.lazy)(function () {
-    return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "Nn5g", 7));
-  })
-}];
-exports["default"] = _default;
-
-/***/ }),
-
 /***/ "q1tI":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26938,6 +31559,313 @@ exports["default"] = _default;
 if (true) {
   module.exports = __webpack_require__("viRO");
 } else {}
+
+
+/***/ }),
+
+/***/ "q3qI":
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global global, define, System, Reflect, Promise */
+var __extends;
+var __assign;
+var __rest;
+var __decorate;
+var __param;
+var __metadata;
+var __awaiter;
+var __generator;
+var __exportStar;
+var __values;
+var __read;
+var __spread;
+var __spreadArrays;
+var __spreadArray;
+var __await;
+var __asyncGenerator;
+var __asyncDelegator;
+var __asyncValues;
+var __makeTemplateObject;
+var __importStar;
+var __importDefault;
+var __classPrivateFieldGet;
+var __classPrivateFieldSet;
+var __createBinding;
+(function (factory) {
+    var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
+    if (true) {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_RESULT__ = (function (exports) { factory(createExporter(root, createExporter(exports))); }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    }
+    else {}
+    function createExporter(exports, previous) {
+        if (exports !== root) {
+            if (typeof Object.create === "function") {
+                Object.defineProperty(exports, "__esModule", { value: true });
+            }
+            else {
+                exports.__esModule = true;
+            }
+        }
+        return function (id, v) { return exports[id] = previous ? previous(id, v) : v; };
+    }
+})
+(function (exporter) {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+
+    __extends = function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+
+    __assign = Object.assign || function (t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+
+    __rest = function (s, e) {
+        var t = {};
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+            t[p] = s[p];
+        if (s != null && typeof Object.getOwnPropertySymbols === "function")
+            for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+                if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                    t[p[i]] = s[p[i]];
+            }
+        return t;
+    };
+
+    __decorate = function (decorators, target, key, desc) {
+        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+        if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+        else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+        return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+
+    __param = function (paramIndex, decorator) {
+        return function (target, key) { decorator(target, key, paramIndex); }
+    };
+
+    __metadata = function (metadataKey, metadataValue) {
+        if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+    };
+
+    __awaiter = function (thisArg, _arguments, P, generator) {
+        function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+        return new (P || (P = Promise))(function (resolve, reject) {
+            function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+            function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+            function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+            step((generator = generator.apply(thisArg, _arguments || [])).next());
+        });
+    };
+
+    __generator = function (thisArg, body) {
+        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+        return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+        function verb(n) { return function (v) { return step([n, v]); }; }
+        function step(op) {
+            if (f) throw new TypeError("Generator is already executing.");
+            while (_) try {
+                if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+                if (y = 0, t) op = [op[0] & 2, t.value];
+                switch (op[0]) {
+                    case 0: case 1: t = op; break;
+                    case 4: _.label++; return { value: op[1], done: false };
+                    case 5: _.label++; y = op[1]; op = [0]; continue;
+                    case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                    default:
+                        if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                        if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                        if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                        if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                        if (t[2]) _.ops.pop();
+                        _.trys.pop(); continue;
+                }
+                op = body.call(thisArg, _);
+            } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+            if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+        }
+    };
+
+    __exportStar = function(m, o) {
+        for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+    };
+
+    __createBinding = Object.create ? (function(o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+    }) : (function(o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        o[k2] = m[k];
+    });
+
+    __values = function (o) {
+        var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+        if (m) return m.call(o);
+        if (o && typeof o.length === "number") return {
+            next: function () {
+                if (o && i >= o.length) o = void 0;
+                return { value: o && o[i++], done: !o };
+            }
+        };
+        throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+    };
+
+    __read = function (o, n) {
+        var m = typeof Symbol === "function" && o[Symbol.iterator];
+        if (!m) return o;
+        var i = m.call(o), r, ar = [], e;
+        try {
+            while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+        }
+        catch (error) { e = { error: error }; }
+        finally {
+            try {
+                if (r && !r.done && (m = i["return"])) m.call(i);
+            }
+            finally { if (e) throw e.error; }
+        }
+        return ar;
+    };
+
+    /** @deprecated */
+    __spread = function () {
+        for (var ar = [], i = 0; i < arguments.length; i++)
+            ar = ar.concat(__read(arguments[i]));
+        return ar;
+    };
+
+    /** @deprecated */
+    __spreadArrays = function () {
+        for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+        for (var r = Array(s), k = 0, i = 0; i < il; i++)
+            for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+                r[k] = a[j];
+        return r;
+    };
+
+    __spreadArray = function (to, from) {
+        for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+            to[j] = from[i];
+        return to;
+    };
+
+    __await = function (v) {
+        return this instanceof __await ? (this.v = v, this) : new __await(v);
+    };
+
+    __asyncGenerator = function (thisArg, _arguments, generator) {
+        if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+        var g = generator.apply(thisArg, _arguments || []), i, q = [];
+        return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+        function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+        function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+        function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r);  }
+        function fulfill(value) { resume("next", value); }
+        function reject(value) { resume("throw", value); }
+        function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+    };
+
+    __asyncDelegator = function (o) {
+        var i, p;
+        return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+        function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+    };
+
+    __asyncValues = function (o) {
+        if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+        var m = o[Symbol.asyncIterator], i;
+        return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+        function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+        function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+    };
+
+    __makeTemplateObject = function (cooked, raw) {
+        if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+        return cooked;
+    };
+
+    var __setModuleDefault = Object.create ? (function(o, v) {
+        Object.defineProperty(o, "default", { enumerable: true, value: v });
+    }) : function(o, v) {
+        o["default"] = v;
+    };
+
+    __importStar = function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+
+    __importDefault = function (mod) {
+        return (mod && mod.__esModule) ? mod : { "default": mod };
+    };
+
+    __classPrivateFieldGet = function (receiver, privateMap) {
+        if (!privateMap.has(receiver)) {
+            throw new TypeError("attempted to get private field on non-instance");
+        }
+        return privateMap.get(receiver);
+    };
+
+    __classPrivateFieldSet = function (receiver, privateMap, value) {
+        if (!privateMap.has(receiver)) {
+            throw new TypeError("attempted to set private field on non-instance");
+        }
+        privateMap.set(receiver, value);
+        return value;
+    };
+
+    exporter("__extends", __extends);
+    exporter("__assign", __assign);
+    exporter("__rest", __rest);
+    exporter("__decorate", __decorate);
+    exporter("__param", __param);
+    exporter("__metadata", __metadata);
+    exporter("__awaiter", __awaiter);
+    exporter("__generator", __generator);
+    exporter("__exportStar", __exportStar);
+    exporter("__createBinding", __createBinding);
+    exporter("__values", __values);
+    exporter("__read", __read);
+    exporter("__spread", __spread);
+    exporter("__spreadArrays", __spreadArrays);
+    exporter("__spreadArray", __spreadArray);
+    exporter("__await", __await);
+    exporter("__asyncGenerator", __asyncGenerator);
+    exporter("__asyncDelegator", __asyncDelegator);
+    exporter("__asyncValues", __asyncValues);
+    exporter("__makeTemplateObject", __makeTemplateObject);
+    exporter("__importStar", __importStar);
+    exporter("__importDefault", __importDefault);
+    exporter("__classPrivateFieldGet", __classPrivateFieldGet);
+    exporter("__classPrivateFieldSet", __classPrivateFieldSet);
+});
 
 
 /***/ }),
@@ -28383,338 +33311,136 @@ if (false) {}
 
 /***/ }),
 
-/***/ "rc9V":
+/***/ "s1vs":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+Object.defineProperty(exports, '__esModule', { value: true });
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.createReactPlayer = void 0;
+var defaultTimestep = (1 / 60) * 1000;
+var getCurrentTime = typeof performance !== "undefined"
+    ? function () { return performance.now(); }
+    : function () { return Date.now(); };
+var onNextFrame = typeof window !== "undefined"
+    ? function (callback) {
+        return window.requestAnimationFrame(callback);
+    }
+    : function (callback) {
+        return setTimeout(function () { return callback(getCurrentTime()); }, defaultTimestep);
+    };
 
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _deepmerge = _interopRequireDefault(__webpack_require__("PE4B"));
-
-var _memoizeOne = _interopRequireDefault(__webpack_require__("oL8k"));
-
-var _reactFastCompare = _interopRequireDefault(__webpack_require__("bmMU"));
-
-var _props = __webpack_require__("DMug");
-
-var _utils = __webpack_require__("ODpG");
-
-var _Player3 = _interopRequireDefault(__webpack_require__("WFMG"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var Preview = /*#__PURE__*/(0, _react.lazy)(function () {
-  return Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, "0ZcZ", 7));
-});
-var IS_BROWSER = typeof window !== 'undefined' && window.document;
-var IS_GLOBAL = typeof global !== 'undefined' && global.window && global.window.document;
-var SUPPORTED_PROPS = Object.keys(_props.propTypes); // Return null when rendering on the server
-// as Suspense is not supported yet
-
-var UniversalSuspense = IS_BROWSER || IS_GLOBAL ? _react.Suspense : function () {
-  return null;
-};
-var customPlayers = [];
-
-var createReactPlayer = function createReactPlayer(players, fallback) {
-  var _class, _temp;
-
-  return _temp = _class = /*#__PURE__*/function (_Component) {
-    _inherits(ReactPlayer, _Component);
-
-    var _super = _createSuper(ReactPlayer);
-
-    function ReactPlayer() {
-      var _this;
-
-      _classCallCheck(this, ReactPlayer);
-
-      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
-
-      _this = _super.call.apply(_super, [this].concat(args));
-
-      _defineProperty(_assertThisInitialized(_this), "state", {
-        showPreview: !!_this.props.light
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "references", {
-        wrapper: function wrapper(_wrapper) {
-          _this.wrapper = _wrapper;
+function createRenderStep(runNextFrame) {
+    var toRun = [];
+    var toRunNextFrame = [];
+    var numToRun = 0;
+    var isProcessing = false;
+    var toKeepAlive = new WeakSet();
+    var step = {
+        schedule: function (callback, keepAlive, immediate) {
+            if (keepAlive === void 0) { keepAlive = false; }
+            if (immediate === void 0) { immediate = false; }
+            var addToCurrentFrame = immediate && isProcessing;
+            var buffer = addToCurrentFrame ? toRun : toRunNextFrame;
+            if (keepAlive)
+                toKeepAlive.add(callback);
+            if (buffer.indexOf(callback) === -1) {
+                buffer.push(callback);
+                if (addToCurrentFrame && isProcessing)
+                    numToRun = toRun.length;
+            }
+            return callback;
         },
-        player: function player(_player) {
-          _this.player = _player;
-        }
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "handleClickPreview", function (e) {
-        _this.setState({
-          showPreview: false
-        });
-
-        _this.props.onClickPreview(e);
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "showPreview", function () {
-        _this.setState({
-          showPreview: true
-        });
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getDuration", function () {
-        if (!_this.player) return null;
-        return _this.player.getDuration();
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getCurrentTime", function () {
-        if (!_this.player) return null;
-        return _this.player.getCurrentTime();
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getSecondsLoaded", function () {
-        if (!_this.player) return null;
-        return _this.player.getSecondsLoaded();
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getInternalPlayer", function () {
-        var key = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'player';
-        if (!_this.player) return null;
-        return _this.player.getInternalPlayer(key);
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "seekTo", function (fraction, type) {
-        if (!_this.player) return null;
-
-        _this.player.seekTo(fraction, type);
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "handleReady", function () {
-        _this.props.onReady(_assertThisInitialized(_this));
-      });
-
-      _defineProperty(_assertThisInitialized(_this), "getActivePlayer", (0, _memoizeOne["default"])(function (url) {
-        for (var _i = 0, _arr = [].concat(customPlayers, _toConsumableArray(players)); _i < _arr.length; _i++) {
-          var player = _arr[_i];
-
-          if (player.canPlay(url)) {
-            return player;
-          }
-        }
-
-        if (fallback) {
-          return fallback;
-        }
-
-        return null;
-      }));
-
-      _defineProperty(_assertThisInitialized(_this), "getConfig", (0, _memoizeOne["default"])(function (url, key) {
-        var config = _this.props.config;
-        return _deepmerge["default"].all([_props.defaultProps.config, _props.defaultProps.config[key] || {}, config, config[key] || {}]);
-      }));
-
-      _defineProperty(_assertThisInitialized(_this), "getAttributes", (0, _memoizeOne["default"])(function (url) {
-        return (0, _utils.omit)(_this.props, SUPPORTED_PROPS);
-      }));
-
-      _defineProperty(_assertThisInitialized(_this), "renderActivePlayer", function (url) {
-        if (!url) return null;
-
-        var player = _this.getActivePlayer(url);
-
-        if (!player) return null;
-
-        var config = _this.getConfig(url, player.key);
-
-        return /*#__PURE__*/_react["default"].createElement(_Player3["default"], _extends({}, _this.props, {
-          key: player.key,
-          ref: _this.references.player,
-          config: config,
-          activePlayer: player.lazyPlayer || player,
-          onReady: _this.handleReady
-        }));
-      });
-
-      return _this;
-    }
-
-    _createClass(ReactPlayer, [{
-      key: "shouldComponentUpdate",
-      value: function shouldComponentUpdate(nextProps, nextState) {
-        return !(0, _reactFastCompare["default"])(this.props, nextProps) || !(0, _reactFastCompare["default"])(this.state, nextState);
-      }
-    }, {
-      key: "componentDidUpdate",
-      value: function componentDidUpdate(prevProps) {
-        var light = this.props.light;
-
-        if (!prevProps.light && light) {
-          this.setState({
-            showPreview: true
-          });
-        }
-
-        if (prevProps.light && !light) {
-          this.setState({
-            showPreview: false
-          });
-        }
-      }
-    }, {
-      key: "renderPreview",
-      value: function renderPreview(url) {
-        if (!url) return null;
-        var _this$props = this.props,
-            light = _this$props.light,
-            playIcon = _this$props.playIcon,
-            previewTabIndex = _this$props.previewTabIndex;
-        return /*#__PURE__*/_react["default"].createElement(Preview, {
-          url: url,
-          light: light,
-          playIcon: playIcon,
-          previewTabIndex: previewTabIndex,
-          onClick: this.handleClickPreview
-        });
-      }
-    }, {
-      key: "render",
-      value: function render() {
-        var _this$props2 = this.props,
-            url = _this$props2.url,
-            style = _this$props2.style,
-            width = _this$props2.width,
-            height = _this$props2.height,
-            fallback = _this$props2.fallback,
-            Wrapper = _this$props2.wrapper;
-        var showPreview = this.state.showPreview;
-        var attributes = this.getAttributes(url);
-        return /*#__PURE__*/_react["default"].createElement(Wrapper, _extends({
-          ref: this.references.wrapper,
-          style: _objectSpread(_objectSpread({}, style), {}, {
-            width: width,
-            height: height
-          })
-        }, attributes), /*#__PURE__*/_react["default"].createElement(UniversalSuspense, {
-          fallback: fallback
-        }, showPreview ? this.renderPreview(url) : this.renderActivePlayer(url)));
-      }
-    }]);
-
-    return ReactPlayer;
-  }(_react.Component), _defineProperty(_class, "displayName", 'ReactPlayer'), _defineProperty(_class, "propTypes", _props.propTypes), _defineProperty(_class, "defaultProps", _props.defaultProps), _defineProperty(_class, "addCustomPlayer", function (player) {
-    customPlayers.push(player);
-  }), _defineProperty(_class, "removeCustomPlayers", function () {
-    customPlayers.length = 0;
-  }), _defineProperty(_class, "canPlay", function (url) {
-    for (var _i2 = 0, _arr2 = [].concat(customPlayers, _toConsumableArray(players)); _i2 < _arr2.length; _i2++) {
-      var _Player = _arr2[_i2];
-
-      if (_Player.canPlay(url)) {
-        return true;
-      }
-    }
-
-    return false;
-  }), _defineProperty(_class, "canEnablePIP", function (url) {
-    for (var _i3 = 0, _arr3 = [].concat(customPlayers, _toConsumableArray(players)); _i3 < _arr3.length; _i3++) {
-      var _Player2 = _arr3[_i3];
-
-      if (_Player2.canEnablePIP && _Player2.canEnablePIP(url)) {
-        return true;
-      }
-    }
-
-    return false;
-  }), _temp;
-};
-
-exports.createReactPlayer = createReactPlayer;
-
-/***/ }),
-
-/***/ "rtAh":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-
-
-
-
-function Welcome() {
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-    className: "container flex\tflex-col justify-center  bg-accentColor lg:bg-transparent  text-textwhite text-center py-8 rounded-xl my-3 mt-48 max-w-md  md:max-w-xl lg:max-w-7xl ",
-    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-      className: "border-b pb-6 text-4xl font-black headings md:text-6xl",
-      children: "WELCOME"
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-      className: "border-b py-6 text-xl  font-light leading-relaxed mt-0 mb-4 md:text-2xl ",
-      children: "We watched a lot of films in 2020. But it wasn\u2019t just about how many, it was about what we saw. As our worlds contracted, our horizons expanded. The unasked-for gift of time indoors saw us plug historical gaps, discover missing voices, revisit familiar favorites and examine our biases. We couldn\u2019t see each other, but we could see movies, and in them we saw more of each other than we thought possible. We roamed with nomads, walked with wolves, rocked with lovers, crashed the system, called for another round, and then we danced. Bring on the world of tomorrow."
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-      className: "  tracking-normal text-sm font-thin  pt-4 text-center",
-      children: "Small detail will be here"
-    })]
-  });
+        cancel: function (callback) {
+            var index = toRunNextFrame.indexOf(callback);
+            if (index !== -1)
+                toRunNextFrame.splice(index, 1);
+            toKeepAlive.delete(callback);
+        },
+        process: function (frameData) {
+            var _a;
+            isProcessing = true;
+            _a = [toRunNextFrame, toRun], toRun = _a[0], toRunNextFrame = _a[1];
+            toRunNextFrame.length = 0;
+            numToRun = toRun.length;
+            if (numToRun) {
+                for (var i = 0; i < numToRun; i++) {
+                    var callback = toRun[i];
+                    callback(frameData);
+                    if (toKeepAlive.has(callback)) {
+                        step.schedule(callback);
+                        runNextFrame();
+                    }
+                }
+            }
+            isProcessing = false;
+        },
+    };
+    return step;
 }
 
-/* unused harmony default export */ var _unused_webpack_default_export = (Welcome);
+var maxElapsed = 40;
+var useDefaultElapsed = true;
+var runNextFrame = false;
+var isProcessing = false;
+var frame = {
+    delta: 0,
+    timestamp: 0,
+};
+var stepsOrder = [
+    "read",
+    "update",
+    "preRender",
+    "render",
+    "postRender",
+];
+var steps = stepsOrder.reduce(function (acc, key) {
+    acc[key] = createRenderStep(function () { return (runNextFrame = true); });
+    return acc;
+}, {});
+var sync = stepsOrder.reduce(function (acc, key) {
+    var step = steps[key];
+    acc[key] = function (process, keepAlive, immediate) {
+        if (keepAlive === void 0) { keepAlive = false; }
+        if (immediate === void 0) { immediate = false; }
+        if (!runNextFrame)
+            startLoop();
+        return step.schedule(process, keepAlive, immediate);
+    };
+    return acc;
+}, {});
+var cancelSync = stepsOrder.reduce(function (acc, key) {
+    acc[key] = steps[key].cancel;
+    return acc;
+}, {});
+var processStep = function (stepId) { return steps[stepId].process(frame); };
+var processFrame = function (timestamp) {
+    runNextFrame = false;
+    frame.delta = useDefaultElapsed
+        ? defaultTimestep
+        : Math.max(Math.min(timestamp - frame.timestamp, maxElapsed), 1);
+    frame.timestamp = timestamp;
+    isProcessing = true;
+    stepsOrder.forEach(processStep);
+    isProcessing = false;
+    if (runNextFrame) {
+        useDefaultElapsed = false;
+        onNextFrame(processFrame);
+    }
+};
+var startLoop = function () {
+    runNextFrame = true;
+    useDefaultElapsed = true;
+    if (!isProcessing)
+        onNextFrame(processFrame);
+};
+var getFrameData = function () { return frame; };
+
+exports.cancelSync = cancelSync;
+exports.default = sync;
+exports.getFrameData = getFrameData;
+
 
 /***/ }),
 
@@ -28972,6 +33698,19 @@ function detectEncoding(buf, defaultEncoding) {
 }
 
 
+
+
+/***/ }),
+
+/***/ "sdKu":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (true) {
+  module.exports = __webpack_require__("L/Hi");
+} else {}
 
 
 /***/ }),
@@ -30495,215 +35234,6 @@ module.exports = convert;
 
 /***/ }),
 
-/***/ "v4zF":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
-
-var _utils = __webpack_require__("ODpG");
-
-var _patterns = __webpack_require__("AEgf");
-
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var SDK_URL = 'https://cdn.embed.ly/player-0.1.0.min.js';
-var SDK_GLOBAL = 'playerjs';
-
-var Streamable = /*#__PURE__*/function (_Component) {
-  _inherits(Streamable, _Component);
-
-  var _super = _createSuper(Streamable);
-
-  function Streamable() {
-    var _this;
-
-    _classCallCheck(this, Streamable);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
-
-    _defineProperty(_assertThisInitialized(_this), "callPlayer", _utils.callPlayer);
-
-    _defineProperty(_assertThisInitialized(_this), "duration", null);
-
-    _defineProperty(_assertThisInitialized(_this), "currentTime", null);
-
-    _defineProperty(_assertThisInitialized(_this), "secondsLoaded", null);
-
-    _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.callPlayer('mute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      _this.callPlayer('unmute');
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "ref", function (iframe) {
-      _this.iframe = iframe;
-    });
-
-    return _this;
-  }
-
-  _createClass(Streamable, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.props.onMount && this.props.onMount(this);
-    }
-  }, {
-    key: "load",
-    value: function load(url) {
-      var _this2 = this;
-
-      (0, _utils.getSDK)(SDK_URL, SDK_GLOBAL).then(function (playerjs) {
-        if (!_this2.iframe) return;
-        _this2.player = new playerjs.Player(_this2.iframe);
-
-        _this2.player.setLoop(_this2.props.loop);
-
-        _this2.player.on('ready', _this2.props.onReady);
-
-        _this2.player.on('play', _this2.props.onPlay);
-
-        _this2.player.on('pause', _this2.props.onPause);
-
-        _this2.player.on('seeked', _this2.props.onSeek);
-
-        _this2.player.on('ended', _this2.props.onEnded);
-
-        _this2.player.on('error', _this2.props.onError);
-
-        _this2.player.on('timeupdate', function (_ref) {
-          var duration = _ref.duration,
-              seconds = _ref.seconds;
-          _this2.duration = duration;
-          _this2.currentTime = seconds;
-        });
-
-        _this2.player.on('buffered', function (_ref2) {
-          var percent = _ref2.percent;
-
-          if (_this2.duration) {
-            _this2.secondsLoaded = _this2.duration * percent;
-          }
-        });
-
-        if (_this2.props.muted) {
-          _this2.player.mute();
-        }
-      }, this.props.onError);
-    }
-  }, {
-    key: "play",
-    value: function play() {
-      this.callPlayer('play');
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.callPlayer('pause');
-    }
-  }, {
-    key: "stop",
-    value: function stop() {// Nothing to do
-    }
-  }, {
-    key: "seekTo",
-    value: function seekTo(seconds) {
-      this.callPlayer('setCurrentTime', seconds);
-    }
-  }, {
-    key: "setVolume",
-    value: function setVolume(fraction) {
-      this.callPlayer('setVolume', fraction * 100);
-    }
-  }, {
-    key: "setLoop",
-    value: function setLoop(loop) {
-      this.callPlayer('setLoop', loop);
-    }
-  }, {
-    key: "getDuration",
-    value: function getDuration() {
-      return this.duration;
-    }
-  }, {
-    key: "getCurrentTime",
-    value: function getCurrentTime() {
-      return this.currentTime;
-    }
-  }, {
-    key: "getSecondsLoaded",
-    value: function getSecondsLoaded() {
-      return this.secondsLoaded;
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var id = this.props.url.match(_patterns.MATCH_URL_STREAMABLE)[1];
-      var style = {
-        width: '100%',
-        height: '100%'
-      };
-      return /*#__PURE__*/_react["default"].createElement("iframe", {
-        ref: this.ref,
-        src: "https://streamable.com/o/".concat(id),
-        frameBorder: "0",
-        scrolling: "no",
-        style: style,
-        allowFullScreen: true
-      });
-    }
-  }]);
-
-  return Streamable;
-}(_react.Component);
-
-exports["default"] = Streamable;
-
-_defineProperty(Streamable, "displayName", 'Streamable');
-
-_defineProperty(Streamable, "canPlay", _patterns.canPlay.streamable);
-
-/***/ }),
-
 /***/ "vDqi":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30921,142 +35451,177 @@ const resolvedPage=_path.posix.normalize(page);if(page!==resolvedPage){throw new
 
 /***/ }),
 
-/***/ "w1s3":
+/***/ "w5ch":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function(module) {
+const colorConvert = __webpack_require__("uxXc");
 
-const os = __webpack_require__("jle/");
-const hasFlag = __webpack_require__("X5QW");
-
-const env = process.env;
-
-let forceColor;
-if (hasFlag('no-color') ||
-	hasFlag('no-colors') ||
-	hasFlag('color=false')) {
-	forceColor = false;
-} else if (hasFlag('color') ||
-	hasFlag('colors') ||
-	hasFlag('color=true') ||
-	hasFlag('color=always')) {
-	forceColor = true;
-}
-if ('FORCE_COLOR' in env) {
-	forceColor = env.FORCE_COLOR.length === 0 || parseInt(env.FORCE_COLOR, 10) !== 0;
-}
-
-function translateLevel(level) {
-	if (level === 0) {
-		return false;
-	}
-
-	return {
-		level,
-		hasBasic: true,
-		has256: level >= 2,
-		has16m: level >= 3
-	};
-}
-
-function supportsColor(stream) {
-	if (forceColor === false) {
-		return 0;
-	}
-
-	if (hasFlag('color=16m') ||
-		hasFlag('color=full') ||
-		hasFlag('color=truecolor')) {
-		return 3;
-	}
-
-	if (hasFlag('color=256')) {
-		return 2;
-	}
-
-	if (stream && !stream.isTTY && forceColor !== true) {
-		return 0;
-	}
-
-	const min = forceColor ? 1 : 0;
-
-	if (process.platform === 'win32') {
-		// Node.js 7.5.0 is the first version of Node.js to include a patch to
-		// libuv that enables 256 color output on Windows. Anything earlier and it
-		// won't work. However, here we target Node.js 8 at minimum as it is an LTS
-		// release, and Node.js 7 is not. Windows 10 build 10586 is the first Windows
-		// release that supports 256 colors. Windows 10 build 14931 is the first release
-		// that supports 16m/TrueColor.
-		const osRelease = os.release().split('.');
-		if (
-			Number(process.versions.node.split('.')[0]) >= 8 &&
-			Number(osRelease[0]) >= 10 &&
-			Number(osRelease[2]) >= 10586
-		) {
-			return Number(osRelease[2]) >= 14931 ? 3 : 2;
-		}
-
-		return 1;
-	}
-
-	if ('CI' in env) {
-		if (['TRAVIS', 'CIRCLECI', 'APPVEYOR', 'GITLAB_CI'].some(sign => sign in env) || env.CI_NAME === 'codeship') {
-			return 1;
-		}
-
-		return min;
-	}
-
-	if ('TEAMCITY_VERSION' in env) {
-		return /^(9\.(0*[1-9]\d*)\.|\d{2,}\.)/.test(env.TEAMCITY_VERSION) ? 1 : 0;
-	}
-
-	if (env.COLORTERM === 'truecolor') {
-		return 3;
-	}
-
-	if ('TERM_PROGRAM' in env) {
-		const version = parseInt((env.TERM_PROGRAM_VERSION || '').split('.')[0], 10);
-
-		switch (env.TERM_PROGRAM) {
-			case 'iTerm.app':
-				return version >= 3 ? 3 : 2;
-			case 'Apple_Terminal':
-				return 2;
-			// No default
-		}
-	}
-
-	if (/-256(color)?$/i.test(env.TERM)) {
-		return 2;
-	}
-
-	if (/^screen|^xterm|^vt100|^vt220|^rxvt|color|ansi|cygwin|linux/i.test(env.TERM)) {
-		return 1;
-	}
-
-	if ('COLORTERM' in env) {
-		return 1;
-	}
-
-	if (env.TERM === 'dumb') {
-		return min;
-	}
-
-	return min;
-}
-
-function getSupportLevel(stream) {
-	const level = supportsColor(stream);
-	return translateLevel(level);
-}
-
-module.exports = {
-	supportsColor: getSupportLevel,
-	stdout: getSupportLevel(process.stdout),
-	stderr: getSupportLevel(process.stderr)
+const wrapAnsi16 = (fn, offset) => function () {
+	const code = fn.apply(colorConvert, arguments);
+	return `\u001B[${code + offset}m`;
 };
 
+const wrapAnsi256 = (fn, offset) => function () {
+	const code = fn.apply(colorConvert, arguments);
+	return `\u001B[${38 + offset};5;${code}m`;
+};
+
+const wrapAnsi16m = (fn, offset) => function () {
+	const rgb = fn.apply(colorConvert, arguments);
+	return `\u001B[${38 + offset};2;${rgb[0]};${rgb[1]};${rgb[2]}m`;
+};
+
+function assembleStyles() {
+	const codes = new Map();
+	const styles = {
+		modifier: {
+			reset: [0, 0],
+			// 21 isn't widely supported and 22 does the same thing
+			bold: [1, 22],
+			dim: [2, 22],
+			italic: [3, 23],
+			underline: [4, 24],
+			inverse: [7, 27],
+			hidden: [8, 28],
+			strikethrough: [9, 29]
+		},
+		color: {
+			black: [30, 39],
+			red: [31, 39],
+			green: [32, 39],
+			yellow: [33, 39],
+			blue: [34, 39],
+			magenta: [35, 39],
+			cyan: [36, 39],
+			white: [37, 39],
+			gray: [90, 39],
+
+			// Bright color
+			redBright: [91, 39],
+			greenBright: [92, 39],
+			yellowBright: [93, 39],
+			blueBright: [94, 39],
+			magentaBright: [95, 39],
+			cyanBright: [96, 39],
+			whiteBright: [97, 39]
+		},
+		bgColor: {
+			bgBlack: [40, 49],
+			bgRed: [41, 49],
+			bgGreen: [42, 49],
+			bgYellow: [43, 49],
+			bgBlue: [44, 49],
+			bgMagenta: [45, 49],
+			bgCyan: [46, 49],
+			bgWhite: [47, 49],
+
+			// Bright color
+			bgBlackBright: [100, 49],
+			bgRedBright: [101, 49],
+			bgGreenBright: [102, 49],
+			bgYellowBright: [103, 49],
+			bgBlueBright: [104, 49],
+			bgMagentaBright: [105, 49],
+			bgCyanBright: [106, 49],
+			bgWhiteBright: [107, 49]
+		}
+	};
+
+	// Fix humans
+	styles.color.grey = styles.color.gray;
+
+	for (const groupName of Object.keys(styles)) {
+		const group = styles[groupName];
+
+		for (const styleName of Object.keys(group)) {
+			const style = group[styleName];
+
+			styles[styleName] = {
+				open: `\u001B[${style[0]}m`,
+				close: `\u001B[${style[1]}m`
+			};
+
+			group[styleName] = styles[styleName];
+
+			codes.set(style[0], style[1]);
+		}
+
+		Object.defineProperty(styles, groupName, {
+			value: group,
+			enumerable: false
+		});
+
+		Object.defineProperty(styles, 'codes', {
+			value: codes,
+			enumerable: false
+		});
+	}
+
+	const ansi2ansi = n => n;
+	const rgb2rgb = (r, g, b) => [r, g, b];
+
+	styles.color.close = '\u001B[39m';
+	styles.bgColor.close = '\u001B[49m';
+
+	styles.color.ansi = {
+		ansi: wrapAnsi16(ansi2ansi, 0)
+	};
+	styles.color.ansi256 = {
+		ansi256: wrapAnsi256(ansi2ansi, 0)
+	};
+	styles.color.ansi16m = {
+		rgb: wrapAnsi16m(rgb2rgb, 0)
+	};
+
+	styles.bgColor.ansi = {
+		ansi: wrapAnsi16(ansi2ansi, 10)
+	};
+	styles.bgColor.ansi256 = {
+		ansi256: wrapAnsi256(ansi2ansi, 10)
+	};
+	styles.bgColor.ansi16m = {
+		rgb: wrapAnsi16m(rgb2rgb, 10)
+	};
+
+	for (let key of Object.keys(colorConvert)) {
+		if (typeof colorConvert[key] !== 'object') {
+			continue;
+		}
+
+		const suite = colorConvert[key];
+
+		if (key === 'ansi16') {
+			key = 'ansi';
+		}
+
+		if ('ansi16' in suite) {
+			styles.color.ansi[key] = wrapAnsi16(suite.ansi16, 0);
+			styles.bgColor.ansi[key] = wrapAnsi16(suite.ansi16, 10);
+		}
+
+		if ('ansi256' in suite) {
+			styles.color.ansi256[key] = wrapAnsi256(suite.ansi256, 0);
+			styles.bgColor.ansi256[key] = wrapAnsi256(suite.ansi256, 10);
+		}
+
+		if ('rgb' in suite) {
+			styles.color.ansi16m[key] = wrapAnsi16m(suite.rgb, 0);
+			styles.bgColor.ansi16m[key] = wrapAnsi16m(suite.rgb, 10);
+		}
+	}
+
+	return styles;
+}
+
+// Make the export immutable
+Object.defineProperty(module, 'exports', {
+	enumerable: true,
+	get: assembleStyles
+});
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("LY0y")(module)))
 
 /***/ }),
 
@@ -31964,135 +36529,6 @@ Utf7IMAPDecoder.prototype.end = function() {
 
 
 
-
-/***/ }),
-
-/***/ "xtq8":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("nKUr");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("q1tI");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("3Mv1");
-/* harmony import */ var react_player_lazy__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("jhf3");
-/* harmony import */ var react_player_lazy__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_player_lazy__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
-
-
-
-
-
-
-
-const HighestRatedCard = ({
-  games,
-  headerText
-}) => {
-  let factor = 5.7;
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-    className: " container flex  flex-col items-center  justify-center",
-    children: [games.slice(0, 1).map((game, i) => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        className: "flex flex-col justify-center bg-bgcolor my-12 rounded-xl lg:shadow-none overflow-hidden min-w-min max-w-2xl md:max-w-xl lg:max-w-5xl  ",
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-          className: "hidden md:block lg:hidden",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_player_lazy__WEBPACK_IMPORTED_MODULE_3___default.a, {
-            url: `https://www.youtube.com/watch?v=${game.videos && game.videos[0].video_id}`,
-            playing: true,
-            loop: true,
-            volume: 0,
-            muted: true
-          })
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-          className: "hidden  lg:block",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_player_lazy__WEBPACK_IMPORTED_MODULE_3___default.a, {
-            url: `https://www.youtube.com/watch?v=${game.videos && game.videos[0].video_id}`,
-            playing: true,
-            loop: true,
-            volume: 0,
-            muted: true,
-            width: 1020,
-            height: 600
-          })
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-          className: "block md:hidden ",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "relative pt-16 pb-32 flex content-center items-center justify-center",
-            style: {
-              minHeight: "35vh"
-            },
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-              className: "absolute top-0 w-full h-full bg-center bg-cover",
-              style: {
-                backgroundImage: `url('${ true && game.screenshots[0].url.replace("t_thumb", "t_screenshot_big")}')`
-              },
-              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-                id: "blackOverlay",
-                className: "w-full h-full absolute opacity-50 bg-black bg-bgcolor"
-              })
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-              className: "top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden",
-              style: {
-                height: "70px",
-                transform: "translateZ(0)"
-              }
-            })]
-          })
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-          className: "container text-left my-2 mx-5 -mt-16  flex flex-col z-10  ",
-          children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-            className: "pb-1 text-sm pt-2 text-gray-200 font-medium tracking-widest uppercase",
-            children: headerText
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-            className: "flex flex-row ",
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              className: "pt-3 top-0 left-0 z-20 ml-0 mr-3  ",
-              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-                className: "text-3xl font-semibold py-1 px-5 rounded text-gray-800 align-middle bg-textwhite  ",
-                children: i + 1
-              })
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-              href: `/games/${game.id}`,
-              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-                className: "text-textwhite hover:text-blue-700 cursor-pointer  py-2 pr-8  text-3xl  mt-0 smallheadings",
-                children: game.name
-              })
-            })]
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-            className: "text-textwhite py-2 text-base font-medium  mt-2 ",
-            children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("ul", {
-              className: "flex flex-wrap items-center",
-              children: ["Platform(s)", game.platforms.map((name, i) => {
-                return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("span", {
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                  className: "text-sm font-semibold inline-block py-1 pr-2  rounded  uppercase last: m-1  mr-1 ",
-                  children: name.abbreviation
-                }, i);
-              })]
-            })
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("p", {
-            className: "text-textwhite py-2 text-base font-medium  mt-2  ",
-            children: ["Rating ", game.total_rating, "%"]
-          }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-            className: "text-textgray py-2 lg:mr-32 text-base font-medium mt-0 pr-8 ",
-            children: game.summary
-          })]
-        })]
-      })
-    }, i)), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-      className: "flex flex-col lg:mb-56 justify-center pb-4 bg-bgcolor max-w-md mx-auto rounded-xl shadow-md  md:max-w-3xl",
-      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_Card__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
-        games: games.slice(1, 11)
-      })
-    })]
-  });
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (HighestRatedCard);
 
 /***/ }),
 
