@@ -130,10 +130,14 @@ interface TodoListProps{
 }
 
 
-
-
 type Todo = {
+ 	name: string
+	 id:number
+	 cover: {
+		id: number
+		url: string
+	  }
 
-    text: string
+    
     complete: boolean
 }
