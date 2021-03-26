@@ -62,12 +62,6 @@ const GOTY: React.FC<IGameFull>  = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			//Add image hero here
-			{/*<Card
-				games={sortedGames}
-				headerText={
-					"Check out the top 50 best video games, according to players:"
-				}
-			/>*/}
 			<Categories />
 			<SectionHeaderText
 				headerText={"Highest rated  OF THE YEAR"}
@@ -75,11 +69,13 @@ const GOTY: React.FC<IGameFull>  = ({ games }) => {
 					"We watched a lot of films in 2020. But it wasn’t just about how many"
 				}
 			/>
-			<HighestRatedCard
+			<HighestRatedCard　
 				games={sortedGames}
 				headerText={"2020 Highest rated Games"}
+
 			/>
 			<SectionHeaderText
+			     
 				headerText={"Best Nintendo Switch Games"}
 				paragraphText={
 					"We watched a lot of films in 2020. But it wasn’t just about how many"

@@ -44,19 +44,19 @@ const Hero: React.FC <IGame> = ({games}) => {
 							<p className='text-4xl mb-4 hero text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
 									Video Game
 								</p></motion.div>
-								<p className='text-4xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-6xl '>
-									Concierge
+								<p className='text-xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-2xl md:text-4xl '>
+								Digital Scratch-off poster
 								</p>
 								
 							</div>
 							<p className='py-6  text-center text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
-								Not sure which game to play next? We can help you out.
+								Track and share how many of the top 100 games have you played.
 							</p>
 							<div className='flex flex-col md:flex-row '>
 							
 								<motion.button whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }} className='uppercase  shake-lr color-change-2x  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
-									<i className='far fa-play-circle text-yellow-200'> </i> Get a game Suggestion
+									<i className='far fa-play-circle text-yellow-200'> </i> Start now
 								</motion.button>
 							</div>
 						</div>
