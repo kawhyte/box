@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import GameList from "../components/GameList";
+import SectionHeaderText from "../components/SectionHeaderText";
 
 import { GetStaticProps } from "next";
 
@@ -18,7 +19,7 @@ const best_games = ({ games }) => {
 		});
 
 	const [todos, setTodos] = useState(sortedGames);
-    
+
 	const toggleTodo: ToggleTodo = (selectedTodo) => {
 		const newTodos = todos.map((todo) => {
 			if (todo === selectedTodo) {
@@ -32,6 +33,18 @@ const best_games = ({ games }) => {
 
 	return (
 		<div>
+			<Head>
+				<title>GameBox | Video Game Bucket List</title>
+				<link rel='icon' href='/favicon.ico' />
+			</Head>
+
+			<SectionHeaderText
+				headerText={" Top 100  Video Game Bucket List"}
+				paragraphText={
+					"Highest rated video game of the decade. How many of these games have you played? "
+				}
+			/>
+
 			<GameList todos={todos} toggleTodo={toggleTodo} />
 		</div>
 	);

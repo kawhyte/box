@@ -2,21 +2,27 @@ import React from "react";
 import { animate, motion } from "framer-motion";
 
 const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
-	console.log(todo);
+	console.log(todo?.cover.url);
 
 	return (
-		<div>
-
-			<div className='' key={todo.id}>
+		<div className=''>
+			<div className='relative' key={todo.id}>
+				<span
+					className={
+						todo.complete
+							? " w-full h-full absolute z-10  opacity-80 bg-gray-900  "
+							: "w-full h-full absolute z-10  opacity-0 bg-gray-900  "
+					}>Played</span>
 				<motion.img
 					initial={{ rotateY: 180, opacity: 0 }}
 					animate={{ rotateY: 0, opacity: 1 }}
 					transition={{ delay: 0.3 }}
-					className='w-full col-span-2  block rounded'
+					className='w-full col-span-2  block rounded '
 					src={todo?.cover.url.replace("t_thumb", "t_cover_big")}
 					alt={todo.name}
 				/>
 			</div>
+
 			<li>
 				<label className={todo.complete ? "line-through" : undefined}>
 					<input

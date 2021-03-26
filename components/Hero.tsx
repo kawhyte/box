@@ -41,11 +41,12 @@ const Hero: React.FC <IGame> = ({games}) => {
 									}
 								}
 							  }}> 	
+
 							<p className='text-4xl mb-4 hero text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
-									Video Game
+									Video Game 
 								</p></motion.div>
 								<p className='text-xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-2xl md:text-4xl '>
-								Digital Scratch-off poster
+								bucket list
 								</p>
 								
 							</div>
