@@ -27,25 +27,33 @@ const Hero: React.FC <IGame> = ({games}) => {
 							
 						
 						<div className='justify-center flex flex-col items-center '>
-							<motion.div initial="hidden" animate="visible" variants={{
+							<motion.div className='text-6xl mb-4 hero text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl  ' initial="hidden" animate="visible"  variants={{
 								hidden: {
 									scale: .8,
 									opacity: 0
 								  },
+								
 								  visible: {
-									scale: 1,
+									  
+									scale: [1,1.2,1],
 									opacity: 1,
-									rotate:[0,10,-10,0],
+									
 									transition: {
 									  delay: .4
 									}
-								}
-							  }}> 	
+								},
+								
+								
+							  } }> 	
+							
 
-							<p className='text-4xl mb-4 hero text-center font-black  text-textwhite tracking-wider uppercase   sm:text-5xl md:text-7xl lg:text-15xl xl:text-10xl  '>
-									Video Game 
+							<p className='hero pb-5'>
+									Video 
+								</p>
+							<p className='hero'>
+									Game 
 								</p></motion.div>
-								<p className='text-xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-2xl md:text-4xl '>
+								<p className='text-4xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-4xl md:text-5xl '>
 								bucket list
 								</p>
 								
@@ -53,12 +61,13 @@ const Hero: React.FC <IGame> = ({games}) => {
 							<p className='py-6  text-center text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
 								Track and share how many of the top 100 games have you played.
 							</p>
-							<div className='flex flex-col md:flex-row '>
+							<div className='flex flex-col md:flex-row p-3 '>
 							
 								<motion.button whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }} className='uppercase  shake-lr color-change-2x  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
 									<i className='far fa-play-circle text-yellow-200'> </i> Start now
 								</motion.button>
+							
 							</div>
 						</div>
 
