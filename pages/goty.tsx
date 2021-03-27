@@ -40,7 +40,7 @@ export const getStaticProps:GetStaticProps = async () => {
 	};
 };
 
-const GOTY: React.FC<IGameFull>  = ({ games }) => {
+const GOTY = ({ games }) => {
 	const sortedGames = games
 		.sort((a, b) => {
 			return b.total_rating - a.total_rating;

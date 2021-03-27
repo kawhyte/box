@@ -12,7 +12,9 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 						todo.complete
 							? " w-full h-full absolute z-10  opacity-80 bg-gray-900  "
 							: "w-full h-full absolute z-10  opacity-0 bg-gray-900  "
-					}>Played</span>
+					}>
+					Played
+				</span>
 				<motion.img
 					initial={{ rotateY: 180, opacity: 0 }}
 					animate={{ rotateY: 0, opacity: 1 }}
@@ -23,17 +25,30 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 				/>
 			</div>
 
-			<li>
 				<label className={todo.complete ? "line-through" : undefined}>
 					<input
 						type='checkbox'
 						checked={todo.complete}
 						onChange={() => toggleTodo(todo)}
 					/>
-
 					{todo.name}
 				</label>
-			</li>
+
+			
+				<div>
+					<button className='hover:scale-110 text-white opacity transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>
+						<i
+							className={
+								todo.complete
+									? "lg:text-green-300 text-green-500 "
+									: "lg:text-gray-300 text-gray-500 " +
+									  "z-10 far fa-check-circle text-lg leading-lg mr-2"
+							}
+						/>
+					</button>
+				</div>
+			
+
 		</div>
 	);
 };

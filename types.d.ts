@@ -141,3 +141,8 @@ type Todo = {
     
     complete: boolean
 }
+
+
+interface LayoutProps {
+    children: JSX.Element[] | JSX.Element;
+}

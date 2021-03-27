@@ -7,7 +7,7 @@ import { GetStaticProps } from "next";
 
 import { getGames } from "../util/getGames";
 
-export const getStaticProps: GetStaticProps = getGames("(167,48)");
+export const getStaticProps: GetStaticProps = getGames("(167,48,169,49,130)");
 
 const best_games = ({ games }) => {
 	const sortedGames = games

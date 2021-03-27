@@ -39,7 +39,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 
 
-const Home : React.FC<IGame> = ({ games }) => {
+const Home  = ({ games }) => {
 	return (
 		<>
 			<Head>
