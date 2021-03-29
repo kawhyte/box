@@ -1,5 +1,6 @@
 import React from "react";
 import { animate, motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero: React.FC<IGame> = ({ games }) => {
 	return (
@@ -53,13 +54,14 @@ const Hero: React.FC<IGame> = ({ games }) => {
 								Track and share how many of the top 100 games have you played.
 							</p>
 							<div className='flex flex-col md:flex-row p-3 '>
+								<Link href="/top"> 
 								<motion.button
 									whileHover={{ scale: 1.1 }}
 									whileTap={{ scale: 0.9 }}
 									className='uppercase  shake-lr color-change-2x  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
 									<i className='far fa-play-circle text-yellow-200'> </i> Start
 									now
-								</motion.button>
+								</motion.button></Link>
 							</div>
 						</div>
 

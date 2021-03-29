@@ -51,18 +51,6 @@ body {
 }
 
 
-.bg-fade {
-
-  -webkit-mask:
-    linear-gradient(to top, rgba(0, 0, 0, 0.2), white, rgba(0, 0, 0, 0.2)),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), white, rgba(0, 0, 0, 0.2));
-  mask:
-    linear-gradient(to top, rgba(0, 0, 0, 0.2), white, rgba(0, 0, 0, 0.2)),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), white, rgba(0, 0, 0, 0.2));
-  -webkit-mask-composite: source-in;
-  mask-composite: intersect;
-
-}
 
 .gradient-text {
   /* Fallback: Set a background color. */
@@ -132,8 +120,8 @@ body {
 
 
 .color-change-4x {
-	-webkit-animation: color-change-4x 6s linear infinite alternate both;
-	        animation: color-change-4x 6s linear infinite alternate both;
+	-webkit-animation: color-change-4x 12s linear 2s infinite alternate both;
+	        animation: color-change-4x 12s linear 2s infinite alternate both;
 }
 
 
