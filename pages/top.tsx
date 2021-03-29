@@ -32,7 +32,7 @@ const best_games = ({ games }) => {
 	};
 
 	return (
-		<div>
+		<div className="color-change-4x">
 			<Head>
 				<title>GameBox | Video Game Bucket List</title>
 				<link rel='icon' href='/favicon.ico' />

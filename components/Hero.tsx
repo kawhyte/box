@@ -1,9 +1,7 @@
 import React from "react";
-import { animate, motion } from 'framer-motion';
+import { animate, motion } from "framer-motion";
 
-
-const Hero: React.FC <IGame> = ({games}) => {
-
+const Hero: React.FC<IGame> = ({ games }) => {
 	return (
 		<>
 			<main className=''>
@@ -24,70 +22,60 @@ const Hero: React.FC <IGame> = ({games}) => {
 					</div>*/}
 					<div className='flex h-screen justify-center overflow-hidden '>
 						<div className='absolute h-screen mx-auto justify-center flex flex-col items-center z-10 '>
-							
-						
-						<div className='justify-center flex flex-col items-center '>
-							<motion.div className='text-6xl mb-4 hero text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl  ' initial="hidden" animate="visible"  variants={{
-								hidden: {
-									scale: .8,
-									opacity: 0
-								  },
-								
-								  visible: {
-									  
-									scale: [1,1.2,1],
-									opacity: 1,
-									
-									transition: {
-									  delay: .4
-									}
-								},
-								
-								
-							  } }> 	
-							
+							<div className='justify-center flex flex-col items-center '>
+								<motion.div
+									className='text-6xl mb-4 hero text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl  '
+									initial='hidden'
+									animate='visible'
+									variants={{
+										hidden: {
+											scale: 0.8,
+											opacity: 0,
+										},
 
-							<p className='hero pb-5'>
-									Video 
-								</p>
-							<p className='hero'>
-									Game 
-								</p></motion.div>
+										visible: {
+											scale: [1, 1.2, 1],
+											opacity: 1,
+
+											transition: {
+												delay: 0.4,
+											},
+										},
+									}}>
+									<p className='gradient-text pb-1'>Video Game</p>
+									
+								</motion.div>
 								<p className='text-4xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-4xl md:text-5xl '>
-								bucket list
+									bucket list
 								</p>
-								
 							</div>
 							<p className='py-6  text-center text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
 								Track and share how many of the top 100 games have you played.
 							</p>
 							<div className='flex flex-col md:flex-row p-3 '>
-							
-								<motion.button whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.9 }} className='uppercase  shake-lr color-change-2x  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
-									<i className='far fa-play-circle text-yellow-200'> </i> Start now
+								<motion.button
+									whileHover={{ scale: 1.1 }}
+									whileTap={{ scale: 0.9 }}
+									className='uppercase  shake-lr color-change-2x  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 text-textwhite max-w-max shadow-sm hover:shadow-lg'>
+									<i className='far fa-play-circle text-yellow-200'> </i> Start
+									now
 								</motion.button>
-							
 							</div>
 						</div>
 
-						<motion.div  className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden'
-						
-						>
+						<motion.div className='relative w-full grid grid-cols-2 sm:grid-col-3 md:grid-cols-3 lg:grid-cols-5 lg:gap-2 overflow-hidden'>
 							{games.slice(0, 24).map((game) => (
-								<div className=''  key={game.id}>
-									<motion.img initial={{ rotateY:180, opacity:0}}
-									animate={{rotateY :0, opacity:1}}
-									transition={{delay:.3}}
+								<div className='' key={game.id}>
+									<motion.img
+										initial={{ rotateY: 180, opacity: 0 }}
+										animate={{ rotateY: 0, opacity: 1 }}
+										transition={{ delay: 0.3 }}
 										className='w-full col-span-2  block rounded'
-										src={
-											
-											game?.cover.url.replace("t_thumb", "t_cover_big")
-										}
+										src={game?.cover.url.replace("t_thumb", "t_cover_big")}
 										alt={game.name}
 									/>
 								</div>
-									))}
+							))}
 
 							<span
 								id='blackOverlay'
@@ -134,6 +122,6 @@ const Hero: React.FC <IGame> = ({games}) => {
 			</main>
 		</>
 	);
-}
+};
 
-export default Hero
+export default Hero;
