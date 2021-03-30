@@ -37,7 +37,7 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 					<h2 className='text-gray-100 font-semibold '> {todo.name}</h2>
 				</div>
 			</Link>
-			<div className='grid grid-2 place-items-center gap-2 pt-2'>
+			<div className='grid grid-2 place-items-center gap-2 pt-2 '>
 				<div className='flex flex-row justify-between  container '>
 					{/** Item/button 1 **/}
 
