@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+
 
 import { animate, motion } from 'framer-motion';
 
@@ -16,9 +16,7 @@ export default function Navbar(props) {
 				}>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
-						<Link href='/' className={(props.transparent ? "text-textwhite" : "text-gray-800") +
-								" text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
-							}>
+						
 							<a>
 								<img
 									className=' lg:block h-8 w-auto'
@@ -26,7 +24,7 @@ export default function Navbar(props) {
 									alt='Workflow'
 								/>
 							</a>
-						</Link>
+					
 
 						<div className='flex-shrink-0 flex items-start'>
 							<img
@@ -54,7 +52,7 @@ export default function Navbar(props) {
 						}
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row list-none mr-auto '>
-							<Link href='goty'>
+							
 								<motion.li whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }} className='flex items-center'>
 									<a
@@ -75,8 +73,8 @@ export default function Navbar(props) {
 										2020 game in review
 									</a>
 								</motion.li>
-							</Link>
-							<Link href='playstation'>
+						
+							
 								<motion.li whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }} className='flex items-center'>
 									<a
@@ -97,8 +95,8 @@ export default function Navbar(props) {
 										PlayStation
 									</a>
 								</motion.li>
-							</Link>
-							<Link href='nintendo'>
+							
+							
 								<motion.li whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }} className='flex items-center'>
 									<a
@@ -120,8 +118,7 @@ export default function Navbar(props) {
 										Nintendo
 									</a>
 								</motion.li>
-							</Link>
-							<Link href='xbox'>
+						
 								<motion.li whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }} className='flex items-center'>
 									<a
@@ -143,7 +140,7 @@ export default function Navbar(props) {
 										Xbox
 									</a>
 								</motion.li>
-							</Link>
+						
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
 				
