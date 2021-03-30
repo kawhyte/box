@@ -39,7 +39,7 @@ const best_games = ({ games }) => {
 			</Head>
 
 			<SectionHeaderText
-				headerText={" Top 100  Video Game Bucket List"}
+				headerText={" Top 100 Video Game Bucket List"}
 				paragraphText={
 					"Highest rated video game of the decade. How many of these games have you played? "
 				}
