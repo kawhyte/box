@@ -16,10 +16,7 @@ export default function Navbar(props) {
 				}>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
-						<Link
-							href='/'
-							className={
-								(props.transparent ? "text-textwhite" : "text-gray-800") +
+						<Link href='/' className={(props.transparent ? "text-textwhite" : "text-gray-800") +
 								" text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
 							}>
 							<a>
@@ -63,14 +60,14 @@ export default function Navbar(props) {
 									<a
 										className={
 											(props.transparent
-												? "lg:text-yellow-300 lg:hover:text-gray-300  text-gray-800"
+												? "lg:text-yellow-400 lg:hover:text-gray-300  text-gray-800"
 												: "text-gray-800  hover:text-gray-600") +
 											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
 										}>
 										<i
 											className={
 												(props.transparent
-													? "lg:text-yellow-300 text-yellow-500"
+													? "lg:text-yellow-400 text-yellow-700"
 													: "text-gray-500") +
 												" fas fa-crown text-lg leading-lg mr-2"
 											}

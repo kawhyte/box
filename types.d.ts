@@ -90,7 +90,11 @@ interface IGameList{
 
 interface ITags {
 list:[
-	{name:string}
+	{name:string
+	
+		abbreviation:string
+	
+	}
 ]
 	headerText: string
 	tagBGcolor: string

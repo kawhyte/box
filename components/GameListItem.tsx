@@ -33,16 +33,16 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 				</div>
 			</Link>
 			<Link href={`/games/${todo.id}`} key={todo.id}>
-			<div className='grid place-items-center pt-4 cursor-pointer'>
-				<h2 className='text-gray-100 font-semibold '> {todo.name}</h2>
-			</div>
-</Link>
-			<div className='grid grid-2 place-items-center pt-4'>
-				<div className='flex flex-row justify-between  container py-4'>
+				<div className='grid place-items-center pt-4 cursor-pointer'>
+					<h2 className='text-gray-100 font-semibold '> {todo.name}</h2>
+				</div>
+			</Link>
+			<div className='grid grid-2 place-items-center gap-2 pt-2'>
+				<div className='flex flex-row justify-between  container '>
 					{/** Item/button 1 **/}
 
-					<button onClick={() => toggleTodo(todo)} className='  flex-auto'>
-						<i
+					<button onClick={() => toggleTodo(todo)} className='outline-none  flex-auto'>
+						<i onClick={() => toggleTodo(todo)}
 							className={
 								todo.complete
 									? green + " far fa-check-circle"

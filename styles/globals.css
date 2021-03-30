@@ -18,7 +18,7 @@
 
 body {
   font-size: 1em;
-  background-color: #212830;
+  background-color: #060D17;
   
   color: #8C9CAC;
   background-position: 0 0;
@@ -33,6 +33,12 @@ body {
 .bucket-list-bg{
 
   background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+}
+
+.main-button{
+
+  background: linear-gradient(90deg, #FDBB2D 0%, #FDBB2D 100%);
+
 }
 
 
@@ -139,14 +145,14 @@ body {
  */
  @-webkit-keyframes color-change-4x {
   0% {
-    background: #2a5470;
+    background: #060D17;
   }
   33.3333% {
-    background: #4c4177
+    background: #322b4f
     ;
   }
   66.666% {
-    background: #485461    ;
+    background: #343d46   ;
   }
   100% {
     background: #28313b;
@@ -154,13 +160,13 @@ body {
 }
 @keyframes color-change-4x {
   0% {
-    background: #2a5470;
+    background: #060D17;
   }
   33.3333% {
-    background: #4c4177    ;
+    background: #322b4f    ;
   }
   66.666% {
-    background: #485461
+    background: #343d46
     ;
   }
   100% {
