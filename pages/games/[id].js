@@ -270,6 +270,7 @@ const Details = ({ data }) => {
 														cx='60'
 														cy='60'
 													/>
+													
 													<circle
 														className='text-green-600'
 														strokeWidth='10'
