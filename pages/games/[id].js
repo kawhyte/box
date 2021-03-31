@@ -166,6 +166,9 @@ const Details = ({ data }) => {
 
 	let ratings = data[0].rating && data[0].rating.toFixed(0);
 
+	let circumference =  (ratings * 2 * 3.14)
+	
+
 	if (ratings < 80 && ratings >= 60) {
 		color = "bg-yellow-500";
 		try_it = "";
@@ -251,16 +254,16 @@ const Details = ({ data }) => {
 
 									<div className='pt-6 md:mt-6 flex flex-col justify-center  '>
 										<div
-											class='flex items-center flex-wrap max-w-md px-12 bg-white shadow-xl rounded-2xl h-20'
-											x-data='{ circumference: 50 * 2 * Math.PI, percent: 80 }'>
-											<div class='flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full '>
+											className='flex items-center flex-wrap max-w-md px-12 bg-white shadow-xl rounded-2xl h-20'
+											>
+											<div className='flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full '>
 												<svg
-													class='w-32 h-32 transform translate-x-1 translate-y-1'
-													x-cloak
-													aria-hidden='true'>
+													className='w-32 h-32 transform translate-x-1 translate-y-1'
+													
+												>
 													<circle
-														class='text-gray-300'
-														stroke-width='10'
+														className='text-gray-300'
+														strokeWidth='10'
 														stroke='currentColor'
 														fill='transparent'
 														r='50'
@@ -268,19 +271,20 @@ const Details = ({ data }) => {
 														cy='60'
 													/>
 													<circle
-														class='text-green-600'
-														stroke-width='10'
-														strokeDasharray='circumference'
-														strokeDashoffset='30'
-														stroke-linecap='round'
+														className='text-green-600'
+														strokeWidth='10'
+														strokeDasharray={circumference}
+														strokeDashoffset='circumference'
+														strokeLinecap='round'
 														stroke='currentColor'
 														fill='transparent'
 														r='50'
 														cx='60'
 														cy='60'
+														
 													/>
 												</svg>
-												<span class='absolute text-2xl text-gray-400'>
+												<span className='absolute text-2xl text-gray-400'>
 													{data[0].rating && data[0].rating.toFixed(0)
 														? data[0].rating.toFixed(0) + "%"
 														: "Not Rated"}
