@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "jW0F");
+/******/ 	return __webpack_require__(__webpack_require__.s = "hOtK");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -8087,6 +8087,51 @@ module.exports = JSON.parse("[[\"a140\",\"\",62],[\"a180\",\"\",32],[\"a24
 
 /***/ }),
 
+/***/ "hOtK":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
+var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("CpcB");
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__);
+
+      
+    const { processEnv } = __webpack_require__("fXeI")
+    processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nFAUNA_SECRET=fnAEFknsF2ACDV6veaGRR_S08SpeYYrSr9EhGSEL"}])
+  
+      
+      const runtimeConfig = {}
+      
+      
+      
+      
+
+      
+
+      const apiHandler = Object(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__["getApiHandler"])({
+        pageModule: __webpack_require__("Nxiy"),
+        rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
+        i18n: undefined,
+        page: "/api/hello",
+        basePath: "",
+        pageIsDynamic: false,
+        encodedPreviewProps: {previewModeId:"88dbf0ff86850e8778e88a75226d4a38",previewModeSigningKey:"3962c9dc43c3b6b7b42fedb958d3fcf0b6d53e49bd2449814d3d7d39f815a4ba",previewModeEncryptionKey:"a2e4c2d18db576d0d37493b0f446a8a9d819d4b5a5348ae29afcf32adbad6dd8"},
+        experimental: {
+          onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
+          initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
+        }
+      })
+      /* harmony default export */ __webpack_exports__["default"] = (apiHandler);
+    
+
+/***/ }),
+
 /***/ "hS4m":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8193,51 +8238,6 @@ module.exports = function (method) {
 /***/ (function(module, exports) {
 
 module.exports = require("util");
-
-/***/ }),
-
-/***/ "jW0F":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
-var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("CpcB");
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__);
-
-      
-    const { processEnv } = __webpack_require__("fXeI")
-    processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nDB_PASS=mypassword"}])
-  
-      
-      const runtimeConfig = {}
-      
-      
-      
-      
-
-      
-
-      const apiHandler = Object(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__["getApiHandler"])({
-        pageModule: __webpack_require__("Nxiy"),
-        rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
-        i18n: undefined,
-        page: "/api/hello",
-        basePath: "",
-        pageIsDynamic: false,
-        encodedPreviewProps: {previewModeId:"4806a583ea9888361c013b49e0c60d84",previewModeSigningKey:"3922fb8e65c6188bcf06e5fa0891e3ef4b8eeb5952580c15b2914c235b825530",previewModeEncryptionKey:"8a31fc96a1e37b3fd20defb7b16cafa464ab8c150d3dc8fd44d1bbf5df793961"},
-        experimental: {
-          onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
-          initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
-        }
-      })
-      /* harmony default export */ __webpack_exports__["default"] = (apiHandler);
-    
 
 /***/ }),
 

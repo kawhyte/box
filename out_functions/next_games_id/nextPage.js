@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "gkYz");
+/******/ 	return __webpack_require__(__webpack_require__.s = "GRQV");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -15153,6 +15153,109 @@ module.exports = function (attribute) {
 
 /***/ }),
 
+/***/ "GRQV":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
+var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
+/* harmony import */ var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("LZ9C");
+var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("LZ9C", 1);
+/* harmony import */ var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("67Bq");
+var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t("67Bq", 1);
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("7ZOo");
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__);
+
+    
+    
+    
+    
+    
+    
+
+    
+    const { processEnv } = __webpack_require__("fXeI")
+    processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nFAUNA_SECRET=fnAEFknsF2ACDV6veaGRR_S08SpeYYrSr9EhGSEL"}])
+  
+    
+    const runtimeConfig = {}
+    
+
+    const appMod = __webpack_require__("cha2")
+    let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
+
+    const compMod = __webpack_require__("n5Vf")
+
+    const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
+    /* harmony default export */ __webpack_exports__["default"] = (Component);
+    const getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
+    const getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
+    const getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
+
+    // kept for detecting legacy exports
+    const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
+    const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
+    const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
+    const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
+
+    let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
+    const _app = App
+
+    const { renderReqToHTML, render } = Object(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__["getPageHandler"])({
+      pageModule: compMod,
+      pageComponent: Component,
+      pageConfig: config,
+      appModule: App,
+      documentModule: __webpack_require__("VDXt"),
+      errorModule: __webpack_require__("/a9y"),
+      notFoundModule: undefined,
+      pageGetStaticProps: getStaticProps,
+      pageGetStaticPaths: getStaticPaths,
+      pageGetServerSideProps: getServerSideProps,
+
+      assetPrefix: "",
+      canonicalBase: "",
+      generateEtags: true,
+      poweredByHeader: true,
+
+      runtimeConfig,
+      buildManifest: private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__,
+      reactLoadableManifest: private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__,
+
+      rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
+      i18n: undefined,
+      page: "/games/[id]",
+      buildId: "ROY2zEIOBEVzkMsXVnXMK",
+      escapedBuildId: "ROY2zEIOBEVzkMsXVnXMK",
+      basePath: "",
+      pageIsDynamic: true,
+      encodedPreviewProps: {previewModeId:"88dbf0ff86850e8778e88a75226d4a38",previewModeSigningKey:"3962c9dc43c3b6b7b42fedb958d3fcf0b6d53e49bd2449814d3d7d39f815a4ba",previewModeEncryptionKey:"a2e4c2d18db576d0d37493b0f446a8a9d819d4b5a5348ae29afcf32adbad6dd8"},
+      experimental: {
+        onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
+        initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
+      }
+    })
+    
+  
+
+/***/ }),
+
 /***/ "GX0O":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -16880,7 +16983,7 @@ module.exports = function createError(message, config, code, request, response) 
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-ee8b6a435fbaa7581564.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/P7ydOdoXqS25TbrLKtGB3/_buildManifest.js\",\"static/P7ydOdoXqS25TbrLKtGB3/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.f595f2af9cf1d9da4a3b.js\",\"static/chunks/ca191bde88248a2aa5a11c023bdf43afb97ce23a.32af9dba4021e68d2df3.js\",\"static/chunks/pages/index-93fd93096fe166ff2e84.js\"],\"/_app\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.f595f2af9cf1d9da4a3b.js\",\"static/css/d2ff87107ef4c3104847.css\",\"static/chunks/pages/_app-9d7176e06aff39c6b08f.js\"],\"/_error\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/pages/_error-824b523c2e6dd72a9052.js\"],\"/games/[id]\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/039e83126c3a3f3eb9758a859f2984aad7950ec9.f293e346307e688ca250.js\",\"static/chunks/pages/games/[id]-978ec27e83c23485f9a0.js\"],\"/goty\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.f595f2af9cf1d9da4a3b.js\",\"static/chunks/ca191bde88248a2aa5a11c023bdf43afb97ce23a.32af9dba4021e68d2df3.js\",\"static/chunks/039e83126c3a3f3eb9758a859f2984aad7950ec9.f293e346307e688ca250.js\",\"static/chunks/pages/goty-1d43982d3cc178d43a7e.js\"],\"/nintendo\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.f595f2af9cf1d9da4a3b.js\",\"static/chunks/ca191bde88248a2aa5a11c023bdf43afb97ce23a.32af9dba4021e68d2df3.js\",\"static/chunks/pages/nintendo-d339b2a1f54d1616aba7.js\"],\"/playstation\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.f595f2af9cf1d9da4a3b.js\",\"static/chunks/ca191bde88248a2aa5a11c023bdf43afb97ce23a.32af9dba4021e68d2df3.js\",\"static/chunks/pages/playstation-c813c0dd65c1dec7df96.js\"],\"/top\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.f595f2af9cf1d9da4a3b.js\",\"static/chunks/ca191bde88248a2aa5a11c023bdf43afb97ce23a.32af9dba4021e68d2df3.js\",\"static/chunks/pages/top-3f372c14c4233edc5719.js\"],\"/xbox\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.f595f2af9cf1d9da4a3b.js\",\"static/chunks/ca191bde88248a2aa5a11c023bdf43afb97ce23a.32af9dba4021e68d2df3.js\",\"static/chunks/pages/xbox-a5e20b592711c05e76bf.js\"]},\"ampFirstPages\":[]}");
+module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-246c4c8f803edec18188.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/ROY2zEIOBEVzkMsXVnXMK/_buildManifest.js\",\"static/ROY2zEIOBEVzkMsXVnXMK/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/index-aa5f70407fd247df35d6.js\"],\"/_app\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/css/aff18cc7338389f6d7e4.css\",\"static/chunks/pages/_app-55493aea455c0a1e9ea6.js\"],\"/_error\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/pages/_error-d2fae256d63f3a883f1c.js\"],\"/games/[id]\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/039e83126c3a3f3eb9758a859f2984aad7950ec9.5fd04ce2478b74d43c97.js\",\"static/chunks/pages/games/[id]-5d98edcbdee9acc756cd.js\"],\"/goty\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/039e83126c3a3f3eb9758a859f2984aad7950ec9.5fd04ce2478b74d43c97.js\",\"static/chunks/pages/goty-68b5f191557459cf413c.js\"],\"/nintendo\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/nintendo-2e1c855c8f7e999c8bb5.js\"],\"/playstation\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/playstation-1abc4bd62c2a386d9619.js\"],\"/top\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/top-5e777f883d2d19c7ffe9.js\"],\"/xbox\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/xbox-4e4de67dd756dd7cf651.js\"]},\"ampFirstPages\":[]}");
 
 /***/ }),
 
@@ -22053,6 +22156,14 @@ function stattag (stat) {
 
 /***/ }),
 
+/***/ "YFqc":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("cTJO")
+
+
+/***/ }),
+
 /***/ "YGjY":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24629,6 +24740,178 @@ module.exports = {
 
 /***/ }),
 
+/***/ "cTJO":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireWildcard = __webpack_require__("284h");
+
+exports.__esModule = true;
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(__webpack_require__("q1tI"));
+
+var _router = __webpack_require__("elyg");
+
+var _router2 = __webpack_require__("nOHt");
+
+var _useIntersection = __webpack_require__("vNVm");
+
+const prefetched = {};
+
+function prefetch(router, href, as, options) {
+  if (true) return;
+  if (!(0, _router.isLocalURL)(href)) return; // Prefetch the JSON page if asked (only in the client)
+  // We need to handle a prefetch error here since we may be
+  // loading with priority which can reject but we don't
+  // want to force navigation since this is only a prefetch
+
+  router.prefetch(href, as, options).catch(err => {
+    if (false) {}
+  });
+  const curLocale = options && typeof options.locale !== 'undefined' ? options.locale : router && router.locale; // Join on an invalid URI character
+
+  prefetched[href + '%' + as + (curLocale ? '%' + curLocale : '')] = true;
+}
+
+function isModifiedEvent(event) {
+  const {
+    target
+  } = event.currentTarget;
+  return target && target !== '_self' || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || // triggers resource download
+  event.nativeEvent && event.nativeEvent.which === 2;
+}
+
+function linkClicked(e, router, href, as, replace, shallow, scroll, locale) {
+  const {
+    nodeName
+  } = e.currentTarget;
+
+  if (nodeName === 'A' && (isModifiedEvent(e) || !(0, _router.isLocalURL)(href))) {
+    // ignore click for browser’s default behavior
+    return;
+  }
+
+  e.preventDefault(); //  avoid scroll for urls with anchor refs
+
+  if (scroll == null) {
+    scroll = as.indexOf('#') < 0;
+  } // replace state instead of push if prop is present
+
+
+  router[replace ? 'replace' : 'push'](href, as, {
+    shallow,
+    locale
+  }).then(success => {
+    if (!success) return;
+
+    if (scroll) {
+      window.scrollTo(0, 0);
+      document.body.focus();
+    }
+  });
+}
+
+function Link(props) {
+  if (false) {}
+
+  const p = props.prefetch !== false;
+  const router = (0, _router2.useRouter)();
+  const pathname = router && router.pathname || '/';
+
+  const {
+    href,
+    as
+  } = _react.default.useMemo(() => {
+    const [resolvedHref, resolvedAs] = (0, _router.resolveHref)(pathname, props.href, true);
+    return {
+      href: resolvedHref,
+      as: props.as ? (0, _router.resolveHref)(pathname, props.as) : resolvedAs || resolvedHref
+    };
+  }, [pathname, props.href, props.as]);
+
+  let {
+    children,
+    replace,
+    shallow,
+    scroll,
+    locale
+  } = props; // Deprecated. Warning shown by propType check. If the children provided is a string (<Link>example</Link>) we wrap it in an <a> tag
+
+  if (typeof children === 'string') {
+    children = /*#__PURE__*/_react.default.createElement("a", null, children);
+  } // This will return the first child, if multiple are provided it will throw an error
+
+
+  const child = _react.Children.only(children);
+
+  const childRef = child && typeof child === 'object' && child.ref;
+  const [setIntersectionRef, isVisible] = (0, _useIntersection.useIntersection)({
+    rootMargin: '200px'
+  });
+
+  const setRef = _react.default.useCallback(el => {
+    setIntersectionRef(el);
+
+    if (childRef) {
+      if (typeof childRef === 'function') childRef(el);else if (typeof childRef === 'object') {
+        childRef.current = el;
+      }
+    }
+  }, [childRef, setIntersectionRef]);
+
+  (0, _react.useEffect)(() => {
+    const shouldPrefetch = isVisible && p && (0, _router.isLocalURL)(href);
+    const curLocale = typeof locale !== 'undefined' ? locale : router && router.locale;
+    const isPrefetched = prefetched[href + '%' + as + (curLocale ? '%' + curLocale : '')];
+
+    if (shouldPrefetch && !isPrefetched) {
+      prefetch(router, href, as, {
+        locale: curLocale
+      });
+    }
+  }, [as, href, isVisible, locale, p, router]);
+  const childProps = {
+    ref: setRef,
+    onClick: e => {
+      if (child.props && typeof child.props.onClick === 'function') {
+        child.props.onClick(e);
+      }
+
+      if (!e.defaultPrevented) {
+        linkClicked(e, router, href, as, replace, shallow, scroll, locale);
+      }
+    }
+  };
+
+  childProps.onMouseEnter = e => {
+    if (!(0, _router.isLocalURL)(href)) return;
+
+    if (child.props && typeof child.props.onMouseEnter === 'function') {
+      child.props.onMouseEnter(e);
+    }
+
+    prefetch(router, href, as, {
+      priority: true
+    });
+  }; // If child is an <a> tag and doesn't have a href attribute, or if the 'passHref' property is
+  // defined, we specify the current 'href', so that repetition is not needed by the user
+
+
+  if (props.passHref || child.type === 'a' && !('href' in child.props)) {
+    childProps.href = (0, _router.addBasePath)((0, _router.addLocale)(as, typeof locale !== 'undefined' ? locale : router && router.locale, router && router.defaultLocale));
+  }
+
+  return /*#__PURE__*/_react.default.cloneElement(child, childProps);
+}
+
+var _default = Link;
+exports.default = _default;
+
+/***/ }),
+
 /***/ "cd2u":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24940,7 +25223,12 @@ var framer_motion_cjs = __webpack_require__("1vpa");
 var react = __webpack_require__("q1tI");
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__("YFqc");
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+
 // CONCATENATED MODULE: ./components/Navbar.tsx
+
 
 
 
@@ -24954,19 +25242,22 @@ function Navbar(props) {
       children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
         className: "container px-4 mx-auto flex flex-wrap items-center justify-between",
         children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-          className: "w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start",
-          children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("a", {
-            children: /*#__PURE__*/Object(jsx_runtime["jsx"])("img", {
-              className: " lg:block h-8 w-auto",
-              src: "https://res.cloudinary.com/babyhulk/image/upload/v1613758687/GameBox/gamebox-logo-indigo-500-mark-white-text-01.svg",
-              alt: "Workflow"
-            })
-          }), /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
-            className: "flex-shrink-0 flex items-start",
-            children: /*#__PURE__*/Object(jsx_runtime["jsx"])("img", {
-              className: "hidden  lg:hidden h-8 w-auto",
-              src: "https://res.cloudinary.com/babyhulk/image/upload/v1613758689/GameBox/gamebox-mark-indigo-500-01.svg",
-              alt: "Workflow"
+          className: "cursor-pointer w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start",
+          children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+            href: "/",
+            children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+              children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("img", {
+                className: " lg:block h-8 w-auto",
+                src: "https://res.cloudinary.com/babyhulk/image/upload/v1613758687/GameBox/gamebox-logo-indigo-500-mark-white-text-01.svg",
+                alt: "Workflow"
+              }), /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
+                className: "flex-shrink-0 flex items-start",
+                children: /*#__PURE__*/Object(jsx_runtime["jsx"])("img", {
+                  className: "hidden  lg:hidden h-8 w-auto",
+                  src: "https://res.cloudinary.com/babyhulk/image/upload/v1613758689/GameBox/gamebox-mark-indigo-500-01.svg",
+                  alt: "Workflow"
+                })
+              })]
             })
           }), /*#__PURE__*/Object(jsx_runtime["jsx"])("button", {
             className: "cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none",
@@ -25091,8 +25382,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
- // import '../styles.css'
 
+
+// import '../styles.css'
 function MyApp({
   Component,
   pageProps,
@@ -25104,7 +25396,6 @@ function MyApp({
       children: /*#__PURE__*/Object(jsx_runtime["jsx"])(framer_motion_cjs["motion"].div, {
         initial: "pageInitial",
         animate: "pageAnimate",
-        exit: "pageExit",
         variants: {
           pageInitial: {
             opacity: 0
@@ -29772,109 +30063,6 @@ function getRouteMatcher(routeRegex) {
     return params;
   };
 }
-
-/***/ }),
-
-/***/ "gkYz":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
-var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
-/* harmony import */ var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("LZ9C");
-var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("LZ9C", 1);
-/* harmony import */ var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("67Bq");
-var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t("67Bq", 1);
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("7ZOo");
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__);
-
-    
-    
-    
-    
-    
-    
-
-    
-    const { processEnv } = __webpack_require__("fXeI")
-    processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nDB_PASS=mypassword"}])
-  
-    
-    const runtimeConfig = {}
-    
-
-    const appMod = __webpack_require__("cha2")
-    let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
-
-    const compMod = __webpack_require__("n5Vf")
-
-    const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
-    /* harmony default export */ __webpack_exports__["default"] = (Component);
-    const getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
-    const getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
-    const getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
-
-    // kept for detecting legacy exports
-    const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
-    const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
-    const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
-    const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
-
-    let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
-    const _app = App
-
-    const { renderReqToHTML, render } = Object(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__["getPageHandler"])({
-      pageModule: compMod,
-      pageComponent: Component,
-      pageConfig: config,
-      appModule: App,
-      documentModule: __webpack_require__("VDXt"),
-      errorModule: __webpack_require__("/a9y"),
-      notFoundModule: undefined,
-      pageGetStaticProps: getStaticProps,
-      pageGetStaticPaths: getStaticPaths,
-      pageGetServerSideProps: getServerSideProps,
-
-      assetPrefix: "",
-      canonicalBase: "",
-      generateEtags: true,
-      poweredByHeader: true,
-
-      runtimeConfig,
-      buildManifest: private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__,
-      reactLoadableManifest: private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__,
-
-      rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
-      i18n: undefined,
-      page: "/games/[id]",
-      buildId: "P7ydOdoXqS25TbrLKtGB3",
-      escapedBuildId: "P7ydOdoXqS25TbrLKtGB3",
-      basePath: "",
-      pageIsDynamic: true,
-      encodedPreviewProps: {previewModeId:"4806a583ea9888361c013b49e0c60d84",previewModeSigningKey:"3922fb8e65c6188bcf06e5fa0891e3ef4b8eeb5952580c15b2914c235b825530",previewModeEncryptionKey:"8a31fc96a1e37b3fd20defb7b16cafa464ab8c150d3dc8fd44d1bbf5df793961"},
-      experimental: {
-        onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
-        initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
-      }
-    })
-    
-  
 
 /***/ }),
 
@@ -34886,6 +35074,7 @@ const Details = ({
   let try_it = "hidden";
   let convertedDate = toDate_default()(data[0].first_release_date);
   let ratings = data[0].rating && data[0].rating.toFixed(0);
+  let circumference = ratings * 2 * 3.14;
 
   if (ratings < 80 && ratings >= 60) {
     color = "bg-yellow-500";
@@ -34936,7 +35125,7 @@ const Details = ({
           children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
             className: "container  mx-auto px-4",
             children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-              className: " relative flex flex-col md:flex-row justify-center items-center  max-w-3xl min-w-min bg-white overflow-hidden",
+              className: " relative flex flex-col md:flex-row justify-center items-center  max-w-3xl min-w-min bg-white ",
               children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("img", {
                 className: "w-96 bg-cover mr-5 rounded-xl",
                 src: data[0].cover && ((_data$ = data[0]) === null || _data$ === void 0 ? void 0 : (_data$$cover = _data$.cover) === null || _data$$cover === void 0 ? void 0 : (_data$$cover$url = _data$$cover.url) === null || _data$$cover$url === void 0 ? void 0 : _data$$cover$url.replace("t_thumb", "t_cover_big"))
@@ -34954,78 +35143,103 @@ const Details = ({
                   tagBGcolor: "bg-blue-700",
                   "bg-blue-100": true,
                   headerText: "Genre"
-                }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-                  className: "md:mt-6 flex flex-col justify-center  ",
-                  children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("p", {
-                    className: "mt-4 mr-2 mb-3 hidden md:block   text-base text-center md:text-left md:text-base",
-                    children: ["Rating  ", /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
-                      className: "text-xl  text-left font-medium bg-green-500 text-textwhite p-1 rounded-lg ",
-                      children: data[0].rating && data[0].rating.toFixed(0) ? data[0].rating.toFixed(0) : "Not Rated"
+                }), /*#__PURE__*/Object(jsx_runtime["jsx"])("div", {
+                  className: "pt-6 md:mt-6 flex flex-col justify-center  ",
+                  children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+                    className: "flex items-center flex-wrap max-w-md px-12 bg-white shadow-xl rounded-2xl h-20",
+                    children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+                      className: "flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full ",
+                      children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("svg", {
+                        className: "w-32 h-32 transform translate-x-1 translate-y-1",
+                        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("circle", {
+                          className: "text-gray-300",
+                          strokeWidth: "10",
+                          stroke: "currentColor",
+                          fill: "transparent",
+                          r: "50",
+                          cx: "60",
+                          cy: "60"
+                        }), /*#__PURE__*/Object(jsx_runtime["jsx"])("circle", {
+                          className: "text-green-600",
+                          strokeWidth: "10",
+                          strokeDasharray: circumference,
+                          strokeDashoffset: "circumference",
+                          strokeLinecap: "round",
+                          stroke: "currentColor",
+                          fill: "transparent",
+                          r: "50",
+                          cx: "60",
+                          cy: "60"
+                        })]
+                      }), /*#__PURE__*/Object(jsx_runtime["jsx"])("span", {
+                        className: "absolute text-2xl text-gray-400",
+                        children: data[0].rating && data[0].rating.toFixed(0) ? data[0].rating.toFixed(0) + "%" : "Not Rated"
+                      })]
+                    }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
+                      className: "flex items-center  leading-tight mt-2  ml-auto ",
+                      children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("span", {
+                        className: "py-2 px-2 items-center mr-2 flex flex-col  " + must_play,
+                        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("svg", {
+                          className: "fill-current text-green-600  inline-block h-8 w-8",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          width: "24",
+                          height: "24",
+                          viewBox: "0 0 24 24",
+                          children: /*#__PURE__*/Object(jsx_runtime["jsx"])("path", {
+                            d: "M12 12c-3.314 0-6 2.687-6 6s2.686 6 6 6 6-2.687 6-6-2.686-6-6-6zm0 11c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5zm0-9c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm1.39 5.939l-1.39-.743-1.39.744.276-1.552-1.136-1.094 1.562-.215.688-1.419.688 1.419 1.562.215-1.137 1.093.277 1.552zm-9.732-17.925l-.658.986 5.234 7.946c.355-.19.731-.345 1.116-.48l-5.692-8.452zm11.537.986l3.051-3h-12.539l3.293 3h6.195zm4.699-1.661l-.667-1-6.605 9.692c.437.034.859.112 1.274.213l5.998-8.905zm-15.787.001l5.996 8.903c.397-.097.802-.173 1.219-.208l-6.571-9.66-.644.965zm10.541 9.127c.369.13.73.277 1.073.458l5.279-7.925-.657-.986-5.695 8.453z"
+                          })
+                        }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
+                          className: "px-2 text-xs mt-2 text-gray-100  ",
+                          children: "Superb"
+                        })]
+                      }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("span", {
+                        className: "rounded items-center mr-2 text-gray-100 flex flex-col " + outstanding,
+                        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("svg", {
+                          className: "fill-current text-yellow-500 inline-block h-8 w-8",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          width: "24",
+                          height: "24",
+                          viewBox: "0 0 24 24",
+                          children: /*#__PURE__*/Object(jsx_runtime["jsx"])("path", {
+                            d: "M13.408 18c.498-3.947 5.592-7.197 5.592-17h-14c0 9.803 5.105 13.053 5.604 17h2.804zm-3.614-11.472l1.46-.202.643-1.326.643 1.326 1.46.202-1.063 1.021.26 1.451-1.3-.695-1.3.695.26-1.451-1.063-1.021zm-3.803 4.128c.286.638.585 1.231.882 1.783-4.065-1.348-6.501-5.334-6.873-9.439h4.077c.036.482.08.955.139 1.405h-2.689c.427 2.001 1.549 4.729 4.464 6.251zm10.009 10.963v1.381h-8v-1.381c1.941 0 2.369-1.433 2.571-2.619h2.866c.193 1.187.565 2.619 2.563 2.619zm8-18.619c-.372 4.105-2.808 8.091-6.873 9.438.297-.552.596-1.145.882-1.783 2.915-1.521 4.037-4.25 4.464-6.251h-2.688c.059-.45.103-.922.139-1.405h4.076z"
+                          })
+                        }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
+                          className: "px-2 text-sm mt-2 text-gray-100  " + outstanding,
+                          children: "Gold"
+                        })]
+                      }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("span", {
+                        className: "rounded p-2   items-center mr-2 text-gray-100 flex flex-col " + skip,
+                        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("svg", {
+                          className: "fill-current text-red-500 inline-block h-8 w-8 ",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          width: "24",
+                          height: "24",
+                          viewBox: "0 0 24 24",
+                          children: /*#__PURE__*/Object(jsx_runtime["jsx"])("path", {
+                            d: "M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4 17h-8v-2h8v2zm.5-11c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zm0 5c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5 1.5.671 1.5 1.5-.672 1.5-1.5 1.5zm-9-5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zm0 5c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5 1.5.671 1.5 1.5-.672 1.5-1.5 1.5z"
+                          })
+                        }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
+                          className: "px-2 text-sm mt-2 text-gray-100 ",
+                          children: "Meh"
+                        })]
+                      }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("span", {
+                        className: "items-center mr-2 text-gray-100 flex flex-col " + try_it,
+                        children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("svg", {
+                          className: "fill-current text-yellow-500 inline-block h-8 w-8 ",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          width: "24",
+                          height: "24",
+                          viewBox: "0 0 24 24",
+                          children: /*#__PURE__*/Object(jsx_runtime["jsx"])("path", {
+                            d: "M7.084.584c-.216-.375-.608-.584-1.012-.584-.198 0-.399.05-.583.156l-4.905 2.832c-.349.201-.555.556-.581.93-.016.224.032.456.153.665l9.605 16.632c.323.559 1.037.75 1.595.428l4.905-2.831c.559-.322.75-1.037.428-1.595l-9.605-16.633zm5.924 17.231c-.104.386-.5.615-.886.512s-.615-.5-.512-.886c.104-.386.5-.614.886-.512.386.104.615.501.512.886zm-1.139-1.971c-.104.386-.5.615-.886.512-.386-.104-.615-.5-.512-.886.104-.386.5-.614.886-.512.387.104.616.5.512.886zm-2.717-3.682c-.53.307-1.208.125-1.514-.405s-.125-1.208.406-1.514 1.208-.125 1.514.405c.306.531.125 1.208-.406 1.514zm-1.73-7.246l-1.319.762.762 1.318-1.044.603-.761-1.319-1.32.761-.602-1.043 1.319-.762-.762-1.318 1.044-.603.761 1.319 1.32-.761.602 1.043zm16.446 10c-.433-2.17-1.867-2.939-2.964-2.939-1.752 0-3.09 1.759-2.084 4.08 1.055 2.432 1.213 4.507.435 5.692-.793 1.208-2.376 1.208-3.534.3-.252-.207-.491-.464-.713-.766l-1.122.649c.292.432.638.807 1.031 1.117.807.659 1.696.951 2.593.951 1.64 0 3.306-.977 4.54-2.48 1.262-1.54 1.95-3.426 1.95-5.249 0-.459-.043-.912-.132-1.355zm-2.923 5.921c.25-1.447-.068-3.265-.947-5.292-.631-1.454.068-2.284.906-2.284.976 0 1.521.985 1.704 1.906.395 1.98-.32 4.111-1.663 5.67z"
+                          })
+                        }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
+                          className: " text-sm mt-2 text-gray-100 ",
+                          children: "Worth a try"
+                        })]
+                      })]
                     })]
-                  }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("div", {
-                    className: "flex items-center  leading-tight mt-2 ",
-                    children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("span", {
-                      className: "py-2 px-2 items-center mr-2 flex flex-col  " + must_play,
-                      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("svg", {
-                        className: "fill-current text-green-600  inline-block h-8 w-8",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        width: "24",
-                        height: "24",
-                        viewBox: "0 0 24 24",
-                        children: /*#__PURE__*/Object(jsx_runtime["jsx"])("path", {
-                          d: "M12 12c-3.314 0-6 2.687-6 6s2.686 6 6 6 6-2.687 6-6-2.686-6-6-6zm0 11c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5zm0-9c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm1.39 5.939l-1.39-.743-1.39.744.276-1.552-1.136-1.094 1.562-.215.688-1.419.688 1.419 1.562.215-1.137 1.093.277 1.552zm-9.732-17.925l-.658.986 5.234 7.946c.355-.19.731-.345 1.116-.48l-5.692-8.452zm11.537.986l3.051-3h-12.539l3.293 3h6.195zm4.699-1.661l-.667-1-6.605 9.692c.437.034.859.112 1.274.213l5.998-8.905zm-15.787.001l5.996 8.903c.397-.097.802-.173 1.219-.208l-6.571-9.66-.644.965zm10.541 9.127c.369.13.73.277 1.073.458l5.279-7.925-.657-.986-5.695 8.453z"
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-                        className: "px-2 text-xs mt-2 text-gray-100  ",
-                        children: "Superb"
-                      })]
-                    }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("span", {
-                      className: "rounded items-center mr-2 text-gray-100 flex flex-col " + outstanding,
-                      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("svg", {
-                        className: "fill-current text-yellow-500 inline-block h-8 w-8",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        width: "24",
-                        height: "24",
-                        viewBox: "0 0 24 24",
-                        children: /*#__PURE__*/Object(jsx_runtime["jsx"])("path", {
-                          d: "M13.408 18c.498-3.947 5.592-7.197 5.592-17h-14c0 9.803 5.105 13.053 5.604 17h2.804zm-3.614-11.472l1.46-.202.643-1.326.643 1.326 1.46.202-1.063 1.021.26 1.451-1.3-.695-1.3.695.26-1.451-1.063-1.021zm-3.803 4.128c.286.638.585 1.231.882 1.783-4.065-1.348-6.501-5.334-6.873-9.439h4.077c.036.482.08.955.139 1.405h-2.689c.427 2.001 1.549 4.729 4.464 6.251zm10.009 10.963v1.381h-8v-1.381c1.941 0 2.369-1.433 2.571-2.619h2.866c.193 1.187.565 2.619 2.563 2.619zm8-18.619c-.372 4.105-2.808 8.091-6.873 9.438.297-.552.596-1.145.882-1.783 2.915-1.521 4.037-4.25 4.464-6.251h-2.688c.059-.45.103-.922.139-1.405h4.076z"
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-                        className: "px-2 text-sm mt-2 text-gray-100  " + outstanding,
-                        children: "Gold"
-                      })]
-                    }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("span", {
-                      className: "rounded p-2   items-center mr-2 text-gray-100 flex flex-col " + skip,
-                      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("svg", {
-                        className: "fill-current text-red-500 inline-block h-8 w-8 ",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        width: "24",
-                        height: "24",
-                        viewBox: "0 0 24 24",
-                        children: /*#__PURE__*/Object(jsx_runtime["jsx"])("path", {
-                          d: "M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4 17h-8v-2h8v2zm.5-11c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zm0 5c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5 1.5.671 1.5 1.5-.672 1.5-1.5 1.5zm-9-5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zm0 5c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5 1.5.671 1.5 1.5-.672 1.5-1.5 1.5z"
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-                        className: "px-2 text-sm mt-2 text-gray-100 ",
-                        children: "Meh"
-                      })]
-                    }), /*#__PURE__*/Object(jsx_runtime["jsxs"])("span", {
-                      className: "items-center mr-2 text-gray-100 flex flex-col " + try_it,
-                      children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("svg", {
-                        className: "fill-current text-yellow-500 inline-block h-8 w-8 ",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        width: "24",
-                        height: "24",
-                        viewBox: "0 0 24 24",
-                        children: /*#__PURE__*/Object(jsx_runtime["jsx"])("path", {
-                          d: "M7.084.584c-.216-.375-.608-.584-1.012-.584-.198 0-.399.05-.583.156l-4.905 2.832c-.349.201-.555.556-.581.93-.016.224.032.456.153.665l9.605 16.632c.323.559 1.037.75 1.595.428l4.905-2.831c.559-.322.75-1.037.428-1.595l-9.605-16.633zm5.924 17.231c-.104.386-.5.615-.886.512s-.615-.5-.512-.886c.104-.386.5-.614.886-.512.386.104.615.501.512.886zm-1.139-1.971c-.104.386-.5.615-.886.512-.386-.104-.615-.5-.512-.886.104-.386.5-.614.886-.512.387.104.616.5.512.886zm-2.717-3.682c-.53.307-1.208.125-1.514-.405s-.125-1.208.406-1.514 1.208-.125 1.514.405c.306.531.125 1.208-.406 1.514zm-1.73-7.246l-1.319.762.762 1.318-1.044.603-.761-1.319-1.32.761-.602-1.043 1.319-.762-.762-1.318 1.044-.603.761 1.319 1.32-.761.602 1.043zm16.446 10c-.433-2.17-1.867-2.939-2.964-2.939-1.752 0-3.09 1.759-2.084 4.08 1.055 2.432 1.213 4.507.435 5.692-.793 1.208-2.376 1.208-3.534.3-.252-.207-.491-.464-.713-.766l-1.122.649c.292.432.638.807 1.031 1.117.807.659 1.696.951 2.593.951 1.64 0 3.306-.977 4.54-2.48 1.262-1.54 1.95-3.426 1.95-5.249 0-.459-.043-.912-.132-1.355zm-2.923 5.921c.25-1.447-.068-3.265-.947-5.292-.631-1.454.068-2.284.906-2.284.976 0 1.521.985 1.704 1.906.395 1.98-.32 4.111-1.663 5.67z"
-                        })
-                      }), /*#__PURE__*/Object(jsx_runtime["jsx"])("p", {
-                        className: " text-sm mt-2 text-gray-100 ",
-                        children: "Worth a try"
-                      })]
-                    })]
-                  })]
+                  })
                 })]
               })]
             })
@@ -39916,6 +40130,101 @@ module.exports = convert;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("zuR4");
+
+/***/ }),
+
+/***/ "vNVm":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__("TqRt");
+
+exports.__esModule = true;
+exports.useIntersection = useIntersection;
+
+var _react = __webpack_require__("q1tI");
+
+var _requestIdleCallback = _interopRequireDefault(__webpack_require__("0G5g"));
+
+const hasIntersectionObserver = typeof IntersectionObserver !== 'undefined';
+
+function useIntersection({
+  rootMargin,
+  disabled
+}) {
+  const isDisabled = disabled || !hasIntersectionObserver;
+  const unobserve = (0, _react.useRef)();
+  const [visible, setVisible] = (0, _react.useState)(false);
+  const setRef = (0, _react.useCallback)(el => {
+    if (unobserve.current) {
+      unobserve.current();
+      unobserve.current = undefined;
+    }
+
+    if (isDisabled || visible) return;
+
+    if (el && el.tagName) {
+      unobserve.current = observe(el, isVisible => isVisible && setVisible(isVisible), {
+        rootMargin
+      });
+    }
+  }, [isDisabled, rootMargin, visible]);
+  (0, _react.useEffect)(() => {
+    if (!hasIntersectionObserver) {
+      if (!visible) (0, _requestIdleCallback.default)(() => setVisible(true));
+    }
+  }, [visible]);
+  return [setRef, visible];
+}
+
+function observe(element, callback, options) {
+  const {
+    id,
+    observer,
+    elements
+  } = createObserver(options);
+  elements.set(element, callback);
+  observer.observe(element);
+  return function unobserve() {
+    observer.unobserve(element); // Destroy observer when there's nothing left to watch:
+
+    if (elements.size === 0) {
+      observer.disconnect();
+      observers.delete(id);
+    }
+  };
+}
+
+const observers = new Map();
+
+function createObserver(options) {
+  const id = options.rootMargin || '';
+  let instance = observers.get(id);
+
+  if (instance) {
+    return instance;
+  }
+
+  const elements = new Map();
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const callback = elements.get(entry.target);
+      const isVisible = entry.isIntersecting || entry.intersectionRatio > 0;
+
+      if (callback && isVisible) {
+        callback(isVisible);
+      }
+    });
+  }, options);
+  observers.set(id, instance = {
+    id,
+    observer,
+    elements
+  });
+  return instance;
+}
 
 /***/ }),
 
