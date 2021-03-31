@@ -4,6 +4,8 @@ import axios from "axios";
 import { GetStaticProps } from 'next'
 import  React  from 'react';
 import {GamesoftheYear2020} from '../data/gameIDs'
+import useSWR from 'swr'
+import Snippet from '../components/Snippet'
 
 
 
@@ -37,12 +39,17 @@ export const getStaticProps: GetStaticProps = async () => {
 
 
 const Home  = ({ games }) => {
+
+
+
 	return (
 		<>
 			<Head>
 				<title>GameBox | Home</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
+
+	
 
 			<Hero games ={games} headerText={null}  />
 		</>

@@ -3,7 +3,7 @@ import { animate, motion } from "framer-motion";
 import Link from "next/link";
 
 const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
-	console.log(todo?.cover.url);
+	
 	const green = "lg:text-green-300 text-green-500   text-xl leading-lg  pr-2";
 	const gray = "lg:text-gray-300 text-gray-500  text-xl leading-lg pr-2";
 

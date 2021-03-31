@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import Head from "next/head";
 import GameList from "../components/GameList";
 import SectionHeaderText from "../components/SectionHeaderText";
-
+import useSWR from "swr";
+import Snippet from "../components/Snippet";
+import { UserProvider } from "@auth0/nextjs-auth0";
 import { GetStaticProps } from "next";
 
 import { getGames } from "../util/getGames";
 
-export const getStaticProps: GetStaticProps = getGames("(167,48,169,49,130)");
+export const getStaticProps: GetStaticProps = getGames("(130)");
 
 const best_games = ({ games }) => {
 	const sortedGames = games
@@ -31,8 +33,11 @@ const best_games = ({ games }) => {
 		setTodos(newTodos);
 	};
 
+	const { data: snippets, mutate } = useSWR("api/gamedata");
+ console.log(todos)
 	return (
-		<div className="color-change-4x">
+		<UserProvider>
+		<div className='color-change-4x'>
 			<Head>
 				<title>GameBox | Video Game Bucket List</title>
 				<link rel='icon' href='/favicon.ico' />
@@ -45,8 +50,14 @@ const best_games = ({ games }) => {
 				}
 			/>
 
+			{/*snippets &&
+				snippets.map((snippet) => (
+					<Snippet key={snippet.id} snippet={snippet} />
+				))*/}
+
 			<GameList todos={todos} toggleTodo={toggleTodo} />
 		</div>
+		</UserProvider>
 	);
 };
 
