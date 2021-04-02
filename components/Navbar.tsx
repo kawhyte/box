@@ -53,6 +53,7 @@ export default function Navbar(props) {
 						}
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row list-none mr-auto '>
+							<Link href="/goty">
 							<motion.li
 								whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }}
@@ -74,7 +75,7 @@ export default function Navbar(props) {
 									/>{" "}
 									2020 game in review
 								</a>
-							</motion.li>
+							</motion.li></Link>
 
 							<motion.li
 								whileHover={{ scale: 1.1 }}

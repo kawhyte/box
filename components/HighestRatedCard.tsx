@@ -6,6 +6,7 @@ import Link from "next/link";
 
 const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText, startCountAt }) => {
 	let factor = 5.7;
+	 
 
 	return (
 		<div className=' container flex  flex-col items-center  justify-center'>
@@ -107,6 +108,7 @@ const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText, startCountAt
 				{/*<p className='pb-1 text-sm text-textwhite font-medium tracking-widest uppercase container'>
 						Full List
 							</p>*/}
+							
 				<Card games={games} headerText={null} startCountAt={startCountAt}/> 
 			</div>
 		</div>

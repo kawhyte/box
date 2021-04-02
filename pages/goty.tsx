@@ -2,6 +2,7 @@ import Head from "next/head";
 import axios from "axios";
 import Welcome from "../components/Welcome";
 import Categories from "../components/Categories";
+import GOTYList from "../components/GotyList";
 import SectionHeaderText from "../components/SectionHeaderText";
 import HighestRatedCard from "../components/HighestRatedCard";
 import {
@@ -11,12 +12,12 @@ import {
 	useMotionValue,
 	useTransform,
 } from "framer-motion";
-import { GetStaticProps} from 'next'
+import { GetStaticProps } from "next";
 
 const gameId =
 	"26192,109462,113112,75235,11169, 133004, 1877, 126098, 134581, 119295, 37001, 115115, 90055, 119313, 75239, 119304, 11155, 119277, 107172, 111837, 131614, 131869, 131970, 123902, 52006, 127816, 107262, 131800, 134606, 133887, 135254, 133152, 131946, 138251, 110834, 36550, 86504, 127591, 123395, 107218, 134706, 114286, 114285, 119260, 90055, 114009, 119386, 103291, 113115, 133923, 116589, 119277, 135301, 137131, 131566, 136498, 103330, 133306, 124701, 127816, 133301, 139032, 123902, 138343, 130216, 119277, 138375, 126459, 124954";
 
-export const getStaticProps:GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
 	const games = await axios({
 		url: "https://api.igdb.com/v4/games",
 		method: "POST",
@@ -54,6 +55,15 @@ const GOTY = ({ games }) => {
 	const xbox = filterByConsole(sortedGames, 49, null);
 	const pc = filterByConsole(sortedGames, 6, null);
 
+	const gameObj = [
+		{
+			headerText: "2020 Highest rated Games",
+			paragraphText:
+				"We watched a lot of films in 2020. But it wasn’t just about how many",
+			gamePlatform: 130,
+			gamePlatform2: null,
+		},
+	];
 
 	return (
 		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -63,19 +73,21 @@ const GOTY = ({ games }) => {
 			</Head>
 			//Add image hero here
 			<Categories />
+			{gameObj.map((item) => (
+				<GOTYList games={sortedGames} gameDetails={item} />
+			))}
 			<SectionHeaderText
 				headerText={"Highest rated  OF THE YEAR"}
 				paragraphText={
 					"We watched a lot of films in 2020. But it wasn’t just about how many"
 				}
 			/>
-			<HighestRatedCard　
+			<HighestRatedCard
 				games={sortedGames}
 				headerText={"2020 Highest rated Games"}
-
+				startCountAt={4}
 			/>
 			<SectionHeaderText
-			     
 				headerText={"Best Nintendo Switch Games"}
 				paragraphText={
 					"We watched a lot of films in 2020. But it wasn’t just about how many"
@@ -84,6 +96,7 @@ const GOTY = ({ games }) => {
 			<HighestRatedCard
 				games={nintendo}
 				headerText={"2020 best Nintendo Switch Games"}
+				startCountAt={4}
 			/>
 			<SectionHeaderText
 				headerText={"Best PlayStation Games"}
@@ -91,21 +104,33 @@ const GOTY = ({ games }) => {
 					"We watched a lot of films in 2020. But it wasn’t just about how many"
 				}
 			/>
-			<HighestRatedCard games={ps4} headerText={"2020 best PS Games"} />
+			<HighestRatedCard
+				games={ps4}
+				headerText={"2020 best PS Games"}
+				startCountAt={4}
+			/>
 			<SectionHeaderText
 				headerText={"Best Xbox Games"}
 				paragraphText={
 					"We watched a lot of films in 2020. But it wasn’t just about how many"
 				}
 			/>
-			<HighestRatedCard games={xbox} headerText={"2020 best Xbox Games"} />
+			<HighestRatedCard
+				games={xbox}
+				headerText={"2020 best Xbox Games"}
+				startCountAt={4}
+			/>
 			<SectionHeaderText
 				headerText={"Best PC Games"}
 				paragraphText={
 					"We watched a lot of films in 2020. But it wasn’t just about how many"
 				}
 			/>
-			<HighestRatedCard games={pc} headerText={"2020 best PC Games"} />{" "}
+			<HighestRatedCard
+				games={pc}
+				headerText={"2020 best PC Games"}
+				startCountAt={4}
+			/>
 		</motion.div>
 	);
 };

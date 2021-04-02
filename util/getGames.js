@@ -26,3 +26,17 @@ export function getGames(platform) {
         };
     };
 }
+
+
+
+export function filterByConsole(sortedGames, gameId, gameId2) {
+	return sortedGames.filter((platforms) => {
+		let found = false;
+		platforms.platforms.map((element) => {
+			if (element.id === gameId || element.id === gameId2) {
+				found = true;
+			}
+		});
+		return found;
+	});
+}
