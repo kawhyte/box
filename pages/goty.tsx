@@ -2,16 +2,9 @@ import Head from "next/head";
 import axios from "axios";
 import Welcome from "../components/Welcome";
 import Categories from "../components/Categories";
+import { gameObj } from "../data/data";
 import GOTYList from "../components/GotyList";
-import SectionHeaderText from "../components/SectionHeaderText";
-import HighestRatedCard from "../components/HighestRatedCard";
-import {
-	animate,
-	motion,
-	useViewportScroll,
-	useMotionValue,
-	useTransform,
-} from "framer-motion";
+import { motion } from "framer-motion";
 import { GetStaticProps } from "next";
 
 const gameId =
@@ -50,21 +43,6 @@ const GOTY = ({ games }) => {
 			return b.rating_count - a.rating_count;
 		});
 
-	const nintendo = filterByConsole(sortedGames, 130, null);
-	const ps4 = filterByConsole(sortedGames, 48, null);
-	const xbox = filterByConsole(sortedGames, 49, null);
-	const pc = filterByConsole(sortedGames, 6, null);
-
-	const gameObj = [
-		{
-			headerText: "2020 Highest rated Games",
-			paragraphText:
-				"We watched a lot of films in 2020. But it wasn’t just about how many",
-			gamePlatform: 130,
-			gamePlatform2: null,
-		},
-	];
-
 	return (
 		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
 			<Head>
@@ -76,75 +54,8 @@ const GOTY = ({ games }) => {
 			{gameObj.map((item) => (
 				<GOTYList games={sortedGames} gameDetails={item} />
 			))}
-			<SectionHeaderText
-				headerText={"Highest rated  OF THE YEAR"}
-				paragraphText={
-					"We watched a lot of films in 2020. But it wasn’t just about how many"
-				}
-			/>
-			<HighestRatedCard
-				games={sortedGames}
-				headerText={"2020 Highest rated Games"}
-				startCountAt={4}
-			/>
-			<SectionHeaderText
-				headerText={"Best Nintendo Switch Games"}
-				paragraphText={
-					"We watched a lot of films in 2020. But it wasn’t just about how many"
-				}
-			/>
-			<HighestRatedCard
-				games={nintendo}
-				headerText={"2020 best Nintendo Switch Games"}
-				startCountAt={4}
-			/>
-			<SectionHeaderText
-				headerText={"Best PlayStation Games"}
-				paragraphText={
-					"We watched a lot of films in 2020. But it wasn’t just about how many"
-				}
-			/>
-			<HighestRatedCard
-				games={ps4}
-				headerText={"2020 best PS Games"}
-				startCountAt={4}
-			/>
-			<SectionHeaderText
-				headerText={"Best Xbox Games"}
-				paragraphText={
-					"We watched a lot of films in 2020. But it wasn’t just about how many"
-				}
-			/>
-			<HighestRatedCard
-				games={xbox}
-				headerText={"2020 best Xbox Games"}
-				startCountAt={4}
-			/>
-			<SectionHeaderText
-				headerText={"Best PC Games"}
-				paragraphText={
-					"We watched a lot of films in 2020. But it wasn’t just about how many"
-				}
-			/>
-			<HighestRatedCard
-				games={pc}
-				headerText={"2020 best PC Games"}
-				startCountAt={4}
-			/>
 		</motion.div>
 	);
 };
 
 export default GOTY;
-
-function filterByConsole(sortedGames, gameId, gameId2) {
-	return sortedGames.filter((platforms) => {
-		let found = false;
-		platforms.platforms.map((element) => {
-			if (element.id === gameId || element.id === gameId2) {
-				found = true;
-			}
-		});
-		return found;
-	});
-}
