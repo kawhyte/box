@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "/xR2");
+/******/ 	return __webpack_require__(__webpack_require__.s = "X1wD");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -932,109 +932,6 @@ const TEST_ROUTE = /\/\[[^/]+?\](?=\/|$)/;
 function isDynamicRoute(route) {
   return TEST_ROUTE.test(route);
 }
-
-/***/ }),
-
-/***/ "/xR2":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
-var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
-/* harmony import */ var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("LZ9C");
-var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("LZ9C", 1);
-/* harmony import */ var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("67Bq");
-var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t("67Bq", 1);
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("7ZOo");
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__);
-
-    
-    
-    
-    
-    
-    
-
-    
-    const { processEnv } = __webpack_require__("fXeI")
-    processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nFAUNA_SECRET=fnAEFknsF2ACDV6veaGRR_S08SpeYYrSr9EhGSEL"}])
-  
-    
-    const runtimeConfig = {}
-    
-
-    const appMod = __webpack_require__("cha2")
-    let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
-
-    const compMod = __webpack_require__("RMxd")
-
-    const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
-    /* harmony default export */ __webpack_exports__["default"] = (Component);
-    const getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
-    const getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
-    const getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
-
-    // kept for detecting legacy exports
-    const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
-    const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
-    const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
-    const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
-
-    let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
-    const _app = App
-
-    const { renderReqToHTML, render } = Object(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__["getPageHandler"])({
-      pageModule: compMod,
-      pageComponent: Component,
-      pageConfig: config,
-      appModule: App,
-      documentModule: __webpack_require__("VDXt"),
-      errorModule: __webpack_require__("/a9y"),
-      notFoundModule: undefined,
-      pageGetStaticProps: getStaticProps,
-      pageGetStaticPaths: getStaticPaths,
-      pageGetServerSideProps: getServerSideProps,
-
-      assetPrefix: "",
-      canonicalBase: "",
-      generateEtags: true,
-      poweredByHeader: true,
-
-      runtimeConfig,
-      buildManifest: private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__,
-      reactLoadableManifest: private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__,
-
-      rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
-      i18n: undefined,
-      page: "/goty",
-      buildId: "ROY2zEIOBEVzkMsXVnXMK",
-      escapedBuildId: "ROY2zEIOBEVzkMsXVnXMK",
-      basePath: "",
-      pageIsDynamic: false,
-      encodedPreviewProps: {previewModeId:"88dbf0ff86850e8778e88a75226d4a38",previewModeSigningKey:"3962c9dc43c3b6b7b42fedb958d3fcf0b6d53e49bd2449814d3d7d39f815a4ba",previewModeEncryptionKey:"a2e4c2d18db576d0d37493b0f446a8a9d819d4b5a5348ae29afcf32adbad6dd8"},
-      experimental: {
-        onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
-        initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
-      }
-    })
-    
-  
 
 /***/ }),
 
@@ -13504,6 +13401,54 @@ exports.default = CommentNode;
 
 /***/ }),
 
+/***/ "9anB":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getGames; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return filterByConsole; });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("vDqi");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+
+function getGames(platform) {
+  return async () => {
+    const games = await axios__WEBPACK_IMPORTED_MODULE_0___default()({
+      //url: "http://localhost:8001/games",
+      url: "https://api.igdb.com/v4/games",
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Client-ID": process.env.ClientID,
+        Authorization: process.env.Authorization
+      },
+      data: `fields age_ratings,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
+			 limit 50; where first_release_date > 1577905941 & first_release_date < 1609528341 & platforms = ${platform} & rating > 55;`
+    }).then(response => {
+      return response.data;
+    }).catch(err => {
+      console.error(err);
+    });
+    return {
+      props: {
+        games
+      }
+    };
+  };
+}
+function filterByConsole(sortedGames, gameId, gameId2) {
+  return sortedGames.filter(platforms => {
+    let found = false;
+    platforms.platforms.map(element => {
+      if (element.id === gameId || element.id === gameId2) {
+        found = true;
+      }
+    });
+    return found;
+  });
+}
+
+/***/ }),
+
 /***/ "9kyW":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16004,7 +15949,7 @@ module.exports = function createError(message, config, code, request, response) 
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-246c4c8f803edec18188.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/ROY2zEIOBEVzkMsXVnXMK/_buildManifest.js\",\"static/ROY2zEIOBEVzkMsXVnXMK/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/index-aa5f70407fd247df35d6.js\"],\"/_app\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/css/aff18cc7338389f6d7e4.css\",\"static/chunks/pages/_app-55493aea455c0a1e9ea6.js\"],\"/_error\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/pages/_error-d2fae256d63f3a883f1c.js\"],\"/games/[id]\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/039e83126c3a3f3eb9758a859f2984aad7950ec9.5fd04ce2478b74d43c97.js\",\"static/chunks/pages/games/[id]-5d98edcbdee9acc756cd.js\"],\"/goty\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/039e83126c3a3f3eb9758a859f2984aad7950ec9.5fd04ce2478b74d43c97.js\",\"static/chunks/pages/goty-68b5f191557459cf413c.js\"],\"/nintendo\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/nintendo-2e1c855c8f7e999c8bb5.js\"],\"/playstation\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/playstation-1abc4bd62c2a386d9619.js\"],\"/top\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/top-5e777f883d2d19c7ffe9.js\"],\"/xbox\":[\"static/chunks/main-7d1613afc8c8f43cb50f.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/xbox-4e4de67dd756dd7cf651.js\"]},\"ampFirstPages\":[]}");
+module.exports = JSON.parse("{\"polyfillFiles\":[\"static/chunks/polyfills-ee8b6a435fbaa7581564.js\"],\"devFiles\":[],\"ampDevFiles\":[],\"lowPriorityFiles\":[\"static/Etr5l9QuUAcd_2lDQzHZx/_buildManifest.js\",\"static/Etr5l9QuUAcd_2lDQzHZx/_ssgManifest.js\"],\"pages\":{\"/\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/index-58c30ad6975e7c8d49e2.js\"],\"/_app\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/css/09204e63c3096afb3abd.css\",\"static/chunks/pages/_app-bbe05d2ab93032b09d25.js\"],\"/_error\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/pages/_error-824b523c2e6dd72a9052.js\"],\"/games/[id]\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/039e83126c3a3f3eb9758a859f2984aad7950ec9.5fd04ce2478b74d43c97.js\",\"static/chunks/pages/games/[id]-b6bf533bacfe99ee8c17.js\"],\"/goty\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/039e83126c3a3f3eb9758a859f2984aad7950ec9.5fd04ce2478b74d43c97.js\",\"static/chunks/0fb42cada1b51815d7c0b719b8df33ce9fd3119c.2987ca176f8f73e9acec.js\",\"static/chunks/pages/goty-2915ff6a599323a9e7ec.js\"],\"/nintendo\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/nintendo-1ca2c9c58e20784b62c8.js\"],\"/playstation\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/playstation-e87cef49aaee405ab829.js\"],\"/top\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/0fb42cada1b51815d7c0b719b8df33ce9fd3119c.2987ca176f8f73e9acec.js\",\"static/chunks/pages/top-bdb00ef070a8efb555ac.js\"],\"/xbox\":[\"static/chunks/main-8eceb05bc4ee0a5e5bd4.js\",\"static/chunks/webpack-95c2b224bccf352ee870.js\",\"static/chunks/framework.ae3781fe50e43492a499.js\",\"static/chunks/commons.9b549cceddc4472f1953.js\",\"static/chunks/93050934d8499689f59c294d8192885315d0a99c.be18275094762c717829.js\",\"static/chunks/pages/xbox-097727fd909c4a5e3fc0.js\"]},\"ampFirstPages\":[]}");
 
 /***/ }),
 
@@ -17879,6 +17824,28 @@ const Categories = () => {
 };
 
 /* harmony default export */ var components_Categories = (Categories);
+// CONCATENATED MODULE: ./data/data.js
+const gameObj = [{
+  headerText: "2020 Highest rated Switch Games",
+  paragraphText: "We watched a lot of films in 2020. But it wasn’t just about how many",
+  gamePlatform: 130,
+  gamePlatform2: null
+}, {
+  headerText: "2020 Highest rated PS Games",
+  paragraphText: "We watched a lot of films in 2020. But it wasn’t just about how many",
+  gamePlatform: 48,
+  gamePlatform2: null
+}, {
+  headerText: "2020 Highest rated Xbox Games",
+  paragraphText: "We watched a lot of films in 2020. But it wasn’t just about how many",
+  gamePlatform: 49,
+  gamePlatform2: null
+}, {
+  headerText: "2020 Highest rated PC Games",
+  paragraphText: "We watched a lot of films in 2020. But it wasn’t just about how many",
+  gamePlatform: 6,
+  gamePlatform2: null
+}];
 // EXTERNAL MODULE: ./components/SectionHeaderText.tsx
 var SectionHeaderText = __webpack_require__("xooM");
 
@@ -17998,6 +17965,41 @@ const HighestRatedCard = ({
 };
 
 /* harmony default export */ var components_HighestRatedCard = (HighestRatedCard);
+// EXTERNAL MODULE: ./util/getGames.js
+var getGames = __webpack_require__("9anB");
+
+// CONCATENATED MODULE: ./components/GotyList.js
+
+
+
+
+
+
+
+
+function GotyList({
+  games,
+  gameDetails
+}) {
+  const {
+    headerText,
+    paragraphText,
+    gamePlatform
+  } = gameDetails;
+  const filteredGames = Object(getGames["a" /* filterByConsole */])(games, gamePlatform, null);
+  return /*#__PURE__*/Object(jsx_runtime["jsxs"])(jsx_runtime["Fragment"], {
+    children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(SectionHeaderText["a" /* default */], {
+      headerText: headerText,
+      paragraphText: paragraphText
+    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_HighestRatedCard, {
+      games: filteredGames,
+      headerText: "2020 Highest rated Games",
+      startCountAt: 4
+    })]
+  });
+}
+
+/* harmony default export */ var components_GotyList = (GotyList);
 // EXTERNAL MODULE: ./node_modules/framer-motion/dist/framer-motion.cjs.js
 var framer_motion_cjs = __webpack_require__("1vpa");
 
@@ -18042,10 +18044,6 @@ const GOTY = ({
   }).sort((a, b) => {
     return b.rating_count - a.rating_count;
   });
-  const nintendo = filterByConsole(sortedGames, 130, null);
-  const ps4 = filterByConsole(sortedGames, 48, null);
-  const xbox = filterByConsole(sortedGames, 49, null);
-  const pc = filterByConsole(sortedGames, 6, null);
   return /*#__PURE__*/Object(jsx_runtime["jsxs"])(framer_motion_cjs["motion"].div, {
     initial: {
       opacity: 0
@@ -18060,53 +18058,14 @@ const GOTY = ({
         rel: "icon",
         href: "/favicon.ico"
       })]
-    }), "//Add image hero here", /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Categories, {}), /*#__PURE__*/Object(jsx_runtime["jsx"])(SectionHeaderText["a" /* default */], {
-      headerText: "Highest rated  OF THE YEAR",
-      paragraphText: "We watched a lot of films in 2020. But it wasn’t just about how many"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_HighestRatedCard, {
+    }), "//Add image hero here", /*#__PURE__*/Object(jsx_runtime["jsx"])(components_Categories, {}), gameObj.map(item => /*#__PURE__*/Object(jsx_runtime["jsx"])(components_GotyList, {
       games: sortedGames,
-      headerText: "2020 Highest rated Games"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(SectionHeaderText["a" /* default */], {
-      headerText: "Best Nintendo Switch Games",
-      paragraphText: "We watched a lot of films in 2020. But it wasn’t just about how many"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_HighestRatedCard, {
-      games: nintendo,
-      headerText: "2020 best Nintendo Switch Games"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(SectionHeaderText["a" /* default */], {
-      headerText: "Best PlayStation Games",
-      paragraphText: "We watched a lot of films in 2020. But it wasn’t just about how many"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_HighestRatedCard, {
-      games: ps4,
-      headerText: "2020 best PS Games"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(SectionHeaderText["a" /* default */], {
-      headerText: "Best Xbox Games",
-      paragraphText: "We watched a lot of films in 2020. But it wasn’t just about how many"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_HighestRatedCard, {
-      games: xbox,
-      headerText: "2020 best Xbox Games"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(SectionHeaderText["a" /* default */], {
-      headerText: "Best PC Games",
-      paragraphText: "We watched a lot of films in 2020. But it wasn’t just about how many"
-    }), /*#__PURE__*/Object(jsx_runtime["jsx"])(components_HighestRatedCard, {
-      games: pc,
-      headerText: "2020 best PC Games"
-    }), " "]
+      gameDetails: item
+    }))]
   });
 };
 
 /* harmony default export */ var goty = __webpack_exports__["default"] = (GOTY);
-
-function filterByConsole(sortedGames, gameId, gameId2) {
-  return sortedGames.filter(platforms => {
-    let found = false;
-    platforms.platforms.map(element => {
-      if (element.id === gameId || element.id === gameId2) {
-        found = true;
-      }
-    });
-    return found;
-  });
-}
 
 /***/ }),
 
@@ -20472,6 +20431,109 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
+
+/***/ }),
+
+/***/ "X1wD":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
+var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
+/* harmony import */ var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("LZ9C");
+var private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("LZ9C", 1);
+/* harmony import */ var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("67Bq");
+var private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t("67Bq", 1);
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("7ZOo");
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__);
+
+    
+    
+    
+    
+    
+    
+
+    
+    const { processEnv } = __webpack_require__("fXeI")
+    processEnv([{"path":".env.local","contents":"ClientID=4bhcgu9g8smkfy1jmxdeqx8ubvx2uw\nAuthorization=Bearer 89heevow5nnpofrl2ullbhyu9mabzx\nFAUNA_SECRET=fnAEFknsF2ACDV6veaGRR_S08SpeYYrSr9EhGSEL"}])
+  
+    
+    const runtimeConfig = {}
+    
+
+    const appMod = __webpack_require__("cha2")
+    let App = appMod.default || appMod.then && appMod.then(mod => mod.default);
+
+    const compMod = __webpack_require__("RMxd")
+
+    const Component = compMod.default || compMod.then && compMod.then(mod => mod.default)
+    /* harmony default export */ __webpack_exports__["default"] = (Component);
+    const getStaticProps = compMod['getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['getStaticProp' + 's'])
+    const getStaticPaths = compMod['getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['getStaticPath' + 's'])
+    const getServerSideProps = compMod['getServerSideProp' + 's'] || compMod.then && compMod.then(mod => mod['getServerSideProp' + 's'])
+
+    // kept for detecting legacy exports
+    const unstable_getStaticParams = compMod['unstable_getStaticParam' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticParam' + 's'])
+    const unstable_getStaticProps = compMod['unstable_getStaticProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticProp' + 's'])
+    const unstable_getStaticPaths = compMod['unstable_getStaticPath' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getStaticPath' + 's'])
+    const unstable_getServerProps = compMod['unstable_getServerProp' + 's'] || compMod.then && compMod.then(mod => mod['unstable_getServerProp' + 's'])
+
+    let config = compMod['confi' + 'g'] || (compMod.then && compMod.then(mod => mod['confi' + 'g'])) || {}
+    const _app = App
+
+    const { renderReqToHTML, render } = Object(next_dist_build_webpack_loaders_next_serverless_loader_page_handler__WEBPACK_IMPORTED_MODULE_6__["getPageHandler"])({
+      pageModule: compMod,
+      pageComponent: Component,
+      pageConfig: config,
+      appModule: App,
+      documentModule: __webpack_require__("VDXt"),
+      errorModule: __webpack_require__("/a9y"),
+      notFoundModule: undefined,
+      pageGetStaticProps: getStaticProps,
+      pageGetStaticPaths: getStaticPaths,
+      pageGetServerSideProps: getServerSideProps,
+
+      assetPrefix: "",
+      canonicalBase: "",
+      generateEtags: true,
+      poweredByHeader: true,
+
+      runtimeConfig,
+      buildManifest: private_dot_next_build_manifest_json__WEBPACK_IMPORTED_MODULE_4__,
+      reactLoadableManifest: private_dot_next_react_loadable_manifest_json__WEBPACK_IMPORTED_MODULE_5__,
+
+      rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
+      i18n: undefined,
+      page: "/goty",
+      buildId: "Etr5l9QuUAcd_2lDQzHZx",
+      escapedBuildId: "Etr5l9QuUAcd_2lDQzHZx",
+      basePath: "",
+      pageIsDynamic: false,
+      encodedPreviewProps: {previewModeId:"7363ae13ca29602ea43974a7aa82b036",previewModeSigningKey:"803e3d1c393e43538b8c19a38bc929c9831de982445562850781347f19cd1f15",previewModeEncryptionKey:"2a52fe617991b6d2ff509db3a229ef7c1c6ea508c6b8272535c0c4c895858335"},
+      experimental: {
+        onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
+        initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
+      }
+    })
+    
+  
 
 /***/ }),
 
@@ -23317,19 +23379,22 @@ function Navbar(props) {
           id: "example-navbar-warning",
           children: [/*#__PURE__*/Object(jsx_runtime["jsxs"])("ul", {
             className: "flex flex-col lg:flex-row list-none mr-auto ",
-            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(framer_motion_cjs["motion"].li, {
-              whileHover: {
-                scale: 1.1
-              },
-              whileTap: {
-                scale: 0.9
-              },
-              className: "flex items-center",
-              children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
-                className: (props.transparent ? "lg:text-yellow-400 lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold",
-                children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
-                  className: (props.transparent ? "lg:text-yellow-400 text-yellow-700" : "text-gray-500") + " fas fa-crown text-lg leading-lg mr-2"
-                }), " ", "2020 game in review"]
+            children: [/*#__PURE__*/Object(jsx_runtime["jsx"])(link_default.a, {
+              href: "/goty",
+              children: /*#__PURE__*/Object(jsx_runtime["jsx"])(framer_motion_cjs["motion"].li, {
+                whileHover: {
+                  scale: 1.1
+                },
+                whileTap: {
+                  scale: 0.9
+                },
+                className: "flex items-center",
+                children: /*#__PURE__*/Object(jsx_runtime["jsxs"])("a", {
+                  className: (props.transparent ? "lg:text-yellow-400 lg:hover:text-gray-300  text-gray-800" : "text-gray-800  hover:text-gray-600") + " px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold",
+                  children: [/*#__PURE__*/Object(jsx_runtime["jsx"])("i", {
+                    className: (props.transparent ? "lg:text-yellow-400 text-yellow-700" : "text-gray-500") + " fas fa-crown text-lg leading-lg mr-2"
+                  }), " ", "2020 game in review"]
+                })
               })
             }), /*#__PURE__*/Object(jsx_runtime["jsx"])(framer_motion_cjs["motion"].li, {
               whileHover: {
@@ -38975,7 +39040,7 @@ const Trending = ({
     }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
       children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
         className: "grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-1",
-        children: games.map((game, i) => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+        children: games.slice(0, 20).map((game, i) => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
           href: `/games/${game.id}`,
           children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(framer_motion__WEBPACK_IMPORTED_MODULE_3__["motion"].div, {
             className: "bg-gray-800 shadow-lg rounded p-1 max-w-sm cursor-pointer ",
