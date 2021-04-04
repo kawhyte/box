@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const Categories: React.FC = () => {
 	const categories = [
-		{ name: "Best Nintendo Switch Games", link: "nintendo", id:1 },
-		{ name: "Best Xbox Games", link: "xbox", id:2 },
-		{ name: "Best Playstation Games", link: "playstation" ,id:3 },
-		{ name: "Best PC Games", link: "playstation" ,id:4 },
+		{ name: "Nintendo Switch Games", link: "nintendo", id:1 },
+		{ name: "Xbox Games", link: "xbox", id:2 },
+		{ name: "Playstation Games", link: "playstation" ,id:3 },
+		{ name: "PC Games", link: "playstation" ,id:4 },
 	];
 
 	return (
