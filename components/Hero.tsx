@@ -7,7 +7,7 @@ const Hero: React.FC<IGame> = ({ games }) => {
 		<>
 			<main className=''>
 				<div
-					className='relative flex  items-center mx-auto justify-center align-middle  '
+					className='relative flex  items-center mx-auto justify-center  align-middle  '
 					style={{
 						minHeight: "43vh",
 					}}>

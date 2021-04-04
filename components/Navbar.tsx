@@ -73,7 +73,7 @@ export default function Navbar(props) {
 											" fas fa-crown text-lg leading-lg mr-2"
 										}
 									/>{" "}
-									2020 game in review
+									Best trending games
 								</a>
 							</motion.li></Link>
 

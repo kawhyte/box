@@ -16,7 +16,7 @@ function GotyList({ games, gameDetails }) {
 			/>
 			<HighestRatedCard
 				games={filteredGames}
-				headerText={"2020 Highest rated Games"}
+				headerText={headerText}
 				startCountAt={4}
 			/>
 		</>

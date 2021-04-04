@@ -15,6 +15,8 @@ module.exports = {
      
     },
 
+
+
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -167,7 +169,16 @@ module.exports = {
     },
 
 
-    extend: {},
+    extend: {
+
+      backgroundImage: theme => ({
+        'hero-lg': "url('/box/public/gamebox.svg')",
+        'hero-sm': "url('/storage/img/sys/sm-hero.jpg')",
+    }),
+
+
+
+    },
   },
   variants: {
     opacity: ["responsive", "hover", "focus", "group-hover"],
