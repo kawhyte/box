@@ -43,12 +43,12 @@ const Hero: React.FC<IGame> = ({ games }) => {
 											},
 										},
 									}}>
-									<p className='gradient-text pb-1'>Video Game</p>
+									<p className='gradient-text py-1 px-1'>Video Game </p>
 									
-								</motion.div>
-								<p className='text-4xl text-center font-black  text-textwhite tracking-wider uppercase   sm:text-4xl md:text-5xl '>
+								<p className='text-4xl gradient-text text-center font-black  text-textwhite tracking-wider uppercase   sm:text-4xl md:text-5xl '>
 									bucket list
 								</p>
+								</motion.div>
 							</div>
 							<p className='py-6  text-center text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
 								Track and share how many of the top 100 games have you played.
@@ -58,8 +58,8 @@ const Hero: React.FC<IGame> = ({ games }) => {
 								<motion.button
 									whileHover={{ scale: 1.1 }}
 									whileTap={{ scale: 0.9 }}
-									className='uppercase main-button shake-lr color-change-2x  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 font-bold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
-									{/* <i className='far fa-play-circle text-gray-200'> </i>  */}
+									className='uppercase main-button  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 font-bold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
+								
 									Start
 									now
 								</motion.button></Link>

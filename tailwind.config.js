@@ -20,6 +20,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      buttonYellow:'#ffd374',
 
       bgcolor: '#060D17',
       offblack: '#212830',
@@ -171,10 +172,6 @@ module.exports = {
 
     extend: {
 
-      backgroundImage: theme => ({
-        'hero-lg': "url('/box/public/gamebox.svg')",
-        'hero-sm': "url('/storage/img/sys/sm-hero.jpg')",
-    }),
 
 
 

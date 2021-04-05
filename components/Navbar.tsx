@@ -61,16 +61,16 @@ export default function Navbar(props) {
 								<a
 									className={
 										(props.transparent
-											? "lg:text-yellow-400 lg:hover:text-gray-300  text-gray-800"
+											? "lg:text-buttonYellow lg:hover:text-gray-300  text-gray-800"
 											: "text-gray-800  hover:text-gray-600") +
 										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
 									}>
 									<i
 										className={
 											(props.transparent
-												? "lg:text-yellow-400 text-yellow-700"
+												? "lg:text-buttonYellow  text-buttonYellow"
 												: "text-gray-500") +
-											" fas fa-crown text-lg leading-lg mr-2"
+											" fas fa-crown text-md leading-lg mr-2"
 										}
 									/>{" "}
 									Trending games in 2021
