@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import Head from "next/head";
 import GameList from "../components/GameList";
 import SectionHeaderText from "../components/SectionHeaderText";
+import SectionHero from "../components/SectionHero";
 import useSWR from "swr";
 import Snippet from "../components/Snippet";
 import { UserProvider } from "@auth0/nextjs-auth0";
 import { GetStaticProps } from "next";
+import { GamesoftheYear2020 } from "../data/gameIDs";
 
-import { getGames } from "../util/getGames";
+import { getGames, getGamesByID } from "../util/getGames";
 
-export const getStaticProps: GetStaticProps = getGames("(130)");
+export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
 
 const best_games = ({ games }) => {
 	const sortedGames = games
@@ -42,6 +44,8 @@ const best_games = ({ games }) => {
 				<title>GameBox | Video Game Bucket List</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
+
+			<SectionHero /> 
 
 			<SectionHeaderText
 				headerText={" Top 100 Video Game Bucket List"}

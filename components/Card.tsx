@@ -30,7 +30,7 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 										position: "relative",
 										zIndex: 10,
 										background: "white",
-										scale: [1, 1.2, 1.1],
+										scale: [1, 1.02, 1.01],
 										transition: {
 											duration: 0.3,
 										},
