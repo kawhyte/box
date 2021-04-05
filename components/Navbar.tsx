@@ -73,7 +73,7 @@ export default function Navbar(props) {
 											" fas fa-crown text-lg leading-lg mr-2"
 										}
 									/>{" "}
-									Best trending games
+									Trending games in 2021
 								</a>
 							</motion.li></Link>
 

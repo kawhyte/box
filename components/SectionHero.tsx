@@ -21,8 +21,8 @@ const Hero: React.FC = () => {
 					</Head>
 
 					<main className='flex flex-col items-center justify-center flex-1 px-20 text-center'>
-						<h1 className='text-6xl uppercase gradient-text font-medium text-white max-w-xl tracking-wide'>
-							Best trending games
+						<h1 className='text-4xl sm:text-6xl uppercase gradient-text  font-extrabold text-white max-w-xl tracking-wide'>
+							Best trending games in 2021
 						</h1>
 						<h2 className='text-2xl text-gray-200 mt-4 mb-8'>
 							Video games you should be playing on each console.

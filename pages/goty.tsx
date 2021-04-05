@@ -2,7 +2,7 @@ import Head from "next/head";
 import axios from "axios";
 import Welcome from "../components/Welcome";
 import Categories from "../components/Categories";
-import Hero2 from "../components/Hero2";
+import SectionHero from "../components/SectionHero";
 import { gameObj } from "../data/data";
 import GOTYList from "../components/GotyList";
 import { motion } from "framer-motion";
@@ -55,7 +55,7 @@ const GOTY = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<Hero2 />
+			<SectionHero />
 			<Categories />
 			{gameObj.map((item, i) => (
 				<GOTYList games={sortedGames} gameDetails={item} key={i} />
