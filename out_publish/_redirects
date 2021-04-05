@@ -1,11 +1,11 @@
 # Next-on-Netlify Redirects
 /  /.netlify/functions/next_index  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/Etr5l9QuUAcd_2lDQzHZx/goty.json  /.netlify/functions/next_goty  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/Etr5l9QuUAcd_2lDQzHZx/index.json  /.netlify/functions/next_index  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/Etr5l9QuUAcd_2lDQzHZx/nintendo.json  /.netlify/functions/next_nintendo  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/Etr5l9QuUAcd_2lDQzHZx/playstation.json  /.netlify/functions/next_playstation  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/Etr5l9QuUAcd_2lDQzHZx/top.json  /.netlify/functions/next_top  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/Etr5l9QuUAcd_2lDQzHZx/xbox.json  /.netlify/functions/next_xbox  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/-X8PWZCs2K1fGCKNtEwyP/goty.json  /.netlify/functions/next_goty  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/-X8PWZCs2K1fGCKNtEwyP/index.json  /.netlify/functions/next_index  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/-X8PWZCs2K1fGCKNtEwyP/nintendo.json  /.netlify/functions/next_nintendo  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/-X8PWZCs2K1fGCKNtEwyP/playstation.json  /.netlify/functions/next_playstation  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/-X8PWZCs2K1fGCKNtEwyP/top.json  /.netlify/functions/next_top  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/-X8PWZCs2K1fGCKNtEwyP/xbox.json  /.netlify/functions/next_xbox  200!  Cookie=__prerender_bypass,__next_preview_data
 /api/createGamedata  /.netlify/functions/next_api_createGamedata  200
 /api/gamedata  /.netlify/functions/next_api_gamedata  200
 /api/hello  /.netlify/functions/next_api_hello  200
@@ -14,6 +14,6 @@
 /playstation  /.netlify/functions/next_playstation  200!  Cookie=__prerender_bypass,__next_preview_data
 /top  /.netlify/functions/next_top  200!  Cookie=__prerender_bypass,__next_preview_data
 /xbox  /.netlify/functions/next_xbox  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/Etr5l9QuUAcd_2lDQzHZx/games/:id.json  /.netlify/functions/next_games_id  200
+/_next/data/-X8PWZCs2K1fGCKNtEwyP/games/:id.json  /.netlify/functions/next_games_id  200
 /_next/image*  url=:url w=:width q=:quality  /.netlify/functions/next_image?url=:url&w=:width&q=:quality  200
 /games/:id  /.netlify/functions/next_games_id  200
