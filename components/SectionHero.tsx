@@ -3,7 +3,7 @@ import { animate, motion } from "framer-motion";
 import Link from "next/link";
 import Head from "next/head";
 
-const Hero: React.FC = () => {
+const Hero: React.FC<ISectionHeader> = ({headerText, paragraphText}) => {
 	return (
 		<>
 			<main className=''>
@@ -22,10 +22,10 @@ const Hero: React.FC = () => {
 
 					<main className='flex flex-col items-center justify-center flex-1 px-20 text-center'>
 						<h1 className='text-4xl sm:text-6xl uppercase gradient-text  font-extrabold text-white max-w-xl tracking-wide'>
-							Best trending games in 2021
+						{headerText}	
 						</h1>
 						<h2 className='text-2xl text-gray-200 mt-4 mb-8'>
-							Video games you should be playing on each console.
+							{paragraphText}
 						</h2>
 					</main>
 				</div>

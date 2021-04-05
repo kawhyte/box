@@ -55,7 +55,7 @@ const GOTY = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<SectionHero />
+			<SectionHero headerText={"test"} paragraphText = {"Para"}/>
 			<Categories />
 			{gameObj.map((item, i) => (
 				<GOTYList games={sortedGames} gameDetails={item} key={i} />

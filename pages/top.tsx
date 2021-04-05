@@ -45,14 +45,14 @@ const best_games = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<SectionHero /> 
+			<SectionHero headerText={"The Ultimate VIDEO GAME BUCKET LIST"} paragraphText = {"Highest rated video game of the decade. How many of these games have you played?"} /> 
 
-			<SectionHeaderText
+			 <SectionHeaderText
 				headerText={" Top 100 Video Game Bucket List"}
 				paragraphText={
 					"Highest rated video game of the decade. How many of these games have you played? "
 				}
-			/>
+			/> 
 
 			{/*snippets &&
 				snippets.map((snippet) => (
