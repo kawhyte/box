@@ -36,10 +36,10 @@ const best_games = ({ games }) => {
 	};
 
 	const { data: snippets, mutate } = useSWR("api/gamedata");
- console.log(todos)
+
 	return (
 		<UserProvider>
-		<div className='color-change-4x'>
+		<div className=''>
 			<Head>
 				<title>GameBox | Video Game Bucket List</title>
 				<link rel='icon' href='/favicon.ico' />
