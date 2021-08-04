@@ -11,36 +11,31 @@ const Hero: React.FC<IGame> = ({ games }) => {
 					style={{
 						minHeight: "43vh",
 					}}>
-				
 					<div className='flex h-screen justify-center overflow-hidden '>
 						<div className='absolute h-screen mx-auto justify-center flex flex-col items-center z-10 '>
 							<div className='justify-center flex flex-col items-center '>
 								<motion.div
 									className='text-6xl mb-4 hero text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl  '
 									initial='hidden'
-									animate='visible'
-								>
+									animate='visible'>
 									<p className='gradient-text py-1 px-1'>Video Game </p>
-									
-								<p className='text-4xl gradient-text text-center font-black  text-textwhite tracking-wider uppercase   sm:text-4xl md:text-5xl '>
-								Concierge
-								</p>
+
+									<p className='text-4xl gradient-text text-center font-black  text-textwhite tracking-wider uppercase   sm:text-4xl md:text-5xl '>
+										Concierge
+									</p>
 								</motion.div>
 							</div>
 							<p className='py-6  text-center text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
-								A collection of the top 100 games for each year.
+								A collection of the top Video Games each year.
 							</p>
 							<div className='flex flex-col md:flex-row p-3 '>
-			<Link href="/top"> 
-								<motion.button
-									whileHover={{ scale: 1.1 }}
-									whileTap={{ scale: 0.9 }}
-									className='uppercase main-button  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 font-bold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
-								
-									View games
-								</motion.button>
-
-								
+								<Link href='/video-game-concierge'>
+									<motion.button
+										whileHover={{ scale: 1.1 }}
+										whileTap={{ scale: 0.9 }}
+										className='uppercase main-button  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 font-bold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
+										View game Library
+									</motion.button>
 								</Link>
 							</div>
 						</div>

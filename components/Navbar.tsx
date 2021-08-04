@@ -53,7 +53,7 @@ export default function Navbar(props) {
 						}
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row list-none mr-auto '>
-							<Link href="/goty">
+							<Link href="/trending-video-games">
 							<motion.li
 								whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }}
@@ -76,8 +76,31 @@ export default function Navbar(props) {
 									Trending games in 2021
 								</a>
 							</motion.li></Link>
-
+							<Link href="/game-of-the-decade">
 							<motion.li
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }}
+								className='flex items-center'>
+								<a
+									className={
+										(props.transparent
+											? "lg:text-buttonYellow lg:hover:text-gray-300  text-gray-800"
+											: "text-gray-800  hover:text-gray-600") +
+										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
+									}>
+									<i
+										className={
+											(props.transparent
+												? "lg:text-buttonYellow  text-buttonYellow"
+												: "text-gray-500") +
+											" fas fa-crown text-md leading-lg mr-2"
+										}
+									/>{" "}
+									Best games of the decade (2010-2021)
+								</a>
+							</motion.li></Link>
+
+							{/*<motion.li
 								whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }}
 								className='flex items-center'>
@@ -98,9 +121,9 @@ export default function Navbar(props) {
 									/>{" "}
 									PlayStation
 								</a>
-							</motion.li>
+							</motion.li>*/}
 
-							<motion.li
+							{/*<motion.li
 								whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }}
 								className='flex items-center'>
@@ -121,9 +144,9 @@ export default function Navbar(props) {
 									/>{" "}
 									Nintendo
 								</a>
-							</motion.li>
+							</motion.li>*/}
 
-							<motion.li
+							{/*<motion.li
 								whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }}
 								className='flex items-center'>
@@ -144,7 +167,7 @@ export default function Navbar(props) {
 									/>{" "}
 									Xbox
 								</a>
-							</motion.li>
+									</motion.li>*/}
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
 							<li className='flex items-center'>

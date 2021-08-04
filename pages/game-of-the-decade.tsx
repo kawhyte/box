@@ -45,12 +45,12 @@ const best_games = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<SectionHero headerText={"The Ultimate VIDEO GAME BUCKET LIST"} paragraphText = {"100 games you should play before you die. How many of these games have you played?"} /> 
+			<SectionHero headerText={"The BEST VIDEO GAMES OF THE DECADE"} paragraphText = {"Video games you should play before you die."} /> 
 
 			 <SectionHeaderText
 				headerText={" Top 100 Video Game Bucket List"}
 				paragraphText={
-					"100 games you should play before you die. How many of these games have you played? "
+					"How many of these games have you played? "
 				}
 			/> 
 

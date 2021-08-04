@@ -55,7 +55,7 @@ const GOTY = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<SectionHero headerText={"test"} paragraphText = {"Para"}/>
+			<SectionHero headerText={"Trending Video Games"} paragraphText = {"Best Video Games of 2021 (so far)"}/>
 			<Categories />
 			{gameObj.map((item, i) => (
 				<GOTYList games={sortedGames} gameDetails={item} key={i} />
