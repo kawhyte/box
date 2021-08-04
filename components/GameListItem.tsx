@@ -6,7 +6,7 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 	const green = "lg:text-green-300 text-green-500   text-xl leading-lg  pr-2";
 	const gray = "lg:text-gray-300 text-red-500  text-xl leading-lg pr-2";
 	const red = "lg:text-red-700 text-red-800  text-xl leading-lg pr-2";
-	console.log("todo - news",todo)
+	
 	return (
 		<div className='py-4'>
 			<div className='relative '>

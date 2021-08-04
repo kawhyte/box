@@ -72,7 +72,7 @@ export const getStaticPaths = async () => {
 		limit 11; where first_release_date > 1577905941 & first_release_date < 1609528341 & platforms = {169,49,167,48,130} & rating > 60;`,
 	})
 		.then((response) => {
-			console.log("XXX", response.data)
+			
 			return response.data;
 		})
 		.catch((err) => {

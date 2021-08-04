@@ -54,7 +54,7 @@ export function getGamesByID(gameIds) {
 	};
 }
 export function getGamesByName(gameName) {
-	console.log("Testy", gameName)
+	
 	return async () => {
 		const games = await axios({
 			url: "https://api.igdb.com/v4/games",
@@ -70,7 +70,7 @@ export function getGamesByName(gameName) {
 		})
 			.then((response) => {
 
-				console.log("GameName ", response)
+				
 				return response.data;
 			})
 			.catch((err) => {

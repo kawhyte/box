@@ -5,7 +5,7 @@ import { useUser } from '@auth0/nextjs-auth0';
 
 export default function Snippet({ snippet }) {
     const { user } = useUser();
-    console.log(user, snippet);
+    
     return (
         <div className="bg-gray-100 p-4 rounded-md my-2 shadow-lg">
             <div className="flex items-center justify-between mb-2">

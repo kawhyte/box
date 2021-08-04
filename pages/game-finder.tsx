@@ -37,7 +37,7 @@ const nintendo: React.FC<IGameFull> = ({ games, startCountAt }) => {
 
 		// result.user => 'Ada Lovelace'
 	};
-	console.log("registerUser State ", state);
+	
 
 	const sortedGames = state
 		.sort((a, b) => {
