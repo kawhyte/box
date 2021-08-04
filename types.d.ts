@@ -142,6 +142,7 @@ type Todo = {
 		url: string
 	  }
 
+	follows:string
     
     complete: boolean
 }

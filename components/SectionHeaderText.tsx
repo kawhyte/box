@@ -9,9 +9,9 @@ const SectionHeaderText: React.FC<ISectionHeader> = ({headerText, paragraphText}
 				Trends
 			</h1>
 			<h1 className='pb-6 text-3xl font-black headings uppercase'>{headerText}</h1>
-			<p className=' py-2 text-xl font-light leading-relaxed mt-0 mb-6 '>
+			{/*<p className=' py-2 text-xl font-light leading-relaxed mt-0 mb-6 '>
 				{paragraphText}
-			</p>
+	</p>*/}
 		</div>
 	);
 };

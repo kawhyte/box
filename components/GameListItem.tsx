@@ -1,45 +1,29 @@
 import React from "react";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 	const green = "lg:text-green-300 text-green-500   text-xl leading-lg  pr-2";
 	const gray = "lg:text-gray-300 text-red-500  text-xl leading-lg pr-2";
 	const red = "lg:text-red-700 text-red-800  text-xl leading-lg pr-2";
-
+	console.log("todo - news",todo)
 	return (
 		<div className='py-4'>
-			<div className='relative ' >
+			<div className='relative '>
 				<div className='opacity-100 hover:opacity-100 duration-300 z-50 flex flex-col justify-between h-full   absolute  text-6xl text-gray-100  rounded-lg font-thin '>
-                    
-					
-					<p className="text-3xl px-4 py-4 z-50">	
-					
-					<button
-						onClick={() => toggleTodo(todo)}
-						className='outline-none  flex-auto'>
-						<i
-							onClick={() => toggleTodo(todo)}
-							className={
-								todo.complete
-									? red + " fas fa-heart" : gray + " fas fa-heart"
-							}
-						/>
-						<p className='py-1 text-sm'>10345</p>
-					</button>
-					
-					
+					<p className='text-3xl px-4 py-2 z-50'>
+						<span className='outline-none  flex-auto cursor-pointer'>
+							<i className={red + " fas fa-heart"} />
+							<p className='py-1 text-sm cursor-pointer'>{todo.follows}</p>
+						</span>
 					</p>
-					
-					<span
-								id='blackOverlay'
-								className='w-full h-20  mb-8 absolute opacity-60 bg-gray-900  '></span>
-					
-					
-				
-	</div>
 
-				<Link href={`/games/${todo.id}`} >
+					<span
+						id='blackOverlay'
+						className='w-full h-20  mb-8 absolute opacity-60 bg-gray-900  '></span>
+				</div>
+
+				<Link href={`/games/${todo.id}`}>
 					<motion.img
 						animate={{
 							y: 0,
@@ -66,7 +50,7 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 					/>
 				</Link>
 
-				<Link href={`/games/${todo.id}`} >
+				<Link href={`/games/${todo.id}`}>
 					<div className='grid place-items-center pt-4 cursor-pointer'>
 						<h2 className='text-blue-400 hover:text-blue-300 font-normal '>
 							{" "}
@@ -74,8 +58,6 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 						</h2>
 					</div>
 				</Link>
-
-				
 
 				{/* <div className='grid grid-2 place-items-center gap-2 pt-2 '>
 				<div className='flex flex-row justify-between  container '>
