@@ -4,9 +4,10 @@ import { GetStaticProps } from "next";
 import React from "react";
 import { GamesoftheYear2020 } from "../data/gameIDs";
 import useSWR from "swr";
-import { getGamesByID } from "../util/getGames";
+import { getGamesByID, getGames } from "../util/getGames";
 
-export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
+//export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
+export const getStaticProps:GetStaticProps = getGames("(167,48,130,169,49)");
 
 const Home = ({ games }) => {
 

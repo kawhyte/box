@@ -23,6 +23,7 @@ export function getGames(platform) {
 
 		return {
 			props: { games },
+			//revalidate: 1
 		};
 	};
 }

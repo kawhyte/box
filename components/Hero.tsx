@@ -2,7 +2,14 @@ import React from "react";
 import { animate, motion } from "framer-motion";
 import Link from "next/link";
 
-const Hero: React.FC<IGame> = ({ games }) => {
+const Hero: React.FC<IGameFull> = ({ games }) => {
+	const sortedGames = games
+	.sort((a, b) => {
+		return b.total_rating - a.total_rating;
+	})
+	.sort((a, b) => {
+		return b.rating_count - a.rating_count;
+	});
 	return (
 		<>
 			<main className=''>
@@ -44,7 +51,7 @@ const Hero: React.FC<IGame> = ({ games }) => {
 
 
 						<motion.div className='relative w-screen grid grid-cols-3 sm:grid-col-3 md:grid-cols-4 lg:grid-cols-5  lg:gap-2 rotate-90 overflow-hidden'>
-							{games.slice(0, 24).map((game) => (
+							{sortedGames.slice(0, 24).map((game) => (
 								<div className='' key={game.id}>
 									<motion.img
 										initial={{ rotateY: 180, opacity: 0 }}
