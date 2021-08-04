@@ -1,12 +1,13 @@
 // next.config.js
 
-module.exports = {
+module.exports = { 
+  target: "serverless",
   images: {
     domains: ['images.igdb.com'],
   },
   
-    // Target must be serverless
-    target: "serverless",
+ 
+   
 
 
   };

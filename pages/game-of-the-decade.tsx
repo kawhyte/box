@@ -4,7 +4,6 @@ import GameList from "../components/GameList";
 import SectionHeaderText from "../components/SectionHeaderText";
 import SectionHero from "../components/SectionHero";
 import useSWR from "swr";
-import Snippet from "../components/Snippet";
 import { UserProvider } from "@auth0/nextjs-auth0";
 import { GetStaticProps } from "next";
 import { GamesoftheYear2020 } from "../data/gameIDs";
