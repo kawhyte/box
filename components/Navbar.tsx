@@ -100,89 +100,25 @@ export default function Navbar(props) {
 								</a>
 							</motion.li></Link>
 
-							{/*<motion.li
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.9 }}
-								className='flex items-center'>
-								<a
-									className={
-										(props.transparent
-											? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
-											: "text-gray-800  hover:text-gray-600") +
-										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
-									}>
-									<i
-										className={
-											(props.transparent
-												? "lg:text-gray-300 text-gray-500"
-												: "text-gray-500") +
-											" fab fa-playstation text-lg leading-lg mr-2"
-										}
-									/>{" "}
-									PlayStation
-								</a>
-							</motion.li>*/}
-
-							{/*<motion.li
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.9 }}
-								className='flex items-center'>
-								<a
-									className={
-										(props.transparent
-											? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
-											: "text-gray-800  hover:text-gray-600") +
-										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
-									}>
-									<i
-										className={
-											(props.transparent
-												? "lg:text-gray-300 text-gray-500"
-												: "text-gray-500") +
-											" fas fa-gamepad text-lg leading-lg mr-2"
-										}
-									/>{" "}
-									Nintendo
-								</a>
-							</motion.li>*/}
-
-							{/*<motion.li
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.9 }}
-								className='flex items-center'>
-								<a
-									className={
-										(props.transparent
-											? "lg:text-textwhite lg:hover:text-gray-300  text-gray-800"
-											: "text-gray-800  hover:text-gray-600") +
-										" px-3 py-4  cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
-									}>
-									<i
-										className={
-											(props.transparent
-												? "lg:text-gray-300 text-gray-500"
-												: "text-gray-500") +
-											" fab fa-xbox text-lg leading-lg mr-2"
-										}
-									/>{" "}
-									Xbox
-								</a>
-									</motion.li>*/}
+							
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
-							<li className='flex items-center'>
-								<button
+						<Link href="/game-of-the-decade">
+							<motion.li
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }}
+								className='flex items-center'>
+								<a
 									className={
 										(props.transparent
-											? "bg-white text-gray-800 active:bg-gray-100"
-											: "bg-pink-500 text-white active:bg-pink-600") +
-										" text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
-									}
-									type='button'
-									style={{ transition: "all .15s ease" }}>
-									About
-								</button>
-							</li>
+											? "lg:text-gray-100 lg:hover:text-gray-300  text-gray-800"
+											: "text-gray-800  hover:text-gray-600") +
+										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
+									}>
+							
+									About 
+								</a>
+							</motion.li></Link>
 						</ul>
 					</div>
 				</div>
