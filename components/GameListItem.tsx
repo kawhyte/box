@@ -10,18 +10,34 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 	return (
 		<div className='py-4'>
 			<div className='relative ' >
-				{/*<div className='opacity-0 hover:opacity-100 duration-300 z-50 flex flex-col justify-between h-full  w-full  absolute  text-6xl text-gray-100  rounded-lg font-thin '>
+				<div className='opacity-100 hover:opacity-100 duration-300 z-50 flex flex-col justify-between h-full   absolute  text-6xl text-gray-100  rounded-lg font-thin '>
                     
 					
-					<p className="text-base px-4 py-4 z-50">Click for <span className="font-semibold">{todo.name} </span> details </p>
+					<p className="text-3xl px-4 py-4 z-50">	
+					
+					<button
+						onClick={() => toggleTodo(todo)}
+						className='outline-none  flex-auto'>
+						<i
+							onClick={() => toggleTodo(todo)}
+							className={
+								todo.complete
+									? red + " fas fa-heart" : gray + " fas fa-heart"
+							}
+						/>
+						<p className='py-1 text-sm'>10345</p>
+					</button>
+					
+					
+					</p>
 					
 					<span
 								id='blackOverlay'
-								className='w-full h-20  mb-8 absolute  opacity-80 bg-gray-900  '></span>
+								className='w-full h-20  mb-8 absolute opacity-60 bg-gray-900  '></span>
 					
 					
 				
-	</div>*/}
+	</div>
 
 				<Link href={`/games/${todo.id}`} >
 					<motion.img
