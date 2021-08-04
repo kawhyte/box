@@ -10,6 +10,7 @@ import { getGamesByID } from "../util/getGames";
 export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
 
 const Home = ({ games }) => {
+	console.log("GAMES- 1", games)
 	return (
 		<>
 			<Head>

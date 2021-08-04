@@ -43,7 +43,6 @@ const Hero: React.FC<IGame> = ({ games }) => {
 
 
 
-
 						<motion.div className='relative w-screen grid grid-cols-3 sm:grid-col-3 md:grid-cols-4 lg:grid-cols-5  lg:gap-2 rotate-90 overflow-hidden'>
 							{games.slice(0, 24).map((game) => (
 								<div className='' key={game.id}>

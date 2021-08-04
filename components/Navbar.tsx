@@ -103,22 +103,23 @@ export default function Navbar(props) {
 							
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
-						<Link href="/game-of-the-decade">
+						
 							<motion.li
 								whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }}
 								className='flex items-center'>
-								<a
+								<a href="https://www.kennywhyte.com/" 
+								rel="noreferrer noopener" target="_blank"
 									className={
 										(props.transparent
 											? "lg:text-gray-100 lg:hover:text-gray-300  text-gray-800"
 											: "text-gray-800  hover:text-gray-600") +
-										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
+										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold bg-grey-900"
 									}>
 							
-									About 
+									Made by Kenny 
 								</a>
-							</motion.li></Link>
+							</motion.li>
 						</ul>
 					</div>
 				</div>
