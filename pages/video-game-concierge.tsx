@@ -51,10 +51,10 @@ const best_games = ({ games }) => {
 <section className="text-gray-600 body-font mt-20">
   <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Video Game Concierge
-        <br className="hidden lg:inline-block" />How many of these games have you played?
+      <h1 className="title-font  sm:text-5xl text-5xl mb-4 text-gray-900 headings uppercase font-black">Video Game 
+        <br className="hidden lg:inline-block" /> Concierge
       </h1>
-      <p className="mb-8 leading-relaxed">Mix and match the filters and the years to explore the best Video Games for each year. </p>
+      <p className="my-8 leading-relaxed">Mix and match the filters and the years to explore the best Video Games for each year. How many of these games have you played? </p>
       <div className="flex justify-center">
         <button className="inline-flex text-gray-100 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">2020</button>
         <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">2019</button>
@@ -69,13 +69,7 @@ const best_games = ({ games }) => {
 
 
 
-			 <SectionHeaderText
-				headerText={" Top 100 Video Game Bucket List"}
-				paragraphText={
-					"How many of these games have you played? "
-				}
-			/> 
-
+	
 		
 
 			<GameList todos={todos} toggleTodo={toggleTodo} />

@@ -26,21 +26,25 @@ const Hero: React.FC<IGame> = ({ games }) => {
 								</motion.div>
 							</div>
 							<p className='py-6  text-center text-textwhite  font-light leading-relaxed mt-0 mb-4 md:text-2xl'>
-								A collection of the top Video Games each year.
+								A collection of the top video games each year.
 							</p>
 							<div className='flex flex-col md:flex-row p-3 '>
 								<Link href='/video-game-concierge'>
-									<motion.button
-										whileHover={{ scale: 1.1 }}
-										whileTap={{ scale: 0.9 }}
+									<button
+										
 										className='uppercase main-button  mx-1 text-base tracking-wide px-8 py-3 rounded bg-indigo-600 font-bold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
 										View game Library
-									</motion.button>
+									</button>
+
+									
 								</Link>
 							</div>
 						</div>
 
-						<motion.div className='relative w-screen grid grid-cols-3 sm:grid-col-3 md:grid-cols-4 lg:grid-cols-5  lg:gap-2 overflow-hidden'>
+
+
+
+						<motion.div className='relative w-screen grid grid-cols-3 sm:grid-col-3 md:grid-cols-4 lg:grid-cols-5  lg:gap-2 rotate-90 overflow-hidden'>
 							{games.slice(0, 24).map((game) => (
 								<div className='' key={game.id}>
 									<motion.img
