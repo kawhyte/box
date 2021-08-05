@@ -58,13 +58,13 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 							{sortedGames.map((game) => (
 								<div className='opacity-25 bg-bgcolor' key={game.id}>
 									<motion.img
-										initial={{ rotateY: 180, opacity: 0 }}
-										animate={{ rotateY: 0, opacity: 1, scale: [1, 1.07, 1]}}
+										initial={{ rotateY: 180, opacity: 1 }}
+										animate={{ rotateY: 0, scale: [1, 1.03, 1]}}
+										
 										whileHover={{
 											position: "relative",
 											zIndex: 10,
-											
-											scale: [1, 1.07, 1],
+											scale: [1, 1.04, 1],
 											transition: { 
 												duration: 0.3
 											},

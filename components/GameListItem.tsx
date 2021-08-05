@@ -6,47 +6,10 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 	const green = "lg:text-green-300 text-green-500   text-xl leading-lg  pr-2";
 	const gray = "lg:text-gray-300 text-red-500  text-xl leading-lg pr-2";
 	const red = "lg:text-red-700 text-red-800  text-xl leading-lg pr-2";
-	
+
 	return (
 		<div className='py-4'>
 			<div className='relative '>
-				<div 
-					
-				
-				className='opacity-100 hover:opacity-100 duration-300 z-50 flex flex-col justify-between h-full   absolute  text-6xl text-gray-100  rounded-lg font-thin '>
-					<motion.p 
-					
-					animate={{
-						y: 0,
-						opacity: 1,
-						transition: {
-							duration: 0.6,
-							ease: [0.6, -0.05, 0.01, 0.99],
-						},
-					}}
-				whileTap={{ scale: 1 }}
-				whileHover={{
-					
-					zIndex: 10,
-					
-					scale: [1, 1.2, 1.1],
-					transition: {
-						duration: 0.3,
-					},
-				}}
-					
-					className='text-3xl px-4 py-2 z-50'>
-						<span className='outline-none  flex-auto cursor-pointer'>
-							<i className={red + " fas fa-heart"} />
-							<p className='py-1 text-sm cursor-pointer'>{todo.follows}</p>
-						</span>
-					</motion.p>
-
-					<span
-						id='blackOverlay'
-						className='w-full h-20  mb-8 absolute opacity-60 bg-gray-900  '></span>
-				</div>
-
 				<Link href={`/games/${todo.id}`}>
 					<motion.img
 						animate={{
@@ -57,31 +20,56 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 								ease: [0.6, -0.05, 0.01, 0.99],
 							},
 						}}
-						initial={{ y: 0, opacity: 0 }}
-						whileTap={{ scale: 1 }}
+						initial={{ y: 60, opacity: 0 }}
+						whileTap={{scale:1}}
 						whileHover={{
 							position: "relative",
 							zIndex: 10,
 							background: "white",
-							scale: [1, 1, 1],
+							scale: [1, 1.02, 1.01],
 							transition: {
 								duration: 0.3,
 							},
 						}}
-						className='w-full relative  col-span-2 cursor-pointer block rounded  hover:bg-blue-100 duration-300 '
+						className='w-full relative  col-span-2  block   hover:bg-blue-100 duration-300 shadow-lg rounded p-1 max-w-sm cursor-pointer'
 						src={todo?.cover.url.replace("t_thumb", "t_cover_big")}
 						alt={todo.name}
 					/>
 				</Link>
 
-				<Link href={`/games/${todo.id}`}>
-					<div className='grid place-items-center pt-4 cursor-pointer'>
+				<div className='flex flex-row justify-between pt-4 cursor-pointer'>
+					<Link href={`/games/${todo.id}`}>
 						<h2 className='text-blue-400 hover:text-blue-300 font-normal '>
 							{" "}
 							{todo.name}
 						</h2>
-					</div>
-				</Link>
+					</Link>
+
+					<motion.p
+						animate={{
+							y: 0,
+							opacity: 1,
+							transition: {
+								duration: 0.6,
+								ease: [0.6, -0.05, 0.01, 0.99],
+							},
+						}}
+						whileTap={{ scale: 1 }}
+						whileHover={{
+							zIndex: 10,
+
+							scale: [1, 1.2, 1.1],
+							transition: {
+								duration: 0.3,
+							},
+						}}
+						className='text-3xl px-1 z-50'>
+						<span className='outline-none  flex justify-between cursor-pointer ml-2'>
+							<i className={red + " fas fa-heart"} />
+							<p className='py-1 text-sm cursor-pointer'>{todo.follows}</p>
+						</span>
+					</motion.p>
+				</div>
 
 				{/* <div className='grid grid-2 place-items-center gap-2 pt-2 '>
 				<div className='flex flex-row justify-between  container '>
