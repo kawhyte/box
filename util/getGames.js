@@ -23,7 +23,7 @@ export function getGames(platform) {
 
 		return {
 			props: { games },
-			//revalidate: 1
+			revalidate: 1
 		};
 	};
 }
@@ -51,6 +51,7 @@ export function getGamesByID(gameIds) {
 
 		return {
 			props: { games },
+			revalidate: 1
 		};
 	};
 }
