@@ -50,14 +50,14 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 
 
 
-						<motion.div className='relative w-screen grid grid-cols-3 sm:grid-col-3 md:grid-cols-4 lg:grid-cols-5  lg:gap-2 rotate-90 overflow-hidden'>
-							{sortedGames.slice(0, 24).map((game) => (
+						<motion.div className='relative w-screen grid gap-3 md:gap-6  grid-cols-3 sm:grid-col-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 lg:gap-4 rotate-90 overflow-hidden'>
+							{sortedGames.map((game) => (
 								<div className='' key={game.id}>
 									<motion.img
 										initial={{ rotateY: 180, opacity: 0 }}
 										animate={{ rotateY: 0, opacity: 1 }}
 										transition={{ delay: 0.3 }}
-										className='w-full col-span-2  block rounded'
+										className='w-full col-span-2  block rounded-2xl'
 										src={game?.cover.url.replace("t_thumb", "t_cover_big")}
 										alt={game.name}
 									/>
@@ -66,7 +66,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 
 							<span
 								id='blackOverlay'
-								className='w-full h-screen absolute  opacity-80 bg-gray-900  '></span>
+								className='w-full h-screen absolute  opacity-75 bg-bgcolor  '></span>
 						</motion.div>
 					</div>
 

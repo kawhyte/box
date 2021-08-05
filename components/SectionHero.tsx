@@ -27,6 +27,8 @@ const Hero: React.FC<ISectionHeader> = ({headerText, paragraphText}) => {
 						<h2 className='text-2xl text-gray-200 mt-4 mb-8'>
 							{paragraphText}
 						</h2>
+
+						
 					</main>
 				</div>
 			</main>
