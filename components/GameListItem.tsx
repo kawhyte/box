@@ -21,7 +21,7 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 							},
 						}}
 						initial={{ y: 60, opacity: 0 }}
-						whileTap={{scale:1}}
+						whileTap={{ scale: 1 }}
 						whileHover={{
 							position: "relative",
 							zIndex: 10,
@@ -45,30 +45,33 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 						</h2>
 					</Link>
 
-					<motion.p
-						animate={{
-							y: 0,
-							opacity: 1,
-							transition: {
-								duration: 0.6,
-								ease: [0.6, -0.05, 0.01, 0.99],
-							},
-						}}
-						whileTap={{ scale: 1 }}
-						whileHover={{
-							zIndex: 10,
-
-							scale: [1, 1.2, 1.1],
-							transition: {
-								duration: 0.3,
-							},
-						}}
-						className='text-3xl px-1 z-50'>
+					<p className='text-3xl px-1 z-50'>
 						<span className='outline-none  flex justify-between cursor-pointer ml-2'>
-							<i className={red + " fas fa-heart"} />
+							<motion.i
+								animate={{
+									y: 0,
+									opacity: 1,
+									transition: {
+										duration: 0.6,
+										ease: [0.6, -0.05, 0.01, 0.99],
+									},
+								}}
+								whileTap={{ scale: 1 }}
+								whileHover={{
+									zIndex: 10,
+
+									scale: [1, 1.2, 1.1],
+									transition: {
+										ease: "linear",
+										repeat: Infinity,
+										duration: 0.9,
+									},
+								}}
+								className={red + " fas fa-heart"}
+							/>
 							<p className='py-1 text-sm cursor-pointer'>{todo.follows}</p>
 						</span>
-					</motion.p>
+					</p>
 				</div>
 
 				{/* <div className='grid grid-2 place-items-center gap-2 pt-2 '>

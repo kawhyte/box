@@ -53,71 +53,72 @@ export default function Navbar(props) {
 						}
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row list-none mr-auto '>
-							<Link href="/trending-video-games">
-							<motion.li
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.9 }}
-								className='flex items-center'>
-								<a
-									className={
-										(props.transparent
-											? "lg:text-buttonYellow lg:hover:text-gray-300  text-gray-800"
-											: "text-gray-800  hover:text-gray-600") +
-										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
-									}>
-									<i
+							<Link href='/game-of-the-decade'>
+								<motion.li
+									whileHover={{ scale: 1.1 }}
+									whileTap={{ scale: 0.9 }}
+									className='flex items-center'>
+									<a
 										className={
 											(props.transparent
-												? "lg:text-buttonYellow  text-buttonYellow"
-												: "text-gray-500") +
-											" fas fa-crown text-md leading-lg mr-2"
-										}
-									/>{" "}
-									Trending games in 2021
-								</a>
-							</motion.li></Link>
-							<Link href="/game-of-the-decade">
-							<motion.li
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.9 }}
-								className='flex items-center'>
-								<a
-									className={
-										(props.transparent
-											? "lg:text-buttonYellow lg:hover:text-gray-300  text-gray-800"
-											: "text-gray-800  hover:text-gray-600") +
-										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
-									}>
-									<i
-										className={
-											(props.transparent
-												? "lg:text-buttonYellow  text-buttonYellow"
-												: "text-gray-500") +
-											" fas fa-crown text-md leading-lg mr-2"
-										}
-									/>{" "}
-									Best games of the decade (2010-2021)
-								</a>
-							</motion.li></Link>
+												? "lg:text-buttonYellow lg:hover:text-gray-300  text-gray-800"
+												: "text-gray-800  hover:text-gray-600") +
+											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
+										}>
+										<i
+											className={
+												(props.transparent
+													? "lg:text-buttonYellow  text-buttonYellow"
+													: "text-gray-500") +
+												" fas fa-crown text-md leading-lg mr-2"
+											}
+										/>{" "}
+										Best games of the decade (2010-2021)
+									</a>
+								</motion.li>
+							</Link>
 
-							
+							<Link href='/trending-video-games'>
+								<motion.li
+									whileHover={{ scale: 1.1 }}
+									whileTap={{ scale: 0.9 }}
+									className='flex items-center'>
+									<a
+										className={
+											(props.transparent
+												? "lg:text-buttonYellow lg:hover:text-gray-300  text-gray-800"
+												: "text-gray-800  hover:text-gray-600") +
+											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
+										}>
+										<i
+											className={
+												(props.transparent
+													? "lg:text-buttonYellow  text-buttonYellow"
+													: "text-gray-500") +
+												" fas fa-crown text-md leading-lg mr-2"
+											}
+										/>{" "}
+										Trending games in 2021
+									</a>
+								</motion.li>
+							</Link>
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
-						
 							<motion.li
 								whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }}
 								className='flex items-center'>
-								<a href="https://www.kennywhyte.com/" 
-								rel="noreferrer noopener" target="_blank"
+								<a
+									href='https://www.kennywhyte.com/'
+									rel='noreferrer noopener'
+									target='_blank'
 									className={
 										(props.transparent
 											? "lg:text-gray-100 lg:hover:text-gray-300  text-gray-800"
 											: "text-gray-800  hover:text-gray-600") +
 										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold bg-grey-900"
 									}>
-							
-									Made by Kenny 
+									Made by Kenny
 								</a>
 							</motion.li>
 						</ul>
