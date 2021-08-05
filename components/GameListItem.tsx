@@ -10,13 +10,37 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 	return (
 		<div className='py-4'>
 			<div className='relative '>
-				<div className='opacity-100 hover:opacity-100 duration-300 z-50 flex flex-col justify-between h-full   absolute  text-6xl text-gray-100  rounded-lg font-thin '>
-					<p className='text-3xl px-4 py-2 z-50'>
+				<div 
+					
+				
+				className='opacity-100 hover:opacity-100 duration-300 z-50 flex flex-col justify-between h-full   absolute  text-6xl text-gray-100  rounded-lg font-thin '>
+					<motion.p 
+					
+					animate={{
+						y: 0,
+						opacity: 1,
+						transition: {
+							duration: 0.6,
+							ease: [0.6, -0.05, 0.01, 0.99],
+						},
+					}}
+				whileTap={{ scale: 1 }}
+				whileHover={{
+					
+					zIndex: 10,
+					
+					scale: [1, 1.2, 1.1],
+					transition: {
+						duration: 0.3,
+					},
+				}}
+					
+					className='text-3xl px-4 py-2 z-50'>
 						<span className='outline-none  flex-auto cursor-pointer'>
 							<i className={red + " fas fa-heart"} />
 							<p className='py-1 text-sm cursor-pointer'>{todo.follows}</p>
 						</span>
-					</p>
+					</motion.p>
 
 					<span
 						id='blackOverlay'
@@ -39,12 +63,12 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 							position: "relative",
 							zIndex: 10,
 							background: "white",
-							scale: [1, 1.2, 1.01],
+							scale: [1, 1, 1],
 							transition: {
 								duration: 0.3,
 							},
 						}}
-						className='w-full col-span-2 cursor-pointer block rounded opacity-0 hover:bg-blue-100 duration-300 '
+						className='w-full relative  col-span-2 cursor-pointer block rounded  hover:bg-blue-100 duration-300 '
 						src={todo?.cover.url.replace("t_thumb", "t_cover_big")}
 						alt={todo.name}
 					/>
