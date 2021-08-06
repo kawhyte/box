@@ -52,12 +52,12 @@ export default function Navbar(props) {
 							(navbarOpen ? " block rounded shadow-lg bg-gray-300" : " hidden")
 						}
 						id='example-navbar-warning'>
-						<ul className='flex flex-col lg:flex-row list-none mr-auto drop-shadow-2xl filter'>
+						<ul className='flex flex-col lg:flex-row justify-between list-none mr-auto drop-shadow-2xl filter'>
 							<Link href='/game-of-the-decade'>
 								<motion.li
 									whileHover={{ scale: 1.1 }}
 									whileTap={{ scale: 0.9 }}
-									className='flex items-center '>
+									className='flex items-center pr-6 '>
 									<a
 										className={
 											(props.transparent
@@ -80,9 +80,9 @@ export default function Navbar(props) {
 
 							<Link href='/trending-video-games'>
 								<motion.li
-									whileHover={{ scale: 1.1 }}
+									whileHover={{ scale: 1.07 }}
 									whileTap={{ scale: 0.9 }}
-									className='flex items-center'>
+									className='flex items-center '>
 									<a
 										className={
 											(props.transparent
