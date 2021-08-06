@@ -4,7 +4,7 @@ import GameList from "../components/GameList";
 import useSWR from "swr";
 import { GetStaticProps } from "next";
 import { GamesoftheYear2020 } from "../data/gameIDs";
-import { getGamesByID } from "../util/getGames";
+import { filterByConsole, getGamesByID } from "../util/getGames";
 
 export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
 
@@ -18,6 +18,12 @@ const best_games = ({ games }) => {
 		});
 
 	const [todos, setTodos] = useState(sortedGames);
+
+	const handleFilter = (todos, num, val) => {
+		const test = filterByConsole(todos, num, val);
+		console.log("TEST", test);
+		setTodos(test);
+	};
 
 	const toggleTodo: ToggleTodo = (selectedTodo) => {
 		const newTodos = todos.map((todo) => {
@@ -47,19 +53,60 @@ const best_games = ({ games }) => {
 							<br className='hidden lg:inline-block' /> Concierge
 						</h1>
 						<p className='my-8 leading-relaxed'>
-							Mix and match the filters and the years to explore the best Video
+							Mix and match the console filters and the years to explore the best Video
 							Games for each year. How many of these games have you played?{" "}
 						</p>
-						{/*<div className='flex justify-center'>
-							<button className='inline-flex text-gray-100 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg'>
+						<div className='flex justify-center'>
+							<button
+								
+								className='inline-flex text-gray-100 bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg'>
 								2020
 							</button>
-							<button className='ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg'>
+							{/*	<button className='ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg'>
 								2019
-							</button>
-	</div>*/}
+							</button>*/}
+						</div>
 					</div>
-					<div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'></div>
+					<div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'>
+						<div className='w-full mx-auto py-16'>
+							<>
+								<h1 className='text-3xl text-center font-semibold mb-6'>
+									Filter by Console
+								</h1>
+
+								<div className='bg-white px-6 py-4 my-3 w-3/4 mx-auto shadow rounded-md flex items-center'>
+									<div className='w-full text-center mx-auto'>
+										<button
+											type='button'
+											onClick={() => handleFilter(sortedGames, 48, null)}
+											className='border border-indigo-500 text-indigo-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-indigo-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+											Playstation  
+										</button>
+										<button
+											type='button'
+											onClick={() => handleFilter(sortedGames, 49, null)}
+											className='border border-green-500 text-green-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-green-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+											Xbox
+										</button>
+
+										<button
+											type='button'
+											onClick={() => handleFilter(sortedGames, 130, null)}
+											className='border border-red-500 text-red-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-red-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+											Nintendo
+										</button>
+
+										<button
+											type='button'
+											onClick={() => handleFilter(sortedGames, 6, null)}
+											className='border border-gray-300 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+											PC
+										</button>
+									</div>
+								</div>
+							</>
+						</div>
+					</div>
 				</div>
 			</section>
 

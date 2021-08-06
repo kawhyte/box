@@ -93,6 +93,8 @@ export function filterByConsole(sortedGames, gameId, gameId2) {
 				found = true;
 			}
 		});
+
+		//console.log("Look what I found",found)
 		return found;
 	});
 }
