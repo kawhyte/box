@@ -54,30 +54,38 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 				</p>*/}
 								</motion.div>
 							</div>
-							<p className='py-6  text-center text-gray-300 text-xl   leading-relaxed mt-0 mb-4 md:text-3xl'>
+							<p className='py-6  text-center text-gray-300 text-xl lg:mx-48  leading-relaxed mt-0 mb-4 md:text-3xl'>
 								Choose{" "}
-								<span className='text-yellow-500'>Recommend a Game </span> and
-								let we will find a game for you or view the{" "}
-								<span className='text-green-500'>Game Concierge </span> with a
+								<span className='text-yellow-500 font-bold'>
+									Recommend a Game{" "}
+								</span>{" "}
+								and let we will find a game for you or view the{" "}
+								<span className='text-green-500 '>Game Concierge </span> with a
 								collection of the top video games each year.
 							</p>
 							<div className='flex flex-col md:flex-row p-3 '>
 								<div className='flex align-middle items-center '>
-									<button className='uppercase py-2 px-4 mx-1 text-base tracking-wide sm:mr-12 sm:px-8 sm:py-3 rounded bg-yellow-500 font-bold text-bgcolor max-w-max shadow-sm hover:shadow-lg'>
+									<motion.button
+										whileHover={{ scale: 1.1 }}
+										whileTap={{ scale: 0.9 }}
+										className='uppercase py-2 px-4 mx-1 text-base tracking-wide sm:mr-12 sm:px-8 sm:py-3 rounded bg-yellow-500 font-bold text-bgcolor max-w-max shadow-sm hover:shadow-lg'>
 										<i className={"  fas fa-random text-md  leading-lg mr-4"} />
 										Recommend a Game
-									</button>
+									</motion.button>
 
 									<Link href='/video-game-concierge'>
-										<button className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-green-600 font-bold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
+										<motion.button
+											whileHover={{ scale: 1.1 }}
+											whileTap={{ scale: 0.9 }}
+											className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-green-600 font-bold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
 											Game CONCIERGE
-										</button>
+										</motion.button>
 									</Link>
 								</div>
 							</div>
 						</div>
 
-						<motion.div className='relative bg-blend-multiply w-screen grid gap-3 md:gap-6  grid-cols-3 sm:grid-col-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 lg:gap-4 rotate-90 overflow-hidden'>
+						<div className='relative bg-blend-multiply w-screen grid gap-3 md:gap-6  grid-cols-3 sm:grid-col-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 lg:gap-4 rotate-90 overflow-hidden'>
 							{sortedGames.map((game) => (
 								<div className=' opacity-20 bg-bgcolor' key={game.id}>
 									<motion.img
@@ -98,7 +106,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 									/>
 								</div>
 							))}
-						</motion.div>
+						</div>
 					</div>
 
 					<div
