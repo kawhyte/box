@@ -38,7 +38,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 									animate='visible'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
-										className='h-48 w-48 mb-10 fill-current text-textwhite gradent-text  '
+										className=' h-40 w-40 mb-10 fill-current text-textwhite gradent-text  '
 										width='24'
 										height='24'
 										viewBox='0 0 24 24'>
