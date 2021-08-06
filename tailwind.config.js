@@ -22,7 +22,7 @@ module.exports = {
       current: 'currentColor',
       buttonYellow:'#ffd374',
 
-      bgcolor: '#060D17',
+      bgcolor: '#14181D',
       offblack: '#212830',
       
       textwhite: '#FFFFFF',

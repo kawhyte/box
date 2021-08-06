@@ -52,25 +52,25 @@ export default function Navbar(props) {
 							(navbarOpen ? " block rounded shadow-lg bg-gray-300" : " hidden")
 						}
 						id='example-navbar-warning'>
-						<ul className='flex flex-col lg:flex-row list-none mr-auto '>
+						<ul className='flex flex-col lg:flex-row list-none mr-auto drop-shadow-2xl filter'>
 							<Link href='/game-of-the-decade'>
 								<motion.li
 									whileHover={{ scale: 1.1 }}
 									whileTap={{ scale: 0.9 }}
-									className='flex items-center'>
+									className='flex items-center '>
 									<a
 										className={
 											(props.transparent
-												? "lg:text-buttonYellow lg:hover:text-gray-300  text-gray-800"
-												: "text-gray-800  hover:text-gray-600") +
-											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
+												? "lg:text-gray-100  lg:hover:text-gray-300  text-gray-100"
+												: "text-gray-100  hover:text-gray-600") +
+											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold"
 										}>
 										<i
 											className={
 												(props.transparent
 													? "lg:text-buttonYellow  text-buttonYellow"
 													: "text-gray-500") +
-												" fas fa-crown text-md leading-lg mr-2"
+												" fas fa-crown text-base leading-lg mr-2"
 											}
 										/>{" "}
 										Best games of the decade (2010-2021)
@@ -86,16 +86,17 @@ export default function Navbar(props) {
 									<a
 										className={
 											(props.transparent
-												? "lg:text-buttonYellow lg:hover:text-gray-300  text-gray-800"
+												? "lg:text-gray-100 lg:hover:text-gray-300  text-gray-800"
 												: "text-gray-800  hover:text-gray-600") +
-											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold"
+											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold"
 										}>
+											
 										<i
 											className={
 												(props.transparent
-													? "lg:text-buttonYellow  text-buttonYellow"
+													? "lg:text-green-500  text-buttonYellow"
 													: "text-gray-500") +
-												" fas fa-crown text-md leading-lg mr-2"
+												" fas fa-chart-line text-md  leading-lg mr-2"
 											}
 										/>{" "}
 										Trending games in 2021
@@ -116,7 +117,7 @@ export default function Navbar(props) {
 										(props.transparent
 											? "lg:text-gray-100 lg:hover:text-gray-300  text-gray-800"
 											: "text-gray-800  hover:text-gray-600") +
-										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-xs uppercase font-bold bg-grey-900"
+										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold bg-grey-900"
 									}>
 									Made by Kenny
 								</a>

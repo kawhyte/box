@@ -68,38 +68,74 @@ const best_games = ({ games }) => {
 						</div>
 					</div>
 					<div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'>
-						<div className='w-full mx-auto py-16'>
+						<div className='w-full mx-auto py-16 '>
 							<>
 								<h1 className='text-3xl text-center font-semibold mb-6'>
 									Filter by Console
 								</h1>
 
-								<div className='bg-white px-6 py-4 my-3 w-3/4 mx-auto shadow rounded-md flex items-center'>
+								<div className='bg-white px-6 py-4 my-3 w-3/4 mx-auto shadow rounded-md flex items-center bg-gray-900'>
 									<div className='w-full text-center mx-auto'>
+
+
+
+
+										
+
+										<div>
+									
 										<button
 											type='button'
 											onClick={() => handleFilter(sortedGames, 48, null)}
 											className='border border-indigo-500 text-indigo-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-indigo-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+											
+											
+											<i
+											className={
+												 "fab fa-playstation text-md  leading-lg mr-2"
+											}
+										/>
 											Playstation  
-										</button>
+										</button> 
+										
+										</div>
+										
 										<button
 											type='button'
 											onClick={() => handleFilter(sortedGames, 49, null)}
 											className='border border-green-500 text-green-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-green-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+											
+											<i
+											className={
+												 "  fab fa-xbox text-md  leading-lg mr-2"
+											}
+										/>
 											Xbox
 										</button>
-
+									
 										<button
 											type='button'
 											onClick={() => handleFilter(sortedGames, 130, null)}
 											className='border border-red-500 text-red-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-red-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+											
+											<i
+											className={
+												 "fas fa-gamepad text-md  leading-lg mr-2"
+											}
+										/>
 											Nintendo
 										</button>
-
+										
 										<button
 											type='button'
 											onClick={() => handleFilter(sortedGames, 6, null)}
 											className='border border-gray-300 text-gray-700 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-gray-300 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+											
+											<i
+											className={
+												 " fas fa-desktop text-md  leading-lg mr-2"
+											}
+										/>
 											PC
 										</button>
 									</div>
