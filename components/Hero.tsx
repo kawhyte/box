@@ -48,20 +48,20 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 							</p>
 							<div className='flex flex-col md:flex-row p-3 '>
 								<div className='flex align-middle items-center '>
-									<motion.button
+									{/*<motion.button
 										whileHover={{ scale: 1.1 }}
 										whileTap={{ scale: 0.9 }}
 										className='uppercase py-2 px-4 mx-1 text-base tracking-wide sm:mr-12 sm:px-8 sm:py-3 rounded bg-yellow-500 font-semibold text-bgcolor max-w-max shadow-sm hover:shadow-lg'>
 										<i className={"  fas fa-random text-md  leading-lg mr-4"} />
 										I feel Lucky
-									</motion.button>
+									</motion.button>*/}
 
 									<Link href='/video-game-concierge'>
 										<motion.button
 											whileHover={{ scale: 1.1 }}
 											whileTap={{ scale: 0.9 }}
-											className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-green-600 font-semibold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
-											Game CONCIERGE
+											className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-yellow-600 font-semibold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
+											Get Started
 										</motion.button>
 									</Link>
 								</div>
