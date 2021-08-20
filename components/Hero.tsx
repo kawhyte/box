@@ -32,17 +32,19 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 					<div className='flex h-screen justify-center overflow-hidden '>
 						<div className='absolute h-screen mx-auto container justify-center flex flex-col items-center z-10 '>
 							<div className='justify-center flex flex-col items-center '>
-								<div className='text-6xl mb-4 hero flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl headings '>
-									<p className=' py-1 px-1   font-extrabold text-transparent text-6xl bg-clip-text bg-gradient-to-r from-yellow-500 to-green-600'>
+								<div className='text-6xl mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider uppercase   sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl headings '>
+									<p className=' py-1 px-1   font-extrabold  text-6xl '>
 										Find Your Next Favorite{" "}
 									</p>
+
+
 
 									{/*<p className='text-4xl gradient-text text-center font-black  text-textwhite tracking-wider uppercase   sm:text-4xl md:text-5xl '>
 										Not sure what game to play next?
 				</p>*/}
 								</div>
 							</div>
-							<p className='py-6  text-center text-gray-300 text-xl lg:mx-48  leading-relaxed mt-0 mb-4 md:text-2xl'>
+							<p className='py-6  text-center text-gray-500 text-xl lg:mx-48  leading-relaxed mt-0 mb-4 md:text-2xl'>
 								Personalized recommendations for Nintendo, Xbox, Playstation and
 								PC Games.
 							</p>
@@ -60,7 +62,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 										<motion.button
 											whileHover={{ scale: 1.1 }}
 											whileTap={{ scale: 0.9 }}
-											className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-yellow-600 font-semibold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
+											className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-indigo-500 hover:bg-indigo-600 font-semibold text-textwhite max-w-max shadow-sm hover:shadow-lg'>
 											Get Started
 										</motion.button>
 									</Link>
