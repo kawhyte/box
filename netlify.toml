@@ -1,5 +1,0 @@
-[build]
-  command   = "npm i typescript @types/react @types/node && npm run build "
-  functions = "out_functions"
-  publish   = "out_publish"
-
