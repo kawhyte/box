@@ -54,15 +54,14 @@ export default function Navbar(props) {
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row justify-between list-none mr-auto drop-shadow-2xl filter'>
 							<Link href='/game-of-the-decade'>
-								<motion.li
-									whileHover={{ scale: 1.1 }}
-									whileTap={{ scale: 0.9 }}
+								<li
+									
 									className='flex items-center pr-6 '>
 									<a
 										className={
 											(props.transparent
-												? "lg:text-gray-100  lg:hover:text-gray-300  text-gray-100"
-												: "text-gray-100  hover:text-gray-600") +
+												? "lg:text-gray-100  lg:hover:text-yellow-300  text-gray-100"
+												: "text-gray-100  hover:text-yellow-600") +
 											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold"
 										}>
 										<i
@@ -75,20 +74,19 @@ export default function Navbar(props) {
 										/>{" "}
 										Best games of the decade (2010-2021)
 									</a>
-								</motion.li>
+								</li>
 							</Link>
 
 							<Link href='/trending-video-games'>
-								<motion.li
-									whileHover={{ scale: 1.07 }}
-									whileTap={{ scale: 0.9 }}
+								<li
+								
 									className='flex items-center '>
 									<a
 										className={
 											(props.transparent
-												? "lg:text-gray-100 lg:hover:text-gray-300  text-gray-800"
-												: "text-gray-800  hover:text-gray-600") +
-											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold"
+												? "lg:text-gray-100 lg:hover:text-green-300  text-gray-800"
+												: "text-gray-800  hover:text-green-600") +
+											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold "
 										}>
 											
 										<i
@@ -101,7 +99,7 @@ export default function Navbar(props) {
 										/>{" "}
 										Trending games in 2021
 									</a>
-								</motion.li>
+								</li>
 							</Link>
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
