@@ -8,13 +8,14 @@ const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText, startCountAt
 	let factor = 5.7;
 	 
 
+
 	return (
 		<div className=' container flex  flex-col items-center  justify-center'>
 			{games.slice(0, 3).map((game, i) => (
 				<div key={i}>
 					<div className='flex flex-col justify-center bg-bgcolor my-12 rounded-xl lg:shadow-none overflow-hidden min-w-min max-w-2xl md:max-w-xl lg:max-w-5xl  '>
 				
-						<div className='hidden  lg:block'>
+						{/*<div className='hidden  lg:block'>
 							<ReactPlayer
 								url={`https://www.youtube.com/watch?v=${
 									game.videos && game.videos[0].video_id
@@ -25,9 +26,9 @@ const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText, startCountAt
 								width={1020}
 								height={600}
 							/>
-						</div>
+							</div>*/}
 
-						<div className='block lg:hidden '>
+						<div className='block  '>
 							<div
 								className='relative pt-16 pb-32 flex content-center items-center justify-center'
 								style={{

@@ -31,7 +31,7 @@ const Categories: React.FC = () => {
 				})}
 
 				<p className='py-3  tracking-normal text-sm font-thin mb-4 pt-4 text-center'>
-					Small detail will be here
+					Jump to a Category
 				</p>
 			</div>
 		</>
