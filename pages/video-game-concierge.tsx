@@ -49,7 +49,7 @@ const best_games = ({ games }) => {
 				<div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center'>
 					<div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
 						<h1 className='title-font  sm:text-5xl text-5xl mb-4 text-gray-100 headings uppercase font-black'>
-							2021 Video Game
+							Video Game
 							<br className='hidden lg:inline-block' /> Concierge
 						</h1>
 						<p className='my-8 leading-relaxed'>
