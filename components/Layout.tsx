@@ -4,11 +4,14 @@ import Navbar from "./Navbar";
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
 	return (
-		<div className='content '>
-			<Navbar transparent/>
+	<>
+	<Navbar transparent/>
+		<div className=' '>
+			
 			{children}
-	{/*<Footer />*/}
+	<Footer />
 		</div>
+		</>
 	);
 };
 
