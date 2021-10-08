@@ -6,7 +6,8 @@ import { GamesoftheYear2020 } from "../data/gameIDs";
 import useSWR from "swr";
 import { getGamesByID, getGames } from "../util/getGames";
 import SectionHeaderText from "../components/SectionHeaderText";
-import IndexSection from "../components/IndexSection";
+import IndexTrendingGames from "../components/IndexTrendingGames";
+import JustAdded from "../components/JustAdded";
 
 //export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
 export const getStaticProps: GetStaticProps = getGames("(167,48,130,169,49)");
@@ -42,9 +43,16 @@ const Home = ({ games }) => {
 			<div className='justify-center flex flex-col items-center  '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 				
-					<IndexSection games={games} headerText={"Trending Games"} />
+					<IndexTrendingGames games={games} headerText={"BEST GAMES OF THE DECADE"} />
 				</div>
 			</div>
+			<div className='justify-center flex flex-col items-center  '>
+				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
+				
+					<JustAdded games={games} headerText={"Just Added"} />
+				</div>
+			</div>
+
 			<div className='justify-center flex flex-col items-center mt-12 '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<p className=' py-1 px-1   font-extrabold  text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-10xl '>

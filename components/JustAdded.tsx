@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import Categories from "../components/Categories";
-import SectionHeaderText from "../components/SectionHeaderText";
-import HighestRatedCard from "../components/HighestRatedCard";
+import Categories from "./Categories";
+import SectionHeaderText from "./SectionHeaderText";
+import HighestRatedCard from "./HighestRatedCard";
 import { getGames } from "../util/getGames";
-import IndexCard from "../components/IndexCard";
+import JustAddedCards from "./JustAddedCards";
 import { GetStaticProps} from 'next'
 
 
@@ -27,18 +27,13 @@ const nintendo: React.FC<IGameFull>= ({ games, headerText}) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<SectionHeaderText
-				headerText={headerText}
-				paragraphText={
-					"We watched a lot of films in 2020. But it wasn’t just about how many"
-				}
-			/>
 
-			<IndexCard
+
+			<JustAddedCards
 				games={sortedGames}
 				startCountAt={1}
 				headerText={
-					"Check out the top 50 best video games, according to players:"
+					"JUST REVIEWED…"
 				}
 			/>
 		</div>
