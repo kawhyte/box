@@ -6,13 +6,25 @@ import { GamesoftheYear2020 } from "../data/gameIDs";
 import useSWR from "swr";
 import { getGamesByID, getGames } from "../util/getGames";
 import SectionHeaderText from "../components/SectionHeaderText";
+import IndexSection from "../components/IndexSection";
 
 //export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
 export const getStaticProps: GetStaticProps = getGames("(167,48,130,169,49)");
 
 const Home = ({ games }) => {
+
+	const sortedGames = games
+	.sort((a, b) => {
+		return b.total_rating - a.total_rating;
+	})
+	.sort((a, b) => {
+		return b.rating_count - a.rating_count;
+	});
+
+
 	return (
 		<>
+	
 			<Head>
 				<title>GameBox | Home</title>
 				<link rel='icon' href='/favicon.ico' />
@@ -20,30 +32,29 @@ const Home = ({ games }) => {
 
 			<Hero games={games} headerText={null} />
 
-			<div className='justify-center flex flex-col items-center mt-12 '>
+			{/*<div className='justify-center flex flex-col items-center mt-12 '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<p className=' py-1 px-1   font-extrabold  text-4xl sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl '>
+					<p className=' py-1 px-1   font-extrabold  text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-10xl '>
 						Recommended{" "}
 					</p>
 				</div>
-			</div>
-			<div className='justify-center flex flex-col items-center mt-12 '>
+	</div>*/}
+			<div className='justify-center flex flex-col items-center  '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<p className=' py-1 px-1   font-extrabold  text-4xl sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl '>
-					Trending{" "}
-					</p>
+				
+					<IndexSection games={games} headerText={"Trending Games"} />
 				</div>
 			</div>
 			<div className='justify-center flex flex-col items-center mt-12 '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<p className=' py-1 px-1   font-extrabold  text-4xl sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl '>
+					<p className=' py-1 px-1   font-extrabold  text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-10xl '>
 					Popular lists{" "}
 					</p>
 				</div>
 			</div>
 			<div className='justify-center flex flex-col items-center mt-12 '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<p className=' py-1 px-1   font-extrabold  text-4xl sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl '>
+					<p className=' py-1 px-1   font-extrabold  text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-10xl '>
 						Trending{" "}
 					</p>
 				</div>

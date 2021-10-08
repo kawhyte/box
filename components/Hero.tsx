@@ -25,6 +25,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 		<>
 			<main className='bg-gray-900 relative overflow-hidden flex   mx-auto justify-center  align-middle' 	style={{
 						maxHeight: "77vh",
+						
 					}}>
 				<div className='relative  w-screen grid gap-3 md:gap-6  grid-cols-3 sm:grid-col-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 lg:gap-4 rotate-90 overflow-hidden'>
 					{sortedGames.map((game) => (
