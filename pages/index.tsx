@@ -46,7 +46,7 @@ const Home = ({ games }) => {
 					<IndexTrendingGames games={games} headerText={"BEST GAMES OF THE DECADE"} />
 				</div>
 			</div>
-			
+
 			<div className='justify-center flex flex-col items-center  '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 				
@@ -54,6 +54,7 @@ const Home = ({ games }) => {
 				</div>
 			</div>
 
+{/*
 			<div className='justify-center flex flex-col items-center mt-12 '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<p className=' py-1 px-1   font-extrabold  text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-10xl '>
@@ -68,7 +69,7 @@ const Home = ({ games }) => {
 					</p>
 				</div>
 			</div>
-
+*/}
 		
 		</>
 	);

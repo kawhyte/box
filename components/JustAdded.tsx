@@ -33,7 +33,7 @@ const nintendo: React.FC<IGameFull>= ({ games, headerText}) => {
 				games={sortedGames}
 				startCountAt={1}
 				headerText={
-					"JUST REVIEWED…"
+					"JUST ADDED…"
 				}
 			/>
 		</div>

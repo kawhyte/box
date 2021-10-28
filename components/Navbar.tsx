@@ -49,7 +49,7 @@ export default function Navbar(props) {
 					<div
 						className={
 							"lg:flex flex-grow items-center bg-white pl-10 lg:bg-transparent lg:shadow-none" +
-							(navbarOpen ? " block rounded shadow-lg bg-gray-300" : " hidden")
+							(navbarOpen ? " block rounded shadow-lg bg-gray-900" : " hidden")
 						}
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row justify-between list-none mr-auto drop-shadow-2xl filter'>
@@ -84,8 +84,8 @@ export default function Navbar(props) {
 									<a
 										className={
 											(props.transparent
-												? "lg:text-gray-100 lg:hover:text-green-300  text-gray-800"
-												: "text-gray-800  hover:text-green-600") +
+												? "lg:text-gray-100 lg:hover:text-green-300  text-gray-100"
+												: "text-gray-100  hover:text-green-600") +
 											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold "
 										}>
 											
@@ -93,7 +93,7 @@ export default function Navbar(props) {
 											className={
 												(props.transparent
 													? "lg:text-green-500  text-buttonYellow"
-													: "text-gray-500") +
+													: "text-gray-100") +
 												" fas fa-chart-line text-md  leading-lg mr-2"
 											}
 										/>{" "}
@@ -103,9 +103,8 @@ export default function Navbar(props) {
 							</Link>
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
-							<motion.li
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.9 }}
+							<li
+								
 								className='flex items-center'>
 								<a
 									href='https://www.kennywhyte.com/'
@@ -113,13 +112,13 @@ export default function Navbar(props) {
 									target='_blank'
 									className={
 										(props.transparent
-											? "lg:text-gray-100 lg:hover:text-gray-300  text-gray-800"
-											: "text-gray-800  hover:text-gray-600") +
+											? "lg:text-gray-100 lg:hover:text-gray-300  text-gray-100"
+											: "text-gray-500  hover:text-gray-600") +
 										" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold bg-grey-900"
 									}>
 									Made by Kenny
 								</a>
-							</motion.li>
+							</li>
 						</ul>
 					</div>
 				</div>
