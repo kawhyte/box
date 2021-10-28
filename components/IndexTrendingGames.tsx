@@ -24,7 +24,7 @@ const nintendo: React.FC<IGameFull> = ({ games, headerText }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<div className='container container flex lg:bg-transparent	flex-col justify-center bg-bgcolor text-textwhite text-center py-10 rounded-xl mt-48 max-w-md  md:max-w-xl lg:max-w-7xl'>
+			<div className=' container flex lg:bg-transparent	flex-col justify-center bg-bgcolor text-textwhite text-center py-10 rounded-xl mt-20 max-w-md  md:max-w-xl lg:max-w-7xl'>
 				<h1 className=' pb-6 text-base font-bold tracking-widest headings uppercase'>
 					BEST GAMES OF THE DECADE
 				</h1>

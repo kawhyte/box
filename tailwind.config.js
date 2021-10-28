@@ -2,6 +2,11 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   
+
+
+
+
+
   theme: {
     container: {
       center: true,
@@ -172,7 +177,10 @@ module.exports = {
 
     extend: {
 
-
+      spacing: {
+                    128: '32rem',
+                    200:'53rem'
+                },
 
 
     },

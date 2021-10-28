@@ -23,10 +23,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 
 	return (
 		<>
-			<main className='bg-gray-900 relative overflow-hidden flex   mx-auto justify-center  align-middle' 	style={{
-						maxHeight: "77vh",
-						
-					}}>
+			<main className='bg-black container relative overflow-hidden flex w-full bg-center bg-cover h-128 lg:h-200  mx-auto justify-center  align-middle' >
 				<div className='relative  w-screen grid gap-3 md:gap-6  grid-cols-3 sm:grid-col-4 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 lg:gap-4 rotate-90 overflow-hidden'>
 					{sortedGames.map((game) => (
 						<div className=' opacity-20 bg-bgcolor' key={game.id}>
@@ -50,12 +47,13 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 					))}
 				</div>
 
-				<div className='  bg-black  absolute mt-36   lg:mt-80 container mx-auto'>
+			</main>
+				<div className=' bg-black  -mt-72   mb-72  lg:mb-96 sm:-mt-64 sm:mb-96   md:-mt-72 container mx-auto'>
 					<div className='  relative  items-center  z-50 '>
-						<div className='absolute  mx-auto container justify-center flex flex-col items-center z-10 '>
-							<div className='justify-center flex flex-col items-center '>
+						<div className='absolute  mx-auto container justify-end flex flex-col items-center align-bottom z-10 '>
+							<div className='justify-center  flex flex-col items-center '>
 								<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider uppercase    headings '>
-									<p className=' py-1 px-1   font-extrabold  text-4xl sm:text-6xl md:text-7xl lg:text-15xl xl:text-11xl '>
+									<p className=' py-1 px-1   font-extrabold  text-4xl sm:text-6xl  lg:text-7xl xl:text-11xl '>
 										Find Your Next Favorite{" "}
 									</p>
 								</div>
@@ -76,7 +74,6 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 						</div>
 					</div>
 				</div>
-			</main>
 
 			
 				
