@@ -46,6 +46,7 @@ interface IGameFull{
 	}]
 	
 	headerText?: string
+	subText?:string
 	startCountAt?:number
 
 }

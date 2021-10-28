@@ -2,19 +2,19 @@ import Head from "next/head";
 import Hero from "../components/Hero";
 import { GetStaticProps } from "next";
 import React from "react";
-import { GamesoftheYear2020 } from "../data/gameIDs";
+import { GamesoftheYear2020, TrendingGames } from "../data/gameIDs";
 import useSWR from "swr";
-import { getGamesByID, getGames } from "../util/getGames";
+import { getGamesByID, getGames, getIndexPageGamesByID } from "../util/getGames";
 import SectionHeaderText from "../components/SectionHeaderText";
 import IndexTrendingGames from "../components/IndexTrendingGames";
 import JustAdded from "../components/JustAdded";
 
 //export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
-export const getStaticProps: GetStaticProps = getGames("(167,48,130,169,49)");
+export const getStaticProps: GetStaticProps = getIndexPageGamesByID(TrendingGames, GamesoftheYear2020);
 
-const Home = ({ games }) => {
+const Home = ({ trendingGames, games2020 }) => {
 
-	const sortedGames = games
+	const sortedGames = trendingGames
 	.sort((a, b) => {
 		return b.total_rating - a.total_rating;
 	})
@@ -31,7 +31,7 @@ const Home = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<Hero games={games} headerText={null} />
+			<Hero games={sortedGames} headerText={null} />
 
 			{/*<div className='justify-center flex flex-col items-center mt-12 '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
@@ -39,18 +39,26 @@ const Home = ({ games }) => {
 						Recommended{" "}
 					</p>
 				</div>
-	</div>*/}
+	</div>*/}	
+	
+	<div className='justify-center flex flex-col items-center  '>
+				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
+				
+					<IndexTrendingGames games={trendingGames} headerText={"TRENDING VIDEO GAMES"} subText={"Video Games to keep an eye on"} />
+				</div>
+			</div>
 			<div className='justify-center flex flex-col items-center  '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 				
-					<IndexTrendingGames games={games} headerText={"BEST GAMES OF THE DECADE"} />
+					<IndexTrendingGames games={games2020} headerText={"BEST VIDEO GAMES OF 2020"} subText={"Play these Video Games now"}  />
 				</div>
 			</div>
+		
 
 			<div className='justify-center flex flex-col items-center  '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 				
-					<JustAdded games={games} headerText={"Just Added"} />
+					<JustAdded games={trendingGames} headerText={"Just Added"} />
 				</div>
 			</div>
 

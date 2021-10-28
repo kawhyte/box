@@ -8,12 +8,13 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 		<main className='grid container mx-auto pb-3  content-start items-center justify-center'>
 		
 			<div >
-				<motion.div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 gap-1'>
-					{games.slice(3,9).map((game, i) => (
+				<motion.div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 grid-row-2 gap-1'>
+					{games.slice(3,15).map((game, i) => (
 						
 							<Link href={`/games/${game.id}`} key={game.id}>
+								<div className="flex flex-col">
 								<motion.div key={game.id}
-									className='bg-gray-800 shadow-lg rounded p-1 max-w-sm cursor-pointer '
+									className=' shadow-lg rounded p-1 max-w-sm cursor-pointer '
 									animate={{
 										y: 0,
 										opacity: 1,
@@ -87,7 +88,10 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 									<h3 className='text-white text-sm my-2'>{game.name}</h3>
 									<p className='text-gray-400 text-sm'>{game.genres[0].name}</p>
 									</div>*/}
+									
 								</motion.div>
+								<p className="py-3 truncate">{game.name}</p>
+								</div>
 							</Link>
 						
 					))}

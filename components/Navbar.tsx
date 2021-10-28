@@ -54,9 +54,7 @@ export default function Navbar(props) {
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row justify-between list-none mr-auto drop-shadow-2xl filter'>
 							<Link href='/game-of-the-decade'>
-								<li
-									
-									className='flex items-center pr-6 '>
+								<li className='flex items-center pr-6 '>
 									<a
 										className={
 											(props.transparent
@@ -78,9 +76,7 @@ export default function Navbar(props) {
 							</Link>
 
 							<Link href='/trending-video-games'>
-								<li
-								
-									className='flex items-center '>
+								<li className='flex items-center '>
 									<a
 										className={
 											(props.transparent
@@ -88,7 +84,6 @@ export default function Navbar(props) {
 												: "text-gray-100  hover:text-green-600") +
 											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold "
 										}>
-											
 										<i
 											className={
 												(props.transparent
@@ -103,9 +98,7 @@ export default function Navbar(props) {
 							</Link>
 						</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
-							<li
-								
-								className='flex items-center'>
+							<li className='flex items-center'>
 								<a
 									href='https://www.kennywhyte.com/'
 									rel='noreferrer noopener'

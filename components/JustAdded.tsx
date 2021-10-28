@@ -11,7 +11,7 @@ import { GetStaticProps} from 'next'
 
 const nintendo: React.FC<IGameFull>= ({ games, headerText}) => {
 
-    console.log("games ", games)
+    //console.log("games ", games)
 	const sortedGames = games
 		.sort((a, b) => {
 			return b.total_rating - a.total_rating;
