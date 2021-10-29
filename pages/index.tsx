@@ -50,17 +50,17 @@ const Home = ({ trendingGames, games2020 }) => {
 			<div className='justify-center flex flex-col items-center  '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 				
+					<JustAdded games={trendingGames} headerText={"Just Added"} />
+				</div>
+			</div>
+			<div className='justify-center flex flex-col items-center  '>
+				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
+				
 					<IndexTrendingGames games={games2020} headerText={"BEST VIDEO GAMES OF 2020"} subText={"Play these Video Games now"}  />
 				</div>
 			</div>
 		
 
-			<div className='justify-center flex flex-col items-center  '>
-				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-				
-					<JustAdded games={trendingGames} headerText={"Just Added"} />
-				</div>
-			</div>
 
 {/*
 			<div className='justify-center flex flex-col items-center mt-12 '>

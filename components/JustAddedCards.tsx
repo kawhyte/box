@@ -6,7 +6,7 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 
 	return (
 		<main className='grid   pb-3 mt-20  content-start items-center justify-center'>
-			<p className=' py-2   border-b-2 text-lg text-left font-light leading-relaxed mt-0 mb-5 '>
+			<p className=' py-2 uppercase text-indigo-500  border-b-2 text-lg text-left font-light leading-relaxed mt-0 mb-5 '>
 				{headerText}
 			</p>
 			<div >

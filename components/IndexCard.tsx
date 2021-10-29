@@ -90,7 +90,7 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 									</div>*/}
 									
 								</motion.div>
-								<p className="py-3 truncate">{game.name}</p>
+								
 								</div>
 							</Link>
 						
