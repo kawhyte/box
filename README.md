@@ -12,7 +12,7 @@ A Video Game Bucket List & Recommendation Engine
 
 ## 🚀 Tech Stack
 
-**Client:** NextJS/React
+**Client:** NextJS/React, TypeScript
 
 **Server:** Vercel, Rest API
 
