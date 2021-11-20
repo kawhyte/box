@@ -3,6 +3,7 @@ import { animate, motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
+
 const Hero: React.FC<IGameFull> = ({ games }) => {
 	const sortedGames = games
 		.sort((a, b) => {
@@ -69,26 +70,31 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 					</div>
 				</section>
 
-				<section className=' container mx-auto grid grid-cols-2  lg:grid-cols-4  gap-3     my-6  w-full  '>
-					<div className='bg-gray-900 flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
+				<section className='cursor-pointer container mx-auto grid grid-cols-2  lg:grid-cols-4  gap-3     my-6  w-full  '>
+					<Link  href='/nintendo'>
+					<div className='bg-gray-900  flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
 						<Image width={96} height={96} src='/console.png' />
 						Nintendo
 					</div>
-
+					</Link>
+					<Link  href='/xbox'>
 					<div className='bg-gray-900 flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
 						<Image width={96} height={96} src='/game-console.png' />
 						Xbox
 					</div>
-
+					</Link>
+					<Link  href='/playstation'>
 					<div className='bg-gray-900 flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
 						<Image width={96} height={96} src='/playstation.png' />
 						PlayStation
 					</div>
-
+					</Link>
+					<Link  href='/playstation'>
 					<div className='bg-gray-900 flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
 						<Image width={96} height={96} src='/pc.png' />
 						PC
 					</div>
+					</Link>
 				</section>
 			</div>
 		</>

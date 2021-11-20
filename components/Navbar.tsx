@@ -10,7 +10,7 @@ export default function Navbar(props) {
 			<nav
 				className={
 					(props.transparent
-						? "top-1 sticky bg-bgcolor z-50 w-full"
+						? "top-0 sticky bg-bgcolor z-50 w-full"
 						: " bg-white shadow-lg") +
 					" flex flex-wrap items-center justify-between py-5"
 				}>

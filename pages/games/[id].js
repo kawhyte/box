@@ -215,14 +215,14 @@ const Details = ({ data }) => {
 						}}>
 						<span
 							id='blackOverlay'
-							className='w-full h-full absolute opacity-60 opa bg-black bg-bgcolor'></span>
+							className='w-full h-full absolute opacity-60 opa  bg-bgcolor'></span>
 					</div>
 				</div>
 
 				<div className=' mx-auto z-10 max-w-screen-xl -mt-32'>
 					<section className='pb-8 md:pb-20 bg-bgcolor '>
 						<div className='container  mx-auto px-4'>
-							<div className=' relative flex flex-col md:flex-row justify-center items-center  max-w-3xl min-w-min bg-white '>
+							<div className=' relative flex flex-col md:flex-row justify-center items-center  max-w-3xl min-w-min  '>
 								<img
 									className='w-96 bg-cover mr-5 rounded-xl'
 									src={
@@ -254,9 +254,9 @@ const Details = ({ data }) => {
 
 									<div className='pt-6 md:mt-6 flex flex-col justify-center  '>
 										<div
-											className='flex items-center flex-wrap max-w-md px-12 bg-white shadow-xl rounded-2xl h-20'
+											className='flex items-center flex-wrap max-w-md px-12 bg-gray-900 shadow-xl rounded-2xl h-20'
 											>
-											<div className='flex items-center justify-center -m-6 overflow-hidden bg-white rounded-full '>
+											<div className='flex items-center justify-center -m-6 overflow-hidden bg-gray-900 rounded-full '>
 												<svg
 													className='w-32 h-32 transform translate-x-1 translate-y-1'
 													
