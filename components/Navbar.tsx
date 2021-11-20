@@ -10,9 +10,9 @@ export default function Navbar(props) {
 			<nav
 				className={
 					(props.transparent
-						? " top-2 absolute z-50 w-full"
-						: "relative  bg-white shadow-lg") +
-					" flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg "
+						? "top-1 sticky bg-bgcolor z-50 w-full"
+						: " bg-white shadow-lg") +
+					" flex flex-wrap items-center justify-between py-5"
 				}>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='cursor-pointer w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>

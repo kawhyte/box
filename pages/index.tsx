@@ -8,6 +8,7 @@ import { getGamesByID, getGames, getIndexPageGamesByID } from "../util/getGames"
 import SectionHeaderText from "../components/SectionHeaderText";
 import IndexTrendingGames from "../components/IndexTrendingGames";
 import JustAdded from "../components/JustAdded";
+import Navbar from "../components/Navbar";
 
 //export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
 export const getStaticProps: GetStaticProps = getIndexPageGamesByID(TrendingGames, GamesoftheYear2020);
@@ -30,6 +31,7 @@ const Home = ({ trendingGames, games2020 }) => {
 				<title>GameBox | Home</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
+			
 
 			<Hero games={sortedGames} headerText={null} />
 
