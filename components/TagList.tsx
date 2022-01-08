@@ -12,7 +12,7 @@ const TagList: React.FC <ITags> = ({ list, headerText, tagBGcolor }) => {
 							<span
 								key={i}
 								className={
-									"text-xs font-normal text-gray-100 py-1 px-2 ml-2 rounded  uppercase last: m-1  mr-1 " +
+									"text-xs font-normal whitespace-nowrap  text-gray-100 py-1 px-2 ml-2 rounded  uppercase last: m-1  mr-1 " +
 									tagBGcolor
 								}>
 								{platform.name}

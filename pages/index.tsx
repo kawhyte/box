@@ -33,7 +33,7 @@ const Home = ({ trendingGames, games2020 }) => {
 			</Head>
 			
 
-			<Hero games={sortedGames} headerText={null} />
+			<Hero games={trendingGames} headerText={null} />
 
 			{/*<div className='justify-center flex flex-col items-center mt-12 '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
