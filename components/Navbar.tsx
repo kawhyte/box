@@ -12,7 +12,7 @@ export default function Navbar(props) {
 					(props.transparent
 						? "top-0 sticky bg-bgcolor z-50 w-full"
 						: " bg-white shadow-lg") +
-					" flex flex-wrap items-center justify-between py-5"
+					" flex flex-wrap items-center justify-between py-5 bg-opacity-80 bg-clip-padding backdrop-filter blur-backdrop-filter"
 				}>
 				<div className='container px-4 mx-auto flex flex-wrap items-center justify-between'>
 					<div className='cursor-pointer w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
