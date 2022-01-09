@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Hero: React.FC<IGameFull> = ({ games }) => {
-	console.log("Games ", games);
+	//console.log("Games ", games);
 	let randomNum = Math.floor(Math.random() * games.length);
 	const sortedGames = games
 		.sort((a, b) => {
@@ -23,7 +23,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 		visible: { opacity: 1, x: 0 },
 		hidden: { opacity: 0, x: -100 },
 	};
-	console.log(" sortedGames[0] ", sortedGames[0]);
+	//console.log(" sortedGames[0] ", sortedGames[0]);
 	return (
 		<>
 			<section className='text-gray-600 body-font  container max-w-6xl '>
