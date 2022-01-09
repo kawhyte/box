@@ -44,7 +44,7 @@ const best_games = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<SectionHero headerText={"BEST GAMES OF THE DECADE"} paragraphText = {"Video games you should play before you die."} /> 
+			<SectionHero games={games} headerText={"BEST GAMES OF THE DECADE"} paragraphText = {"Video games you should play before you die."} /> 
 
 	
 

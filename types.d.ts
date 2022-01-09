@@ -105,6 +105,7 @@ list:[
 interface ISectionHeader {
 	paragraphText: string
 	headerText: string
+	games: any
 }
 
 interface ISectionHeader {
