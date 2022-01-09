@@ -31,6 +31,7 @@ const playstation : React.FC<IGameFull> = ({ games, startCountAt }) => {
 				paragraphText={
 					"We watched a lot of films in 2020. But it wasn’t just about how many"
 				}
+				games={[]}
 			/>
 			<Card
 				games={sortedGames}

@@ -57,6 +57,7 @@ const nintendo: React.FC<IGameFull> = ({ games, startCountAt }) => {
 			<SectionHeaderText
 				headerText={"Game Finder"}
 				paragraphText={"Not sure which game to play next? We can help you out."}
+				games={[]}
 			/>
 
 			<section className='text-gray-600 body-font'>
