@@ -33,6 +33,11 @@ interface IGameFull{
 			url: string,
 		}]
 
+		release_dates: [{
+			y:number
+			human:string
+		}]
+
 		platforms: [
 			{
 			  id: number,

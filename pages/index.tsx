@@ -5,6 +5,7 @@ import React from "react";
 import { GamesoftheYear2020, TrendingGames } from "../data/gameIDs";
 import useSWR from "swr";
 import { getGamesByID, getGames, getIndexPageGamesByID } from "../util/getGames";
+
 import SectionHeaderText from "../components/SectionHeaderText";
 import IndexTrendingGames from "../components/IndexTrendingGames";
 import JustAdded from "../components/JustAdded";
@@ -16,6 +17,8 @@ import Image from "next/image";
 export const getStaticProps: GetStaticProps = getIndexPageGamesByID(TrendingGames, GamesoftheYear2020);
 
 const Home = ({ trendingGames, games2020 }) => {
+
+
 
 	const sortedGames = trendingGames
 	.sort((a, b) => {
