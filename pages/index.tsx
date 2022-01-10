@@ -14,6 +14,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 //export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
+//export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
 export const getStaticProps: GetStaticProps = getIndexPageGamesByID(TrendingGames, GamesoftheYear2020);
 
 const Home = ({ trendingGames, games2020 }) => {

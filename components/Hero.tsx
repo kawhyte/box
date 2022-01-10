@@ -6,7 +6,7 @@ import { convertEpochToDate } from "../util/convertDate";
 
 const Hero: React.FC<IGameFull> = ({ games }) => {
 	let randomNum = Math.floor(Math.random() * games.length);
-	console.log("Games ", games[randomNum].release_dates);
+	//console.log("Games ", games[randomNum].release_dates);
 
 	//let date = convertEpochToDate(games[0].release_dates[0].date)
 
@@ -37,7 +37,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 							)})`,
 						}}></div>
 
-					<span className='absolute  lg:block  z-50 border-red-500 inset-y-0 right-60 transform rotate-90 opacity-30    '>
+					<span className='absolute hidden lg:block  z-50 border-red-500 inset-y-0 right-60 transform rotate-90 opacity-30    '>
 						
 						{games[randomNum].name} ({games[randomNum].release_dates[0].y})
 					</span>

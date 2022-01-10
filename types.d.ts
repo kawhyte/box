@@ -55,6 +55,49 @@ interface IGameFull{
 	startCountAt?:number
 
 }
+interface IGameSection{
+	moreGames: [{
+		id:number
+		name: string
+		total_rating:number
+		rating_count:number
+		summary:string
+		cover: {
+		  id: number
+		  url: string
+		}
+		videos:[{
+			id: number,
+			name: string,
+			video_id: string
+		}]
+		screenshots:[{
+			id: number,
+			url: string,
+		}]
+
+		release_dates: [{
+			y:number
+			human:string
+		}]
+
+		platforms: [
+			{
+			  id: number,
+			  abbreviation: string,
+			  created_at: number,
+			  name: string,
+			  platform_logo: number,
+			  updated_at: number,
+			},
+		]
+	}]
+	
+	headerText?: string
+	subText?:string
+	startCountAt?:number
+
+}
 interface IGameList{
 	games: [{
 		complete?: boolean
