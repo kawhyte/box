@@ -11,7 +11,7 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 			</p>
 			<div >
 				<motion.div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-1'>
-					{games.slice(3,20).map((game, i) => (
+					{games.slice(0,50).map((game, i) => (
 						
 							<Link href={`/games/${game.id}`} key={game.id}>
 								<motion.div key={game.id}
@@ -25,7 +25,7 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 										},
 									}}
 									initial={{ y: 60, opacity: 0 }}
-									whileTap={{scale:1}}
+									
 									whileHover={{
 										position: "relative",
 										zIndex: 10,

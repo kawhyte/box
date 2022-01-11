@@ -32,7 +32,7 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 							},
 						}}
 						className='w-full relative  col-span-2  block   hover:bg-blue-100 duration-300 shadow-lg rounded p-1 max-w-sm cursor-pointer'
-						src={todo?.cover.url.replace("t_thumb", "t_cover_big")}
+						src={todo?.cover?.url.replace("t_thumb", "t_cover_big")}
 						alt={todo.name}
 					/>
 				</Link>

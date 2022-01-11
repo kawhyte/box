@@ -44,7 +44,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 				</div>
 				<div className='text-center relative  w-full  -mt-40 flex flex-col  z-20 '>
 					<p className='py-1 px-1 text-white font-extrabold  text-3xl sm:text-4xl whitespace-nowrap lg:text-5xl xl:text-11xl'>
-						Track games you've played.
+						Find the best games to play.
 					</p>
 					<p className='py-1 px-1 text-white   font-extrabold  text-3xl sm:text-4xl whitespace-nowrap lg:text-5xl xl:text-11xl'>
 						Save those you want to play.

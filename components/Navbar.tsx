@@ -53,29 +53,8 @@ export default function Navbar(props) {
 						}
 						id='example-navbar-warning'>
 						<ul className='flex flex-col lg:flex-row justify-between list-none mr-auto drop-shadow-2xl filter'>
-							<Link href='/game-of-the-decade'>
-								<li className='flex items-center pr-6 '>
-									<a
-										className={
-											(props.transparent
-												? "lg:text-gray-100  lg:hover:text-yellow-300  text-gray-100"
-												: "text-gray-100  hover:text-yellow-600") +
-											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold"
-										}>
-										<i
-											className={
-												(props.transparent
-													? "lg:text-buttonYellow  text-buttonYellow"
-													: "text-gray-500") +
-												" fas fa-crown text-base leading-lg mr-2"
-											}
-										/>{" "}
-										Best games of the decade (2010-2021)
-									</a>
-								</li>
-							</Link>
 
-							<Link href='/trending-video-games'>
+						{/*	<Link href=' /game-of-the-decade'>
 								<li className='flex items-center '>
 									<a
 										className={
@@ -95,8 +74,30 @@ export default function Navbar(props) {
 										Trending games
 									</a>
 								</li>
-							</Link>
-						</ul>
+							</Link>*/}
+						
+							<Link href='/trending-video-games '>
+								<li className='flex items-center pr-6 '>
+									<a
+										className={
+											(props.transparent
+												? "lg:text-gray-100  lg:hover:text-yellow-300  text-gray-100"
+												: "text-gray-100  hover:text-yellow-600") +
+											" px-3 py-4 cursor-pointer lg:py-2 flex items-center text-sm uppercase font-bold"
+										}>
+										<i
+											className={
+												(props.transparent
+													? "lg:text-buttonYellow  text-buttonYellow"
+													: "text-gray-500") +
+												" fas fa-crown text-base leading-lg mr-2"
+											}
+										/>{" "}
+										Best games of the decade (2010-2021)
+									</a>
+								</li>
+										</Link>
+							</ul>
 						<ul className='flex flex-col lg:flex-row list-none lg:ml-auto'>
 							<li className='flex items-center'>
 								<a

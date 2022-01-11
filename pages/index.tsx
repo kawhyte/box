@@ -78,54 +78,60 @@ const Home = ({ trendingGames, trendingGames2, bestOf2021, games2020 }) => {
 			</div>
 
 			<div className='justify-center flex flex-col items-center  '>
-				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<IndexTrendingGames
-						games={trendingGames2}
-						headerText={"Highest Rated Games "}
-						subText={"Video Games from the last 30 days"}
-					/>
+				<div className='  mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
+					<JustAdded games={trendingGames} headerText={"Just Added"} />
 				</div>
 			</div>
 
 			<div className='justify-center flex flex-col items-center  '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<JustAdded games={trendingGames} headerText={"Just Added"} />
-				</div>
-			</div>
-			<div className='justify-center flex flex-col items-center mb-6  '>
-				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<IndexTrendingGames
-						games={bestOf2021}
-						headerText={"Best Games of 2021 "}
+						games={trendingGames2}
+						headerText={"Highest Rated Games Right Now"}
+						subText={"Video Games from the last 30 days"}
+					/>
+				</div>
+		
+			</div>
+
+		
+	
+			<div className='justify-center flex flex-col items-center my-24'>
+				<div className=' mb-2 border rounded-3xl  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
+					<IndexTrendingGames
+						games={games2020}
+						headerText={"BEST VIDEO GAMES OF 2021"}
 						subText={"Great games from 2021"}
 					/>
-					<div className='flex justify-center'>
+								<div className='flex justify-center my-8'>
 						<div className='flex align-middle items-center '>
-							<Link href='/game-of-the-decade'>
+						<Link href='/best-of-2021'>
 								<button className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-indigo-500 hover:bg-indigo-600 font-semibold text-textwhite  shadow-sm hover:shadow-lg'>
-									View All 
+									VIEW All Games
 								</button>
 							</Link>
 						</div>
 					</div>
+			
 				</div>
 			</div>
 			<div className='justify-center flex flex-col items-center mb-24  '>
-				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
+				<div className=' mb-2 border rounded-3xl  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<IndexTrendingGames
 						games={games2020}
-						headerText={"BEST VIDEO GAMES OF 2020"}
+						headerText={"Top 12 BEST VIDEO GAMES OF 2020"}
 						subText={"Great games from 2020"}
 					/>
-					<div className='flex justify-center'>
+								<div className='flex justify-center my-8'>
 						<div className='flex align-middle items-center '>
-							<Link href='/video-game-concierge'>
+							<Link href='/best-of-2020'>
 								<button className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-indigo-500 hover:bg-indigo-600 font-semibold text-textwhite  shadow-sm hover:shadow-lg'>
-									View All 
+									VIEW All Games
 								</button>
 							</Link>
 						</div>
 					</div>
+			
 				</div>
 			</div>
 

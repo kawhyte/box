@@ -7,7 +7,8 @@ import { gameObj } from "../data/data";
 import GOTYList from "../components/GotyList";
 import { motion } from "framer-motion";
 import { GetStaticProps } from "next";
-import { getGames } from "../util/getGames";
+import { getGames, getTrendingGames,  getGamesByID  } from "../util/getGames";
+import { GamesoftheYear2020 } from "../data/gameIDs";
 
 
 // const gameId =
@@ -37,14 +38,18 @@ import { getGames } from "../util/getGames";
 // 	};
 // };
 
-export const getStaticProps:GetStaticProps = getGames("(167,48,130,169,49)");
+ //export const getStaticProps:GetStaticProps = getTrendingGames("(167,48,130,169,49)");
+
+export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
+//export const getStaticProps:GetStaticProps = getGames(130);
 
 const GOTY = ({ games }) => {
+
+	console.log("Trending ", games )
 	const sortedGames = games
-		.sort((a, b) => {
+	?.sort((a, b) => {
 			return b.total_rating - a.total_rating;
-		})
-		.sort((a, b) => {
+		})?.sort((a, b) => {
 			return b.rating_count - a.rating_count;
 		});
 
@@ -55,7 +60,7 @@ const GOTY = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<SectionHero headerText={"Trending Video Games"} paragraphText = {"Best Video Games of 2021 (so far)"} games={[]}/>
+			<SectionHero headerText={"Video Games You should Play"} paragraphText = {"Best Video Games over the last year (based on users) "} games={[]}/>
 			<Categories />
 			{gameObj.map((item, i) => (
 				<GOTYList games={sortedGames} gameDetails={item} key={i} />

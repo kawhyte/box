@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText, startCountAt }) => {
 	let factor = 5.7;
-	 
+	  console.log("HRC ", games)
 
 
 	return (
