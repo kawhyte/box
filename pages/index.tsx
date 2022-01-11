@@ -4,7 +4,11 @@ import { GetStaticProps } from "next";
 import React from "react";
 import { GamesoftheYear2020, TrendingGames } from "../data/gameIDs";
 import useSWR from "swr";
-import { getGamesByID, getGames, getIndexPageGamesByID } from "../util/getGames";
+import {
+	getGamesByID,
+	getGames,
+	getIndexPageGamesByID,
+} from "../util/getGames";
 
 import SectionHeaderText from "../components/SectionHeaderText";
 import IndexTrendingGames from "../components/IndexTrendingGames";
@@ -13,55 +17,38 @@ import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 
-//export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
-//export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
-export const getStaticProps: GetStaticProps = getIndexPageGamesByID(TrendingGames, GamesoftheYear2020);
 
-const Home = ({ trendingGames, games2020 }) => {
+export const getStaticProps: GetStaticProps = getIndexPageGamesByID(
+	TrendingGames,
+	GamesoftheYear2020
+);
 
+const Home = ({ trendingGames, trendingGames2, bestOf2021, games2020 }) => {
+	console.log("trendingGames2 ", trendingGames2);
 
-
-	const sortedGames = trendingGames
-	.sort((a, b) => {
-		return b.total_rating - a.total_rating;
-	})
-	.sort((a, b) => {
-		return b.rating_count - a.rating_count;
-	});
-
+	//const sortedGames = trendingGames
+		// .sort((a, b) => {
+		// 	return b.total_rating - a.total_rating;
+		// })
+		// .sort((a, b) => {
+		// 	return b.rating_count - a.rating_count;
+		// });
 
 	return (
 		<>
-	
 			<Head>
 				<title>GameBox | Home</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			
 
 			<Hero games={trendingGames} headerText={null} />
 
-			{/*<div className='justify-center flex flex-col items-center mt-12 '>
+			<div className='flex flex-col   align-middle items-center mt-24 '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<p className=' py-1 px-1   font-extrabold  text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-10xl '>
-						Recommended{" "}
+					<p className=' py-1 px-1   font-extrabold  text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl '>
+						Categories{" "}
 					</p>
 				</div>
-	</div>*/}	
-
-
-
-	
-	<div className='justify-center flex flex-col items-center  '>
-				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-				
-					<IndexTrendingGames games={trendingGames} headerText={"TRENDING VIDEO GAMES"} subText={"Video Games to keep an eye on"} />
-				</div>
-			</div>
-
-			<div className='flex flex-col   align-middle items-center mt-16 '>
-				
-
 				<section className='cursor-pointer container mx-auto grid grid-cols-2  lg:grid-cols-4  gap-3     my-6  w-full  '>
 					<Link href='/nintendo'>
 						<div className='bg-gray-900  flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
@@ -89,23 +76,60 @@ const Home = ({ trendingGames, games2020 }) => {
 					</Link>
 				</section>
 			</div>
+
 			<div className='justify-center flex flex-col items-center  '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-				
+					<IndexTrendingGames
+						games={trendingGames2}
+						headerText={"Highest Rated Games "}
+						subText={"Video Games from the last 30 days"}
+					/>
+				</div>
+			</div>
+
+			<div className='justify-center flex flex-col items-center  '>
+				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<JustAdded games={trendingGames} headerText={"Just Added"} />
 				</div>
 			</div>
-			<div className='justify-center flex flex-col items-center  '>
+			<div className='justify-center flex flex-col items-center mb-6  '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-				
-					<IndexTrendingGames games={games2020} headerText={"BEST VIDEO GAMES OF 2020"} subText={"Play these Video Games now"}  />
+					<IndexTrendingGames
+						games={bestOf2021}
+						headerText={"Best Games of 2021 "}
+						subText={"Great games from 2021"}
+					/>
+					<div className='flex justify-center'>
+						<div className='flex align-middle items-center '>
+							<Link href='/game-of-the-decade'>
+								<button className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-indigo-500 hover:bg-indigo-600 font-semibold text-textwhite  shadow-sm hover:shadow-lg'>
+									View All 
+								</button>
+							</Link>
+						</div>
+					</div>
 				</div>
 			</div>
-		
-			
+			<div className='justify-center flex flex-col items-center mb-24  '>
+				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
+					<IndexTrendingGames
+						games={games2020}
+						headerText={"BEST VIDEO GAMES OF 2020"}
+						subText={"Great games from 2020"}
+					/>
+					<div className='flex justify-center'>
+						<div className='flex align-middle items-center '>
+							<Link href='/video-game-concierge'>
+								<button className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-indigo-500 hover:bg-indigo-600 font-semibold text-textwhite  shadow-sm hover:shadow-lg'>
+									View All 
+								</button>
+							</Link>
+						</div>
+					</div>
+				</div>
+			</div>
 
-
-{/*
+			{/*
 			<div className='justify-center flex flex-col items-center mt-12 '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<p className=' py-1 px-1   font-extrabold  text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-10xl '>
@@ -121,7 +145,6 @@ const Home = ({ trendingGames, games2020 }) => {
 				</div>
 			</div>
 */}
-		
 		</>
 	);
 };

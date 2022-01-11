@@ -9,7 +9,7 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 		
 			<div >
 				<motion.div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-6 grid-row-2 gap-1'>
-					{games.slice(3,15).map((game, i) => (
+					{games.slice(0,12).map((game, i) => (
 						
 							<Link href={`/games/${game.id}`} key={game.id}>
 								<div className="flex flex-col">
