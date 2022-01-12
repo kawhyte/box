@@ -3,8 +3,6 @@ import Head from "next/head";
 import GameList from "../components/GameList";
 import SectionHeaderText from "../components/SectionHeaderText";
 import SectionHero from "../components/SectionHero";
-import useSWR from "swr";
-import { UserProvider } from "@auth0/nextjs-auth0";
 import { GetStaticProps } from "next";
 import { GamesoftheDecade } from "../data/gameIDs";
 
@@ -34,10 +32,10 @@ const best_games = ({ games }) => {
 		setTodos(newTodos);
 	};
 
-	const { data: snippets, mutate } = useSWR("api/gamedata");
+	
 
 	return (
-		<UserProvider>
+		
 		<div className=''>
 			<Head>
 				<title>GameBox | Video Game Bucket List</title>
@@ -55,7 +53,7 @@ const best_games = ({ games }) => {
 
 			<GameList todos={todos} toggleTodo={toggleTodo} />
 		</div>
-		</UserProvider>
+		
 	);
 };
 

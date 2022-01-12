@@ -6,10 +6,10 @@ import GOTYList from "../components/GotyList";
 import { motion } from "framer-motion";
 import { GetStaticProps } from "next";
 import { getGames, getTrendingGames,  getGamesByID  } from "../util/getGames";
-import { GamesoftheYear2020 } from "../data/gameIDs";
+import { TrendingGames } from "../data/gameIDs";
 
 
-export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
+export const getStaticProps: GetStaticProps = getTrendingGames(TrendingGames);
 
 const GOTY = ({ games }) => {
 

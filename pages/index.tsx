@@ -16,6 +16,9 @@ import JustAdded from "../components/JustAdded";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
+import {convertEpochToDate} from "../util/convertDate"
+
+import { fromUnixTime } from 'date-fns'
 
 
 export const getStaticProps: GetStaticProps = getIndexPageGamesByID(
@@ -23,16 +26,26 @@ export const getStaticProps: GetStaticProps = getIndexPageGamesByID(
 	GamesoftheYear2020
 );
 
-const Home = ({ trendingGames, trendingGames2, bestOf2021, games2020 }) => {
+const Home = ({ trendingGames, trendingGames2, bestOf2021, bestOf2020 }) => {
 
 
-	//const sortedGames = trendingGames
-		// .sort((a, b) => {
-		// 	return b.total_rating - a.total_rating;
-		// })
-		// .sort((a, b) => {
-		// 	return b.rating_count - a.rating_count;
-		// });
+ //console.log("Date ", fromUnixTime(1640044800))
+	const highestRatedGamesNow = trendingGames
+		.sort((a, b) => {
+			return b.total_rating - a.total_rating;
+		})
+		.sort((a, b) => {
+			return b.rating_count - a.rating_count;
+		});
+
+	const recentlyAdded = trendingGames
+		.sort((a, b) => {
+			return  fromUnixTime(b.release_dates[b.release_dates.length -1].date).valueOf() - fromUnixTime (a.release_dates[a.release_dates.length -1].date).valueOf()
+		})
+	// 	.sort((a, b) => {
+	// 		return b.rating_count - a.rating_count;
+	// 	});
+	console.log(recentlyAdded)
 
 	return (
 		<>
@@ -49,7 +62,7 @@ const Home = ({ trendingGames, trendingGames2, bestOf2021, games2020 }) => {
 						Categories{" "}
 					</p>
 				</div>
-				<section className='cursor-pointer container mx-auto grid grid-cols-2  lg:grid-cols-4  gap-3     my-6  w-full  '>
+				<section className='cursor-pointer container mx-auto grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3  lg:grid-cols-3  gap-6 max-w-6xl     my-6  w-full  '>
 					<Link href='/nintendo'>
 						<div className='bg-gray-900  flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
 							<Image width={96} height={96} src='/console.png' />
@@ -68,25 +81,25 @@ const Home = ({ trendingGames, trendingGames2, bestOf2021, games2020 }) => {
 							PlayStation
 						</div>
 					</Link>
-					<Link href='/playstation'>
+					{/*<Link href='/playstation'>
 						<div className='bg-gray-900 flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
 							<Image width={96} height={96} src='/pc.png' />
 							PC
 						</div>
-					</Link>
+	</Link>*/}
 				</section>
 			</div>
 
 			<div className='justify-center flex flex-col items-center  '>
 				<div className='  mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<JustAdded games={trendingGames} headerText={"Just Added"} />
+					<JustAdded games={recentlyAdded} headerText={"Just Added"} />
 				</div>
 			</div>
 
 			<div className='justify-center flex flex-col items-center  '>
 				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<IndexTrendingGames
-						games={trendingGames2}
+						games={highestRatedGamesNow}
 						headerText={"Highest Rated Games Right Now"}
 						subText={"Video Games from the last 30 days"}
 					/>
@@ -99,7 +112,7 @@ const Home = ({ trendingGames, trendingGames2, bestOf2021, games2020 }) => {
 			<div className='justify-center flex flex-col items-center my-24'>
 				<div className=' mb-2 border rounded-3xl  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<IndexTrendingGames
-						games={games2020}
+						games={bestOf2021}
 						headerText={"BEST VIDEO GAMES OF 2021"}
 						subText={"Great games from 2021"}
 					/>
@@ -118,7 +131,7 @@ const Home = ({ trendingGames, trendingGames2, bestOf2021, games2020 }) => {
 			<div className='justify-center flex flex-col items-center mb-24  '>
 				<div className=' mb-2 border rounded-3xl  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<IndexTrendingGames
-						games={games2020}
+						games={bestOf2020}
 						headerText={"Top 12 BEST VIDEO GAMES OF 2020"}
 						subText={"Great games from 2020"}
 					/>
