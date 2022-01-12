@@ -73,13 +73,13 @@ const best_games = ({ games }) => {
 									Filter by Console
 								</h1>
 
-								<div className='bg-white px-6 py-4 my-3 w-3/4 mx-auto shadow rounded-md flex items-center bg-gray-900'>
+								<div className=' px-6 py-4 my-3 w-3/4 mx-auto shadow rounded-md flex items-center bg-gray-900'>
 									<div className='w-full text-center mx-auto'>
 										<div>
 											<button
 												type='button'
 												onClick={() => handleFilter(sortedGames, 48, null)}
-												className='border border-indigo-500 text-indigo-300 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-indigo-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+												className='border border-indigo-500 text-indigo-300 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-indigo-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
 												<i
 													className={
 														"fab fa-playstation text-md  leading-lg mr-2"
@@ -92,7 +92,7 @@ const best_games = ({ games }) => {
 										<button
 											type='button'
 											onClick={() => handleFilter(sortedGames, 49, null)}
-											className='border border-green-500 text-green-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-green-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+											className='border border-green-500 text-green-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none  hover:bg-green-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
 											<i className={"  fab fa-xbox text-md  leading-lg mr-2"} />
 											Xbox
 										</button>
@@ -100,7 +100,7 @@ const best_games = ({ games }) => {
 										<button
 											type='button'
 											onClick={() => handleFilter(sortedGames, 130, null)}
-											className='border border-red-500 text-red-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-red-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
+											className='border border-red-500 text-red-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:bg-red-600 hover:text-gray-100 focus:outline-none focus:shadow-outline'>
 											<i
 												className={"fas fa-gamepad text-md  leading-lg mr-2"}
 											/>
