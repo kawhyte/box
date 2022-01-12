@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText, startCountAt }) => {
 	let factor = 5.7;
-	  console.log("HRC ", games)
+	  
 
 
 	return (
@@ -48,7 +48,7 @@ const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText, startCountAt
 									}}>
 									<span
 										id='blackOverlay'
-										className='w-full h-full absolute opacity-50 bg-black bg-bgcolor'></span>
+										className='w-full h-full absolute opacity-50 bg-bgcolor'></span>
 								</div>
 
 								<div
@@ -106,9 +106,9 @@ const HighestRatedCard: React.FC<IGameFull> = ({ games, headerText, startCountAt
 			))}
 
 			<div className='flex flex-col lg:mb-56 justify-center pb-4 bg-bgcolor max-w-lg mx-auto rounded-xl shadow-md  md:max-w-5xl'>
-				{/*<p className='pb-1 text-sm text-textwhite font-medium tracking-widest uppercase container'>
+				<p className='pb-1 text-sm text-textwhite font-medium tracking-widest uppercase container'>
 						Full List
-							</p>*/}
+							</p>
 							
 				<Card games={games} headerText={null} startCountAt={startCountAt}/> 
 			</div>

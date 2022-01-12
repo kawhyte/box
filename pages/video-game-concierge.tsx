@@ -21,7 +21,7 @@ const best_games = ({ games }) => {
 
 	const handleFilter = (todos, num, val) => {
 		const test = filterByConsole(todos, num, val);
-		console.log("TEST", test);
+		
 		setTodos(test);
 	};
 

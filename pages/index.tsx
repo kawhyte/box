@@ -24,7 +24,7 @@ export const getStaticProps: GetStaticProps = getIndexPageGamesByID(
 );
 
 const Home = ({ trendingGames, trendingGames2, bestOf2021, games2020 }) => {
-	console.log("trendingGames2 ", trendingGames2);
+
 
 	//const sortedGames = trendingGames
 		// .sort((a, b) => {

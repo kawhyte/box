@@ -6,11 +6,11 @@ import SectionHero from "../components/SectionHero";
 import useSWR from "swr";
 import { UserProvider } from "@auth0/nextjs-auth0";
 import { GetStaticProps } from "next";
-import { GamesoftheYear2020 } from "../data/gameIDs";
+import { GamesoftheDecade } from "../data/gameIDs";
 
 import { getGames, getGamesByID } from "../util/getGames";
 
-export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheYear2020);
+export const getStaticProps: GetStaticProps = getGamesByID(GamesoftheDecade);
 
 const best_games = ({ games }) => {
 	const sortedGames = games
@@ -44,7 +44,7 @@ const best_games = ({ games }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<SectionHero games={games} headerText={"BEST GAMES OF THE DECADE"} paragraphText = {"Video games you should play before you die."} /> 
+			<SectionHero games={games} headerText={"BEST GAMES OF THE DECADE"} paragraphText = {"Video games you should play before you die."}  /> 
 
 	
 

@@ -153,12 +153,14 @@ list:[
 interface ISectionHeader {
 	paragraphText: string
 	headerText: string
-	games: any
+	games?: any
 }
 
 interface ISectionHeader {
 	paragraphText: string
 	headerText: string
+	bgColor?: string
+	games?: any
 }
 
 
