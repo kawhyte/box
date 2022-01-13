@@ -16,15 +16,15 @@ export const getStaticProps: GetStaticProps = getIndexPageGamesByID(
 
 const Home = ({ trendingGames, bestOf2021, bestOf2020 }) => {
 	let today = new Date();
-	let date = convertDateToEpoch(today.setMonth(today.getMonth() - 3));
+	let date = convertDateToEpoch(today.setMonth(today.getMonth() - 12));
 
 	console.log("trendingGames " , trendingGames)
 
-	let highestRatedGamesNow = trendingGames
-		.filter((games) => games.total_rating > 85)
-		.sort((a, b) => {
-			return b.rating_count - a.rating_count;
-		});
+	// let highestRatedGamesNow = trendingGames
+	// 	.filter((games) => games.total_rating > 85)
+	// 	.sort((a, b) => {
+	// 		return b.rating_count - a.rating_count;
+	// 	});
 
 
 		//console.log("highestRatedGamesNow " , highestRatedGamesNow)
@@ -73,7 +73,7 @@ const Home = ({ trendingGames, bestOf2021, bestOf2020 }) => {
 					<IndexTrendingGames
 						games={recentlyAdded}
 						headerText={"Highest Rated Games Right Now"}
-						subText={"Popular Games"}
+						subText={"Popular Games You Should Play"}
 					/>
 				</div>
 			</div>

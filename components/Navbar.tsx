@@ -94,7 +94,7 @@ export default function Navbar(props) {
 												" fas fa-crown text-base leading-lg mr-2"
 											}
 										/>{" "}
-										Decade of Games (2010-2021)
+										A Decade of Games (2010-2021)
 									</a>
 								</li>
 								</Link>

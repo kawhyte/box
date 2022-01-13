@@ -6,10 +6,10 @@ const Trending: React.FC<IGame> = ({ games, headerText, startCountAt }) => {
 	return (
 		<main className=' pb-3 mx-8 justify-start'>
 			<div>
-				<motion.div className='grid grid-cols-2  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-7  grid-row-2 gap-2'>
+				<motion.div className='grid grid-cols-2  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6  grid-row-2 gap-2'>
 					{games.slice(0, 50).map((game, i) => (
 						<Link href={`/games/${game.id}`} key={game.id}>
-							<div className='flex flex-col'>
+							<div className='flex flex-col hover-trigger'>
 								<motion.div
 									key={game.id}
 									className=' shadow-lg relative rounded p-1 max-w-sm cursor-pointer '
@@ -50,46 +50,69 @@ const Trending: React.FC<IGame> = ({ games, headerText, startCountAt }) => {
 										<p className='mt-3 text-gray-600'>{game.name}</p>
 
 										<div className='flex flex-col items-start w-4 justify-start  absolute   rounded bg-opacity-0 group-hover:bg-opacity-60 h-full top-0   group-hover:opacity-100 transition '>
-											<button className='hover:scale-125  text-white transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>
-												<svg
-													xmlns='http://www.w3.org/2000/svg'
-													className='h-7 w-7 my-2 mx-2  text-gray-300'
-													viewBox='0 0 20 20'
-													fill='currentColor'>
-													<path
-														fill-rule='evenodd'
-														d='M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z'
-														clip-rule='evenodd'
-													/>
-												</svg>
+											<button className='hover:scale-110   flex flex-row align-middle items-center   transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>
+												<div className='  z-10'>
+													<svg
+														xmlns='http://www.w3.org/2000/svg'
+														className='h-7 w-7 my-2 mx-2 bg-offblack rounded-xl  text-gray-300'
+														fill='none'
+														viewBox='0 0 24 24'
+														stroke='currentColor'>
+														<path
+															strokeLinecap='round'
+															strokeLinejoin='round'
+															strokeWidth='2'
+															d='M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'
+														/>
+													</svg>
+												</div>
+												<p className='text-white hover-target hover:bg-red-500 transition group-hover:inline-block -ml-7 py-1.5 px-7 whitespace-nowrap md:px-12 lg:px-8 xl:px-8  bg-gray-900   rounded-2xl'>
+													Loved this Game 
+												</p>
 											</button>
 
-											<button className='hover:scale-110 text-white  transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>
-												<svg
-													xmlns='http://www.w3.org/2000/svg'
-													className='h-7 w-7 my-2 mx-2  text-gray-300'
-													viewBox='0 0 20 20'
-													fill='currentColor'>
-													<path
-														fill-rule='evenodd'
-														d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z'
-														clip-rule='evenodd'
-													/>
-												</svg>
+											<button className='hover:scale-110   flex flex-row align-middle items-center   transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>
+												<div className='  z-10'>
+													<svg
+														xmlns='http://www.w3.org/2000/svg'
+														className='h-7 w-7 my-2 mx-2 bg-offblack rounded-xl text-gray-300'
+														fill='none'
+														viewBox='0 0 24 24'
+														stroke='currentColor'>
+														<path
+															strokeLinecap='round'
+															strokeLinejoin='round'
+															strokeWidth='2'
+															d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
+														/>
+													</svg>
+												</div>
+
+												<p className='text-white hover-target hover:bg-indigo-500 transition group-hover:inline-block -ml-7 py-1.5 px-7 whitespace-nowrap md:px-12 lg:px-8 xl:px-8  bg-gray-900   rounded-2xl'>
+													Played it
+												</p>
 											</button>
 
-											<button className='hover:scale-110   transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>
-												<svg
-													xmlns='http://www.w3.org/2000/svg'
-													className='h-7 w-7 my-2 mx-2  text-gray-300'
-													viewBox='0 0 20 20'
-													fill='currentColor'>
-													<path
-														fill-rule='evenodd'
-														d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z'
-														clip-rule='evenodd'
-													/>
-												</svg>
+											<button className='hover:scale-110   flex flex-row align-middle items-center   transform translate-y-3 group-hover:translate-y-0 group-hover:opacity-100 transition'>
+												<div className='  z-10'>
+													<svg
+														xmlns='http://www.w3.org/2000/svg'
+														className='h-7 w-7 my-2 mx-2 bg-offblack rounded-xl  text-gray-300'
+														fill='none'
+														viewBox='0 0 24 24'
+														stroke='currentColor'>
+														<path
+															strokeLinecap='round'
+															strokeLinejoin='round'
+															strokeWidth='2'
+															d='M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z'
+														/>
+													</svg>
+												</div>
+
+												<p className='text-white hover-target transition hover:bg-green-500 group-hover:inline-block -ml-7 py-1.5 px-7 whitespace-nowrap md:px-12 lg:px-8 xl:px-8  bg-gray-900   rounded-2xl'>
+													Want to play
+												</p>
 											</button>
 										</div>
 									</div>

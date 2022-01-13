@@ -145,3 +145,12 @@ body {
   -webkit-backdrop-filter: blur(6px);
 }
 
+.hover-trigger .hover-target {
+  display: none;
+}
+
+.hover-trigger:hover .hover-target {
+  display: block;
+ 
+}
+

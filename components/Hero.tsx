@@ -17,7 +17,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 	//console.log(" sortedGames[0] ", sortedGames[0]);
 	return (
 		<>
-			<section className='text-gray-600 body-font  container max-w-6xl mb-16 '>
+			<section className='text-gray-600 body-font  container max-w-6xl  mb-28 '>
 				<div className='mx-auto relative flex z-0 items-center justify-center flex-row'>
 					<div
 						className='flex flex-col    mx-auto justify-end items-center  bg-center opacity-50 bg-bgcolor container  bg-no-repeat bg-cover  '

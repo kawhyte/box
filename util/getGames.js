@@ -1,13 +1,11 @@
 import axios from "axios";
-import {convertDateToEpoch} from "../util/convertDate"
+import { convertDateToEpoch } from "../util/convertDate";
 
 let today = new Date();
-let date = convertDateToEpoch(today.setMonth(today.getMonth() - 1  ))
-let date2 = convertDateToEpoch(today.setMonth(today.getMonth() - 50))
-
+let date = convertDateToEpoch(today.setMonth(today.getMonth() - 1));
+let date2 = convertDateToEpoch(today.setMonth(today.getMonth() - 50));
 
 export function getTrendingGames(platform) {
-
 	return async () => {
 		const games = await axios({
 			//url: "http://localhost:8001/games",
@@ -30,12 +28,11 @@ export function getTrendingGames(platform) {
 
 		return {
 			props: { games },
-			revalidate: 1
+			revalidate: 1,
 		};
 	};
 }
 export function getGames(platform) {
-
 	return async () => {
 		const games = await axios({
 			//url: "http://localhost:8001/games",
@@ -58,7 +55,7 @@ export function getGames(platform) {
 
 		return {
 			props: { games },
-			revalidate: 1
+			revalidate: 1,
 		};
 	};
 }
@@ -86,7 +83,7 @@ export function getGamesByDate(from, to) {
 
 		return {
 			props: { bestGamesOfTheYear },
-			revalidate: 1
+			revalidate: 1,
 		};
 	};
 }
@@ -113,12 +110,11 @@ export function getGamesByID(gameIds) {
 
 		return {
 			props: { games },
-			revalidate: 1
+			revalidate: 1,
 		};
 	};
 }
 export function getGamesByName(gameName) {
-	
 	return async () => {
 		const games = await axios({
 			url: "https://api.igdb.com/v4/games",
@@ -133,8 +129,6 @@ export function getGamesByName(gameName) {
 			search "${gameName}"; limit 120; `,
 		})
 			.then((response) => {
-
-				
 				return response.data;
 			})
 			.catch((err) => {
@@ -161,13 +155,10 @@ export function filterByConsole(sortedGames, gameId, gameId2) {
 	});
 }
 
-
-export function getIndexPageGamesByID(platform, gameIds2020 ) {
+export function getIndexPageGamesByID(platform, gameIds2020) {
 	let today = new Date();
-let todayEpoch = convertDateToEpoch(today)
+	let todayEpoch = convertDateToEpoch(today);
 	return async () => {
-  
-
 		const trendingGames = await axios({
 			//url: "http://localhost:8001/games",
 			url: "https://api.igdb.com/v4/games",
@@ -178,7 +169,7 @@ let todayEpoch = convertDateToEpoch(today)
 				Authorization: process.env.Authorization,
 			},
 			data: `fields age_ratings,similar_games,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
-			 limit 255; where release_dates.date < ${todayEpoch}  & platforms = ${platform} & rating > 50; sort first_release_date desc;`,
+			 limit 255; where release_dates.date < ${todayEpoch} & release_dates.y >= 2021  & platforms = ${platform} & rating > 60; sort first_release_date desc;`,
 		})
 			.then((response) => {
 				return response.data;
@@ -264,13 +255,11 @@ let todayEpoch = convertDateToEpoch(today)
 		// 	});
 
 		return {
-			props: { 
-				
-				trendingGames:trendingGames,
+			props: {
+				trendingGames: trendingGames,
 				//trendingGames2:trendingGames2,
-				bestOf2021:bestOf2021,
-				bestOf2020: bestOf2020
-			
+				bestOf2021: bestOf2021,
+				bestOf2020: bestOf2020,
 			},
 			//revalidate: 1
 		};
