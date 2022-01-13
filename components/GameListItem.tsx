@@ -69,6 +69,7 @@ const GameListItem: React.FC<GameListItemProps> = ({ todo, toggleTodo }) => {
 								}}
 								className={red + " fas fa-heart"}
 							/>
+						
 							<p className='py-1 text-sm cursor-pointer'>{todo.follows}</p>
 						</span>
 					</p>

@@ -24,16 +24,14 @@ const nintendo: React.FC<IGameFull> = ({ games, headerText, subText }) => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<div className=' container flex lg:bg-transparent	flex-col justify-center bg-bgcolor text-textwhite text-center py-10 rounded-xl mt-2 max-w-md  md:max-w-xl lg:max-w-7xl'>
-				<h1 className=' pb-6 text-base font-bold tracking-widest headings uppercase text-indigo-500'>
+			<div className='pl-12  text-left flex flex-col  bg-bgcolor text-textwhite  py-6 rounded-xl mt-2    md:max-w-3xl  '>
+				<h1 className='pb-4  text-base font-bold tracking-widest headings uppercase text-indigo-500 '>
 				{subText}
 				</h1>
 				<h1 className='pb-6 text-3xl font-black headings uppercase'>
 					{headerText}
 				</h1>
-				{/*<p className=' py-2 text-xl font-light leading-relaxed mt-0 mb-6 '>
-				{paragraphText}
-	</p>*/}
+
 			</div>
 
 			<IndexCard games={sortedGames} startCountAt={1} headerText='' />

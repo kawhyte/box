@@ -1,51 +1,44 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
 import { GetStaticProps } from "next";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GamesoftheYear2020, TrendingGames } from "../data/gameIDs";
-import useSWR from "swr";
-import {
-	getGamesByID,
-	getGames,
-	getIndexPageGamesByID,
-} from "../util/getGames";
+import { getIndexPageGamesByID } from "../util/getGames";
 
-import SectionHeaderText from "../components/SectionHeaderText";
 import IndexTrendingGames from "../components/IndexTrendingGames";
-import JustAdded from "../components/JustAdded";
-import Navbar from "../components/Navbar";
-import Link from "next/link";
-import Image from "next/image";
-import {convertEpochToDate} from "../util/convertDate"
-
-import { fromUnixTime } from 'date-fns'
-
+import { convertDateToEpoch } from "../util/convertDate";
+import { fromUnixTime, parse } from "date-fns";
 
 export const getStaticProps: GetStaticProps = getIndexPageGamesByID(
 	TrendingGames,
 	GamesoftheYear2020
 );
 
-const Home = ({ trendingGames, trendingGames2, bestOf2021, bestOf2020 }) => {
+const Home = ({ trendingGames, bestOf2021, bestOf2020 }) => {
+	let today = new Date();
+	let date = convertDateToEpoch(today.setMonth(today.getMonth() - 3));
 
+	console.log("trendingGames " , trendingGames)
 
- //console.log("Date ", fromUnixTime(1640044800))
-	const highestRatedGamesNow = trendingGames
-		.sort((a, b) => {
-			return b.total_rating - a.total_rating;
-		})
+	let highestRatedGamesNow = trendingGames
+		.filter((games) => games.total_rating > 85)
 		.sort((a, b) => {
 			return b.rating_count - a.rating_count;
 		});
 
-	const recentlyAdded = trendingGames
+
+		//console.log("highestRatedGamesNow " , highestRatedGamesNow)
+
+	let recentlyAdded = trendingGames
+		.filter((games) => games.release_dates[games.release_dates.length -1].date > date)
 		.sort((a, b) => {
-			return  fromUnixTime(b.release_dates[b.release_dates.length -1].date).valueOf() - fromUnixTime (a.release_dates[a.release_dates.length -1].date).valueOf()
-		})
-	// 	.sort((a, b) => {
-	// 		return b.rating_count - a.rating_count;
-	// 	});
-	console.log(recentlyAdded)
+			return (
+				b.release_dates[b.release_dates.length - 1].date.valueOf() -
+				a.release_dates[a.release_dates.length - 1].date.valueOf()
+			);
+		});
+	
+		console.log("recentlyAdded " , recentlyAdded)
 
 	return (
 		<>
@@ -56,114 +49,44 @@ const Home = ({ trendingGames, trendingGames2, bestOf2021, bestOf2020 }) => {
 
 			<Hero games={trendingGames} headerText={null} />
 
-			<div className='flex flex-col   align-middle items-center mt-24 '>
-				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<p className=' py-1 px-1   font-extrabold  text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl '>
-						Categories{" "}
-					</p>
-				</div>
-				<section className='cursor-pointer container mx-auto grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3  lg:grid-cols-3  gap-6 max-w-6xl     my-6  w-full  '>
-					<Link href='/nintendo'>
-						<div className='bg-gray-900  flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
-							<Image width={96} height={96} src='/console.png' />
-							Nintendo
-						</div>
-					</Link>
-					<Link href='/xbox'>
-						<div className='bg-gray-900 flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
-							<Image width={96} height={96} src='/game-console.png' />
-							Xbox
-						</div>
-					</Link>
-					<Link href='/playstation'>
-						<div className='bg-gray-900 flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
-							<Image width={96} height={96} src='/playstation.png' />
-							PlayStation
-						</div>
-					</Link>
-					{/*<Link href='/playstation'>
-						<div className='bg-gray-900 flex flex-col align-middle items-center px-16 py-4  mx-8  rounded-3xl hover:bg-gray-700'>
-							<Image width={96} height={96} src='/pc.png' />
-							PC
-						</div>
-	</Link>*/}
-				</section>
-			</div>
-
-			<div className='justify-center flex flex-col items-center  '>
-				<div className='  mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<JustAdded games={recentlyAdded} headerText={"Just Added"} />
-				</div>
-			</div>
-
-			<div className='justify-center flex flex-col items-center  '>
-				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<IndexTrendingGames
-						games={highestRatedGamesNow}
-						headerText={"Highest Rated Games Right Now"}
-						subText={"Video Games from the last 30 days"}
-					/>
-				</div>
-		
-			</div>
-
-		
-	
-			<div className='justify-center flex flex-col items-center my-24'>
-				<div className=' mb-2 border rounded-3xl  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
+			{/* <div className='justify-center flex flex-col items-center my-4'>
+				<div className=' mb-2  rounded-3xl  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<IndexTrendingGames
 						games={bestOf2021}
 						headerText={"BEST VIDEO GAMES OF 2021"}
 						subText={"Great games from 2021"}
 					/>
-								<div className='flex justify-center my-8'>
-						<div className='flex align-middle items-center '>
-						<Link href='/best-of-2021'>
-								<button className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-indigo-500 hover:bg-indigo-600 font-semibold text-textwhite  shadow-sm hover:shadow-lg'>
-									VIEW All Games
-								</button>
-							</Link>
-						</div>
-					</div>
-			
+				</div>
+			</div> */}
+
+			{/*<div className='justify-start flex flex-col '>
+				<div className=' mb-4  flex flex-col justify-start  text-left font-black  text-textwhite tracking-wider  '>
+					<IndexTrendingGames
+						games={highestRatedGamesNow}
+						headerText={"Highest Rated Games Right Now"}
+						subText={"Highest Rated Games from the last 30 days"}
+					/>
+				</div>
+	</div>*/}
+			<div className='justify-start flex flex-col '>
+				<div className=' mb-4  flex flex-col justify-start  text-left font-black  text-textwhite tracking-wider  '>
+					<IndexTrendingGames
+						games={recentlyAdded}
+						headerText={"Highest Rated Games Right Now"}
+						subText={"Popular Games"}
+					/>
 				</div>
 			</div>
-			<div className='justify-center flex flex-col items-center mb-24  '>
-				<div className=' mb-2 border rounded-3xl  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
+
+			{/*<div className='justify-center flex flex-col items-center mb-24  '>
+				<div className=' mb-2  rounded-3xl  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
 					<IndexTrendingGames
 						games={bestOf2020}
 						headerText={"Top 12 BEST VIDEO GAMES OF 2020"}
 						subText={"Great games from 2020"}
 					/>
-								<div className='flex justify-center my-8'>
-						<div className='flex align-middle items-center '>
-							<Link href='/best-of-2020'>
-								<button className='uppercase py-2 px-4 mx-1 text-base sm:text-base tracking-wide sm:px-8 sm:py-3 rounded bg-indigo-500 hover:bg-indigo-600 font-semibold text-textwhite  shadow-sm hover:shadow-lg'>
-									VIEW All Games
-								</button>
-							</Link>
-						</div>
-					</div>
-			
 				</div>
-			</div>
-
-			{/*
-			<div className='justify-center flex flex-col items-center mt-12 '>
-				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<p className=' py-1 px-1   font-extrabold  text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-10xl '>
-					Popular lists{" "}
-					</p>
-				</div>
-			</div>
-			<div className='justify-center flex flex-col items-center mt-12 '>
-				<div className=' mb-4  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<p className=' py-1 px-1   font-extrabold  text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-10xl '>
-						Trending{" "}
-					</p>
-				</div>
-			</div>
-*/}
+</div>*/}
 		</>
 	);
 };

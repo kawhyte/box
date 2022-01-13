@@ -1,16 +1,9 @@
 import React from "react";
-import { animate, motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
-import { convertEpochToDate } from "../util/convertDate";
+
 
 const Hero: React.FC<IGameFull> = ({ games }) => {
 	let randomNum = Math.floor(Math.random() * games.length);
-	//console.log("Games ", games[randomNum].release_dates);
-
-	//let date = convertEpochToDate(games[0].release_dates[0].date)
-
-	//console.log (date.getFullYear())
 
 	const list = {
 		visible: { opacity: 1 },
@@ -24,7 +17,7 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 	//console.log(" sortedGames[0] ", sortedGames[0]);
 	return (
 		<>
-			<section className='text-gray-600 body-font  container max-w-6xl '>
+			<section className='text-gray-600 body-font  container max-w-6xl mb-16 '>
 				<div className='mx-auto relative flex z-0 items-center justify-center flex-row'>
 					<div
 						className='flex flex-col    mx-auto justify-end items-center  bg-center opacity-50 bg-bgcolor container  bg-no-repeat bg-cover  '

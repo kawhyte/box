@@ -5,13 +5,14 @@ import { motion } from "framer-motion";
 const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 
 	return (
-		<main className='grid   pb-3 mt-20  content-start items-center justify-center'>
+		
+		<main className='   pb-3 mt-20  items-center justify-center'>
 			<p className=' py-2 uppercase text-indigo-500  border-b-2 text-lg text-left font-light leading-relaxed mt-0 mb-5 '>
 				{headerText}
 			</p>
 			<div >
-				<motion.div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-12 gap-1'>
-					{games.slice(0,12).map((game, i) => (
+				<motion.div className='grid grid-cols-4 sm:grid-cols-4 md:grid-cols-8 gap-1'>
+					{games.slice(0,8).map((game, i) => (
 						
 							<Link href={`/games/${game.id}`} key={game.id}>
 								<motion.div key={game.id}
