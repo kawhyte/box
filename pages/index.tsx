@@ -19,7 +19,7 @@ const Home = ({ trendingGames, bestOf2021, bestOf2020 }) => {
 	let today = new Date();
 	let date = convertDateToEpoch(today.setMonth(today.getMonth() - 12));
 
-	console.log("trendingGames " , trendingGames)
+	//console.log("trendingGames " , trendingGames)
 
 	// let highestRatedGamesNow = trendingGames
 	// 	.filter((games) => games.total_rating > 85)

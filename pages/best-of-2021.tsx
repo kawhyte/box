@@ -16,7 +16,7 @@ export const getStaticProps: GetStaticProps = getGamesByDate(1609522952,16401949
 
 const best_games = ({ bestGamesOfTheYear }) => {
 
-	console.log("bestGamesOfTheYear ", bestGamesOfTheYear)
+	//console.log("bestGamesOfTheYear ", bestGamesOfTheYear)
 	const sortedGames = bestGamesOfTheYear
 		.sort((a, b) => {
 			return b.total_rating - a.total_rating;
