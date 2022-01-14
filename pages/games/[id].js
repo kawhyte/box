@@ -33,131 +33,10 @@ export const getServerSideProps = async (context) => {
 	};
 };
 
-{
-	/*export const getStaticProps = async (context) => {
-	const id = context.params.id;
-
-	const data = await axios({
-		url: "https://api.igdb.com/v4/games",
-		method: "POST",
-		headers: {
-			Accept: "application/json",
-			"Client-ID": process.env.ClientID,
-			Authorization: process.env.Authorization,
-		},
-		data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms.*,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;limit 500; where id = ${id};`,
-	})
-		.then((response) => {
-			return response.data;
-		})
-		.catch((err) => {
-			console.error(err);
-		});
-
-	return {
-		props: { data: data },
-	};
-};
-
-export const getStaticPaths = async () => {
-	const games = await axios({
-		url: "https://api.igdb.com/v4/games",
-		method: "POST",
-		headers: {
-			Accept: "application/json",
-			"Client-ID": process.env.ClientID,
-			Authorization: process.env.Authorization,
-		},
-		data: `fields age_ratings,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
-		limit 11; where first_release_date > 1577905941 & first_release_date < 1609528341 & platforms = {169,49,167,48,130} & rating > 60;`,
-	})
-		.then((response) => {
-			
-			return response.data;
-		})
-		.catch((err) => {
-			console.error(err);
-		});
-		//const ids = games.map((item) => item.id);
-		
-		//const paths = ids.map((id) => ({ params: { id: id.toString() } }));
-
-
-	const paths = games.map((game) => {
-		return {
-			params: { id: game.id.toString() },
-		};
-	});
-	return {
-		paths,
-		fallback: false,
-	};
-}; */
-}
-
-{
-	/*     
-export const getStaticPaths = async () => {
-	const games = await axios({
-		url: "https://api.igdb.com/v4/games",
-		method: "POST",
-		headers: {
-			Accept: "application/json",
-			"Client-ID": process.env.ClientID,
-			Authorization: process.env.Authorization,
-		},
-		data: `fields age_ratings,platforms.*,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites;
-		limit 11; where first_release_date > 1577905941 & first_release_date < 1609528341 & platforms = {169,49,167,48,130} & rating > 60;`,
-	})
-		.then((response) => {
-			return response.data;
-		})
-		.catch((err) => {
-			console.error(err);
-		});
-
-	const paths = games.map((game) => {
-		return {
-			params: { id: game.id.toString() },
-		};
-	});
-
-	return {
-		paths: paths,
-		fallback: false
-	};
-};
-
-export const getStaticProps = async (context) => {
-	const id = context.params.id;
-
-	const data = await axios({
-		url: "https://api.igdb.com/v4/games",
-		method: "POST",
-		headers: {
-			Accept: "application/json",
-			"Client-ID": process.env.ClientID,
-			Authorization: process.env.Authorization,
-		},
-		data: `fields age_ratings,artworks.*,aggregated_rating,aggregated_rating_count,alternative_names,artworks,bundles,category,checksum,collection,cover.*,created_at,dlcs,expanded_games,expansions,external_games,first_release_date,follows,forks,franchise,franchises,game_engines,game_modes,genres.*,hypes,involved_companies,keywords,multiplayer_modes,name,parent_game,platforms.*,player_perspectives,ports,rating,rating_count,release_dates.*,remakes,remasters,screenshots.*,similar_games,slug,standalone_expansions,status,storyline,summary,tags,themes,total_rating,total_rating_count,updated_at,url,version_parent,version_title,videos.*,websites; where id = ${id};`,
-	})
-		.then((response) => {
-			return response.data;
-		})
-		.catch((err) => {
-			console.error(err);
-		});
-
-	return {
-		props: { data: data },
-		
-	};
-};
-*/
-}
 const Details = ({ data }) => {
 	let factor = 3.5;
 	let color = "";
+	let border = "";
 	let skip = "hidden";
 	let must_play = "hidden";
 	let outstanding = "hidden";
@@ -166,30 +45,25 @@ const Details = ({ data }) => {
 
 	let ratings = data[0].rating && data[0].rating.toFixed(0);
 
-	let circumference =  (ratings * 2 * 3.14)
-	
+	let circumference = ratings * 2 * 3.14;
 
 	if (ratings < 80 && ratings >= 60) {
 		color = "bg-yellow-500";
+		border = "border-yellow-500";
 		try_it = "";
-	}
-
-	if (ratings < 60 && ratings > 0) {
+	} else if (ratings < 60 && ratings > 0) {
 		color = "bg-red-500";
+		border = "border-red-500";
 		skip = "";
-	}
-
-	if (ratings >= 80) {
+	} else if (ratings >= 87) {
 		color = "bg-green-600";
+		border = "border-green-600";
 		outstanding = "";
-	}
-
-	if (ratings === "0") {
+	} else if (ratings === "0") {
 		color = "bg-gray-500";
+		border = " border-gray-500";
 		try_it = "";
-	}
-
-	if (ratings >= 86) {
+	} else if (ratings >= 86) {
 		must_play = "";
 	}
 
@@ -223,16 +97,18 @@ const Details = ({ data }) => {
 					<section className='pb-8 md:pb-20 bg-bgcolor '>
 						<div className='container  mx-auto px-4'>
 							<div className=' relative flex flex-col md:flex-row justify-center items-center  max-w-3xl min-w-min  '>
-								<img
-									className='w-96 bg-cover mr-5 rounded-xl'
-									src={
-										data[0].cover &&
-										data[0]?.cover?.url?.replace("t_thumb", "t_cover_big")
-									}
-								/>
+								<div>
+									<img
+										className='w-96 bg-cover mr-5 rounded-xl'
+										src={
+											data[0].cover &&
+											data[0]?.cover?.url?.replace("t_thumb", "t_cover_big")
+										}
+									/>
+								</div>
 
-								<div className=' '>
-									<p className='text-textwhite text-center md:text-left font-bold text-2xl'>
+								<div className='ml-10 '>
+									<p className='text-textwhite text-center md:text-left font-bold text-4xl mt-8'>
 										{data[0].name}
 									</p>
 
@@ -253,41 +129,11 @@ const Details = ({ data }) => {
 									</time>*/}
 
 									<div className='pt-6 md:mt-6 flex flex-col justify-center  '>
-										<div
-											className='flex items-center flex-wrap max-w-md px-12 bg-gray-900 shadow-xl rounded-2xl h-20'
-											>
-											<div className='flex items-center justify-center -m-6 overflow-hidden bg-gray-900 rounded-full '>
-												<svg
-													className='w-32 h-32 transform translate-x-1 translate-y-1'
-													
-												>
-													<circle
-														className='text-gray-300'
-														strokeWidth='10'
-														stroke='currentColor'
-														fill='transparent'
-														r='50'
-														cx='60'
-														cy='60'
-													/>
-													
-													<circle
-														className='text-green-600'
-														strokeWidth='10'
-														strokeDasharray={circumference}
-														strokeDashoffset='circumference'
-														strokeLinecap='round'
-														stroke='currentColor'
-														fill='transparent'
-														r='50'
-														cx='60'
-														cy='60'
-														
-													/>
-												</svg>
-												<span className='absolute text-2xl text-gray-400'>
+										<div className='flex items-center flex-wrap max-w-md px-12 bg-gray-900 shadow-xl rounded-2xl h-20  '>
+											<div className='flex items-center   justify-center ml-6 pl-12 overflow-hidden bg-gray-900  ' >
+												<span className={'absolute text-3xl border-8 p-4  text-gray-400 rounded-2xl  ' + border}>
 													{data[0].rating && data[0].rating.toFixed(0)
-														? data[0].rating.toFixed(0) + "%"
+														? data[0].rating.toFixed(0) / 10 + "/10"
 														: "Not Rated"}
 												</span>
 											</div>
@@ -366,7 +212,6 @@ const Details = ({ data }) => {
 													</p>
 												</span>
 											</div>
-
 										</div>
 									</div>
 								</div>

@@ -154,3 +154,13 @@ body {
  
 }
 
+.shape{
+  height: 100px;
+width: 150px;
+border-radius: 0.75rem;
+border-top: 22px solid #66C;
+border-bottom: 22px solid #66C;
+border-left: 22px solid #66C;
+border-right: 22px solid #66C;
+}
+
