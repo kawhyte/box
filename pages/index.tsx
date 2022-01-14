@@ -6,6 +6,7 @@ import { GamesoftheYear2020, TrendingGames } from "../data/gameIDs";
 import { getIndexPageGamesByID } from "../util/getGames";
 
 import IndexTrendingGames from "../components/IndexTrendingGames";
+import JustAdded from "../components/JustAdded";
 import { convertDateToEpoch } from "../util/convertDate";
 import { fromUnixTime, parse } from "date-fns";
 
@@ -49,15 +50,15 @@ const Home = ({ trendingGames, bestOf2021, bestOf2020 }) => {
 
 			<Hero games={trendingGames} headerText={null} />
 
-			{/* <div className='justify-center flex flex-col items-center my-4'>
+			 <div className='justify-center flex flex-col items-center my-4 mx-6'>
 				<div className=' mb-2  rounded-3xl  flex flex-col align-middle justify-center items-center text-center font-black  text-textwhite tracking-wider  '>
-					<IndexTrendingGames
+					<JustAdded
 						games={bestOf2021}
 						headerText={"BEST VIDEO GAMES OF 2021"}
 						subText={"Great games from 2021"}
 					/>
 				</div>
-			</div> */}
+			</div> 
 
 			{/*<div className='justify-start flex flex-col '>
 				<div className=' mb-4  flex flex-col justify-start  text-left font-black  text-textwhite tracking-wider  '>
@@ -68,7 +69,7 @@ const Home = ({ trendingGames, bestOf2021, bestOf2020 }) => {
 					/>
 				</div>
 	</div>*/}
-			<div className='justify-start flex flex-col '>
+			<div className='justify-start flex flex-col  container mx-auto my-28'>
 				<div className=' mb-4  flex flex-col justify-start  text-left font-black  text-textwhite tracking-wider  '>
 					<IndexTrendingGames
 						games={recentlyAdded}

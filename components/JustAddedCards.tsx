@@ -11,8 +11,8 @@ const Trending: React.FC <IGame> = ({ games, headerText, startCountAt }) => {
 				{headerText}
 			</p>
 			<div >
-				<motion.div className='grid grid-cols-4 sm:grid-cols-4 md:grid-cols-8 gap-1'>
-					{games.slice(0,8).map((game, i) => (
+				<motion.div className='grid grid-cols-4 sm:grid-cols-4 md:grid-cols-10 gap-1'>
+					{games.slice(0,30).map((game, i) => (
 						
 							<Link href={`/games/${game.id}`} key={game.id}>
 								<motion.div key={game.id}
