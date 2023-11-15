@@ -15,6 +15,8 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 		hidden: { opacity: 0, x: -100 },
 	};
 	//console.log(" sortedGames[0] ", sortedGames[0]);
+	//https://www.youtube.com/watch?v=tea0215CR9Q
+	console.log("games 2 ", games[0].videos)
 	return (
 		<>
 			<section className='text-gray-600 body-font  container max-w-6xl  mb-28 '>
@@ -28,7 +30,28 @@ const Hero: React.FC<IGameFull> = ({ games }) => {
 								"t_thumb",
 								"t_screenshot_big"
 							)})`,
-						}}></div>
+						}}>
+
+<iframe style={{minHeight: "65vh",minWidth:"10vw"}}
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+
+						</div>
+
+
+
+<video
+					autoPlay
+
+					loop
+					muted
+					className=' hidden md:block absolute h-full w-full object-cover'>
+					Your browser does not support the video tag.
+					<source
+						// src='https://dl.dropboxusercontent.com/s/0c76v5mrs9duv12/MTW-video.mp4'
+						src='https://www.youtube.com/watch?v=tea0215CR9Q'
+						type='video/mp4'
+					/>
+				</video>
 
 					<span className='absolute hidden lg:block  z-50 border-red-500 inset-y-0 right-60 transform rotate-90 opacity-30    '>
 						

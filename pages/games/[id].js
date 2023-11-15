@@ -39,6 +39,7 @@ const Details = ({ data }) => {
 	let factor = 3.5;
 	let color = "";
 	let border = "";
+	let bg = " ";
 	let img = "/ratingIcons/love.png";
 	let skip = "hidden";
 	let must_play = "hidden";
@@ -46,24 +47,33 @@ const Details = ({ data }) => {
 	let try_it = "hidden";
 	let convertedDate = toDate(data[0].first_release_date);
 
+	console.log("Data ", data)
+
 	let ratings = data[0].rating && data[0].rating.toFixed(0);
 
 	let circumference = ratings * 2 * 3.14;
 
 	if (ratings >= 0 && ratings < 40) {
 		img = "/ratingIcons/sad.png";
+		bg = "text-red-500";
 	} else if (ratings >= 40 && ratings < 50) {
 		img = "/ratingIcons/sad.png";
+		bg = "text-red-500";
 	} else if (ratings >= 50 && ratings < 60) {
 		img = "/ratingIcons/dizzy.png";
+		bg = "text-yellow-500";
 	} else if (ratings >= 60 && ratings < 70) {
 		img = "/ratingIcons/eyes.png";
+		bg = "text-yellow-500";
 	} else if (ratings >= 70 && ratings < 85) {
 		img = "/ratingIcons/eyes.png";
+		bg = "text-orange-500";
 	} else if (ratings >= 85) {
-		img = "/ratingIcons/love.png";
+		img = "/ratingIcons/love.svg";
+		bg = "text-white";
 	} else {
 		img = "/ratingIcons/dizzy.png";
+		bg = "bg-red-500";
 		// Fall through
 	}
 
@@ -97,20 +107,63 @@ const Details = ({ data }) => {
 					<section className='pb-8 md:pb-20 bg-bgcolor '>
 						<div className='container  mx-auto px-4'>
 							<div className=' relative flex flex-col md:flex-row justify-center items-center  max-w-3xl min-w-min  '>
-								<div>
-									<img
-										className='w-96 bg-cover mr-5 rounded-xl'
+								<div className='w-5/12 '>
+									<Image
 										src={
 											data[0].cover &&
-											data[0]?.cover?.url?.replace("t_thumb", "t_cover_big")
+											"https://" +
+												data[0]?.cover?.url?.replace("t_thumb", "t_cover_big")
 										}
+										width={560}
+										height={740}
+										className=' w-96 bg-cover mr-5 rounded-xl'
+										alt='Gameboy Image'
+										blurDataURL={
+											data[0].cover &&
+											"https://" +
+												data[0]?.cover?.url?.replace("t_thumb", "t_cover_big")
+										}
+										placeholder='blur'
 									/>
 								</div>
 
-								<div className='ml-10 '>
-									<p className='text-textwhite text-center md:text-left font-bold text-4xl mt-8'>
+								<div className='ml-12 flex flex-col w-7/12 '>
+									<p className='text-textwhite text-center md:text-left font-bold text-4xl '>
 										{data[0].name}
 									</p>
+
+									<div className=' flex flex-col justify-center  '>
+										<div className='flex items-center flex-wrap max-w-md   '>
+											<div
+												className={
+													"flex items-center text-3xl  py-3   rounded-2xl   justify-between  overflow-hidden   " +
+													bg
+												}>
+												<div className='  '>
+													<Image
+														src={img}
+														width={80}
+														height={136}
+														alt='Gameboy Image'
+														blurDataURL={img}
+														placeholder='blur'
+													/>
+												</div>
+												<div>
+													<span
+														className={
+															" text-5xl  pl-4 font-bold rounded-2xl  "
+														}>
+														{data[0].rating && data[0].rating.toFixed(0)
+															? data[0].rating.toFixed(0) + "%"
+															: "Not Rated"}
+													</span>
+
+													<p className=' text-center text-2xl'> Great</p>
+												</div>
+											</div>
+										</div>
+									</div>
 
 									<PlatformList
 										list={data[0]?.platforms}
@@ -127,32 +180,6 @@ const Details = ({ data }) => {
 									{/*<time className='mt-4   text-base text-center md:text-left md:text-base'>
 											Released on {data[0].release_dates[0].date}
 									</time>*/}
-
-									<div className='pt-6 md:mt-6 flex flex-col justify-center  '>
-										<div className='flex items-center flex-wrap max-w-md   '>
-											<div className='flex items-center text-3xl border-2 pr-9 py-3 bg-white  text-indigo-400 rounded-2xl   justify-between ml-6 pl-12 overflow-hidden   '>
-												<div className='  '>
-													<Image
-														src={img}
-														width={76}
-														height={92}
-														alt='Gameboy Image'
-														blurDataURL={img}
-														placeholder='blur'
-													/>
-												</div>
-
-												<span
-													className={
-														" text-5xl  pl-4 font-bold  text-indigo-500 rounded-2xl  "
-													}>
-													{data[0].rating && data[0].rating.toFixed(0)
-														? data[0].rating.toFixed(0) + "%"
-														: "Not Rated"}
-												</span>
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -164,6 +191,12 @@ const Details = ({ data }) => {
 								</p>
 							</div>
 						</div>
+					</section>
+
+					<section>
+					<div>
+					Devs
+					</div>
 					</section>
 
 					<section className='container bg-lightgray mx-10 flex flex-col justify-center items-center py-3 '>
